@@ -1,0 +1,80 @@
+[
+  {
+    "case": "01-concurrent",
+    "condition": "show-me",
+    "file": "outputs/show-me/01-concurrent.md",
+    "sha256": "e71fb64e1be7cffc32df11d2adb8b905754a4b8c41468fd42d21d78df7679042",
+    "characters": 1361,
+    "mermaid_blocks": 1,
+    "read_files": [
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/show-me/SKILL.md",
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/prompts.json"
+    ]
+  },
+  {
+    "case": "01-concurrent",
+    "condition": "mermaid-diagrams",
+    "file": "outputs/mermaid-diagrams/01-concurrent.md",
+    "sha256": "2902943e32abd49d0d74f5b9f9d1f10fcc8a5f1891f115eea70d24da91b73447",
+    "characters": 1903,
+    "mermaid_blocks": 1,
+    "read_files": [
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/SKILL.md",
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/prompts.json",
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/references/sequence-diagrams.md"
+    ]
+  },
+  {
+    "case": "01-concurrent",
+    "condition": "visual-v041",
+    "file": "outputs/visual-v041/01-concurrent.md",
+    "sha256": "d54074d65031e921d664db838413a168658f7aeb94f1fec238480ed4d2fbce71",
+    "characters": 1766,
+    "mermaid_blocks": 1,
+    "read_files": [
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/visual-v041/SKILL.md",
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/prompts.json",
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/SKILL.md",
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/references/sequence-diagrams.md"
+    ]
+  },
+  {
+    "case": "02-cardinality",
+    "condition": "show-me",
+    "file": "outputs/show-me/02-cardinality.md",
+    "sha256": "c3f4450e1a3a79a272a162e5b67b02a34ef907d6166e8b9b486351e2527227b5",
+    "characters": 439,
+    "mermaid_blocks": 1,
+    "read_files": [
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/show-me/SKILL.md",
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/prompts.json"
+    ]
+  },
+  {
+    "case": "02-cardinality",
+    "condition": "mermaid-diagrams",
+    "file": "outputs/mermaid-diagrams/02-cardinality.md",
+    "sha256": "1ad0ebcce905f5e8b7eb87ede06a0dfee86b1fd2ed12308edb5f5549ae946a6d",
+    "characters": 585,
+    "mermaid_blocks": 1,
+    "read_files": [
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/SKILL.md",
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/prompts.json",
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/references/class-diagrams.md"
+    ]
+  },
+  {
+    "case": "02-cardinality",
+    "condition": "visual-v041",
+    "file": "outputs/visual-v041/02-cardinality.md",
+    "sha256": "46f2cf21f15c278843941ebb05dbe249ff4292078d11682efa125ec5cfc13e40",
+    "characters": 505,
+    "mermaid_blocks": 1,
+    "read_files": [
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/visual-v041/SKILL.md",
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/prompts.json",
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/SKILL.md",
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/references/class-diagrams.md"
+    ]
+  }
+]

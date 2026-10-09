@@ -1,0 +1,7 @@
+{
+  "read_files": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/show-me/SKILL.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/prompts.json"
+  ],
+  "output_path": "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/outputs/show-me/02-cardinality.md"
+}

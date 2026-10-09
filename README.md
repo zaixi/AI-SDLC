@@ -22,3 +22,5 @@ AI 原生软件研发生命周期的资料收集与研究。
 - [后续两题回归：保留0.3.2，不升级0.3.3](evaluations/visual-skills/2026-10-09-v033/README.md)
 
 - [0.4.1通用视觉表达：三组、每组两题与主动加载观察](evaluations/visual-skills/2026-10-09-v041/README.md)
+
+- [复杂图比较：show-me单独使用、Mermaid指引与0.4.1](evaluations/visual-skills/2026-10-09-complex/README.md)

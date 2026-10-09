@@ -1,0 +1,8 @@
+{
+  "read_files": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/SKILL.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/prompts.json",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/references/sequence-diagrams.md"
+  ],
+  "output_path": "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-complex/outputs/mermaid-diagrams/01-concurrent.md"
+}

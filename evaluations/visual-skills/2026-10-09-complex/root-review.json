@@ -1,0 +1,13 @@
+{
+  "reviewed": 6,
+  "evidence_and_hashes": "matched",
+  "raw_answers": "embedded unchanged",
+  "inputs": "unchanged",
+  "active_skill": "matches tested 0.4.1",
+  "source_reading": "show-me only assigned Skill and prompts; other groups read corresponding Mermaid references",
+  "semantic_notes": [
+    "Show-me delayed callback uses optional parallel lane plus explicit prose; no required transition omitted",
+    "Query success response is distinct from paid status notification in Mermaid answer"
+  ],
+  "limits": "No layout or client invocation verification; no universal necessity or usefulness claim"
+}
