@@ -1,0 +1,247 @@
+[
+  {
+    "condition": "show-me",
+    "answers": 20,
+    "average_characters": 309.6,
+    "mermaid_blocks": 17,
+    "diff_answers": 2,
+    "characters_by_case": {
+      "01-lease": [
+        367,
+        304
+      ],
+      "02-intent": [
+        196,
+        194
+      ],
+      "03-diff": [
+        108,
+        98
+      ],
+      "04-state": [
+        373,
+        344
+      ],
+      "05-scope": [
+        318,
+        287
+      ],
+      "06-existing": [
+        361,
+        305
+      ],
+      "07-incident": [
+        500,
+        295
+      ],
+      "08-tradeoff": [
+        429,
+        318
+      ],
+      "09-domain": [
+        278,
+        290
+      ],
+      "10-rollout": [
+        467,
+        360
+      ]
+    }
+  },
+  {
+    "condition": "mermaid-diagrams",
+    "answers": 20,
+    "average_characters": 396.9,
+    "mermaid_blocks": 20,
+    "diff_answers": 0,
+    "characters_by_case": {
+      "01-lease": [
+        418,
+        370
+      ],
+      "02-intent": [
+        310,
+        284
+      ],
+      "03-diff": [
+        259,
+        262
+      ],
+      "04-state": [
+        475,
+        487
+      ],
+      "05-scope": [
+        457,
+        366
+      ],
+      "06-existing": [
+        335,
+        455
+      ],
+      "07-incident": [
+        543,
+        540
+      ],
+      "08-tradeoff": [
+        366,
+        366
+      ],
+      "09-domain": [
+        338,
+        336
+      ],
+      "10-rollout": [
+        478,
+        494
+      ]
+    }
+  },
+  {
+    "condition": "visual-v030",
+    "answers": 20,
+    "average_characters": 370.3,
+    "mermaid_blocks": 16,
+    "diff_answers": 2,
+    "characters_by_case": {
+      "01-lease": [
+        408,
+        440
+      ],
+      "02-intent": [
+        241,
+        230
+      ],
+      "03-diff": [
+        144,
+        145
+      ],
+      "04-state": [
+        444,
+        414
+      ],
+      "05-scope": [
+        373,
+        359
+      ],
+      "06-existing": [
+        365,
+        370
+      ],
+      "07-incident": [
+        415,
+        557
+      ],
+      "08-tradeoff": [
+        366,
+        521
+      ],
+      "09-domain": [
+        290,
+        314
+      ],
+      "10-rollout": [
+        524,
+        486
+      ]
+    }
+  },
+  {
+    "condition": "visual-v031",
+    "answers": 20,
+    "average_characters": 396.6,
+    "mermaid_blocks": 15,
+    "diff_answers": 2,
+    "characters_by_case": {
+      "01-lease": [
+        393,
+        497
+      ],
+      "02-intent": [
+        323,
+        348
+      ],
+      "03-diff": [
+        142,
+        102
+      ],
+      "04-state": [
+        523,
+        498
+      ],
+      "05-scope": [
+        438,
+        448
+      ],
+      "06-existing": [
+        414,
+        366
+      ],
+      "07-incident": [
+        539,
+        420
+      ],
+      "08-tradeoff": [
+        396,
+        415
+      ],
+      "09-domain": [
+        318,
+        346
+      ],
+      "10-rollout": [
+        577,
+        430
+      ]
+    }
+  },
+  {
+    "condition": "visual-v032-candidate",
+    "answers": 20,
+    "average_characters": 372.8,
+    "mermaid_blocks": 16,
+    "diff_answers": 2,
+    "characters_by_case": {
+      "01-lease": [
+        424,
+        385
+      ],
+      "02-intent": [
+        312,
+        301
+      ],
+      "03-diff": [
+        143,
+        142
+      ],
+      "04-state": [
+        424,
+        437
+      ],
+      "05-scope": [
+        361,
+        355
+      ],
+      "06-existing": [
+        356,
+        357
+      ],
+      "07-incident": [
+        404,
+        525
+      ],
+      "08-tradeoff": [
+        506,
+        406
+      ],
+      "09-domain": [
+        320,
+        284
+      ],
+      "10-rollout": [
+        497,
+        517
+      ]
+    }
+  }
+]

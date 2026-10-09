@@ -1,0 +1,705 @@
+{
+  "method": {
+    "scope": "逐一读取samples.json、prompts.json、rubric.json及清单中全部50份回答；未读取来源映射、项目其他文件、网络或其他Agent材料，未安装或渲染。",
+    "assessment": "对照各题同一准则审查正文与图的语义、事实/推断/建议、实体主体与所有权、关键条件及冗余；不猜来源，不以篇幅或Mermaid本身评分。",
+    "severity": "major为影响关键结论或职责的实质错误；minor为局部无依据关系或关键前置条件遗漏；note为不影响结论的表达负担。coverage指关键要求覆盖，独立于表达note。",
+    "boundary": "将时序图数据库直接向队列发消息记为局部主体无依据，不夸大成因果结论错误；未把候选原因、带条件建议、合理状态转移简化或领域归属当作既成数据库实现。仅评审可读文本语义，不评判已渲染布局。"
+  },
+  "reviews": [
+    {
+      "id": "sample-001",
+      "case": "08-tradeoff",
+      "coverage": "adequate",
+      "strengths": [
+        "比较延迟、容量和两人维护约束",
+        "建议有条件，要求负载、同步恢复及维护成本证据"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-002",
+      "case": "01-lease",
+      "coverage": "adequate",
+      "strengths": [
+        "时序保留领取、过期与拒绝提交节点",
+        "区分结果接收与重复执行、外部副作用保证"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-003",
+      "case": "01-lease",
+      "coverage": "adequate",
+      "strengths": [
+        "时序保留领取、过期与拒绝提交节点",
+        "区分结果接收与重复执行、外部副作用保证"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-004",
+      "case": "02-intent",
+      "coverage": "adequate",
+      "strengths": [
+        "职责边界与ADR约束准确",
+        "没有将队列结构倒推为已确认设计动机"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-005",
+      "case": "06-existing",
+      "coverage": "adequate",
+      "strengths": [
+        "沿用已确认的payment_id、唯一键、pending与审计事件",
+        "聚焦崩溃窗口和并发重试，不以唯一键证明外部只扣一次"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-006",
+      "case": "01-lease",
+      "coverage": "adequate",
+      "strengths": [
+        "时序保留领取、过期与拒绝提交节点",
+        "区分结果接收与重复执行、外部副作用保证"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-007",
+      "case": "07-incident",
+      "coverage": "adequate",
+      "strengths": [
+        "保留已知时间线并将候选原因标为未证实",
+        "未断言没有重试，未从命中时间推算TTL到期"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "kind": "unsupported_actor",
+          "evidence": "D->>Q: 更新事件成功入队",
+          "reason": "题目确认数据库价格更新和更新事件成功入队，但未说明谁发布事件。该箭头把数据库设为队列发布主体，超出了已知事实。宜用入队观测注记或未知发布者；不影响正文对候选因果与TTL的正确判断。"
+        },
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-008",
+      "case": "07-incident",
+      "coverage": "adequate",
+      "strengths": [
+        "保留已知时间线并将候选原因标为未证实",
+        "未断言没有重试，未从命中时间推算TTL到期"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-009",
+      "case": "05-scope",
+      "coverage": "adequate",
+      "strengths": [
+        "保留订单、计费与审计的职责所有权",
+        "影响边与调用关系区分明确，关注超时和重复扣款"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-010",
+      "case": "01-lease",
+      "coverage": "adequate",
+      "strengths": [
+        "时序保留领取、过期与拒绝提交节点",
+        "区分结果接收与重复执行、外部副作用保证"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-011",
+      "case": "03-diff",
+      "coverage": "adequate",
+      "strengths": [
+        "直接展示未变化返回缓存的分支",
+        "保留变化时先写入再失效的顺序"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-012",
+      "case": "09-domain",
+      "coverage": "adequate",
+      "strengths": [
+        "两组数量关系与历史单价快照准确",
+        "领域关系没有被写成已存在的数据库约束"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-013",
+      "case": "02-intent",
+      "coverage": "adequate",
+      "strengths": [
+        "职责边界与ADR约束准确",
+        "没有将队列结构倒推为已确认设计动机"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-014",
+      "case": "04-state",
+      "coverage": "adequate",
+      "strengths": [
+        "区分取消意图与Worker停止确认",
+        "保留完成竞争、失败重排及成功重试未规定"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-015",
+      "case": "06-existing",
+      "coverage": "adequate",
+      "strengths": [
+        "沿用已确认的payment_id、唯一键、pending与审计事件",
+        "聚焦崩溃窗口和并发重试，不以唯一键证明外部只扣一次"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-016",
+      "case": "03-diff",
+      "coverage": "adequate",
+      "strengths": [
+        "直接展示未变化返回缓存的分支",
+        "保留变化时先写入再失效的顺序"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-017",
+      "case": "10-rollout",
+      "coverage": "adequate",
+      "strengths": [
+        "指出单次回填不足及双向数据兼容风险",
+        "同步仍待决定，删列依赖旧版本退出、数据一致和回滚条件"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-018",
+      "case": "06-existing",
+      "coverage": "adequate",
+      "strengths": [
+        "沿用已确认的payment_id、唯一键、pending与审计事件",
+        "聚焦崩溃窗口和并发重试，不以唯一键证明外部只扣一次"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-019",
+      "case": "04-state",
+      "coverage": "adequate",
+      "strengths": [
+        "区分取消意图与Worker停止确认",
+        "保留完成竞争、失败重排及成功重试未规定"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-020",
+      "case": "05-scope",
+      "coverage": "adequate",
+      "strengths": [
+        "保留订单、计费与审计的职责所有权",
+        "影响边与调用关系区分明确，关注超时和重复扣款"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-021",
+      "case": "03-diff",
+      "coverage": "adequate",
+      "strengths": [
+        "直接展示未变化返回缓存的分支",
+        "保留变化时先写入再失效的顺序"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-022",
+      "case": "07-incident",
+      "coverage": "adequate",
+      "strengths": [
+        "保留已知时间线并将候选原因标为未证实",
+        "未断言没有重试，未从命中时间推算TTL到期"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "kind": "unsupported_actor",
+          "evidence": "D-)Q: 更新事件成功入队",
+          "reason": "题目确认数据库价格更新和更新事件成功入队，但未说明谁发布事件。该箭头把数据库设为队列发布主体，超出了已知事实。宜用入队观测注记或未知发布者；不影响正文对候选因果与TTL的正确判断。"
+        }
+      ]
+    },
+    {
+      "id": "sample-023",
+      "case": "08-tradeoff",
+      "coverage": "adequate",
+      "strengths": [
+        "比较延迟、容量和两人维护约束",
+        "建议有条件，要求负载、同步恢复及维护成本证据"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-024",
+      "case": "07-incident",
+      "coverage": "adequate",
+      "strengths": [
+        "保留已知时间线并将候选原因标为未证实",
+        "未断言没有重试，未从命中时间推算TTL到期"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "kind": "unsupported_actor",
+          "evidence": "D->>Q: 更新事件写入成功",
+          "reason": "题目确认数据库价格更新和更新事件成功入队，但未说明谁发布事件。该箭头把数据库设为队列发布主体，超出了已知事实。宜用入队观测注记或未知发布者；不影响正文对候选因果与TTL的正确判断。"
+        }
+      ]
+    },
+    {
+      "id": "sample-025",
+      "case": "08-tradeoff",
+      "coverage": "adequate",
+      "strengths": [
+        "比较延迟、容量和两人维护约束",
+        "建议有条件，要求负载、同步恢复及维护成本证据"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-026",
+      "case": "09-domain",
+      "coverage": "adequate",
+      "strengths": [
+        "两组数量关系与历史单价快照准确",
+        "领域关系没有被写成已存在的数据库约束"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-027",
+      "case": "01-lease",
+      "coverage": "adequate",
+      "strengths": [
+        "时序保留领取、过期与拒绝提交节点",
+        "区分结果接收与重复执行、外部副作用保证"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-028",
+      "case": "05-scope",
+      "coverage": "partial",
+      "strengths": [
+        "保留订单、计费与审计的职责所有权",
+        "影响边与调用关系区分明确，关注超时和重复扣款"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "kind": "missing_condition",
+          "evidence": "需决定：同一笔支付如何跨重试识别、在哪里保证不重复扣款，订单超时后如何表达未知结果，审计如何关联多次尝试。",
+          "reason": "幂等设计资料未提供，不足以判定现有机制需要重新决定。回答应先核实现有契约，有缺口再作新决策；该前置条件未表达。"
+        }
+      ]
+    },
+    {
+      "id": "sample-029",
+      "case": "06-existing",
+      "coverage": "adequate",
+      "strengths": [
+        "沿用已确认的payment_id、唯一键、pending与审计事件",
+        "聚焦崩溃窗口和并发重试，不以唯一键证明外部只扣一次"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-030",
+      "case": "04-state",
+      "coverage": "adequate",
+      "strengths": [
+        "区分取消意图与Worker停止确认",
+        "保留完成竞争、失败重排及成功重试未规定"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-031",
+      "case": "09-domain",
+      "coverage": "adequate",
+      "strengths": [
+        "两组数量关系与历史单价快照准确",
+        "领域关系没有被写成已存在的数据库约束"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-032",
+      "case": "05-scope",
+      "coverage": "adequate",
+      "strengths": [
+        "保留订单、计费与审计的职责所有权",
+        "影响边与调用关系区分明确，关注超时和重复扣款"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-033",
+      "case": "04-state",
+      "coverage": "adequate",
+      "strengths": [
+        "区分取消意图与Worker停止确认",
+        "保留完成竞争、失败重排及成功重试未规定"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-034",
+      "case": "10-rollout",
+      "coverage": "adequate",
+      "strengths": [
+        "指出单次回填不足及双向数据兼容风险",
+        "同步仍待决定，删列依赖旧版本退出、数据一致和回滚条件"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-035",
+      "case": "08-tradeoff",
+      "coverage": "adequate",
+      "strengths": [
+        "比较延迟、容量和两人维护约束",
+        "建议有条件，要求负载、同步恢复及维护成本证据"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-036",
+      "case": "04-state",
+      "coverage": "adequate",
+      "strengths": [
+        "区分取消意图与Worker停止确认",
+        "保留完成竞争、失败重排及成功重试未规定"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-037",
+      "case": "08-tradeoff",
+      "coverage": "adequate",
+      "strengths": [
+        "比较延迟、容量和两人维护约束",
+        "建议有条件，要求负载、同步恢复及维护成本证据"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "redundancy",
+          "evidence": "| 维护成本 | 少一条同步链路 | 需维护积压、重放和对账 |",
+          "reason": "表格再次复述图中的同步链路、积压/重放/对账与延迟比较，新增信息有限。属于可压缩的图文重复，不影响技术结论；并非因采用表格或篇幅本身扣分。"
+        }
+      ]
+    },
+    {
+      "id": "sample-038",
+      "case": "02-intent",
+      "coverage": "adequate",
+      "strengths": [
+        "职责边界与ADR约束准确",
+        "没有将队列结构倒推为已确认设计动机"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-039",
+      "case": "03-diff",
+      "coverage": "adequate",
+      "strengths": [
+        "直接展示未变化返回缓存的分支",
+        "保留变化时先写入再失效的顺序"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-040",
+      "case": "10-rollout",
+      "coverage": "adequate",
+      "strengths": [
+        "指出单次回填不足及双向数据兼容风险",
+        "同步仍待决定，删列依赖旧版本退出、数据一致和回滚条件"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-041",
+      "case": "07-incident",
+      "coverage": "adequate",
+      "strengths": [
+        "保留已知时间线并将候选原因标为未证实",
+        "未断言没有重试，未从命中时间推算TTL到期"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-042",
+      "case": "09-domain",
+      "coverage": "adequate",
+      "strengths": [
+        "两组数量关系与历史单价快照准确",
+        "领域关系没有被写成已存在的数据库约束"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-043",
+      "case": "10-rollout",
+      "coverage": "adequate",
+      "strengths": [
+        "指出单次回填不足及双向数据兼容风险",
+        "同步仍待决定，删列依赖旧版本退出、数据一致和回滚条件"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-044",
+      "case": "10-rollout",
+      "coverage": "adequate",
+      "strengths": [
+        "指出单次回填不足及双向数据兼容风险",
+        "同步仍待决定，删列依赖旧版本退出、数据一致和回滚条件"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-045",
+      "case": "02-intent",
+      "coverage": "adequate",
+      "strengths": [
+        "职责边界与ADR约束准确",
+        "没有将队列结构倒推为已确认设计动机"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-046",
+      "case": "05-scope",
+      "coverage": "adequate",
+      "strengths": [
+        "保留订单、计费与审计的职责所有权",
+        "影响边与调用关系区分明确，关注超时和重复扣款"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-047",
+      "case": "02-intent",
+      "coverage": "adequate",
+      "strengths": [
+        "职责边界与ADR约束准确",
+        "没有将队列结构倒推为已确认设计动机"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-048",
+      "case": "06-existing",
+      "coverage": "adequate",
+      "strengths": [
+        "沿用已确认的payment_id、唯一键、pending与审计事件",
+        "聚焦崩溃窗口和并发重试，不以唯一键证明外部只扣一次"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "sample-049",
+      "case": "03-diff",
+      "coverage": "adequate",
+      "strengths": [
+        "直接展示未变化返回缓存的分支",
+        "保留变化时先写入再失效的顺序"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-050",
+      "case": "09-domain",
+      "coverage": "adequate",
+      "strengths": [
+        "两组数量关系与历史单价快照准确",
+        "领域关系没有被写成已存在的数据库约束"
+      ],
+      "findings": [
+        {
+          "severity": "note",
+          "kind": "routine_meta",
+          "evidence": "未渲染验证。",
+          "reason": "这是制作过程说明，未增加本题业务判断或关系解释；在简短回答中可省略。此处不据此评判渲染布局或语法，也不影响事实覆盖。"
+        }
+      ]
+    }
+  ]
+}

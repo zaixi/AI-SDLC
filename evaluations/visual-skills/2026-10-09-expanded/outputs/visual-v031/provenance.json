@@ -1,0 +1,20 @@
+{
+  "read_files": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/inputs/visual-v031/SKILL.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/inputs/prompts.json",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/inputs/visual-v031/references/design-views.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/inputs/visual-v031/references/uncertainty.md"
+  ],
+  "output_files": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/01-lease.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/02-intent.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/03-diff.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/04-state.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/05-scope.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/06-existing.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/07-incident.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/08-tradeoff.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/09-domain.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/10-rollout.md"
+  ]
+}

@@ -15,13 +15,11 @@
 
 ## 当前边界
 
-本目录是 **0.3.2-candidate 合并稿**，已纳入[五组、十题、两轮独立生成比较](../../evaluations/visual-skills/2026-10-09-expanded/README.md)，仍保留候选状态。目前优先使用 [0.3.0 完整快照](../../evaluations/visual-skills/2026-10-09-v030/inputs/v030/)作为基线；安装时复制整个快照目录并保留 references。推荐仅基于已有小样本观察，不代表稳定性或客户端兼容性已证明。
-
-各版本均没有在 Codex、Claude、OpenCode、Zed 或 Qoder 中完成安装及调用测试。Mermaid 示例未执行渲染验证。
+当前版本为 0.3.1，没有在 Codex、Claude、OpenCode、Zed 或 Qoder 中完成安装及调用测试。Mermaid 示例未执行渲染验证。
 
 复用 [Humanlayer Show Me 固定提交](https://github.com/humanlayer/skills/blob/ca7c8088db69e315a8b2deea43820270457f8f3c/plugins/show-me/skills/show-me/SKILL.md)的完整正文。保存 [上游原文件](references/show-me.upstream.md)与 [MIT 许可证](LICENSE)。原文件含仅用户触发的标志；本 Skill 的入口元数据不含该标志，以允许模型匹配。
 
-未将 `mermaid-diagrams` 或 `architecture-report` 包复制为本 Skill 的依赖。已核对用户指定的 [mermaid-diagrams 来源与测试快照](../../evaluations/visual-skills/2026-10-09-isolated/README.md)；客户端兼容性及自动委托仍未验证，`architecture-report` 的具体来源仍待核对。现有内容可直接生成设计图，不依赖安装这些包。
+未复制未确认来源的 `mermaid-diagrams` 或 `architecture-report` 包；这些名称对应的具体仓库、许可证和兼容性尚待核对。现有内容可直接生成设计图，不依赖安装这些包。
 
 ## 更新方式
 
@@ -33,19 +31,4 @@
 
 ## 0.3.1：图承载关键判断
 
-此版本保留为实验记录，未升级为推荐基线。
-
 按当前问题和证据选择视图。图不只罗列模块：把关键风险、验证缺口或下一步放进图中或紧邻批注；必要正文解释原因和依据，避免重复逐项读图。没有调用关系依据时，仍不补造运行时架构。
-
-[两题独立回归与原始输出](../../evaluations/visual-skills/2026-10-09-v031/README.md)显示图内信息更充分，也暴露了正文误写状态所有权的问题。因此增加图文主体、行为与所有权核对；这条回归后补充的规则尚未做独立生成复测。四张图通过语法解析，实际布局和阅读负担未验证。
-
-## 0.3.2 候选：以 0.3.0 为骨架合并
-
-- 保留关系依据、未知项分类和按知识价值保存的规则。
-- 在相关位置突出影响判断的关键关系、条件或风险；图与紧邻短文共同解释，不要求图独立承载全部答案。
-- 不默认附加核实/验证流程图，用户关注下一步时才按需选择。
-- 图文主体、行为与所有权按依据核对；正文不逐项复述图。
-
-合并时已核对上游正文保持不变、0.3.0 的第 2/4 条及调用绘图能力段保持不变。随后固定快照完成了[独立生成比较](../../evaluations/visual-skills/2026-10-09-expanded/comparison.md)：候选版20份回答的平均字符数接近0.3.0，但仍出现一次未经确认的事件发布主体和一次图表重复；不宣称全面优于0.3.0。实际阅读效果和真实代码上下文仍待验证。本轮没有继续修改规则。
-
-[查看人工表达示例与新增场景入口](refinement.md)。人工示例与独立生成结果分别标记，不相互替代。

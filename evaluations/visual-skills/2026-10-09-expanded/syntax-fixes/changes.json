@@ -1,0 +1,14 @@
+[
+  {
+    "original": "outputs/mermaid-diagrams/09-domain.md",
+    "original_sha256": "897d04244e0ec8f762b6932ff01d5f078b814bb63a3cc530521c45b036eb961e",
+    "corrected_copy": "syntax-fixes/outputs/mermaid-diagrams/outputs-09-domain.md",
+    "change": "Quote the three Chinese class display labels; no other changes"
+  },
+  {
+    "original": "repeat-outputs/mermaid-diagrams/09-domain.md",
+    "original_sha256": "2d61cf9297130dfc9321b5f3b59038af4adbd167234c33e1ce083de1f38f3b20",
+    "corrected_copy": "syntax-fixes/outputs/mermaid-diagrams/repeat-outputs-09-domain.md",
+    "change": "Quote the three Chinese class display labels; no other changes"
+  }
+]

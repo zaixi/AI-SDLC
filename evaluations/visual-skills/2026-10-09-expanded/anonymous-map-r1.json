@@ -1,0 +1,402 @@
+[
+  {
+    "id": "sample-001",
+    "run": "outputs",
+    "case": "08-tradeoff",
+    "condition": "mermaid-diagrams",
+    "file": "outputs/mermaid-diagrams/08-tradeoff.md",
+    "sha256": "7f963d201d2765b106de82cc53ca8756e21f07b03b36483a27dc081903f5853f"
+  },
+  {
+    "id": "sample-002",
+    "run": "outputs",
+    "case": "01-lease",
+    "condition": "visual-v032-candidate",
+    "file": "outputs/visual-v032-candidate/01-lease.md",
+    "sha256": "561076222d5f92237eadf0dcb06372c2ef11d0e8871ef758433b1b76d66c4a80"
+  },
+  {
+    "id": "sample-003",
+    "run": "outputs",
+    "case": "01-lease",
+    "condition": "visual-v030",
+    "file": "outputs/visual-v030/01-lease.md",
+    "sha256": "603306ebdfd783c898e42b699bdca4658834d3555f8f8341dabc1d0534ed6c4d"
+  },
+  {
+    "id": "sample-004",
+    "run": "outputs",
+    "case": "02-intent",
+    "condition": "visual-v032-candidate",
+    "file": "outputs/visual-v032-candidate/02-intent.md",
+    "sha256": "c58824a971393c18f83579f5a6abced756b8aac468e129e1ff8678f62e042a35"
+  },
+  {
+    "id": "sample-005",
+    "run": "outputs",
+    "case": "06-existing",
+    "condition": "visual-v031",
+    "file": "outputs/visual-v031/06-existing.md",
+    "sha256": "cf692bd1aa6eced7c9c44c111d506a0c469f0498e5e21a959f5221080171cd96"
+  },
+  {
+    "id": "sample-006",
+    "run": "outputs",
+    "case": "01-lease",
+    "condition": "show-me",
+    "file": "outputs/show-me/01-lease.md",
+    "sha256": "f1b841a812326d5610de60d8cc6b0ce4f142551f92473708a05bcf7c01f6f51c"
+  },
+  {
+    "id": "sample-007",
+    "run": "outputs",
+    "case": "07-incident",
+    "condition": "visual-v031",
+    "file": "outputs/visual-v031/07-incident.md",
+    "sha256": "4f00a114530e298a317b9cf51edd94d8cf3498a771a241189290fb09bb0ff270"
+  },
+  {
+    "id": "sample-008",
+    "run": "outputs",
+    "case": "07-incident",
+    "condition": "visual-v030",
+    "file": "outputs/visual-v030/07-incident.md",
+    "sha256": "7474b6f13447779ca3aff5c3948ae0bcfd33fd506aca8500e8e1b955dc7e4f4a"
+  },
+  {
+    "id": "sample-009",
+    "run": "outputs",
+    "case": "05-scope",
+    "condition": "visual-v031",
+    "file": "outputs/visual-v031/05-scope.md",
+    "sha256": "dc9c08e3b615de8ce3b2499d012e97c7572373dc47bb8e767ecc8f3eec5c6896"
+  },
+  {
+    "id": "sample-010",
+    "run": "outputs",
+    "case": "01-lease",
+    "condition": "visual-v031",
+    "file": "outputs/visual-v031/01-lease.md",
+    "sha256": "d6c34bbed2e028cfe9b2a2d749cbf4a6d29ef107103973e09fdbe5f7c9d47111"
+  },
+  {
+    "id": "sample-011",
+    "run": "outputs",
+    "case": "03-diff",
+    "condition": "mermaid-diagrams",
+    "file": "outputs/mermaid-diagrams/03-diff.md",
+    "sha256": "b9a6806926cda115fc58dfb6a427234f846106ece012d8c368175ade2154f2d7"
+  },
+  {
+    "id": "sample-012",
+    "run": "outputs",
+    "case": "09-domain",
+    "condition": "visual-v032-candidate",
+    "file": "outputs/visual-v032-candidate/09-domain.md",
+    "sha256": "685b6d494a92cb6acfd6605ae373ad53a1701771a79ac1a48d0c26360f0499c2"
+  },
+  {
+    "id": "sample-013",
+    "run": "outputs",
+    "case": "02-intent",
+    "condition": "visual-v030",
+    "file": "outputs/visual-v030/02-intent.md",
+    "sha256": "c02e23dae9cb4ea5efa968628ce9fde246a0abd128775ceb3a7eb85e55ac6fe4"
+  },
+  {
+    "id": "sample-014",
+    "run": "outputs",
+    "case": "04-state",
+    "condition": "visual-v030",
+    "file": "outputs/visual-v030/04-state.md",
+    "sha256": "de5011d5a75b2f54ef9593e35a802c5d98fc9131c0ca0fc659f75e372d06c53b"
+  },
+  {
+    "id": "sample-015",
+    "run": "outputs",
+    "case": "06-existing",
+    "condition": "visual-v030",
+    "file": "outputs/visual-v030/06-existing.md",
+    "sha256": "43126a308845f21cf3a929a0b45f71cc9d4d99d9415d5023d9bc320b38bd78cc"
+  },
+  {
+    "id": "sample-016",
+    "run": "outputs",
+    "case": "03-diff",
+    "condition": "show-me",
+    "file": "outputs/show-me/03-diff.md",
+    "sha256": "f2ddc3033e67cbc86092bf7ba98c30a5be543f2458bd391ca72607c587a58448"
+  },
+  {
+    "id": "sample-017",
+    "run": "outputs",
+    "case": "10-rollout",
+    "condition": "mermaid-diagrams",
+    "file": "outputs/mermaid-diagrams/10-rollout.md",
+    "sha256": "0e2738bd582739d01d892df8c442fc537a227e684cb3d976ab6eaeb676e2a8cd"
+  },
+  {
+    "id": "sample-018",
+    "run": "outputs",
+    "case": "06-existing",
+    "condition": "show-me",
+    "file": "outputs/show-me/06-existing.md",
+    "sha256": "8d805c058e8b4c406dc6ae7910dda354d7eba47913e0fca56338480ea70919f6"
+  },
+  {
+    "id": "sample-019",
+    "run": "outputs",
+    "case": "04-state",
+    "condition": "visual-v031",
+    "file": "outputs/visual-v031/04-state.md",
+    "sha256": "3382f35f66c71df2f1db1afbac5b053aa5c1018d3ec4804d7d3ae2ca231aa8d5"
+  },
+  {
+    "id": "sample-020",
+    "run": "outputs",
+    "case": "05-scope",
+    "condition": "visual-v030",
+    "file": "outputs/visual-v030/05-scope.md",
+    "sha256": "887a8e5b38e94ce5254c3b1a9562cd14dbbe3f8f68d2b1342f1ea7850065d034"
+  },
+  {
+    "id": "sample-021",
+    "run": "outputs",
+    "case": "03-diff",
+    "condition": "visual-v031",
+    "file": "outputs/visual-v031/03-diff.md",
+    "sha256": "a1ce9bbb58b77925a7b6d167752f04646b4901fd4c2ed5ba62b39c01d5861730"
+  },
+  {
+    "id": "sample-022",
+    "run": "outputs",
+    "case": "07-incident",
+    "condition": "mermaid-diagrams",
+    "file": "outputs/mermaid-diagrams/07-incident.md",
+    "sha256": "5d1e74c9169037f84e3efc0fbae64cc5d25fc9607d7e0f3b252f5aae44d0291f"
+  },
+  {
+    "id": "sample-023",
+    "run": "outputs",
+    "case": "08-tradeoff",
+    "condition": "visual-v030",
+    "file": "outputs/visual-v030/08-tradeoff.md",
+    "sha256": "ad81f15f2da37e6f5aac7c46ae8b468ff278be3b6639d7615400513279ece14f"
+  },
+  {
+    "id": "sample-024",
+    "run": "outputs",
+    "case": "07-incident",
+    "condition": "show-me",
+    "file": "outputs/show-me/07-incident.md",
+    "sha256": "aba1246a27dedcb9633d5ac0d1530939f7af8515de8ae9a539a22efbdaefeab0"
+  },
+  {
+    "id": "sample-025",
+    "run": "outputs",
+    "case": "08-tradeoff",
+    "condition": "visual-v031",
+    "file": "outputs/visual-v031/08-tradeoff.md",
+    "sha256": "04007347b267bd29cac233a7bf37c1aacad7df12a0bab4e2460bb6a0cc2d65ec"
+  },
+  {
+    "id": "sample-026",
+    "run": "outputs",
+    "case": "09-domain",
+    "condition": "show-me",
+    "file": "outputs/show-me/09-domain.md",
+    "sha256": "31c002ea6d130860a06c6fea7441f2ef1a4d08ac25d47ec895d39e459cda286c"
+  },
+  {
+    "id": "sample-027",
+    "run": "outputs",
+    "case": "01-lease",
+    "condition": "mermaid-diagrams",
+    "file": "outputs/mermaid-diagrams/01-lease.md",
+    "sha256": "b263d9cafe7ecfee2f7737d0f1354e0ea1d2f731a6c2a4dd0c9a89ac8aa1f05e"
+  },
+  {
+    "id": "sample-028",
+    "run": "outputs",
+    "case": "05-scope",
+    "condition": "show-me",
+    "file": "outputs/show-me/05-scope.md",
+    "sha256": "5604084b218b16982daf797b23905b0bbfc2f959422a4b31fe98470e01a5d696"
+  },
+  {
+    "id": "sample-029",
+    "run": "outputs",
+    "case": "06-existing",
+    "condition": "mermaid-diagrams",
+    "file": "outputs/mermaid-diagrams/06-existing.md",
+    "sha256": "3218d675768ec962f3c1d93e42c0feed57f49070f39075fc3c855d700955d9a5"
+  },
+  {
+    "id": "sample-030",
+    "run": "outputs",
+    "case": "04-state",
+    "condition": "show-me",
+    "file": "outputs/show-me/04-state.md",
+    "sha256": "9808a1052f2d5656c76afa8af482f5a7d6fe839c4de75937cfa201927a68c562"
+  },
+  {
+    "id": "sample-031",
+    "run": "outputs",
+    "case": "09-domain",
+    "condition": "visual-v031",
+    "file": "outputs/visual-v031/09-domain.md",
+    "sha256": "2be0ed73a44a39da02ec45da2fcef06e887cdf4e7da7febb6e4c7792ffea888e"
+  },
+  {
+    "id": "sample-032",
+    "run": "outputs",
+    "case": "05-scope",
+    "condition": "visual-v032-candidate",
+    "file": "outputs/visual-v032-candidate/05-scope.md",
+    "sha256": "9867fa27559faa076194aeac5ecf9bf27fb397cfbaed6cc89c9d84f9b0514b35"
+  },
+  {
+    "id": "sample-033",
+    "run": "outputs",
+    "case": "04-state",
+    "condition": "visual-v032-candidate",
+    "file": "outputs/visual-v032-candidate/04-state.md",
+    "sha256": "3d6776bc5f4a7935ada529eb1c9a585d740e46f8808d68c7d99acb0730ab5adf"
+  },
+  {
+    "id": "sample-034",
+    "run": "outputs",
+    "case": "10-rollout",
+    "condition": "show-me",
+    "file": "outputs/show-me/10-rollout.md",
+    "sha256": "954d9245360a705ad46d433153616b39440ef5e26a07c1eb51110fae12b254f8"
+  },
+  {
+    "id": "sample-035",
+    "run": "outputs",
+    "case": "08-tradeoff",
+    "condition": "show-me",
+    "file": "outputs/show-me/08-tradeoff.md",
+    "sha256": "50513e0e294bfdd298baecc63b0f7912a3d8c0f1e1bbb5b9c425836fb976a5c4"
+  },
+  {
+    "id": "sample-036",
+    "run": "outputs",
+    "case": "04-state",
+    "condition": "mermaid-diagrams",
+    "file": "outputs/mermaid-diagrams/04-state.md",
+    "sha256": "5377cf367b09f1e2bcf129ba3ac816434379b6f05a3c5637b2caa788ca6c50d4"
+  },
+  {
+    "id": "sample-037",
+    "run": "outputs",
+    "case": "08-tradeoff",
+    "condition": "visual-v032-candidate",
+    "file": "outputs/visual-v032-candidate/08-tradeoff.md",
+    "sha256": "340c454534055da0608cef1291185f5949713593e1a85d20f3d3db6058184249"
+  },
+  {
+    "id": "sample-038",
+    "run": "outputs",
+    "case": "02-intent",
+    "condition": "mermaid-diagrams",
+    "file": "outputs/mermaid-diagrams/02-intent.md",
+    "sha256": "fbfeca4e5ab56d718fc6768b015c920f03ef1e73ee51a0375f7e663a26bbf8fa"
+  },
+  {
+    "id": "sample-039",
+    "run": "outputs",
+    "case": "03-diff",
+    "condition": "visual-v032-candidate",
+    "file": "outputs/visual-v032-candidate/03-diff.md",
+    "sha256": "d7c5e2a0ab1e446f4d2f352a00f1c41a2251986c234a72952a6a1baf0ae1ccd1"
+  },
+  {
+    "id": "sample-040",
+    "run": "outputs",
+    "case": "10-rollout",
+    "condition": "visual-v030",
+    "file": "outputs/visual-v030/10-rollout.md",
+    "sha256": "6c11033c0df60445a18930d77d58d963a112e39fcf0b91a1839bca085e386948"
+  },
+  {
+    "id": "sample-041",
+    "run": "outputs",
+    "case": "07-incident",
+    "condition": "visual-v032-candidate",
+    "file": "outputs/visual-v032-candidate/07-incident.md",
+    "sha256": "c2565b4f0874b71d954a6d754da295bbf03a34946d547be74a7ac695dddcffd2"
+  },
+  {
+    "id": "sample-042",
+    "run": "outputs",
+    "case": "09-domain",
+    "condition": "mermaid-diagrams",
+    "file": "outputs/mermaid-diagrams/09-domain.md",
+    "sha256": "897d04244e0ec8f762b6932ff01d5f078b814bb63a3cc530521c45b036eb961e"
+  },
+  {
+    "id": "sample-043",
+    "run": "outputs",
+    "case": "10-rollout",
+    "condition": "visual-v032-candidate",
+    "file": "outputs/visual-v032-candidate/10-rollout.md",
+    "sha256": "94fbf6e3e43a513e5a79c6ad95d7761641649dbabfaa8881f32943207b59dc86"
+  },
+  {
+    "id": "sample-044",
+    "run": "outputs",
+    "case": "10-rollout",
+    "condition": "visual-v031",
+    "file": "outputs/visual-v031/10-rollout.md",
+    "sha256": "39cbfde8a8751cd304842b46c75789eef177f24623ad216f8d034a5cc7d49422"
+  },
+  {
+    "id": "sample-045",
+    "run": "outputs",
+    "case": "02-intent",
+    "condition": "show-me",
+    "file": "outputs/show-me/02-intent.md",
+    "sha256": "e8854c46ab0edb12e0f3715f7c1ec669abc830fec9ccba534214e340cc639497"
+  },
+  {
+    "id": "sample-046",
+    "run": "outputs",
+    "case": "05-scope",
+    "condition": "mermaid-diagrams",
+    "file": "outputs/mermaid-diagrams/05-scope.md",
+    "sha256": "0e9481b457246fc484008fd4d8fbc0ff140e296979a35e7ea49ed3f0493dd222"
+  },
+  {
+    "id": "sample-047",
+    "run": "outputs",
+    "case": "02-intent",
+    "condition": "visual-v031",
+    "file": "outputs/visual-v031/02-intent.md",
+    "sha256": "b3b951a63dd5b96948ef7b656697c768b6dfeabff6d174c772bd017a9d3075c6"
+  },
+  {
+    "id": "sample-048",
+    "run": "outputs",
+    "case": "06-existing",
+    "condition": "visual-v032-candidate",
+    "file": "outputs/visual-v032-candidate/06-existing.md",
+    "sha256": "751a64df15c2a0755f20e6e89e9eb4b37a40043e9554705616c1dcc723151202"
+  },
+  {
+    "id": "sample-049",
+    "run": "outputs",
+    "case": "03-diff",
+    "condition": "visual-v030",
+    "file": "outputs/visual-v030/03-diff.md",
+    "sha256": "736e523537f63e6ae91e1302eb5975cf56f0b2724d351ab13cd5293e548f8b1a"
+  },
+  {
+    "id": "sample-050",
+    "run": "outputs",
+    "case": "09-domain",
+    "condition": "visual-v030",
+    "file": "outputs/visual-v030/09-domain.md",
+    "sha256": "08b7a705a5c48a6eec92b3bbc9e6d83fe475812d2f2337f7adfd32b1c9768039"
+  }
+]

@@ -27,17 +27,6 @@ flowchart TB
 
 ## 尚未证明的部分
 
-本例展示维护者希望的表达方式，不能证明 Agent 会稳定这样输出。0.3.1 的职责错误保留在原始评估中；新增核对要求不能视为错误已消除。编写本例时0.3.2尚未独立回归，之后已完成下列扩展比较；用户阅读测试和客户端自动调用仍未验证。
+本例展示维护者希望的表达方式，不能证明 Agent 会稳定这样输出。0.3.1 的职责错误保留在原始评估中；新增核对要求不能视为错误已消除。0.3.2 候选没有独立生成回归、用户阅读测试或客户端自动调用验证。
 
 后续验证应覆盖缺资料与已有设计两类任务，并加入不同领域的问题，检查未经依据扩展职责、图文重复、关键条件遗漏和过密图。保留未改写的原始回答，比较准确性与实际阅读效果，不以篇幅、语法通过或版本号代替质量判断。
-
-## 新增场景的独立生成示例
-
-以下链接来自新会话生成的原始回答，不是维护者人工示例。每题对照show-me、mermaid-diagrams、0.3.0、0.3.1和0.3.2候选版；完整方法和第二轮输出见[扩展比较报告](../../evaluations/visual-skills/2026-10-09-expanded/README.md)。
-
-- [故障分析：已知时间线与候选因果](../../evaluations/visual-skills/2026-10-09-expanded/new-cases-comparison.md#07-incident)
-- [方案取舍：延迟、容量与维护约束](../../evaluations/visual-skills/2026-10-09-expanded/new-cases-comparison.md#08-tradeoff)
-- [领域关系：数量关系与价格快照](../../evaluations/visual-skills/2026-10-09-expanded/new-cases-comparison.md#09-domain)
-- [滚动发布：混合版本与回滚风险](../../evaluations/visual-skills/2026-10-09-expanded/new-cases-comparison.md#10-rollout)
-
-原始回答的错误也保留：其中两份领域关系图解析失败，修正副本单独提供，不替换原文。

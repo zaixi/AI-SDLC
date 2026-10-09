@@ -1,0 +1,511 @@
+{
+  "mermaid_version": "12.1.0",
+  "results": [
+    {
+      "file": "outputs/mermaid-diagrams/01-lease.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/mermaid-diagrams/02-intent.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/mermaid-diagrams/03-diff.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/mermaid-diagrams/04-state.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/mermaid-diagrams/05-scope.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/mermaid-diagrams/06-existing.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/mermaid-diagrams/07-incident.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/mermaid-diagrams/08-tradeoff.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/mermaid-diagrams/09-domain.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "failed",
+      "error": "Error: Parse error on line 2:\n...ram    class Order[订单]    class Item[订\n----------------------^\nExpecting 'STR', got 'UNICODE_TEXT'"
+    },
+    {
+      "file": "outputs/mermaid-diagrams/10-rollout.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/show-me/01-lease.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/show-me/02-intent.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/show-me/04-state.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/show-me/05-scope.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/show-me/06-existing.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/show-me/07-incident.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/show-me/08-tradeoff.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/show-me/09-domain.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/show-me/10-rollout.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v030/01-lease.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v030/02-intent.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v030/04-state.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v030/05-scope.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v030/06-existing.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v030/09-domain.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v030/10-rollout.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v031/01-lease.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v031/02-intent.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v031/04-state.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v031/05-scope.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v031/06-existing.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v031/07-incident.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v031/08-tradeoff.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v031/09-domain.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v031/10-rollout.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v032-candidate/01-lease.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v032-candidate/02-intent.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v032-candidate/04-state.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v032-candidate/05-scope.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v032-candidate/06-existing.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v032-candidate/09-domain.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-v032-candidate/10-rollout.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/mermaid-diagrams/01-lease.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/mermaid-diagrams/02-intent.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/mermaid-diagrams/03-diff.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/mermaid-diagrams/04-state.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/mermaid-diagrams/05-scope.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/mermaid-diagrams/06-existing.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/mermaid-diagrams/07-incident.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/mermaid-diagrams/08-tradeoff.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/mermaid-diagrams/09-domain.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "failed",
+      "error": "Error: Parse error on line 2:\n...ram    class Order[订单]    class Item[订\n----------------------^\nExpecting 'STR', got 'UNICODE_TEXT'"
+    },
+    {
+      "file": "repeat-outputs/mermaid-diagrams/10-rollout.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/show-me/01-lease.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/show-me/02-intent.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/show-me/04-state.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/show-me/05-scope.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/show-me/06-existing.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/show-me/08-tradeoff.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/show-me/09-domain.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/show-me/10-rollout.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v030/01-lease.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v030/02-intent.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v030/04-state.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v030/05-scope.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v030/06-existing.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v030/07-incident.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v030/08-tradeoff.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v030/09-domain.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v030/10-rollout.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v031/01-lease.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v031/02-intent.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v031/04-state.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v031/05-scope.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v031/06-existing.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v031/09-domain.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v032-candidate/01-lease.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v032-candidate/02-intent.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v032-candidate/04-state.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v032-candidate/05-scope.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v032-candidate/06-existing.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v032-candidate/07-incident.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v032-candidate/08-tradeoff.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v032-candidate/09-domain.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-v032-candidate/10-rollout.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    }
+  ]
+}

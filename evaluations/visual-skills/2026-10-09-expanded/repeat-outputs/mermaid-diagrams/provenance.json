@@ -1,0 +1,21 @@
+{
+  "read_files": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/inputs/mermaid-diagrams/SKILL.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/inputs/prompts.json",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/inputs/mermaid-diagrams/references/sequence-diagrams.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/inputs/mermaid-diagrams/references/flowcharts.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/inputs/mermaid-diagrams/references/class-diagrams.md"
+  ],
+  "output_paths": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/repeat-outputs/mermaid-diagrams/01-lease.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/repeat-outputs/mermaid-diagrams/02-intent.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/repeat-outputs/mermaid-diagrams/03-diff.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/repeat-outputs/mermaid-diagrams/04-state.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/repeat-outputs/mermaid-diagrams/05-scope.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/repeat-outputs/mermaid-diagrams/06-existing.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/repeat-outputs/mermaid-diagrams/07-incident.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/repeat-outputs/mermaid-diagrams/08-tradeoff.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/repeat-outputs/mermaid-diagrams/09-domain.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/repeat-outputs/mermaid-diagrams/10-rollout.md"
+  ]
+}

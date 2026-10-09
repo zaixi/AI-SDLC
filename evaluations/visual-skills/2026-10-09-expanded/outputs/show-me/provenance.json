@@ -1,0 +1,18 @@
+{
+  "read_files": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/inputs/show-me/SKILL.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/inputs/prompts.json"
+  ],
+  "output_files": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/01-lease.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/02-intent.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/03-diff.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/04-state.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/05-scope.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/06-existing.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/07-incident.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/08-tradeoff.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/09-domain.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/10-rollout.md"
+  ]
+}

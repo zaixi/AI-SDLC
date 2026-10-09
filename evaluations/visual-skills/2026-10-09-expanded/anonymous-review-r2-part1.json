@@ -1,0 +1,433 @@
+{
+  "method": "来源隐藏的独立逐份文本审阅；仅依据给定prompts、rubric和40份匿名回答，核对图文事实、推断、建议、实体行为、所有权、数量关系及关键条件。未搜索来源、未读取其他项目内容或source mapping、未联网、未调用其他Agent或读取Skill、未渲染图形，也未以源码评判布局。合理且不改变结论的简化与局部无依据实体行为分别判断；候选、反例和有条件建议不当作既成事实。篇幅、Mermaid及例行未渲染说明本身不计为质量问题。coverage描述关键题目要求的覆盖情况，findings仅记录可由精确引句支持的问题；此结果不是用户研究或统计胜负。",
+  "reviews": [
+    {
+      "id": "sample-051",
+      "case": "06-existing",
+      "coverage": "adequate",
+      "strengths": [
+        "复用标识、唯一键、事件和pending规则",
+        "将端到端验证与已确认机制分开"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-052",
+      "case": "02-intent",
+      "coverage": "adequate",
+      "strengths": [
+        "职责边界完整",
+        "未将吞吐或隔离动机写成事实"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-053",
+      "case": "03-diff",
+      "coverage": "adequate",
+      "strengths": [
+        "差异表达直接",
+        "保留先写入再失效的顺序"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-054",
+      "case": "04-state",
+      "coverage": "adequate",
+      "strengths": [
+        "取消意图与停止确认分开",
+        "保留先完成及未知重试规则"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-055",
+      "case": "05-scope",
+      "coverage": "partial",
+      "strengths": [
+        "职责所有权准确",
+        "虚线明确为评审影响，关注外部崩溃与并发"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "kind": "missing_precondition",
+          "evidence": "需明确同一支付的稳定标识、幂等范围与保存方式、外部扣款后崩溃的恢复和结果查询方式",
+          "reason": "回答直接列出待决定事项，未说明先核实现有接口、实现和幂等契约，确认缺口后才作新决策。题目只说没有设计资料，不能据此认定需要新建这些机制；这属于评审步骤遗漏，并非已断言机制不存在。"
+        }
+      ]
+    },
+    {
+      "id": "sample-056",
+      "case": "01-lease",
+      "coverage": "adequate",
+      "strengths": [
+        "关键租约时刻完整",
+        "外部双写明确标为可能反例"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-057",
+      "case": "10-rollout",
+      "coverage": "adequate",
+      "strengths": [
+        "识别回填后的双向陈旧风险",
+        "删除和回滚条件明确"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-058",
+      "case": "05-scope",
+      "coverage": "adequate",
+      "strengths": [
+        "影响边不冒充调用链",
+        "先核实现状后决定补充机制"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-059",
+      "case": "09-domain",
+      "coverage": "adequate",
+      "strengths": [
+        "数量关系及零引用商品准确",
+        "单价快照与数据库实现边界明确"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-060",
+      "case": "07-incident",
+      "coverage": "adequate",
+      "strengths": [
+        "时间线与候选原因分开",
+        "没有从命中时刻推断TTL起算"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "kind": "unsupported_arrow_actor",
+          "evidence": "D->>Q: 更新事件成功入队",
+          "reason": "图中D定义为数据库，该箭头把成功入队进一步具体化为数据库向队列发布。题目只确认数据库更新及事件成功入队，未确认事件发布主体。可用独立观测注释表达成功入队，或标明发布主体未知。该简化不改变正文的谨慎因果结论，但引入了未经确认的实体行为。"
+        }
+      ]
+    },
+    {
+      "id": "sample-061",
+      "case": "08-tradeoff",
+      "coverage": "adequate",
+      "strengths": [
+        "三个约束及两方案代价齐全",
+        "建议附带负载、新鲜度和维护成本证据"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-062",
+      "case": "04-state",
+      "coverage": "adequate",
+      "strengths": [
+        "取消请求不改变状态",
+        "完成竞争与未知成功重试规则清楚"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-063",
+      "case": "07-incident",
+      "coverage": "adequate",
+      "strengths": [
+        "观测与候选解释分区明确",
+        "排查对应缓存键、重试、失效和回填证据"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-064",
+      "case": "01-lease",
+      "coverage": "adequate",
+      "strengths": [
+        "领取、重领与拒绝时刻完整",
+        "区分重复执行可能与实际副作用证据"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-065",
+      "case": "02-intent",
+      "coverage": "adequate",
+      "strengths": [
+        "入队、消费、写库边界完整",
+        "设计动机和效果均保留待确认"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-066",
+      "case": "09-domain",
+      "coverage": "adequate",
+      "strengths": [
+        "订单及商品两侧数量准确",
+        "快照约束不冒充数据库设计"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-067",
+      "case": "03-diff",
+      "coverage": "adequate",
+      "strengths": [
+        "直接表达缓存分支新增行为",
+        "写后失效顺序准确"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-068",
+      "case": "02-intent",
+      "coverage": "adequate",
+      "strengths": [
+        "已知职责及ADR边界清楚",
+        "队列原因保留待核实"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-069",
+      "case": "08-tradeoff",
+      "coverage": "adequate",
+      "strengths": [
+        "方案代价和团队约束完整",
+        "双向条件建议与验证证据齐全"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-070",
+      "case": "09-domain",
+      "coverage": "adequate",
+      "strengths": [
+        "领域数量和价格快照准确",
+        "实现选择保持未知"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-071",
+      "case": "03-diff",
+      "coverage": "adequate",
+      "strengths": [
+        "差异表达清楚",
+        "中文说明覆盖返回、跳过写入及写后失效"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-072",
+      "case": "03-diff",
+      "coverage": "adequate",
+      "strengths": [
+        "新旧流程可直接比较",
+        "条件分支与写后失效顺序正确"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-073",
+      "case": "08-tradeoff",
+      "coverage": "adequate",
+      "strengths": [
+        "约束与同步负担清楚",
+        "决策门槛保留两方案及暂不决策选项"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-074",
+      "case": "05-scope",
+      "coverage": "adequate",
+      "strengths": [
+        "准确限定影响边含义",
+        "先核实幂等契约并验证未知结果及并发"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-075",
+      "case": "01-lease",
+      "coverage": "adequate",
+      "strengths": [
+        "关键时刻完整",
+        "拒绝提交不等于单次执行或外部写入保证"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-076",
+      "case": "10-rollout",
+      "coverage": "adequate",
+      "strengths": [
+        "识别回填、混合写入及回滚风险",
+        "删除条件含所有旧依赖和验证路径"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-077",
+      "case": "07-incident",
+      "coverage": "adequate",
+      "strengths": [
+        "保持完整观测时间线",
+        "不把缺记录当无重试或命中当TTL起点"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-078",
+      "case": "04-state",
+      "coverage": "adequate",
+      "strengths": [
+        "取消意图和停止完成分开",
+        "保留成功竞争和未知重试规则"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-079",
+      "case": "08-tradeoff",
+      "coverage": "adequate",
+      "strengths": [
+        "延迟、容量和维护约束齐全",
+        "条件建议覆盖恢复和维护工时验证"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-080",
+      "case": "02-intent",
+      "coverage": "adequate",
+      "strengths": [
+        "职责图与ADR说明一致",
+        "未推导队列选择原因及效果"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-081",
+      "case": "09-domain",
+      "coverage": "adequate",
+      "strengths": [
+        "数量关系与商品零引用准确",
+        "历史价格和实现边界清楚"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-082",
+      "case": "10-rollout",
+      "coverage": "adequate",
+      "strengths": [
+        "混合版本与回滚陈旧风险明确",
+        "删除条件包括一致性和回滚路径"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-083",
+      "case": "10-rollout",
+      "coverage": "adequate",
+      "strengths": [
+        "指出同步未决定的发布阻塞",
+        "在线写入、历史完整性及回滚条件齐全"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-084",
+      "case": "06-existing",
+      "coverage": "adequate",
+      "strengths": [
+        "沿用已确认机制",
+        "重点验证崩溃窗口和并发而非以唯一键作保证"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-085",
+      "case": "07-incident",
+      "coverage": "adequate",
+      "strengths": [
+        "时间线保留缺证据状态",
+        "候选原因与TTL起算未知区分清楚"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "kind": "unsupported_arrow_actor",
+          "evidence": "D-)Q: 更新事件成功入队",
+          "reason": "D是数据库，箭头将数据库写成事件发送主体；给定事实仅确认价格更新与事件成功入队，未提供发布主体。应保留为入队观测或标明主体未知。该处不影响正文将失败原因保持为候选的结论。"
+        }
+      ]
+    },
+    {
+      "id": "sample-086",
+      "case": "06-existing",
+      "coverage": "adequate",
+      "strengths": [
+        "已有职责与pending规则完整",
+        "补验证崩溃恢复和并发并保留外部保证限制"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-087",
+      "case": "05-scope",
+      "coverage": "partial",
+      "strengths": [
+        "所有权保持准确",
+        "候选接口未当作已有调用链，关注外部保证"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "kind": "missing_precondition",
+          "evidence": "需决定幂等机制与责任，再验证并发重试、超时但已扣款、崩溃恢复时是否仍只扣一次。",
+          "reason": "没有先核实现有幂等机制与契约，确认缺口后再决定补充。缺少资料不代表缺少机制；此措辞使评审直接进入机制决策，可能重新决定已有机制。虚线已明确为待评审接口，因此不将其作为已有调用链错误。"
+        }
+      ]
+    },
+    {
+      "id": "sample-088",
+      "case": "01-lease",
+      "coverage": "adequate",
+      "strengths": [
+        "拒绝提交与执行副作用分开",
+        "关键时刻和重叠执行条件齐全"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-089",
+      "case": "04-state",
+      "coverage": "adequate",
+      "strengths": [
+        "取消请求与完成分开",
+        "明确状态语义推断和成功重试未知"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-090",
+      "case": "06-existing",
+      "coverage": "adequate",
+      "strengths": [
+        "既有机制与待补证据分开",
+        "崩溃、并发和pending收敛验证准确"
+      ],
+      "findings": []
+    }
+  ]
+}

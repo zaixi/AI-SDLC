@@ -1,0 +1,125 @@
+{
+  "reviewed": 100,
+  "classification_counts": {
+    "mermaid-diagrams": {
+      "adequate": 19,
+      "partial": 1
+    },
+    "visual-v032-candidate": {
+      "adequate": 20
+    },
+    "visual-v030": {
+      "adequate": 20
+    },
+    "visual-v031": {
+      "adequate": 20
+    },
+    "show-me": {
+      "adequate": 18,
+      "partial": 2
+    }
+  },
+  "technical_or_redundancy_findings": [
+    {
+      "id": "sample-007",
+      "source": "outputs/visual-v031/07-incident.md",
+      "finding": {
+        "severity": "minor",
+        "kind": "unsupported_actor",
+        "evidence": "D->>Q: 更新事件成功入队",
+        "reason": "题目确认数据库价格更新和更新事件成功入队，但未说明谁发布事件。该箭头把数据库设为队列发布主体，超出了已知事实。宜用入队观测注记或未知发布者；不影响正文对候选因果与TTL的正确判断。"
+      }
+    },
+    {
+      "id": "sample-022",
+      "source": "outputs/mermaid-diagrams/07-incident.md",
+      "finding": {
+        "severity": "minor",
+        "kind": "unsupported_actor",
+        "evidence": "D-)Q: 更新事件成功入队",
+        "reason": "题目确认数据库价格更新和更新事件成功入队，但未说明谁发布事件。该箭头把数据库设为队列发布主体，超出了已知事实。宜用入队观测注记或未知发布者；不影响正文对候选因果与TTL的正确判断。"
+      }
+    },
+    {
+      "id": "sample-024",
+      "source": "outputs/show-me/07-incident.md",
+      "finding": {
+        "severity": "minor",
+        "kind": "unsupported_actor",
+        "evidence": "D->>Q: 更新事件写入成功",
+        "reason": "题目确认数据库价格更新和更新事件成功入队，但未说明谁发布事件。该箭头把数据库设为队列发布主体，超出了已知事实。宜用入队观测注记或未知发布者；不影响正文对候选因果与TTL的正确判断。"
+      }
+    },
+    {
+      "id": "sample-028",
+      "source": "outputs/show-me/05-scope.md",
+      "finding": {
+        "severity": "minor",
+        "kind": "missing_condition",
+        "evidence": "需决定：同一笔支付如何跨重试识别、在哪里保证不重复扣款，订单超时后如何表达未知结果，审计如何关联多次尝试。",
+        "reason": "幂等设计资料未提供，不足以判定现有机制需要重新决定。回答应先核实现有契约，有缺口再作新决策；该前置条件未表达。"
+      }
+    },
+    {
+      "id": "sample-037",
+      "source": "outputs/visual-v032-candidate/08-tradeoff.md",
+      "finding": {
+        "severity": "note",
+        "kind": "redundancy",
+        "evidence": "| 维护成本 | 少一条同步链路 | 需维护积压、重放和对账 |",
+        "reason": "表格再次复述图中的同步链路、积压/重放/对账与延迟比较，新增信息有限。属于可压缩的图文重复，不影响技术结论；并非因采用表格或篇幅本身扣分。"
+      }
+    },
+    {
+      "id": "sample-055",
+      "source": "repeat-outputs/mermaid-diagrams/05-scope.md",
+      "finding": {
+        "severity": "minor",
+        "kind": "missing_precondition",
+        "evidence": "需明确同一支付的稳定标识、幂等范围与保存方式、外部扣款后崩溃的恢复和结果查询方式",
+        "reason": "回答直接列出待决定事项，未说明先核实现有接口、实现和幂等契约，确认缺口后才作新决策。题目只说没有设计资料，不能据此认定需要新建这些机制；这属于评审步骤遗漏，并非已断言机制不存在。"
+      }
+    },
+    {
+      "id": "sample-060",
+      "source": "repeat-outputs/visual-v030/07-incident.md",
+      "finding": {
+        "severity": "minor",
+        "kind": "unsupported_arrow_actor",
+        "evidence": "D->>Q: 更新事件成功入队",
+        "reason": "图中D定义为数据库，该箭头把成功入队进一步具体化为数据库向队列发布。题目只确认数据库更新及事件成功入队，未确认事件发布主体。可用独立观测注释表达成功入队，或标明发布主体未知。该简化不改变正文的谨慎因果结论，但引入了未经确认的实体行为。"
+      }
+    },
+    {
+      "id": "sample-085",
+      "source": "repeat-outputs/mermaid-diagrams/07-incident.md",
+      "finding": {
+        "severity": "minor",
+        "kind": "unsupported_arrow_actor",
+        "evidence": "D-)Q: 更新事件成功入队",
+        "reason": "D是数据库，箭头将数据库写成事件发送主体；给定事实仅确认价格更新与事件成功入队，未提供发布主体。应保留为入队观测或标明主体未知。该处不影响正文将失败原因保持为候选的结论。"
+      }
+    },
+    {
+      "id": "sample-087",
+      "source": "repeat-outputs/show-me/05-scope.md",
+      "finding": {
+        "severity": "minor",
+        "kind": "missing_precondition",
+        "evidence": "需决定幂等机制与责任，再验证并发重试、超时但已扣款、崩溃恢复时是否仍只扣一次。",
+        "reason": "没有先核实现有幂等机制与契约，确认缺口后再决定补充。缺少资料不代表缺少机制；此措辞使评审直接进入机制决策，可能重新决定已有机制。虚线已明确为待评审接口，因此不将其作为已有调用链错误。"
+      }
+    },
+    {
+      "id": "sample-096",
+      "source": "repeat-outputs/visual-v032-candidate/07-incident.md",
+      "finding": {
+        "severity": "minor",
+        "kind": "unsupported_arrow_actor",
+        "evidence": "D->>Q: 更新事件成功入队",
+        "reason": "D定义为数据库，该箭头将成功入队具体化为数据库发布事件。题目只确认价格更新及事件成功入队，未提供发布主体；正文又称图为已知过程。应保留入队观测或标明主体未知。此局部无依据实体行为不改变正文谨慎保留因果与重试未知的结论。"
+      }
+    }
+  ],
+  "root_note": "All evidence strings matched raw answers. Routine unrendered disclosure is retained as a transparency requirement, not treated as quality failure. Classification is not a success rate. Layout and render not assessed."
+}

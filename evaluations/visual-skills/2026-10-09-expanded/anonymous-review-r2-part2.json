@@ -1,0 +1,112 @@
+{
+  "method": "沿用part1的来源隐藏独立逐份文本审阅准则；仅依据给定prompts、rubric和补充清单的10份匿名回答，核对图文事实、推断、建议、实体行为、所有权、数量关系及关键条件。未搜索来源、未读取其他项目内容或source mapping、未联网、未调用其他Agent或读取Skill、未渲染图形，也未以源码评判布局。合理且不改变结论的简化与局部无依据实体行为分别判断；候选、反例和有条件建议不当作既成事实。篇幅、Mermaid及例行未渲染说明本身不计为质量问题。coverage描述关键题目要求的覆盖情况，findings仅记录可由精确引句支持的问题；此结果不是用户研究或统计胜负。",
+  "reviews": [
+    {
+      "id": "sample-091",
+      "case": "04-state",
+      "coverage": "adequate",
+      "strengths": [
+        "取消请求仅记录意图，停止确认才完成取消",
+        "保留先完成竞争与成功重试未知"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-092",
+      "case": "09-domain",
+      "coverage": "adequate",
+      "strengths": [
+        "领域数量关系含商品零引用情况",
+        "快照不随现价变化且不冒充数据库实现"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-093",
+      "case": "02-intent",
+      "coverage": "adequate",
+      "strengths": [
+        "API、Worker和数据库职责完整",
+        "ADR边界与未确认设计动机分开"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-094",
+      "case": "05-scope",
+      "coverage": "adequate",
+      "strengths": [
+        "影响边未写成调用链，状态所有权正确",
+        "先核实现有机制，确认不足后再决策并验证"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-095",
+      "case": "01-lease",
+      "coverage": "adequate",
+      "strengths": [
+        "领取、过期、重领和拒绝时刻完整",
+        "重复外部写入明确作为允许反例而非既成事实"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-096",
+      "case": "07-incident",
+      "coverage": "adequate",
+      "strengths": [
+        "完整时间线保留未知重试记录",
+        "候选原因与因果证明分开，TTL起算不作假定"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "kind": "unsupported_arrow_actor",
+          "evidence": "D->>Q: 更新事件成功入队",
+          "reason": "D定义为数据库，该箭头将成功入队具体化为数据库发布事件。题目只确认价格更新及事件成功入队，未提供发布主体；正文又称图为已知过程。应保留入队观测或标明主体未知。此局部无依据实体行为不改变正文谨慎保留因果与重试未知的结论。"
+        }
+      ]
+    },
+    {
+      "id": "sample-097",
+      "case": "03-diff",
+      "coverage": "adequate",
+      "strengths": [
+        "差异表达直接",
+        "未变化返回缓存、变化写后失效均准确"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-098",
+      "case": "10-rollout",
+      "coverage": "adequate",
+      "strengths": [
+        "识别持续写入造成双字段陈旧和回滚风险",
+        "并存同步、空值、并发及删除条件完整"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-099",
+      "case": "06-existing",
+      "coverage": "adequate",
+      "strengths": [
+        "沿用已确认标识、职责、唯一键和pending规则",
+        "补验证崩溃窗口与并发，未以唯一键证明外部只扣一次"
+      ],
+      "findings": []
+    },
+    {
+      "id": "sample-100",
+      "case": "08-tradeoff",
+      "coverage": "adequate",
+      "strengths": [
+        "延迟、主库容量和两人维护约束齐全",
+        "条件决策保留两方案及不满足时调整选项"
+      ],
+      "findings": []
+    }
+  ]
+}

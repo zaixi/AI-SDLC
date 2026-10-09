@@ -1,0 +1,1270 @@
+[
+  {
+    "file": "outputs/show-me/01-lease.md",
+    "run": "outputs",
+    "condition": "show-me",
+    "case": "01-lease",
+    "sha256": "f1b841a812326d5610de60d8cc6b0ce4f142551f92473708a05bcf7c01f6f51c",
+    "characters": 367,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/show-me/02-intent.md",
+    "run": "outputs",
+    "condition": "show-me",
+    "case": "02-intent",
+    "sha256": "e8854c46ab0edb12e0f3715f7c1ec669abc830fec9ccba534214e340cc639497",
+    "characters": 196,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/show-me/03-diff.md",
+    "run": "outputs",
+    "condition": "show-me",
+    "case": "03-diff",
+    "sha256": "f2ddc3033e67cbc86092bf7ba98c30a5be543f2458bd391ca72607c587a58448",
+    "characters": 108,
+    "mermaid_blocks": 0,
+    "diagram_types": [],
+    "has_diff": true
+  },
+  {
+    "file": "outputs/show-me/04-state.md",
+    "run": "outputs",
+    "condition": "show-me",
+    "case": "04-state",
+    "sha256": "9808a1052f2d5656c76afa8af482f5a7d6fe839c4de75937cfa201927a68c562",
+    "characters": 373,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "stateDiagram-v2"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/show-me/05-scope.md",
+    "run": "outputs",
+    "condition": "show-me",
+    "case": "05-scope",
+    "sha256": "5604084b218b16982daf797b23905b0bbfc2f959422a4b31fe98470e01a5d696",
+    "characters": 318,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TB"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/show-me/06-existing.md",
+    "run": "outputs",
+    "condition": "show-me",
+    "case": "06-existing",
+    "sha256": "8d805c058e8b4c406dc6ae7910dda354d7eba47913e0fca56338480ea70919f6",
+    "characters": 361,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/show-me/07-incident.md",
+    "run": "outputs",
+    "condition": "show-me",
+    "case": "07-incident",
+    "sha256": "aba1246a27dedcb9633d5ac0d1530939f7af8515de8ae9a539a22efbdaefeab0",
+    "characters": 500,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/show-me/08-tradeoff.md",
+    "run": "outputs",
+    "condition": "show-me",
+    "case": "08-tradeoff",
+    "sha256": "50513e0e294bfdd298baecc63b0f7912a3d8c0f1e1bbb5b9c425836fb976a5c4",
+    "characters": 429,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/show-me/09-domain.md",
+    "run": "outputs",
+    "condition": "show-me",
+    "case": "09-domain",
+    "sha256": "31c002ea6d130860a06c6fea7441f2ef1a4d08ac25d47ec895d39e459cda286c",
+    "characters": 278,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "classDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/show-me/10-rollout.md",
+    "run": "outputs",
+    "condition": "show-me",
+    "case": "10-rollout",
+    "sha256": "954d9245360a705ad46d433153616b39440ef5e26a07c1eb51110fae12b254f8",
+    "characters": 467,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/mermaid-diagrams/01-lease.md",
+    "run": "outputs",
+    "condition": "mermaid-diagrams",
+    "case": "01-lease",
+    "sha256": "b263d9cafe7ecfee2f7737d0f1354e0ea1d2f731a6c2a4dd0c9a89ac8aa1f05e",
+    "characters": 418,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/mermaid-diagrams/02-intent.md",
+    "run": "outputs",
+    "condition": "mermaid-diagrams",
+    "case": "02-intent",
+    "sha256": "fbfeca4e5ab56d718fc6768b015c920f03ef1e73ee51a0375f7e663a26bbf8fa",
+    "characters": 310,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/mermaid-diagrams/03-diff.md",
+    "run": "outputs",
+    "condition": "mermaid-diagrams",
+    "case": "03-diff",
+    "sha256": "b9a6806926cda115fc58dfb6a427234f846106ece012d8c368175ade2154f2d7",
+    "characters": 259,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/mermaid-diagrams/04-state.md",
+    "run": "outputs",
+    "condition": "mermaid-diagrams",
+    "case": "04-state",
+    "sha256": "5377cf367b09f1e2bcf129ba3ac816434379b6f05a3c5637b2caa788ca6c50d4",
+    "characters": 475,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "stateDiagram-v2"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/mermaid-diagrams/05-scope.md",
+    "run": "outputs",
+    "condition": "mermaid-diagrams",
+    "case": "05-scope",
+    "sha256": "0e9481b457246fc484008fd4d8fbc0ff140e296979a35e7ea49ed3f0493dd222",
+    "characters": 457,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TB"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/mermaid-diagrams/06-existing.md",
+    "run": "outputs",
+    "condition": "mermaid-diagrams",
+    "case": "06-existing",
+    "sha256": "3218d675768ec962f3c1d93e42c0feed57f49070f39075fc3c855d700955d9a5",
+    "characters": 335,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/mermaid-diagrams/07-incident.md",
+    "run": "outputs",
+    "condition": "mermaid-diagrams",
+    "case": "07-incident",
+    "sha256": "5d1e74c9169037f84e3efc0fbae64cc5d25fc9607d7e0f3b252f5aae44d0291f",
+    "characters": 543,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/mermaid-diagrams/08-tradeoff.md",
+    "run": "outputs",
+    "condition": "mermaid-diagrams",
+    "case": "08-tradeoff",
+    "sha256": "7f963d201d2765b106de82cc53ca8756e21f07b03b36483a27dc081903f5853f",
+    "characters": 366,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TB"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/mermaid-diagrams/09-domain.md",
+    "run": "outputs",
+    "condition": "mermaid-diagrams",
+    "case": "09-domain",
+    "sha256": "897d04244e0ec8f762b6932ff01d5f078b814bb63a3cc530521c45b036eb961e",
+    "characters": 338,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "classDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/mermaid-diagrams/10-rollout.md",
+    "run": "outputs",
+    "condition": "mermaid-diagrams",
+    "case": "10-rollout",
+    "sha256": "0e2738bd582739d01d892df8c442fc537a227e684cb3d976ab6eaeb676e2a8cd",
+    "characters": 478,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TD"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v030/01-lease.md",
+    "run": "outputs",
+    "condition": "visual-v030",
+    "case": "01-lease",
+    "sha256": "603306ebdfd783c898e42b699bdca4658834d3555f8f8341dabc1d0534ed6c4d",
+    "characters": 408,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v030/02-intent.md",
+    "run": "outputs",
+    "condition": "visual-v030",
+    "case": "02-intent",
+    "sha256": "c02e23dae9cb4ea5efa968628ce9fde246a0abd128775ceb3a7eb85e55ac6fe4",
+    "characters": 241,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v030/03-diff.md",
+    "run": "outputs",
+    "condition": "visual-v030",
+    "case": "03-diff",
+    "sha256": "736e523537f63e6ae91e1302eb5975cf56f0b2724d351ab13cd5293e548f8b1a",
+    "characters": 144,
+    "mermaid_blocks": 0,
+    "diagram_types": [],
+    "has_diff": true
+  },
+  {
+    "file": "outputs/visual-v030/04-state.md",
+    "run": "outputs",
+    "condition": "visual-v030",
+    "case": "04-state",
+    "sha256": "de5011d5a75b2f54ef9593e35a802c5d98fc9131c0ca0fc659f75e372d06c53b",
+    "characters": 444,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "stateDiagram-v2"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v030/05-scope.md",
+    "run": "outputs",
+    "condition": "visual-v030",
+    "case": "05-scope",
+    "sha256": "887a8e5b38e94ce5254c3b1a9562cd14dbbe3f8f68d2b1342f1ea7850065d034",
+    "characters": 373,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TB"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v030/06-existing.md",
+    "run": "outputs",
+    "condition": "visual-v030",
+    "case": "06-existing",
+    "sha256": "43126a308845f21cf3a929a0b45f71cc9d4d99d9415d5023d9bc320b38bd78cc",
+    "characters": 365,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v030/07-incident.md",
+    "run": "outputs",
+    "condition": "visual-v030",
+    "case": "07-incident",
+    "sha256": "7474b6f13447779ca3aff5c3948ae0bcfd33fd506aca8500e8e1b955dc7e4f4a",
+    "characters": 415,
+    "mermaid_blocks": 0,
+    "diagram_types": [],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v030/08-tradeoff.md",
+    "run": "outputs",
+    "condition": "visual-v030",
+    "case": "08-tradeoff",
+    "sha256": "ad81f15f2da37e6f5aac7c46ae8b468ff278be3b6639d7615400513279ece14f",
+    "characters": 366,
+    "mermaid_blocks": 0,
+    "diagram_types": [],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v030/09-domain.md",
+    "run": "outputs",
+    "condition": "visual-v030",
+    "case": "09-domain",
+    "sha256": "08b7a705a5c48a6eec92b3bbc9e6d83fe475812d2f2337f7adfd32b1c9768039",
+    "characters": 290,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "classDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v030/10-rollout.md",
+    "run": "outputs",
+    "condition": "visual-v030",
+    "case": "10-rollout",
+    "sha256": "6c11033c0df60445a18930d77d58d963a112e39fcf0b91a1839bca085e386948",
+    "characters": 524,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TB"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v031/01-lease.md",
+    "run": "outputs",
+    "condition": "visual-v031",
+    "case": "01-lease",
+    "sha256": "d6c34bbed2e028cfe9b2a2d749cbf4a6d29ef107103973e09fdbe5f7c9d47111",
+    "characters": 393,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v031/02-intent.md",
+    "run": "outputs",
+    "condition": "visual-v031",
+    "case": "02-intent",
+    "sha256": "b3b951a63dd5b96948ef7b656697c768b6dfeabff6d174c772bd017a9d3075c6",
+    "characters": 323,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v031/03-diff.md",
+    "run": "outputs",
+    "condition": "visual-v031",
+    "case": "03-diff",
+    "sha256": "a1ce9bbb58b77925a7b6d167752f04646b4901fd4c2ed5ba62b39c01d5861730",
+    "characters": 142,
+    "mermaid_blocks": 0,
+    "diagram_types": [],
+    "has_diff": true
+  },
+  {
+    "file": "outputs/visual-v031/04-state.md",
+    "run": "outputs",
+    "condition": "visual-v031",
+    "case": "04-state",
+    "sha256": "3382f35f66c71df2f1db1afbac5b053aa5c1018d3ec4804d7d3ae2ca231aa8d5",
+    "characters": 523,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "stateDiagram-v2"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v031/05-scope.md",
+    "run": "outputs",
+    "condition": "visual-v031",
+    "case": "05-scope",
+    "sha256": "dc9c08e3b615de8ce3b2499d012e97c7572373dc47bb8e767ecc8f3eec5c6896",
+    "characters": 438,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TB"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v031/06-existing.md",
+    "run": "outputs",
+    "condition": "visual-v031",
+    "case": "06-existing",
+    "sha256": "cf692bd1aa6eced7c9c44c111d506a0c469f0498e5e21a959f5221080171cd96",
+    "characters": 414,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v031/07-incident.md",
+    "run": "outputs",
+    "condition": "visual-v031",
+    "case": "07-incident",
+    "sha256": "4f00a114530e298a317b9cf51edd94d8cf3498a771a241189290fb09bb0ff270",
+    "characters": 539,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v031/08-tradeoff.md",
+    "run": "outputs",
+    "condition": "visual-v031",
+    "case": "08-tradeoff",
+    "sha256": "04007347b267bd29cac233a7bf37c1aacad7df12a0bab4e2460bb6a0cc2d65ec",
+    "characters": 396,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TB"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v031/09-domain.md",
+    "run": "outputs",
+    "condition": "visual-v031",
+    "case": "09-domain",
+    "sha256": "2be0ed73a44a39da02ec45da2fcef06e887cdf4e7da7febb6e4c7792ffea888e",
+    "characters": 318,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "classDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v031/10-rollout.md",
+    "run": "outputs",
+    "condition": "visual-v031",
+    "case": "10-rollout",
+    "sha256": "39cbfde8a8751cd304842b46c75789eef177f24623ad216f8d034a5cc7d49422",
+    "characters": 577,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TB"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v032-candidate/01-lease.md",
+    "run": "outputs",
+    "condition": "visual-v032-candidate",
+    "case": "01-lease",
+    "sha256": "561076222d5f92237eadf0dcb06372c2ef11d0e8871ef758433b1b76d66c4a80",
+    "characters": 424,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v032-candidate/02-intent.md",
+    "run": "outputs",
+    "condition": "visual-v032-candidate",
+    "case": "02-intent",
+    "sha256": "c58824a971393c18f83579f5a6abced756b8aac468e129e1ff8678f62e042a35",
+    "characters": 312,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v032-candidate/03-diff.md",
+    "run": "outputs",
+    "condition": "visual-v032-candidate",
+    "case": "03-diff",
+    "sha256": "d7c5e2a0ab1e446f4d2f352a00f1c41a2251986c234a72952a6a1baf0ae1ccd1",
+    "characters": 143,
+    "mermaid_blocks": 0,
+    "diagram_types": [],
+    "has_diff": true
+  },
+  {
+    "file": "outputs/visual-v032-candidate/04-state.md",
+    "run": "outputs",
+    "condition": "visual-v032-candidate",
+    "case": "04-state",
+    "sha256": "3d6776bc5f4a7935ada529eb1c9a585d740e46f8808d68c7d99acb0730ab5adf",
+    "characters": 424,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "stateDiagram-v2"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v032-candidate/05-scope.md",
+    "run": "outputs",
+    "condition": "visual-v032-candidate",
+    "case": "05-scope",
+    "sha256": "9867fa27559faa076194aeac5ecf9bf27fb397cfbaed6cc89c9d84f9b0514b35",
+    "characters": 361,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TB"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v032-candidate/06-existing.md",
+    "run": "outputs",
+    "condition": "visual-v032-candidate",
+    "case": "06-existing",
+    "sha256": "751a64df15c2a0755f20e6e89e9eb4b37a40043e9554705616c1dcc723151202",
+    "characters": 356,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v032-candidate/07-incident.md",
+    "run": "outputs",
+    "condition": "visual-v032-candidate",
+    "case": "07-incident",
+    "sha256": "c2565b4f0874b71d954a6d754da295bbf03a34946d547be74a7ac695dddcffd2",
+    "characters": 404,
+    "mermaid_blocks": 0,
+    "diagram_types": [],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v032-candidate/08-tradeoff.md",
+    "run": "outputs",
+    "condition": "visual-v032-candidate",
+    "case": "08-tradeoff",
+    "sha256": "340c454534055da0608cef1291185f5949713593e1a85d20f3d3db6058184249",
+    "characters": 506,
+    "mermaid_blocks": 0,
+    "diagram_types": [],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v032-candidate/09-domain.md",
+    "run": "outputs",
+    "condition": "visual-v032-candidate",
+    "case": "09-domain",
+    "sha256": "685b6d494a92cb6acfd6605ae373ad53a1701771a79ac1a48d0c26360f0499c2",
+    "characters": 320,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "classDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "outputs/visual-v032-candidate/10-rollout.md",
+    "run": "outputs",
+    "condition": "visual-v032-candidate",
+    "case": "10-rollout",
+    "sha256": "94fbf6e3e43a513e5a79c6ad95d7761641649dbabfaa8881f32943207b59dc86",
+    "characters": 497,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/show-me/01-lease.md",
+    "run": "repeat-outputs",
+    "condition": "show-me",
+    "case": "01-lease",
+    "sha256": "9d98fd4452dc673537bd97efe99a79cdafbcb8e27001c96e11c8e63e65190698",
+    "characters": 304,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/show-me/02-intent.md",
+    "run": "repeat-outputs",
+    "condition": "show-me",
+    "case": "02-intent",
+    "sha256": "1b38556bd15591e8a0fdc519d7faf0f9b33f5bb2c8e936b1632ddfeab22be317",
+    "characters": 194,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/show-me/03-diff.md",
+    "run": "repeat-outputs",
+    "condition": "show-me",
+    "case": "03-diff",
+    "sha256": "da5918e94594c79a70d1bd79c6ee1d81b2228478aac4d65bc2856488853712dc",
+    "characters": 98,
+    "mermaid_blocks": 0,
+    "diagram_types": [],
+    "has_diff": true
+  },
+  {
+    "file": "repeat-outputs/show-me/04-state.md",
+    "run": "repeat-outputs",
+    "condition": "show-me",
+    "case": "04-state",
+    "sha256": "9343cf6026e8e68c2e1d8a5350672d8a2367f4f6b10f4a351b81a3a7cec2258b",
+    "characters": 344,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "stateDiagram-v2"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/show-me/05-scope.md",
+    "run": "repeat-outputs",
+    "condition": "show-me",
+    "case": "05-scope",
+    "sha256": "e2380144c425080eb52253a50b67f1e5f4dd14aed7227b31d49b6f61dd4f8614",
+    "characters": 287,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TB"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/show-me/06-existing.md",
+    "run": "repeat-outputs",
+    "condition": "show-me",
+    "case": "06-existing",
+    "sha256": "b2bb486f1b1b2d440b2f068eb64a0824047ca92831abbe971c83f004a325a00d",
+    "characters": 305,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/show-me/07-incident.md",
+    "run": "repeat-outputs",
+    "condition": "show-me",
+    "case": "07-incident",
+    "sha256": "a69493163a36346204803d52a78993ce3cd55992e581d4b52592e6837f038f74",
+    "characters": 295,
+    "mermaid_blocks": 0,
+    "diagram_types": [],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/show-me/08-tradeoff.md",
+    "run": "repeat-outputs",
+    "condition": "show-me",
+    "case": "08-tradeoff",
+    "sha256": "f75ba042a33596df0e83af9ef206659eca43fff4ddf8b39305f4169a13a40b7f",
+    "characters": 318,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/show-me/09-domain.md",
+    "run": "repeat-outputs",
+    "condition": "show-me",
+    "case": "09-domain",
+    "sha256": "646e6a682637f793246e216fc6cd1e29f78b4db05550af7d162874026cdb9bf8",
+    "characters": 290,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "classDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/show-me/10-rollout.md",
+    "run": "repeat-outputs",
+    "condition": "show-me",
+    "case": "10-rollout",
+    "sha256": "618e993df0a533ef1dd9d51fcf0719c905771c97ddccf6105791348b83455400",
+    "characters": 360,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/mermaid-diagrams/01-lease.md",
+    "run": "repeat-outputs",
+    "condition": "mermaid-diagrams",
+    "case": "01-lease",
+    "sha256": "2a6feeb69d16585d745e111bc8195a9c5d96e6d8186962a8ea998414b38c0af4",
+    "characters": 370,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/mermaid-diagrams/02-intent.md",
+    "run": "repeat-outputs",
+    "condition": "mermaid-diagrams",
+    "case": "02-intent",
+    "sha256": "c57612d01c4d1eaaaf58d32d436abd6718a24a5a4fb5cfc858115581d5e32a86",
+    "characters": 284,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/mermaid-diagrams/03-diff.md",
+    "run": "repeat-outputs",
+    "condition": "mermaid-diagrams",
+    "case": "03-diff",
+    "sha256": "586a8a806f995a5eac4e9e015ef4f9861df988c111467c4758597d8fd3c6a130",
+    "characters": 262,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TD"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/mermaid-diagrams/04-state.md",
+    "run": "repeat-outputs",
+    "condition": "mermaid-diagrams",
+    "case": "04-state",
+    "sha256": "9b93f0fd131a9cac7992564dfe2d49bf90c32cf0affab1c3401f55f46ec52571",
+    "characters": 487,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "stateDiagram-v2"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/mermaid-diagrams/05-scope.md",
+    "run": "repeat-outputs",
+    "condition": "mermaid-diagrams",
+    "case": "05-scope",
+    "sha256": "ad40abfc941796d9249a1884eb184f3607682fbd9bb84ca50838743148336de6",
+    "characters": 366,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TB"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/mermaid-diagrams/06-existing.md",
+    "run": "repeat-outputs",
+    "condition": "mermaid-diagrams",
+    "case": "06-existing",
+    "sha256": "1447e9fa8b624a0adc3c700d67d7ae296594a4e4b8c8a1912e4bccc423ab6094",
+    "characters": 455,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/mermaid-diagrams/07-incident.md",
+    "run": "repeat-outputs",
+    "condition": "mermaid-diagrams",
+    "case": "07-incident",
+    "sha256": "2f5051bf93a5d607f154a6633da74c87b141f01477f8fcf76a57e0ba565e2061",
+    "characters": 540,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/mermaid-diagrams/08-tradeoff.md",
+    "run": "repeat-outputs",
+    "condition": "mermaid-diagrams",
+    "case": "08-tradeoff",
+    "sha256": "bd8b13beeece8a28af5e9d5098ce20b6e4890c59bb2eb3d0b1ab886713949971",
+    "characters": 366,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TB"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/mermaid-diagrams/09-domain.md",
+    "run": "repeat-outputs",
+    "condition": "mermaid-diagrams",
+    "case": "09-domain",
+    "sha256": "2d61cf9297130dfc9321b5f3b59038af4adbd167234c33e1ce083de1f38f3b20",
+    "characters": 336,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "classDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/mermaid-diagrams/10-rollout.md",
+    "run": "repeat-outputs",
+    "condition": "mermaid-diagrams",
+    "case": "10-rollout",
+    "sha256": "d9480cf45ffde26ff5196471f2ed9c991b040ec62980fdd2f8bdc8cfc3eba5a9",
+    "characters": 494,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TD"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v030/01-lease.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v030",
+    "case": "01-lease",
+    "sha256": "9777f2538cfc565485a4545e8a5df65738470162fae0bb814c9d0563fdfa9104",
+    "characters": 440,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v030/02-intent.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v030",
+    "case": "02-intent",
+    "sha256": "4aa9d671403b2217ac1137670eea508c3742abd266c2407b7a4daa781f0cd761",
+    "characters": 230,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v030/03-diff.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v030",
+    "case": "03-diff",
+    "sha256": "bf81003a72558867689362abf709f235892525ad46e4055686baed36d62ccd25",
+    "characters": 145,
+    "mermaid_blocks": 0,
+    "diagram_types": [],
+    "has_diff": true
+  },
+  {
+    "file": "repeat-outputs/visual-v030/04-state.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v030",
+    "case": "04-state",
+    "sha256": "5ac5750101741a71c07056c929797257084620ed681ba1893e1784e9af9a5119",
+    "characters": 414,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "stateDiagram-v2"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v030/05-scope.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v030",
+    "case": "05-scope",
+    "sha256": "942a74f2c19ceb8f5f5a426b7656df8fc7f77bc10eeb7e28d52e651729159cd5",
+    "characters": 359,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TB"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v030/06-existing.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v030",
+    "case": "06-existing",
+    "sha256": "6170d52d071e476b861bb841b28aa36af354e835cce449c486cd98acc1409ecf",
+    "characters": 370,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v030/07-incident.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v030",
+    "case": "07-incident",
+    "sha256": "ff3b2574807b789bb34b81d73e6f6d7da0f9e98c751bd3575959eab550e7c1e8",
+    "characters": 557,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v030/08-tradeoff.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v030",
+    "case": "08-tradeoff",
+    "sha256": "68d95cda0bd71be8fccbd8e08558aa957a40c5d95607f38d44be8b978194b269",
+    "characters": 521,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v030/09-domain.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v030",
+    "case": "09-domain",
+    "sha256": "f4bcf7edd0dbf25cb36478b75dba9c7f50dc854ddfee7ef11d42ffec306dde27",
+    "characters": 314,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "classDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v030/10-rollout.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v030",
+    "case": "10-rollout",
+    "sha256": "4a6744959e7657e2ff367b361cc6237b1feb55b64465a081a6ed19114b63f081",
+    "characters": 486,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v031/01-lease.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v031",
+    "case": "01-lease",
+    "sha256": "81e1098890b72a873135b6e0ac8da566d9e52bfce296f016efea20a7703e3ea0",
+    "characters": 497,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v031/02-intent.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v031",
+    "case": "02-intent",
+    "sha256": "1245f22f181505a5850d41136dd7e7ec99e661d4c36e9e34eeeb64825654a942",
+    "characters": 348,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v031/03-diff.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v031",
+    "case": "03-diff",
+    "sha256": "6943348e8844fa4bbd04de451a0d166c371801a67766a8d029b5ee572e222da5",
+    "characters": 102,
+    "mermaid_blocks": 0,
+    "diagram_types": [],
+    "has_diff": true
+  },
+  {
+    "file": "repeat-outputs/visual-v031/04-state.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v031",
+    "case": "04-state",
+    "sha256": "8885aafe8e34951b55928c7806feecebd955881a2bd461c731bca01ecb8d4ef9",
+    "characters": 498,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "stateDiagram-v2"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v031/05-scope.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v031",
+    "case": "05-scope",
+    "sha256": "89bd838a278138f4dced2b974f5074f2989de4841ce3258b9637d1c3cf2a5a3e",
+    "characters": 448,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TB"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v031/06-existing.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v031",
+    "case": "06-existing",
+    "sha256": "376cfbebcceb4f81408d52e23445a2451b1b23d28aa6f0c56ff7a0d221735dc2",
+    "characters": 366,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v031/07-incident.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v031",
+    "case": "07-incident",
+    "sha256": "e33ee40efc850245058c579df3be35713d3e3b5f2f249076d708fc85f6b2e02f",
+    "characters": 420,
+    "mermaid_blocks": 0,
+    "diagram_types": [],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v031/08-tradeoff.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v031",
+    "case": "08-tradeoff",
+    "sha256": "47e2dc9a792513133a5b08326b3ff8ae8a8cf33389be876954fb838960059a6c",
+    "characters": 415,
+    "mermaid_blocks": 0,
+    "diagram_types": [],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v031/09-domain.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v031",
+    "case": "09-domain",
+    "sha256": "d68a0a7be9447199338c37814d494e2eccf957404e091cee7fe58baf73d0c6c7",
+    "characters": 346,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "classDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v031/10-rollout.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v031",
+    "case": "10-rollout",
+    "sha256": "be388bc25c3321a4824e70b97009bbb02ae39967d99d77802673625257f54386",
+    "characters": 430,
+    "mermaid_blocks": 0,
+    "diagram_types": [],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v032-candidate/01-lease.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v032-candidate",
+    "case": "01-lease",
+    "sha256": "68d6d2c3c2751711254e1cddbf96a0946c1413993fd7dcb1df5369bc6fcc1c2f",
+    "characters": 385,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v032-candidate/02-intent.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v032-candidate",
+    "case": "02-intent",
+    "sha256": "989845a16b4400e781978c5607e13b3d5d848af53a28b138160b9215c3bd6305",
+    "characters": 301,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v032-candidate/03-diff.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v032-candidate",
+    "case": "03-diff",
+    "sha256": "fec535a8ba901b2d85a002c74bf26c49d513e9740aea20fff3fb9efb02ee53a7",
+    "characters": 142,
+    "mermaid_blocks": 0,
+    "diagram_types": [],
+    "has_diff": true
+  },
+  {
+    "file": "repeat-outputs/visual-v032-candidate/04-state.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v032-candidate",
+    "case": "04-state",
+    "sha256": "6b93b034c210ea1a32f61548931521327a66d0a386a1a5957e24dec35c580b08",
+    "characters": 437,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "stateDiagram-v2"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v032-candidate/05-scope.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v032-candidate",
+    "case": "05-scope",
+    "sha256": "0735174cce0e80833399cdbfab9062906b8a16e05f5cb0cebf0598e7c02a32dc",
+    "characters": 355,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TB"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v032-candidate/06-existing.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v032-candidate",
+    "case": "06-existing",
+    "sha256": "99517450e24ae6bcba1fe50fde05e3fd75b4da7ff27bddff66ce7b78d6f98483",
+    "characters": 357,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v032-candidate/07-incident.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v032-candidate",
+    "case": "07-incident",
+    "sha256": "0f0e48860c95e3ac15078a710de8d11dc06640b39df8436c5f5590afb593f665",
+    "characters": 525,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "sequenceDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v032-candidate/08-tradeoff.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v032-candidate",
+    "case": "08-tradeoff",
+    "sha256": "02f01a7b84146220b92903f5be571f408bccf7330fdd4d5d894ff0cad0fcac60",
+    "characters": 406,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart TB"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v032-candidate/09-domain.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v032-candidate",
+    "case": "09-domain",
+    "sha256": "f8f906a2c212becc0e0a5281f712b906351c6e957033afc121b190e7b64c03a3",
+    "characters": 284,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "classDiagram"
+    ],
+    "has_diff": false
+  },
+  {
+    "file": "repeat-outputs/visual-v032-candidate/10-rollout.md",
+    "run": "repeat-outputs",
+    "condition": "visual-v032-candidate",
+    "case": "10-rollout",
+    "sha256": "1cdceb2201708ba68c7fb5608bfd1249c34e68e53b5987b0198027fc1fa2573a",
+    "characters": 517,
+    "mermaid_blocks": 1,
+    "diagram_types": [
+      "flowchart LR"
+    ],
+    "has_diff": false
+  }
+]

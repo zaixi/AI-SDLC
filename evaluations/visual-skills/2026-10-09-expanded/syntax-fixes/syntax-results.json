@@ -1,0 +1,17 @@
+{
+  "mermaid_version": "12.1.0",
+  "results": [
+    {
+      "file": "outputs/mermaid-diagrams/outputs-09-domain.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/mermaid-diagrams/repeat-outputs-09-domain.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    }
+  ]
+}
