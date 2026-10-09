@@ -1,0 +1,1075 @@
+[
+  {
+    "condition": "v041",
+    "case": "01-mixed",
+    "status": "completed",
+    "thread_id": "01a1214f-661c-7970-a6e0-26b33043bdd0",
+    "model_context": [
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      }
+    ],
+    "draft_sha256": "35d222a6c20efd2511cdce949c9d0fa98d96c5cb97b45347b86691877044bdba",
+    "final_sha256": "48ac63f83938e5935d888f45f6e51f8f2306c40105562dc71572ef187fc6a8fa",
+    "stages": [
+      {
+        "stage": "stage0",
+        "render": [
+          {
+            "block": 1,
+            "type": "flowchart LR",
+            "source_sha256": "12c71ff5e24daa5ae3e6db4d4e8926fd763b197cbaf72da7480f062fe74b0abd",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.png",
+              "pixels": [
+                1600,
+                331
+              ]
+            }
+          },
+          {
+            "block": 2,
+            "type": "stateDiagram-v2",
+            "source_sha256": "b998f1cfd581ff2be1c394ab7958235bfe90fbf953b55bbb54e737963982e9c4",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-2.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-2.png",
+              "pixels": [
+                935,
+                1600
+              ]
+            }
+          },
+          {
+            "block": 3,
+            "type": "sequenceDiagram",
+            "source_sha256": "30e496d6de7ca4bfc35899ca0ba4927c7c6484d9235e29104ad7223453a1e3cb",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-3.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-3.png",
+              "pixels": [
+                973,
+                1600
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage0-1.png",
+          "stage0-2.png",
+          "stage0-3.png"
+        ],
+        "source_changed_after_feedback": true
+      },
+      {
+        "stage": "stage1",
+        "render": [
+          {
+            "block": 1,
+            "type": "flowchart LR",
+            "source_sha256": "2da3478c667b06d0d12dec6efa1a3cbbafa186920cdab36725a72fb0eaa459db",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.png",
+              "pixels": [
+                1600,
+                387
+              ]
+            }
+          },
+          {
+            "block": 2,
+            "type": "stateDiagram-v2",
+            "source_sha256": "c4dd47302fabd6ebb6243407934c310638c96479321149170c3ea7ccbdd5ede4",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-2.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-2.png",
+              "pixels": [
+                1258,
+                1600
+              ]
+            }
+          },
+          {
+            "block": 3,
+            "type": "sequenceDiagram",
+            "source_sha256": "ad89bd8323e44eceb0867146f51c43fd962b6ec7d78649d75dd5ac80697b9d5d",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-3.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-3.png",
+              "pixels": [
+                956,
+                1600
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage1-1.png",
+          "stage1-2.png",
+          "stage1-3.png"
+        ],
+        "source_changed_after_feedback": false
+      }
+    ],
+    "final_source_changed": false,
+    "final_render": [
+      {
+        "block": 1,
+        "type": "flowchart LR",
+        "source_sha256": "2da3478c667b06d0d12dec6efa1a3cbbafa186920cdab36725a72fb0eaa459db",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-1.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-1.png",
+          "pixels": [
+            1600,
+            387
+          ]
+        }
+      },
+      {
+        "block": 2,
+        "type": "stateDiagram-v2",
+        "source_sha256": "c4dd47302fabd6ebb6243407934c310638c96479321149170c3ea7ccbdd5ede4",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-2.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-2.png",
+          "pixels": [
+            1258,
+            1600
+          ]
+        }
+      },
+      {
+        "block": 3,
+        "type": "sequenceDiagram",
+        "source_sha256": "ad89bd8323e44eceb0867146f51c43fd962b6ec7d78649d75dd5ac80697b9d5d",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-3.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-3.png",
+          "pixels": [
+            956,
+            1600
+          ]
+        }
+      }
+    ],
+    "image_id": "sha256:333c1453624a56948e5d1c30354431f8623333c504f9fe0861c00fa37f5ff798"
+  },
+  {
+    "condition": "v042",
+    "case": "01-mixed",
+    "status": "completed",
+    "thread_id": "01a12151-1d87-7753-81a0-6dff8f7f7051",
+    "model_context": [
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      }
+    ],
+    "draft_sha256": "488c7ee51fd38aae09cfa5370d671849ebd1d9ab6776ce607e939a940446296a",
+    "final_sha256": "e2acde4d179c6a3a3672916e0204ed935a6d675d472ec31d96e8a7e9a4634e93",
+    "stages": [
+      {
+        "stage": "stage0",
+        "render": [
+          {
+            "block": 1,
+            "type": "flowchart LR",
+            "source_sha256": "f171a2ac24db282964dbeba5afa2b606cf7e805a0d814d7bb3a6912f77c8e7c1",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.png",
+              "pixels": [
+                1600,
+                321
+              ]
+            }
+          },
+          {
+            "block": 2,
+            "type": "stateDiagram-v2",
+            "source_sha256": "7b4499a3775a01c77409ee40c8dd85674c3a0a52a4b300eb3570fe8f5ca3b194",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-2.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-2.png",
+              "pixels": [
+                848,
+                1600
+              ]
+            }
+          },
+          {
+            "block": 3,
+            "type": "sequenceDiagram",
+            "source_sha256": "55fa66a5ffb36246f521b60a75d0e3db7b278e3b836c41cb2fe83e5d7bd8914d",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-3.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-3.png",
+              "pixels": [
+                1110,
+                1600
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage0-1.png",
+          "stage0-2.png",
+          "stage0-3.png"
+        ],
+        "source_changed_after_feedback": true
+      },
+      {
+        "stage": "stage1",
+        "render": [
+          {
+            "block": 1,
+            "type": "flowchart LR",
+            "source_sha256": "2539fdc36e7445ae4cba40c4e0fbd9aa452068274eb35e65bcd86c7289f7843c",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.png",
+              "pixels": [
+                1600,
+                326
+              ]
+            }
+          },
+          {
+            "block": 2,
+            "type": "stateDiagram-v2",
+            "source_sha256": "f14db5fbf75a00f4542e80579560fbf4e57fe9ebfc3584a5e58fb379f2a6bfcb",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-2.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-2.png",
+              "pixels": [
+                1289,
+                1600
+              ]
+            }
+          },
+          {
+            "block": 3,
+            "type": "flowchart TD",
+            "source_sha256": "54ae6b7e465cd2618cec80be1b9df1e8a415a5943c769a20d4408cf5d1d59a67",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-3.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-3.png",
+              "pixels": [
+                773,
+                1600
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage1-1.png",
+          "stage1-2.png",
+          "stage1-3.png"
+        ],
+        "source_changed_after_feedback": false
+      }
+    ],
+    "final_source_changed": false,
+    "final_render": [
+      {
+        "block": 1,
+        "type": "flowchart LR",
+        "source_sha256": "2539fdc36e7445ae4cba40c4e0fbd9aa452068274eb35e65bcd86c7289f7843c",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-1.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-1.png",
+          "pixels": [
+            1600,
+            326
+          ]
+        }
+      },
+      {
+        "block": 2,
+        "type": "stateDiagram-v2",
+        "source_sha256": "f14db5fbf75a00f4542e80579560fbf4e57fe9ebfc3584a5e58fb379f2a6bfcb",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-2.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-2.png",
+          "pixels": [
+            1289,
+            1600
+          ]
+        }
+      },
+      {
+        "block": 3,
+        "type": "flowchart TD",
+        "source_sha256": "54ae6b7e465cd2618cec80be1b9df1e8a415a5943c769a20d4408cf5d1d59a67",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-3.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-3.png",
+          "pixels": [
+            773,
+            1600
+          ]
+        }
+      }
+    ],
+    "image_id": "sha256:333c1453624a56948e5d1c30354431f8623333c504f9fe0861c00fa37f5ff798"
+  },
+  {
+    "condition": "v042",
+    "case": "02-c4",
+    "status": "completed",
+    "thread_id": "01a12152-c6a9-7902-85ee-c50e2337d159",
+    "model_context": [
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      }
+    ],
+    "draft_sha256": "46bf7fdf28e4dbfb2fa1bb2ec9b9d7e7f601250b82518b402f97b8fca4c7ec0f",
+    "final_sha256": "e97df8aedfdbbb9e5550e3117b150aed8393aa12491372730d86131146d9d0e9",
+    "stages": [
+      {
+        "stage": "stage0",
+        "render": [
+          {
+            "block": 1,
+            "type": "C4Context",
+            "source_sha256": "a4c2679d1a8be99f7966561fbb3bbb7b387290e76c6dc32a5d3a81eb41669762",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.png",
+              "pixels": [
+                1267,
+                1600
+              ]
+            }
+          },
+          {
+            "block": 2,
+            "type": "C4Container",
+            "source_sha256": "21c39a1fff9c566023e404e2ddb9f04f75ef2afe79cd2bf41120043dd9a2ec65",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-2.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-2.png",
+              "pixels": [
+                1027,
+                1600
+              ]
+            }
+          },
+          {
+            "block": 3,
+            "type": "C4Container",
+            "source_sha256": "7f21cfb69669d6f14cd01652f0b6e03d5a1a42654f573aa17d2b5f3e8725de2b",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-3.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-3.png",
+              "pixels": [
+                1264,
+                1600
+              ]
+            }
+          },
+          {
+            "block": 4,
+            "type": "C4Container",
+            "source_sha256": "191d22d8e261f7e500da57fbacf2d9ebda5ee7ab57ea7410dce2cd05bba44fc7",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-4.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-4.png",
+              "pixels": [
+                1351,
+                1600
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage0-1.png",
+          "stage0-2.png",
+          "stage0-3.png",
+          "stage0-4.png"
+        ],
+        "source_changed_after_feedback": true
+      },
+      {
+        "stage": "stage1",
+        "render": [
+          {
+            "block": 1,
+            "type": "flowchart TB",
+            "source_sha256": "7c764f7280f2455e5be7d6a18458124a9f6d62ba415a44cdff118f6837612317",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.png",
+              "pixels": [
+                1595,
+                1600
+              ]
+            }
+          },
+          {
+            "block": 2,
+            "type": "flowchart LR",
+            "source_sha256": "7cf13a905836be888b6349ceca2df9ccb266ed1780ff5e238f5be162bbb4c62f",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-2.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-2.png",
+              "pixels": [
+                1600,
+                479
+              ]
+            }
+          },
+          {
+            "block": 3,
+            "type": "flowchart LR",
+            "source_sha256": "3540bcc7e51e58dd89e3f1ec5c7156a7345708cdeb64fb053d391741b6abcf72",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-3.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-3.png",
+              "pixels": [
+                1600,
+                664
+              ]
+            }
+          },
+          {
+            "block": 4,
+            "type": "flowchart TB",
+            "source_sha256": "91b0f2b13920b4d96fca17066c2a78561ceb2962b6a93b15def934f0d1cf9d6e",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-4.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-4.png",
+              "pixels": [
+                1600,
+                1445
+              ]
+            }
+          },
+          {
+            "block": 5,
+            "type": "flowchart LR",
+            "source_sha256": "a1ee1ef95d87670ed4af74f10a72cf7c8ed46557018298447a2f37591ddfd19a",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-5.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-5.png",
+              "pixels": [
+                1600,
+                611
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage1-1.png",
+          "stage1-2.png",
+          "stage1-3.png",
+          "stage1-4.png",
+          "stage1-5.png"
+        ],
+        "source_changed_after_feedback": false
+      }
+    ],
+    "final_source_changed": false,
+    "final_render": [
+      {
+        "block": 1,
+        "type": "flowchart TB",
+        "source_sha256": "7c764f7280f2455e5be7d6a18458124a9f6d62ba415a44cdff118f6837612317",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-1.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-1.png",
+          "pixels": [
+            1595,
+            1600
+          ]
+        }
+      },
+      {
+        "block": 2,
+        "type": "flowchart LR",
+        "source_sha256": "7cf13a905836be888b6349ceca2df9ccb266ed1780ff5e238f5be162bbb4c62f",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-2.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-2.png",
+          "pixels": [
+            1600,
+            479
+          ]
+        }
+      },
+      {
+        "block": 3,
+        "type": "flowchart LR",
+        "source_sha256": "3540bcc7e51e58dd89e3f1ec5c7156a7345708cdeb64fb053d391741b6abcf72",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-3.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-3.png",
+          "pixels": [
+            1600,
+            664
+          ]
+        }
+      },
+      {
+        "block": 4,
+        "type": "flowchart TB",
+        "source_sha256": "91b0f2b13920b4d96fca17066c2a78561ceb2962b6a93b15def934f0d1cf9d6e",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-4.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-4.png",
+          "pixels": [
+            1600,
+            1445
+          ]
+        }
+      },
+      {
+        "block": 5,
+        "type": "flowchart LR",
+        "source_sha256": "a1ee1ef95d87670ed4af74f10a72cf7c8ed46557018298447a2f37591ddfd19a",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-5.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-5.png",
+          "pixels": [
+            1600,
+            611
+          ]
+        }
+      }
+    ],
+    "image_id": "sha256:333c1453624a56948e5d1c30354431f8623333c504f9fe0861c00fa37f5ff798"
+  },
+  {
+    "condition": "v041",
+    "case": "02-c4",
+    "status": "completed",
+    "thread_id": "01a12155-6b27-7792-bcda-44e98eae6ebd",
+    "model_context": [
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      }
+    ],
+    "draft_sha256": "259222fcf79fa3fab3f1262087039aaddd43c5899e3ef6a26e6fb82b5f589326",
+    "final_sha256": "7f4cae7dcadf964fce2c5f3102e9cb6dd28de6b5eab67b1a5170ce05455926da",
+    "stages": [
+      {
+        "stage": "stage0",
+        "render": [
+          {
+            "block": 1,
+            "type": "C4Context",
+            "source_sha256": "885b88ef62a49c815eb64e3e68b57ebcfae8d599233e9081ec1d249121223b6c",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.png",
+              "pixels": [
+                1267,
+                1600
+              ]
+            }
+          },
+          {
+            "block": 2,
+            "type": "C4Container",
+            "source_sha256": "e6ebde69e498c60050531b054f66540a49440062ea7abbd1c110d32dff1d2c12",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-2.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-2.png",
+              "pixels": [
+                462,
+                1600
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage0-1.png",
+          "stage0-2.png"
+        ],
+        "source_changed_after_feedback": true
+      },
+      {
+        "stage": "stage1",
+        "render": [
+          {
+            "block": 1,
+            "type": "flowchart TB",
+            "source_sha256": "b597801bf0d6b89c928282df3c9673d48f0c737e500b4b54c62d1ddf999ddf8b",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.png",
+              "pixels": [
+                1217,
+                1600
+              ]
+            }
+          },
+          {
+            "block": 2,
+            "type": "flowchart LR",
+            "source_sha256": "b175fd686466c0921591e497abe6b9c60f90cef73cd323c7374fa4c94a07017e",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-2.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-2.png",
+              "pixels": [
+                1600,
+                611
+              ]
+            }
+          },
+          {
+            "block": 3,
+            "type": "flowchart LR",
+            "source_sha256": "00421ab2434f717686d44db6320d879ce78ed30cb2fb25ae6c8cebe27f1a5a84",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-3.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-3.png",
+              "pixels": [
+                1600,
+                701
+              ]
+            }
+          },
+          {
+            "block": 4,
+            "type": "flowchart LR",
+            "source_sha256": "8c60dd17ae2ac1e8af98156a56ad9325fe8a94d57a6196f8f944c2a54c34251f",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-4.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-4.png",
+              "pixels": [
+                1600,
+                635
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage1-1.png",
+          "stage1-2.png",
+          "stage1-3.png",
+          "stage1-4.png"
+        ],
+        "source_changed_after_feedback": false
+      }
+    ],
+    "final_source_changed": false,
+    "final_render": [
+      {
+        "block": 1,
+        "type": "flowchart TB",
+        "source_sha256": "b597801bf0d6b89c928282df3c9673d48f0c737e500b4b54c62d1ddf999ddf8b",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-1.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-1.png",
+          "pixels": [
+            1217,
+            1600
+          ]
+        }
+      },
+      {
+        "block": 2,
+        "type": "flowchart LR",
+        "source_sha256": "b175fd686466c0921591e497abe6b9c60f90cef73cd323c7374fa4c94a07017e",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-2.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-2.png",
+          "pixels": [
+            1600,
+            611
+          ]
+        }
+      },
+      {
+        "block": 3,
+        "type": "flowchart LR",
+        "source_sha256": "00421ab2434f717686d44db6320d879ce78ed30cb2fb25ae6c8cebe27f1a5a84",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-3.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-3.png",
+          "pixels": [
+            1600,
+            701
+          ]
+        }
+      },
+      {
+        "block": 4,
+        "type": "flowchart LR",
+        "source_sha256": "8c60dd17ae2ac1e8af98156a56ad9325fe8a94d57a6196f8f944c2a54c34251f",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-4.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-4.png",
+          "pixels": [
+            1600,
+            635
+          ]
+        }
+      }
+    ],
+    "image_id": "sha256:333c1453624a56948e5d1c30354431f8623333c504f9fe0861c00fa37f5ff798"
+  }
+]

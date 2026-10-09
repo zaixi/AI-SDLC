@@ -1,0 +1,31 @@
+{
+  "reviewer": "Root agent; unblinded manual review of source and actual PNGs; no independent reviewer",
+  "01-mixed": {
+    "v041": {
+      "content": "Preserves immutable artifact cardinality, seven states, cancellation guard, sequential batch progression, failure stops remaining work without rollback, deduplication, split roles and no self-approval. Does not invent enforcement location.",
+      "layout": "Final collaboration and state diagrams are readable. Sequence remains tall and nested; branch conditions wrap awkwardly but remain legible. State notes moved into prose without losing constraints.",
+      "validation": "Final Mermaid source identical to stage1 actually viewed by model; explicitly separates actual image inspection from standalone syntax check."
+    },
+    "v042": {
+      "content": "Same confirmed constraints preserved across three diagrams, prose and role table. Replaces execution sequence with result-handling flowchart; startup and artifact access still present in companion views/prose. No design additions found.",
+      "layout": "Final flowchart separates deduplication, failure and next-batch/completion branches. Easier to follow local decision logic, at the cost of no chronological API message view. Still a tall graph; not uniformly more compact.",
+      "validation": "Final Mermaid source identical to stage1 actually viewed by model. Reports inspection, no claim that modified unseen source was already verified."
+    },
+    "judgment": "Both usable and faithful in this sample. v042 result-processing view is more direct for decision logic; no decisive overall winner."
+  },
+  "02-c4": {
+    "v042": {
+      "content": "All 12 internal runtime units and all 19 distinct container-level endpoint relationships preserved; callback-to-Kafka drawn in two filtered views with delivery/payment-result labels. Context has all six relationships. Three independent PostgreSQL instances, two independent API processes, read-only query and external ownership preserved. No invented retry/auth/topic.",
+      "layout": "Initial native C4 context has opposing labels overlapping. Order view routes supplier edges through API/DB; payment view has overlapping labels and an edge across API. Stage1/final uses five flowchart views with explicit C4 layers, separated labels and traceable arrows; long names wrap in narrow node boxes.",
+      "validation": "Model identifies observed overlap/occlusion before changing source, then inspects second feedback and preserves exactly those sources in final.",
+      "tradeoff": "One extra container view and repeated nodes increase reading/navigation; clearly states same-name nodes are same runtime unit. C4 semantics maintained with generic flowchart syntax, task did not require native Mermaid C4 syntax."
+    },
+    "v041": {
+      "content": "All 12 internal runtime units, all 19 distinct container-level endpoint relationships and six context relationships retained. Callback-to-Kafka repeated with different event labels in filtered views. Correct three independent PostgreSQL instances, two independent API processes, read-only queries and supplier/bank ownership. No added mechanisms.",
+      "layout": "Native C4 initial container graph is a very tall single-column layout with long crossing edges and text over nodes. Final uses four flowchart views with explicit C4 layers; opposing context labels separated, container arrows traceable, payment view compact horizontal. Order/return view combines more nodes than v042 but remains legible.",
+      "validation": "Final Mermaid source identical to stage1 actually viewed by model; reports no newly changed uninspected source.",
+      "tradeoff": "Four views reduce navigation versus v042 five views, while order/return graph contains more parallel paths."
+    },
+    "judgment": "Both final outputs readable and faithful in this sample. v042 splits order/return into two views; v041 keeps them together and uses a compact horizontal payment view. No decisive overall quality advantage for v042. Both improved with equal actual-image feedback."
+  }
+}

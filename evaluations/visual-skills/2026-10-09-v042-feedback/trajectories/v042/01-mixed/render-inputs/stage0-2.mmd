@@ -1,0 +1,29 @@
+stateDiagram-v2
+    direction TB
+    state "草稿" as Draft
+    state "待审" as Review
+    state "待执行" as Ready
+    state "执行中" as Running
+    state "已取消" as Cancelled
+    state "失败" as Failed
+    state "完成" as Done
+
+    [*] --> Draft: 创建
+    Draft --> Review: 发布人提交
+    Review --> Draft: 审阅人拒绝
+    Review --> Ready: 审阅人审核通过
+    Ready --> Cancelled: 发布人取消
+    Ready --> Running: 调度器开始执行
+    Running --> Running: 本批成功且仍有下一批
+    Running --> Failed: 任一批失败
+    Running --> Done: 全部批次成功
+
+    note right of Running
+        按服务批次逐批部署
+        执行中不能取消
+        已记录批次的重复结果不推进状态
+    end note
+    note right of Failed
+        停止后续批次
+        已成功批次不自动回滚
+    end note

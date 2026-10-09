@@ -1,0 +1,27 @@
+C4Container
+    title 采购协同系统：订单与交付链路
+
+    Person(buyer, "采购员", "发订单")
+    System_Ext(supplier, "供应商系统（合作供应商）", "接收订单、发送交付事件")
+
+    Container_Boundary(company, "本公司：采购协同系统") {
+        Container(web, "Web门户", "Web应用", "采购操作入口")
+        Container(api, "采购API", "独立部署进程", "处理订单与付款申请")
+        ContainerDb(orders, "订单库", "PostgreSQL实例一", "存储订单")
+        ContainerDb(outbox, "Outbox库", "PostgreSQL实例二", "存储待发送事件")
+        Container(publisher, "事件发布器", "运行进程", "读取事件并发送订单")
+        Container(callback, "回调网关", "运行单元", "接收外部回调")
+        ContainerQueue(kafka, "内部Kafka", "Kafka", "传递内部事件")
+        Container(orderWorker, "订单处理器", "运行进程", "消费交付事件并更新订单")
+    }
+
+    Rel(buyer, web, "使用门户发订单")
+    Rel(web, api, "调用", "HTTPS")
+    Rel(api, orders, "读写订单")
+    Rel(api, outbox, "写入待发送事件")
+    Rel(publisher, outbox, "读取事件")
+    Rel(publisher, supplier, "发送订单", "HTTPS")
+    Rel(supplier, callback, "发送交付事件", "HTTPS")
+    Rel(callback, kafka, "写入交付事件")
+    Rel(orderWorker, kafka, "消费交付事件")
+    Rel(orderWorker, orders, "写入订单")

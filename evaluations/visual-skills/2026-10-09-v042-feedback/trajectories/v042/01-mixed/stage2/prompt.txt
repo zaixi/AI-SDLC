@@ -1,0 +1,5 @@
+以下是你上一次输出的实际渲染结果。图片顺序与源码图块顺序一致。请根据已加载的 Skill 继续当前工作，返回本次完整的可编辑图文。渲染成功仅表示生成了图片。不要调用其他工具。
+本轮后续不再向你回传渲染反馈；如果这次改动图源码，请如实区分你已经看到的画面与尚未检查的新稿。
+
+渲染状态：
+[{"block": 1, "type": "flowchart LR", "png_status": "passed", "svg_status": "passed", "error": null}, {"block": 2, "type": "stateDiagram-v2", "png_status": "passed", "svg_status": "passed", "error": null}, {"block": 3, "type": "flowchart TD", "png_status": "passed", "svg_status": "passed", "error": null}]

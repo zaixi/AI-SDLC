@@ -1,0 +1,18 @@
+flowchart TB
+    subgraph company["本公司 · 采购协同系统（容器视图：付款处理）"]
+        api["【容器】采购API<br/>独立部署进程"]
+        kafka[("【消息容器】内部Kafka")]
+        worker["【容器】付款处理器"]
+        callback["【容器】回调网关"]
+        payments[("【数据容器】付款库<br/>PostgreSQL 实例三")]
+
+        api -->|"写入付款申请事件"| kafka
+        worker -->|"消费付款申请事件<br/>及付款结果"| kafka
+        callback -->|"写入付款结果"| kafka
+        worker -->|"写入付款数据"| payments
+    end
+
+    bank["【外部系统】付款系统<br/>归属：银行"]
+
+    worker -->|"HTTPS：发送付款请求"| bank
+    bank -->|"HTTPS：异步回传付款结果"| callback

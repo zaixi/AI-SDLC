@@ -1,0 +1,15 @@
+flowchart LR
+    supplier["【外部系统】供应商系统<br/>归属：合作供应商"]
+
+    subgraph company["本公司 · 采购协同系统（容器视图：交付处理）"]
+        callback["【容器】回调网关"]
+        kafka[("【消息容器】内部Kafka")]
+        worker["【容器】订单处理器"]
+        orders[("【数据容器】订单库<br/>PostgreSQL 实例一")]
+
+        callback -->|"写入交付事件"| kafka
+        worker -->|"消费交付事件"| kafka
+        worker -->|"写入订单"| orders
+    end
+
+    supplier -->|"HTTPS：发送交付事件"| callback

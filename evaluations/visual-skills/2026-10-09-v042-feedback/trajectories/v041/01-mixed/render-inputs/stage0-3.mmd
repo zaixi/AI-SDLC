@@ -1,0 +1,25 @@
+sequenceDiagram
+    participant A as 发布 API
+    participant S as 调度器
+    participant W as 部署工作器
+
+    S->>A: 读取待执行单
+    S->>A: 写回执行中
+    S->>W: 下发首批任务
+
+    loop 接收批次结果
+        W-->>S: 返回批次结果
+        alt 该批次结果已记录
+            Note over S: 忽略重复结果，不再次推进批次
+        else 首次收到该批次结果
+            S->>S: 记录批次结果
+            alt 批次失败
+                S->>A: 写回失败
+                Note over S,W: 停止后续批次，已成功批次不自动回滚
+            else 批次成功且还有下一批
+                S->>W: 下发下一批任务
+            else 批次成功且全部批次完成
+                S->>A: 写回完成
+            end
+        end
+    end

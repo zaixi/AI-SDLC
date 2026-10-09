@@ -1,0 +1,20 @@
+flowchart LR
+    subgraph company["本公司 · 采购协同系统"]
+        api["采购API<br/>【容器 · 独立部署进程】"]
+        kafka[["内部Kafka<br/>【消息容器】"]]
+        worker["付款处理器<br/>【容器】"]
+        callback["回调网关<br/>【容器】"]
+        payments[("付款库<br/>【数据库容器】<br/>PostgreSQL 实例三")]
+
+        api -->|"写付款申请事件"| kafka
+        worker -->|"消费付款申请及付款结果"| kafka
+        callback -->|"写付款结果"| kafka
+        worker -->|"写付款数据"| payments
+    end
+
+    subgraph bankOrg["银行"]
+        bank["付款系统<br/>【外部系统】"]
+    end
+
+    worker -->|"HTTPS · 发送付款请求"| bank
+    bank -->|"HTTPS · 异步回传付款结果"| callback

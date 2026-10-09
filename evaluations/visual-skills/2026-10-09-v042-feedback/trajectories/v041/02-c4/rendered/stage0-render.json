@@ -1,0 +1,44 @@
+[
+  {
+    "block": 1,
+    "type": "C4Context",
+    "source_sha256": "885b88ef62a49c815eb64e3e68b57ebcfae8d599233e9081ec1d249121223b6c",
+    "svg": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage0-1.svg"
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage0-1.png",
+      "pixels": [
+        1267,
+        1600
+      ]
+    }
+  },
+  {
+    "block": 2,
+    "type": "C4Container",
+    "source_sha256": "e6ebde69e498c60050531b054f66540a49440062ea7abbd1c110d32dff1d2c12",
+    "svg": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage0-2.svg"
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage0-2.png",
+      "pixels": [
+        462,
+        1600
+      ]
+    }
+  }
+]

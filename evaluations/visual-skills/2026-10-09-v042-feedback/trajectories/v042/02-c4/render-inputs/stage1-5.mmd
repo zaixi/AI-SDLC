@@ -1,0 +1,15 @@
+flowchart LR
+    support["【人员】支持工程师"]
+
+    subgraph company["本公司 · 采购协同系统（容器视图：状态查询）"]
+        admin["【容器】管理门户"]
+        query["【容器】查询API<br/>独立部署进程"]
+        orders[("【数据容器】订单库<br/>PostgreSQL 实例一")]
+        payments[("【数据容器】付款库<br/>PostgreSQL 实例三")]
+
+        admin -->|"HTTPS：调用"| query
+        query -->|"只读订单数据"| orders
+        query -->|"只读付款数据"| payments
+    end
+
+    support -->|"查看处理状态"| admin

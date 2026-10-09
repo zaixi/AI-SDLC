@@ -1,0 +1,1227 @@
+Apply the primary skill to the task below. Output Markdown with editable Mermaid blocks and brief necessary prose/tables. A rendering service is available through this test controller: first return the current draft; actual images of that draft will then be appended in this same conversation. Further rendered feedback will be supplied if you change the draft. Do not invoke any tools, install packages, fetch resources, delegate or read credentials. Do not discuss test/skill names. Do not redesign the supplied system. Reply in Chinese.
+<primary_skill>
+---
+name: visual-explanation
+description: 将当前内容转换为清楚、忠实、最小而充分的视觉表达，用图、树、时序、状态、伪代码、diff 或 HTML 帮助理解概念、关系、过程、结构和变化。用户要求画图或当前任务需要视觉解释时使用，领域不限。不用于一句话能说明的事实、纯命令执行或用户明确只要文字的情况。
+license: MIT
+metadata:
+  version: "0.4.2"
+  upstream: "humanlayer/skills show-me @ ca7c8088db69e315a8b2deea43820270457f8f3c"
+---
+
+# 用视觉表达帮助理解
+
+按 show-me 原文选择和组织视图，只表达当前内容，不承担内容研究或领域决策。以下仅补充上游未覆盖的要求；冲突时以补充为准。
+
+## 本地补充
+
+- **忠实原意。** 保留给定的主体、关系、条件以及假设、建议和未知；不为图完整补造事实，不把不确定内容画成确定结论。
+- **验证与交付。** 环境支持且任务允许时，渲染 Mermaid 或 HTML，检查实际画面中文字是否可读、标签是否重叠、连线是否遮挡关键内容。发现明显问题，调整布局或拆分视图，保留原有主体、关系和条件，再渲染检查。区分语法检查与实际渲染，无法渲染或仍有未解决的显示问题时如实说明；普通文本、伪代码和 diff 无需渲染提示。按调用者要求展示或保存可编辑源。上游打开 HTML 的步骤仅在环境支持且任务允许时执行，否则提供文件位置与查看方式。
+
+## 主动使用 mermaid-diagrams
+
+选用 Mermaid 表达时，若环境提供可由模型使用的 mermaid-diagrams，主动加载其指引或通过支持的接口调用，按图种读取所需参考，不等待用户另行触发。用它补充 show-me 的图种与语法细节，保留当前内容和关键条件，不扩展原任务。
+
+若未安装或仅允许用户手动调用，直接生成 Mermaid，不要求用户再调用另一个入口，也不声称已使用它。该 Skill 是表达指引，不默认提供解析器或渲染器；实际检查使用环境中可用的工具。
+
+## show-me 上游正文（完整保留）
+
+Help the user understand the current topic of conversation visually. Skip the preamble and keep prose brief. Pick the smallest view that makes the key point clear.
+
+- Show logic or an algorithm as pseudocode:
+
+```text
+on(save)
+  if content is unchanged
+    return cached result
+  write new content
+  return fresh result
+```
+
+- Show runtime control flow as a call tree:
+
+```text
+submitForm
+  createSession
+    persistPrompt
+    launchAgent
+  navigateToSession
+```
+
+- Show UI structure as a component tree, including state and module boundaries that matter:
+
+```tsx
+<SessionPage> (apps/example/src/routes/session.tsx)
+  useSessionEvents()
+  <SessionToolbar>
+    <RunSkillButton> (packages/ui)
+```
+
+- Show file responsibility or a broad refactor as a shallow file tree:
+
+```text
+src/
+├── commands/       # parses user actions
+├── sessions/       # owns session state
+└── transport/      # sends API requests
+```
+
+- Show component interaction, control flow, or data flow with Mermaid:
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant UI
+    participant Daemon
+    User->>UI: choose command
+    UI->>Daemon: send expanded prompt
+    Daemon-->>UI: stream result
+```
+
+- Use `diff` when the point is what changes and the surrounding shape already exists. Match the diff shape to the topic.
+
+For a component change:
+
+```diff
+ <SessionPage>
+   useSessionEvents()
+   <SessionToolbar>
++    <RunSkillButton />
+   <SessionTimeline>
++    <SkillResultCard />
+```
+
+For a file-layout change:
+
+```diff
+ src/
+ ├── commands/
++│   └── show-me.ts       # expands the slash command
+ ├── sessions/
+-└── transport.ts
++└── transport/
++    ├── client.ts
++    └── stream.ts
+```
+
+For a call-tree or call-stack change:
+
+```diff
+ submitForm
+   createSession
+     persistPrompt
++    expandSkillMention
+     launchAgent
+-  navigateToSession
++  navigateToSession
++    subscribeToEvents
+```
+
+For a state or control-flow change:
+
+```diff
+ on(save)
+-  write content
++  if content is unchanged
++    return cached result
++  write new content
++  invalidate cache
+```
+
+- Show the whole block when most of it is new, when omitted context would hide ownership or order, or when the user needs a copyable target shape:
+
+```ts
+function expandSkill(command: string): string {
+  const skillName = command.slice(1)
+  return `use the ${skillName} skill`
+}
+```
+
+- For a visual UI, layout, state comparison, or concept too dense for Mermaid, write one focused HTML file — a diagram, an infographic, or a short slide deck, whichever fits the point. Match the product's colors, type, spacing, and components; use real labels and data; support desktop and mobile. Then open it for the user:
+
+```
+Bash(open path/to/show-me-{description}.html)
+```
+
+### guidance
+
+Place each visual next to the short text it supports. Keep only the calls, files, props, states, and boundaries needed to answer the user's current question or the options to resolve the current discussion point.
+
+You may use one of these, you may use several, it is unlikely you will use all of them. Use your judgement and don't overwhelm the user.
+
+</primary_skill>
+<mermaid_guide>
+---
+name: mermaid-diagrams
+description: Comprehensive guide for creating software diagrams using Mermaid syntax. Use when users need to create, visualize, or document software through diagrams including class diagrams (domain modeling, object-oriented design), sequence diagrams (application flows, API interactions, code execution), flowcharts (processes, algorithms, user journeys), entity relationship diagrams (database schemas), C4 architecture diagrams (system context, containers, components), state diagrams, git graphs, pie charts, gantt charts, or any other diagram type. Triggers include requests to "diagram", "visualize", "model", "map out", "show the flow", or when explaining system architecture, database design, code structure, or user/application flows.
+---
+
+# Mermaid Diagramming
+
+Create professional software diagrams using Mermaid's text-based syntax. Mermaid renders diagrams from simple text definitions, making diagrams version-controllable, easy to update, and maintainable alongside code.
+
+## Core Syntax Structure
+
+All Mermaid diagrams follow this pattern:
+
+```mermaid
+diagramType
+  definition content
+```
+
+**Key principles:**
+- First line declares diagram type (e.g., `classDiagram`, `sequenceDiagram`, `flowchart`)
+- Use `%%` for comments
+- Line breaks and indentation improve readability but aren't required
+- Unknown words break diagrams; parameters fail silently
+
+## Diagram Type Selection Guide
+
+**Choose the right diagram type:**
+
+1. **Class Diagrams** - Domain modeling, OOP design, entity relationships
+   - Domain-driven design documentation
+   - Object-oriented class structures
+   - Entity relationships and dependencies
+
+2. **Sequence Diagrams** - Temporal interactions, message flows
+   - API request/response flows
+   - User authentication flows
+   - System component interactions
+   - Method call sequences
+
+3. **Flowcharts** - Processes, algorithms, decision trees
+   - User journeys and workflows
+   - Business processes
+   - Algorithm logic
+   - Deployment pipelines
+
+4. **Entity Relationship Diagrams (ERD)** - Database schemas
+   - Table relationships
+   - Data modeling
+   - Schema design
+
+5. **C4 Diagrams** - Software architecture at multiple levels
+   - System Context (systems and users)
+   - Container (applications, databases, services)
+   - Component (internal structure)
+   - Code (class/interface level)
+
+6. **State Diagrams** - State machines, lifecycle states
+7. **Git Graphs** - Version control branching strategies
+8. **Gantt Charts** - Project timelines, scheduling
+9. **Pie/Bar Charts** - Data visualization
+
+## Quick Start Examples
+
+### Class Diagram (Domain Model)
+```mermaid
+classDiagram
+    Title -- Genre
+    Title *-- Season
+    Title *-- Review
+    User --> Review : creates
+    
+    class Title {
+        +string name
+        +int releaseYear
+        +play()
+    }
+    
+    class Genre {
+        +string name
+        +getTopTitles()
+    }
+```
+
+### Sequence Diagram (API Flow)
+```mermaid
+sequenceDiagram
+    participant User
+    participant API
+    participant Database
+    
+    User->>API: POST /login
+    API->>Database: Query credentials
+    Database-->>API: Return user data
+    alt Valid credentials
+        API-->>User: 200 OK + JWT token
+    else Invalid credentials
+        API-->>User: 401 Unauthorized
+    end
+```
+
+### Flowchart (User Journey)
+```mermaid
+flowchart TD
+    Start([User visits site]) --> Auth{Authenticated?}
+    Auth -->|No| Login[Show login page]
+    Auth -->|Yes| Dashboard[Show dashboard]
+    Login --> Creds[Enter credentials]
+    Creds --> Validate{Valid?}
+    Validate -->|Yes| Dashboard
+    Validate -->|No| Error[Show error]
+    Error --> Login
+```
+
+### ERD (Database Schema)
+```mermaid
+erDiagram
+    USER ||--o{ ORDER : places
+    ORDER ||--|{ LINE_ITEM : contains
+    PRODUCT ||--o{ LINE_ITEM : includes
+    
+    USER {
+        int id PK
+        string email UK
+        string name
+        datetime created_at
+    }
+    
+    ORDER {
+        int id PK
+        int user_id FK
+        decimal total
+        datetime created_at
+    }
+```
+
+## Detailed References
+
+For in-depth guidance on specific diagram types, see:
+
+- **[references/class-diagrams.md](references/class-diagrams.md)** - Domain modeling, relationships (association, composition, aggregation, inheritance), multiplicity, methods/properties
+- **[references/sequence-diagrams.md](references/sequence-diagrams.md)** - Actors, participants, messages (sync/async), activations, loops, alt/opt/par blocks, notes
+- **[references/flowcharts.md](references/flowcharts.md)** - Node shapes, connections, decision logic, subgraphs, styling
+- **[references/erd-diagrams.md](references/erd-diagrams.md)** - Entities, relationships, cardinality, keys, attributes
+- **[references/c4-diagrams.md](references/c4-diagrams.md)** - System context, container, component diagrams, boundaries
+- **[references/advanced-features.md](references/advanced-features.md)** - Themes, styling, configuration, layout options
+
+## Best Practices
+
+1. **Start Simple** - Begin with core entities/components, add details incrementally
+2. **Use Meaningful Names** - Clear labels make diagrams self-documenting
+3. **Comment Extensively** - Use `%%` comments to explain complex relationships
+4. **Keep Focused** - One diagram per concept; split large diagrams into multiple focused views
+5. **Version Control** - Store `.mmd` files alongside code for easy updates
+6. **Add Context** - Include titles and notes to explain diagram purpose
+7. **Iterate** - Refine diagrams as understanding evolves
+
+## Configuration and Theming
+
+Configure diagrams using frontmatter:
+
+```mermaid
+---
+config:
+  theme: base
+  themeVariables:
+    primaryColor: "#ff6b6b"
+---
+flowchart LR
+    A --> B
+```
+
+**Available themes:** default, forest, dark, neutral, base
+
+**Layout options:**
+- `layout: dagre` (default) - Classic balanced layout
+- `layout: elk` - Advanced layout for complex diagrams (requires integration)
+
+**Look options:**
+- `look: classic` - Traditional Mermaid style
+- `look: handDrawn` - Sketch-like appearance
+
+## Exporting and Rendering
+
+**Native support in:**
+- GitHub/GitLab - Automatically renders in Markdown
+- VS Code - With Markdown Mermaid extension
+- Notion, Obsidian, Confluence - Built-in support
+
+**Export options:**
+- [Mermaid Live Editor](https://mermaid.live) - Online editor with PNG/SVG export
+- Mermaid CLI - `npm install -g @mermaid-js/mermaid-cli` then `mmdc -i input.mmd -o output.png`
+- Docker - `docker run --rm -v $(pwd):/data minlag/mermaid-cli -i /data/input.mmd -o /data/output.png`
+
+## Common Pitfalls
+
+- **Breaking characters** - Avoid `{}` in comments, use proper escape sequences for special characters
+- **Syntax errors** - Misspellings break diagrams; validate syntax in Mermaid Live
+- **Overcomplexity** - Split complex diagrams into multiple focused views
+- **Missing relationships** - Document all important connections between entities
+
+## When to Create Diagrams
+
+**Always diagram when:**
+- Starting new projects or features
+- Documenting complex systems
+- Explaining architecture decisions
+- Designing database schemas
+- Planning refactoring efforts
+- Onboarding new team members
+
+**Use diagrams to:**
+- Align stakeholders on technical decisions
+- Document domain models collaboratively
+- Visualize data flows and system interactions
+- Plan before coding
+- Create living documentation that evolves with code
+
+</mermaid_guide>
+
+<related_reference>
+# Sequence Diagrams
+
+Sequence diagrams show interactions between participants over time. They're ideal for API flows, authentication sequences, and system component interactions.
+
+## Basic Syntax
+
+```mermaid
+sequenceDiagram
+    participant A
+    participant B
+    A->>B: Message
+```
+
+## Participants and Actors
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant API
+    participant Database
+    
+    User->>Frontend: Click button
+    Frontend->>API: POST /data
+```
+
+**Difference:**
+- `participant` - System components (services, classes, databases)
+- `actor` - External entities (users, external systems)
+
+## Message Types
+
+### Solid Arrow (Synchronous)
+```mermaid
+sequenceDiagram
+    Client->>Server: Request
+    Server-->>Client: Response
+```
+
+- `->>`  Solid arrow (request)
+- `-->>`  Dotted arrow (response/return)
+
+### Open Arrow (Asynchronous)
+```mermaid
+sequenceDiagram
+    Client-)Server: Async message
+    Server--)Client: Async response
+```
+
+- `-)` Solid open arrow
+- `--)` Dotted open arrow
+
+### Cross/X (Delete)
+```mermaid
+sequenceDiagram
+    Client-xServer: Delete
+```
+
+## Activations
+
+Show when a participant is actively processing:
+
+```mermaid
+sequenceDiagram
+    Client->>+Server: Request
+    Server->>+Database: Query
+    Database-->>-Server: Data
+    Server-->>-Client: Response
+```
+
+- `+` after arrow activates
+- `-` before arrow deactivates
+
+## Alt/Else (Conditional Logic)
+
+```mermaid
+sequenceDiagram
+    User->>API: POST /login
+    API->>Database: Query user
+    Database-->>API: User data
+    
+    alt Valid credentials
+        API-->>User: 200 OK + Token
+    else Invalid credentials
+        API-->>User: 401 Unauthorized
+    else Account locked
+        API-->>User: 403 Forbidden
+    end
+```
+
+## Opt (Optional)
+
+```mermaid
+sequenceDiagram
+    User->>API: POST /order
+    API->>PaymentService: Process payment
+    
+    opt Payment successful
+        API->>EmailService: Send confirmation
+    end
+    
+    API-->>User: Order result
+```
+
+## Par (Parallel)
+
+Show concurrent operations:
+
+```mermaid
+sequenceDiagram
+    API->>Service: Process order
+    
+    par Send email
+        Service->>EmailService: Send confirmation
+    and Update inventory
+        Service->>InventoryService: Reduce stock
+    and Log event
+        Service->>LogService: Log order
+    end
+    
+    Service-->>API: Complete
+```
+
+## Loop
+
+```mermaid
+sequenceDiagram
+    Client->>Server: Request batch
+    
+    loop For each item
+        Server->>Database: Process item
+        Database-->>Server: Result
+    end
+    
+    Server-->>Client: All results
+```
+
+**Loop with condition:**
+```mermaid
+sequenceDiagram
+    loop Every 5 seconds
+        Monitor->>API: Health check
+        API-->>Monitor: Status
+    end
+```
+
+## Break (Early Exit)
+
+```mermaid
+sequenceDiagram
+    User->>API: Submit form
+    API->>Validator: Validate input
+    
+    break Input invalid
+        API-->>User: 400 Bad Request
+    end
+    
+    API->>Database: Save data
+    Database-->>API: Success
+    API-->>User: 200 OK
+```
+
+## Notes
+
+### Note over single participant
+```mermaid
+sequenceDiagram
+    User->>API: Request
+    Note over API: Validates JWT token
+    API-->>User: Response
+```
+
+### Note spanning participants
+```mermaid
+sequenceDiagram
+    Frontend->>API: Request
+    Note over Frontend,API: HTTPS encrypted
+    API-->>Frontend: Response
+```
+
+### Right/Left notes
+```mermaid
+sequenceDiagram
+    User->>System: Action
+    Note right of System: Logs to database
+    System-->>User: Response
+    Note left of User: Updates UI
+```
+
+## Sequence Numbers
+
+Automatically number messages:
+
+```mermaid
+sequenceDiagram
+    autonumber
+    
+    User->>Frontend: Login
+    Frontend->>API: Authenticate
+    API->>Database: Verify credentials
+    Database-->>API: User data
+    API-->>Frontend: JWT token
+    Frontend-->>User: Success
+```
+
+## Links and Tooltips
+
+Add clickable links:
+
+```mermaid
+sequenceDiagram
+    participant A as Service A
+    link A: Dashboard @ https://dashboard.example.com
+    link A: API Docs @ https://docs.example.com
+    
+    A->>B: Message
+```
+
+## Comprehensive Example: User Authentication Flow
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor User
+    participant Frontend
+    participant AuthAPI
+    participant Database
+    participant Redis
+    participant EmailService
+    
+    User->>+Frontend: Enter credentials
+    Frontend->>+AuthAPI: POST /auth/login
+    
+    AuthAPI->>+Database: Query user by email
+    Database-->>-AuthAPI: User record
+    
+    alt User not found
+        AuthAPI-->>Frontend: 404 User not found
+        Frontend-->>User: Show error
+    else User found
+        AuthAPI->>AuthAPI: Verify password hash
+        
+        alt Invalid password
+            AuthAPI->>Database: Increment failed attempts
+            
+            opt Failed attempts > 5
+                AuthAPI->>Database: Lock account
+                AuthAPI->>EmailService: Send security alert
+            end
+            
+            AuthAPI-->>Frontend: 401 Invalid credentials
+            Frontend-->>User: Show error
+        else Valid password
+            AuthAPI->>AuthAPI: Generate JWT token
+            AuthAPI->>+Redis: Store session
+            Redis-->>-AuthAPI: Confirm
+            
+            par Update login metadata
+                AuthAPI->>Database: Update last_login
+            and Track analytics
+                AuthAPI->>Database: Log login event
+            end
+            
+            AuthAPI-->>-Frontend: 200 OK + JWT token
+            Frontend->>Frontend: Store token in localStorage
+            Frontend-->>-User: Redirect to dashboard
+            
+            opt First login
+                EmailService->>User: Welcome email
+            end
+        end
+    end
+```
+
+## API Request/Response Example
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Client
+    participant Gateway
+    participant AuthService
+    participant UserService
+    participant Database
+    
+    Client->>+Gateway: GET /api/users/123
+    Note over Gateway: Rate limiting check
+    
+    Gateway->>+AuthService: Validate JWT
+    AuthService->>AuthService: Verify signature
+    
+    alt Token invalid or expired
+        AuthService-->>Gateway: 401 Unauthorized
+        Gateway-->>Client: 401 Unauthorized
+    else Token valid
+        AuthService-->>-Gateway: User context
+        
+        Gateway->>+UserService: GET /users/123
+        UserService->>+Database: SELECT * FROM users WHERE id=123
+        Database-->>-UserService: User record
+        
+        alt User not found
+            UserService-->>Gateway: 404 Not Found
+            Gateway-->>Client: 404 Not Found
+        else User found
+            UserService-->>-Gateway: 200 OK + User data
+            Gateway-->>-Client: 200 OK + User data
+        end
+    end
+```
+
+## Microservices Communication
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Gateway
+    participant OrderService
+    participant PaymentService
+    participant InventoryService
+    participant NotificationService
+    participant MessageQueue
+    
+    User->>+Gateway: POST /orders
+    Gateway->>+OrderService: Create order
+    
+    OrderService->>+InventoryService: Check stock
+    InventoryService-->>-OrderService: Stock available
+    
+    break Insufficient stock
+        OrderService-->>Gateway: 400 Out of stock
+        Gateway-->>User: Error message
+    end
+    
+    OrderService->>OrderService: Reserve order
+    OrderService->>+PaymentService: Charge customer
+    
+    alt Payment successful
+        PaymentService-->>-OrderService: Payment confirmed
+        OrderService->>MessageQueue: Publish OrderConfirmed event
+        
+        par Async processing
+            MessageQueue->>InventoryService: Reduce stock
+        and
+            MessageQueue->>NotificationService: Send confirmation
+            NotificationService->>User: Email confirmation
+        end
+        
+        OrderService-->>-Gateway: 201 Created
+        Gateway-->>User: Order confirmed
+    else Payment failed
+        PaymentService-->>OrderService: Payment declined
+        OrderService->>OrderService: Release reservation
+        OrderService-->>Gateway: 402 Payment Required
+        Gateway-->>User: Payment failed
+    end
+```
+
+## Best Practices
+
+1. **Order participants logically** - Typically: User → Frontend → Backend → Database
+2. **Use activations** - Shows when components are actively processing
+3. **Group related logic** - Use alt/opt/par to organize conditional flows
+4. **Add descriptive notes** - Explain complex logic or important details
+5. **Keep diagrams focused** - One scenario per diagram
+6. **Number messages** - Use autonumber for complex flows
+7. **Show error paths** - Document failure scenarios with alt/else
+8. **Indicate async operations** - Use open arrows for fire-and-forget messages
+
+## Common Use Cases
+
+### Authentication
+- Login flows
+- OAuth/SSO flows
+- Token refresh
+- Password reset
+
+### API Operations
+- CRUD operations
+- Search and filtering
+- Batch processing
+- Webhook handling
+
+### System Integration
+- Microservice communication
+- Third-party API calls
+- Message queue processing
+- Event-driven architecture
+
+### Business Processes
+- Order fulfillment
+- Payment processing
+- Approval workflows
+- Notification chains
+
+</related_reference>
+
+<related_reference>
+# Flowcharts
+
+Flowcharts visualize processes, algorithms, decision trees, and user journeys. They show step-by-step progression through a system or workflow.
+
+## Basic Syntax
+
+```mermaid
+flowchart TD
+    A --> B
+```
+
+**Directions:**
+- `TD` or `TB` - Top to Bottom (default)
+- `BT` - Bottom to Top
+- `LR` - Left to Right
+- `RL` - Right to Left
+
+## Node Shapes
+
+### Rectangle (default)
+```mermaid
+flowchart LR
+    A[Process step]
+```
+
+### Rounded Rectangle
+```mermaid
+flowchart LR
+    B([Rounded process])
+```
+
+### Stadium/Pill Shape
+```mermaid
+flowchart LR
+    C(Start or End)
+```
+
+### Subroutine (Double Border)
+```mermaid
+flowchart LR
+    D[[Subroutine]]
+```
+
+### Cylindrical (Database)
+```mermaid
+flowchart LR
+    E[(Database)]
+```
+
+### Circle
+```mermaid
+flowchart LR
+    F((Circle node))
+```
+
+### Asymmetric/Flag
+```mermaid
+flowchart LR
+    G>Flag node]
+```
+
+### Rhombus (Decision)
+```mermaid
+flowchart LR
+    H{Decision?}
+```
+
+### Hexagon
+```mermaid
+flowchart LR
+    I{{Hexagon}}
+```
+
+### Parallelogram (Input/Output)
+```mermaid
+flowchart LR
+    J[/Input or Output/]
+    K[\Alternative IO\]
+```
+
+### Trapezoid
+```mermaid
+flowchart LR
+    L[/Trapezoid\]
+    M[\Alt trapezoid/]
+```
+
+## Connections
+
+### Basic Arrow
+```mermaid
+flowchart LR
+    A --> B
+```
+
+### Open Link (No Arrow)
+```mermaid
+flowchart LR
+    A --- B
+```
+
+### Text on Links
+```mermaid
+flowchart LR
+    A -->|Label text| B
+    C ---|"Text with spaces"| D
+```
+
+### Dotted Links
+```mermaid
+flowchart LR
+    A -.-> B
+    C -.- D
+    E -.Label.-> F
+```
+
+### Thick Links
+```mermaid
+flowchart LR
+    A ==> B
+    C === D
+    E ==Label==> F
+```
+
+### Chaining
+```mermaid
+flowchart LR
+    A --> B --> C --> D
+    E --> F & G --> H
+```
+
+### Multi-directional
+```mermaid
+flowchart LR
+    A --> B & C & D
+    B & C & D --> E
+```
+
+## Subgraphs
+
+Group related nodes:
+
+```mermaid
+flowchart TB
+    A[Start]
+    
+    subgraph Processing
+        B[Step 1]
+        C[Step 2]
+        D[Step 3]
+    end
+    
+    E[End]
+    
+    A --> B
+    D --> E
+```
+
+### Nested Subgraphs
+```mermaid
+flowchart TB
+    subgraph Outer
+        A[Node A]
+        
+        subgraph Inner
+            B[Node B]
+            C[Node C]
+        end
+    end
+```
+
+### Subgraph Direction
+```mermaid
+flowchart LR
+    subgraph one
+        direction TB
+        A1 --> A2
+    end
+    
+    subgraph two
+        direction TB
+        B1 --> B2
+    end
+    
+    one --> two
+```
+
+## Styling
+
+### Individual Node Styling
+```mermaid
+flowchart LR
+    A[Normal]
+    B[Styled]
+    
+    style B fill:#ff6b6b,stroke:#333,stroke-width:4px,color:#fff
+```
+
+### Class-based Styling
+```mermaid
+flowchart LR
+    A[Node 1]:::className
+    B[Node 2]:::className
+    C[Node 3]
+    
+    classDef className fill:#f9f,stroke:#333,stroke-width:2px
+```
+
+### Link Styling
+```mermaid
+flowchart LR
+    A --> B
+    linkStyle 0 stroke:#ff3,stroke-width:4px,color:red
+```
+
+## Comprehensive Example: User Registration Flow
+
+```mermaid
+flowchart TD
+    Start([User visits registration page]) --> Form[Show registration form]
+    Form --> Input[User enters details]
+    Input --> Validate{Valid input?}
+    
+    Validate -->|No| ShowError[Show validation errors]
+    ShowError --> Form
+    
+    Validate -->|Yes| CheckEmail{Email exists?}
+    
+    CheckEmail -->|Yes| EmailError[Show 'Email already registered']
+    EmailError --> Form
+    
+    CheckEmail -->|No| CreateAccount[Create user account]
+    CreateAccount --> Hash[Hash password]
+    Hash --> SaveDB[(Save to database)]
+    SaveDB --> GenerateToken[Generate verification token]
+    GenerateToken --> SendEmail[Send verification email]
+    SendEmail --> ShowSuccess[Show success message]
+    ShowSuccess --> End([Redirect to login])
+    
+    style Start fill:#90EE90,stroke:#333,stroke-width:2px
+    style End fill:#90EE90,stroke:#333,stroke-width:2px
+    style CreateAccount fill:#87CEEB,stroke:#333,stroke-width:2px
+    style SaveDB fill:#FFD700,stroke:#333,stroke-width:2px
+```
+
+## Algorithm Example: Binary Search
+
+```mermaid
+flowchart TD
+    Start([Start Binary Search]) --> Init[Set low = 0, high = array.length - 1]
+    Init --> Check{low <= high?}
+    
+    Check -->|No| NotFound[Return -1: Not found]
+    NotFound --> End([End])
+    
+    Check -->|Yes| CalcMid[mid = low + (high - low) / 2]
+    CalcMid --> Compare{array[mid] == target?}
+    
+    Compare -->|Yes| Found[Return mid: Found]
+    Found --> End
+    
+    Compare -->|No| CheckLess{array[mid] < target?}
+    
+    CheckLess -->|Yes| MoveLow[low = mid + 1]
+    MoveLow --> Check
+    
+    CheckLess -->|No| MoveHigh[high = mid - 1]
+    MoveHigh --> Check
+    
+    style Start fill:#90EE90
+    style End fill:#90EE90
+    style Found fill:#FFD700
+    style NotFound fill:#FF6B6B
+```
+
+## CI/CD Pipeline
+
+```mermaid
+flowchart LR
+    subgraph Development
+        Commit[Developer commits code] --> Push[Push to repository]
+    end
+    
+    subgraph CI
+        Push --> Trigger[Trigger CI pipeline]
+        Trigger --> Checkout[Checkout code]
+        Checkout --> Install[Install dependencies]
+        Install --> Lint[Run linters]
+        Lint --> Test[Run tests]
+        Test --> Build[Build application]
+    end
+    
+    subgraph QA
+        Build --> DeployStaging[Deploy to staging]
+        DeployStaging --> E2E[Run E2E tests]
+        E2E --> ManualQA{Manual QA approval?}
+    end
+    
+    subgraph Production
+        ManualQA -->|Approved| DeployProd[Deploy to production]
+        DeployProd --> HealthCheck{Health check passed?}
+        HealthCheck -->|Yes| Success([Deployment successful])
+        HealthCheck -->|No| Rollback[Rollback deployment]
+        Rollback --> Alert[Alert team]
+    end
+    
+    ManualQA -->|Rejected| FixIssues[Fix issues]
+    FixIssues --> Development
+    
+    Test -->|Failed| NotifyDev[Notify developer]
+    NotifyDev --> FixIssues
+```
+
+## E-Commerce Checkout Flow
+
+```mermaid
+flowchart TD
+    Start([User clicks Checkout]) --> Auth{Authenticated?}
+    
+    Auth -->|No| Login[Redirect to login]
+    Login --> Auth
+    
+    Auth -->|Yes| Cart{Cart empty?}
+    Cart -->|Yes| EmptyCart[Show empty cart message]
+    EmptyCart --> Browse[Redirect to products]
+    
+    Cart -->|No| Address[Show shipping address form]
+    Address --> ValidateAddr{Valid address?}
+    ValidateAddr -->|No| Address
+    ValidateAddr -->|Yes| Shipping[Select shipping method]
+    
+    Shipping --> Payment[Enter payment details]
+    Payment --> ValidatePayment{Valid payment info?}
+    ValidatePayment -->|No| Payment
+    
+    ValidatePayment -->|Yes| Review[Show order review]
+    Review --> Confirm{Confirm order?}
+    
+    Confirm -->|No| Edit{Edit what?}
+    Edit -->|Address| Address
+    Edit -->|Shipping| Shipping
+    Edit -->|Payment| Payment
+    
+    Confirm -->|Yes| ProcessPayment[Process payment]
+    ProcessPayment --> PaymentResult{Payment successful?}
+    
+    PaymentResult -->|No| PaymentError[Show payment error]
+    PaymentError --> RetryPayment{Retry?}
+    RetryPayment -->|Yes| Payment
+    RetryPayment -->|No| Cancel([Order cancelled])
+    
+    PaymentResult -->|Yes| CreateOrder[(Create order record)]
+    CreateOrder --> ReduceStock[Reduce inventory]
+    ReduceStock --> SendConfirmation[Send confirmation email]
+    SendConfirmation --> Success([Order complete - Show confirmation])
+    
+    style Start fill:#90EE90
+    style Success fill:#90EE90
+    style Cancel fill:#FF6B6B
+    style CreateOrder fill:#FFD700
+```
+
+## Decision Matrix Example
+
+```mermaid
+flowchart TD
+    Start([Select deployment strategy]) --> Env{Environment?}
+    
+    Env -->|Development| DevDecision{Automated tests?}
+    DevDecision -->|Pass| DevDeploy[Auto-deploy to dev]
+    DevDecision -->|Fail| Block[Block deployment]
+    
+    Env -->|Staging| StageDecision{All checks pass?}
+    StageDecision -->|Yes| StageDeploy[Deploy to staging]
+    StageDecision -->|No| Block
+    
+    Env -->|Production| ProdDecision{Change type?}
+    
+    ProdDecision -->|Hotfix| Urgent{Critical bug?}
+    Urgent -->|Yes| FastTrack[Emergency approval + deploy]
+    Urgent -->|No| NormalProcess
+    
+    ProdDecision -->|Feature| NormalProcess{Approval status?}
+    NormalProcess -->|Approved| Schedule{Deploy window?}
+    NormalProcess -->|Pending| Wait[Wait for approval]
+    NormalProcess -->|Rejected| Block
+    
+    Schedule -->|Now| ImmediateDeploy[Deploy immediately]
+    Schedule -->|Scheduled| QueueDeploy[Queue for deploy window]
+    
+    DevDeploy --> Monitor[Monitor metrics]
+    StageDeploy --> Monitor
+    FastTrack --> Monitor
+    ImmediateDeploy --> Monitor
+    QueueDeploy --> Monitor
+    
+    Monitor --> End([Deployment complete])
+    Block --> End
+    Wait --> End
+```
+
+## Best Practices
+
+1. **Use meaningful labels** - Node text should be clear and action-oriented
+2. **Consistent node shapes** - Same shapes for same types of actions
+3. **Decision nodes as diamonds** - Standard convention for yes/no decisions
+4. **Flow top-to-bottom or left-to-right** - Natural reading direction
+5. **Start and end nodes** - Use stadium/pill shapes to mark entry/exit
+6. **Group related steps** - Use subgraphs for logical groupings
+7. **Color code** - Use colors to highlight different types of actions
+8. **Minimize crossing lines** - Reorganize for clarity
+9. **Keep it focused** - One process per diagram
+
+## Common Patterns
+
+### Simple Linear Flow
+```mermaid
+flowchart LR
+    A[Step 1] --> B[Step 2] --> C[Step 3] --> D[Step 4]
+```
+
+### Branching Decision
+```mermaid
+flowchart TD
+    A[Input] --> B{Condition?}
+    B -->|True| C[Path 1]
+    B -->|False| D[Path 2]
+    C --> E[Merge]
+    D --> E
+```
+
+### Loop Pattern
+```mermaid
+flowchart TD
+    A[Initialize] --> B[Process]
+    B --> C{Continue?}
+    C -->|Yes| B
+    C -->|No| D[Exit]
+```
+
+### Error Handling
+```mermaid
+flowchart TD
+    A[Try operation] --> B{Success?}
+    B -->|Yes| C[Continue]
+    B -->|No| D[Handle error]
+    D --> E{Retry?}
+    E -->|Yes| A
+    E -->|No| F[Abort]
+```
+
+</related_reference>
+
+<task>
+请把以下已确认的发布体系解释给新同事。自行选取和组织最小而充分的视觉视图，不指定图种，不把所有信息硬塞成一张图；保留重要约束，不能重新设计。发布单关联且仅关联一个不可变构建产物；同一产物可被多个发布单使用。发布单创建后为草稿，提交后待审，审核通过后待执行，拒绝回草稿；待执行可取消，执行中不能取消。调度器只执行待执行单，先进入执行中，按服务批次逐批部署；每批成功才推进下一批，任一批失败则停止后续批次并进入失败，已成功批次不自动回滚；全部成功才进入完成。审阅人只能审批，发布人只能提交/取消，调度器只能推进执行状态。一个人可拥有两个角色，但同一单的提交人不能审批该单。部署工作器接收调度器批次任务并返回批次结果，调度器据此更新发布状态。工作器可能重复返回同一批结果，调度器忽略已记录批次的重复结果，不再次推进批次。系统含发布门户、发布API、调度器、工作器和产物仓库；门户向API提交/审批/取消，API记录发布单；调度器读取API的待执行单并写回状态；工作器从产物仓库读取该单指定产物。未提供数据库、消息队列、通知、超时、自动重试或失败后恢复方案。需要让人看清：各部分怎样协作、发布状态与异常如何演变、审批约束落在哪里。中文表达，短文只补图不能清楚表达的部分。
+</task>

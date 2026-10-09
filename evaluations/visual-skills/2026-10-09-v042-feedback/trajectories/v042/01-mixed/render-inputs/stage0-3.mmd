@@ -1,0 +1,30 @@
+sequenceDiagram
+    participant A as 发布 API
+    participant S as 调度器
+    participant W as 部署工作器
+    participant R as 产物仓库
+
+    S->>A: 读取待执行单
+    A-->>S: 待执行单及指定产物
+    S->>A: 状态写为执行中
+
+    loop 按服务批次逐批执行；失败后停止
+        S->>W: 下发当前批次任务
+        W->>R: 读取该单指定产物
+        R-->>W: 指定产物
+        W-->>S: 返回批次结果
+
+        alt 该批次结果已记录
+            Note over S: 忽略重复结果<br/>不再次推进批次
+        else 该批次结果尚未记录
+            S->>S: 记录批次结果
+            alt 本批失败
+                S->>A: 状态写为失败
+                Note over S,W: 停止后续批次<br/>已成功批次不自动回滚
+            else 本批成功且仍有下一批
+                S->>S: 推进到下一批
+            else 本批成功且全部批次已成功
+                S->>A: 状态写为完成
+            end
+        end
+    end

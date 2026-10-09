@@ -1,0 +1,16 @@
+C4Container
+    title 采购协同系统：处理状态查询
+
+    Person(support, "支持工程师", "仅查看处理状态")
+
+    Container_Boundary(company, "本公司：采购协同系统") {
+        Container(admin, "管理门户", "Web应用", "处理状态查看入口")
+        Container(query, "查询API", "独立部署进程", "只读查询订单与付款数据")
+        ContainerDb(orders, "订单库", "PostgreSQL实例一", "存储订单")
+        ContainerDb(payments, "付款库", "PostgreSQL实例三", "存储付款数据")
+    }
+
+    Rel(support, admin, "查看处理状态")
+    Rel(admin, query, "调用", "HTTPS")
+    Rel(query, orders, "只读订单数据")
+    Rel(query, payments, "只读付款数据")

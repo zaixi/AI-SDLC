@@ -1,0 +1,86 @@
+[
+  {
+    "block": 1,
+    "type": "flowchart TB",
+    "source_sha256": "b597801bf0d6b89c928282df3c9673d48f0c737e500b4b54c62d1ddf999ddf8b",
+    "svg": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage1-1.svg"
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage1-1.png",
+      "pixels": [
+        1217,
+        1600
+      ]
+    }
+  },
+  {
+    "block": 2,
+    "type": "flowchart LR",
+    "source_sha256": "b175fd686466c0921591e497abe6b9c60f90cef73cd323c7374fa4c94a07017e",
+    "svg": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage1-2.svg"
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage1-2.png",
+      "pixels": [
+        1600,
+        611
+      ]
+    }
+  },
+  {
+    "block": 3,
+    "type": "flowchart LR",
+    "source_sha256": "00421ab2434f717686d44db6320d879ce78ed30cb2fb25ae6c8cebe27f1a5a84",
+    "svg": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage1-3.svg"
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage1-3.png",
+      "pixels": [
+        1600,
+        701
+      ]
+    }
+  },
+  {
+    "block": 4,
+    "type": "flowchart LR",
+    "source_sha256": "8c60dd17ae2ac1e8af98156a56ad9325fe8a94d57a6196f8f944c2a54c34251f",
+    "svg": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage1-4.svg"
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage1-4.png",
+      "pixels": [
+        1600,
+        635
+      ]
+    }
+  }
+]

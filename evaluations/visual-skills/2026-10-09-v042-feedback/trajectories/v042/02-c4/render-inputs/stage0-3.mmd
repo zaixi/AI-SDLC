@@ -1,0 +1,19 @@
+C4Container
+    title 采购协同系统：付款链路
+
+    System_Ext(bank, "付款系统（银行）", "接收请求、异步回传付款结果")
+
+    Container_Boundary(company, "本公司：采购协同系统") {
+        Container(api, "采购API", "独立部署进程", "发起付款申请事件")
+        ContainerQueue(kafka, "内部Kafka", "Kafka", "传递内部事件")
+        Container(paymentWorker, "付款处理器", "运行进程", "处理付款申请与付款结果")
+        Container(callback, "回调网关", "运行单元", "接收外部回调")
+        ContainerDb(payments, "付款库", "PostgreSQL实例三", "存储付款数据")
+    }
+
+    Rel(api, kafka, "写入付款申请事件")
+    Rel(paymentWorker, kafka, "消费付款申请事件与付款结果")
+    Rel(paymentWorker, bank, "发送付款请求", "HTTPS")
+    Rel(bank, callback, "异步回传付款结果", "HTTPS")
+    Rel(callback, kafka, "写入付款结果")
+    Rel(paymentWorker, payments, "写入付款数据")

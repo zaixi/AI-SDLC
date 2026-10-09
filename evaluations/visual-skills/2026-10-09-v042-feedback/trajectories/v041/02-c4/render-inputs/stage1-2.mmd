@@ -1,0 +1,29 @@
+flowchart LR
+    buyer["采购员<br/>【人员】"]
+
+    subgraph company["本公司 · 采购协同系统"]
+        web["Web门户<br/>【容器】"]
+        api["采购API<br/>【容器 · 独立部署进程】"]
+        orders[("订单库<br/>【数据库容器】<br/>PostgreSQL 实例一")]
+        outbox[("Outbox库<br/>【数据库容器】<br/>PostgreSQL 实例二")]
+        publisher["事件发布器<br/>【容器】"]
+        callback["回调网关<br/>【容器】"]
+        kafka[["内部Kafka<br/>【消息容器】"]]
+        worker["订单处理器<br/>【容器】"]
+
+        web -->|"HTTPS · 调用"| api
+        api -->|"读写订单"| orders
+        api -->|"写待发送事件"| outbox
+        publisher -->|"读事件"| outbox
+        callback -->|"写交付事件"| kafka
+        worker -->|"消费交付事件"| kafka
+        worker -->|"写订单"| orders
+    end
+
+    subgraph supplierOrg["合作供应商"]
+        supplier["供应商系统<br/>【外部系统】"]
+    end
+
+    buyer -->|"发订单"| web
+    publisher -->|"HTTPS · 发送订单"| supplier
+    supplier -->|"HTTPS · 发送交付事件"| callback
