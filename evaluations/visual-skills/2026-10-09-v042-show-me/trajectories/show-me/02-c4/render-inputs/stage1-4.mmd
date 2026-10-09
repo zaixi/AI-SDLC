@@ -1,0 +1,17 @@
+flowchart TB
+    support["支持工程师<br/>人员"]
+
+    subgraph company["本公司"]
+        subgraph procurement["采购协同系统 · 容器"]
+            admin["管理门户<br/>应用"]
+            query["查询API<br/>独立部署进程"]
+            orders[("订单库<br/>PostgreSQL 实例 1")]
+            payments[("付款库<br/>PostgreSQL 实例 3")]
+
+            admin -->|"HTTPS：调用"| query
+            query -->|"只读"| orders
+            query -->|"只读"| payments
+        end
+    end
+
+    support -->|"仅查看处理状态"| admin

@@ -1,0 +1,86 @@
+[
+  {
+    "block": 1,
+    "type": "C4Context",
+    "source_sha256": "6e58e06dac71f7ca3f1bcefdd4c8163e8207b35d4fbf01883ec6ad1b7fa2609e",
+    "svg": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage0-1.svg"
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage0-1.png",
+      "pixels": [
+        1600,
+        1047
+      ]
+    }
+  },
+  {
+    "block": 2,
+    "type": "C4Container",
+    "source_sha256": "6ee133e54dad6f40596497491e5ab39ba7ab7c01f61741a75e40b7176d9e442d",
+    "svg": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage0-2.svg"
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage0-2.png",
+      "pixels": [
+        1019,
+        1600
+      ]
+    }
+  },
+  {
+    "block": 3,
+    "type": "C4Container",
+    "source_sha256": "47917f207fee5a9cb13e0cd5425b4a3d7706265d699957f006851d9ba672a652",
+    "svg": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage0-3.svg"
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage0-3.png",
+      "pixels": [
+        1252,
+        1600
+      ]
+    }
+  },
+  {
+    "block": 4,
+    "type": "C4Container",
+    "source_sha256": "bda3d0185243e55ab838d442f8fa334dbc109dc7282ed178c703662826a5d219",
+    "svg": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage0-4.svg"
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage0-4.png",
+      "pixels": [
+        1337,
+        1600
+      ]
+    }
+  }
+]

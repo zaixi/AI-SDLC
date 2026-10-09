@@ -1,0 +1,44 @@
+[
+  {
+    "block": 1,
+    "type": "flowchart LR",
+    "source_sha256": "a9f09183631196262b7200140bdf4544bc7ff6cb4c7ca367d8e77ca56ddad9fe",
+    "svg": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage0-1.svg"
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage0-1.png",
+      "pixels": [
+        1600,
+        507
+      ]
+    }
+  },
+  {
+    "block": 2,
+    "type": "flowchart TB",
+    "source_sha256": "56eb0e27280b043487915c5366e00e2d137b60a234633e284f0e0d5ab2a3ee0f",
+    "svg": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage0-2.svg"
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage0-2.png",
+      "pixels": [
+        1600,
+        1224
+      ]
+    }
+  }
+]

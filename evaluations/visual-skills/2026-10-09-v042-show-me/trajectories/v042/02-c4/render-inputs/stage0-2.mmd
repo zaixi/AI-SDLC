@@ -1,0 +1,29 @@
+C4Container
+    title 容器视图：订单发送与交付处理
+
+    Person(buyer, "采购员", "发订单")
+    System_Ext(supplier, "供应商系统", "归属合作供应商；内部未展开")
+
+    Container_Boundary(procurement, "本公司 · 采购协同系统") {
+        Container(web, "Web门户", "技术未指定", "采购员操作入口")
+        Container(api, "采购API", "独立部署进程", "订单读写、写待发送事件")
+        ContainerDb(orderDb, "订单库", "PostgreSQL · 独立实例①", "存储订单")
+        ContainerDb(outboxDb, "Outbox库", "PostgreSQL · 独立实例②", "存储待发送事件")
+        Container(publisher, "事件发布器", "技术未指定", "读取事件并发送订单")
+        Container(callback, "回调网关", "技术未指定", "接收外部回调并写事件")
+        ContainerQueue(kafka, "内部Kafka", "Kafka", "承载内部事件")
+        Container(orderWorker, "订单处理器", "技术未指定", "消费交付事件并写订单")
+    }
+
+    Rel(buyer, web, "发订单")
+    Rel(web, api, "调用", "HTTPS")
+    Rel(api, orderDb, "读写订单")
+    Rel(api, outboxDb, "写待发送事件")
+    Rel(publisher, outboxDb, "读事件")
+    Rel(publisher, supplier, "发送订单", "HTTPS")
+    Rel(supplier, callback, "发送交付事件", "HTTPS")
+    Rel(callback, kafka, "写交付事件")
+    Rel(orderWorker, kafka, "消费交付事件")
+    Rel(orderWorker, orderDb, "写订单")
+
+    UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")

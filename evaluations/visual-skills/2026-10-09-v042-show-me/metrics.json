@@ -1,0 +1,13 @@
+{
+  "trajectories": 4,
+  "model_calls": 12,
+  "models": [
+    "gpt-6.1-sol"
+  ],
+  "initial_blocks": 12,
+  "final_blocks": 15,
+  "actual_rendered_stage_blocks": 30,
+  "final_unseen_source_changes": 1,
+  "all_render_formats_passed": true,
+  "scope": "Rendered stage blocks include repeated unchanged sources; not independent samples or distinct graph designs."
+}

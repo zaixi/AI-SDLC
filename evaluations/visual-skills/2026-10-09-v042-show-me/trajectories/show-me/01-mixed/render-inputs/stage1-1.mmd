@@ -1,0 +1,20 @@
+sequenceDiagram
+    participant P as 发布门户
+    participant A as 发布 API
+    participant S as 调度器
+    participant W as 部署工作器
+    participant R as 产物仓库
+
+    P->>A: 发布人提交 / 取消；审阅人审批
+    Note over A: 校验操作权限与状态，记录发布单
+    S->>A: 读取待执行单
+    A-->>S: 发布单及其指定产物
+    S->>A: 将发布单置为执行中
+    loop 按服务批次逐批部署；失败即停止
+        S->>W: 下发批次任务及指定产物
+        W->>R: 读取该单指定产物
+        R-->>W: 构建产物
+        W-->>S: 返回批次结果（可能重复）
+        Note over S: 忽略已记录批次的重复结果
+        S->>A: 根据有效结果写回发布状态
+    end

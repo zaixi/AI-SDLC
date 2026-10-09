@@ -1,0 +1,24 @@
+C4Context
+    title 系统上下文：组织边界
+
+    Person(buyer, "采购员", "发订单")
+    Person(support, "支持工程师", "只查看处理状态")
+
+    Enterprise_Boundary(company, "本公司") {
+        System(procurement, "采购协同系统", "订单协同与付款处理")
+    }
+    Enterprise_Boundary(supplierOrg, "合作供应商") {
+        System(supplier, "供应商系统", "接收订单、发送交付事件")
+    }
+    Enterprise_Boundary(bankOrg, "银行") {
+        System(bank, "付款系统", "接收付款请求、异步回传结果")
+    }
+
+    Rel(buyer, procurement, "发订单")
+    Rel(support, procurement, "只查看处理状态")
+    Rel(procurement, supplier, "发送订单")
+    Rel(supplier, procurement, "发送交付事件")
+    Rel(procurement, bank, "请求付款")
+    Rel(bank, procurement, "异步回传付款结果")
+
+    UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="3")

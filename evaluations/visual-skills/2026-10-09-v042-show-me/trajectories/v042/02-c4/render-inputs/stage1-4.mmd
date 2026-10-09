@@ -1,0 +1,25 @@
+flowchart TB
+    subgraph company["本公司 · 采购协同系统边界"]
+        api["采购API<br/>【容器 · 独立部署进程】"]
+        kafka[("内部Kafka<br/>【容器 · 消息基础设施】")]
+        paymentWorker["付款处理器<br/>【容器】"]
+        callback["回调网关<br/>【容器】"]
+        paymentDb[("付款库<br/>【容器 · PostgreSQL实例③】")]
+
+        api -->|"写付款申请事件"| kafka
+        paymentWorker -->|"消费付款申请事件<br/>及付款结果"| kafka
+        callback -->|"写付款结果事件"| kafka
+        paymentWorker -->|"写付款数据"| paymentDb
+    end
+
+    subgraph bankOrg["银行"]
+        bank["付款系统<br/>【外部系统】"]
+    end
+
+    paymentWorker -->|"HTTPS · 发送付款请求"| bank
+    bank -->|"HTTPS · 异步回传付款结果"| callback
+
+    classDef container fill:#e8f1fb,color:#16324f,stroke:#3978b8
+    classDef external fill:#eeeeee,color:#333,stroke:#777
+    class api,kafka,paymentWorker,callback,paymentDb container
+    class bank external

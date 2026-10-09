@@ -1,0 +1,1350 @@
+Apply the primary skill to the task below. Output Markdown with editable Mermaid blocks and brief necessary prose/tables. A rendering service is available through this test controller: first return the current draft; actual images of that draft will then be appended in this same conversation. Further rendered feedback will be supplied if you change the draft. Do not invoke any tools, install packages, fetch resources, delegate or read credentials. Do not discuss test/skill names. Do not redesign the supplied system. Reply in Chinese.
+<primary_skill>
+---
+name: visual-explanation
+description: 将当前内容转换为清楚、忠实、最小而充分的视觉表达，用图、树、时序、状态、伪代码、diff 或 HTML 帮助理解概念、关系、过程、结构和变化。用户要求画图或当前任务需要视觉解释时使用，领域不限。不用于一句话能说明的事实、纯命令执行或用户明确只要文字的情况。
+license: MIT
+metadata:
+  version: "0.4.2"
+  upstream: "humanlayer/skills show-me @ ca7c8088db69e315a8b2deea43820270457f8f3c"
+---
+
+# 用视觉表达帮助理解
+
+按 show-me 原文选择和组织视图，只表达当前内容，不承担内容研究或领域决策。以下仅补充上游未覆盖的要求；冲突时以补充为准。
+
+## 本地补充
+
+- **忠实原意。** 保留给定的主体、关系、条件以及假设、建议和未知；不为图完整补造事实，不把不确定内容画成确定结论。
+- **验证与交付。** 环境支持且任务允许时，渲染 Mermaid 或 HTML，检查实际画面中文字是否可读、标签是否重叠、连线是否遮挡关键内容。发现明显问题，调整布局或拆分视图，保留原有主体、关系和条件，再渲染检查。区分语法检查与实际渲染，无法渲染或仍有未解决的显示问题时如实说明；普通文本、伪代码和 diff 无需渲染提示。按调用者要求展示或保存可编辑源。上游打开 HTML 的步骤仅在环境支持且任务允许时执行，否则提供文件位置与查看方式。
+
+## 主动使用 mermaid-diagrams
+
+选用 Mermaid 表达时，若环境提供可由模型使用的 mermaid-diagrams，主动加载其指引或通过支持的接口调用，按图种读取所需参考，不等待用户另行触发。用它补充 show-me 的图种与语法细节，保留当前内容和关键条件，不扩展原任务。
+
+若未安装或仅允许用户手动调用，直接生成 Mermaid，不要求用户再调用另一个入口，也不声称已使用它。该 Skill 是表达指引，不默认提供解析器或渲染器；实际检查使用环境中可用的工具。
+
+## show-me 上游正文（完整保留）
+
+Help the user understand the current topic of conversation visually. Skip the preamble and keep prose brief. Pick the smallest view that makes the key point clear.
+
+- Show logic or an algorithm as pseudocode:
+
+```text
+on(save)
+  if content is unchanged
+    return cached result
+  write new content
+  return fresh result
+```
+
+- Show runtime control flow as a call tree:
+
+```text
+submitForm
+  createSession
+    persistPrompt
+    launchAgent
+  navigateToSession
+```
+
+- Show UI structure as a component tree, including state and module boundaries that matter:
+
+```tsx
+<SessionPage> (apps/example/src/routes/session.tsx)
+  useSessionEvents()
+  <SessionToolbar>
+    <RunSkillButton> (packages/ui)
+```
+
+- Show file responsibility or a broad refactor as a shallow file tree:
+
+```text
+src/
+├── commands/       # parses user actions
+├── sessions/       # owns session state
+└── transport/      # sends API requests
+```
+
+- Show component interaction, control flow, or data flow with Mermaid:
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant UI
+    participant Daemon
+    User->>UI: choose command
+    UI->>Daemon: send expanded prompt
+    Daemon-->>UI: stream result
+```
+
+- Use `diff` when the point is what changes and the surrounding shape already exists. Match the diff shape to the topic.
+
+For a component change:
+
+```diff
+ <SessionPage>
+   useSessionEvents()
+   <SessionToolbar>
++    <RunSkillButton />
+   <SessionTimeline>
++    <SkillResultCard />
+```
+
+For a file-layout change:
+
+```diff
+ src/
+ ├── commands/
++│   └── show-me.ts       # expands the slash command
+ ├── sessions/
+-└── transport.ts
++└── transport/
++    ├── client.ts
++    └── stream.ts
+```
+
+For a call-tree or call-stack change:
+
+```diff
+ submitForm
+   createSession
+     persistPrompt
++    expandSkillMention
+     launchAgent
+-  navigateToSession
++  navigateToSession
++    subscribeToEvents
+```
+
+For a state or control-flow change:
+
+```diff
+ on(save)
+-  write content
++  if content is unchanged
++    return cached result
++  write new content
++  invalidate cache
+```
+
+- Show the whole block when most of it is new, when omitted context would hide ownership or order, or when the user needs a copyable target shape:
+
+```ts
+function expandSkill(command: string): string {
+  const skillName = command.slice(1)
+  return `use the ${skillName} skill`
+}
+```
+
+- For a visual UI, layout, state comparison, or concept too dense for Mermaid, write one focused HTML file — a diagram, an infographic, or a short slide deck, whichever fits the point. Match the product's colors, type, spacing, and components; use real labels and data; support desktop and mobile. Then open it for the user:
+
+```
+Bash(open path/to/show-me-{description}.html)
+```
+
+### guidance
+
+Place each visual next to the short text it supports. Keep only the calls, files, props, states, and boundaries needed to answer the user's current question or the options to resolve the current discussion point.
+
+You may use one of these, you may use several, it is unlikely you will use all of them. Use your judgement and don't overwhelm the user.
+
+</primary_skill>
+
+<mermaid_guide>
+---
+name: mermaid-diagrams
+description: Comprehensive guide for creating software diagrams using Mermaid syntax. Use when users need to create, visualize, or document software through diagrams including class diagrams (domain modeling, object-oriented design), sequence diagrams (application flows, API interactions, code execution), flowcharts (processes, algorithms, user journeys), entity relationship diagrams (database schemas), C4 architecture diagrams (system context, containers, components), state diagrams, git graphs, pie charts, gantt charts, or any other diagram type. Triggers include requests to "diagram", "visualize", "model", "map out", "show the flow", or when explaining system architecture, database design, code structure, or user/application flows.
+---
+
+# Mermaid Diagramming
+
+Create professional software diagrams using Mermaid's text-based syntax. Mermaid renders diagrams from simple text definitions, making diagrams version-controllable, easy to update, and maintainable alongside code.
+
+## Core Syntax Structure
+
+All Mermaid diagrams follow this pattern:
+
+```mermaid
+diagramType
+  definition content
+```
+
+**Key principles:**
+- First line declares diagram type (e.g., `classDiagram`, `sequenceDiagram`, `flowchart`)
+- Use `%%` for comments
+- Line breaks and indentation improve readability but aren't required
+- Unknown words break diagrams; parameters fail silently
+
+## Diagram Type Selection Guide
+
+**Choose the right diagram type:**
+
+1. **Class Diagrams** - Domain modeling, OOP design, entity relationships
+   - Domain-driven design documentation
+   - Object-oriented class structures
+   - Entity relationships and dependencies
+
+2. **Sequence Diagrams** - Temporal interactions, message flows
+   - API request/response flows
+   - User authentication flows
+   - System component interactions
+   - Method call sequences
+
+3. **Flowcharts** - Processes, algorithms, decision trees
+   - User journeys and workflows
+   - Business processes
+   - Algorithm logic
+   - Deployment pipelines
+
+4. **Entity Relationship Diagrams (ERD)** - Database schemas
+   - Table relationships
+   - Data modeling
+   - Schema design
+
+5. **C4 Diagrams** - Software architecture at multiple levels
+   - System Context (systems and users)
+   - Container (applications, databases, services)
+   - Component (internal structure)
+   - Code (class/interface level)
+
+6. **State Diagrams** - State machines, lifecycle states
+7. **Git Graphs** - Version control branching strategies
+8. **Gantt Charts** - Project timelines, scheduling
+9. **Pie/Bar Charts** - Data visualization
+
+## Quick Start Examples
+
+### Class Diagram (Domain Model)
+```mermaid
+classDiagram
+    Title -- Genre
+    Title *-- Season
+    Title *-- Review
+    User --> Review : creates
+    
+    class Title {
+        +string name
+        +int releaseYear
+        +play()
+    }
+    
+    class Genre {
+        +string name
+        +getTopTitles()
+    }
+```
+
+### Sequence Diagram (API Flow)
+```mermaid
+sequenceDiagram
+    participant User
+    participant API
+    participant Database
+    
+    User->>API: POST /login
+    API->>Database: Query credentials
+    Database-->>API: Return user data
+    alt Valid credentials
+        API-->>User: 200 OK + JWT token
+    else Invalid credentials
+        API-->>User: 401 Unauthorized
+    end
+```
+
+### Flowchart (User Journey)
+```mermaid
+flowchart TD
+    Start([User visits site]) --> Auth{Authenticated?}
+    Auth -->|No| Login[Show login page]
+    Auth -->|Yes| Dashboard[Show dashboard]
+    Login --> Creds[Enter credentials]
+    Creds --> Validate{Valid?}
+    Validate -->|Yes| Dashboard
+    Validate -->|No| Error[Show error]
+    Error --> Login
+```
+
+### ERD (Database Schema)
+```mermaid
+erDiagram
+    USER ||--o{ ORDER : places
+    ORDER ||--|{ LINE_ITEM : contains
+    PRODUCT ||--o{ LINE_ITEM : includes
+    
+    USER {
+        int id PK
+        string email UK
+        string name
+        datetime created_at
+    }
+    
+    ORDER {
+        int id PK
+        int user_id FK
+        decimal total
+        datetime created_at
+    }
+```
+
+## Detailed References
+
+For in-depth guidance on specific diagram types, see:
+
+- **[references/class-diagrams.md](references/class-diagrams.md)** - Domain modeling, relationships (association, composition, aggregation, inheritance), multiplicity, methods/properties
+- **[references/sequence-diagrams.md](references/sequence-diagrams.md)** - Actors, participants, messages (sync/async), activations, loops, alt/opt/par blocks, notes
+- **[references/flowcharts.md](references/flowcharts.md)** - Node shapes, connections, decision logic, subgraphs, styling
+- **[references/erd-diagrams.md](references/erd-diagrams.md)** - Entities, relationships, cardinality, keys, attributes
+- **[references/c4-diagrams.md](references/c4-diagrams.md)** - System context, container, component diagrams, boundaries
+- **[references/advanced-features.md](references/advanced-features.md)** - Themes, styling, configuration, layout options
+
+## Best Practices
+
+1. **Start Simple** - Begin with core entities/components, add details incrementally
+2. **Use Meaningful Names** - Clear labels make diagrams self-documenting
+3. **Comment Extensively** - Use `%%` comments to explain complex relationships
+4. **Keep Focused** - One diagram per concept; split large diagrams into multiple focused views
+5. **Version Control** - Store `.mmd` files alongside code for easy updates
+6. **Add Context** - Include titles and notes to explain diagram purpose
+7. **Iterate** - Refine diagrams as understanding evolves
+
+## Configuration and Theming
+
+Configure diagrams using frontmatter:
+
+```mermaid
+---
+config:
+  theme: base
+  themeVariables:
+    primaryColor: "#ff6b6b"
+---
+flowchart LR
+    A --> B
+```
+
+**Available themes:** default, forest, dark, neutral, base
+
+**Layout options:**
+- `layout: dagre` (default) - Classic balanced layout
+- `layout: elk` - Advanced layout for complex diagrams (requires integration)
+
+**Look options:**
+- `look: classic` - Traditional Mermaid style
+- `look: handDrawn` - Sketch-like appearance
+
+## Exporting and Rendering
+
+**Native support in:**
+- GitHub/GitLab - Automatically renders in Markdown
+- VS Code - With Markdown Mermaid extension
+- Notion, Obsidian, Confluence - Built-in support
+
+**Export options:**
+- [Mermaid Live Editor](https://mermaid.live) - Online editor with PNG/SVG export
+- Mermaid CLI - `npm install -g @mermaid-js/mermaid-cli` then `mmdc -i input.mmd -o output.png`
+- Docker - `docker run --rm -v $(pwd):/data minlag/mermaid-cli -i /data/input.mmd -o /data/output.png`
+
+## Common Pitfalls
+
+- **Breaking characters** - Avoid `{}` in comments, use proper escape sequences for special characters
+- **Syntax errors** - Misspellings break diagrams; validate syntax in Mermaid Live
+- **Overcomplexity** - Split complex diagrams into multiple focused views
+- **Missing relationships** - Document all important connections between entities
+
+## When to Create Diagrams
+
+**Always diagram when:**
+- Starting new projects or features
+- Documenting complex systems
+- Explaining architecture decisions
+- Designing database schemas
+- Planning refactoring efforts
+- Onboarding new team members
+
+**Use diagrams to:**
+- Align stakeholders on technical decisions
+- Document domain models collaboratively
+- Visualize data flows and system interactions
+- Plan before coding
+- Create living documentation that evolves with code
+
+</mermaid_guide>
+
+<related_reference>
+# C4 Model Diagrams
+
+The C4 model provides a hierarchical way to visualize software architecture at different levels of abstraction: Context, Containers, Components, and Code.
+
+## C4 Model Levels
+
+1. **System Context** - Shows the system and its users/external systems
+2. **Container** - Shows applications, databases, and services within the system
+3. **Component** - Shows internal structure of containers
+4. **Code** - Class diagrams showing implementation details (use regular class diagrams)
+
+## C4 Context Diagram
+
+Shows the big picture: your system and its relationships with users and external systems.
+
+### Basic Syntax
+
+```mermaid
+C4Context
+    title System Context for Banking System
+    
+    Person(customer, "Customer", "A banking customer")
+    System(banking, "Banking System", "Allows customers to manage accounts")
+    System_Ext(email, "Email System", "Sends emails")
+    
+    Rel(customer, banking, "Uses")
+    Rel(banking, email, "Sends emails via")
+```
+
+### Elements
+
+**People:**
+```mermaid
+C4Context
+    Person(user, "User", "Description")
+    Person_Ext(external, "External User", "Outside organization")
+```
+
+**Systems:**
+```mermaid
+C4Context
+    System(internal, "Internal System", "Description")
+    System_Ext(external, "External System", "Description")
+    SystemDb(database, "Database System", "Description")
+    SystemDb_Ext(external_db, "External DB", "Description")
+    SystemQueue(queue, "Message Queue", "Description")
+    SystemQueue_Ext(external_queue, "External Queue", "Description")
+```
+
+**Relationships:**
+```mermaid
+C4Context
+    Rel(from, to, "Label")
+    Rel(from, to, "Label", "Optional Technology")
+    BiRel(system1, system2, "Bidirectional")
+```
+
+### Comprehensive Context Example
+
+```mermaid
+C4Context
+    title System Context - E-Commerce Platform
+    
+    Person(customer, "Customer", "Shops online")
+    Person(admin, "Administrator", "Manages products and orders")
+    Person_Ext(delivery, "Delivery Personnel", "Delivers orders")
+    
+    System(ecommerce, "E-Commerce Platform", "Online shopping platform")
+    
+    System_Ext(payment, "Payment Gateway", "Processes payments")
+    System_Ext(email, "Email Service", "Sends notifications")
+    System_Ext(sms, "SMS Service", "Sends SMS alerts")
+    System_Ext(analytics, "Analytics Platform", "Tracks user behavior")
+    SystemQueue_Ext(shipping, "Shipping API", "Calculates shipping rates")
+    
+    Rel(customer, ecommerce, "Browses products, places orders")
+    Rel(admin, ecommerce, "Manages catalog, reviews orders")
+    Rel(delivery, ecommerce, "Updates delivery status")
+    
+    Rel(ecommerce, payment, "Processes payments via", "HTTPS/REST")
+    Rel(ecommerce, email, "Sends emails via", "SMTP")
+    Rel(ecommerce, sms, "Sends SMS via", "REST API")
+    Rel(ecommerce, analytics, "Tracks events", "JavaScript SDK")
+    Rel(ecommerce, shipping, "Gets shipping rates", "REST API")
+    
+    UpdateRelStyle(customer, ecommerce, $offsetX="-50", $offsetY="-30")
+    UpdateRelStyle(admin, ecommerce, $offsetX="50", $offsetY="-30")
+```
+
+## C4 Container Diagram
+
+Zooms into the system to show containers (applications, databases, services).
+
+### Basic Syntax
+
+```mermaid
+C4Container
+    title Container Diagram for Banking System
+    
+    Person(customer, "Customer")
+    
+    Container_Boundary(banking, "Banking System") {
+        Container(web, "Web Application", "React", "Delivers static content")
+        Container(api, "API Application", "Node.js", "Provides banking API")
+        ContainerDb(db, "Database", "PostgreSQL", "Stores account data")
+    }
+    
+    Rel(customer, web, "Uses", "HTTPS")
+    Rel(web, api, "Makes API calls", "HTTPS/JSON")
+    Rel(api, db, "Reads/writes", "SQL/TCP")
+```
+
+### Container Elements
+
+```mermaid
+C4Container
+    Container(app, "Application", "Technology", "Description")
+    ContainerDb(db, "Database", "PostgreSQL", "Description")
+    ContainerQueue(queue, "Queue", "RabbitMQ", "Description")
+    Container_Ext(external, "External Service", "Tech", "Description")
+```
+
+### Container Boundaries
+
+```mermaid
+C4Container
+    Container_Boundary(boundary_name, "Boundary Label") {
+        Container(app1, "App 1", "Tech")
+        Container(app2, "App 2", "Tech")
+    }
+```
+
+### Comprehensive Container Example
+
+```mermaid
+C4Container
+    title Container Diagram - E-Commerce Platform
+    
+    Person(customer, "Customer")
+    Person(admin, "Admin")
+    System_Ext(payment, "Payment Gateway")
+    System_Ext(email, "Email Service")
+    
+    Container_Boundary(frontend, "Frontend") {
+        Container(web, "Web App", "React", "Delivers UI")
+        Container(mobile, "Mobile App", "React Native", "Mobile UI")
+    }
+    
+    Container_Boundary(backend, "Backend Services") {
+        Container(api, "API Gateway", "Node.js/Express", "Routes requests")
+        Container(auth, "Auth Service", "Node.js", "Handles authentication")
+        Container(catalog, "Catalog Service", "Python/FastAPI", "Manages products")
+        Container(order, "Order Service", "Java/Spring", "Processes orders")
+        Container(notification, "Notification Service", "Node.js", "Sends notifications")
+    }
+    
+    Container_Boundary(data, "Data Layer") {
+        ContainerDb(postgres, "Main Database", "PostgreSQL", "Stores core data")
+        ContainerDb(mongo, "Product DB", "MongoDB", "Product catalog")
+        ContainerDb(redis, "Cache", "Redis", "Session & caching")
+        ContainerQueue(queue, "Message Queue", "RabbitMQ", "Async processing")
+    }
+    
+    Rel(customer, web, "Uses", "HTTPS")
+    Rel(customer, mobile, "Uses", "HTTPS")
+    Rel(admin, web, "Manages via", "HTTPS")
+    
+    Rel(web, api, "Makes calls", "HTTPS/JSON")
+    Rel(mobile, api, "Makes calls", "HTTPS/JSON")
+    
+    Rel(api, auth, "Authenticates", "gRPC")
+    Rel(api, catalog, "Gets products", "REST")
+    Rel(api, order, "Creates orders", "REST")
+    
+    Rel(auth, postgres, "Reads/writes users", "SQL")
+    Rel(catalog, mongo, "Reads/writes products", "MongoDB Protocol")
+    Rel(order, postgres, "Reads/writes orders", "SQL")
+    
+    Rel(auth, redis, "Stores sessions", "Redis Protocol")
+    Rel(api, redis, "Caches data", "Redis Protocol")
+    
+    Rel(order, queue, "Publishes events", "AMQP")
+    Rel(notification, queue, "Consumes events", "AMQP")
+    Rel(notification, email, "Sends via", "SMTP")
+    Rel(order, payment, "Processes payment", "HTTPS/REST")
+```
+
+## C4 Component Diagram
+
+Zooms into a container to show its internal components.
+
+### Basic Syntax
+
+```mermaid
+C4Component
+    title Component Diagram for API Application
+    
+    Container(web, "Web App", "React")
+    ContainerDb(db, "Database", "PostgreSQL")
+    System_Ext(email, "Email System")
+    
+    Container_Boundary(api, "API Application") {
+        Component(controller, "Controller", "Express Router", "Handles HTTP")
+        Component(service, "Business Logic", "Service Layer", "Core logic")
+        Component(repository, "Data Access", "Repository", "DB operations")
+        Component(emailClient, "Email Client", "Client", "Sends emails")
+    }
+    
+    Rel(web, controller, "Makes requests", "HTTPS")
+    Rel(controller, service, "Uses")
+    Rel(service, repository, "Uses")
+    Rel(repository, db, "Reads/writes", "SQL")
+    Rel(service, emailClient, "Sends emails via")
+    Rel(emailClient, email, "Sends", "SMTP")
+```
+
+### Comprehensive Component Example
+
+```mermaid
+C4Component
+    title Component Diagram - Order Service
+    
+    Container(api_gateway, "API Gateway", "Node.js")
+    ContainerDb(postgres, "Database", "PostgreSQL")
+    ContainerQueue(queue, "Message Queue", "RabbitMQ")
+    System_Ext(payment, "Payment Gateway")
+    System_Ext(inventory, "Inventory Service")
+    
+    Container_Boundary(order_service, "Order Service") {
+        Component(controller, "REST Controllers", "Spring MVC", "HTTP endpoints")
+        Component(order_logic, "Order Manager", "Service", "Order processing logic")
+        Component(payment_client, "Payment Client", "REST Client", "Payment integration")
+        Component(inventory_client, "Inventory Client", "REST Client", "Inventory integration")
+        Component(repository, "Order Repository", "JPA", "Database operations")
+        Component(event_publisher, "Event Publisher", "Component", "Publishes domain events")
+        Component(validator, "Order Validator", "Component", "Validates orders")
+    }
+    
+    Rel(api_gateway, controller, "Routes requests", "HTTPS/REST")
+    
+    Rel(controller, order_logic, "Delegates to")
+    Rel(controller, validator, "Validates with")
+    
+    Rel(order_logic, payment_client, "Processes payment")
+    Rel(order_logic, inventory_client, "Checks stock")
+    Rel(order_logic, repository, "Persists orders")
+    Rel(order_logic, event_publisher, "Publishes events")
+    
+    Rel(payment_client, payment, "Calls", "HTTPS/REST")
+    Rel(inventory_client, inventory, "Calls", "HTTPS/REST")
+    Rel(repository, postgres, "Reads/writes", "JDBC/SQL")
+    Rel(event_publisher, queue, "Publishes to", "AMQP")
+```
+
+## Microservices Architecture Example
+
+```mermaid
+C4Container
+    title Microservices Architecture - Streaming Platform
+    
+    Person(user, "User", "Platform user")
+    Person(creator, "Content Creator", "Uploads videos")
+    System_Ext(cdn, "CDN", "Delivers media")
+    System_Ext(storage, "Object Storage", "Stores videos")
+    System_Ext(transcoding, "Transcoding Service", "Processes videos")
+    
+    Container_Boundary(frontend, "Frontend Layer") {
+        Container(web, "Web Application", "Next.js", "Server-rendered UI")
+        Container(mobile, "Mobile Apps", "React Native", "iOS/Android apps")
+    }
+    
+    Container_Boundary(api_layer, "API Layer") {
+        Container(api_gateway, "API Gateway", "Kong", "Routing, auth, rate limiting")
+        Container(graphql, "GraphQL Gateway", "Apollo", "Unified API")
+    }
+    
+    Container_Boundary(services, "Microservices") {
+        Container(auth, "Auth Service", "Go", "Authentication & authorization")
+        Container(user, "User Service", "Node.js", "User profiles & preferences")
+        Container(video, "Video Service", "Python", "Video metadata & management")
+        Container(recommendation, "Recommendation Engine", "Python/ML", "Content recommendations")
+        Container(analytics, "Analytics Service", "Go", "View tracking & metrics")
+        Container(search, "Search Service", "Elasticsearch", "Content search")
+        Container(comment, "Comment Service", "Node.js", "Comments & discussions")
+    }
+    
+    Container_Boundary(data, "Data Layer") {
+        ContainerDb(user_db, "User Database", "PostgreSQL", "User data")
+        ContainerDb(video_db, "Video Database", "MongoDB", "Video metadata")
+        ContainerDb(analytics_db, "Analytics DB", "ClickHouse", "Analytics data")
+        ContainerDb(cache, "Cache Layer", "Redis Cluster", "Caching & sessions")
+        ContainerQueue(event_bus, "Event Bus", "Kafka", "Event streaming")
+        ContainerDb(search_index, "Search Index", "Elasticsearch", "Search data")
+    }
+    
+    Rel(user, web, "Uses", "HTTPS")
+    Rel(creator, web, "Uploads via", "HTTPS")
+    Rel(user, mobile, "Uses", "HTTPS")
+    
+    Rel(web, api_gateway, "API calls", "HTTPS/REST")
+    Rel(mobile, api_gateway, "API calls", "HTTPS/REST")
+    Rel(web, graphql, "Queries", "HTTPS/GraphQL")
+    
+    Rel(api_gateway, auth, "Authenticates", "gRPC")
+    Rel(graphql, video, "Gets videos", "gRPC")
+    Rel(graphql, user, "Gets users", "gRPC")
+    Rel(graphql, recommendation, "Gets recommendations", "gRPC")
+    
+    Rel(video, storage, "Stores videos", "S3 API")
+    Rel(video, transcoding, "Sends for transcoding", "REST")
+    Rel(video, cdn, "Publishes to", "API")
+    
+    Rel(auth, user_db, "Manages credentials", "SQL")
+    Rel(user, user_db, "Stores profiles", "SQL")
+    Rel(video, video_db, "Stores metadata", "MongoDB")
+    Rel(analytics, analytics_db, "Stores metrics", "SQL")
+    
+    Rel(auth, cache, "Sessions", "Redis")
+    Rel(video, cache, "Caches metadata", "Redis")
+    Rel(search, search_index, "Indexes & queries", "REST")
+    
+    Rel(video, event_bus, "Publishes VideoUploaded", "Kafka")
+    Rel(analytics, event_bus, "Publishes ViewStarted", "Kafka")
+    Rel(recommendation, event_bus, "Consumes events", "Kafka")
+    Rel(search, event_bus, "Consumes events", "Kafka")
+```
+
+## Best Practices
+
+1. **Use appropriate level** - Context for stakeholders, Container for architects, Component for developers
+2. **Keep it focused** - One system per Context diagram, one container per Component diagram
+3. **Show key relationships** - Don't clutter with every possible connection
+4. **Use consistent naming** - Same names across all diagram levels
+5. **Add technology details** - Specify frameworks, languages, protocols at Container/Component level
+6. **Update regularly** - Keep diagrams in sync with architecture
+7. **Use boundaries** - Group related containers/components logically
+8. **Document protocols** - Show communication methods (REST, gRPC, messaging)
+9. **Highlight external systems** - Use *_Ext variants for clarity
+10. **Start simple** - Begin with Context, drill down as needed
+
+## Common Architecture Patterns
+
+### Monolithic Application
+```mermaid
+C4Container
+    Person(user, "User")
+    
+    Container_Boundary(system, "Application") {
+        Container(app, "Web Application", "Ruby on Rails", "Monolithic application")
+        ContainerDb(db, "Database", "PostgreSQL", "Application database")
+        ContainerDb(cache, "Cache", "Redis", "Session store")
+    }
+    
+    Rel(user, app, "Uses", "HTTPS")
+    Rel(app, db, "Reads/writes", "SQL")
+    Rel(app, cache, "Caches", "Redis Protocol")
+```
+
+### Three-Tier Architecture
+```mermaid
+C4Container
+    Person(user, "User")
+    
+    Container_Boundary(presentation, "Presentation Tier") {
+        Container(web, "Web Server", "Nginx", "Static content")
+        Container(app, "App Server", "Node.js", "Application logic")
+    }
+    
+    Container_Boundary(business, "Business Tier") {
+        Container(api, "API Server", "Java", "Business logic")
+    }
+    
+    Container_Boundary(data, "Data Tier") {
+        ContainerDb(db, "Database", "MySQL", "Data storage")
+    }
+    
+    Rel(user, web, "Uses", "HTTPS")
+    Rel(web, app, "Proxies to", "HTTP")
+    Rel(app, api, "Calls", "REST")
+    Rel(api, db, "Reads/writes", "SQL")
+```
+
+### Event-Driven Architecture
+```mermaid
+C4Container
+    Person(user, "User")
+    
+    Container(frontend, "Frontend", "React", "User interface")
+    Container(api, "API Gateway", "Kong", "API routing")
+    
+    Container_Boundary(services, "Services") {
+        Container(order, "Order Service", "Java", "Order processing")
+        Container(inventory, "Inventory Service", "Go", "Stock management")
+        Container(notification, "Notification Service", "Node.js", "Alerts")
+    }
+    
+    ContainerQueue(events, "Event Bus", "Kafka", "Event streaming")
+    ContainerDb(db, "Databases", "Various", "Service databases")
+    
+    Rel(user, frontend, "Uses")
+    Rel(frontend, api, "Calls")
+    Rel(api, order, "Routes to")
+    
+    Rel(order, events, "Publishes OrderCreated")
+    Rel(events, inventory, "Consumes events")
+    Rel(events, notification, "Consumes events")
+    
+    Rel(order, db, "Persists")
+    Rel(inventory, db, "Persists")
+```
+
+</related_reference>
+
+<related_reference>
+# Advanced Mermaid Features
+
+Advanced configuration, styling, theming, and other powerful features for creating professional diagrams.
+
+## Frontmatter Configuration
+
+Add YAML configuration at the top of diagrams:
+
+```mermaid
+---
+config:
+  theme: dark
+  themeVariables:
+    primaryColor: "#ff6b6b"
+    primaryTextColor: "#fff"
+    primaryBorderColor: "#333"
+    lineColor: "#666"
+    secondaryColor: "#4ecdc4"
+    tertiaryColor: "#ffe66d"
+---
+flowchart TD
+    A --> B
+```
+
+## Themes
+
+### Built-in Themes
+
+```mermaid
+---
+config:
+  theme: default
+---
+```
+
+**Available themes:**
+- `default` - Standard blue theme
+- `forest` - Green earth tones
+- `dark` - Dark mode friendly
+- `neutral` - Grayscale professional
+- `base` - Minimal base theme for customization
+
+### Theme Examples
+
+**Default Theme:**
+```mermaid
+---
+config:
+  theme: default
+---
+flowchart LR
+    A[Start] --> B[Process]
+    B --> C{Decision}
+    C -->|Yes| D[Action 1]
+    C -->|No| E[Action 2]
+```
+
+**Dark Theme:**
+```mermaid
+---
+config:
+  theme: dark
+---
+flowchart LR
+    A[Start] --> B[Process]
+    B --> C{Decision}
+```
+
+**Forest Theme:**
+```mermaid
+---
+config:
+  theme: forest
+---
+flowchart LR
+    A[Start] --> B[Process]
+```
+
+## Custom Theme Variables
+
+Override specific colors:
+
+```mermaid
+---
+config:
+  theme: base
+  themeVariables:
+    primaryColor: "#ff6b6b"
+    primaryTextColor: "#fff"
+    primaryBorderColor: "#d63031"
+    lineColor: "#74b9ff"
+    secondaryColor: "#00b894"
+    tertiaryColor: "#fdcb6e"
+    background: "#f0f0f0"
+    mainBkg: "#ffffff"
+    textColor: "#333333"
+    nodeBorder: "#333333"
+    clusterBkg: "#f9f9f9"
+    clusterBorder: "#666666"
+---
+flowchart TD
+    A --> B --> C
+```
+
+## Layout Options
+
+### Dagre Layout (Default)
+
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart TD
+    A --> B
+```
+
+### ELK Layout (Advanced)
+
+For complex diagrams with better automatic layout:
+
+```mermaid
+---
+config:
+  layout: elk
+  elk:
+    mergeEdges: true
+    nodePlacementStrategy: BRANDES_KOEPF
+---
+flowchart TD
+    A --> B
+```
+
+**ELK node placement strategies:**
+- `SIMPLE` - Basic placement
+- `NETWORK_SIMPLEX` - Network optimization
+- `LINEAR_SEGMENTS` - Linear arrangement
+- `BRANDES_KOEPF` - Balanced (default)
+
+## Look Options
+
+### Classic Look
+
+Traditional Mermaid appearance:
+
+```mermaid
+---
+config:
+  look: classic
+---
+flowchart LR
+    A --> B --> C
+```
+
+### Hand-Drawn Look
+
+Sketch-like, informal style:
+
+```mermaid
+---
+config:
+  look: handDrawn
+---
+flowchart LR
+    A --> B --> C
+```
+
+## Complete Configuration Example
+
+```mermaid
+---
+config:
+  theme: base
+  look: handDrawn
+  layout: dagre
+  themeVariables:
+    primaryColor: "#ff6b6b"
+    primaryTextColor: "#fff"
+    primaryBorderColor: "#d63031"
+    lineColor: "#74b9ff"
+    secondaryColor: "#00b894"
+    tertiaryColor: "#fdcb6e"
+---
+flowchart TD
+    Start([Begin Process]) --> Input[Gather Data]
+    Input --> Process{Valid?}
+    Process -->|Yes| Store[(Save to DB)]
+    Process -->|No| Error[Show Error]
+    Store --> Notify[Send Notification]
+    Error --> Input
+    Notify --> End([Complete])
+```
+
+## Diagram-Specific Styling
+
+### Flowchart Styling
+
+**Class-based styling:**
+```mermaid
+flowchart TD
+    A[Normal]:::success
+    B[Warning]:::warning
+    C[Error]:::error
+    
+    classDef success fill:#00b894,stroke:#00a383,color:#fff
+    classDef warning fill:#fdcb6e,stroke:#e8b923,color:#333
+    classDef error fill:#ff6b6b,stroke:#ee5253,color:#fff
+    
+    A --> B --> C
+```
+
+**Node-specific styling:**
+```mermaid
+flowchart LR
+    A[Node A]
+    B[Node B]
+    C[Node C]
+    
+    style A fill:#ff6b6b,stroke:#333,stroke-width:4px
+    style B fill:#4ecdc4,stroke:#333,stroke-width:2px
+    style C fill:#ffe66d,stroke:#333,stroke-width:2px
+    
+    A --> B --> C
+```
+
+**Link styling:**
+```mermaid
+flowchart LR
+    A --> B
+    B --> C
+    C --> D
+    
+    linkStyle 0 stroke:#ff6b6b,stroke-width:4px
+    linkStyle 1 stroke:#4ecdc4,stroke-width:2px
+    linkStyle 2 stroke:#ffe66d,stroke-width:2px
+```
+
+### Sequence Diagram Styling
+
+```mermaid
+sequenceDiagram
+    participant A
+    participant B
+    participant C
+    
+    A->>B: Message 1
+    B->>C: Message 2
+    
+    Note over A,C: Styled note
+    
+    %%{init: {'theme':'forest'}}%%
+```
+
+### Class Diagram Styling
+
+```mermaid
+classDiagram
+    class User {
+        +String name
+        +login()
+    }
+    
+    class Admin {
+        +manageUsers()
+    }
+    
+    User <|-- Admin
+    
+    %%{init: {'theme':'dark'}}%%
+```
+
+## Directional Hints
+
+Control layout direction for specific nodes:
+
+```mermaid
+flowchart TB
+    A --> B
+    B --> C
+    B --> D
+    C --> E
+    D --> E
+    
+    %% This is a comment - helps organize complex diagrams
+```
+
+## Click Events and Links
+
+Add interactive elements:
+
+```mermaid
+flowchart LR
+    A[GitHub]
+    B[Documentation]
+    C[Live Demo]
+    
+    click A "https://github.com" "Go to GitHub"
+    click B "https://mermaid.js.org" "View Docs"
+    click C "https://mermaid.live" "Try Live Editor"
+    
+    A --> B --> C
+```
+
+## Tooltips
+
+Add hover information:
+
+```mermaid
+flowchart LR
+    A[Service A]
+    B[Service B]
+    
+    A -.->|REST API| B
+    
+    %% Tooltips are defined with links
+    link A: API Documentation @ https://api.example.com
+    link B: Service Dashboard @ https://dashboard.example.com
+```
+
+## Subgraph Styling
+
+```mermaid
+flowchart TB
+    subgraph Frontend
+        A[Web App]
+        B[Mobile App]
+    end
+    
+    subgraph Backend
+        C[API]
+        D[Database]
+    end
+    
+    A & B --> C
+    C --> D
+    
+    style Frontend fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
+    style Backend fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+```
+
+## Comments and Documentation
+
+```mermaid
+flowchart TD
+    %% This is a single-line comment
+    
+    %% Multi-line comments can be created
+    %% by using multiple comment lines
+    
+    A[Start]
+    B[Process]
+    C[End]
+    
+    %% Define relationships
+    A --> B
+    B --> C
+    
+    %% Add styling
+    style A fill:#90EE90
+    style C fill:#FFB6C1
+```
+
+## Complex Styling Example
+
+```mermaid
+flowchart TB
+    subgraph production[Production Environment]
+        direction LR
+        lb[Load Balancer]
+        
+        subgraph servers[Application Servers]
+            app1[Server 1]
+            app2[Server 2]
+            app3[Server 3]
+        end
+        
+        cache[(Redis Cache)]
+        db[(PostgreSQL)]
+    end
+    
+    subgraph monitoring[Monitoring]
+        logs[Log Aggregator]
+        metrics[Metrics Dashboard]
+    end
+    
+    users[Users] --> lb
+    lb --> app1 & app2 & app3
+    app1 & app2 & app3 --> cache
+    app1 & app2 & app3 --> db
+    app1 & app2 & app3 --> logs
+    logs --> metrics
+    
+    style production fill:#e8f5e9,stroke:#4caf50,stroke-width:3px
+    style servers fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    style monitoring fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
+    
+    style lb fill:#ffeb3b,stroke:#fbc02d,stroke-width:2px
+    style cache fill:#ce93d8,stroke:#ab47bc,stroke-width:2px
+    style db fill:#ce93d8,stroke:#ab47bc,stroke-width:2px
+    
+    classDef serverClass fill:#81c784,stroke:#4caf50,stroke-width:2px,color:#000
+    class app1,app2,app3 serverClass
+    
+    linkStyle 0,1,2,3 stroke:#4caf50,stroke-width:2px
+    linkStyle 4,5,6,7,8,9 stroke:#ff9800,stroke-width:1px
+```
+
+## Responsive Sizing
+
+Use CSS to make diagrams responsive:
+
+```html
+<div style="max-width: 100%; overflow: auto;">
+    <pre class="mermaid">
+        flowchart LR
+            A --> B --> C
+    </pre>
+</div>
+```
+
+## SVG Export Options
+
+When exporting to SVG:
+
+```bash
+# Export with custom dimensions
+mmdc -i diagram.mmd -o output.svg -w 1920 -H 1080
+
+# Export with background color
+mmdc -i diagram.mmd -o output.svg -b "#ffffff"
+
+# Export with transparent background
+mmdc -i diagram.mmd -o output.svg -b "transparent"
+```
+
+## Best Practices for Advanced Features
+
+1. **Use themes consistently** - Pick one theme for related diagrams
+2. **Don't over-style** - Too many colors can reduce clarity
+3. **Test hand-drawn look** - Some diagrams work better with classic look
+4. **Use ELK for complex layouts** - When dagre creates crossed lines
+5. **Comment complex configurations** - Explain non-obvious styling choices
+6. **Keep it accessible** - Ensure sufficient color contrast
+7. **Test exports** - Verify diagrams render correctly in target format
+8. **Version control configs** - Track theme changes in your repository
+
+## Accessibility Considerations
+
+```mermaid
+---
+config:
+  theme: base
+  themeVariables:
+    primaryColor: "#0066cc"
+    primaryTextColor: "#ffffff"
+    primaryBorderColor: "#003d7a"
+    lineColor: "#333333"
+    background: "#ffffff"
+    mainBkg: "#f0f0f0"
+---
+flowchart TD
+    A[High Contrast Text] --> B[Clear Labels]
+    B --> C[Meaningful Colors]
+```
+
+**Accessibility tips:**
+- Use high contrast color combinations
+- Don't rely solely on color to convey meaning
+- Include descriptive text labels
+- Test with color blindness simulators
+- Consider dark mode alternatives
+
+## Performance Considerations
+
+For large diagrams:
+
+```mermaid
+---
+config:
+  layout: elk
+  elk:
+    mergeEdges: true
+---
+flowchart TD
+    %% ELK handles complex layouts better
+    %% Merge edges reduces visual clutter
+```
+
+**Performance tips:**
+- Use ELK layout for diagrams with >20 nodes
+- Enable edge merging for simplified connections
+- Split very large diagrams into multiple focused views
+- Consider using subgraphs to organize complexity
+- Limit styling to essential elements
+
+## Integration Examples
+
+### Markdown Files
+
+````markdown
+# System Architecture
+
+```mermaid
+flowchart LR
+    A --> B
+```
+````
+
+### HTML Files
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'dark',
+            look: 'handDrawn'
+        });
+    </script>
+</head>
+<body>
+    <pre class="mermaid">
+        flowchart LR
+            A --> B
+    </pre>
+</body>
+</html>
+```
+
+### React Components
+
+```jsx
+import React from 'react';
+import mermaid from 'mermaid';
+
+mermaid.initialize({
+    startOnLoad: true,
+    theme: 'forest'
+});
+
+function DiagramComponent() {
+    React.useEffect(() => {
+        mermaid.contentLoaded();
+    }, []);
+    
+    return (
+        <div className="mermaid">
+            flowchart LR
+                A --> B
+        </div>
+    );
+}
+```
+
+</related_reference>
+
+<task>
+请用C4体系解释这套跨组织集成系统，分别让业务负责人看清系统与组织边界、让工程师看清本公司系统内部的运行单元和关键通信，中文标签。自行安排视图，不新增连接、不把组件/容器/系统混成一个层级。本公司拥有“采购协同系统”，合作供应商拥有“供应商系统”，银行拥有“付款系统”。采购员使用采购协同系统发订单；供应商系统接收订单并发送交付事件；采购协同系统向银行付款系统请求付款，银行异步回传付款结果。采购协同系统内部：Web门户通过HTTPS调用采购API；采购API向订单库读写订单、向Outbox库写待发送事件；订单库与Outbox库是独立运行的两个PostgreSQL实例，不画成一个实例。事件发布器从Outbox库读事件，经HTTPS向供应商系统发订单；供应商系统通过HTTPS向回调网关发交付事件，银行同样向回调网关发付款结果。回调网关向内部Kafka写事件；订单处理器从Kafka消费交付事件并写订单库；付款处理器从Kafka消费付款结果并写付款库，付款库为第三个独立PostgreSQL实例。付款处理器也通过HTTPS向银行付款系统发送付款请求，采购API向Kafka写付款申请事件，付款处理器消费这些申请事件。支持工程师只通过管理门户查看处理状态；管理门户通过HTTPS调用查询API，查询API只读订单库与付款库。采购API和查询API是两个独立部署进程。没有规定供应商/银行内部容器，也没有缓存、身份服务、补偿/重试或Kafka具体主题。保留所有已确认通信与读写方向；不推定供应商属于本公司，也不画采购员直接访问银行。
+</task>

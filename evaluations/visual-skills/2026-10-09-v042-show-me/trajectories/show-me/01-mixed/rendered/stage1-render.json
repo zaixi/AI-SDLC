@@ -1,0 +1,65 @@
+[
+  {
+    "block": 1,
+    "type": "sequenceDiagram",
+    "source_sha256": "3aecf30eb860bbae022f6063c6347d61b091edf3164d2f52188842bf55ba15fa",
+    "svg": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage1-1.svg"
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage1-1.png",
+      "pixels": [
+        1600,
+        1018
+      ]
+    }
+  },
+  {
+    "block": 2,
+    "type": "stateDiagram-v2",
+    "source_sha256": "8ef888393a7443471248a5527de88cbad313c14d5ac30d6c29edebccfc50f863",
+    "svg": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage1-2.svg"
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage1-2.png",
+      "pixels": [
+        1600,
+        189
+      ]
+    }
+  },
+  {
+    "block": 3,
+    "type": "flowchart LR",
+    "source_sha256": "9f5ce69c9ed1ae36533819b36f5f1e7b84fb55438294ce7f8f4be0eac0caec33",
+    "svg": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage1-3.svg"
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage1-3.png",
+      "pixels": [
+        1600,
+        373
+      ]
+    }
+  }
+]

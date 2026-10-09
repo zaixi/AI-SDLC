@@ -23,8 +23,6 @@
 
 后续[选图、拆图与C4比较](../../evaluations/visual-skills/2026-10-09-challenge/README.md)保留了六份首次回答及14张实际渲染图：语法全部通过，专用C4图仍有标签重叠和连线穿过节点的问题。0.4.2据此补强“验证与交付”，明确检查实际画面、修正明显问题并重新渲染；show-me正文与Mermaid主动加载规则保持原样。该轮没有把渲染结果回传生成器。后续[0.4.1/0.4.2同等图片反馈比较](../../evaluations/visual-skills/2026-10-09-v042-feedback/comparison.md)每版两题、各一条独立容器/会话轨迹，两版收到图片后都改善了布局，最终15图保留关键事实并通过实际渲染；未显示0.4.2的明确整体质量优势。渲染由外部控制器提供，尚未验证自主工具选择或客户端原生调用。
 
-另做了[0.4.2与原版show-me的同等图片反馈比较](../../evaluations/visual-skills/2026-10-09-v042-show-me/comparison.md)：每组两题、四条新容器/新会话轨迹。show-me的发布图更紧凑，但把未提供的API校验位置写成事实；0.4.2保留该未知。复杂架构最终均完整可读，未显示Mermaid指引的必需性。最终15图实际渲染及语法解析通过；小样本不证明普遍优势。
-
 ## 来源与更新
 
 复用[Humanlayer show-me固定提交](https://github.com/humanlayer/skills/blob/ca7c8088db69e315a8b2deea43820270457f8f3c/plugins/show-me/skills/show-me/SKILL.md)的完整正文，保留[上游原文件](references/show-me.upstream.md)和[MIT许可证](LICENSE)。更新时比较固定原文件，独立评估上游元数据与本地补充，避免覆盖客户端调用设置；尚无自动拉取上游机制。

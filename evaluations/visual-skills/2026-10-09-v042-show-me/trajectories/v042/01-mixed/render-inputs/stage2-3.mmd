@@ -1,0 +1,16 @@
+flowchart TD
+    R["调度器收到批次结果"] --> D{"该批次已记录？"}
+    D -->|"是"| I["忽略重复结果<br/>不再次推进"]
+    D -->|"否"| K["记录该批次结果"]
+    K --> S{"批次成功？"}
+    S -->|"否"| F["写回失败<br/>停止后续批次"]
+    S -->|"是"| N{"还有下一批？"}
+    N -->|"是"| P["保持执行中<br/>下发下一批任务"]
+    N -->|"否"| Z["全部批次成功<br/>写回完成"]
+
+    classDef failure fill:#fff0ee,stroke:#b54738,color:#222
+    classDef success fill:#edf8ef,stroke:#40834b,color:#222
+    classDef ignored fill:#f3f3f3,stroke:#777,color:#222
+    class F failure
+    class Z success
+    class I ignored

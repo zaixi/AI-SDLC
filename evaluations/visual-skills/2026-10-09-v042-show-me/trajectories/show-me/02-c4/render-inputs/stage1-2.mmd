@@ -1,0 +1,37 @@
+---
+config:
+  flowchart:
+    nodeSpacing: 45
+    rankSpacing: 65
+---
+flowchart TB
+    buyer["采购员<br/>人员"]
+
+    subgraph company["本公司"]
+        subgraph procurement["采购协同系统 · 容器"]
+            web["Web门户<br/>应用"]
+            api["采购API<br/>独立部署进程"]
+            orders[("订单库<br/>PostgreSQL 实例 1")]
+            outbox[("Outbox库<br/>PostgreSQL 实例 2")]
+            publisher["事件发布器<br/>应用"]
+            gateway["回调网关<br/>应用"]
+            kafka[("内部Kafka<br/>事件基础设施")]
+            processor["订单处理器<br/>应用"]
+
+            web -->|"HTTPS：调用"| api
+            api -->|"读写订单"| orders
+            api -->|"写待发送事件"| outbox
+            publisher -->|"读取事件"| outbox
+            gateway -->|"写事件"| kafka
+            processor -->|"消费交付事件"| kafka
+            processor -->|"写订单"| orders
+        end
+    end
+
+    subgraph supplierOrg["合作供应商"]
+        supplier["供应商系统<br/>外部软件系统"]
+    end
+
+    buyer -->|"发订单"| web
+    publisher -->|"HTTPS：发送订单"| supplier
+    supplier -->|"HTTPS：交付事件"| gateway

@@ -1,0 +1,35 @@
+{
+  "reviewer": "Root agent; unblinded source and actual PNG review; no independent reviewer",
+  "01-mixed": {
+    "show-me": {
+      "coverage": "Confirmed artifact cardinality, seven states, cancellation guard, batch success/failure/completion, no automatic rollback, deduplication and role/self-approval constraints retained.",
+      "faithfulness_issue": "Final prose and sequence note assert API performs permission/state/submitter checks. Input specifies required constraints and API receives/records requests, but no enforcement implementation location. Initial text says checks should be there; after visual feedback becomes unqualified fact. Rendering success did not fix this.",
+      "secondary_note": "Batch task payload explicitly includes specified artifact; exact identifier transfer method is not supplied. This is a plausible implementation detail, not an established fact. Do not treat ordinary read-return arrows as invented topology.",
+      "layout": "Final sequence, horizontal state diagram and horizontal result flowchart are readable and compact. State graph omits the success self-loop but accompanying prose says successful nonfinal batches remain running and advance; therefore no loss of this condition.",
+      "validation": "Final source unchanged from the model-inspected stage1 images; says it reused viewed source."
+    },
+    "v042": {
+      "coverage": "Same confirmed facts retained across collaboration/state/result graphs, prose and role table. Explicitly says enforcement location not supplied.",
+      "layout": "Final collaboration and horizontal state views readable. Final result flowchart removes stage1 long return edge and moves deployment startup to prose; preserves all decisions but remains tall. show-me final result view more compact.",
+      "draft_note": "Initial state self-loop lacks explicit remaining-batch guard; final graph adds it and makes terminal all-success branch clear. Revision found without manual correction hints.",
+      "validation": "Final third graph changed after last feedback; model honestly marks it not yet visually checked. Evaluator subsequently renders it successfully. This is evaluator confirmation, not model completion of another inspect/rerender cycle."
+    },
+    "judgment": "In this sample show-me has compact visual expression, v042 has stronger faithfulness about unspecified enforcement. Rendering feedback helps both; do not infer universal superiority."
+  },
+  "02-c4": {
+    "v042": {
+      "coverage": "All 12 internal runtime units, 19 distinct container-level endpoint relationships and six context relationships retained. Callback-to-Kafka shown in separate event-filtered views. Three independent databases, separately deployed APIs, read-only query and ownership correct.",
+      "faithfulness": "No added service, retry, authentication, Kafka topic or external internal structure found. Reads/consumes use initiator-to-source arrows explained upfront, not confused with event-flow arrows.",
+      "layout": "Initial four native C4 views have opposing labels overlapping, a bank relation passing through supplier system and supplier callback edge through API/database. Final five flowcharts keep C4 boundaries and separate labels, readable at source image scale. Ordering, payment and query views remain tall; improvement does not mean compact layout superiority.",
+      "validation": "Final graph sources unchanged from model-inspected stage1 images. Model states actual inspection; matches supplied images."
+    },
+    "show-me": {
+      "coverage": "All 12 internal runtime units, 19 distinct container-level endpoint relationships and six context relationships retained. Callback-to-Kafka repeated in event-filtered views, not a new connection. Three independent DBs, two API deployments, read-only query and organization ownership preserved.",
+      "faithfulness": "No invented service, retry, identity, Kafka topic or external internal structure found. Generic flowcharts explicitly follow C1/C2 layers. Task does not mandate native C4 syntax, so generic syntax is not a defect.",
+      "layout": "Initial two flowcharts: context labels overlap, combined container view has many crossing edges. Final four flowcharts: context labels separate, containers split by order/payment/query; arrows traceable and labels legible. Still tall order/payment/query views, not perfect compactness.",
+      "validation": "Final source unchanged from model-inspected stage1 images; says those inspected sources retained.",
+      "guide": "No Mermaid guide injected or mounted. Model nevertheless used Mermaid frontmatter nodeSpacing/rankSpacing/curve configuration correctly."
+    },
+    "judgment": "Both final outputs usable and faithful. show-me uses four views, v042 five, splitting order sending and delivery processing. v042 provides explicit per-node layer labels and colors; show-me simpler labels and two nested company/system boundaries. No clear correctness or final readability advantage for extra guide in this case."
+  }
+}

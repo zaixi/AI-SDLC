@@ -1,0 +1,21 @@
+flowchart TD
+    T["调度器下发当前批次任务"] --> W["工作器读取指定产物<br/>部署并返回批次结果"]
+    W --> R["调度器接收批次结果"]
+    R --> D{"结果所属批次<br/>是否已记录？"}
+
+    D -->|"是"| I["忽略重复结果<br/>不再次推进批次"]
+    D -->|"否"| K["记录该批次结果"]
+    K --> S{"该批次是否成功？"}
+
+    S -->|"否"| F["写回失败状态<br/>停止后续批次<br/>已成功批次不自动回滚"]
+    S -->|"是"| N{"是否还有下一批？"}
+    N -->|"是"| P["推进到下一批"]
+    P --> T
+    N -->|"否"| Z["全部批次成功<br/>写回完成状态"]
+
+    classDef failure fill:#fff0ee,stroke:#b54738,color:#222
+    classDef success fill:#edf8ef,stroke:#40834b,color:#222
+    classDef ignored fill:#f3f3f3,stroke:#777,color:#222
+    class F failure
+    class Z success
+    class I ignored

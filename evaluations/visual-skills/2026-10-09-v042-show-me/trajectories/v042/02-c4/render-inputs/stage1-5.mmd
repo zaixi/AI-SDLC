@@ -1,0 +1,20 @@
+flowchart TB
+    support["支持工程师<br/>【人员】"]
+
+    subgraph company["本公司 · 采购协同系统边界"]
+        admin["管理门户<br/>【容器】"]
+        queryApi["查询API<br/>【容器 · 独立部署进程】<br/>与采购API分别部署"]
+        orderDb[("订单库<br/>【容器 · PostgreSQL实例①】")]
+        paymentDb[("付款库<br/>【容器 · PostgreSQL实例③】")]
+
+        admin -->|"HTTPS · 调用"| queryApi
+        queryApi -->|"只读"| orderDb
+        queryApi -->|"只读"| paymentDb
+    end
+
+    support -->|"查看处理状态"| admin
+
+    classDef person fill:#08427b,color:#fff,stroke:#052e56
+    classDef container fill:#e8f1fb,color:#16324f,stroke:#3978b8
+    class support person
+    class admin,queryApi,orderDb,paymentDb container

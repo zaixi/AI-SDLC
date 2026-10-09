@@ -1,0 +1,21 @@
+C4Container
+    title 容器视图：付款申请与异步结果
+
+    System_Ext(bank, "付款系统", "归属银行；内部未展开")
+
+    Container_Boundary(procurement, "本公司 · 采购协同系统") {
+        Container(api, "采购API", "独立部署进程", "写付款申请事件")
+        ContainerQueue(kafka, "内部Kafka", "Kafka", "承载内部事件")
+        Container(paymentWorker, "付款处理器", "技术未指定", "消费付款申请和付款结果")
+        Container(callback, "回调网关", "技术未指定", "接收外部回调并写事件")
+        ContainerDb(paymentDb, "付款库", "PostgreSQL · 独立实例③", "存储付款处理数据")
+    }
+
+    Rel(api, kafka, "写付款申请事件")
+    Rel(paymentWorker, kafka, "消费付款申请事件及付款结果")
+    Rel(paymentWorker, bank, "发送付款请求", "HTTPS")
+    Rel(bank, callback, "异步回传付款结果", "HTTPS")
+    Rel(callback, kafka, "写付款结果事件")
+    Rel(paymentWorker, paymentDb, "写付款数据")
+
+    UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
