@@ -1,0 +1,10 @@
+# My grill-me skill has gone viral
+
+网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。
+
+- [公开原文](https://www.aihero.dev/my-grill-me-skill-has-gone-viral)
+
+## 本地文件
+
+- [page.html](page.html)
+- [page.txt](page.txt)

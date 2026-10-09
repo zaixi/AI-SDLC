@@ -1,0 +1,32 @@
+{
+  "id": "matt-grill-origin",
+  "title": "My grill-me skill has gone viral",
+  "directory": "materials/matt-pocock/04-grill-origin",
+  "kind": "作者文章 / 访谈 / 官方演讲",
+  "status": "公开文字已保存",
+  "publication_date": "2026-03-23",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "公开原文",
+      "url": "https://www.aihero.dev/my-grill-me-skill-has-gone-viral"
+    }
+  ],
+  "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。",
+  "files": [
+    "materials/matt-pocock/04-grill-origin/page.html",
+    "materials/matt-pocock/04-grill-origin/page.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/matt-pocock/04-grill-origin/page.html",
+      "bytes": 281441,
+      "sha256": "c434c282c9877b217df923bba75527c747d153e9ec93fb827eb1e0202173677f"
+    },
+    {
+      "path": "materials/matt-pocock/04-grill-origin/page.txt",
+      "bytes": 4750,
+      "sha256": "ede9d8f1b6c468a90e249b0bb19b862dccb4605f4dcfc9203917045a8b448ce2"
+    }
+  ]
+}

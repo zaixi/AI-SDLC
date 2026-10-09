@@ -1,0 +1,92 @@
+[
+  {
+    "condition": "show-me",
+    "case": "01-lease",
+    "characters": 360,
+    "visuals": 1,
+    "visual_types": [
+      "mermaid"
+    ],
+    "method": "current-model non-isolated manual application; not independent agent trials"
+  },
+  {
+    "condition": "show-me",
+    "case": "02-intent",
+    "characters": 320,
+    "visuals": 1,
+    "visual_types": [
+      "mermaid"
+    ],
+    "method": "current-model non-isolated manual application; not independent agent trials"
+  },
+  {
+    "condition": "show-me",
+    "case": "03-diff",
+    "characters": 149,
+    "visuals": 1,
+    "visual_types": [
+      "diff"
+    ],
+    "method": "current-model non-isolated manual application; not independent agent trials"
+  },
+  {
+    "condition": "visual-explanation",
+    "case": "01-lease",
+    "characters": 414,
+    "visuals": 1,
+    "visual_types": [
+      "mermaid"
+    ],
+    "method": "current-model non-isolated manual application; not independent agent trials"
+  },
+  {
+    "condition": "visual-explanation",
+    "case": "02-intent",
+    "characters": 378,
+    "visuals": 1,
+    "visual_types": [
+      "mermaid"
+    ],
+    "method": "current-model non-isolated manual application; not independent agent trials"
+  },
+  {
+    "condition": "visual-explanation",
+    "case": "03-diff",
+    "characters": 162,
+    "visuals": 1,
+    "visual_types": [
+      "diff"
+    ],
+    "method": "current-model non-isolated manual application; not independent agent trials"
+  },
+  {
+    "condition": "mermaid-diagrams-candidate",
+    "case": "01-lease",
+    "characters": 357,
+    "visuals": 1,
+    "visual_types": [
+      "mermaid"
+    ],
+    "method": "current-model non-isolated manual application; not independent agent trials"
+  },
+  {
+    "condition": "mermaid-diagrams-candidate",
+    "case": "02-intent",
+    "characters": 312,
+    "visuals": 1,
+    "visual_types": [
+      "mermaid"
+    ],
+    "method": "current-model non-isolated manual application; not independent agent trials"
+  },
+  {
+    "condition": "mermaid-diagrams-candidate",
+    "case": "03-diff",
+    "characters": 252,
+    "visuals": 1,
+    "visual_types": [
+      "mermaid"
+    ],
+    "method": "current-model non-isolated manual application; not independent agent trials"
+  }
+]

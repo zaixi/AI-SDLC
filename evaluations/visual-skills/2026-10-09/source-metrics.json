@@ -1,0 +1,20 @@
+[
+  {
+    "name": "show-me",
+    "characters": 3264,
+    "bytes": 3328,
+    "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+  },
+  {
+    "name": "visual-explanation",
+    "characters": 4527,
+    "bytes": 6689,
+    "sha256": "9d6cafcbe4a76c42082a73d3b59af1ac81de2529d9d310acc3465c302d2d0102"
+  },
+  {
+    "name": "mermaid-diagrams-candidate",
+    "characters": 7479,
+    "bytes": 7479,
+    "sha256": "79bca3c767a821a28aa7d83a9673010b2066afa4889923ea5946153c8967e824"
+  }
+]

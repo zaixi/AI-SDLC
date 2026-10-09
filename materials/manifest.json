@@ -1,0 +1,3630 @@
+{
+  "schema_version": 1,
+  "archived_on": "2026-10-08",
+  "timezone": "Asia/Shanghai",
+  "entry_count": 47,
+  "entries": [
+    {
+      "id": "upload-matt-manager",
+      "title": "技术一把手用 Matt Pocock Skills 提升团队效率",
+      "directory": "materials/uploaded/01-matt-manager",
+      "kind": "用户上传 PDF",
+      "status": "完整 PDF 已保存",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "用户提供的微信公众号链接",
+          "url": "https://mp.weixin.qq.com/s/eVGIuzCPeJEUUXNRYq1wSA"
+        }
+      ],
+      "note": "",
+      "files": [
+        "materials/uploaded/01-matt-manager/text.txt",
+        "materials/uploaded/01-matt-manager/技术一把手用 Matt Pocock Skills 提升团队效率.pdf"
+      ],
+      "assets": [
+        {
+          "path": "materials/uploaded/01-matt-manager/text.txt",
+          "bytes": 22906,
+          "sha256": "5af4323fb3081f0e9448c99fa6df6b836bc05add1755d1325244874b1ec8ac69"
+        },
+        {
+          "path": "materials/uploaded/01-matt-manager/技术一把手用 Matt Pocock Skills 提升团队效率.pdf",
+          "bytes": 1011712,
+          "sha256": "8bd0b2361e23acbc17d47296edfc9646525151e682932398489391a044e3052d"
+        }
+      ]
+    },
+    {
+      "id": "upload-domain",
+      "title": "domain-architecture-skills：让 AI 先建模、再选架构、最后写代码",
+      "directory": "materials/uploaded/02-domain",
+      "kind": "用户上传 PDF",
+      "status": "完整 PDF 已保存",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "用户提供的微信公众号链接",
+          "url": "https://mp.weixin.qq.com/s/eZwmXgKfP2Ey7VcCMnCUNg"
+        }
+      ],
+      "note": "",
+      "files": [
+        "materials/uploaded/02-domain/domain-architecture-skills：让 AI 先建模、再选架构、最后写代码.pdf",
+        "materials/uploaded/02-domain/text.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/uploaded/02-domain/domain-architecture-skills：让 AI 先建模、再选架构、最后写代码.pdf",
+          "bytes": 844363,
+          "sha256": "d320064b2f71d132cbd18f75899bcca1d73884f0b2ef72e329f16eb52f7f383c"
+        },
+        {
+          "path": "materials/uploaded/02-domain/text.txt",
+          "bytes": 15169,
+          "sha256": "a2848f2ecb468e8e3bba5d6e6fa1b943523ecf21d672dfae715f351a93cc7d78"
+        }
+      ]
+    },
+    {
+      "id": "upload-matt-overview",
+      "title": "总结篇 _ mattpocock_skills 全系列回顾与速查合集",
+      "directory": "materials/uploaded/03-matt-overview",
+      "kind": "用户上传 PDF",
+      "status": "完整 PDF 已保存",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "用户提供的微信公众号链接",
+          "url": "https://mp.weixin.qq.com/s/Nhy5r6IcIf3w_IlkmExFqQ"
+        }
+      ],
+      "note": "",
+      "files": [
+        "materials/uploaded/03-matt-overview/text.txt",
+        "materials/uploaded/03-matt-overview/总结篇 _ mattpocock_skills 全系列回顾与速查合集.pdf"
+      ],
+      "assets": [
+        {
+          "path": "materials/uploaded/03-matt-overview/text.txt",
+          "bytes": 14052,
+          "sha256": "9aed2717936423004be8990140ea40b3d19ada780d1badccaf4ea439392a3334"
+        },
+        {
+          "path": "materials/uploaded/03-matt-overview/总结篇 _ mattpocock_skills 全系列回顾与速查合集.pdf",
+          "bytes": 1432760,
+          "sha256": "3f1352fcd419467945a3bc88e78be3d60bafb12212096257b561159eaf1b29a3"
+        }
+      ]
+    },
+    {
+      "id": "upload-handbook",
+      "title": "AI Native 研发体系建设与落地手册",
+      "directory": "materials/uploaded/04-handbook",
+      "kind": "用户上传 PDF",
+      "status": "完整 PDF 已保存",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "用户提供的微信公众号链接",
+          "url": "https://mp.weixin.qq.com/s/Hp-fdkcAt7g3pCPHQpqg_g"
+        }
+      ],
+      "note": "",
+      "files": [
+        "materials/uploaded/04-handbook/AI Native 研发体系建设与落地手册.pdf",
+        "materials/uploaded/04-handbook/text.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/uploaded/04-handbook/AI Native 研发体系建设与落地手册.pdf",
+          "bytes": 979085,
+          "sha256": "7885bb2fbb50018ee94c9f058d3d9e1472ebf67fc205d3302f395fbcb2e4e3da"
+        },
+        {
+          "path": "materials/uploaded/04-handbook/text.txt",
+          "bytes": 66993,
+          "sha256": "d03330029e9084eb0fae4bde825bf9486697447319706d8ec374a892f06e04b9"
+        }
+      ]
+    },
+    {
+      "id": "upload-delivery",
+      "title": "第八篇：主交付链：Grilling → Spec → Tickets → Implement → Code Review",
+      "directory": "materials/uploaded/05-delivery",
+      "kind": "用户上传 PDF",
+      "status": "完整 PDF 已保存",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "用户提供的微信公众号链接",
+          "url": "https://mp.weixin.qq.com/s/SSrTs9DPK6rkJ-Q6v_1O1Q"
+        }
+      ],
+      "note": "",
+      "files": [
+        "materials/uploaded/05-delivery/text.txt",
+        "materials/uploaded/05-delivery/第八篇：主交付链：Grilling → Spec → Tickets → Implement → Code Review.pdf"
+      ],
+      "assets": [
+        {
+          "path": "materials/uploaded/05-delivery/text.txt",
+          "bytes": 11440,
+          "sha256": "55c9756ce19cc70a26a9e271efd35c305cabf81789c0c5913f7683e5b5674e56"
+        },
+        {
+          "path": "materials/uploaded/05-delivery/第八篇：主交付链：Grilling → Spec → Tickets → Implement → Code Review.pdf",
+          "bytes": 720093,
+          "sha256": "3a24d40304d64767cf7e8fac1cc640100a59cdd1532c5bd01e4974c0eb0455db"
+        }
+      ]
+    },
+    {
+      "id": "upload-aaic-review",
+      "title": "在新的研发模式下，如何看懂AI写的技术方案？",
+      "directory": "materials/uploaded/06-aaic-review",
+      "kind": "用户上传 PDF",
+      "status": "完整 PDF 已保存",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "用户提供的微信公众号链接",
+          "url": "https://mp.weixin.qq.com/s/eF-cdFtdiDX-laykhVEdqg"
+        }
+      ],
+      "note": "",
+      "files": [
+        "materials/uploaded/06-aaic-review/text.txt",
+        "materials/uploaded/06-aaic-review/在新的研发模式下，如何看懂AI写的技术方案？.pdf"
+      ],
+      "assets": [
+        {
+          "path": "materials/uploaded/06-aaic-review/text.txt",
+          "bytes": 18974,
+          "sha256": "a46cd1169b09b55fa0811e554d55e0604c2a3e0e1200ac8a96a2bd47566ac4aa"
+        },
+        {
+          "path": "materials/uploaded/06-aaic-review/在新的研发模式下，如何看懂AI写的技术方案？.pdf",
+          "bytes": 1961641,
+          "sha256": "b9b84e4e74072faabddd1bac733fffc7e9b5a0f16dd7c20957c36b6e0537ba56"
+        }
+      ]
+    },
+    {
+      "id": "ali-handbook",
+      "title": "AI Native 研发范式实践手册",
+      "directory": "materials/domestic/alibaba/01-ai-native-handbook",
+      "kind": "官方手册",
+      "status": "完整 PDF 与 OCR 已保存",
+      "publication_date": "2026-09",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "官方在线阅读",
+          "url": "https://ai-native.alistatic.com/app/ainativeinfra/ai-native-handbook-web/index"
+        },
+        {
+          "label": "官方 PDF",
+          "url": "https://g.alistatic.com/s/v/ainativeinfra/ai-native-handbook/0.0.1/ai-native-handbook.pdf"
+        }
+      ],
+      "note": "68 页。与 uploaded/04-handbook 的 29 页资料不同。OCR 非原始文字层，数字与引用应回看 PDF；重点章节已审阅。",
+      "files": [
+        "materials/domestic/alibaba/01-ai-native-handbook/ocr.txt",
+        "materials/domestic/alibaba/01-ai-native-handbook/original.pdf",
+        "materials/domestic/alibaba/01-ai-native-handbook/reader-page.html",
+        "materials/domestic/alibaba/01-ai-native-handbook/reader-page.txt",
+        "materials/domestic/alibaba/01-ai-native-handbook/third-party-interpretation.html",
+        "materials/domestic/alibaba/01-ai-native-handbook/third-party-interpretation.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/alibaba/01-ai-native-handbook/ocr.txt",
+          "bytes": 168743,
+          "sha256": "b6751b5cacb0f555f1170d984ac2f4c9a461f45cee5f2468b9d69a98d6a4e64a"
+        },
+        {
+          "path": "materials/domestic/alibaba/01-ai-native-handbook/original.pdf",
+          "bytes": 27286928,
+          "sha256": "6929f3e9e57fef9550129d457ba82ac40a4a9368e1c5926c6ac2206d8aaeced3"
+        },
+        {
+          "path": "materials/domestic/alibaba/01-ai-native-handbook/reader-page.html",
+          "bytes": 3634,
+          "sha256": "fdc88ddea86d2198e41f57de50367a2b86baca9364b1ab29332d059346bc2bbe"
+        },
+        {
+          "path": "materials/domestic/alibaba/01-ai-native-handbook/reader-page.txt",
+          "bytes": 305,
+          "sha256": "1aff85bb7c152a9abec5382de2a4b03dfb6b71683c7a9f72928b5fb5e049f7db"
+        },
+        {
+          "path": "materials/domestic/alibaba/01-ai-native-handbook/third-party-interpretation.html",
+          "bytes": 243952,
+          "sha256": "765d03d8ec9829956ebb33dd8a5d54aa0a83bde151f8ab6305fe860a1e306dfa"
+        },
+        {
+          "path": "materials/domestic/alibaba/01-ai-native-handbook/third-party-interpretation.txt",
+          "bytes": 196553,
+          "sha256": "87150256c43ae36e778946beb1152c31deb8f5fdf0803e76a1684a37dac8c590"
+        }
+      ]
+    },
+    {
+      "id": "ali-aaic-review",
+      "title": "在新的研发模式下，如何看懂 AI 写的技术方案？",
+      "directory": "materials/domestic/alibaba/02-aaic-review",
+      "kind": "团队实践",
+      "status": "完整 PDF 见上传资料",
+      "publication_date": "2026-09-16",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "公众号原文",
+          "url": "https://mp.weixin.qq.com/s/eF-cdFtdiDX-laykhVEdqg"
+        }
+      ],
+      "note": "全文位于 ../../../uploaded/06-aaic-review/，不重复存储 PDF。志春署名、AliExpress 技术。",
+      "files": [],
+      "assets": []
+    },
+    {
+      "id": "ali-multi-sdd",
+      "title": "多 AI 协同 + SDD 编程实践：一个 AI 全流程交付实录",
+      "directory": "materials/domestic/alibaba/03-multi-ai-sdd",
+      "kind": "官方账号文章",
+      "status": "全文快照已保存",
+      "publication_date": "2026-01-21",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "阿里技术官方账号",
+          "url": "https://news.qq.com/rain/a/20260121A01LS300"
+        },
+        {
+          "label": "阿里云同题页面",
+          "url": "https://developer.aliyun.com/article/1708977"
+        }
+      ],
+      "note": "多个转载算同一篇；归档使用可读官方账号全文。示例安装命令仅为资料，未执行。",
+      "files": [
+        "materials/domestic/alibaba/03-multi-ai-sdd/community-summary.html",
+        "materials/domestic/alibaba/03-multi-ai-sdd/community-summary.txt",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images.md",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/152f672d0564a5ca.png",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/1cbda1ee9a5c3729.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/2115836d9a371f73.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/23c5b446a8d002ae.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/2ee636ee926a6d7a.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/37390b6e5e981bae.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/3e849cf19d041ef3.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/57bd1c23f528934f.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/5c89bf6b5fc32392.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/5ebb5c625f07afa0.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/6708af2dc31399cf.png",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/6a34915a65b4a128.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/6ef0e50df4727803.png",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/770634ed8454e86f.gif",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/7e4043d0b21dd14d.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/8be15a48a857f6ee.png",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/b31a0b8d5211765d.png",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/c270a8741c4b7f14.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/c47efd6d2e3c534d.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/c52433277cd31326.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/c9b335917ea6856e.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/cc0a929e4483d9e7.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/d2b8953e4696221d.png",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/e947b71e88ae6577.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/eb3ddd1e71244ba3.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/ed65dc12b0dd9f82.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/f5c04ceaac1eddae.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/fc1bc0386e2f2d16.jpg",
+        "materials/domestic/alibaba/03-multi-ai-sdd/images/fd761f3606dc9140.webp",
+        "materials/domestic/alibaba/03-multi-ai-sdd/official-article.html",
+        "materials/domestic/alibaba/03-multi-ai-sdd/official-article.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/community-summary.html",
+          "bytes": 187481,
+          "sha256": "dea2a87ecd952a1dbceb939deab640b92fc63f76b4e9cbbed80abf6b1b979d41"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/community-summary.txt",
+          "bytes": 4458,
+          "sha256": "4383cc467b1a3a2969f22c467637a011bf61208f69f99e89fc585a8c1a36a4a3"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images.md",
+          "bytes": 4603,
+          "sha256": "30060ab4d0442f9f65089e60c4888f445129ee07908295a01981d9a169d357bd"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/152f672d0564a5ca.png",
+          "bytes": 89896,
+          "sha256": "24d30fae317415abc1f8a8e68e17f35d112f4705b88b2e2f9fac80fc42d9e693"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/1cbda1ee9a5c3729.jpg",
+          "bytes": 43264,
+          "sha256": "5a2ef99992e985ca975a30c57e70bb80ed6aed545f22043e5101a3bbb0226924"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/2115836d9a371f73.jpg",
+          "bytes": 20230,
+          "sha256": "ff3fccb147d567cbb81c60de79f2bdec53561dca104191bd8331babb75893b14"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/23c5b446a8d002ae.jpg",
+          "bytes": 24128,
+          "sha256": "83871219b6223931e8203ed7fba7462d9d33122beeaa005ad808c29f61435e1b"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/2ee636ee926a6d7a.jpg",
+          "bytes": 39764,
+          "sha256": "a592157a47d7876e3e237fe9944113f279086ee1e0f9aa7cdf9c366c136b6e54"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/37390b6e5e981bae.jpg",
+          "bytes": 51939,
+          "sha256": "b6cbbb6b55272f737a99ed7435034ff927a016a44c1699e10c64c2f7362fdf75"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/3e849cf19d041ef3.jpg",
+          "bytes": 47844,
+          "sha256": "298dbd3d1d6d1ada1079bdf86f5a87972b3e7e87b7d37124421c7289b78f8ee9"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/57bd1c23f528934f.jpg",
+          "bytes": 40721,
+          "sha256": "bef2441bd0824ccc7d91c3364a1c384eeebd3593857e65a9d801a964011b9575"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/5c89bf6b5fc32392.jpg",
+          "bytes": 20998,
+          "sha256": "db3f8bcc1a5f6d851e9ebd050c7f170b06b56ff03d5dc9bfd4d58d396976307c"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/5ebb5c625f07afa0.jpg",
+          "bytes": 22652,
+          "sha256": "5c74f5d3c49e9d53344609261e30cc1aabd1bd73181fea153c304076d154b250"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/6708af2dc31399cf.png",
+          "bytes": 221841,
+          "sha256": "55f70e6f0f4a012848d0af9722866ac4f7c65b846dc5a88ef808439177d443c8"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/6a34915a65b4a128.jpg",
+          "bytes": 26927,
+          "sha256": "a1b659b33d97bb3d478e0c5ce4916fa4793a9a8c671e3c497f0b3d471bcfc31e"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/6ef0e50df4727803.png",
+          "bytes": 1692,
+          "sha256": "a5c3d6e5bf2d95c9834a2ba73e9edf1353e6424d2c04c6663e6b76e2ea70e491"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/770634ed8454e86f.gif",
+          "bytes": 3376,
+          "sha256": "b94e138d94e27aa65a6dea14aac1325d709f56e02f07a6bba95fdf10f296cb6a"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/7e4043d0b21dd14d.jpg",
+          "bytes": 12789,
+          "sha256": "460434e1333979852c9c442807bbfd5baaca280229bad95c6ffa666ef41fb57b"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/8be15a48a857f6ee.png",
+          "bytes": 428027,
+          "sha256": "0a8e538a46b5862bf58515df872b23ffc0df56a56f5f214b3147818924b9bb93"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/b31a0b8d5211765d.png",
+          "bytes": 2330,
+          "sha256": "974bbcc14bfad5995a138aedb25584422ea73ce59a2b21730da38b2c139f2692"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/c270a8741c4b7f14.jpg",
+          "bytes": 45745,
+          "sha256": "9e1b5ea4c8aae203dff9a89166a9bf398985ec183568e300852e56e78104f121"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/c47efd6d2e3c534d.jpg",
+          "bytes": 27274,
+          "sha256": "3800d0569956b7a08af25c06f845d7251fdc760bdffcdef1d6eaeba4323caf64"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/c52433277cd31326.jpg",
+          "bytes": 22571,
+          "sha256": "243296ce364a7add21887ec1e6000882ae4089223a88dc5737334fb302311e9f"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/c9b335917ea6856e.jpg",
+          "bytes": 16905,
+          "sha256": "0c0b25b3dd39e9cee7bbfac94515ccd597752769473988af607ce52986505435"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/cc0a929e4483d9e7.jpg",
+          "bytes": 16436,
+          "sha256": "ae87385ad1fe96188bc085e14c1d1f41af11611fbc87265a278e81944ba47e5a"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/d2b8953e4696221d.png",
+          "bytes": 9138,
+          "sha256": "d81071ee678356860b822a3ce5d11ed057462390ab1869a82411912322dd82ab"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/e947b71e88ae6577.jpg",
+          "bytes": 25885,
+          "sha256": "0a329a1441ca28654f8c40011679ff4bca5f49ea6ddd1e8d1bef8229767dc725"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/eb3ddd1e71244ba3.jpg",
+          "bytes": 25905,
+          "sha256": "fdf53af50e8cb5ed26c79659ca1463a064e9cf59258cfe7b7275873ed83a00d7"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/ed65dc12b0dd9f82.jpg",
+          "bytes": 52504,
+          "sha256": "07cf354aa8ffb642a08c630bf85591db9a4d4ba5ad89f2faf47b140347a7ba57"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/f5c04ceaac1eddae.jpg",
+          "bytes": 54238,
+          "sha256": "348e633652d035bf22e90a20106d32b2f9a0b47d046e519b760d0fe9a6b2898a"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/fc1bc0386e2f2d16.jpg",
+          "bytes": 29715,
+          "sha256": "e58019acb2f6631c5f9d81d1b6ae09fefa25a466f3024c722e525691489ac2a2"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/fd761f3606dc9140.webp",
+          "bytes": 10516,
+          "sha256": "31b7d2c805ff882f23843a6d3fa49988e67da87eb8c86b08c0996e3de2626f7c"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/official-article.html",
+          "bytes": 577140,
+          "sha256": "108e14fd60affa6dccc62a03890ebff029457b5ee1ae6e358df798d62f879f45"
+        },
+        {
+          "path": "materials/domestic/alibaba/03-multi-ai-sdd/official-article.txt",
+          "bytes": 37089,
+          "sha256": "7952f431ba2c2bf86b2173675af49f611898f58d362e2c518e01061b1fa25338"
+        }
+      ]
+    },
+    {
+      "id": "ali-taote",
+      "title": "AI 编码实践：从 Vibe Coding 到 SDD",
+      "directory": "materials/domestic/alibaba/04-taote-vibe-to-sdd",
+      "kind": "团队实践转载",
+      "status": "转载正文已保存；公众号原文无法连接",
+      "publication_date": "2025-12-30（转载）",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "原文",
+          "url": "https://mp.weixin.qq.com/s/xVff9O2DPLssbfzp_GRwXQ"
+        },
+        {
+          "label": "可读转载",
+          "url": "https://blog.wyan.vip/2025/12/ai_VibeCoding_to_SSD.html"
+        },
+        {
+          "label": "阿里云同题页面",
+          "url": "https://developer.aliyun.com/article/1709229"
+        }
+      ],
+      "note": "日期为可读转载日期，非已核实原始发布日期。微信公众号请求被网络代理拒绝。",
+      "files": [
+        "materials/domestic/alibaba/04-taote-vibe-to-sdd/community-summary.html",
+        "materials/domestic/alibaba/04-taote-vibe-to-sdd/community-summary.txt",
+        "materials/domestic/alibaba/04-taote-vibe-to-sdd/images.md",
+        "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/770634ed8454e86f.gif",
+        "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/8be15a48a857f6ee.png",
+        "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/ab6f63f14b9dd959.png",
+        "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/b31a0b8d5211765d.png",
+        "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/d2b8953e4696221d.png",
+        "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/fd761f3606dc9140.webp",
+        "materials/domestic/alibaba/04-taote-vibe-to-sdd/republication.html",
+        "materials/domestic/alibaba/04-taote-vibe-to-sdd/republication.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/community-summary.html",
+          "bytes": 186562,
+          "sha256": "5294d484cdf75c1e5a7f1632f8b2a227417218c155ae6fa1684cf62e4215bcff"
+        },
+        {
+          "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/community-summary.txt",
+          "bytes": 4781,
+          "sha256": "a2594614bdf1ba65761a90695c14d07f0fc98fdca5735af16fd7fd0c792653de"
+        },
+        {
+          "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/images.md",
+          "bytes": 1034,
+          "sha256": "79e1e59f26a98488d93154e612e8bb1621e24f47c544b3f9cf5e7218729e0c04"
+        },
+        {
+          "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/770634ed8454e86f.gif",
+          "bytes": 3376,
+          "sha256": "b94e138d94e27aa65a6dea14aac1325d709f56e02f07a6bba95fdf10f296cb6a"
+        },
+        {
+          "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/8be15a48a857f6ee.png",
+          "bytes": 428027,
+          "sha256": "0a8e538a46b5862bf58515df872b23ffc0df56a56f5f214b3147818924b9bb93"
+        },
+        {
+          "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/ab6f63f14b9dd959.png",
+          "bytes": 19256,
+          "sha256": "a20583c81805fe64f7fa210851ce29754af9d25fd6aa5a3225a9557529602513"
+        },
+        {
+          "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/b31a0b8d5211765d.png",
+          "bytes": 2330,
+          "sha256": "974bbcc14bfad5995a138aedb25584422ea73ce59a2b21730da38b2c139f2692"
+        },
+        {
+          "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/d2b8953e4696221d.png",
+          "bytes": 9138,
+          "sha256": "d81071ee678356860b822a3ce5d11ed057462390ab1869a82411912322dd82ab"
+        },
+        {
+          "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/fd761f3606dc9140.webp",
+          "bytes": 10516,
+          "sha256": "31b7d2c805ff882f23843a6d3fa49988e67da87eb8c86b08c0996e3de2626f7c"
+        },
+        {
+          "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/republication.html",
+          "bytes": 132548,
+          "sha256": "1981706e051d6e33a2cc16b9f34e66049fb0079feb202caa247ea5da6dd589ce"
+        },
+        {
+          "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/republication.txt",
+          "bytes": 41458,
+          "sha256": "a099e702c62ea6898d2863007d9e1d34e4d019170fae2912235562c3721dc24f"
+        }
+      ]
+    },
+    {
+      "id": "byte-force",
+      "title": "洪定坤：AI Coding 的实践与探索",
+      "directory": "materials/domestic/bytedance/01-ai-coding-force",
+      "kind": "大会演讲媒体报道",
+      "status": "媒体报道已保存；官方原文无法连接",
+      "publication_date": "2026-06-24（报道）",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "火山引擎原文",
+          "url": "https://mp.weixin.qq.com/s/mdmaAyUIvxE8WT_GEbF2wQ"
+        },
+        {
+          "label": "IT时代网报道",
+          "url": "https://news.qq.com/rain/a/20260624A0B28B00"
+        }
+      ],
+      "note": "演讲 2026-06-23，媒体报道 06-24。数字目前为媒体转述，未取得官方实录。",
+      "files": [
+        "materials/domestic/bytedance/01-ai-coding-force/images.md",
+        "materials/domestic/bytedance/01-ai-coding-force/images/b3a82746c126d8bc.jpg",
+        "materials/domestic/bytedance/01-ai-coding-force/media-report.html",
+        "materials/domestic/bytedance/01-ai-coding-force/media-report.txt",
+        "materials/domestic/bytedance/01-ai-coding-force/source-index.html",
+        "materials/domestic/bytedance/01-ai-coding-force/source-index.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/bytedance/01-ai-coding-force/images.md",
+          "bytes": 309,
+          "sha256": "5c06c19cc0692864faca399dc5b6dc8c7c24b2dbd79d8430083b538e0b2a3b89"
+        },
+        {
+          "path": "materials/domestic/bytedance/01-ai-coding-force/images/b3a82746c126d8bc.jpg",
+          "bytes": 29932,
+          "sha256": "06c7cdca3d11ddc70c37d6148869d3f39d83503eca7b423018adbc3a3bc0d1d2"
+        },
+        {
+          "path": "materials/domestic/bytedance/01-ai-coding-force/media-report.html",
+          "bytes": 76361,
+          "sha256": "19e03f8414da6f13a91c3390aaa7b0bb793808f7449164001e6fe2f9afecf12e"
+        },
+        {
+          "path": "materials/domestic/bytedance/01-ai-coding-force/media-report.txt",
+          "bytes": 2774,
+          "sha256": "31965b28c0478e7cb4aa4a24c2f5aa3d6e49edee8967a72075275ab5d7632921"
+        },
+        {
+          "path": "materials/domestic/bytedance/01-ai-coding-force/source-index.html",
+          "bytes": 132819,
+          "sha256": "f9c1d77a8b884efeae9ff66de88b108020f87bac38aa37fdbdcd144843542815"
+        },
+        {
+          "path": "materials/domestic/bytedance/01-ai-coding-force/source-index.txt",
+          "bytes": 9661,
+          "sha256": "bb04a307a690573c0192ce4e6d8d8638bf4bfaf34ebf21c8e1b591c358729691"
+        }
+      ]
+    },
+    {
+      "id": "byte-trae-paper",
+      "title": "Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling",
+      "directory": "materials/domestic/bytedance/02-trae-agent",
+      "kind": "技术论文与官方开源文档",
+      "status": "论文 HTML、官方 README 已保存，PDF 已保存",
+      "publication_date": "2025（论文 v1）",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "论文固定版本 v1",
+          "url": "https://arxiv.org/html/2507.23370v1"
+        },
+        {
+          "label": "论文 PDF v1",
+          "url": "https://arxiv.org/pdf/2507.23370v1"
+        },
+        {
+          "label": "官方仓库",
+          "url": "https://github.com/bytedance/trae-agent"
+        }
+      ],
+      "note": "论文固定为 v1；README 是 2026-10-08 检索时 main 快照。未运行或复现实验，未安装项目。",
+      "files": [
+        "materials/domestic/bytedance/02-trae-agent/images.md",
+        "materials/domestic/bytedance/02-trae-agent/images/386a25b5feaa3ae3.svg",
+        "materials/domestic/bytedance/02-trae-agent/images/45f59089fadc9997.png",
+        "materials/domestic/bytedance/02-trae-agent/images/496ea8dde926ed67.png",
+        "materials/domestic/bytedance/02-trae-agent/images/7fe224947dc8caf7.png",
+        "materials/domestic/bytedance/02-trae-agent/images/80ef4d623aa6c6d4.png",
+        "materials/domestic/bytedance/02-trae-agent/images/9d5a7d935e3421b0.png",
+        "materials/domestic/bytedance/02-trae-agent/images/fe17514434def8ef.png",
+        "materials/domestic/bytedance/02-trae-agent/paper-v1.html",
+        "materials/domestic/bytedance/02-trae-agent/paper-v1.pdf",
+        "materials/domestic/bytedance/02-trae-agent/paper-v1.txt",
+        "materials/domestic/bytedance/02-trae-agent/repository-readme.md",
+        "materials/domestic/bytedance/02-trae-agent/repository-readme.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/bytedance/02-trae-agent/images.md",
+          "bytes": 1040,
+          "sha256": "93468220e3ec9a243e8e91801d3e49c00d2ab6dc5c3d1729b3fe190d64aaf9e5"
+        },
+        {
+          "path": "materials/domestic/bytedance/02-trae-agent/images/386a25b5feaa3ae3.svg",
+          "bytes": 2621,
+          "sha256": "d8ddbd1909e144056810b2a0f4b64f34d92ad6597f314cec27e92b913c3e27bc"
+        },
+        {
+          "path": "materials/domestic/bytedance/02-trae-agent/images/45f59089fadc9997.png",
+          "bytes": 133160,
+          "sha256": "1d4453c79a54176c5f3eafb08b2d0730e82da3abf82a93e4407abaafa55c1235"
+        },
+        {
+          "path": "materials/domestic/bytedance/02-trae-agent/images/496ea8dde926ed67.png",
+          "bytes": 302867,
+          "sha256": "af31500782bb011900383ba778441765e864fd63f917dc75b5aa272dddd20905"
+        },
+        {
+          "path": "materials/domestic/bytedance/02-trae-agent/images/7fe224947dc8caf7.png",
+          "bytes": 248806,
+          "sha256": "77e437c41d05f4b3d3a20e124d6b3504f010dd54c345d0db4ca987faa9852949"
+        },
+        {
+          "path": "materials/domestic/bytedance/02-trae-agent/images/80ef4d623aa6c6d4.png",
+          "bytes": 341678,
+          "sha256": "c45b3550c494f6b7617f1fffb71f33f5b75658205d39c0237a8ca028fdf8ed70"
+        },
+        {
+          "path": "materials/domestic/bytedance/02-trae-agent/images/9d5a7d935e3421b0.png",
+          "bytes": 93397,
+          "sha256": "632aa50c13e565272eafbc3b6f9bcf0947e0fb03519b323a373b84a1ca48de0e"
+        },
+        {
+          "path": "materials/domestic/bytedance/02-trae-agent/images/fe17514434def8ef.png",
+          "bytes": 214578,
+          "sha256": "5c7dc904ea4e2490e5213bd06b169dd8c79a58747114c80b696beed4b7964c1e"
+        },
+        {
+          "path": "materials/domestic/bytedance/02-trae-agent/paper-v1.html",
+          "bytes": 261022,
+          "sha256": "87f56ac5f4ff1ab37d33f4e9fc828bb1188ffa172c727e1c92b7fff9a2b305b0"
+        },
+        {
+          "path": "materials/domestic/bytedance/02-trae-agent/paper-v1.pdf",
+          "bytes": 6081225,
+          "sha256": "14c484acc76c08a70a0db90bc2179a0d63d90360d28c414df2872b8ff4929306"
+        },
+        {
+          "path": "materials/domestic/bytedance/02-trae-agent/paper-v1.txt",
+          "bytes": 78263,
+          "sha256": "da689123cde8a47a7e0df0f1a711b9755bf0ca955b173ebb0a55ed6a945c0289"
+        },
+        {
+          "path": "materials/domestic/bytedance/02-trae-agent/repository-readme.md",
+          "bytes": 10238,
+          "sha256": "6ff2b6c84def1b93ffa8f754b949fdf12a9d3c5d77644984d3a81f3f5b197089"
+        },
+        {
+          "path": "materials/domestic/bytedance/02-trae-agent/repository-readme.txt",
+          "bytes": 10237,
+          "sha256": "41809017d01665c40cd31bd829726a5747e46dffd61c7a3ae8ba64ed233d1d43"
+        }
+      ]
+    },
+    {
+      "id": "byte-qcon",
+      "title": "Trae Agent 架构演进：从 Workflow 到 Agentic Loop",
+      "directory": "materials/domestic/bytedance/03-trae-qcon",
+      "kind": "会议预告、提纲与问答",
+      "status": "公开介绍页已保存；非完整演讲实录",
+      "publication_date": "2025-09-19",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "InfoQ",
+          "url": "https://www.infoq.cn/article/j4Iv0tAbkblL7me2b8Vd"
+        }
+      ],
+      "note": "",
+      "files": [
+        "materials/domestic/bytedance/03-trae-qcon/conference-introduction.html",
+        "materials/domestic/bytedance/03-trae-qcon/conference-introduction.txt",
+        "materials/domestic/bytedance/03-trae-qcon/images.md",
+        "materials/domestic/bytedance/03-trae-qcon/images/34647c6fe937bc0e.png",
+        "materials/domestic/bytedance/03-trae-qcon/images/4160843dad3c526c.png",
+        "materials/domestic/bytedance/03-trae-qcon/images/4ce469be08f9902b.png",
+        "materials/domestic/bytedance/03-trae-qcon/images/4eadc3d1b9e5a896.jpg",
+        "materials/domestic/bytedance/03-trae-qcon/images/5d726436a7ec43cd.png",
+        "materials/domestic/bytedance/03-trae-qcon/images/e7896dc6e753c496.png"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/bytedance/03-trae-qcon/conference-introduction.html",
+          "bytes": 330957,
+          "sha256": "1dd831d27dab5bbbe92f8205af876bd1f9337a8029c63e094f4934f07785a335"
+        },
+        {
+          "path": "materials/domestic/bytedance/03-trae-qcon/conference-introduction.txt",
+          "bytes": 5455,
+          "sha256": "863e2f63078cf91fdf1ed72a57010d4b597d7263e9ba955b320be20d39dcf3c5"
+        },
+        {
+          "path": "materials/domestic/bytedance/03-trae-qcon/images.md",
+          "bytes": 1122,
+          "sha256": "39f392dbb081415ee0b9b291e9602a04f2ddc952058da6fba79c159b674c87be"
+        },
+        {
+          "path": "materials/domestic/bytedance/03-trae-qcon/images/34647c6fe937bc0e.png",
+          "bytes": 1996,
+          "sha256": "fb6218c3dc43ac7215dfc222a2302c5ec6b67508eeb4d6db3c0127a0ad36157d"
+        },
+        {
+          "path": "materials/domestic/bytedance/03-trae-qcon/images/4160843dad3c526c.png",
+          "bytes": 1553,
+          "sha256": "fac9973dfaeeb6aaf40cc7d129222709817359f6bc11eb7a415003f62673dfa6"
+        },
+        {
+          "path": "materials/domestic/bytedance/03-trae-qcon/images/4ce469be08f9902b.png",
+          "bytes": 794,
+          "sha256": "7323b9fd9607cc4dd77b4e73798bc46ce54fcaf9ec7b4e08fda3cf56d2aaa0de"
+        },
+        {
+          "path": "materials/domestic/bytedance/03-trae-qcon/images/4eadc3d1b9e5a896.jpg",
+          "bytes": 42690,
+          "sha256": "c50f33d15c600dedfc8c7bf752bfb4383e947b7ab58a54ae91e75671111dd9a3"
+        },
+        {
+          "path": "materials/domestic/bytedance/03-trae-qcon/images/5d726436a7ec43cd.png",
+          "bytes": 1392,
+          "sha256": "f76914e4c980997d2f00f25ae9a0ccb712754a22ee3b526a78935e3bf2458354"
+        },
+        {
+          "path": "materials/domestic/bytedance/03-trae-qcon/images/e7896dc6e753c496.png",
+          "bytes": 502533,
+          "sha256": "c173b5df3a993203b60c9d99147a23c506bf219dbb832d6843d0f4a1ad2a1ce8"
+        }
+      ]
+    },
+    {
+      "id": "byte-aicon",
+      "title": "AI Native 应用的新范式，Trae 在 Coding Agent 中的工程实践",
+      "directory": "materials/domestic/bytedance/04-trae-aicon",
+      "kind": "会议介绍",
+      "status": "公开介绍页已保存；非完整演讲实录",
+      "publication_date": "2025-08-13",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "InfoQ",
+          "url": "https://www.infoq.cn/article/A6mSqtblyrHSNRxdV8b5"
+        }
+      ],
+      "note": "",
+      "files": [
+        "materials/domestic/bytedance/04-trae-aicon/conference-introduction.html",
+        "materials/domestic/bytedance/04-trae-aicon/conference-introduction.txt",
+        "materials/domestic/bytedance/04-trae-aicon/images.md",
+        "materials/domestic/bytedance/04-trae-aicon/images/1a6450b03c373df5.jpg",
+        "materials/domestic/bytedance/04-trae-aicon/images/34647c6fe937bc0e.png",
+        "materials/domestic/bytedance/04-trae-aicon/images/4160843dad3c526c.png",
+        "materials/domestic/bytedance/04-trae-aicon/images/4ce469be08f9902b.png",
+        "materials/domestic/bytedance/04-trae-aicon/images/5d726436a7ec43cd.png",
+        "materials/domestic/bytedance/04-trae-aicon/images/81821328d6037c46.jpg"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/bytedance/04-trae-aicon/conference-introduction.html",
+          "bytes": 329467,
+          "sha256": "f103c5d8da3af599e815ab410d8aa6c1ab768992ad2b55802a9e4e958d4e34c2"
+        },
+        {
+          "path": "materials/domestic/bytedance/04-trae-aicon/conference-introduction.txt",
+          "bytes": 5424,
+          "sha256": "76de2c85a554ec9742797ab97ad7d10c597a3d9b4c136b0df34b60605e166d86"
+        },
+        {
+          "path": "materials/domestic/bytedance/04-trae-aicon/images.md",
+          "bytes": 1123,
+          "sha256": "8df1dc12e96786b2bb8166e6addbc62ea307f1c258011eaa9c8cd461a69a35bd"
+        },
+        {
+          "path": "materials/domestic/bytedance/04-trae-aicon/images/1a6450b03c373df5.jpg",
+          "bytes": 469916,
+          "sha256": "749362ce3f54f5d37f28de31c3f00c5bb24557034d4bef574790636a99886ebc"
+        },
+        {
+          "path": "materials/domestic/bytedance/04-trae-aicon/images/34647c6fe937bc0e.png",
+          "bytes": 1996,
+          "sha256": "fb6218c3dc43ac7215dfc222a2302c5ec6b67508eeb4d6db3c0127a0ad36157d"
+        },
+        {
+          "path": "materials/domestic/bytedance/04-trae-aicon/images/4160843dad3c526c.png",
+          "bytes": 1553,
+          "sha256": "fac9973dfaeeb6aaf40cc7d129222709817359f6bc11eb7a415003f62673dfa6"
+        },
+        {
+          "path": "materials/domestic/bytedance/04-trae-aicon/images/4ce469be08f9902b.png",
+          "bytes": 794,
+          "sha256": "7323b9fd9607cc4dd77b4e73798bc46ce54fcaf9ec7b4e08fda3cf56d2aaa0de"
+        },
+        {
+          "path": "materials/domestic/bytedance/04-trae-aicon/images/5d726436a7ec43cd.png",
+          "bytes": 1392,
+          "sha256": "f76914e4c980997d2f00f25ae9a0ccb712754a22ee3b526a78935e3bf2458354"
+        },
+        {
+          "path": "materials/domestic/bytedance/04-trae-aicon/images/81821328d6037c46.jpg",
+          "bytes": 149944,
+          "sha256": "b985fc55a9d5f95392e0b762d2fffd4dc322ad132f468f793ac975cbd10be24c"
+        }
+      ]
+    },
+    {
+      "id": "byte-cognition",
+      "title": "TRAE 的思考：AI 时代程序员的认知进化",
+      "directory": "materials/domestic/bytedance/05-cognition",
+      "kind": "官方演讲资源",
+      "status": "公开介绍与提纲已保存；完整附件未取得",
+      "publication_date": "2025-10-24（资源发布）",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "火山引擎官方资源页",
+          "url": "https://developer.volcengine.com/resource/7564369099334107162"
+        }
+      ],
+      "note": "未登录页面没有可直接下载的公开附件 URL；仅有附件内部标识，未绕过登录获取文件。发布日期来自页面公开元数据，不代表演讲日期。",
+      "files": [
+        "materials/domestic/bytedance/05-cognition/images.md",
+        "materials/domestic/bytedance/05-cognition/images/96566d721d3da68c.svg",
+        "materials/domestic/bytedance/05-cognition/images/a0227d2c348e44bd.jpg",
+        "materials/domestic/bytedance/05-cognition/official-resource-page.html",
+        "materials/domestic/bytedance/05-cognition/official-resource-page.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/bytedance/05-cognition/images.md",
+          "bytes": 589,
+          "sha256": "ffcad5ab89b26578b92dbe03185c6fc213a3feae93e408d990df5e9d92dac2ef"
+        },
+        {
+          "path": "materials/domestic/bytedance/05-cognition/images/96566d721d3da68c.svg",
+          "bytes": 5208,
+          "sha256": "f54968fbdaa16d6839b8f03929400182b9260b699c3978184360554bdb8fbbe0"
+        },
+        {
+          "path": "materials/domestic/bytedance/05-cognition/images/a0227d2c348e44bd.jpg",
+          "bytes": 132886,
+          "sha256": "bea83e3c4fae6d8cc3284f1395fd21cfa51d5562f36a26ee104e434546960f1f"
+        },
+        {
+          "path": "materials/domestic/bytedance/05-cognition/official-resource-page.html",
+          "bytes": 102522,
+          "sha256": "d63c90e7c5f3cf05e699bc0857499f0281dbb95f4348b260127070d331409669"
+        },
+        {
+          "path": "materials/domestic/bytedance/05-cognition/official-resource-page.txt",
+          "bytes": 1532,
+          "sha256": "a2585b0a40437405344ae8897a7add88f4cebf3519807b757d7a3677f48a768d"
+        }
+      ]
+    },
+    {
+      "id": "byte-vecli",
+      "title": "veCLI：命令行超级智能体的最佳实践",
+      "directory": "materials/domestic/bytedance/06-vecli",
+      "kind": "官方演讲资源",
+      "status": "公开介绍与提纲已保存；完整附件未取得",
+      "publication_date": "2025-10-24（资源发布）",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "火山引擎官方资源页",
+          "url": "https://developer.volcengine.com/resource/7564595926895951923"
+        }
+      ],
+      "note": "未登录页面没有可直接下载的公开附件 URL；仅有附件内部标识，未绕过登录获取文件。发布日期来自页面公开元数据，不代表演讲日期。",
+      "files": [
+        "materials/domestic/bytedance/06-vecli/images.md",
+        "materials/domestic/bytedance/06-vecli/images/7502d31ccc2dc715.jpg",
+        "materials/domestic/bytedance/06-vecli/images/96566d721d3da68c.svg",
+        "materials/domestic/bytedance/06-vecli/official-resource-page.html",
+        "materials/domestic/bytedance/06-vecli/official-resource-page.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/bytedance/06-vecli/images.md",
+          "bytes": 589,
+          "sha256": "88faab829f577224b547385c8741f3c5a8de5133ce9a47eeddfe2064471407b4"
+        },
+        {
+          "path": "materials/domestic/bytedance/06-vecli/images/7502d31ccc2dc715.jpg",
+          "bytes": 127216,
+          "sha256": "77dc33cc5c70e44021bdecfdb9d0b1683a420a302042e67ab5e1dc9186f3f00c"
+        },
+        {
+          "path": "materials/domestic/bytedance/06-vecli/images/96566d721d3da68c.svg",
+          "bytes": 5208,
+          "sha256": "f54968fbdaa16d6839b8f03929400182b9260b699c3978184360554bdb8fbbe0"
+        },
+        {
+          "path": "materials/domestic/bytedance/06-vecli/official-resource-page.html",
+          "bytes": 102109,
+          "sha256": "8617105ac555d17773dad49ac940c6fc38be27a72e8a1d6c37b1039ee0601951"
+        },
+        {
+          "path": "materials/domestic/bytedance/06-vecli/official-resource-page.txt",
+          "bytes": 1333,
+          "sha256": "720cb336a2933c73c3006d3ebff98fc95ff9eec8bc5db822d257feb67850fdfa"
+        }
+      ]
+    },
+    {
+      "id": "byte-verl",
+      "title": "veRL for Training Coding Agent",
+      "directory": "materials/domestic/bytedance/07-verl",
+      "kind": "官方演讲资源",
+      "status": "公开介绍与提纲已保存；完整附件未取得",
+      "publication_date": "2025-10-24（资源发布）",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "火山引擎官方资源页",
+          "url": "https://developer.volcengine.com/resource/7564300327328219177"
+        }
+      ],
+      "note": "未登录页面没有可直接下载的公开附件 URL；仅有附件内部标识，未绕过登录获取文件。发布日期来自页面公开元数据，不代表演讲日期。",
+      "files": [
+        "materials/domestic/bytedance/07-verl/images.md",
+        "materials/domestic/bytedance/07-verl/images/96566d721d3da68c.svg",
+        "materials/domestic/bytedance/07-verl/images/eccd9e84b654e969.jpg",
+        "materials/domestic/bytedance/07-verl/official-resource-page.html",
+        "materials/domestic/bytedance/07-verl/official-resource-page.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/bytedance/07-verl/images.md",
+          "bytes": 589,
+          "sha256": "22a6071f507db6ece1afdec1a5d9eef934a7bb1268b73c96310dc4a9e984c6d4"
+        },
+        {
+          "path": "materials/domestic/bytedance/07-verl/images/96566d721d3da68c.svg",
+          "bytes": 5208,
+          "sha256": "f54968fbdaa16d6839b8f03929400182b9260b699c3978184360554bdb8fbbe0"
+        },
+        {
+          "path": "materials/domestic/bytedance/07-verl/images/eccd9e84b654e969.jpg",
+          "bytes": 138095,
+          "sha256": "1753f84900dd24c38e60f8e93edfbbe6471c865c3bfc9c36fddaf9c6638040e0"
+        },
+        {
+          "path": "materials/domestic/bytedance/07-verl/official-resource-page.html",
+          "bytes": 101486,
+          "sha256": "75ecc000eb2622cbdc7629a0afd7ebfbdfb973e7e539c3c6a4defd8a3ca9ba7e"
+        },
+        {
+          "path": "materials/domestic/bytedance/07-verl/official-resource-page.txt",
+          "bytes": 1029,
+          "sha256": "2ad9259ac2cf36f8d6b7a6be73e3c266097470e06caf87eae0df7513d708c809"
+        }
+      ]
+    },
+    {
+      "id": "tencent-enterprise",
+      "title": "CodeBuddy AI Coding 企业场景落地实践与思考",
+      "directory": "materials/domestic/tencent/01-codebuddy-enterprise",
+      "kind": "官方账号文章",
+      "status": "正文快照已保存",
+      "publication_date": "2025-08-15",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "腾讯云开发者",
+          "url": "https://cloud.tencent.com/developer/article/2555275"
+        }
+      ],
+      "note": "",
+      "files": [
+        "materials/domestic/tencent/01-codebuddy-enterprise/article.html",
+        "materials/domestic/tencent/01-codebuddy-enterprise/article.txt",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images.md",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/00f9e00e85ca669c.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/056073df425cf5e6.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/07d6c913d0b36c77.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/0dc1ea810614e09e.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/0efb5347bfc40586.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/146c4047afb55d87.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/1ceb3665dd28be4d.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/1dfd025624ccf921.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/256d0c118c80f0ba.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/2fd9995035a2ff39.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/31411f3533eb5611.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/34d722e6da66a05c.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/40949e3e4d2250d5.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/4a1fe1d7e555f5ea.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/4a4106bcb7d23d81.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/4a679f2b3423b3dd.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/509572eb4d3b759f.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/5d7417d3b7a9cd5d.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/6d01b5bc7977d76f.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/6df27641274dc8cd.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/6f25b4cac3dc38bb.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/70a85a1b1e73c1b1.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/71ac62640ad3ce2e.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/71df5bb30225eced.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/7dfe183a9a07f81b.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/82f7136992ab9b39.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/9fc5c0d4e10bc9a4.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/a3468ee86abc6c9c.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/a618395b584e75fa.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/a68feaf3ef45e7c1.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/ac8c0be89c9af021.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/b159e3b31ae1f592.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/b5fc2de42c88280c.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/b9638713582a0be6.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/c003fb22a10209d2.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/c5d13faff13d7b82.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/caf80885c220e094.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/d48a5a47cecb328e.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/da84473be7b233e4.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/ddd5e6e42a03e85c.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/df17a922e775b465.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/e0075bd3d386b24d.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/ed80165b4571705e.png",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/fd5e3e771468dbcd.jpg",
+        "materials/domestic/tencent/01-codebuddy-enterprise/images/fe5d0385dd8371ee.png"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/article.html",
+          "bytes": 324803,
+          "sha256": "02c56b1ba8c2bb784b98405222d705928413720d839d14c7ce6717fc3c4b2dba"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/article.txt",
+          "bytes": 53472,
+          "sha256": "d17d95e45a861b6562d683c498ccdf934739ba29369a89cbf806465f8ea7fe57"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images.md",
+          "bytes": 7550,
+          "sha256": "2a3a021560133a29450ac998216ee70d6dd99bc7afab334ce67c66e8cb6ed2da"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/00f9e00e85ca669c.png",
+          "bytes": 357243,
+          "sha256": "09961245f87841496cb89d856b54b26f9a4654e212156e6f9ee3f9c50374f096"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/056073df425cf5e6.png",
+          "bytes": 71281,
+          "sha256": "597d7f1f436ca3b49e9610e2fd8842ca69cfd706332832344ca849fbb6b3cf3d"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/07d6c913d0b36c77.png",
+          "bytes": 126685,
+          "sha256": "c9da2ed1a3206273a6ce465c985c7830c3fb9a07a8daab54254a5c5fb93a211f"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/0dc1ea810614e09e.png",
+          "bytes": 293232,
+          "sha256": "09dfa8c8b5aa2cbe34e306c0a5c3dbe7c6c7419ccb9bb53f46165d69232a24f6"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/0efb5347bfc40586.png",
+          "bytes": 326226,
+          "sha256": "b293ef02535383ae24c62a548569cf36d07013ee4cf7d584bf742fce420eb2c2"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/146c4047afb55d87.png",
+          "bytes": 11016,
+          "sha256": "2ba94748d3714e2ecc51eab7725904718184f0de73d7d8e0cf08d937e2873c89"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/1ceb3665dd28be4d.png",
+          "bytes": 9818,
+          "sha256": "65aa0d8e6dbc4a4a915f1a0681bccf2f210c119096c3f9379dfc80ffa1cdd493"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/1dfd025624ccf921.png",
+          "bytes": 178997,
+          "sha256": "5083d7e4c3375aad48978eb77bda223b4e50184cb0c1b446ab0f3ff67035e2f6"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/256d0c118c80f0ba.png",
+          "bytes": 299976,
+          "sha256": "d5a19b38296167d6462d3dff8ee8f122f20a207e15eba0e945b7b1bf20b33ce5"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/2fd9995035a2ff39.png",
+          "bytes": 561181,
+          "sha256": "5853126fbb532b571a70413aff35838343f1f2c71bb706a9808d9cacac22a5af"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/31411f3533eb5611.png",
+          "bytes": 116213,
+          "sha256": "f8b7349d04c9d212afcdd789113be3a82b6c0062ab389ea18f27613c65aaa01e"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/34d722e6da66a05c.png",
+          "bytes": 5063,
+          "sha256": "6afe73e9e3c994d193f290bbb678d2ae13404110a6c25da132ca1b508d121660"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/40949e3e4d2250d5.png",
+          "bytes": 293823,
+          "sha256": "78a0ba1900214dd41b69d94f017e1fd6b02c2e844b54faf65c0d0e68eb8dc51f"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/4a1fe1d7e555f5ea.png",
+          "bytes": 156156,
+          "sha256": "d2717745a1f64c6286ec6db183ccfa0a672bbe8d6b79d997ab17103b0db7c02c"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/4a4106bcb7d23d81.png",
+          "bytes": 163340,
+          "sha256": "d6577c264302a21ac435719fe3db24ea4279aad5a93df0061c1870c91ee611bc"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/4a679f2b3423b3dd.png",
+          "bytes": 239814,
+          "sha256": "04666a24ebf1136ea1ec418d49e676d608f5b0ec9cd9a02e7fd4c08fd11a5822"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/509572eb4d3b759f.png",
+          "bytes": 97501,
+          "sha256": "dc2d19fcfca470726577f245382e4fe1eee3b4b52301d8ca349ccd2797896a51"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/5d7417d3b7a9cd5d.png",
+          "bytes": 294330,
+          "sha256": "9990e4f10ed2ec7fc907d6bb381488fc64ce09eb9b4227529da955ad2792f0f1"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/6d01b5bc7977d76f.png",
+          "bytes": 73830,
+          "sha256": "79ffa7521fee3bc9d32938e55972ab7cff7cecea9b487aca26eed19da4474290"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/6df27641274dc8cd.png",
+          "bytes": 298237,
+          "sha256": "019662f5fd3c712aee457f2e72ee0d7894896f1a4857e77129d24ad3aaf26fc7"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/6f25b4cac3dc38bb.png",
+          "bytes": 247463,
+          "sha256": "4c4091e1c0a27e6ebd7874df45bb5101276d81427ec54783d967771a0b6c88b2"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/70a85a1b1e73c1b1.png",
+          "bytes": 224594,
+          "sha256": "7aef93170007c93cc0aa9ecdf98e5042131e00b7693ff55e5bcf58335e9c9005"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/71ac62640ad3ce2e.png",
+          "bytes": 208046,
+          "sha256": "2f6b1a38fa907d95a9384576e85cbd76246da2a5e638158be6b2dfcb83f81b2d"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/71df5bb30225eced.png",
+          "bytes": 70428,
+          "sha256": "e967a8a26b0358abf3c7c89b72a4cd4f10c360ac9e22412b75bb5edc2188afbb"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/7dfe183a9a07f81b.png",
+          "bytes": 342771,
+          "sha256": "a35b3af57b757657def8692861640ee4f663563c351fe8b8fae8697fe86cc272"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/82f7136992ab9b39.png",
+          "bytes": 342780,
+          "sha256": "39ce7c3ba0815ee7c7fcb30b53cbbe88ed4179a6d7971ac552a6b5b9b71bc5a7"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/9fc5c0d4e10bc9a4.png",
+          "bytes": 279849,
+          "sha256": "a69f472a243d28639e12a0d28ba890c09c987dd519a2c2c8dd6ed33b884109cb"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/a3468ee86abc6c9c.png",
+          "bytes": 208379,
+          "sha256": "44b50186b90af43129e2d50afe489ae3a11809d8d06372bbd64a4afd34f133e3"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/a618395b584e75fa.png",
+          "bytes": 80756,
+          "sha256": "be3d974fef8764d56216664a1954b5cce1bc36b11d9d9407b5566bdc8f89a2bd"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/a68feaf3ef45e7c1.png",
+          "bytes": 103067,
+          "sha256": "233b6809491f43f7f41c95613a315931c0e23bb6b12d6578d75eb1693e92204c"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/ac8c0be89c9af021.png",
+          "bytes": 416109,
+          "sha256": "a73619479171dc0c89b6966effe14ab5397df601e262e538fa59786ba6e2929a"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/b159e3b31ae1f592.png",
+          "bytes": 105931,
+          "sha256": "5e541cb0699c07a337ff30595e64d2052708224151268984f0fbfd4307176e50"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/b5fc2de42c88280c.png",
+          "bytes": 397402,
+          "sha256": "bfe5cd57f2c1cb50530c7c229a061303342dc0a1bacdda1ae18538d9bf324738"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/b9638713582a0be6.png",
+          "bytes": 448664,
+          "sha256": "86a8640e3c13194a011c591d8220b8a39067fa539ca3356cc88035fdcc0d605c"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/c003fb22a10209d2.png",
+          "bytes": 125546,
+          "sha256": "a383d16c1c3fc4fc49c6bf5bdf28f42e60c069731882663b688396012c1e735c"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/c5d13faff13d7b82.png",
+          "bytes": 1253,
+          "sha256": "9dde6a7080ff702ca972e8f06449688d81322ff512d2bdfc793f68cde0492946"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/caf80885c220e094.png",
+          "bytes": 142431,
+          "sha256": "1229d76e6269b2f53c818f86859b07dc73e31b8169f98245ee4fa9b94a9986e7"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/d48a5a47cecb328e.png",
+          "bytes": 227290,
+          "sha256": "c55a030e1af6684f8756396ebd49c1e2285301dcf778b0b979b29c11ef5daa5d"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/da84473be7b233e4.png",
+          "bytes": 263150,
+          "sha256": "7fae2642465118c9f4b5ded42a8dfe2adb2ff83e332cea8b48782f1d5af76ba0"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/ddd5e6e42a03e85c.png",
+          "bytes": 117194,
+          "sha256": "aeb4bf5b8103d869738bcf86e26f7be5bfa739b39fe9bc096f0d23b6de6a5216"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/df17a922e775b465.png",
+          "bytes": 186812,
+          "sha256": "b95f5da18a54809fb7085e50b87cb6979e20622c6e03a3cc891422bda1107491"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/e0075bd3d386b24d.png",
+          "bytes": 163058,
+          "sha256": "589b40d149cb47a486a76f11a79dac38fb2e96d4a218846ee9d5fff52ca71917"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/ed80165b4571705e.png",
+          "bytes": 298309,
+          "sha256": "e5e8ada0e76649e6a60ecb9e39122197b5cb829c238b2dd770414b68f491aa8e"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/fd5e3e771468dbcd.jpg",
+          "bytes": 115952,
+          "sha256": "613f61744de80dc84ece18c873538f7ef9f580bd27c122c386c501039e131933"
+        },
+        {
+          "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/fe5d0385dd8371ee.png",
+          "bytes": 114805,
+          "sha256": "5e50a739f1a3780ad821d34d8512dab4576a1b0ce43fc1d90277fc47d3746f33"
+        }
+      ]
+    },
+    {
+      "id": "tencent-practice",
+      "title": "从 Vibe Coding 到 AI 原生研发团队：一套能落地的工程实践",
+      "directory": "materials/domestic/tencent/02-ai-native-team",
+      "kind": "官方账号文章",
+      "status": "全文快照已保存",
+      "publication_date": "2026-07-21",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "腾讯技术工程",
+          "url": "https://news.qq.com/rain/a/20260721A09ALQ00"
+        }
+      ],
+      "note": "",
+      "files": [
+        "materials/domestic/tencent/02-ai-native-team/article.html",
+        "materials/domestic/tencent/02-ai-native-team/article.txt",
+        "materials/domestic/tencent/02-ai-native-team/images.md",
+        "materials/domestic/tencent/02-ai-native-team/images/015783e5666e5f2c.png",
+        "materials/domestic/tencent/02-ai-native-team/images/0210263fff802715.png",
+        "materials/domestic/tencent/02-ai-native-team/images/1b002e6e158b9ebe.png",
+        "materials/domestic/tencent/02-ai-native-team/images/1f7b3094288871d4.png",
+        "materials/domestic/tencent/02-ai-native-team/images/20000851bc0e03f7.png",
+        "materials/domestic/tencent/02-ai-native-team/images/28b98ebcb82e5555.png",
+        "materials/domestic/tencent/02-ai-native-team/images/29330acfb8b93419.png",
+        "materials/domestic/tencent/02-ai-native-team/images/2f3578f91f67531f.png",
+        "materials/domestic/tencent/02-ai-native-team/images/309523422cd454b5.png",
+        "materials/domestic/tencent/02-ai-native-team/images/3335d6c34cf530cb.png",
+        "materials/domestic/tencent/02-ai-native-team/images/405c17abda5d5c06.png",
+        "materials/domestic/tencent/02-ai-native-team/images/437dc641572fc97a.png",
+        "materials/domestic/tencent/02-ai-native-team/images/486a77b869bd305e.png",
+        "materials/domestic/tencent/02-ai-native-team/images/4d554cd86f1bc72b.png",
+        "materials/domestic/tencent/02-ai-native-team/images/54dc9b9dfd53aeec.png",
+        "materials/domestic/tencent/02-ai-native-team/images/5e05bb82d70d582f.png",
+        "materials/domestic/tencent/02-ai-native-team/images/667c1d1ef19a1cc8.png",
+        "materials/domestic/tencent/02-ai-native-team/images/6b83c02c6d8ba19c.png",
+        "materials/domestic/tencent/02-ai-native-team/images/6ef0e50df4727803.png",
+        "materials/domestic/tencent/02-ai-native-team/images/72a679038b457250.png",
+        "materials/domestic/tencent/02-ai-native-team/images/a0ae78f571d2702f.png",
+        "materials/domestic/tencent/02-ai-native-team/images/a5361c8fbd82e220.png",
+        "materials/domestic/tencent/02-ai-native-team/images/a6a319e7ea8600df.png",
+        "materials/domestic/tencent/02-ai-native-team/images/a82a93650aaeabab.png",
+        "materials/domestic/tencent/02-ai-native-team/images/bd1bb7e181358ac3.png",
+        "materials/domestic/tencent/02-ai-native-team/images/d7232f29bdafd019.png",
+        "materials/domestic/tencent/02-ai-native-team/images/dbf3810ecf0134c7.png",
+        "materials/domestic/tencent/02-ai-native-team/images/dfa36f053b0a4859.png",
+        "materials/domestic/tencent/02-ai-native-team/images/e1ea40c549cfe507.png",
+        "materials/domestic/tencent/02-ai-native-team/images/e3529bf894bb7887.png",
+        "materials/domestic/tencent/02-ai-native-team/images/fa54670d5c629033.png",
+        "materials/domestic/tencent/02-ai-native-team/images/fe54f4001af75bf9.png"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/article.html",
+          "bytes": 998005,
+          "sha256": "6de09b1f2f587c9322fff0eb1974fd504300489d43174913a7907a42c76a0993"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/article.txt",
+          "bytes": 44434,
+          "sha256": "f44c062121a6308535ffe968f0f5ef25eb3eefd88958ffb38e510bac64b31b06"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images.md",
+          "bytes": 5100,
+          "sha256": "ecd036ce754f8aff79c2e0510cd81379f631fcf4a54d61679981b09c3cdfd664"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/015783e5666e5f2c.png",
+          "bytes": 397363,
+          "sha256": "cf4f4bead341bc6f19bf1bc5b435eb0dbdfd6ff4d2ff3a2aefad0b315afbe757"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/0210263fff802715.png",
+          "bytes": 130779,
+          "sha256": "d7a96b34e319f3a5ed2139224e5e425e68b1f76b406790961305a338ab82ae86"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/1b002e6e158b9ebe.png",
+          "bytes": 418076,
+          "sha256": "475ccfe24fc2b6823b3399936ba41e60879c3f40ac13ec9a7f6d323cec3b9271"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/1f7b3094288871d4.png",
+          "bytes": 86590,
+          "sha256": "cf0a3053f8adb7b58a80b5219230491d85ef888d2083aaa824447f5077f6529d"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/20000851bc0e03f7.png",
+          "bytes": 132084,
+          "sha256": "fbdf3d528a0fbcc676a18a3a4cb13988d4e7024e0c3e4d2fcea1845318cb3230"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/28b98ebcb82e5555.png",
+          "bytes": 260111,
+          "sha256": "b40e8b85dfd2e760d6cc0db776a6094f618a5a9d27a072bda5ad1defd2e61728"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/29330acfb8b93419.png",
+          "bytes": 195448,
+          "sha256": "998e9099d4ce7c06857d76429cc4a7cab490af7a8850dc569ee42e4cca65fedc"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/2f3578f91f67531f.png",
+          "bytes": 90449,
+          "sha256": "26a29bf22949d9a6cc8f626a17d43ba13f44ba46b9d850fd464402182f55734f"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/309523422cd454b5.png",
+          "bytes": 162371,
+          "sha256": "11fac68ad6e15b7cea1b51af6839d41bf7b4e510ca05b95b71c7e08cd842ddb8"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/3335d6c34cf530cb.png",
+          "bytes": 111920,
+          "sha256": "696dfe25fabf1f131ce73948a9d6fe73d1e836a335cec8c0be891e0871bf3a0b"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/405c17abda5d5c06.png",
+          "bytes": 197958,
+          "sha256": "df2fc175c29f848742b6526eccc26a619c5025d90880d286f99e7a94cb27d0fd"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/437dc641572fc97a.png",
+          "bytes": 114891,
+          "sha256": "7fe4926faf86bee2cbdfc571b0540d6da4cebea9d2e3e2fcf78be9a7bfe431cb"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/486a77b869bd305e.png",
+          "bytes": 570216,
+          "sha256": "299dbc5ffd6c30af789f3a3b1df1f53229ed42b4f3ac53111335b8ab38320f12"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/4d554cd86f1bc72b.png",
+          "bytes": 88539,
+          "sha256": "cc765092b8a24f561b15c6cadc3df367f38999bcea95bee6771db6bf7f85a410"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/54dc9b9dfd53aeec.png",
+          "bytes": 168477,
+          "sha256": "587e3051e7380d4d19c9aa6d9ceff21870d1bf6dd9a2a169ef45f140fd6f7512"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/5e05bb82d70d582f.png",
+          "bytes": 143733,
+          "sha256": "492fd649347ce655c3559a5e885c99284bfe23317dec0d5e75e783b1945b625e"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/667c1d1ef19a1cc8.png",
+          "bytes": 167945,
+          "sha256": "4ab6a7625844c2fac0578211375881dddb81572cc7d63e36131eb460a4379ab1"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/6b83c02c6d8ba19c.png",
+          "bytes": 92052,
+          "sha256": "a156582bb3c381465fa5329c3cbc1af57639336fe488897a11735fffdd2ded77"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/6ef0e50df4727803.png",
+          "bytes": 1692,
+          "sha256": "a5c3d6e5bf2d95c9834a2ba73e9edf1353e6424d2c04c6663e6b76e2ea70e491"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/72a679038b457250.png",
+          "bytes": 119801,
+          "sha256": "22ae4311a9c3ff9dcab0d9bf4d615de34a2c4eaf82f4995fa3c8a68c6508d33b"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/a0ae78f571d2702f.png",
+          "bytes": 119391,
+          "sha256": "f9b31e3c59c09cb7cb6a26d76d5f9ed59162b0304aa399e670ec78c1a3c6b387"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/a5361c8fbd82e220.png",
+          "bytes": 515576,
+          "sha256": "231b86d7fb0bf947940c76708775bd8ca93f665c9223b21fa5418398bf346d69"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/a6a319e7ea8600df.png",
+          "bytes": 323217,
+          "sha256": "3eeab53c8cb71104ba1a7568e155d43c63c9682733e75d0d6859ddd65323aabf"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/a82a93650aaeabab.png",
+          "bytes": 94937,
+          "sha256": "868688f8c9c32e68720b4f548a287778e273103880cb5be6f474e8ba9f1e8271"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/bd1bb7e181358ac3.png",
+          "bytes": 116141,
+          "sha256": "88d03204623ab8a115848c849a8519c5d32e56d1e287e1f3633b8f336e59b593"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/d7232f29bdafd019.png",
+          "bytes": 203977,
+          "sha256": "4367932e1905582611774a6e71b1c62677726d97415abb2867300278cd686787"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/dbf3810ecf0134c7.png",
+          "bytes": 108241,
+          "sha256": "915f379904f81700f0c6e11234a05ea5577a8248e322766371a483e28d46d538"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/dfa36f053b0a4859.png",
+          "bytes": 151258,
+          "sha256": "5ddf187b33ac24abc8dd7dbe3bda831f0e81bb2d34a67c8914a32d9884a1e8a7"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/e1ea40c549cfe507.png",
+          "bytes": 94695,
+          "sha256": "f67a1287c1d79e3563e1ba417e48eb14dae7c2719a77b6ae2f4db03b13616fd1"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/e3529bf894bb7887.png",
+          "bytes": 123853,
+          "sha256": "d0a231ecbd2438d0cd065652996c7d2e0ee06409711ea28700e0434a3cde30c7"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/fa54670d5c629033.png",
+          "bytes": 116288,
+          "sha256": "d0ea85bd432de01590989f6bc66ce78e996fd1d4f9ad29f4102d1692f502ff26"
+        },
+        {
+          "path": "materials/domestic/tencent/02-ai-native-team/images/fe54f4001af75bf9.png",
+          "bytes": 560497,
+          "sha256": "4f1439372661afa18787cfef8f15c7f8949d13e8e47cf724ecde7d6d67b83f18"
+        }
+      ]
+    },
+    {
+      "id": "tencent-spec-code",
+      "title": "AI 研发新范式：基于技术方案全链路生成代码",
+      "directory": "materials/domestic/tencent/03-spec-to-code",
+      "kind": "官方账号文章",
+      "status": "全文快照已保存",
+      "publication_date": "2025-12-12",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "腾讯技术工程",
+          "url": "https://news.qq.com/rain/a/20251212A05YHW00"
+        }
+      ],
+      "note": "",
+      "files": [
+        "materials/domestic/tencent/03-spec-to-code/article.html",
+        "materials/domestic/tencent/03-spec-to-code/article.txt",
+        "materials/domestic/tencent/03-spec-to-code/images.md",
+        "materials/domestic/tencent/03-spec-to-code/images/0dcb7c5e32cf4136.png",
+        "materials/domestic/tencent/03-spec-to-code/images/1181ebc4b5d08974.png",
+        "materials/domestic/tencent/03-spec-to-code/images/180b9226685bc6f1.png",
+        "materials/domestic/tencent/03-spec-to-code/images/1af0e4fe6f2b3933.png",
+        "materials/domestic/tencent/03-spec-to-code/images/1d2385ea0ac225bd.png",
+        "materials/domestic/tencent/03-spec-to-code/images/2d624aca98dfdd4b.png",
+        "materials/domestic/tencent/03-spec-to-code/images/32e489a316014199.png",
+        "materials/domestic/tencent/03-spec-to-code/images/335c5c3b548b28a4.png",
+        "materials/domestic/tencent/03-spec-to-code/images/3d395e0c37b66c20.png",
+        "materials/domestic/tencent/03-spec-to-code/images/5559720c8e1cdbd1.png",
+        "materials/domestic/tencent/03-spec-to-code/images/5cce61c9ff49db0f.png",
+        "materials/domestic/tencent/03-spec-to-code/images/624aa0888ac78e2a.png",
+        "materials/domestic/tencent/03-spec-to-code/images/63abaa26463e4d32.png",
+        "materials/domestic/tencent/03-spec-to-code/images/6ef0e50df4727803.png",
+        "materials/domestic/tencent/03-spec-to-code/images/91c8781dc7f9dc19.png",
+        "materials/domestic/tencent/03-spec-to-code/images/994203c1ee2696cf.png",
+        "materials/domestic/tencent/03-spec-to-code/images/9cca7ff3536aa9ad.png",
+        "materials/domestic/tencent/03-spec-to-code/images/a1823a97c45a877e.png",
+        "materials/domestic/tencent/03-spec-to-code/images/a45a422e183dee3d.png",
+        "materials/domestic/tencent/03-spec-to-code/images/ab787167047c89b6.png",
+        "materials/domestic/tencent/03-spec-to-code/images/cccac5b4b99269f1.png",
+        "materials/domestic/tencent/03-spec-to-code/images/d2a45444d914f525.png",
+        "materials/domestic/tencent/03-spec-to-code/images/da6cb0fdad981a27.png",
+        "materials/domestic/tencent/03-spec-to-code/images/dc968caaad526177.png",
+        "materials/domestic/tencent/03-spec-to-code/images/e3aadad57d46321a.png"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/article.html",
+          "bytes": 438252,
+          "sha256": "6f69bb213edd361f1831271709bdc45953912ffeae3b1d4de32258d8783a30db"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/article.txt",
+          "bytes": 11358,
+          "sha256": "ef6d344d8865f9a5d45880399a901faa08d862f129288ba856dc83bae5dea8e7"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images.md",
+          "bytes": 4007,
+          "sha256": "f64362f2b0c8b8f18d72e2d68f1df5e210cae0b6fcc942a3a15b23a88c742ca2"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/0dcb7c5e32cf4136.png",
+          "bytes": 260622,
+          "sha256": "796925fdae857000a37a673b4077a386e43e5c79803cfc58f24806a64a302768"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/1181ebc4b5d08974.png",
+          "bytes": 34843,
+          "sha256": "c7e61208898ec26cba79da6c3d84148f9c2c71b9c2815f8ccf1b2a3bd8996b2b"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/180b9226685bc6f1.png",
+          "bytes": 396230,
+          "sha256": "36c5dcad50ee1864a8a7414992788caee20a532d5bb420daef7eb309b9409414"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/1af0e4fe6f2b3933.png",
+          "bytes": 192542,
+          "sha256": "516c2daf8f5ec077c6058f692aa88fb278b5b7c941fb7bf896fcdc9bb6a8d0c8"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/1d2385ea0ac225bd.png",
+          "bytes": 107533,
+          "sha256": "0ba1f6b963a1c12910d8f0584243586eb939b25381d693375cc5ae28f50afa81"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/2d624aca98dfdd4b.png",
+          "bytes": 63813,
+          "sha256": "cfbccae89624845d9228790905121af5a1680e9100a76b12b57e0c8fb237700e"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/32e489a316014199.png",
+          "bytes": 277893,
+          "sha256": "23c795fce5af31feb976a095af5d94ae5a0175a51e41bb8aec768b4d0720f34d"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/335c5c3b548b28a4.png",
+          "bytes": 176518,
+          "sha256": "d274bd5ccfb0cecef611e8a8d6c4c7cdbe90dcc81a48ffa7a1a1939bc4b95953"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/3d395e0c37b66c20.png",
+          "bytes": 363888,
+          "sha256": "70d469daa941f5d838b331ba18e886dfe5721b1c222a4eebb1c7b4152c884911"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/5559720c8e1cdbd1.png",
+          "bytes": 210388,
+          "sha256": "fcb373d68f5c360f8ccba4ff10f2bf4bb4f84c6cd39957225ad071f411edf94e"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/5cce61c9ff49db0f.png",
+          "bytes": 104095,
+          "sha256": "77b34e5785360f0504d08485b5d192767ecbe2239ab17549d3a88164d88a27cf"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/624aa0888ac78e2a.png",
+          "bytes": 167643,
+          "sha256": "cce61f1ee354878cbda067d92111343b12c3285bc25da86ca8e0bdbdab4c20f7"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/63abaa26463e4d32.png",
+          "bytes": 365208,
+          "sha256": "5e64e3bc5e23c97a1741e91328f6385ab49b151a7e95e7f400dc0a6ebcf3f1c5"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/6ef0e50df4727803.png",
+          "bytes": 1692,
+          "sha256": "a5c3d6e5bf2d95c9834a2ba73e9edf1353e6424d2c04c6663e6b76e2ea70e491"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/91c8781dc7f9dc19.png",
+          "bytes": 109117,
+          "sha256": "19a4bcb04091947330bbabdc91c81cab89c8c02545a8314ff5fe73b7ffeb3999"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/994203c1ee2696cf.png",
+          "bytes": 13524,
+          "sha256": "f497a050f27b8aa3e13fb93b1b2ec18f5bae2a7035297330d36ccad0e8d766c9"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/9cca7ff3536aa9ad.png",
+          "bytes": 55514,
+          "sha256": "d62c1f4c40267ea190a3fcb10aba70ef2aefed0b516137adb41068a71fe5cfdf"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/a1823a97c45a877e.png",
+          "bytes": 253180,
+          "sha256": "4dc0c0d3a7c987154021060daeb75ed52417a365403f1dd8a2071e381eba78a1"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/a45a422e183dee3d.png",
+          "bytes": 166068,
+          "sha256": "27dc70436f550768a3f0842a0f34b56598783a413e67a88a74173e7b592f7bf0"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/ab787167047c89b6.png",
+          "bytes": 176521,
+          "sha256": "43959510c4eb3ab9c75ceb732e8588e31deae4c4c69a19ff9233eeb15bc5f039"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/cccac5b4b99269f1.png",
+          "bytes": 71002,
+          "sha256": "3ecd790589dd12c73da0fdf8352ce349797ca0085f27ad3278e76c2cca181f25"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/d2a45444d914f525.png",
+          "bytes": 140055,
+          "sha256": "039ba00a5afe9b4965fe6eb9c74572c653deae986882e96ef63a58000de2647e"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/da6cb0fdad981a27.png",
+          "bytes": 295318,
+          "sha256": "dce94dc553968b8b8a5b934695f82c4b069acb23b7643b6eb7fdcab32112c33c"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/dc968caaad526177.png",
+          "bytes": 220896,
+          "sha256": "7124270e962fb8c25380667c1e263eb226d42a11a54748dc95e67da12097c2c1"
+        },
+        {
+          "path": "materials/domestic/tencent/03-spec-to-code/images/e3aadad57d46321a.png",
+          "bytes": 190482,
+          "sha256": "6921eb2074da451e7fffe08b1a85c755cf880b52bb636532b9f3063cb6a92c6e"
+        }
+      ]
+    },
+    {
+      "id": "tencent-full-delivery",
+      "title": "从提需求到部署发布，全 AI 全自动化后，研发效能全面跃升",
+      "directory": "materials/domestic/tencent/04-end-to-end-delivery",
+      "kind": "官方账号转载",
+      "status": "全文转载已保存",
+      "publication_date": "2026-04-20（转载页）",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "腾讯云转载：来源腾讯技术工程",
+          "url": "https://cloud.tencent.cn/developer/news/3860908"
+        },
+        {
+          "label": "转载页列出的原文",
+          "url": "https://page.om.qq.com/page/OcvU4S2uw4Szo3xGGbSp4_UQ0"
+        }
+      ],
+      "note": "标题应结合正文边界：80% 是目标；六个试点；测试仍需人工，治理框架尚在规划。",
+      "files": [
+        "materials/domestic/tencent/04-end-to-end-delivery/images.md",
+        "materials/domestic/tencent/04-end-to-end-delivery/images/1ceb3665dd28be4d.png",
+        "materials/domestic/tencent/04-end-to-end-delivery/images/6d36810597b2cc90.png",
+        "materials/domestic/tencent/04-end-to-end-delivery/images/c5d13faff13d7b82.png",
+        "materials/domestic/tencent/04-end-to-end-delivery/republication.html",
+        "materials/domestic/tencent/04-end-to-end-delivery/republication.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/tencent/04-end-to-end-delivery/images.md",
+          "bytes": 571,
+          "sha256": "a1f647241dbec501f506902f7d0e28a68a822490e76304a05ea404ab4bdef6e4"
+        },
+        {
+          "path": "materials/domestic/tencent/04-end-to-end-delivery/images/1ceb3665dd28be4d.png",
+          "bytes": 9818,
+          "sha256": "65aa0d8e6dbc4a4a915f1a0681bccf2f210c119096c3f9379dfc80ffa1cdd493"
+        },
+        {
+          "path": "materials/domestic/tencent/04-end-to-end-delivery/images/6d36810597b2cc90.png",
+          "bytes": 24745,
+          "sha256": "7e9855ae88c45cfa6389f4e5215595babac5889a1f8005a74cea83877ca0bef3"
+        },
+        {
+          "path": "materials/domestic/tencent/04-end-to-end-delivery/images/c5d13faff13d7b82.png",
+          "bytes": 1253,
+          "sha256": "9dde6a7080ff702ca972e8f06449688d81322ff512d2bdfc793f68cde0492946"
+        },
+        {
+          "path": "materials/domestic/tencent/04-end-to-end-delivery/republication.html",
+          "bytes": 78918,
+          "sha256": "b0c6c809ef9871fd161017bbd3b941833dba9dabdb3ad5a6c52754f6aee6b240"
+        },
+        {
+          "path": "materials/domestic/tencent/04-end-to-end-delivery/republication.txt",
+          "bytes": 13503,
+          "sha256": "6f6e801246f795694ce8a18e80a68f28ae4538b075a724dbd4d75534813dc042"
+        }
+      ]
+    },
+    {
+      "id": "tencent-codebuddy2",
+      "title": "CodeBuddy Code 2.0 核心团队研发实践报道",
+      "directory": "materials/domestic/tencent/05-codebuddy-self-development",
+      "kind": "媒体采访",
+      "status": "报道全文已保存",
+      "publication_date": "2026-01-29",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "智东西采访",
+          "url": "https://news.qq.com/rain/a/20260129A07CZ900"
+        }
+      ],
+      "note": "",
+      "files": [
+        "materials/domestic/tencent/05-codebuddy-self-development/images.md",
+        "materials/domestic/tencent/05-codebuddy-self-development/images/0aca643ffdd7cb8b.png",
+        "materials/domestic/tencent/05-codebuddy-self-development/media-report.html",
+        "materials/domestic/tencent/05-codebuddy-self-development/media-report.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/tencent/05-codebuddy-self-development/images.md",
+          "bytes": 278,
+          "sha256": "4be5165dc47dfacd9daf59447143d4461be30d19825feb8aede738a8b5740e2c"
+        },
+        {
+          "path": "materials/domestic/tencent/05-codebuddy-self-development/images/0aca643ffdd7cb8b.png",
+          "bytes": 1671,
+          "sha256": "db4c266b379cb77d25c74f050e923053f6a7cf76a46416e7531d876de9ca2e02"
+        },
+        {
+          "path": "materials/domestic/tencent/05-codebuddy-self-development/media-report.html",
+          "bytes": 73561,
+          "sha256": "5bd4442e2f2e5db411e82d5db1a75419565c00d3f9878f099600f210a6ed5d5e"
+        },
+        {
+          "path": "materials/domestic/tencent/05-codebuddy-self-development/media-report.txt",
+          "bytes": 8813,
+          "sha256": "7e31928702e185feba6476769beea9a1a49a503dd1d2aaf001036e9123f8543a"
+        }
+      ]
+    },
+    {
+      "id": "meituan-refactor",
+      "title": "用 Agent 评测思路管理 AI Coding——31 万行代码 AI 重构的实践",
+      "directory": "materials/domestic/meituan/01-ai-refactoring",
+      "kind": "官方技术文章",
+      "status": "全文快照已保存",
+      "publication_date": "2026-05-07",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "美团技术团队",
+          "url": "https://tech.meituan.com/2026/05/07/Agent-AI-Coding.html"
+        }
+      ],
+      "note": "",
+      "files": [
+        "materials/domestic/meituan/01-ai-refactoring/article.html",
+        "materials/domestic/meituan/01-ai-refactoring/article.txt",
+        "materials/domestic/meituan/01-ai-refactoring/images.md",
+        "materials/domestic/meituan/01-ai-refactoring/images/05eaf3786a591152.png",
+        "materials/domestic/meituan/01-ai-refactoring/images/11a48f8d5cc789ff.png",
+        "materials/domestic/meituan/01-ai-refactoring/images/148a2c37d6d99829.png",
+        "materials/domestic/meituan/01-ai-refactoring/images/1e67bc5a9fe64715.png",
+        "materials/domestic/meituan/01-ai-refactoring/images/2b74d7663c013adc.jpg",
+        "materials/domestic/meituan/01-ai-refactoring/images/367ce64af49004f6.png",
+        "materials/domestic/meituan/01-ai-refactoring/images/554784b22ddca2fa.png",
+        "materials/domestic/meituan/01-ai-refactoring/images/61264103afa3ee52.png",
+        "materials/domestic/meituan/01-ai-refactoring/images/799ebf9eea851f53.jpg",
+        "materials/domestic/meituan/01-ai-refactoring/images/8c12ac5dcfc0b136.png",
+        "materials/domestic/meituan/01-ai-refactoring/images/a69e5b2f822d8686.png",
+        "materials/domestic/meituan/01-ai-refactoring/images/aadc7abd6726d5ae.png",
+        "materials/domestic/meituan/01-ai-refactoring/images/cadd8ee03b3e5f83.jpg",
+        "materials/domestic/meituan/01-ai-refactoring/images/e6c015a509ba910b.png",
+        "materials/domestic/meituan/01-ai-refactoring/images/eae4d94877545761.png"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/article.html",
+          "bytes": 47295,
+          "sha256": "0371bb60ddee6ce466c736eaf4223866cac45d99672a8c8da04dd3e531e8a9ab"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/article.txt",
+          "bytes": 19698,
+          "sha256": "04e28b9bda25303f183132e318c15eb307df7b6ed1941b8bda3f4309f8564e88"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/images.md",
+          "bytes": 2483,
+          "sha256": "652390ab50ea02fd8f6f1e4cd6d1451e7043f59443c4f7367e775806fbc58ad3"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/images/05eaf3786a591152.png",
+          "bytes": 111988,
+          "sha256": "0390370ce1a33e1f1bc3aac2344e365ae50de8cac24ad4e6711206573342da4e"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/images/11a48f8d5cc789ff.png",
+          "bytes": 364266,
+          "sha256": "be6127b2b499bd8cb79ced94c7d3a914a513f80de3edb8a8da8974102974dc58"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/images/148a2c37d6d99829.png",
+          "bytes": 2265392,
+          "sha256": "9734d5a0f4f7ff05fd93a4b661cc479a21bb671b35f88a196b12227b735ea869"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/images/1e67bc5a9fe64715.png",
+          "bytes": 265516,
+          "sha256": "afdc19273fe93174842065a0417b383f8c1369ed991c425b782a53535ee2122d"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/images/2b74d7663c013adc.jpg",
+          "bytes": 152781,
+          "sha256": "93465d43f9c56f48bb04e1d7952b292c1959664d074dbbe819ffd3089b9add9e"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/images/367ce64af49004f6.png",
+          "bytes": 1367631,
+          "sha256": "9bcb1ff0d5fbcf9dc790bcaf175532f03d478a27ad188d374c91f2f59c947fe6"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/images/554784b22ddca2fa.png",
+          "bytes": 442376,
+          "sha256": "1267fdf7f3151b48bf3c6509d666178b561c94fd3a37aee5f37bf46bec0cc0a3"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/images/61264103afa3ee52.png",
+          "bytes": 4209929,
+          "sha256": "b27fce666be23c66698f0957d48e02840b32d79aa6ca6b425e1793f6caaf29ee"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/images/799ebf9eea851f53.jpg",
+          "bytes": 24023,
+          "sha256": "6afac01382f0f469bf4db66da5e7893b2def320fa643f8f7ffee5dde5b17e56a"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/images/8c12ac5dcfc0b136.png",
+          "bytes": 1313083,
+          "sha256": "77d59f148f1db1225c22ae003c9be6032bd460f1c20f85eaee33273906f6f087"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/images/a69e5b2f822d8686.png",
+          "bytes": 1981409,
+          "sha256": "ea5a41b438a702ae9a9c830dfcd1dcdabaf06bf4aeba9df3c9bd3d3a1be2262e"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/images/aadc7abd6726d5ae.png",
+          "bytes": 3785482,
+          "sha256": "a155f5b43af2ed8372a5a7f34dd0dd3b762d16dc6f36e3a95f0d2bf42ea16fdd"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/images/cadd8ee03b3e5f83.jpg",
+          "bytes": 18862,
+          "sha256": "3410a01a6a1daa8bb6a09a81aed8220007c52684e2eaca8213e76c262ac392a1"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/images/e6c015a509ba910b.png",
+          "bytes": 142218,
+          "sha256": "56cf039dddf14ca8ba35936e3fccea4e5409e2d2377440c91684d199bacbd932"
+        },
+        {
+          "path": "materials/domestic/meituan/01-ai-refactoring/images/eae4d94877545761.png",
+          "bytes": 1225959,
+          "sha256": "c9e9b7d9148c8a144ab4908e068424e8a3edbb7ad4dd7be8e0b0a4aae1ccfe08"
+        }
+      ]
+    },
+    {
+      "id": "meituan-unit-test",
+      "title": "AI Coding 与单元测试的协同进化：从验证到驱动",
+      "directory": "materials/domestic/meituan/02-ai-unit-testing",
+      "kind": "官方技术文章",
+      "status": "正文与代码案例已保存",
+      "publication_date": "2025-12-05",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "美团技术团队",
+          "url": "https://tech.meituan.com/2025/12/05/AI-Coding-Unit-Testing.html"
+        }
+      ],
+      "note": "",
+      "files": [
+        "materials/domestic/meituan/02-ai-unit-testing/article.html",
+        "materials/domestic/meituan/02-ai-unit-testing/article.txt",
+        "materials/domestic/meituan/02-ai-unit-testing/images.md",
+        "materials/domestic/meituan/02-ai-unit-testing/images/05eaf3786a591152.png",
+        "materials/domestic/meituan/02-ai-unit-testing/images/554784b22ddca2fa.png",
+        "materials/domestic/meituan/02-ai-unit-testing/images/799ebf9eea851f53.jpg",
+        "materials/domestic/meituan/02-ai-unit-testing/images/7f13f28b72928b33.png",
+        "materials/domestic/meituan/02-ai-unit-testing/images/a42af27dc97abf7f.jpg",
+        "materials/domestic/meituan/02-ai-unit-testing/images/aadc7abd6726d5ae.png",
+        "materials/domestic/meituan/02-ai-unit-testing/images/b04a60bca96c301a.png",
+        "materials/domestic/meituan/02-ai-unit-testing/images/c067a6e246cd22b5.png",
+        "materials/domestic/meituan/02-ai-unit-testing/images/cadd8ee03b3e5f83.jpg",
+        "materials/domestic/meituan/02-ai-unit-testing/images/e6c015a509ba910b.png",
+        "materials/domestic/meituan/02-ai-unit-testing/images/e865c92eb41434a2.png"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/meituan/02-ai-unit-testing/article.html",
+          "bytes": 93767,
+          "sha256": "c11994f7f8688deb243376a0974e035213c0a35fab27c7608436db652fea82c4"
+        },
+        {
+          "path": "materials/domestic/meituan/02-ai-unit-testing/article.txt",
+          "bytes": 31687,
+          "sha256": "a20e7552c4dad7151079d685f2ee2daef76d7e794027932327145d3837d2c23c"
+        },
+        {
+          "path": "materials/domestic/meituan/02-ai-unit-testing/images.md",
+          "bytes": 1853,
+          "sha256": "c89ad79b381fe675ec2b70917530c29fae894cacb15130e9a182166ef271dfad"
+        },
+        {
+          "path": "materials/domestic/meituan/02-ai-unit-testing/images/05eaf3786a591152.png",
+          "bytes": 111988,
+          "sha256": "0390370ce1a33e1f1bc3aac2344e365ae50de8cac24ad4e6711206573342da4e"
+        },
+        {
+          "path": "materials/domestic/meituan/02-ai-unit-testing/images/554784b22ddca2fa.png",
+          "bytes": 442376,
+          "sha256": "1267fdf7f3151b48bf3c6509d666178b561c94fd3a37aee5f37bf46bec0cc0a3"
+        },
+        {
+          "path": "materials/domestic/meituan/02-ai-unit-testing/images/799ebf9eea851f53.jpg",
+          "bytes": 24023,
+          "sha256": "6afac01382f0f469bf4db66da5e7893b2def320fa643f8f7ffee5dde5b17e56a"
+        },
+        {
+          "path": "materials/domestic/meituan/02-ai-unit-testing/images/7f13f28b72928b33.png",
+          "bytes": 120924,
+          "sha256": "d9250543083fad9b3f3e3e93688f3f22ee86cdc4d3ae16449f7df9c402f654a0"
+        },
+        {
+          "path": "materials/domestic/meituan/02-ai-unit-testing/images/a42af27dc97abf7f.jpg",
+          "bytes": 106841,
+          "sha256": "c643548d2a52145fefa3b841f9d52c53a90b52801f426861d11324fe13f26941"
+        },
+        {
+          "path": "materials/domestic/meituan/02-ai-unit-testing/images/aadc7abd6726d5ae.png",
+          "bytes": 3785482,
+          "sha256": "a155f5b43af2ed8372a5a7f34dd0dd3b762d16dc6f36e3a95f0d2bf42ea16fdd"
+        },
+        {
+          "path": "materials/domestic/meituan/02-ai-unit-testing/images/b04a60bca96c301a.png",
+          "bytes": 335690,
+          "sha256": "532d196d4af05808f6565db57837309274f638fb27366a6e3e408dd24aba8f5e"
+        },
+        {
+          "path": "materials/domestic/meituan/02-ai-unit-testing/images/c067a6e246cd22b5.png",
+          "bytes": 173093,
+          "sha256": "65dbe2f8e77a42ad41323ab4edb51b7d26dc0515a3879947d9d4a4c80a77f95f"
+        },
+        {
+          "path": "materials/domestic/meituan/02-ai-unit-testing/images/cadd8ee03b3e5f83.jpg",
+          "bytes": 18862,
+          "sha256": "3410a01a6a1daa8bb6a09a81aed8220007c52684e2eaca8213e76c262ac392a1"
+        },
+        {
+          "path": "materials/domestic/meituan/02-ai-unit-testing/images/e6c015a509ba910b.png",
+          "bytes": 142218,
+          "sha256": "56cf039dddf14ca8ba35936e3fccea4e5409e2d2377440c91684d199bacbd932"
+        },
+        {
+          "path": "materials/domestic/meituan/02-ai-unit-testing/images/e865c92eb41434a2.png",
+          "bytes": 100746,
+          "sha256": "ff21e8995fcae419b2a67a94bc4a16348bd2146915aff824d4afe0d89e92400f"
+        }
+      ]
+    },
+    {
+      "id": "huawei-engineering",
+      "title": "华为 AI 软件工程实践：30 年专业经验沉淀打造企业级确定性的高质量软件",
+      "directory": "materials/domestic/huawei/01-ai-software-engineering",
+      "kind": "专业媒体实践文章",
+      "status": "正文快照已保存",
+      "publication_date": "2026-03-26",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "InfoQ",
+          "url": "https://www.infoq.cn/article/IPk1UBNeqdj88ZlEWFsk"
+        }
+      ],
+      "note": "",
+      "files": [
+        "materials/domestic/huawei/01-ai-software-engineering/article.html",
+        "materials/domestic/huawei/01-ai-software-engineering/article.txt",
+        "materials/domestic/huawei/01-ai-software-engineering/images.md",
+        "materials/domestic/huawei/01-ai-software-engineering/images/124535e17bd19ac9.png",
+        "materials/domestic/huawei/01-ai-software-engineering/images/34647c6fe937bc0e.png",
+        "materials/domestic/huawei/01-ai-software-engineering/images/365a42c425f98b03.jpg",
+        "materials/domestic/huawei/01-ai-software-engineering/images/4160843dad3c526c.png",
+        "materials/domestic/huawei/01-ai-software-engineering/images/4ce469be08f9902b.png",
+        "materials/domestic/huawei/01-ai-software-engineering/images/5d726436a7ec43cd.png",
+        "materials/domestic/huawei/01-ai-software-engineering/images/9b0b57f5dda05b5a.png",
+        "materials/domestic/huawei/01-ai-software-engineering/images/bcba9d09fcebb97c.png",
+        "materials/domestic/huawei/01-ai-software-engineering/images/cbd85bb209e9f6ce.png",
+        "materials/domestic/huawei/01-ai-software-engineering/images/cfb1a6da68c104ad.png"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/huawei/01-ai-software-engineering/article.html",
+          "bytes": 421642,
+          "sha256": "75fdf4c16fc34348217308a7d9d5ca2d9ed52fe3627c59c278bd0ec5e53f74bc"
+        },
+        {
+          "path": "materials/domestic/huawei/01-ai-software-engineering/article.txt",
+          "bytes": 28188,
+          "sha256": "685553fffbee4e17fd717172b765a8174efdf9e964134212fb54fd34bc16b727"
+        },
+        {
+          "path": "materials/domestic/huawei/01-ai-software-engineering/images.md",
+          "bytes": 1720,
+          "sha256": "cf4db6857e5fb015b9253b9b49ad05c8a72d83c91622bb3b50621267d5b0d6da"
+        },
+        {
+          "path": "materials/domestic/huawei/01-ai-software-engineering/images/124535e17bd19ac9.png",
+          "bytes": 676105,
+          "sha256": "9d4f83a43c85f03f15a17c459a3b64b33a027bc0c55f765271f7ef4d88e3196d"
+        },
+        {
+          "path": "materials/domestic/huawei/01-ai-software-engineering/images/34647c6fe937bc0e.png",
+          "bytes": 1996,
+          "sha256": "fb6218c3dc43ac7215dfc222a2302c5ec6b67508eeb4d6db3c0127a0ad36157d"
+        },
+        {
+          "path": "materials/domestic/huawei/01-ai-software-engineering/images/365a42c425f98b03.jpg",
+          "bytes": 25177,
+          "sha256": "03e968c4b03e062af22a0bfc6e6be4a9cd6cbc913ad47e6dee17f5c3f22f1516"
+        },
+        {
+          "path": "materials/domestic/huawei/01-ai-software-engineering/images/4160843dad3c526c.png",
+          "bytes": 1553,
+          "sha256": "fac9973dfaeeb6aaf40cc7d129222709817359f6bc11eb7a415003f62673dfa6"
+        },
+        {
+          "path": "materials/domestic/huawei/01-ai-software-engineering/images/4ce469be08f9902b.png",
+          "bytes": 794,
+          "sha256": "7323b9fd9607cc4dd77b4e73798bc46ce54fcaf9ec7b4e08fda3cf56d2aaa0de"
+        },
+        {
+          "path": "materials/domestic/huawei/01-ai-software-engineering/images/5d726436a7ec43cd.png",
+          "bytes": 1392,
+          "sha256": "f76914e4c980997d2f00f25ae9a0ccb712754a22ee3b526a78935e3bf2458354"
+        },
+        {
+          "path": "materials/domestic/huawei/01-ai-software-engineering/images/9b0b57f5dda05b5a.png",
+          "bytes": 651403,
+          "sha256": "87f0d78f31304d35c513fe4d4b1d7265b4cd6cad5dc2f84245825cabb7260e3b"
+        },
+        {
+          "path": "materials/domestic/huawei/01-ai-software-engineering/images/bcba9d09fcebb97c.png",
+          "bytes": 440840,
+          "sha256": "7586862cd94a4dc235a578eb86c6e579f653af9826647d71c94f2aec788e01d6"
+        },
+        {
+          "path": "materials/domestic/huawei/01-ai-software-engineering/images/cbd85bb209e9f6ce.png",
+          "bytes": 287411,
+          "sha256": "e6a87c378d6feaa3900697ff5c45ec81d7d91a0dab84dfbde1a9ccbc557f4510"
+        },
+        {
+          "path": "materials/domestic/huawei/01-ai-software-engineering/images/cfb1a6da68c104ad.png",
+          "bytes": 139741,
+          "sha256": "73674cc54095364e014564ad725408f9584ba2d641038e135d6bd97439a9cf4e"
+        }
+      ]
+    },
+    {
+      "id": "baidu-comate",
+      "title": "文心快码官网与使用手册入口",
+      "directory": "materials/domestic/baidu/01-comate",
+      "kind": "产品与文档入口",
+      "status": "入口 HTML 已保存；动态正文未完整取得",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "官网",
+          "url": "https://comate.baidu.com/zh"
+        },
+        {
+          "label": "使用手册",
+          "url": "https://comate.baidu.com/zh/readme"
+        }
+      ],
+      "note": "官网主要通过 JS 加载；HTML 与少量可见文字不等于完整产品手册或团队实践。",
+      "files": [
+        "materials/domestic/baidu/01-comate/manual-entry.html",
+        "materials/domestic/baidu/01-comate/manual-entry.txt",
+        "materials/domestic/baidu/01-comate/product-page.html",
+        "materials/domestic/baidu/01-comate/product-page.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/domestic/baidu/01-comate/manual-entry.html",
+          "bytes": 19364,
+          "sha256": "2aca050a77e29c88fe6c8f4102c1db4308a9bf7d063444f2d76d41ea022f59c1"
+        },
+        {
+          "path": "materials/domestic/baidu/01-comate/manual-entry.txt",
+          "bytes": 28,
+          "sha256": "afe1fe6ba27d83c56436c7aee9f6e7a2a4cce91fbf1ed5c53c147fe86b40cbe6"
+        },
+        {
+          "path": "materials/domestic/baidu/01-comate/product-page.html",
+          "bytes": 25073,
+          "sha256": "c6ff177b471d024590c47e8ec60b9b8324d39cd1537fb9450d10f0f79aee7b36"
+        },
+        {
+          "path": "materials/domestic/baidu/01-comate/product-page.txt",
+          "bytes": 54,
+          "sha256": "87b67886ebbea5a1e7d5b6e7242d9fdeb8ab75aec2adaef5f541116c1a52696d"
+        }
+      ]
+    },
+    {
+      "id": "pending-ali-marketing",
+      "title": "AliExpress 营销系统 AI Coding 实践",
+      "directory": "materials/pending/01-aliexpress-marketing",
+      "kind": "第三方提炼摘要",
+      "status": "摘要已保存；原文跳转需要登录",
+      "publication_date": "2026-07-20（聚合页标注）",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "BestHub 摘要",
+          "url": "https://www.besthub.dev/articles/how-aliexpress-applies-ai-coding-to-boost-marketing-system-development-e5a81517f513"
+        }
+      ],
+      "note": "BestHub 声明内容经过提炼；精确数字未据原文核实。",
+      "files": [
+        "materials/pending/01-aliexpress-marketing/images.md",
+        "materials/pending/01-aliexpress-marketing/images/14f8264425954e5e.webp",
+        "materials/pending/01-aliexpress-marketing/images/228782b91ac4ec36.webp",
+        "materials/pending/01-aliexpress-marketing/images/236b4f2a7568c9ef.webp",
+        "materials/pending/01-aliexpress-marketing/images/513bfb58e751f2a9.webp",
+        "materials/pending/01-aliexpress-marketing/images/6861159873494584.webp",
+        "materials/pending/01-aliexpress-marketing/images/6c56d29acd0a42f9.webp",
+        "materials/pending/01-aliexpress-marketing/images/7d0dd02153ffd75f.png",
+        "materials/pending/01-aliexpress-marketing/images/9befc47d001a617b.webp",
+        "materials/pending/01-aliexpress-marketing/images/c506641afe14a815.webp",
+        "materials/pending/01-aliexpress-marketing/images/ebba4770440690b8.webp",
+        "materials/pending/01-aliexpress-marketing/third-party-summary.html",
+        "materials/pending/01-aliexpress-marketing/third-party-summary.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/pending/01-aliexpress-marketing/images.md",
+          "bytes": 2882,
+          "sha256": "8f79818dcbf20b5f34039b3720b1423df5fcf1259e99bd2cd0d29779789bc84f"
+        },
+        {
+          "path": "materials/pending/01-aliexpress-marketing/images/14f8264425954e5e.webp",
+          "bytes": 1946,
+          "sha256": "9647aa150876d07a93682a812db1720353ff7ec0d28007e979e3f05991a7793c"
+        },
+        {
+          "path": "materials/pending/01-aliexpress-marketing/images/228782b91ac4ec36.webp",
+          "bytes": 5306,
+          "sha256": "186666e05c7a3807089fe38b66b3996bfaa1ebe9a90c102fbb392b1b12bf4d33"
+        },
+        {
+          "path": "materials/pending/01-aliexpress-marketing/images/236b4f2a7568c9ef.webp",
+          "bytes": 1418,
+          "sha256": "62613b60a75e26090712296d23ed2bef8c43a5db0ef3646cf55a54c18f29b5f3"
+        },
+        {
+          "path": "materials/pending/01-aliexpress-marketing/images/513bfb58e751f2a9.webp",
+          "bytes": 103594,
+          "sha256": "60b1555284d18c75734f5cafb065ca5681debf1e60061b2ee19eaba5f5edb6ac"
+        },
+        {
+          "path": "materials/pending/01-aliexpress-marketing/images/6861159873494584.webp",
+          "bytes": 5676,
+          "sha256": "53b4da2174ae1bdbeac61c5d36c7769bb23ead33230837223b1bd047400179d1"
+        },
+        {
+          "path": "materials/pending/01-aliexpress-marketing/images/6c56d29acd0a42f9.webp",
+          "bytes": 13944,
+          "sha256": "3e332b22547bfcefb0c5e1e548553b661bb3f6951056806838145315c1294c92"
+        },
+        {
+          "path": "materials/pending/01-aliexpress-marketing/images/7d0dd02153ffd75f.png",
+          "bytes": 13116,
+          "sha256": "527931bd73ff9d8dfa7fb650a09074e7427f18a96f967f49457c14d992f15ba0"
+        },
+        {
+          "path": "materials/pending/01-aliexpress-marketing/images/9befc47d001a617b.webp",
+          "bytes": 6022,
+          "sha256": "5a29c217c091019d56b7aa99fd2e31577cb8c577e2f9f1a91467296cc6514131"
+        },
+        {
+          "path": "materials/pending/01-aliexpress-marketing/images/c506641afe14a815.webp",
+          "bytes": 138442,
+          "sha256": "fa61b73cd2bd2917c4491fbccada34437842e80f1fc7e9ac83795c43f2bb6662"
+        },
+        {
+          "path": "materials/pending/01-aliexpress-marketing/images/ebba4770440690b8.webp",
+          "bytes": 20634,
+          "sha256": "2daa272a0c997986ea797743a89852f88265c6551b9a12c32f68b44c2754c06d"
+        },
+        {
+          "path": "materials/pending/01-aliexpress-marketing/third-party-summary.html",
+          "bytes": 67273,
+          "sha256": "f98195ac1d1c3263bae5c2dd2e8731ba92955f2232fce53288b39c071aaf051d"
+        },
+        {
+          "path": "materials/pending/01-aliexpress-marketing/third-party-summary.txt",
+          "bytes": 12492,
+          "sha256": "cbeb241f736e8ea09463a46cf003b95b701a330d8fb76fbef0af033b989cd136"
+        }
+      ]
+    },
+    {
+      "id": "pending-ali-config",
+      "title": "AliExpress 详情域 AAIC 配置实践",
+      "directory": "materials/pending/02-aliexpress-configuration",
+      "kind": "检索线索",
+      "status": "仅有搜索摘要；正文返回空响应",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "索引页",
+          "url": "https://tool.lu/article/82a/detail"
+        }
+      ],
+      "note": "检索摘要包含三大配置平台、九个 Skill、影子表及人工发布。HTTP 204 空正文，未保存为成功文章。",
+      "files": [
+        "materials/pending/02-aliexpress-configuration/search-results.json"
+      ],
+      "assets": [
+        {
+          "path": "materials/pending/02-aliexpress-configuration/search-results.json",
+          "bytes": 4902,
+          "sha256": "d2b2dd0ad7304969356357a4492f32f547c779dc2a8bdc563158f8fd14399a8b"
+        }
+      ]
+    },
+    {
+      "id": "pending-tencent-mobile-skill",
+      "title": "从代码生成到需求交付：一个开发 Skill 的工程化实践",
+      "directory": "materials/pending/03-tencent-mobile-development-skill",
+      "kind": "第三方转述线索",
+      "status": "第三方概述页已保存；腾讯原文未定位",
+      "publication_date": "2026-07-29",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "霍格沃兹-测试开发学社投稿",
+          "url": "https://cloud.tencent.com/developer/article/2717608"
+        }
+      ],
+      "note": "发布者并非腾讯技术工程。可读内容只有概述，不能算完整腾讯原文。",
+      "files": [
+        "materials/pending/03-tencent-mobile-development-skill/images.md",
+        "materials/pending/03-tencent-mobile-development-skill/images/146c4047afb55d87.png",
+        "materials/pending/03-tencent-mobile-development-skill/images/1ceb3665dd28be4d.png",
+        "materials/pending/03-tencent-mobile-development-skill/images/c5d13faff13d7b82.png",
+        "materials/pending/03-tencent-mobile-development-skill/third-party-overview.html",
+        "materials/pending/03-tencent-mobile-development-skill/third-party-overview.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/pending/03-tencent-mobile-development-skill/images.md",
+          "bytes": 590,
+          "sha256": "b84d334a967b78fb8df41e49a3006bd6061abcf80adb0e324bb83bc504cba6a5"
+        },
+        {
+          "path": "materials/pending/03-tencent-mobile-development-skill/images/146c4047afb55d87.png",
+          "bytes": 11016,
+          "sha256": "2ba94748d3714e2ecc51eab7725904718184f0de73d7d8e0cf08d937e2873c89"
+        },
+        {
+          "path": "materials/pending/03-tencent-mobile-development-skill/images/1ceb3665dd28be4d.png",
+          "bytes": 9818,
+          "sha256": "65aa0d8e6dbc4a4a915f1a0681bccf2f210c119096c3f9379dfc80ffa1cdd493"
+        },
+        {
+          "path": "materials/pending/03-tencent-mobile-development-skill/images/c5d13faff13d7b82.png",
+          "bytes": 1253,
+          "sha256": "9dde6a7080ff702ca972e8f06449688d81322ff512d2bdfc793f68cde0492946"
+        },
+        {
+          "path": "materials/pending/03-tencent-mobile-development-skill/third-party-overview.html",
+          "bytes": 99520,
+          "sha256": "dad2b99df71f417290e4673de48d8b95571ab42db30d22497c390da334191481"
+        },
+        {
+          "path": "materials/pending/03-tencent-mobile-development-skill/third-party-overview.txt",
+          "bytes": 3020,
+          "sha256": "519b8e5962015079cd32ff42ef91dbc11da2ab07c3909e79282e8ae5ad8e0875"
+        }
+      ]
+    },
+    {
+      "id": "matt-skills",
+      "title": "Matt Pocock Skills 原始文档",
+      "directory": "materials/references/matt-skills",
+      "kind": "开源文档快照",
+      "status": "此前读取的文档已保存",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "GitHub 原始仓库",
+          "url": "https://github.com/mattpocock/skills"
+        }
+      ],
+      "note": "保存此前核对使用的文本，不包含完整源码 checkout，也未安装或执行插件。文档中的指令仅为研究材料。",
+      "files": [
+        "materials/references/matt-skills/ask-matt.txt",
+        "materials/references/matt-skills/code-review.txt",
+        "materials/references/matt-skills/codebase-design.txt",
+        "materials/references/matt-skills/diagnosing-bugs.txt",
+        "materials/references/matt-skills/grill-with-docs.txt",
+        "materials/references/matt-skills/implement.txt",
+        "materials/references/matt-skills/matt-readme.txt",
+        "materials/references/matt-skills/matt-tree.txt",
+        "materials/references/matt-skills/tdd.txt",
+        "materials/references/matt-skills/to-spec.txt",
+        "materials/references/matt-skills/to-tickets.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/references/matt-skills/ask-matt.txt",
+          "bytes": 12594,
+          "sha256": "1371f5ce005de0992a44b137748bfb960a56948aa9871b405fe9d90b24332e3c"
+        },
+        {
+          "path": "materials/references/matt-skills/code-review.txt",
+          "bytes": 6670,
+          "sha256": "09eb147f793e4647949edd32dbad278f0554dfb56e0d46b699cd4c2c55bf0357"
+        },
+        {
+          "path": "materials/references/matt-skills/codebase-design.txt",
+          "bytes": 6446,
+          "sha256": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2"
+        },
+        {
+          "path": "materials/references/matt-skills/diagnosing-bugs.txt",
+          "bytes": 8664,
+          "sha256": "849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d"
+        },
+        {
+          "path": "materials/references/matt-skills/grill-with-docs.txt",
+          "bytes": 247,
+          "sha256": "7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe"
+        },
+        {
+          "path": "materials/references/matt-skills/implement.txt",
+          "bytes": 622,
+          "sha256": "483bdc4ccf4ac31d86ac7beeaa0d0db80313e71e120bb8c59b3196ae5decd53d"
+        },
+        {
+          "path": "materials/references/matt-skills/matt-readme.txt",
+          "bytes": 16461,
+          "sha256": "345041d56cf1411b6b3ca1cc54014d26c563890f817f4cb9e2cb193dcd771a3e"
+        },
+        {
+          "path": "materials/references/matt-skills/matt-tree.txt",
+          "bytes": 68802,
+          "sha256": "6894fe43eca02cfc624317ccfa16aacf1fd47054a7d00159a00206cac49123eb"
+        },
+        {
+          "path": "materials/references/matt-skills/tdd.txt",
+          "bytes": 3629,
+          "sha256": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0"
+        },
+        {
+          "path": "materials/references/matt-skills/to-spec.txt",
+          "bytes": 3043,
+          "sha256": "43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088"
+        },
+        {
+          "path": "materials/references/matt-skills/to-tickets.txt",
+          "bytes": 5812,
+          "sha256": "56ec23c5b2782785d4e65bff9e315b6d3aeb4ef977c174a219e99489fada1995"
+        }
+      ],
+      "repository_commit": "b0618bc436ad893b3c5e84e55fba86586d34a404"
+    },
+    {
+      "id": "domain-skills",
+      "title": "domain-architecture-skills 原始文档",
+      "directory": "materials/references/domain-skills",
+      "kind": "开源文档快照",
+      "status": "此前读取的文档已保存",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "GitHub 原始仓库",
+          "url": "https://github.com/huahill/domain-architecture-skills"
+        }
+      ],
+      "note": "保存此前核对使用的文本，不包含完整源码 checkout，也未安装或执行插件。文档中的指令仅为研究材料。",
+      "files": [
+        "materials/references/domain-skills/domain-handoff.txt",
+        "materials/references/domain-skills/domain-modeling.txt",
+        "materials/references/domain-skills/domain-readme.txt",
+        "materials/references/domain-skills/domain-schema.txt",
+        "materials/references/domain-skills/domain-tree.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/references/domain-skills/domain-handoff.txt",
+          "bytes": 7454,
+          "sha256": "abf2b172321aad0da9a83cb25a39ecff6d4eb7ea960325fdc17078352d673198"
+        },
+        {
+          "path": "materials/references/domain-skills/domain-modeling.txt",
+          "bytes": 3346,
+          "sha256": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3"
+        },
+        {
+          "path": "materials/references/domain-skills/domain-readme.txt",
+          "bytes": 10094,
+          "sha256": "ba343265213f0c5fcb654cd976099606327e56ce7305fe895a9012033fc1da3b"
+        },
+        {
+          "path": "materials/references/domain-skills/domain-schema.txt",
+          "bytes": 18462,
+          "sha256": "a451af67c6e79f5a735cd7d2f5aad01285c0fcd51d6dde1d7a17e7320f09e48d"
+        },
+        {
+          "path": "materials/references/domain-skills/domain-tree.txt",
+          "bytes": 27797,
+          "sha256": "58cbadd7ecac8a2e48baaa7ac0dbfb674d1b245ffa0ade7578e01c977eecf19b"
+        }
+      ],
+      "repository_commit": "7b9fcde7359d65b688fdfe735ea32d1dd786d959"
+    },
+    {
+      "id": "teamai",
+      "title": "Tencent TeamAI README 快照",
+      "directory": "materials/references/tencent-teamai",
+      "kind": "官方开源文档",
+      "status": "此前读取的 README 已保存",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "官方仓库",
+          "url": "https://github.com/Tencent/teamai-cli"
+        }
+      ],
+      "note": "文本来自此前只读核对，未安装或运行。",
+      "files": [
+        "materials/references/tencent-teamai/readme-snapshot.md"
+      ],
+      "assets": [
+        {
+          "path": "materials/references/tencent-teamai/readme-snapshot.md",
+          "bytes": 12592,
+          "sha256": "150c2d1df958f1a90fb80d63ee820105412527b055501da5343c30b66e199ff5"
+        }
+      ]
+    },
+    {
+      "id": "matt-skills-site",
+      "title": "Skills 工作流总览",
+      "directory": "materials/matt-pocock/01-skills-site",
+      "kind": "作者文章 / 访谈 / 官方演讲",
+      "status": "公开文字已保存",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "公开原文",
+          "url": "https://www.aihero.dev/skills"
+        }
+      ],
+      "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。",
+      "files": [
+        "materials/matt-pocock/01-skills-site/page.html",
+        "materials/matt-pocock/01-skills-site/page.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/matt-pocock/01-skills-site/page.html",
+          "bytes": 482600,
+          "sha256": "08c9ca93eea47b8ab70c4b9f780ecf99ccd72f696efcb489ef184cad2a245437"
+        },
+        {
+          "path": "materials/matt-pocock/01-skills-site/page.txt",
+          "bytes": 9281,
+          "sha256": "e7cdcd51bfdb95fc6f599a4fa21f955247eac1939a44d2599ce645b2ffa11cd0"
+        }
+      ]
+    },
+    {
+      "id": "matt-changelog-v11",
+      "title": "v1.1：Wayfinder、To Spec、To Tickets 与工作流变更",
+      "directory": "materials/matt-pocock/02-changelog-v11",
+      "kind": "作者文章 / 访谈 / 官方演讲",
+      "status": "公开文字已保存",
+      "publication_date": "2026-07-08",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "公开原文",
+          "url": "https://www.aihero.dev/skills/skills-changelog-v1-1-wayfinder-to-spec-to-tickets-grilling-improvements"
+        }
+      ],
+      "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。",
+      "files": [
+        "materials/matt-pocock/02-changelog-v11/page.html",
+        "materials/matt-pocock/02-changelog-v11/page.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/matt-pocock/02-changelog-v11/page.html",
+          "bytes": 337235,
+          "sha256": "fe10feaddf7d04f9c5b8d542d94b41856e411bfde796a540fb99b049fa6bbeaf"
+        },
+        {
+          "path": "materials/matt-pocock/02-changelog-v11/page.txt",
+          "bytes": 12902,
+          "sha256": "867b053afd860999f83e5c4f0ea393e612d16bdb1b52089af7302a2d4cbba354"
+        }
+      ]
+    },
+    {
+      "id": "matt-grill-mistakes",
+      "title": "Grill Me / Grill With Docs 常见误用",
+      "directory": "materials/matt-pocock/03-grill-mistakes",
+      "kind": "作者文章 / 访谈 / 官方演讲",
+      "status": "公开文字已保存",
+      "publication_date": "2026-05-25",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "公开原文",
+          "url": "https://www.aihero.dev/things-people-get-wrong-with-grill-me-and-grill-with-docs"
+        }
+      ],
+      "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。",
+      "files": [
+        "materials/matt-pocock/03-grill-mistakes/page.html",
+        "materials/matt-pocock/03-grill-mistakes/page.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/matt-pocock/03-grill-mistakes/page.html",
+          "bytes": 324678,
+          "sha256": "938160bea7c9416f1883459c04d8d0f9876f6f88785f3095d4b1fcf4a6fff6dd"
+        },
+        {
+          "path": "materials/matt-pocock/03-grill-mistakes/page.txt",
+          "bytes": 9513,
+          "sha256": "b127c120483e4f7c2321d5e005eb2d8b6c9ba8775074f43991d89d194037770c"
+        }
+      ]
+    },
+    {
+      "id": "matt-grill-origin",
+      "title": "My grill-me skill has gone viral",
+      "directory": "materials/matt-pocock/04-grill-origin",
+      "kind": "作者文章 / 访谈 / 官方演讲",
+      "status": "公开文字已保存",
+      "publication_date": "2026-03-23",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "公开原文",
+          "url": "https://www.aihero.dev/my-grill-me-skill-has-gone-viral"
+        }
+      ],
+      "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。",
+      "files": [
+        "materials/matt-pocock/04-grill-origin/page.html",
+        "materials/matt-pocock/04-grill-origin/page.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/matt-pocock/04-grill-origin/page.html",
+          "bytes": 281441,
+          "sha256": "c434c282c9877b217df923bba75527c747d153e9ec93fb827eb1e0202173677f"
+        },
+        {
+          "path": "materials/matt-pocock/04-grill-origin/page.txt",
+          "bytes": 4750,
+          "sha256": "ede9d8f1b6c468a90e249b0bb19b862dccb4605f4dcfc9203917045a8b448ce2"
+        }
+      ]
+    },
+    {
+      "id": "matt-real-feature",
+      "title": "Real-world Feature Build with Claude Code",
+      "directory": "materials/matt-pocock/05-real-feature",
+      "kind": "作者文章 / 访谈 / 官方演讲",
+      "status": "公开文字已保存",
+      "publication_date": "2026-03-20",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "公开原文",
+          "url": "https://www.aihero.dev/real-world-feature-build-with-claude-code"
+        }
+      ],
+      "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。 保存的是公开视频/播客介绍与文字摘要，未保存完整音视频或完整转录。",
+      "files": [
+        "materials/matt-pocock/05-real-feature/page.html",
+        "materials/matt-pocock/05-real-feature/page.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/matt-pocock/05-real-feature/page.html",
+          "bytes": 293082,
+          "sha256": "e8c7ad3ce182488c1f26ab685c605e440e33ee8ada203f56388190ef977f58c3"
+        },
+        {
+          "path": "materials/matt-pocock/05-real-feature/page.txt",
+          "bytes": 2836,
+          "sha256": "197becc4af8963609f674c363bb4bd4f7f28f7d282e421e059a00ad8f0dc834d"
+        }
+      ]
+    },
+    {
+      "id": "matt-wayfinder",
+      "title": "Wayfinder：跨会话探索与规划",
+      "directory": "materials/matt-pocock/06-wayfinder",
+      "kind": "作者文章 / 访谈 / 官方演讲",
+      "status": "公开文字已保存",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "公开原文",
+          "url": "https://www.aihero.dev/skills-wayfinder"
+        },
+        {
+          "label": "固定提交的 Skill 原文",
+          "url": "https://github.com/mattpocock/skills/blob/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/wayfinder/SKILL.md"
+        }
+      ],
+      "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。",
+      "files": [
+        "materials/matt-pocock/06-wayfinder/page.html",
+        "materials/matt-pocock/06-wayfinder/page.txt",
+        "materials/matt-pocock/06-wayfinder/SKILL.snapshot.md"
+      ],
+      "assets": [
+        {
+          "path": "materials/matt-pocock/06-wayfinder/page.html",
+          "bytes": 371084,
+          "sha256": "f72ee50791f0ead7f89bdfaba8ea992dcd49936b062d94780e9de18dac67c73f"
+        },
+        {
+          "path": "materials/matt-pocock/06-wayfinder/page.txt",
+          "bytes": 16565,
+          "sha256": "43af92fe142d2aa09b0b0ab6057f59ba6386ff64f9b2fe2833fa2897cc11d21e"
+        },
+        {
+          "path": "materials/matt-pocock/06-wayfinder/SKILL.snapshot.md",
+          "bytes": 12380,
+          "sha256": "9be7b478c389605a24517d27752f278933588da97a1b5921b165f455edf4c5b7"
+        }
+      ]
+    },
+    {
+      "id": "matt-prototype",
+      "title": "Prototype：用实验消除不确定性",
+      "directory": "materials/matt-pocock/07-prototype",
+      "kind": "作者文章 / 访谈 / 官方演讲",
+      "status": "公开文字已保存",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "公开原文",
+          "url": "https://www.aihero.dev/skills-prototype"
+        },
+        {
+          "label": "固定提交的 Skill 原文",
+          "url": "https://github.com/mattpocock/skills/blob/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/prototype/SKILL.md"
+        }
+      ],
+      "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。",
+      "files": [
+        "materials/matt-pocock/07-prototype/page.html",
+        "materials/matt-pocock/07-prototype/page.txt",
+        "materials/matt-pocock/07-prototype/SKILL.snapshot.md"
+      ],
+      "assets": [
+        {
+          "path": "materials/matt-pocock/07-prototype/page.html",
+          "bytes": 340468,
+          "sha256": "d136c2f86c5fd1ff36dd9f8dfbd3df41c2b18b62deaa38e2276dd0c07d26d1e2"
+        },
+        {
+          "path": "materials/matt-pocock/07-prototype/page.txt",
+          "bytes": 11398,
+          "sha256": "47e6405b65780f4471c0d6079d16f90754a35a07a76957382c9744e8c24463b9"
+        },
+        {
+          "path": "materials/matt-pocock/07-prototype/SKILL.snapshot.md",
+          "bytes": 2931,
+          "sha256": "714de632d116bb73f65cdb5a882db15b9369a6713b9a47c0fad827848f0bfbe3"
+        }
+      ]
+    },
+    {
+      "id": "matt-tdd",
+      "title": "TDD：公开行为与短反馈循环",
+      "directory": "materials/matt-pocock/08-tdd",
+      "kind": "作者文章 / 访谈 / 官方演讲",
+      "status": "公开文字已保存",
+      "publication_date": "2026-08-24",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "公开原文",
+          "url": "https://www.aihero.dev/skills-tdd"
+        },
+        {
+          "label": "固定提交的 Skill 原文",
+          "url": "https://github.com/mattpocock/skills/blob/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/tdd/SKILL.md"
+        }
+      ],
+      "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。",
+      "files": [
+        "materials/matt-pocock/08-tdd/page.html",
+        "materials/matt-pocock/08-tdd/page.txt",
+        "materials/matt-pocock/08-tdd/SKILL.snapshot.md"
+      ],
+      "assets": [
+        {
+          "path": "materials/matt-pocock/08-tdd/page.html",
+          "bytes": 361717,
+          "sha256": "5fd2002e2f534a8116e21138894693284fb6897268fe469c9b87500d569cee9d"
+        },
+        {
+          "path": "materials/matt-pocock/08-tdd/page.txt",
+          "bytes": 11849,
+          "sha256": "8cdb16a2f514d4cd6da7900ed571563f29dff95e78d3a8e83cbb138ce1efc114"
+        },
+        {
+          "path": "materials/matt-pocock/08-tdd/SKILL.snapshot.md",
+          "bytes": 3629,
+          "sha256": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0"
+        }
+      ]
+    },
+    {
+      "id": "matt-fundamentals",
+      "title": "AI Engineer：Software Fundamentals Matter More Than Ever",
+      "directory": "materials/matt-pocock/09-fundamentals",
+      "kind": "作者文章 / 访谈 / 官方演讲",
+      "status": "公开文字已保存",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "公开原文",
+          "url": "https://ai.engineer/talks/v4F1gFy-hqg-software-fundamentals-for-ai-coding"
+        }
+      ],
+      "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。 保存官方页面公开的自动转录，reviewStatus=needs_review；未观看完整视频，转录可能有误。",
+      "files": [
+        "materials/matt-pocock/09-fundamentals/page.html",
+        "materials/matt-pocock/09-fundamentals/page.txt",
+        "materials/matt-pocock/09-fundamentals/transcript.json",
+        "materials/matt-pocock/09-fundamentals/transcript.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/matt-pocock/09-fundamentals/page.html",
+          "bytes": 179477,
+          "sha256": "110b47ac35f412c14aebedf16d2d771129032c03d395122bd948aceb13df8a7d"
+        },
+        {
+          "path": "materials/matt-pocock/09-fundamentals/page.txt",
+          "bytes": 34170,
+          "sha256": "a74b19138c4d026df011584d3af41bc8336607ce03e1b4f06da0f59c8545083d"
+        },
+        {
+          "path": "materials/matt-pocock/09-fundamentals/transcript.json",
+          "bytes": 23340,
+          "sha256": "4f33b69702f718f844bf7fe9f5d406bb6a6757a89e80cfd5cd895fa62f6ae936"
+        },
+        {
+          "path": "materials/matt-pocock/09-fundamentals/transcript.txt",
+          "bytes": 18969,
+          "sha256": "6b840d43ad0897069809e296606404a5fa05ed43127b4cea5306e2d2fa6e16c1"
+        }
+      ]
+    },
+    {
+      "id": "matt-workshop",
+      "title": "AI Engineer：Full Walkthrough — Workflow for AI Coding",
+      "directory": "materials/matt-pocock/10-workshop",
+      "kind": "作者文章 / 访谈 / 官方演讲",
+      "status": "公开文字已保存",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "公开原文",
+          "url": "https://ai.engineer/talks/-QFHIoCo-Ko-ai-coding-workflow"
+        }
+      ],
+      "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。 保存官方页面公开的自动转录，reviewStatus=needs_review；未观看完整视频，转录可能有误。",
+      "files": [
+        "materials/matt-pocock/10-workshop/page.html",
+        "materials/matt-pocock/10-workshop/page.txt",
+        "materials/matt-pocock/10-workshop/transcript.json",
+        "materials/matt-pocock/10-workshop/transcript.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/matt-pocock/10-workshop/page.html",
+          "bytes": 515617,
+          "sha256": "df98ae95b5aee44d096d2fef03b8f4c76871e09a03261865d66d8fc488787807"
+        },
+        {
+          "path": "materials/matt-pocock/10-workshop/page.txt",
+          "bytes": 114185,
+          "sha256": "0ca7ce0fbf68a1be124e292ff4a32dfbd0b0d7d8e5d746a019aa36e60e58978f"
+        },
+        {
+          "path": "materials/matt-pocock/10-workshop/transcript.json",
+          "bytes": 123320,
+          "sha256": "ec42259bda5417daea82e1be368ae257b76c75f168462866c91af029d2ba627c"
+        },
+        {
+          "path": "materials/matt-pocock/10-workshop/transcript.txt",
+          "bytes": 96625,
+          "sha256": "b204d1d5abbb2b5227f015122ecd839783b836bea86c6f05cb22e6407dcf26fc"
+        }
+      ]
+    },
+    {
+      "id": "matt-latent-interview",
+      "title": "Latent Space：Wayfinder 访谈",
+      "directory": "materials/matt-pocock/11-latent-interview",
+      "kind": "作者文章 / 访谈 / 官方演讲",
+      "status": "公开文字已保存",
+      "publication_date": "2026-08-20",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "公开原文",
+          "url": "https://www.latent.space/p/wayfinder-skill"
+        }
+      ],
+      "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。",
+      "files": [
+        "materials/matt-pocock/11-latent-interview/page.html",
+        "materials/matt-pocock/11-latent-interview/page.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/matt-pocock/11-latent-interview/page.html",
+          "bytes": 226972,
+          "sha256": "6404071122ea5c25f0a2a2e1ed8b4e10aa4c86d0c386a9e10c8bc4415d2bb0bb"
+        },
+        {
+          "path": "materials/matt-pocock/11-latent-interview/page.txt",
+          "bytes": 8336,
+          "sha256": "8a26f12e80b4c7db7c96b23dcc248e9e9de3f38a806cfe83ae6277c5c48786f6"
+        }
+      ]
+    },
+    {
+      "id": "matt-pragmatic-interview",
+      "title": "The Pragmatic Engineer：AI Skills with Matt Pocock",
+      "directory": "materials/matt-pocock/12-pragmatic-interview",
+      "kind": "作者文章 / 访谈 / 官方演讲",
+      "status": "公开文字已保存",
+      "publication_date": "2026-09-17",
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "公开原文",
+          "url": "https://newsletter.pragmaticengineer.com/p/ai-skills-with-matt-pocock"
+        }
+      ],
+      "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。 保存的是公开视频/播客介绍与文字摘要，未保存完整音视频或完整转录。",
+      "files": [
+        "materials/matt-pocock/12-pragmatic-interview/page.html",
+        "materials/matt-pocock/12-pragmatic-interview/page.txt"
+      ],
+      "assets": [
+        {
+          "path": "materials/matt-pocock/12-pragmatic-interview/page.html",
+          "bytes": 324054,
+          "sha256": "26454c4e37ac12d195128662b9d3095c93ef2fd60781d4dd81119855ee79fd9c"
+        },
+        {
+          "path": "materials/matt-pocock/12-pragmatic-interview/page.txt",
+          "bytes": 12917,
+          "sha256": "8bbd9661d04adfb84327a7be75c61140c768d6d543313974674f63c6e642c00a"
+        }
+      ]
+    },
+    {
+      "id": "reusable-components-20261008",
+      "title": "现成组件的直接使用与更新方式核对",
+      "directory": "materials/references/reusable-components-20261008",
+      "kind": "官方仓库文档与元数据",
+      "status": "公开文档已保存；未安装或运行",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "Matt Skills",
+          "url": "https://github.com/mattpocock/skills"
+        },
+        {
+          "label": "TeamAI",
+          "url": "https://github.com/Tencent/teamai-cli"
+        },
+        {
+          "label": "TeamAI 模板",
+          "url": "https://github.com/teamai-hub/teamai-template"
+        },
+        {
+          "label": "Trae Agent",
+          "url": "https://github.com/bytedance/trae-agent"
+        },
+        {
+          "label": "DeerFlow",
+          "url": "https://github.com/bytedance/deer-flow"
+        },
+        {
+          "label": "Show Me",
+          "url": "https://github.com/humanlayer/skills/tree/main/plugins/show-me"
+        },
+        {
+          "label": "Qoder Repo Wiki",
+          "url": "https://docs.qoder.com/user-guide/repo-wiki"
+        },
+        {
+          "label": "Qoder Skills",
+          "url": "https://docs.qoder.com/extensions/skills"
+        },
+        {
+          "label": "TRAE Skills",
+          "url": "https://docs.trae.ai/ide/skills"
+        },
+        {
+          "label": "Qwen Code",
+          "url": "https://github.com/QwenLM/qwen-code"
+        }
+      ],
+      "note": "核对 main 文档与 npm latest 元数据；发布版本与 main 功能可能不同。外部 Skill 文件仅作为资料保存，未调用。",
+      "files": [
+        "materials/references/reusable-components-20261008/Tencent-teamai-cli.json",
+        "materials/references/reusable-components-20261008/bytedance-deer-flow.json",
+        "materials/references/reusable-components-20261008/bytedance-trae-agent.json",
+        "materials/references/reusable-components-20261008/deer-readme.md",
+        "materials/references/reusable-components-20261008/humanlayer-show-me.md",
+        "materials/references/reusable-components-20261008/matt-architecture.md",
+        "materials/references/reusable-components-20261008/matt-head.json",
+        "materials/references/reusable-components-20261008/matt-pr.md",
+        "materials/references/reusable-components-20261008/matt-readme.md",
+        "materials/references/reusable-components-20261008/matt-review.md",
+        "materials/references/reusable-components-20261008/matt-setup.md",
+        "materials/references/reusable-components-20261008/matt-teach.md",
+        "materials/references/reusable-components-20261008/mattpocock-skills.json",
+        "materials/references/reusable-components-20261008/teamai-guide.md",
+        "materials/references/reusable-components-20261008/teamai-head.json",
+        "materials/references/reusable-components-20261008/teamai-hub.json",
+        "materials/references/reusable-components-20261008/teamai-license.md",
+        "materials/references/reusable-components-20261008/teamai-npm-latest.json",
+        "materials/references/reusable-components-20261008/teamai-package.json",
+        "materials/references/reusable-components-20261008/teamai-product.md",
+        "materials/references/reusable-components-20261008/teamai-providers.md",
+        "materials/references/reusable-components-20261008/teamai-readme.md",
+        "materials/references/reusable-components-20261008/teamai-tree.json",
+        "materials/references/reusable-components-20261008/template-readme.md",
+        "materials/references/reusable-components-20261008/trae-readme.md",
+        "materials/references/reusable-components-20261008/qoder-wiki.html",
+        "materials/references/reusable-components-20261008/qoder-wiki.txt",
+        "materials/references/reusable-components-20261008/qoder-skills.html",
+        "materials/references/reusable-components-20261008/trae-skills.html",
+        "materials/references/reusable-components-20261008/trae-skills-body.txt",
+        "materials/references/reusable-components-20261008/trae-rules.html",
+        "materials/references/reusable-components-20261008/trae-rules-body.txt",
+        "materials/references/reusable-components-20261008/qwen-readme.md"
+      ],
+      "assets": [
+        {
+          "path": "materials/references/reusable-components-20261008/Tencent-teamai-cli.json",
+          "bytes": 6846,
+          "sha256": "725c468d4a13560ee57c7069156d5835670f5dfc94a97ac42b5ec50871d6d72c"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/bytedance-deer-flow.json",
+          "bytes": 7505,
+          "sha256": "e1c67dee93837a1645ac95e159c6d72227fa1c56120be6085de8d32f7ca52ecb"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/bytedance-trae-agent.json",
+          "bytes": 7139,
+          "sha256": "8ac86004e26243d9103f5ad0338d0652b0aa58a79cd1417d85a60fe8c2f8a035"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/deer-readme.md",
+          "bytes": 255669,
+          "sha256": "939af89648d0ae13143de78c1d797fa3db9f8e6ad96eda76b35e91e9b1254e5c"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/humanlayer-show-me.md",
+          "bytes": 3328,
+          "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/matt-architecture.md",
+          "bytes": 6000,
+          "sha256": "552240a5ab5cec6b67c15dd1ad6e9f6962b1bca6ce870059a8c2713760c20392"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/matt-head.json",
+          "bytes": 25069,
+          "sha256": "0b6763ad65cad50ca316e540ba644c5f852cf88db1a7145ef8ac9c64fa0de9e5"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/matt-pr.md",
+          "bytes": 4169,
+          "sha256": "ab63f1cf78647389edcd386c9427c5dfca27ed2836930c24773ffee834c19bcd"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/matt-readme.md",
+          "bytes": 16461,
+          "sha256": "345041d56cf1411b6b3ca1cc54014d26c563890f817f4cb9e2cb193dcd771a3e"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/matt-review.md",
+          "bytes": 6670,
+          "sha256": "09eb147f793e4647949edd32dbad278f0554dfb56e0d46b699cd4c2c55bf0357"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/matt-setup.md",
+          "bytes": 6978,
+          "sha256": "f148858ffb7f63c03c06fca06e6fdb1d91a35c6b293244b8fdfacd5f4cc028c4"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/matt-teach.md",
+          "bytes": 9733,
+          "sha256": "550482c2d674b085c9043b87bfdc14a8f2ec453c736119e7fcbb1e9332bffeba"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/mattpocock-skills.json",
+          "bytes": 5828,
+          "sha256": "8366c133ce310a3565876916f1e05f7710a9eed280e71f5b36840e7f588745fe"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/teamai-guide.md",
+          "bytes": 308343,
+          "sha256": "c86db6fd180080f6ce38010a2d1968c8317cebe066c0796b6168ec121db0026c"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/teamai-head.json",
+          "bytes": 24508,
+          "sha256": "4bc5d95b7f8cfb57ee6262c55aac53ea58a9d264f18e747f70499a4fd7744efe"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/teamai-hub.json",
+          "bytes": 18560,
+          "sha256": "07cbbe4ca1160cc69773aa5c5bf96919f6a558fd064835449bd0f2245e9a5b02"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/teamai-license.md",
+          "bytes": 1418,
+          "sha256": "31154d9c1a8bd8d37b449bdbb8a04f9b4618e5d330b52b0fdb7c452414d75a41"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/teamai-npm-latest.json",
+          "bytes": 3882,
+          "sha256": "957e74b3baf6e7e46d9943e4cc8c2d54f4b8fd0d4146df177701e0881935216e"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/teamai-package.json",
+          "bytes": 2500,
+          "sha256": "e4080427fee068d3f39bd035a55aa1af183cfb36f40d16949670bc8fa33f0686"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/teamai-product.md",
+          "bytes": 11275,
+          "sha256": "b5fad5d1ebd37b6225abf43487feff29c2aeb1e409e1b12544fe0b50c53ef7dd"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/teamai-providers.md",
+          "bytes": 23329,
+          "sha256": "72d1389a37b14429fb643fa6bcd9d2c2512264048eba21e2246e0dcc658cff4f"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/teamai-readme.md",
+          "bytes": 12788,
+          "sha256": "757aa61d249b785ae3125e19e3d4ddedec189a06f8f7b2c81a3f65215e38b10c"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/teamai-tree.json",
+          "bytes": 235657,
+          "sha256": "b8d6307ff8d330393f4107de12f1bcce2297a0f0b6ac063078cbc85487d7afd8"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/template-readme.md",
+          "bytes": 2097,
+          "sha256": "874c8237181dcb9e4576481e50d776c91b1e4ad623cff254411f15a20496cf23"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/trae-readme.md",
+          "bytes": 10238,
+          "sha256": "6ff2b6c84def1b93ffa8f754b949fdf12a9d3c5d77644984d3a81f3f5b197089"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/qoder-wiki.html",
+          "bytes": 1103466,
+          "sha256": "eb814316e0687a216f64b29a8c385bbd6bc2a9ff590f66bb943a80a5cc9689be"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/qoder-wiki.txt",
+          "bytes": 9952,
+          "sha256": "402c2d17548be2756da1a22cee3c533759806a03b04b46c3dad9a5a44001c3f5"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/qoder-skills.html",
+          "bytes": 1084765,
+          "sha256": "2b59871c4e30ca98c12338dee9a3f7849ddae78d62d06ceb6c3651d711908204"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/trae-skills.html",
+          "bytes": 1906026,
+          "sha256": "16b9ab9d8e4ae2a6732fdf82e952e31b4e4fcf02b20d65f4622e2a4391b2e346"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/trae-skills-body.txt",
+          "bytes": 11626,
+          "sha256": "a0f794f9468c0be41712bc70839c9554e2b3626eac181cbc2e234f0e6d1207df"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/trae-rules.html",
+          "bytes": 1938663,
+          "sha256": "e9aecc769bf1810bce1ea6eb3218061dff730b7f688f7b51fca1931bde8dccd4"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/trae-rules-body.txt",
+          "bytes": 13237,
+          "sha256": "70980a1fdb410a888f0ebba23be214a34be06e8ea4ddba712a15046d5dea119f"
+        },
+        {
+          "path": "materials/references/reusable-components-20261008/qwen-readme.md",
+          "bytes": 13274,
+          "sha256": "0370888b25018bef847a5edb740947bd02e06cf785e1923797a8f901b7c835f7"
+        }
+      ]
+    },
+    {
+      "id": "company-tools-20261008",
+      "title": "美团、华为、京东、百度现成工具补查",
+      "directory": "materials/references/company-tools-20261008",
+      "kind": "官方产品文档与搜索发现记录",
+      "status": "公开资料已保存；未安装或实测",
+      "publication_date": null,
+      "archived_on": "2026-10-08",
+      "sources": [
+        {
+          "label": "meituan-release",
+          "url": "https://tech.meituan.com/2026/07/28/CatPaw-LongCat.html"
+        },
+        {
+          "label": "meituan-product",
+          "url": "https://catpaw.meituan.com/"
+        },
+        {
+          "label": "huawei-product",
+          "url": "https://codearts.huaweicloud.com/"
+        },
+        {
+          "label": "huawei-knowledge",
+          "url": "https://support.huaweicloud.com/usermanual-codeartsagent/codeartsagent_ug_0013.html"
+        },
+        {
+          "label": "jd-skills",
+          "url": "https://joycode.jd.com/docs/functions/functions-skills/"
+        },
+        {
+          "label": "jd-docs",
+          "url": "https://joycode.jd.com/docs/"
+        },
+        {
+          "label": "baidu-skills",
+          "url": "https://cloud.baidu.com/doc/COMATE/s/Nmma28iqe"
+        },
+        {
+          "label": "huawei-wiki",
+          "url": "https://support.huaweicloud.com/usermanual-codeartsagent/codeartsagent_ug_0037.md"
+        },
+        {
+          "label": "huawei-skills",
+          "url": "https://support.huaweicloud.com/usermanual-codeartsagent/codeartsagent_ug_0024.md"
+        },
+        {
+          "label": "jd-wiki",
+          "url": "https://joycode.jd.com/docs/functions/functions/repoWiki/"
+        }
+      ],
+      "note": "搜索摘要仅作发现入口。京东 RepoWiki 文档限制内部 Coding 仓库；百度 Skills 页面未取得完整功能正文。",
+      "files": [
+        "materials/references/company-tools-20261008/baidu-skills-links.json",
+        "materials/references/company-tools-20261008/baidu-skills.html",
+        "materials/references/company-tools-20261008/baidu-skills.txt",
+        "materials/references/company-tools-20261008/huawei-knowledge-links.json",
+        "materials/references/company-tools-20261008/huawei-knowledge.html",
+        "materials/references/company-tools-20261008/huawei-knowledge.txt",
+        "materials/references/company-tools-20261008/huawei-product-links.json",
+        "materials/references/company-tools-20261008/huawei-product.html",
+        "materials/references/company-tools-20261008/huawei-product.txt",
+        "materials/references/company-tools-20261008/huawei-skills.md",
+        "materials/references/company-tools-20261008/huawei-wiki.md",
+        "materials/references/company-tools-20261008/jd-skills-links.json",
+        "materials/references/company-tools-20261008/jd-skills.html",
+        "materials/references/company-tools-20261008/jd-skills.txt",
+        "materials/references/company-tools-20261008/jd-wiki.html",
+        "materials/references/company-tools-20261008/jd-wiki.txt",
+        "materials/references/company-tools-20261008/meituan-product-links.json",
+        "materials/references/company-tools-20261008/meituan-product.html",
+        "materials/references/company-tools-20261008/meituan-product.txt",
+        "materials/references/company-tools-20261008/meituan-release-links.json",
+        "materials/references/company-tools-20261008/meituan-release.html",
+        "materials/references/company-tools-20261008/meituan-release.txt",
+        "materials/references/company-tools-20261008/reuse-baidu.json",
+        "materials/references/company-tools-20261008/reuse-catpaw-ide.json",
+        "materials/references/company-tools-20261008/reuse-huawei-skills.json",
+        "materials/references/company-tools-20261008/reuse-huawei.json",
+        "materials/references/company-tools-20261008/reuse-jd-wiki.json",
+        "materials/references/company-tools-20261008/reuse-jd.json",
+        "materials/references/company-tools-20261008/reuse-meituan-open.json",
+        "materials/references/company-tools-20261008/reuse-meituan.json",
+        "materials/references/company-tools-20261008/sources.json"
+      ],
+      "assets": [
+        {
+          "path": "materials/references/company-tools-20261008/baidu-skills-links.json",
+          "bytes": 13144,
+          "sha256": "5e1ea2043c5670b8dca7eca5ee42fdf8ae05c1a94134cd2bdb24ad817d0884c3"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/baidu-skills.html",
+          "bytes": 78145,
+          "sha256": "8a6f5ed817f52f961718f41ac3569af78ecbc9da306852898920c084ef3be4cd"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/baidu-skills.txt",
+          "bytes": 9375,
+          "sha256": "7b30f2e4adf8c334c53d8fb3284a50b24968ae144d50acbf86f8b09fed9f93a0"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/huawei-knowledge-links.json",
+          "bytes": 7445,
+          "sha256": "123f85b52c86ef8d7167db353a0f6d0619753d9c501c5df550057fb63662a735"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/huawei-knowledge.html",
+          "bytes": 84020,
+          "sha256": "cad06afdac6d76322bcbcd015f2eae740d36505f5580334b1d6113e936424c35"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/huawei-knowledge.txt",
+          "bytes": 5251,
+          "sha256": "a54aca2b7109052c5cd219d81727137335bae477d15822a7ef509b311e6ef1e1"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/huawei-product-links.json",
+          "bytes": 7286,
+          "sha256": "67116217425d96529d2546d07c0dfc2655d6920ff5c7b8e15300e78335fe3b02"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/huawei-product.html",
+          "bytes": 246768,
+          "sha256": "82d7e6ae5ac815a1c35810fe2d718ef76269c4acb44e2c864280291e9d098ea4"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/huawei-product.txt",
+          "bytes": 9436,
+          "sha256": "3eae4ea21d87d6ffdb07948ebcb05dd022ffed72d7d144a0f89b35300a13d6d4"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/huawei-skills.md",
+          "bytes": 30544,
+          "sha256": "51b943bf7b46fc15eb530b85611502d5754e5184cfce349760a5fc42e9f8288c"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/huawei-wiki.md",
+          "bytes": 2021,
+          "sha256": "2a774a9d143e9e3c1df988b42d24227172356842b7d74745de2e0f8d72f90134"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/jd-skills-links.json",
+          "bytes": 1501,
+          "sha256": "2a2d625fecea8f2652a3f8e114b57a5d47f474fc028661e8aa673e2191709d24"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/jd-skills.html",
+          "bytes": 43043,
+          "sha256": "db514ebd102433cbee8bafa78e52dc159a35c39f592d433f224164d15176fee2"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/jd-skills.txt",
+          "bytes": 9064,
+          "sha256": "e080a87cac86afd0461e1757fa9c44ae6226d4f169b048564344090dfc9266b3"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/jd-wiki.html",
+          "bytes": 16791,
+          "sha256": "dcde9f2373b3b76e10de46d7446371680171a4e0528846961245cdfd266ef870"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/jd-wiki.txt",
+          "bytes": 2493,
+          "sha256": "6022b62776c57c99ffc7147c41ca58af26898a01a37af54be5890438f3aa321c"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/meituan-product-links.json",
+          "bytes": 2,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/meituan-product.html",
+          "bytes": 4255,
+          "sha256": "acf75a1adfc89d07d1c0f70e279e4ba122105d8d3f1d0154326a5155e08ba80b"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/meituan-product.txt",
+          "bytes": 56,
+          "sha256": "051f35b50a34efd2eb0d3cb012f55538c7057238cda1c19b04e4252b58ff5e8b"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/meituan-release-links.json",
+          "bytes": 3193,
+          "sha256": "008269a55e2f1ce46c6ad678568004f9715c956efd7f4acacb4a56e2ff228f98"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/meituan-release.html",
+          "bytes": 33730,
+          "sha256": "342f89510437f28bb6a3b1abf6c704ffa3bbb6f9e551cda4f56782a5820ac57f"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/meituan-release.txt",
+          "bytes": 7324,
+          "sha256": "0082948a002b4f29658381b05c75569cd4c94c56b88820daf81b3da600b108c9"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/reuse-baidu.json",
+          "bytes": 4500,
+          "sha256": "2ae534d48b0d88a6ee88d43ae591aef92baa5dd955952a950010dc542c334838"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/reuse-catpaw-ide.json",
+          "bytes": 798,
+          "sha256": "54b7e2bc67430ef23dd94d6d7f49234ea37ce3cf815941988622014d1b64eb6c"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/reuse-huawei-skills.json",
+          "bytes": 5791,
+          "sha256": "34bea1ff6a21627307491473217d69eef46e501ccc79a572d50255223a1a9d00"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/reuse-huawei.json",
+          "bytes": 4782,
+          "sha256": "12aba58e462ae5bbc42ebdec40f0c1363004ad333fbb9f423af5652367fc8abe"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/reuse-jd-wiki.json",
+          "bytes": 4040,
+          "sha256": "090ec82d2683f21f35ad02225b495ce7a67000661493f36374ec34565fb867c3"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/reuse-jd.json",
+          "bytes": 4913,
+          "sha256": "5fc88e2275983c2327384d076b7070bf46d0a686b60883abfb26af99b8989f76"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/reuse-meituan-open.json",
+          "bytes": 2,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/reuse-meituan.json",
+          "bytes": 4479,
+          "sha256": "5091977cf47f71b625ddba2ab4fd48b5c6e9e12678422083d586bc9a2cc2161d"
+        },
+        {
+          "path": "materials/references/company-tools-20261008/sources.json",
+          "bytes": 767,
+          "sha256": "3e1d1652141618124875dfd4e1838c7c3b2a5dd288fd578b2c635c45fca0722b"
+        }
+      ]
+    },
+    {
+      "id": "intent-skills-20261009",
+      "title": "跨 Agent 工程意图与精简文档：Matt Skills 原文核对",
+      "directory": "materials/references/intent-skills-20261009",
+      "kind": "官方 Skill 与格式文档快照",
+      "status": "公开原文已保存；未安装或执行",
+      "publication_date": null,
+      "archived_on": "2026-10-09",
+      "sources": [
+        {
+          "label": "Matt Skills 官方仓库",
+          "url": "https://github.com/mattpocock/skills"
+        }
+      ],
+      "note": "外部 Skill 为研究资料，不作为当前操作指令。Zed/OpenCode 文档未取得，未声称所有客户端兼容。",
+      "files": [
+        "materials/references/intent-skills-20261009/ADR-FORMAT.md",
+        "materials/references/intent-skills-20261009/GLOSSARY-FORMAT.md",
+        "materials/references/intent-skills-20261009/domain-modeling.md",
+        "materials/references/intent-skills-20261009/grilling.md",
+        "materials/references/intent-skills-20261009/handoff.md",
+        "materials/references/intent-skills-20261009/retro.md",
+        "materials/references/intent-skills-20261009/sources.json",
+        "materials/references/intent-skills-20261009/to-spec.md",
+        "materials/references/intent-skills-20261009/writing-for-agents.md"
+      ],
+      "assets": [
+        {
+          "path": "materials/references/intent-skills-20261009/ADR-FORMAT.md",
+          "bytes": 2733,
+          "sha256": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0"
+        },
+        {
+          "path": "materials/references/intent-skills-20261009/GLOSSARY-FORMAT.md",
+          "bytes": 2300,
+          "sha256": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801"
+        },
+        {
+          "path": "materials/references/intent-skills-20261009/domain-modeling.md",
+          "bytes": 3346,
+          "sha256": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3"
+        },
+        {
+          "path": "materials/references/intent-skills-20261009/grilling.md",
+          "bytes": 2049,
+          "sha256": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15"
+        },
+        {
+          "path": "materials/references/intent-skills-20261009/handoff.md",
+          "bytes": 940,
+          "sha256": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3"
+        },
+        {
+          "path": "materials/references/intent-skills-20261009/retro.md",
+          "bytes": 4369,
+          "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696"
+        },
+        {
+          "path": "materials/references/intent-skills-20261009/sources.json",
+          "bytes": 437,
+          "sha256": "b410e4ebc9286fc0f5ea2ceda2c0ed2062bb66749ad952862015987649e85e53"
+        },
+        {
+          "path": "materials/references/intent-skills-20261009/to-spec.md",
+          "bytes": 3043,
+          "sha256": "43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088"
+        },
+        {
+          "path": "materials/references/intent-skills-20261009/writing-for-agents.md",
+          "bytes": 10886,
+          "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a"
+        }
+      ]
+    }
+  ],
+  "statistics": {
+    "entries": 47,
+    "pdf_files": 8,
+    "saved_images": 216,
+    "failed_images": 0
+  }
+}

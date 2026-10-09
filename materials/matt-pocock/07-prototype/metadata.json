@@ -1,0 +1,42 @@
+{
+  "id": "matt-prototype",
+  "title": "Prototype：用实验消除不确定性",
+  "directory": "materials/matt-pocock/07-prototype",
+  "kind": "作者文章 / 访谈 / 官方演讲",
+  "status": "公开文字已保存",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "公开原文",
+      "url": "https://www.aihero.dev/skills-prototype"
+    },
+    {
+      "label": "固定提交的 Skill 原文",
+      "url": "https://github.com/mattpocock/skills/blob/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/prototype/SKILL.md"
+    }
+  ],
+  "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。",
+  "files": [
+    "materials/matt-pocock/07-prototype/page.html",
+    "materials/matt-pocock/07-prototype/page.txt",
+    "materials/matt-pocock/07-prototype/SKILL.snapshot.md"
+  ],
+  "assets": [
+    {
+      "path": "materials/matt-pocock/07-prototype/page.html",
+      "bytes": 340468,
+      "sha256": "d136c2f86c5fd1ff36dd9f8dfbd3df41c2b18b62deaa38e2276dd0c07d26d1e2"
+    },
+    {
+      "path": "materials/matt-pocock/07-prototype/page.txt",
+      "bytes": 11398,
+      "sha256": "47e6405b65780f4471c0d6079d16f90754a35a07a76957382c9744e8c24463b9"
+    },
+    {
+      "path": "materials/matt-pocock/07-prototype/SKILL.snapshot.md",
+      "bytes": 2931,
+      "sha256": "714de632d116bb73f65cdb5a882db15b9369a6713b9a47c0fad827848f0bfbe3"
+    }
+  ]
+}

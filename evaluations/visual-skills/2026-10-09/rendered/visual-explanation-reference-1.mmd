@@ -1,0 +1,10 @@
+flowchart LR
+    Caller[调用方]
+    subgraph Session[会话模块：拥有会话状态]
+        Gate[写入门禁]
+        Store[当前会话数据]
+    end
+    Caller -->|携带会话版本的响应| Gate
+    Gate -->|版本匹配才写入| Store
+    Constraint[设计约束：旧响应不能污染新会话]
+    Constraint -.->|约束| Gate

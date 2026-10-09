@@ -1,0 +1,137 @@
+[
+  {
+    "id": "show-me-1",
+    "source": "/tmp/show-me-ca7c8088.md",
+    "passed": false,
+    "exit_code": 1,
+    "diagnostic": "Generating single mermaid chart\n\nError: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/dist/index.html\n    at navigate (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:187:27)\n    at async Deferred.race (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)\n    at async CdpFrame.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:153:25)\n    at async CdpPage.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:582:20)\n    at async renderMermaid (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:585:5)\n    at async run (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:1091:24)\n    at async cli (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:493:3)\n\n",
+    "classification": "infrastructure_blocked",
+    "syntax_result": "see parse-results.json"
+  },
+  {
+    "id": "visual-explanation-reference-1",
+    "source": "/workspace/AI-SDLC/skills/visual-explanation/references/diagram-patterns.md",
+    "passed": false,
+    "exit_code": 1,
+    "diagnostic": "Generating single mermaid chart\n\nError: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/dist/index.html\n    at navigate (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:187:27)\n    at async Deferred.race (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)\n    at async CdpFrame.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:153:25)\n    at async CdpPage.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:582:20)\n    at async renderMermaid (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:585:5)\n    at async run (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:1091:24)\n    at async cli (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:493:3)\n\n",
+    "classification": "infrastructure_blocked",
+    "syntax_result": "see parse-results.json"
+  },
+  {
+    "id": "visual-explanation-reference-2",
+    "source": "/workspace/AI-SDLC/skills/visual-explanation/references/diagram-patterns.md",
+    "passed": false,
+    "exit_code": 1,
+    "diagnostic": "Generating single mermaid chart\n\nError: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/dist/index.html\n    at navigate (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:187:27)\n    at async Deferred.race (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)\n    at async CdpFrame.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:153:25)\n    at async CdpPage.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:582:20)\n    at async renderMermaid (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:585:5)\n    at async run (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:1091:24)\n    at async cli (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:493:3)\n\n",
+    "classification": "infrastructure_blocked",
+    "syntax_result": "see parse-results.json"
+  },
+  {
+    "id": "mermaid-root-2",
+    "source": "/tmp/ai-sdlc-visual-bench/softaworks-mermaid.md",
+    "passed": false,
+    "exit_code": 1,
+    "diagnostic": "Generating single mermaid chart\n\nError: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/dist/index.html\n    at navigate (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:187:27)\n    at async Deferred.race (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)\n    at async CdpFrame.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:153:25)\n    at async CdpPage.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:582:20)\n    at async renderMermaid (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:585:5)\n    at async run (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:1091:24)\n    at async cli (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:493:3)\n\n",
+    "classification": "infrastructure_blocked",
+    "syntax_result": "see parse-results.json"
+  },
+  {
+    "id": "mermaid-root-3",
+    "source": "/tmp/ai-sdlc-visual-bench/softaworks-mermaid.md",
+    "passed": false,
+    "exit_code": 1,
+    "diagnostic": "Generating single mermaid chart\n\nError: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/dist/index.html\n    at navigate (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:187:27)\n    at async Deferred.race (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)\n    at async CdpFrame.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:153:25)\n    at async CdpPage.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:582:20)\n    at async renderMermaid (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:585:5)\n    at async run (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:1091:24)\n    at async cli (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:493:3)\n\n",
+    "classification": "infrastructure_blocked",
+    "syntax_result": "see parse-results.json"
+  },
+  {
+    "id": "mermaid-root-4",
+    "source": "/tmp/ai-sdlc-visual-bench/softaworks-mermaid.md",
+    "passed": false,
+    "exit_code": 1,
+    "diagnostic": "Generating single mermaid chart\n\nError: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/dist/index.html\n    at navigate (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:187:27)\n    at async Deferred.race (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)\n    at async CdpFrame.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:153:25)\n    at async CdpPage.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:582:20)\n    at async renderMermaid (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:585:5)\n    at async run (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:1091:24)\n    at async cli (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:493:3)\n\n",
+    "classification": "infrastructure_blocked",
+    "syntax_result": "see parse-results.json"
+  },
+  {
+    "id": "mermaid-root-5",
+    "source": "/tmp/ai-sdlc-visual-bench/softaworks-mermaid.md",
+    "passed": false,
+    "exit_code": 1,
+    "diagnostic": "Generating single mermaid chart\n\nError: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/dist/index.html\n    at navigate (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:187:27)\n    at async Deferred.race (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)\n    at async CdpFrame.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:153:25)\n    at async CdpPage.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:582:20)\n    at async renderMermaid (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:585:5)\n    at async run (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:1091:24)\n    at async cli (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:493:3)\n\n",
+    "classification": "infrastructure_blocked",
+    "syntax_result": "see parse-results.json"
+  },
+  {
+    "id": "mermaid-root-6",
+    "source": "/tmp/ai-sdlc-visual-bench/softaworks-mermaid.md",
+    "passed": false,
+    "exit_code": 1,
+    "diagnostic": "Generating single mermaid chart\n\nError: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/dist/index.html\n    at navigate (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:187:27)\n    at async Deferred.race (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)\n    at async CdpFrame.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:153:25)\n    at async CdpPage.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:582:20)\n    at async renderMermaid (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:585:5)\n    at async run (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:1091:24)\n    at async cli (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:493:3)\n\n",
+    "classification": "infrastructure_blocked",
+    "syntax_result": "see parse-results.json"
+  },
+  {
+    "id": "mermaid-reference-advanced-features-1",
+    "source": "/tmp/ai-sdlc-visual-bench/mermaid-skill/references/advanced-features.md",
+    "passed": false,
+    "exit_code": 1,
+    "diagnostic": "Generating single mermaid chart\n\nError: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/dist/index.html\n    at navigate (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:187:27)\n    at async Deferred.race (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)\n    at async CdpFrame.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:153:25)\n    at async CdpPage.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:582:20)\n    at async renderMermaid (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:585:5)\n    at async run (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:1091:24)\n    at async cli (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:493:3)\n\n",
+    "classification": "infrastructure_blocked",
+    "syntax_result": "see parse-results.json"
+  },
+  {
+    "id": "mermaid-reference-architecture-diagrams-1",
+    "source": "/tmp/ai-sdlc-visual-bench/mermaid-skill/references/architecture-diagrams.md",
+    "passed": false,
+    "exit_code": 1,
+    "diagnostic": "Generating single mermaid chart\n\nError: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/dist/index.html\n    at navigate (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:187:27)\n    at async Deferred.race (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)\n    at async CdpFrame.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:153:25)\n    at async CdpPage.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:582:20)\n    at async renderMermaid (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:585:5)\n    at async run (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:1091:24)\n    at async cli (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:493:3)\n\n",
+    "classification": "infrastructure_blocked",
+    "syntax_result": "see parse-results.json"
+  },
+  {
+    "id": "mermaid-reference-c4-diagrams-1",
+    "source": "/tmp/ai-sdlc-visual-bench/mermaid-skill/references/c4-diagrams.md",
+    "passed": false,
+    "exit_code": 1,
+    "diagnostic": "Generating single mermaid chart\n\nError: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/dist/index.html\n    at navigate (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:187:27)\n    at async Deferred.race (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)\n    at async CdpFrame.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:153:25)\n    at async CdpPage.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:582:20)\n    at async renderMermaid (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:585:5)\n    at async run (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:1091:24)\n    at async cli (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:493:3)\n\n",
+    "classification": "infrastructure_blocked",
+    "syntax_result": "see parse-results.json"
+  },
+  {
+    "id": "mermaid-reference-class-diagrams-1",
+    "source": "/tmp/ai-sdlc-visual-bench/mermaid-skill/references/class-diagrams.md",
+    "passed": false,
+    "exit_code": 1,
+    "diagnostic": "Generating single mermaid chart\n\nError: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/dist/index.html\n    at navigate (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:187:27)\n    at async Deferred.race (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)\n    at async CdpFrame.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:153:25)\n    at async CdpPage.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:582:20)\n    at async renderMermaid (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:585:5)\n    at async run (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:1091:24)\n    at async cli (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:493:3)\n\n",
+    "classification": "infrastructure_blocked",
+    "syntax_result": "see parse-results.json"
+  },
+  {
+    "id": "mermaid-reference-erd-diagrams-1",
+    "source": "/tmp/ai-sdlc-visual-bench/mermaid-skill/references/erd-diagrams.md",
+    "passed": false,
+    "exit_code": 1,
+    "diagnostic": "Generating single mermaid chart\n\nError: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/dist/index.html\n    at navigate (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:187:27)\n    at async Deferred.race (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)\n    at async CdpFrame.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:153:25)\n    at async CdpPage.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:582:20)\n    at async renderMermaid (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:585:5)\n    at async run (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:1091:24)\n    at async cli (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:493:3)\n\n",
+    "classification": "infrastructure_blocked",
+    "syntax_result": "see parse-results.json"
+  },
+  {
+    "id": "mermaid-reference-flowcharts-1",
+    "source": "/tmp/ai-sdlc-visual-bench/mermaid-skill/references/flowcharts.md",
+    "passed": false,
+    "exit_code": 1,
+    "diagnostic": "Generating single mermaid chart\n\nError: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/dist/index.html\n    at navigate (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:187:27)\n    at async Deferred.race (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)\n    at async CdpFrame.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:153:25)\n    at async CdpPage.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:582:20)\n    at async renderMermaid (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:585:5)\n    at async run (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:1091:24)\n    at async cli (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:493:3)\n\n",
+    "classification": "infrastructure_blocked",
+    "syntax_result": "see parse-results.json"
+  },
+  {
+    "id": "mermaid-reference-sequence-diagrams-1",
+    "source": "/tmp/ai-sdlc-visual-bench/mermaid-skill/references/sequence-diagrams.md",
+    "passed": false,
+    "exit_code": 1,
+    "diagnostic": "Generating single mermaid chart\n\nError: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/dist/index.html\n    at navigate (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:187:27)\n    at async Deferred.race (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)\n    at async CdpFrame.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:153:25)\n    at async CdpPage.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:582:20)\n    at async renderMermaid (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:585:5)\n    at async run (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:1091:24)\n    at async cli (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:493:3)\n\n",
+    "classification": "infrastructure_blocked",
+    "syntax_result": "see parse-results.json"
+  }
+]

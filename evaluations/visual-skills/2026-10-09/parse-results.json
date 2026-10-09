@@ -1,0 +1,112 @@
+[
+  {
+    "id": "case-mermaid-diagrams-candidate-01-lease-1.mmd",
+    "syntax": "passed",
+    "render": "not_attempted"
+  },
+  {
+    "id": "case-mermaid-diagrams-candidate-02-intent-1.mmd",
+    "syntax": "passed",
+    "render": "not_attempted"
+  },
+  {
+    "id": "case-mermaid-diagrams-candidate-03-diff-1.mmd",
+    "syntax": "passed",
+    "render": "not_attempted"
+  },
+  {
+    "id": "case-show-me-01-lease-1.mmd",
+    "syntax": "passed",
+    "render": "not_attempted"
+  },
+  {
+    "id": "case-show-me-02-intent-1.mmd",
+    "syntax": "passed",
+    "render": "not_attempted"
+  },
+  {
+    "id": "case-visual-explanation-01-lease-1.mmd",
+    "syntax": "passed",
+    "render": "not_attempted"
+  },
+  {
+    "id": "case-visual-explanation-02-intent-1.mmd",
+    "syntax": "passed",
+    "render": "not_attempted"
+  },
+  {
+    "id": "mermaid-reference-advanced-features-1.mmd",
+    "syntax": "passed",
+    "render": "blocked_by_browser_policy"
+  },
+  {
+    "id": "mermaid-reference-architecture-diagrams-1.mmd",
+    "syntax": "passed",
+    "render": "blocked_by_browser_policy"
+  },
+  {
+    "id": "mermaid-reference-c4-diagrams-1.mmd",
+    "syntax": "passed",
+    "render": "blocked_by_browser_policy"
+  },
+  {
+    "id": "mermaid-reference-class-diagrams-1.mmd",
+    "syntax": "passed",
+    "render": "blocked_by_browser_policy"
+  },
+  {
+    "id": "mermaid-reference-erd-diagrams-1.mmd",
+    "syntax": "passed",
+    "render": "blocked_by_browser_policy"
+  },
+  {
+    "id": "mermaid-reference-flowcharts-1.mmd",
+    "syntax": "passed",
+    "render": "blocked_by_browser_policy"
+  },
+  {
+    "id": "mermaid-reference-sequence-diagrams-1.mmd",
+    "syntax": "passed",
+    "render": "blocked_by_browser_policy"
+  },
+  {
+    "id": "mermaid-root-2.mmd",
+    "syntax": "passed",
+    "render": "blocked_by_browser_policy"
+  },
+  {
+    "id": "mermaid-root-3.mmd",
+    "syntax": "passed",
+    "render": "blocked_by_browser_policy"
+  },
+  {
+    "id": "mermaid-root-4.mmd",
+    "syntax": "passed",
+    "render": "blocked_by_browser_policy"
+  },
+  {
+    "id": "mermaid-root-5.mmd",
+    "syntax": "passed",
+    "render": "blocked_by_browser_policy"
+  },
+  {
+    "id": "mermaid-root-6.mmd",
+    "syntax": "passed",
+    "render": "blocked_by_browser_policy"
+  },
+  {
+    "id": "show-me-1.mmd",
+    "syntax": "passed",
+    "render": "blocked_by_browser_policy"
+  },
+  {
+    "id": "visual-explanation-reference-1.mmd",
+    "syntax": "passed",
+    "render": "blocked_by_browser_policy"
+  },
+  {
+    "id": "visual-explanation-reference-2.mmd",
+    "syntax": "passed",
+    "render": "blocked_by_browser_policy"
+  }
+]

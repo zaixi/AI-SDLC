@@ -1,0 +1,13 @@
+sequenceDiagram
+    participant User
+    participant API
+    participant Database
+
+    User->>API: POST /login
+    API->>Database: Query credentials
+    Database-->>API: Return user data
+    alt Valid credentials
+        API-->>User: 200 OK + JWT token
+    else Invalid credentials
+        API-->>User: 401 Unauthorized
+    end

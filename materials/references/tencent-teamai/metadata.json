@@ -1,0 +1,26 @@
+{
+  "id": "teamai",
+  "title": "Tencent TeamAI README 快照",
+  "directory": "materials/references/tencent-teamai",
+  "kind": "官方开源文档",
+  "status": "此前读取的 README 已保存",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "官方仓库",
+      "url": "https://github.com/Tencent/teamai-cli"
+    }
+  ],
+  "note": "文本来自此前只读核对，未安装或运行。",
+  "files": [
+    "materials/references/tencent-teamai/readme-snapshot.md"
+  ],
+  "assets": [
+    {
+      "path": "materials/references/tencent-teamai/readme-snapshot.md",
+      "bytes": 12592,
+      "sha256": "150c2d1df958f1a90fb80d63ee820105412527b055501da5343c30b66e199ff5"
+    }
+  ]
+}

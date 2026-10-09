@@ -1,0 +1,50 @@
+{
+  "id": "byte-verl",
+  "title": "veRL for Training Coding Agent",
+  "directory": "materials/domestic/bytedance/07-verl",
+  "kind": "官方演讲资源",
+  "status": "公开介绍与提纲已保存；完整附件未取得",
+  "publication_date": "2025-10-24（资源发布）",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "火山引擎官方资源页",
+      "url": "https://developer.volcengine.com/resource/7564300327328219177"
+    }
+  ],
+  "note": "未登录页面没有可直接下载的公开附件 URL；仅有附件内部标识，未绕过登录获取文件。发布日期来自页面公开元数据，不代表演讲日期。",
+  "files": [
+    "materials/domestic/bytedance/07-verl/images.md",
+    "materials/domestic/bytedance/07-verl/images/96566d721d3da68c.svg",
+    "materials/domestic/bytedance/07-verl/images/eccd9e84b654e969.jpg",
+    "materials/domestic/bytedance/07-verl/official-resource-page.html",
+    "materials/domestic/bytedance/07-verl/official-resource-page.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/bytedance/07-verl/images.md",
+      "bytes": 589,
+      "sha256": "22a6071f507db6ece1afdec1a5d9eef934a7bb1268b73c96310dc4a9e984c6d4"
+    },
+    {
+      "path": "materials/domestic/bytedance/07-verl/images/96566d721d3da68c.svg",
+      "bytes": 5208,
+      "sha256": "f54968fbdaa16d6839b8f03929400182b9260b699c3978184360554bdb8fbbe0"
+    },
+    {
+      "path": "materials/domestic/bytedance/07-verl/images/eccd9e84b654e969.jpg",
+      "bytes": 138095,
+      "sha256": "1753f84900dd24c38e60f8e93edfbbe6471c865c3bfc9c36fddaf9c6638040e0"
+    },
+    {
+      "path": "materials/domestic/bytedance/07-verl/official-resource-page.html",
+      "bytes": 101486,
+      "sha256": "75ecc000eb2622cbdc7629a0afd7ebfbdfb973e7e539c3c6a4defd8a3ca9ba7e"
+    },
+    {
+      "path": "materials/domestic/bytedance/07-verl/official-resource-page.txt",
+      "bytes": 1029,
+      "sha256": "2ad9259ac2cf36f8d6b7a6be73e3c266097470e06caf87eae0df7513d708c809"
+    }
+  ]
+}

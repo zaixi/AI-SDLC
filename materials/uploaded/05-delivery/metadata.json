@@ -1,0 +1,32 @@
+{
+  "id": "upload-delivery",
+  "title": "第八篇：主交付链：Grilling → Spec → Tickets → Implement → Code Review",
+  "directory": "materials/uploaded/05-delivery",
+  "kind": "用户上传 PDF",
+  "status": "完整 PDF 已保存",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "用户提供的微信公众号链接",
+      "url": "https://mp.weixin.qq.com/s/SSrTs9DPK6rkJ-Q6v_1O1Q"
+    }
+  ],
+  "note": "",
+  "files": [
+    "materials/uploaded/05-delivery/text.txt",
+    "materials/uploaded/05-delivery/第八篇：主交付链：Grilling → Spec → Tickets → Implement → Code Review.pdf"
+  ],
+  "assets": [
+    {
+      "path": "materials/uploaded/05-delivery/text.txt",
+      "bytes": 11440,
+      "sha256": "55c9756ce19cc70a26a9e271efd35c305cabf81789c0c5913f7683e5b5674e56"
+    },
+    {
+      "path": "materials/uploaded/05-delivery/第八篇：主交付链：Grilling → Spec → Tickets → Implement → Code Review.pdf",
+      "bytes": 720093,
+      "sha256": "3a24d40304d64767cf7e8fac1cc640100a59cdd1532c5bd01e4974c0eb0455db"
+    }
+  ]
+}

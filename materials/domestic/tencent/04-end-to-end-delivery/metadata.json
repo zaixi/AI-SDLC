@@ -1,0 +1,60 @@
+{
+  "id": "tencent-full-delivery",
+  "title": "从提需求到部署发布，全 AI 全自动化后，研发效能全面跃升",
+  "directory": "materials/domestic/tencent/04-end-to-end-delivery",
+  "kind": "官方账号转载",
+  "status": "全文转载已保存",
+  "publication_date": "2026-04-20（转载页）",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "腾讯云转载：来源腾讯技术工程",
+      "url": "https://cloud.tencent.cn/developer/news/3860908"
+    },
+    {
+      "label": "转载页列出的原文",
+      "url": "https://page.om.qq.com/page/OcvU4S2uw4Szo3xGGbSp4_UQ0"
+    }
+  ],
+  "note": "标题应结合正文边界：80% 是目标；六个试点；测试仍需人工，治理框架尚在规划。",
+  "files": [
+    "materials/domestic/tencent/04-end-to-end-delivery/images.md",
+    "materials/domestic/tencent/04-end-to-end-delivery/images/1ceb3665dd28be4d.png",
+    "materials/domestic/tencent/04-end-to-end-delivery/images/6d36810597b2cc90.png",
+    "materials/domestic/tencent/04-end-to-end-delivery/images/c5d13faff13d7b82.png",
+    "materials/domestic/tencent/04-end-to-end-delivery/republication.html",
+    "materials/domestic/tencent/04-end-to-end-delivery/republication.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/tencent/04-end-to-end-delivery/images.md",
+      "bytes": 571,
+      "sha256": "a1f647241dbec501f506902f7d0e28a68a822490e76304a05ea404ab4bdef6e4"
+    },
+    {
+      "path": "materials/domestic/tencent/04-end-to-end-delivery/images/1ceb3665dd28be4d.png",
+      "bytes": 9818,
+      "sha256": "65aa0d8e6dbc4a4a915f1a0681bccf2f210c119096c3f9379dfc80ffa1cdd493"
+    },
+    {
+      "path": "materials/domestic/tencent/04-end-to-end-delivery/images/6d36810597b2cc90.png",
+      "bytes": 24745,
+      "sha256": "7e9855ae88c45cfa6389f4e5215595babac5889a1f8005a74cea83877ca0bef3"
+    },
+    {
+      "path": "materials/domestic/tencent/04-end-to-end-delivery/images/c5d13faff13d7b82.png",
+      "bytes": 1253,
+      "sha256": "9dde6a7080ff702ca972e8f06449688d81322ff512d2bdfc793f68cde0492946"
+    },
+    {
+      "path": "materials/domestic/tencent/04-end-to-end-delivery/republication.html",
+      "bytes": 78918,
+      "sha256": "b0c6c809ef9871fd161017bbd3b941833dba9dabdb3ad5a6c52754f6aee6b240"
+    },
+    {
+      "path": "materials/domestic/tencent/04-end-to-end-delivery/republication.txt",
+      "bytes": 13503,
+      "sha256": "6f6e801246f795694ce8a18e80a68f28ae4538b075a724dbd4d75534813dc042"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+# Visual Explanation
+
+图优先的工程解释 Skill。可由支持标准 Skills 的代理按任务匹配加载，也可供其他流程使用；未设置仅允许用户手动触发的标志。
+
+核心文件是 [SKILL.md](SKILL.md)。它保持工具无关，保留 show-me 的完整表达主体，按问题选择 Mermaid、调用树、伪代码、diff、SVG 或 HTML。生成代码事实视图与保存设计意图分别处理。
+
+整个工程过程中按需读取 [工程视图指引](references/design-views.md)，覆盖需求、理解、设计、实现、调试、验证、评审、交接及运行讨论。按当前问题展开必要细节；概要/详细设计只是示例，不是能力边界。
+
+## 接入原则
+
+- 将整个目录安装到客户端支持的 Skill 位置，保留 references 子目录。不同客户端的安装、发现及调用机制需分别验证。
+- 统一入口或主流程加入一个简短指针：**解释架构、边界、依赖、流程、时序、状态、数据流或变更影响时，使用 visual-explanation；先展示图，再补必要文字。**
+- 自动匹配是软约束；流程指针提高调用机会，不保证每个客户端都会加载或执行。
+- 保持 Matt 和其他上游 Skills 原样。本 Skill 单独维护，不要求更换编码代理。
+
+## 当前边界
+
+当前版本为 0.2.0，没有在 Codex、Claude、OpenCode、Zed 或 Qoder 中完成安装及调用测试。Mermaid 示例未执行渲染验证。
+
+复用 [Humanlayer Show Me 固定提交](https://github.com/humanlayer/skills/blob/ca7c8088db69e315a8b2deea43820270457f8f3c/plugins/show-me/skills/show-me/SKILL.md)的完整正文。保存 [上游原文件](references/show-me.upstream.md)与 [MIT 许可证](LICENSE)。原文件含仅用户触发的标志；本 Skill 的入口元数据不含该标志，以允许模型匹配。
+
+未复制未确认来源的 `mermaid-diagrams` 或 `architecture-report` 包；这些名称对应的具体仓库、许可证和兼容性尚待核对。现有内容可直接生成设计图，不依赖安装这些包。
+
+## 更新方式
+
+本 Skill 尚无自动拉取上游机制。更新时读取 show-me 新版本，比较保存的上游原文件，替换主文件中“show-me 上游正文”后的完整正文，更新固定提交并检查本地规则是否仍适用。保持本地规则与设计图指引独立，保留许可证。上游元数据需单独评估，不能盲目覆盖本 Skill 的入口设置。

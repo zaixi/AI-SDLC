@@ -1,0 +1,332 @@
+AI Skills for Real Engineers
+AI
+Hero
+Courses
+Search
+Newsletter
+Explore
+Map
+Skills
+Open source
+Videos
+Guides
+LLM Fundamentals
+AI Engineer Roadmap
+AI Coding Dictionary
+Topics
+AI Skills for Real Engineers
+A practical skill system for engineers who want to use AI without giving up their standards.
+Install the ones you want, then type a slash command.
+GitHub stars
+280,493
+Total skill installs
+GitHub
+Learn how I actually engineer with these
+This is a seven-lesson email course. Lesson 1 arrives as soon as you sign up. The lesson is the email itself. It will not appear under Courses in your AI Hero account.
+Answer the question at the end if you want the next lesson in a few minutes. Otherwise, the next lesson arrives automatically after at least 18 hours.
+Install the skills
+Pick the skills and agents you use. The installer writes editable files into your project.
+$
+npx skills@latest add mattpocock/skills
+Update with
+npx skills update
+Skills.sh
+Claude Code
+Install the complete set as a managed, read-only plugin from the official marketplace.
+$
+claude plugins install mattpocock-skills
+Updates automatically
+Plugin docs
+Using Claude Code? Install as a plugin
+Works with any agent
+Claude Code · Cursor · Codex · Copilot · 27 skills · MIT
+Skills
+Grouped by when you reach for them. Most people start with the main flow.
+01
+Getting Started
+Set up once, then find your way around.
+Start with
+/
+setup-matt-pocock-skills
+/
+setup-matt-pocock-skills
+The /setup-matt-pocock-skills Skill
+Set up one repo so the other skills know how it works.
+/
+ask-matt
+The /ask-matt Skill
+Find out which skill to use for the situation you are in.
+02
+The Main Flow
+The idea→ship spine, in order.
+Start with
+/
+grill-with-docs
+/
+grill-with-docs
+The /grill-with-docs Skill
+Get interviewed about a plan, and record the decisions.
+/
+to-spec
+The /to-spec Skill
+Turn an agreed conversation into a written spec.
+/
+to-tickets
+The /to-tickets Skill
+Split a spec into small tickets an agent can build.
+/
+implement
+The /implement Skill
+Build a finished spec into code, test-first.
+/
+code-review
+The /code-review Skill
+Review a diff against your standards and against the spec.
+/
+retro
+The /retro Skill
+Look back on a session and suggest repo improvements.
+03
+Shaping
+Explore an open question and produce a decision/answer that feeds the flow.
+Start with
+/
+wayfinder
+/
+wayfinder
+The /wayfinder Skill
+Chart a large effort as a map of decisions, and settle them.
+/
+prototype
+The /prototype Skill
+Answer a design question with code you then delete.
+/
+research
+The /research Skill
+Get a cited answer, read from primary sources.
+04
+Engineering
+Keep the codebase and issue list healthy; generates work for the flow.
+Start with
+/
+improve-codebase-architecture
+/
+improve-codebase-architecture
+The /improve-codebase-architecture Skill
+Find the modules worth refactoring, as a visual report.
+/
+diagnosing-bugs
+The /diagnosing-bugs Skill
+Diagnose a hard bug, starting from a repro that fails.
+/
+triage
+The /triage Skill
+Sort raw issues into work someone can pick up.
+/
+wizard
+The /wizard Skill
+Generate a script that walks a human through setup.
+/
+implement-spec
+The /implement-spec Skill
+Build a whole spec at once, with parallel subagents.
+05
+Productivity Skills
+Human-facing workflows you run, not about code.
+Start with
+/
+grill-me
+/
+grill-me
+The /grill-me Skill
+Align on an idea before committing to it.
+/
+handoff
+The /handoff Skill
+Write up a long session so another agent can continue it.
+/
+to-questionnaire
+The /to-questionnaire Skill
+Turn open questions into a doc someone else fills in.
+/
+teach
+The /teach Skill
+Learn a topic across many sessions that build on each other.
+/
+wait-what
+The /wait-what Skill
+Ask the agent to say that again, in plain English.
+/
+writing-for-agents
+The /writing-for-agents Skill
+How to write skills and other documents agents read.
+06
+Reference Skills
+The reusable layer other skills invoke or cite.
+Start with
+/
+pr
+/
+pr
+The /pr Skill
+The shape a pull request body should take.
+/
+codebase-design
+The /codebase-design Skill
+The vocabulary for designing deep modules.
+/
+domain-modeling
+The /domain-modeling Skill
+Sharpen the words a project uses, and write them down.
+/
+grilling
+The /grilling Skill
+The interview other skills run to stress-test a plan.
+/
+tdd
+The /tdd Skill
+The rules of the red-green-refactor loop.
+What is a skill?
+Skills are small, sharp instructions you hand your coding agent so it works the way a senior engineer would. Install the ones you want, type a slash command, and the agent follows a process you actually trust.
+The problem
+An agent is only as good as the process you give it. Left to guess, it writes plausible code that quietly rots the codebase.
+The fix
+A skill encodes one good habit (grilling a plan, writing a spec, reviewing a diff), so the agent runs it the same way every time.
+Why it compounds
+Skills form a chain. Each one's output is the next one's input, so the whole workflow gets better as you tune single steps.
+Works in whatever agent you already use
+Skills are plain files, not a lock-in platform.
+Claude Code
+Cursor
+Codex
+Amp
+Copilot
+Install
+Changelog
+What changed recently
+RSS
+Full history on GitHub →
+v1.3
+Oct 5, 2026
+/implement-spec, /pr, /retro, and GLOSSARY.md
+Skills v1.3: /implement-spec builds a whole spec, /pr writes reviewable PR bodies, /retro improves your agent's environment, and CONTEXT.md becomes GLOSSARY.md.
+v1.2
+Aug 5, 2026
+/wait-what, /writing-for-agents, Claude Code Plugin, and more
+Explore Matt Pocock's Skills v1.2.0: new documentation, Claude Code integration, the Wait What skill for Opus verbosity, and more.
+v1.1
+Jul 8, 2026
+/wayfinder, /to-spec, /to-tickets, /grilling improvements, and much more
+Skills v1.1 released: Learn new agent skills for AI coding including Wayfinder for planning, spec improvements, and TDD refactoring.
+v1
+Jun 18, 2026
+63% Token Reduction, /ask-matt, /writing-great-skills
+Skills v1.0 update: 63% token reduction, new routing skills, domain modeling & codebase design. Install with npx now.
+May 11, 2026
+Skills Changelog: /handoff, /prototype, /review and /writing
+Two new AI agent skills: /handoff for passing context between agents, and /prototype for building throwaway prototypes to test design decisions.
+Apr 30, 2026
+Skills Changelog: Ubiquitous Language -> /grill-with-docs
+Skills repo changelog: /grill-with-docs, ADRs, improved architecture language, multi-tracker support & new debugging skills. Updates inside.
+Install the skills and get to work
+Install the skills you want into the agents you use. Everything is MIT licensed and lives in one repo.
+280,493
+mattpocock
+/
+skills
+View on GitHub →
+Install the skills
+Pick the skills and agents you use. The installer writes editable files into your project.
+$
+npx skills@latest add mattpocock/skills
+Update with
+npx skills update
+Skills.sh
+Claude Code
+Install the complete set as a managed, read-only plugin from the official marketplace.
+$
+claude plugins install mattpocock-skills
+Updates automatically
+Plugin docs
+Using Claude Code? Install as a plugin
+Works with any agent
+Claude Code · Cursor · Codex · Copilot · 27 skills · MIT
+Trusted by engineers from
+Learn
+AI Coding Crash Course
+AI SDK v6 Crash Course
+LLM Fundamentals
+AI Coding Dictionary
+The AI Engineer Roadmap
+Vercel AI SDK Tutorial
+Model Context Protocol Tutorial
+Cohorts
+AI Coding for Real Engineers
+Claude Code for Real Engineers
+Build Your Own AI Personal Assistant in TypeScript
+Build DeepSearch in TypeScript
+Account
+Agents
+sitemap.md
+llms.txt
+skills.md
+rss.xml
+Browse All
+Skills
+Free course
+Dictionary
+FAQ
+Terms
+Theme
+New
+AI Coding Crash Course is out now.
+Skills
+Overview
+1
+Getting Started
+2
+The Main Flow
+3
+Shaping
+4
+Engineering
+5
+Productivity Skills
+6
+Reference Skills
+What's New
+v1.3: /implement-spec, /pr, /retro, and GLOSSARY.md
+The /implement-spec Skill
+The /pr Skill
+All
+Think Like an AI Engineer
+Learn How LLMs Think
+Set Up Your Agent
+Score First Wins
+Get Better Results
+Build the Right Thing
+Ship Solid Code
+Build a Software Factory
+Meta / Announcements
+v1.3
+Oct 5, 2026
+/implement-spec, /pr, /retro, and GLOSSARY.md
+Skills v1.3: /implement-spec builds a whole spec, /pr writes reviewable PR bodies, /retro improves your agent's environment, and CONTEXT.md becomes GLOSSARY.md.
+v1.2
+Aug 5, 2026
+/wait-what, /writing-for-agents, Claude Code Plugin, and more
+Explore Matt Pocock's Skills v1.2.0: new documentation, Claude Code integration, the Wait What skill for Opus verbosity, and more.
+v1.1
+Jul 8, 2026
+/wayfinder, /to-spec, /to-tickets, /grilling improvements, and much more
+Skills v1.1 released: Learn new agent skills for AI coding including Wayfinder for planning, spec improvements, and TDD refactoring.
+v1
+Jun 18, 2026
+63% Token Reduction, /ask-matt, /writing-great-skills
+Skills v1.0 update: 63% token reduction, new routing skills, domain modeling & codebase design. Install with npx now.
+May 11, 2026
+Skills Changelog: /handoff, /prototype, /review and /writing
+Two new AI agent skills: /handoff for passing context between agents, and /prototype for building throwaway prototypes to test design decisions.
+Apr 30, 2026
+Skills Changelog: Ubiquitous Language -> /grill-with-docs
+Skills repo changelog: /grill-with-docs, ADRs, improved architecture language, multi-tracker support & new debugging skills. Updates inside.

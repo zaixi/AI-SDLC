@@ -1,0 +1,36 @@
+veRL for Training Coding Agent - 资源 - 开发者社区 - 火山引擎
+登录
+注册
+首页
+AI 大模型体验中心
+动手实验室
+Agent 评测集
+AI 案例广场
+火山杯大赛
+学习中心
+社区
+去发布
+首页
+AI 大模型体验中心
+动手实验室
+Agent 评测集
+AI 案例广场
+学习中心
+社区
+veRL for Training Coding Agent
+855
+34
+更新时间：
+点击下载
+资源介绍
+随着DeepSeek R1的火热，强化学习的训练范式成为目前LLM post training的主流。本次分享将介绍如何使用开源框架verl训练一个foundation model来服务coding agent。
+资源详情
+演讲介绍：
+随着DeepSeek R1的火热，强化学习的训练范式成为目前LLM post training的主流。本次分享将介绍如何使用开源框架verl训练一个foundation model来服务coding agent。
+主要内容：
+DeepSeek r1 RL的训练范式
+verl简介
+使用verl训练coding agent
+听众受益：
+了解大模型是如何使用强化学习训练的
+了解类似ClaudeCode背后的模型是如何训练的

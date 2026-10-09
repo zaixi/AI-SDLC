@@ -1,0 +1,32 @@
+{
+  "id": "upload-domain",
+  "title": "domain-architecture-skills：让 AI 先建模、再选架构、最后写代码",
+  "directory": "materials/uploaded/02-domain",
+  "kind": "用户上传 PDF",
+  "status": "完整 PDF 已保存",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "用户提供的微信公众号链接",
+      "url": "https://mp.weixin.qq.com/s/eZwmXgKfP2Ey7VcCMnCUNg"
+    }
+  ],
+  "note": "",
+  "files": [
+    "materials/uploaded/02-domain/domain-architecture-skills：让 AI 先建模、再选架构、最后写代码.pdf",
+    "materials/uploaded/02-domain/text.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/uploaded/02-domain/domain-architecture-skills：让 AI 先建模、再选架构、最后写代码.pdf",
+      "bytes": 844363,
+      "sha256": "d320064b2f71d132cbd18f75899bcca1d73884f0b2ef72e329f16eb52f7f383c"
+    },
+    {
+      "path": "materials/uploaded/02-domain/text.txt",
+      "bytes": 15169,
+      "sha256": "a2848f2ecb468e8e3bba5d6e6fa1b943523ecf21d672dfae715f351a93cc7d78"
+    }
+  ]
+}

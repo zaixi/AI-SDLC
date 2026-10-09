@@ -1,0 +1,230 @@
+{
+  "id": "tencent-practice",
+  "title": "从 Vibe Coding 到 AI 原生研发团队：一套能落地的工程实践",
+  "directory": "materials/domestic/tencent/02-ai-native-team",
+  "kind": "官方账号文章",
+  "status": "全文快照已保存",
+  "publication_date": "2026-07-21",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "腾讯技术工程",
+      "url": "https://news.qq.com/rain/a/20260721A09ALQ00"
+    }
+  ],
+  "note": "",
+  "files": [
+    "materials/domestic/tencent/02-ai-native-team/article.html",
+    "materials/domestic/tencent/02-ai-native-team/article.txt",
+    "materials/domestic/tencent/02-ai-native-team/images.md",
+    "materials/domestic/tencent/02-ai-native-team/images/015783e5666e5f2c.png",
+    "materials/domestic/tencent/02-ai-native-team/images/0210263fff802715.png",
+    "materials/domestic/tencent/02-ai-native-team/images/1b002e6e158b9ebe.png",
+    "materials/domestic/tencent/02-ai-native-team/images/1f7b3094288871d4.png",
+    "materials/domestic/tencent/02-ai-native-team/images/20000851bc0e03f7.png",
+    "materials/domestic/tencent/02-ai-native-team/images/28b98ebcb82e5555.png",
+    "materials/domestic/tencent/02-ai-native-team/images/29330acfb8b93419.png",
+    "materials/domestic/tencent/02-ai-native-team/images/2f3578f91f67531f.png",
+    "materials/domestic/tencent/02-ai-native-team/images/309523422cd454b5.png",
+    "materials/domestic/tencent/02-ai-native-team/images/3335d6c34cf530cb.png",
+    "materials/domestic/tencent/02-ai-native-team/images/405c17abda5d5c06.png",
+    "materials/domestic/tencent/02-ai-native-team/images/437dc641572fc97a.png",
+    "materials/domestic/tencent/02-ai-native-team/images/486a77b869bd305e.png",
+    "materials/domestic/tencent/02-ai-native-team/images/4d554cd86f1bc72b.png",
+    "materials/domestic/tencent/02-ai-native-team/images/54dc9b9dfd53aeec.png",
+    "materials/domestic/tencent/02-ai-native-team/images/5e05bb82d70d582f.png",
+    "materials/domestic/tencent/02-ai-native-team/images/667c1d1ef19a1cc8.png",
+    "materials/domestic/tencent/02-ai-native-team/images/6b83c02c6d8ba19c.png",
+    "materials/domestic/tencent/02-ai-native-team/images/6ef0e50df4727803.png",
+    "materials/domestic/tencent/02-ai-native-team/images/72a679038b457250.png",
+    "materials/domestic/tencent/02-ai-native-team/images/a0ae78f571d2702f.png",
+    "materials/domestic/tencent/02-ai-native-team/images/a5361c8fbd82e220.png",
+    "materials/domestic/tencent/02-ai-native-team/images/a6a319e7ea8600df.png",
+    "materials/domestic/tencent/02-ai-native-team/images/a82a93650aaeabab.png",
+    "materials/domestic/tencent/02-ai-native-team/images/bd1bb7e181358ac3.png",
+    "materials/domestic/tencent/02-ai-native-team/images/d7232f29bdafd019.png",
+    "materials/domestic/tencent/02-ai-native-team/images/dbf3810ecf0134c7.png",
+    "materials/domestic/tencent/02-ai-native-team/images/dfa36f053b0a4859.png",
+    "materials/domestic/tencent/02-ai-native-team/images/e1ea40c549cfe507.png",
+    "materials/domestic/tencent/02-ai-native-team/images/e3529bf894bb7887.png",
+    "materials/domestic/tencent/02-ai-native-team/images/fa54670d5c629033.png",
+    "materials/domestic/tencent/02-ai-native-team/images/fe54f4001af75bf9.png"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/article.html",
+      "bytes": 998005,
+      "sha256": "6de09b1f2f587c9322fff0eb1974fd504300489d43174913a7907a42c76a0993"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/article.txt",
+      "bytes": 44434,
+      "sha256": "f44c062121a6308535ffe968f0f5ef25eb3eefd88958ffb38e510bac64b31b06"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images.md",
+      "bytes": 5100,
+      "sha256": "ecd036ce754f8aff79c2e0510cd81379f631fcf4a54d61679981b09c3cdfd664"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/015783e5666e5f2c.png",
+      "bytes": 397363,
+      "sha256": "cf4f4bead341bc6f19bf1bc5b435eb0dbdfd6ff4d2ff3a2aefad0b315afbe757"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/0210263fff802715.png",
+      "bytes": 130779,
+      "sha256": "d7a96b34e319f3a5ed2139224e5e425e68b1f76b406790961305a338ab82ae86"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/1b002e6e158b9ebe.png",
+      "bytes": 418076,
+      "sha256": "475ccfe24fc2b6823b3399936ba41e60879c3f40ac13ec9a7f6d323cec3b9271"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/1f7b3094288871d4.png",
+      "bytes": 86590,
+      "sha256": "cf0a3053f8adb7b58a80b5219230491d85ef888d2083aaa824447f5077f6529d"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/20000851bc0e03f7.png",
+      "bytes": 132084,
+      "sha256": "fbdf3d528a0fbcc676a18a3a4cb13988d4e7024e0c3e4d2fcea1845318cb3230"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/28b98ebcb82e5555.png",
+      "bytes": 260111,
+      "sha256": "b40e8b85dfd2e760d6cc0db776a6094f618a5a9d27a072bda5ad1defd2e61728"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/29330acfb8b93419.png",
+      "bytes": 195448,
+      "sha256": "998e9099d4ce7c06857d76429cc4a7cab490af7a8850dc569ee42e4cca65fedc"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/2f3578f91f67531f.png",
+      "bytes": 90449,
+      "sha256": "26a29bf22949d9a6cc8f626a17d43ba13f44ba46b9d850fd464402182f55734f"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/309523422cd454b5.png",
+      "bytes": 162371,
+      "sha256": "11fac68ad6e15b7cea1b51af6839d41bf7b4e510ca05b95b71c7e08cd842ddb8"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/3335d6c34cf530cb.png",
+      "bytes": 111920,
+      "sha256": "696dfe25fabf1f131ce73948a9d6fe73d1e836a335cec8c0be891e0871bf3a0b"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/405c17abda5d5c06.png",
+      "bytes": 197958,
+      "sha256": "df2fc175c29f848742b6526eccc26a619c5025d90880d286f99e7a94cb27d0fd"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/437dc641572fc97a.png",
+      "bytes": 114891,
+      "sha256": "7fe4926faf86bee2cbdfc571b0540d6da4cebea9d2e3e2fcf78be9a7bfe431cb"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/486a77b869bd305e.png",
+      "bytes": 570216,
+      "sha256": "299dbc5ffd6c30af789f3a3b1df1f53229ed42b4f3ac53111335b8ab38320f12"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/4d554cd86f1bc72b.png",
+      "bytes": 88539,
+      "sha256": "cc765092b8a24f561b15c6cadc3df367f38999bcea95bee6771db6bf7f85a410"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/54dc9b9dfd53aeec.png",
+      "bytes": 168477,
+      "sha256": "587e3051e7380d4d19c9aa6d9ceff21870d1bf6dd9a2a169ef45f140fd6f7512"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/5e05bb82d70d582f.png",
+      "bytes": 143733,
+      "sha256": "492fd649347ce655c3559a5e885c99284bfe23317dec0d5e75e783b1945b625e"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/667c1d1ef19a1cc8.png",
+      "bytes": 167945,
+      "sha256": "4ab6a7625844c2fac0578211375881dddb81572cc7d63e36131eb460a4379ab1"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/6b83c02c6d8ba19c.png",
+      "bytes": 92052,
+      "sha256": "a156582bb3c381465fa5329c3cbc1af57639336fe488897a11735fffdd2ded77"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/6ef0e50df4727803.png",
+      "bytes": 1692,
+      "sha256": "a5c3d6e5bf2d95c9834a2ba73e9edf1353e6424d2c04c6663e6b76e2ea70e491"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/72a679038b457250.png",
+      "bytes": 119801,
+      "sha256": "22ae4311a9c3ff9dcab0d9bf4d615de34a2c4eaf82f4995fa3c8a68c6508d33b"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/a0ae78f571d2702f.png",
+      "bytes": 119391,
+      "sha256": "f9b31e3c59c09cb7cb6a26d76d5f9ed59162b0304aa399e670ec78c1a3c6b387"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/a5361c8fbd82e220.png",
+      "bytes": 515576,
+      "sha256": "231b86d7fb0bf947940c76708775bd8ca93f665c9223b21fa5418398bf346d69"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/a6a319e7ea8600df.png",
+      "bytes": 323217,
+      "sha256": "3eeab53c8cb71104ba1a7568e155d43c63c9682733e75d0d6859ddd65323aabf"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/a82a93650aaeabab.png",
+      "bytes": 94937,
+      "sha256": "868688f8c9c32e68720b4f548a287778e273103880cb5be6f474e8ba9f1e8271"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/bd1bb7e181358ac3.png",
+      "bytes": 116141,
+      "sha256": "88d03204623ab8a115848c849a8519c5d32e56d1e287e1f3633b8f336e59b593"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/d7232f29bdafd019.png",
+      "bytes": 203977,
+      "sha256": "4367932e1905582611774a6e71b1c62677726d97415abb2867300278cd686787"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/dbf3810ecf0134c7.png",
+      "bytes": 108241,
+      "sha256": "915f379904f81700f0c6e11234a05ea5577a8248e322766371a483e28d46d538"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/dfa36f053b0a4859.png",
+      "bytes": 151258,
+      "sha256": "5ddf187b33ac24abc8dd7dbe3bda831f0e81bb2d34a67c8914a32d9884a1e8a7"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/e1ea40c549cfe507.png",
+      "bytes": 94695,
+      "sha256": "f67a1287c1d79e3563e1ba417e48eb14dae7c2719a77b6ae2f4db03b13616fd1"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/e3529bf894bb7887.png",
+      "bytes": 123853,
+      "sha256": "d0a231ecbd2438d0cd065652996c7d2e0ee06409711ea28700e0434a3cde30c7"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/fa54670d5c629033.png",
+      "bytes": 116288,
+      "sha256": "d0ea85bd432de01590989f6bc66ce78e996fd1d4f9ad29f4102d1692f502ff26"
+    },
+    {
+      "path": "materials/domestic/tencent/02-ai-native-team/images/fe54f4001af75bf9.png",
+      "bytes": 560497,
+      "sha256": "4f1439372661afa18787cfef8f15c7f8949d13e8e47cf724ecde7d6d67b83f18"
+    }
+  ]
+}

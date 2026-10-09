@@ -1,0 +1,9 @@
+flowchart TD
+    Start([User visits site]) --> Auth{Authenticated?}
+    Auth -->|No| Login[Show login page]
+    Auth -->|Yes| Dashboard[Show dashboard]
+    Login --> Creds[Enter credentials]
+    Creds --> Validate{Valid?}
+    Validate -->|Yes| Dashboard
+    Validate -->|No| Error[Show error]
+    Error --> Login

@@ -1,0 +1,188 @@
+{
+  "id": "tencent-spec-code",
+  "title": "AI 研发新范式：基于技术方案全链路生成代码",
+  "directory": "materials/domestic/tencent/03-spec-to-code",
+  "kind": "官方账号文章",
+  "status": "全文快照已保存",
+  "publication_date": "2025-12-12",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "腾讯技术工程",
+      "url": "https://news.qq.com/rain/a/20251212A05YHW00"
+    }
+  ],
+  "note": "",
+  "files": [
+    "materials/domestic/tencent/03-spec-to-code/article.html",
+    "materials/domestic/tencent/03-spec-to-code/article.txt",
+    "materials/domestic/tencent/03-spec-to-code/images.md",
+    "materials/domestic/tencent/03-spec-to-code/images/0dcb7c5e32cf4136.png",
+    "materials/domestic/tencent/03-spec-to-code/images/1181ebc4b5d08974.png",
+    "materials/domestic/tencent/03-spec-to-code/images/180b9226685bc6f1.png",
+    "materials/domestic/tencent/03-spec-to-code/images/1af0e4fe6f2b3933.png",
+    "materials/domestic/tencent/03-spec-to-code/images/1d2385ea0ac225bd.png",
+    "materials/domestic/tencent/03-spec-to-code/images/2d624aca98dfdd4b.png",
+    "materials/domestic/tencent/03-spec-to-code/images/32e489a316014199.png",
+    "materials/domestic/tencent/03-spec-to-code/images/335c5c3b548b28a4.png",
+    "materials/domestic/tencent/03-spec-to-code/images/3d395e0c37b66c20.png",
+    "materials/domestic/tencent/03-spec-to-code/images/5559720c8e1cdbd1.png",
+    "materials/domestic/tencent/03-spec-to-code/images/5cce61c9ff49db0f.png",
+    "materials/domestic/tencent/03-spec-to-code/images/624aa0888ac78e2a.png",
+    "materials/domestic/tencent/03-spec-to-code/images/63abaa26463e4d32.png",
+    "materials/domestic/tencent/03-spec-to-code/images/6ef0e50df4727803.png",
+    "materials/domestic/tencent/03-spec-to-code/images/91c8781dc7f9dc19.png",
+    "materials/domestic/tencent/03-spec-to-code/images/994203c1ee2696cf.png",
+    "materials/domestic/tencent/03-spec-to-code/images/9cca7ff3536aa9ad.png",
+    "materials/domestic/tencent/03-spec-to-code/images/a1823a97c45a877e.png",
+    "materials/domestic/tencent/03-spec-to-code/images/a45a422e183dee3d.png",
+    "materials/domestic/tencent/03-spec-to-code/images/ab787167047c89b6.png",
+    "materials/domestic/tencent/03-spec-to-code/images/cccac5b4b99269f1.png",
+    "materials/domestic/tencent/03-spec-to-code/images/d2a45444d914f525.png",
+    "materials/domestic/tencent/03-spec-to-code/images/da6cb0fdad981a27.png",
+    "materials/domestic/tencent/03-spec-to-code/images/dc968caaad526177.png",
+    "materials/domestic/tencent/03-spec-to-code/images/e3aadad57d46321a.png"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/article.html",
+      "bytes": 438252,
+      "sha256": "6f69bb213edd361f1831271709bdc45953912ffeae3b1d4de32258d8783a30db"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/article.txt",
+      "bytes": 11358,
+      "sha256": "ef6d344d8865f9a5d45880399a901faa08d862f129288ba856dc83bae5dea8e7"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images.md",
+      "bytes": 4007,
+      "sha256": "f64362f2b0c8b8f18d72e2d68f1df5e210cae0b6fcc942a3a15b23a88c742ca2"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/0dcb7c5e32cf4136.png",
+      "bytes": 260622,
+      "sha256": "796925fdae857000a37a673b4077a386e43e5c79803cfc58f24806a64a302768"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/1181ebc4b5d08974.png",
+      "bytes": 34843,
+      "sha256": "c7e61208898ec26cba79da6c3d84148f9c2c71b9c2815f8ccf1b2a3bd8996b2b"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/180b9226685bc6f1.png",
+      "bytes": 396230,
+      "sha256": "36c5dcad50ee1864a8a7414992788caee20a532d5bb420daef7eb309b9409414"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/1af0e4fe6f2b3933.png",
+      "bytes": 192542,
+      "sha256": "516c2daf8f5ec077c6058f692aa88fb278b5b7c941fb7bf896fcdc9bb6a8d0c8"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/1d2385ea0ac225bd.png",
+      "bytes": 107533,
+      "sha256": "0ba1f6b963a1c12910d8f0584243586eb939b25381d693375cc5ae28f50afa81"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/2d624aca98dfdd4b.png",
+      "bytes": 63813,
+      "sha256": "cfbccae89624845d9228790905121af5a1680e9100a76b12b57e0c8fb237700e"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/32e489a316014199.png",
+      "bytes": 277893,
+      "sha256": "23c795fce5af31feb976a095af5d94ae5a0175a51e41bb8aec768b4d0720f34d"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/335c5c3b548b28a4.png",
+      "bytes": 176518,
+      "sha256": "d274bd5ccfb0cecef611e8a8d6c4c7cdbe90dcc81a48ffa7a1a1939bc4b95953"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/3d395e0c37b66c20.png",
+      "bytes": 363888,
+      "sha256": "70d469daa941f5d838b331ba18e886dfe5721b1c222a4eebb1c7b4152c884911"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/5559720c8e1cdbd1.png",
+      "bytes": 210388,
+      "sha256": "fcb373d68f5c360f8ccba4ff10f2bf4bb4f84c6cd39957225ad071f411edf94e"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/5cce61c9ff49db0f.png",
+      "bytes": 104095,
+      "sha256": "77b34e5785360f0504d08485b5d192767ecbe2239ab17549d3a88164d88a27cf"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/624aa0888ac78e2a.png",
+      "bytes": 167643,
+      "sha256": "cce61f1ee354878cbda067d92111343b12c3285bc25da86ca8e0bdbdab4c20f7"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/63abaa26463e4d32.png",
+      "bytes": 365208,
+      "sha256": "5e64e3bc5e23c97a1741e91328f6385ab49b151a7e95e7f400dc0a6ebcf3f1c5"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/6ef0e50df4727803.png",
+      "bytes": 1692,
+      "sha256": "a5c3d6e5bf2d95c9834a2ba73e9edf1353e6424d2c04c6663e6b76e2ea70e491"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/91c8781dc7f9dc19.png",
+      "bytes": 109117,
+      "sha256": "19a4bcb04091947330bbabdc91c81cab89c8c02545a8314ff5fe73b7ffeb3999"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/994203c1ee2696cf.png",
+      "bytes": 13524,
+      "sha256": "f497a050f27b8aa3e13fb93b1b2ec18f5bae2a7035297330d36ccad0e8d766c9"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/9cca7ff3536aa9ad.png",
+      "bytes": 55514,
+      "sha256": "d62c1f4c40267ea190a3fcb10aba70ef2aefed0b516137adb41068a71fe5cfdf"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/a1823a97c45a877e.png",
+      "bytes": 253180,
+      "sha256": "4dc0c0d3a7c987154021060daeb75ed52417a365403f1dd8a2071e381eba78a1"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/a45a422e183dee3d.png",
+      "bytes": 166068,
+      "sha256": "27dc70436f550768a3f0842a0f34b56598783a413e67a88a74173e7b592f7bf0"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/ab787167047c89b6.png",
+      "bytes": 176521,
+      "sha256": "43959510c4eb3ab9c75ceb732e8588e31deae4c4c69a19ff9233eeb15bc5f039"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/cccac5b4b99269f1.png",
+      "bytes": 71002,
+      "sha256": "3ecd790589dd12c73da0fdf8352ce349797ca0085f27ad3278e76c2cca181f25"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/d2a45444d914f525.png",
+      "bytes": 140055,
+      "sha256": "039ba00a5afe9b4965fe6eb9c74572c653deae986882e96ef63a58000de2647e"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/da6cb0fdad981a27.png",
+      "bytes": 295318,
+      "sha256": "dce94dc553968b8b8a5b934695f82c4b069acb23b7643b6eb7fdcab32112c33c"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/dc968caaad526177.png",
+      "bytes": 220896,
+      "sha256": "7124270e962fb8c25380667c1e263eb226d42a11a54748dc95e67da12097c2c1"
+    },
+    {
+      "path": "materials/domestic/tencent/03-spec-to-code/images/e3aadad57d46321a.png",
+      "bytes": 190482,
+      "sha256": "6921eb2074da451e7fffe08b1a85c755cf880b52bb636532b9f3063cb6a92c6e"
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "id": "ali-multi-sdd",
+  "title": "多 AI 协同 + SDD 编程实践：一个 AI 全流程交付实录",
+  "directory": "materials/domestic/alibaba/03-multi-ai-sdd",
+  "kind": "官方账号文章",
+  "status": "全文快照已保存",
+  "publication_date": "2026-01-21",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "阿里技术官方账号",
+      "url": "https://news.qq.com/rain/a/20260121A01LS300"
+    },
+    {
+      "label": "阿里云同题页面",
+      "url": "https://developer.aliyun.com/article/1708977"
+    }
+  ],
+  "note": "多个转载算同一篇；归档使用可读官方账号全文。示例安装命令仅为资料，未执行。",
+  "files": [
+    "materials/domestic/alibaba/03-multi-ai-sdd/community-summary.html",
+    "materials/domestic/alibaba/03-multi-ai-sdd/community-summary.txt",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images.md",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/152f672d0564a5ca.png",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/1cbda1ee9a5c3729.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/2115836d9a371f73.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/23c5b446a8d002ae.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/2ee636ee926a6d7a.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/37390b6e5e981bae.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/3e849cf19d041ef3.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/57bd1c23f528934f.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/5c89bf6b5fc32392.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/5ebb5c625f07afa0.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/6708af2dc31399cf.png",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/6a34915a65b4a128.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/6ef0e50df4727803.png",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/770634ed8454e86f.gif",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/7e4043d0b21dd14d.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/8be15a48a857f6ee.png",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/b31a0b8d5211765d.png",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/c270a8741c4b7f14.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/c47efd6d2e3c534d.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/c52433277cd31326.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/c9b335917ea6856e.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/cc0a929e4483d9e7.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/d2b8953e4696221d.png",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/e947b71e88ae6577.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/eb3ddd1e71244ba3.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/ed65dc12b0dd9f82.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/f5c04ceaac1eddae.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/fc1bc0386e2f2d16.jpg",
+    "materials/domestic/alibaba/03-multi-ai-sdd/images/fd761f3606dc9140.webp",
+    "materials/domestic/alibaba/03-multi-ai-sdd/official-article.html",
+    "materials/domestic/alibaba/03-multi-ai-sdd/official-article.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/community-summary.html",
+      "bytes": 187481,
+      "sha256": "dea2a87ecd952a1dbceb939deab640b92fc63f76b4e9cbbed80abf6b1b979d41"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/community-summary.txt",
+      "bytes": 4458,
+      "sha256": "4383cc467b1a3a2969f22c467637a011bf61208f69f99e89fc585a8c1a36a4a3"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images.md",
+      "bytes": 4603,
+      "sha256": "30060ab4d0442f9f65089e60c4888f445129ee07908295a01981d9a169d357bd"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/152f672d0564a5ca.png",
+      "bytes": 89896,
+      "sha256": "24d30fae317415abc1f8a8e68e17f35d112f4705b88b2e2f9fac80fc42d9e693"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/1cbda1ee9a5c3729.jpg",
+      "bytes": 43264,
+      "sha256": "5a2ef99992e985ca975a30c57e70bb80ed6aed545f22043e5101a3bbb0226924"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/2115836d9a371f73.jpg",
+      "bytes": 20230,
+      "sha256": "ff3fccb147d567cbb81c60de79f2bdec53561dca104191bd8331babb75893b14"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/23c5b446a8d002ae.jpg",
+      "bytes": 24128,
+      "sha256": "83871219b6223931e8203ed7fba7462d9d33122beeaa005ad808c29f61435e1b"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/2ee636ee926a6d7a.jpg",
+      "bytes": 39764,
+      "sha256": "a592157a47d7876e3e237fe9944113f279086ee1e0f9aa7cdf9c366c136b6e54"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/37390b6e5e981bae.jpg",
+      "bytes": 51939,
+      "sha256": "b6cbbb6b55272f737a99ed7435034ff927a016a44c1699e10c64c2f7362fdf75"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/3e849cf19d041ef3.jpg",
+      "bytes": 47844,
+      "sha256": "298dbd3d1d6d1ada1079bdf86f5a87972b3e7e87b7d37124421c7289b78f8ee9"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/57bd1c23f528934f.jpg",
+      "bytes": 40721,
+      "sha256": "bef2441bd0824ccc7d91c3364a1c384eeebd3593857e65a9d801a964011b9575"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/5c89bf6b5fc32392.jpg",
+      "bytes": 20998,
+      "sha256": "db3f8bcc1a5f6d851e9ebd050c7f170b06b56ff03d5dc9bfd4d58d396976307c"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/5ebb5c625f07afa0.jpg",
+      "bytes": 22652,
+      "sha256": "5c74f5d3c49e9d53344609261e30cc1aabd1bd73181fea153c304076d154b250"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/6708af2dc31399cf.png",
+      "bytes": 221841,
+      "sha256": "55f70e6f0f4a012848d0af9722866ac4f7c65b846dc5a88ef808439177d443c8"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/6a34915a65b4a128.jpg",
+      "bytes": 26927,
+      "sha256": "a1b659b33d97bb3d478e0c5ce4916fa4793a9a8c671e3c497f0b3d471bcfc31e"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/6ef0e50df4727803.png",
+      "bytes": 1692,
+      "sha256": "a5c3d6e5bf2d95c9834a2ba73e9edf1353e6424d2c04c6663e6b76e2ea70e491"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/770634ed8454e86f.gif",
+      "bytes": 3376,
+      "sha256": "b94e138d94e27aa65a6dea14aac1325d709f56e02f07a6bba95fdf10f296cb6a"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/7e4043d0b21dd14d.jpg",
+      "bytes": 12789,
+      "sha256": "460434e1333979852c9c442807bbfd5baaca280229bad95c6ffa666ef41fb57b"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/8be15a48a857f6ee.png",
+      "bytes": 428027,
+      "sha256": "0a8e538a46b5862bf58515df872b23ffc0df56a56f5f214b3147818924b9bb93"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/b31a0b8d5211765d.png",
+      "bytes": 2330,
+      "sha256": "974bbcc14bfad5995a138aedb25584422ea73ce59a2b21730da38b2c139f2692"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/c270a8741c4b7f14.jpg",
+      "bytes": 45745,
+      "sha256": "9e1b5ea4c8aae203dff9a89166a9bf398985ec183568e300852e56e78104f121"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/c47efd6d2e3c534d.jpg",
+      "bytes": 27274,
+      "sha256": "3800d0569956b7a08af25c06f845d7251fdc760bdffcdef1d6eaeba4323caf64"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/c52433277cd31326.jpg",
+      "bytes": 22571,
+      "sha256": "243296ce364a7add21887ec1e6000882ae4089223a88dc5737334fb302311e9f"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/c9b335917ea6856e.jpg",
+      "bytes": 16905,
+      "sha256": "0c0b25b3dd39e9cee7bbfac94515ccd597752769473988af607ce52986505435"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/cc0a929e4483d9e7.jpg",
+      "bytes": 16436,
+      "sha256": "ae87385ad1fe96188bc085e14c1d1f41af11611fbc87265a278e81944ba47e5a"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/d2b8953e4696221d.png",
+      "bytes": 9138,
+      "sha256": "d81071ee678356860b822a3ce5d11ed057462390ab1869a82411912322dd82ab"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/e947b71e88ae6577.jpg",
+      "bytes": 25885,
+      "sha256": "0a329a1441ca28654f8c40011679ff4bca5f49ea6ddd1e8d1bef8229767dc725"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/eb3ddd1e71244ba3.jpg",
+      "bytes": 25905,
+      "sha256": "fdf53af50e8cb5ed26c79659ca1463a064e9cf59258cfe7b7275873ed83a00d7"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/ed65dc12b0dd9f82.jpg",
+      "bytes": 52504,
+      "sha256": "07cf354aa8ffb642a08c630bf85591db9a4d4ba5ad89f2faf47b140347a7ba57"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/f5c04ceaac1eddae.jpg",
+      "bytes": 54238,
+      "sha256": "348e633652d035bf22e90a20106d32b2f9a0b47d046e519b760d0fe9a6b2898a"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/fc1bc0386e2f2d16.jpg",
+      "bytes": 29715,
+      "sha256": "e58019acb2f6631c5f9d81d1b6ae09fefa25a466f3024c722e525691489ac2a2"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/images/fd761f3606dc9140.webp",
+      "bytes": 10516,
+      "sha256": "31b7d2c805ff882f23843a6d3fa49988e67da87eb8c86b08c0996e3de2626f7c"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/official-article.html",
+      "bytes": 577140,
+      "sha256": "108e14fd60affa6dccc62a03890ebff029457b5ee1ae6e358df798d62f879f45"
+    },
+    {
+      "path": "materials/domestic/alibaba/03-multi-ai-sdd/official-article.txt",
+      "bytes": 37089,
+      "sha256": "7952f431ba2c2bf86b2173675af49f611898f58d362e2c518e01061b1fa25338"
+    }
+  ]
+}

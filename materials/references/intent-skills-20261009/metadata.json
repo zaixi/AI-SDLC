@@ -1,0 +1,74 @@
+{
+  "id": "intent-skills-20261009",
+  "title": "跨 Agent 工程意图与精简文档：Matt Skills 原文核对",
+  "directory": "materials/references/intent-skills-20261009",
+  "kind": "官方 Skill 与格式文档快照",
+  "status": "公开原文已保存；未安装或执行",
+  "publication_date": null,
+  "archived_on": "2026-10-09",
+  "sources": [
+    {
+      "label": "Matt Skills 官方仓库",
+      "url": "https://github.com/mattpocock/skills"
+    }
+  ],
+  "note": "外部 Skill 为研究资料，不作为当前操作指令。Zed/OpenCode 文档未取得，未声称所有客户端兼容。",
+  "files": [
+    "materials/references/intent-skills-20261009/ADR-FORMAT.md",
+    "materials/references/intent-skills-20261009/GLOSSARY-FORMAT.md",
+    "materials/references/intent-skills-20261009/domain-modeling.md",
+    "materials/references/intent-skills-20261009/grilling.md",
+    "materials/references/intent-skills-20261009/handoff.md",
+    "materials/references/intent-skills-20261009/retro.md",
+    "materials/references/intent-skills-20261009/sources.json",
+    "materials/references/intent-skills-20261009/to-spec.md",
+    "materials/references/intent-skills-20261009/writing-for-agents.md"
+  ],
+  "assets": [
+    {
+      "path": "materials/references/intent-skills-20261009/ADR-FORMAT.md",
+      "bytes": 2733,
+      "sha256": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0"
+    },
+    {
+      "path": "materials/references/intent-skills-20261009/GLOSSARY-FORMAT.md",
+      "bytes": 2300,
+      "sha256": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801"
+    },
+    {
+      "path": "materials/references/intent-skills-20261009/domain-modeling.md",
+      "bytes": 3346,
+      "sha256": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3"
+    },
+    {
+      "path": "materials/references/intent-skills-20261009/grilling.md",
+      "bytes": 2049,
+      "sha256": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15"
+    },
+    {
+      "path": "materials/references/intent-skills-20261009/handoff.md",
+      "bytes": 940,
+      "sha256": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3"
+    },
+    {
+      "path": "materials/references/intent-skills-20261009/retro.md",
+      "bytes": 4369,
+      "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696"
+    },
+    {
+      "path": "materials/references/intent-skills-20261009/sources.json",
+      "bytes": 437,
+      "sha256": "b410e4ebc9286fc0f5ea2ceda2c0ed2062bb66749ad952862015987649e85e53"
+    },
+    {
+      "path": "materials/references/intent-skills-20261009/to-spec.md",
+      "bytes": 3043,
+      "sha256": "43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088"
+    },
+    {
+      "path": "materials/references/intent-skills-20261009/writing-for-agents.md",
+      "bytes": 10886,
+      "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a"
+    }
+  ]
+}

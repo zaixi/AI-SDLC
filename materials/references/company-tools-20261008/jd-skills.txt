@@ -1,0 +1,356 @@
+技能 | JoyCode
+Skip to main content
+JoyCode
+功能
+案例
+文档
+插件
+定价
+登录
+下载 IDE
+On this page
+技能
+技能（Skills）是一个用于为 AI 智能体扩展专门能力的开放标准。技能将特定领域的知识和工作流封装起来，智能体可以调用这些技能来执行特定任务。
+什么是技能
+#
+您可以将技能理解为一份包含操作说明、可执行代码和流程规范的包。在需要调用相关能力时，智能体可以自动执行操作，例如自动调试并修复问题、自动整理文档，或者执行代码审查等。
+JoyCode 技能的核心亮点：
+可迁移性：技能可适用于任何支持 Agent Skills 的 Agent，可被重复调用。
+版本控制：如同开发项目一样，技能以包体形式存储，便于编辑和版本管理。
+可操作性：包体中可包含用于执行的代码，Agent 可以使用这些代码对指定内容进行操作。
+渐进式披露：技能仅向智能体暴露必要说明，便于按需加载与调用。
+技能的调用逻辑
+#
+当 JoyCode 启动时，会从规定目录读取项目技能和个人技能，并将它们提供给 Agent 使用。Agent 会根据用户指令和上下文决定何时调用何种技能。
+例如，用户输入：
+请帮我审查这次改动的潜在风险，按严重级别输出问题清单。
+如果描述命中某项 Skill 的适用范围，Agent 会自动选取并调用该技能。
+当然，您也可以在对话框中输入
+/
+指令手动调用，直接通过技能名称进行调用，例如：
+/code-reviewer 审查当前分支的改动。
+查看技能
+#
+打开 JoyCode 设置页面。
+进入“技能”标签。
+可以查看技能（Skill）名称、技能描述和作用域（项目级/用户级）。
+创建技能
+#
+打开 JoyCode 设置页面。
+进入“技能”标签。
+点击“新建技能”，在会话框中输入技能描述。
+选择编码模式，等待技能创建完成。
+操作示例
+#
+在 Skills 页面右上角，您还可以点击“+ 新建技能”按钮进行技能创建。JoyCode 将自动调用系统内置技能
+skill-creator
+进行创建，并根据您选择的技能类型自动选取创建位置。
+点击“+ 新建技能”后，右侧对话框内会自动生成一段提示词模板，您只需要补全期望创建的技能描述即可。
+请您选择编码模式进行技能创建。智能体会根据您的指令自动开始创建技能，同时右侧边栏会实时展示创建进度，您可在编辑区域进行审查。
+创建成功后，您将在对应类目的技能菜单下找到该技能，并可通过右侧开关手动控制是否生效。
+后续在会话框输入提示词时，您可以通过
+/
+唤起该项目可用技能并进行选取。
+技能加载目录
+#
+JoyCode 会从两个位置加载 Skills：
+项目级目录：
+.joycode/skills/
+用户级目录：
+~/.joycode/skills/
+当同名 Skill 同时存在时，优先使用项目级（项目级覆盖用户级）。
+技能的结构
+#
+每个技能应是一个包含
+SKILL.md
+以及其他资源文件的目录：
+skill-name/
+├── SKILL.md          # Required: metadata + instructions
+├── scripts/          # Optional: executable code
+├── references/       # Optional: documentation
+├── assets/           # Optional: templates, resources
+└── ...               # Any additional files or directories
+Copy
+也可以包含可执行脚本、资源和其他参考文件等可选目录。例如：
+.agents/
+└── skills/
+└── deploy-app/
+├── SKILL.md
+├── scripts/
+│   ├── deploy.sh
+│   └── validate.py
+├── references/
+│   └── REFERENCE.md
+└── assets/
+└── config-template.json
+Copy
+SKILL.md 规范
+#
+请注意该文件的编写规范。
+在
+SKILL.md
+的最顶部必须包含 YAML frontmatter，并使用
+---
+包裹。该部分定义技能的基本信息，用于让 Agent 在运行时发现并判断是否调用该技能。
+必需字段：
+---
+name
+:
+skill
+-
+name
+description
+:
+技能的用途及何时执行
+---
+Copy
+各字段约束如下：
+字段
+是否必需
+约束说明
+name
+是
+最多 64 个字符；只允许小写字母（a-z）、数字和连字符（-）；不能以连字符开头或结尾；不能包含连续连字符；该值必须与技能根目录名称一致。
+description
+是
+最多 1024 个字符；不能为空；应清晰描述技能做什么、什么时候使用它。
+license
+否
+技能所采用的授权许可名称，或引用自带许可文件。
+compatibility
+否
+最多 500 个字符；当技能有特定运行环境要求时使用，例如指定目标产品、系统依赖、网络访问等。
+metadata
+否
+任意键值映射，可用于存放额外元数据（作者、版本等）。
+allowed-tools
+否
+用空格分隔的工具白名单，表示该技能允许使用的外部工具（实验性字段，不同 Agent 的支持程度可能不同）。
+字段说明（含示例）
+name
+字段
+#
+必填，技能的唯一标识符。
+必须为 1-64 个字符，且只能是小写字母、数字和连字符组合。
+不能以
+-
+开头或结尾，也不能包含
+--
+。
+必须与该技能目录名完全一致。
+例子（有效）：
+name
+:
+pdf
+-
+processing
+Copy
+例子（无效）：
+name
+:
+PDF
+-
+Processing
+# 大写字母不允许
+name
+:
+-
+extract
+# 以连字符开头
+name
+:
+file
+-
+-
+utils
+# 连续连字符不允许
+Copy
+description
+字段
+#
+必填，简要说明技能做什么、适用场景和触发条件。
+应包含足够信息，以帮助 Agent 识别何时调用该技能。
+示例：
+description
+:
+Extracts text and tables from PDF files
+,
+fills PDF forms
+,
+and merges multiple PDFs. Use when working with PDFs
+,
+forms
+,
+or document extraction.
+Copy
+license
+字段（可选）
+#
+描述技能使用的授权许可。
+推荐使用简洁名称，或附带许可文件的文件名。
+示例：
+license
+:
+Apache
+-
+2.0
+Copy
+或：
+license
+:
+Proprietary. See LICENSE.txt for full terms.
+Copy
+compatibility
+字段（可选）
+#
+当技能有特定环境要求时（如特定 Agent、依赖或网络访问权限等），可在这里说明。
+示例：
+compatibility
+:
+Requires Python 3.10+
+,
+git
+,
+and Docker.
+Copy
+metadata
+字段（可选）
+#
+以键值对形式补充元数据。
+可用于存放额外信息（如作者、版本）。
+示例：
+metadata
+:
+author
+:
+example
+-
+org
+version
+:
+"1.0"
+Copy
+allowed-tools
+字段（可选/实验性）
+#
+如果技能依赖特定工具，可在此字段列出经过授权的工具。
+格式为以空格分隔的多个工具标识。
+示例：
+allowed-tools
+:
+Bash(git
+:
+*)
+Read
+Copy
+在技能中包含脚本
+#
+技能可以包含
+scripts/
+目录，内含可由 Agent 运行的可执行代码。在
+SKILL.md
+文件中使用相对于技能根目录的路径引用这些脚本。
+---
+name
+:
+deploy
+-
+app
+description
+:
+将应用部署到预发布或生产环境。在部署代码时使用，或当用户提及部署、发布或环境时使用。
+---
+#
+Deploy App
+Deploy the application using the provided scripts.
+##
+Usage
+Run the deployment script:
+`scripts/deploy.sh <environment>`
+Where
+`<environment>`
+is either
+`staging`
+or
+`production`
+.
+##
+Pre-deployment Validation
+Before deploying, run the validation script:
+`python scripts/validate.py`
+Copy
+当技能被调用时，Agent 会读取这些指令并执行引用的脚本。脚本可以使用任何语言编写，例如 Bash、Python、JavaScript，或 Agent 实现所支持的其他可执行格式。
+常见问题
+#
+Q1：为什么我创建了 Skill 但列表里看不到？
+#
+通常是以下原因：
+SKILL.md
+文件名不正确（大小写需完全一致）。
+frontmatter 缺少
+name
+或
+description
+。
+name
+不符合命名规则（只能包含小写字母/数字/连字符）。
+Q2：同名 Skill 为什么不是我期望的那个？
+#
+如果项目级和用户级同名，项目级优先。
+请检查 Skills 页面中的“作用域”和“路径”。
+Q3：Skill 内容很长会怎样？
+#
+激活时会注入 Skill 指令正文；超长正文可能被截断。
+建议将关键流程写在前面，描述保持简洁明确。
+我们的建议
+#
+将
+description
+写成“可匹配任务”的一句话，避免泛化。
+一个 Skill 只解决一类问题，避免过于庞杂。
+将可复用脚本、模板放在 Skill 目录中，并在
+SKILL.md
+中明确引用。
+Edit this page
+什么是技能
+技能的调用逻辑
+查看技能
+创建技能
+操作示例
+技能加载目录
+技能的结构
+SKILL.md 规范
+name
+字段
+description
+字段
+license
+字段（可选）
+compatibility
+字段（可选）
+metadata
+字段（可选）
+allowed-tools
+字段（可选/实验性）
+在技能中包含脚本
+常见问题
+Q1：为什么我创建了 Skill 但列表里看不到？
+Q2：同名 Skill 为什么不是我期望的那个？
+Q3：Skill 内容很长会怎样？
+我们的建议
+核心产品
+快速入门
+功能说明
+技术支持
+实践案例
+更新日志
+更多推荐
+京东云官网
+JoyAgent
+售前：
+400-098-8505转1
+售后：
+400-098-8505转2
+邮箱：
+org.joycode5@jd.com
+扫码加入交流群

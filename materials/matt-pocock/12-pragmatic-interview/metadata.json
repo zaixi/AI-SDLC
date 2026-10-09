@@ -1,0 +1,32 @@
+{
+  "id": "matt-pragmatic-interview",
+  "title": "The Pragmatic Engineer：AI Skills with Matt Pocock",
+  "directory": "materials/matt-pocock/12-pragmatic-interview",
+  "kind": "作者文章 / 访谈 / 官方演讲",
+  "status": "公开文字已保存",
+  "publication_date": "2026-09-17",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "公开原文",
+      "url": "https://newsletter.pragmaticengineer.com/p/ai-skills-with-matt-pocock"
+    }
+  ],
+  "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。 保存的是公开视频/播客介绍与文字摘要，未保存完整音视频或完整转录。",
+  "files": [
+    "materials/matt-pocock/12-pragmatic-interview/page.html",
+    "materials/matt-pocock/12-pragmatic-interview/page.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/matt-pocock/12-pragmatic-interview/page.html",
+      "bytes": 324054,
+      "sha256": "26454c4e37ac12d195128662b9d3095c93ef2fd60781d4dd81119855ee79fd9c"
+    },
+    {
+      "path": "materials/matt-pocock/12-pragmatic-interview/page.txt",
+      "bytes": 12917,
+      "sha256": "8bbd9661d04adfb84327a7be75c61140c768d6d543313974674f63c6e642c00a"
+    }
+  ]
+}

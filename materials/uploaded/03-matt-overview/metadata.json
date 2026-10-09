@@ -1,0 +1,32 @@
+{
+  "id": "upload-matt-overview",
+  "title": "总结篇 _ mattpocock_skills 全系列回顾与速查合集",
+  "directory": "materials/uploaded/03-matt-overview",
+  "kind": "用户上传 PDF",
+  "status": "完整 PDF 已保存",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "用户提供的微信公众号链接",
+      "url": "https://mp.weixin.qq.com/s/Nhy5r6IcIf3w_IlkmExFqQ"
+    }
+  ],
+  "note": "",
+  "files": [
+    "materials/uploaded/03-matt-overview/text.txt",
+    "materials/uploaded/03-matt-overview/总结篇 _ mattpocock_skills 全系列回顾与速查合集.pdf"
+  ],
+  "assets": [
+    {
+      "path": "materials/uploaded/03-matt-overview/text.txt",
+      "bytes": 14052,
+      "sha256": "9aed2717936423004be8990140ea40b3d19ada780d1badccaf4ea439392a3334"
+    },
+    {
+      "path": "materials/uploaded/03-matt-overview/总结篇 _ mattpocock_skills 全系列回顾与速查合集.pdf",
+      "bytes": 1432760,
+      "sha256": "3f1352fcd419467945a3bc88e78be3d60bafb12212096257b561159eaf1b29a3"
+    }
+  ]
+}

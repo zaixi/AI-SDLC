@@ -1,0 +1,9 @@
+{
+  "domain-modeling": "skills/engineering/domain-modeling/SKILL.md",
+  "domain-layout": "skills/engineering/setup-matt-pocock-skills/domain-default.md",
+  "grilling": "skills/productivity/grilling/SKILL.md",
+  "retro": "skills/engineering/retro/SKILL.md",
+  "handoff": "skills/productivity/handoff/SKILL.md",
+  "writing-for-agents": "skills/productivity/writing-for-agents/SKILL.md",
+  "to-spec": "skills/engineering/to-spec/SKILL.md"
+}

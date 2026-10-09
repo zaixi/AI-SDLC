@@ -1,0 +1,44 @@
+{
+  "id": "tencent-codebuddy2",
+  "title": "CodeBuddy Code 2.0 核心团队研发实践报道",
+  "directory": "materials/domestic/tencent/05-codebuddy-self-development",
+  "kind": "媒体采访",
+  "status": "报道全文已保存",
+  "publication_date": "2026-01-29",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "智东西采访",
+      "url": "https://news.qq.com/rain/a/20260129A07CZ900"
+    }
+  ],
+  "note": "",
+  "files": [
+    "materials/domestic/tencent/05-codebuddy-self-development/images.md",
+    "materials/domestic/tencent/05-codebuddy-self-development/images/0aca643ffdd7cb8b.png",
+    "materials/domestic/tencent/05-codebuddy-self-development/media-report.html",
+    "materials/domestic/tencent/05-codebuddy-self-development/media-report.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/tencent/05-codebuddy-self-development/images.md",
+      "bytes": 278,
+      "sha256": "4be5165dc47dfacd9daf59447143d4461be30d19825feb8aede738a8b5740e2c"
+    },
+    {
+      "path": "materials/domestic/tencent/05-codebuddy-self-development/images/0aca643ffdd7cb8b.png",
+      "bytes": 1671,
+      "sha256": "db4c266b379cb77d25c74f050e923053f6a7cf76a46416e7531d876de9ca2e02"
+    },
+    {
+      "path": "materials/domestic/tencent/05-codebuddy-self-development/media-report.html",
+      "bytes": 73561,
+      "sha256": "5bd4442e2f2e5db411e82d5db1a75419565c00d3f9878f099600f210a6ed5d5e"
+    },
+    {
+      "path": "materials/domestic/tencent/05-codebuddy-self-development/media-report.txt",
+      "bytes": 8813,
+      "sha256": "7e31928702e185feba6476769beea9a1a49a503dd1d2aaf001036e9123f8543a"
+    }
+  ]
+}

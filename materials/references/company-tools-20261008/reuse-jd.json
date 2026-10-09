@@ -1,0 +1,52 @@
+[
+  {
+    "title": "技能 | JoyCode",
+    "url": "https://joycode.jd.com/docs/functions/functions-skills/",
+    "snippet": "技能（Skills）是一个用于为 AI 智能体扩展专门能力的开放标准。技能将特定领域的知识和工作流封装起来，智能体可以调用这些技能来执行特定任务。"
+  },
+  {
+    "title": "Skills | JoyCode",
+    "url": "https://joycode.jd.com/docs/scalability/Skills/",
+    "snippet": "技能（Skills）是一个用于为 AI 智能体扩展专门能力的开放标准。技能将特定领域的知识和工作流封装起来，智能体可以调用这些技能来执行特定任务。"
+  },
+  {
+    "title": "Skill功能介绍--JoyAgent 智能体平台-帮助文档-京东云",
+    "url": "https://docs.jdcloud.com/cn/agents/skill",
+    "snippet": "Skill功能介绍 2026-04-28 03:52:03 一、Skill的概念介绍 1.1 Skill的定义 Agent Skill是模块化的AI能力插件，本质是通用Agent的扩展包，通过打包LLM指令、元数据、可选资源（脚本、模板、参考文档等），使Agent具备稳定、可复用的特定任务处理能力。每个Skill以独立文件夹形式存在，核心包含元数据（描述技能 ..."
+  },
+  {
+    "title": "京东云JoyCode AI编码：免费5万积分、模型兼容及使用指南",
+    "url": "https://zhuanlan.zhihu.com/p/2056058379181749878",
+    "snippet": "JoyCode京东云AI智能编码工具 JoyCode在老系统里做重构或改造时，可基于全局上下文评估改动影响范围，降低\"改一处崩一片\"的风险。JoyCode从需求拆解、方案设计到编码实现，可以在既有规范和领域知识的约束下完成开发，保证产出风格统一。这样在团队协同开发的场景下，多人协作时共享同一套 ..."
+  },
+  {
+    "title": "QCon 2026・京东科技：尽在上下文 ——JoyCode 的企业级 AI Coding 实践",
+    "url": "https://blog.cearl.cc/posts/qcon-2026-joycode/",
+    "snippet": "三、智能体能力增强 Skills 生态 基于标准化 Skills 框架，构建可插拔的能力生态。根据任务需求动态加载相应工具和技能，避免资源浪费。 多智能体协同 支持三种模式：团队智能体 + 自定义智能体 + 企业知识三位一体。 自定义智能体：用户可以自由组合，指定规则、工具和业务知识，并进行对照 ..."
+  },
+  {
+    "title": "京东JoyCode全面升级：CSR上下文、多智能体与规约编程，专攻企业级复杂开发任务 - UIED学习社区",
+    "url": "https://www.uied.cn/posts/921589",
+    "snippet": "技术债治理 团队AI知识和研发经验复用 JoyCode并不是单纯在VS Code旁边放一个聊天框。 它同时包含： 独立IDE Coding Agent 多智能体团队 CSR上下文引擎 规约编程 Skills Rules MCP RepoWiki 团队知识库 AI资源 任务队列 浏览器工具 云端开发 一键部署 这些能力组合起来后 ..."
+  },
+  {
+    "title": "JoyCode的企业级AI Coding实践复现研究 - CSDN博客",
+    "url": "https://blog.csdn.net/huanghm88/article/details/164108122",
+    "snippet": "随着大语言模型（Large Language Model, LLM）在软件开发领域的深度应用，企业级AI编码助手面临着代码仓库规模庞大、业务场景复杂、上下文窗口有限等核心挑战。本文基于京东科技JoyCode的企业级AI Coding实践，系统复现了其核心技术架构，包括多模态知识增强体系、分层检索策略、代码图索引、智能体 ..."
+  },
+  {
+    "title": "得分率超74.6%，京东云JoyCode-Agent位居智能编码榜单全球Top3",
+    "url": "https://zhuanlan.zhihu.com/p/1961806938137421307",
+    "snippet": "得分率超74.6%，JoyCode-Agent位居全球Top3 SWE-Bench Verified通过使用真实世界开源项目中的Bug报告和Issue来测试Agent从理解问题到自主生成、集成和验证修复代码的完整端到端能力，是AI Coding 技术走向和产品落地的行业风向标之一。"
+  },
+  {
+    "title": "JoySpace MCP Skills for Claude Code - GitHub",
+    "url": "https://github.com/Maruko912/joyspace-mcp-skills",
+    "snippet": "Claude Code Skills for JoySpace (京东协作文档平台) - 通过 Chrome DevTools MCP 实现文档创建、阅读和PDF导出 - Maruko912/joyspace-mcp-skills"
+  },
+  {
+    "title": "JoyCode——京东云AI编码工具上手指南与Qoder和CodeBuddy对比_joycode如何-CSDN博客",
+    "url": "https://blog.csdn.net/facaixxx2024/article/details/162659648",
+    "snippet": "文章浏览阅读427次，点赞4次，收藏5次。京东云推出JoyCode智能AI编码平台，主打团队级开发场景，支持复杂代码库理解与协作开发。提供团队版（限时免费送5万积分）、企业版及定制版，支持多AI模型调用，涵盖代码生成、分析等场景。与阿里云QoderCN、腾讯云CodeBuddy相比，JoyCode突出免费试用和团队 ..."
+  }
+]

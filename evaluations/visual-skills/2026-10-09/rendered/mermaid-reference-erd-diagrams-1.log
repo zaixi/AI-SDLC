@@ -1,0 +1,11 @@
+Generating single mermaid chart
+
+Error: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/dist/index.html
+    at navigate (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:187:27)
+    at async Deferred.race (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)
+    at async CdpFrame.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:153:25)
+    at async CdpPage.goto (file:///tmp/ai-sdlc-visual-bench/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:582:20)
+    at async renderMermaid (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:585:5)
+    at async run (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:1091:24)
+    at async cli (file:///tmp/ai-sdlc-visual-bench/node_modules/@mermaid-js/mermaid-cli/src/index.js:493:3)
+

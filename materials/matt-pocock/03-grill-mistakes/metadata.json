@@ -1,0 +1,32 @@
+{
+  "id": "matt-grill-mistakes",
+  "title": "Grill Me / Grill With Docs 常见误用",
+  "directory": "materials/matt-pocock/03-grill-mistakes",
+  "kind": "作者文章 / 访谈 / 官方演讲",
+  "status": "公开文字已保存",
+  "publication_date": "2026-05-25",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "公开原文",
+      "url": "https://www.aihero.dev/things-people-get-wrong-with-grill-me-and-grill-with-docs"
+    }
+  ],
+  "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。",
+  "files": [
+    "materials/matt-pocock/03-grill-mistakes/page.html",
+    "materials/matt-pocock/03-grill-mistakes/page.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/matt-pocock/03-grill-mistakes/page.html",
+      "bytes": 324678,
+      "sha256": "938160bea7c9416f1883459c04d8d0f9876f6f88785f3095d4b1fcf4a6fff6dd"
+    },
+    {
+      "path": "materials/matt-pocock/03-grill-mistakes/page.txt",
+      "bytes": 9513,
+      "sha256": "b127c120483e4f7c2321d5e005eb2d8b6c9ba8775074f43991d89d194037770c"
+    }
+  ]
+}

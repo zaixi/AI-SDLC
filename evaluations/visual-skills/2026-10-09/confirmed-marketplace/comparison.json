@@ -1,0 +1,56 @@
+[
+  {
+    "file": "README.md",
+    "bytes": 9219,
+    "previous_available": false,
+    "identical": null
+  },
+  {
+    "file": "SKILL.md",
+    "bytes": 7366,
+    "previous_available": true,
+    "identical": false
+  },
+  {
+    "file": "references/advanced-features.md",
+    "bytes": 10365,
+    "previous_available": true,
+    "identical": true
+  },
+  {
+    "file": "references/c4-diagrams.md",
+    "bytes": 15266,
+    "previous_available": true,
+    "identical": true
+  },
+  {
+    "file": "references/class-diagrams.md",
+    "bytes": 6915,
+    "previous_available": true,
+    "identical": true
+  },
+  {
+    "file": "references/erd-diagrams.md",
+    "bytes": 12348,
+    "previous_available": true,
+    "identical": true
+  },
+  {
+    "file": "references/flowcharts.md",
+    "bytes": 9844,
+    "previous_available": true,
+    "identical": true
+  },
+  {
+    "file": "references/sequence-diagrams.md",
+    "bytes": 9213,
+    "previous_available": true,
+    "identical": true
+  },
+  {
+    "file": "skill-report.json",
+    "bytes": 239054,
+    "previous_available": false,
+    "identical": null
+  }
+]

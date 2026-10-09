@@ -1,0 +1,74 @@
+{
+  "id": "byte-qcon",
+  "title": "Trae Agent 架构演进：从 Workflow 到 Agentic Loop",
+  "directory": "materials/domestic/bytedance/03-trae-qcon",
+  "kind": "会议预告、提纲与问答",
+  "status": "公开介绍页已保存；非完整演讲实录",
+  "publication_date": "2025-09-19",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "InfoQ",
+      "url": "https://www.infoq.cn/article/j4Iv0tAbkblL7me2b8Vd"
+    }
+  ],
+  "note": "",
+  "files": [
+    "materials/domestic/bytedance/03-trae-qcon/conference-introduction.html",
+    "materials/domestic/bytedance/03-trae-qcon/conference-introduction.txt",
+    "materials/domestic/bytedance/03-trae-qcon/images.md",
+    "materials/domestic/bytedance/03-trae-qcon/images/34647c6fe937bc0e.png",
+    "materials/domestic/bytedance/03-trae-qcon/images/4160843dad3c526c.png",
+    "materials/domestic/bytedance/03-trae-qcon/images/4ce469be08f9902b.png",
+    "materials/domestic/bytedance/03-trae-qcon/images/4eadc3d1b9e5a896.jpg",
+    "materials/domestic/bytedance/03-trae-qcon/images/5d726436a7ec43cd.png",
+    "materials/domestic/bytedance/03-trae-qcon/images/e7896dc6e753c496.png"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/bytedance/03-trae-qcon/conference-introduction.html",
+      "bytes": 330957,
+      "sha256": "1dd831d27dab5bbbe92f8205af876bd1f9337a8029c63e094f4934f07785a335"
+    },
+    {
+      "path": "materials/domestic/bytedance/03-trae-qcon/conference-introduction.txt",
+      "bytes": 5455,
+      "sha256": "863e2f63078cf91fdf1ed72a57010d4b597d7263e9ba955b320be20d39dcf3c5"
+    },
+    {
+      "path": "materials/domestic/bytedance/03-trae-qcon/images.md",
+      "bytes": 1122,
+      "sha256": "39f392dbb081415ee0b9b291e9602a04f2ddc952058da6fba79c159b674c87be"
+    },
+    {
+      "path": "materials/domestic/bytedance/03-trae-qcon/images/34647c6fe937bc0e.png",
+      "bytes": 1996,
+      "sha256": "fb6218c3dc43ac7215dfc222a2302c5ec6b67508eeb4d6db3c0127a0ad36157d"
+    },
+    {
+      "path": "materials/domestic/bytedance/03-trae-qcon/images/4160843dad3c526c.png",
+      "bytes": 1553,
+      "sha256": "fac9973dfaeeb6aaf40cc7d129222709817359f6bc11eb7a415003f62673dfa6"
+    },
+    {
+      "path": "materials/domestic/bytedance/03-trae-qcon/images/4ce469be08f9902b.png",
+      "bytes": 794,
+      "sha256": "7323b9fd9607cc4dd77b4e73798bc46ce54fcaf9ec7b4e08fda3cf56d2aaa0de"
+    },
+    {
+      "path": "materials/domestic/bytedance/03-trae-qcon/images/4eadc3d1b9e5a896.jpg",
+      "bytes": 42690,
+      "sha256": "c50f33d15c600dedfc8c7bf752bfb4383e947b7ab58a54ae91e75671111dd9a3"
+    },
+    {
+      "path": "materials/domestic/bytedance/03-trae-qcon/images/5d726436a7ec43cd.png",
+      "bytes": 1392,
+      "sha256": "f76914e4c980997d2f00f25ae9a0ccb712754a22ee3b526a78935e3bf2458354"
+    },
+    {
+      "path": "materials/domestic/bytedance/03-trae-qcon/images/e7896dc6e753c496.png",
+      "bytes": 502533,
+      "sha256": "c173b5df3a993203b60c9d99147a23c506bf219dbb832d6843d0f4a1ad2a1ce8"
+    }
+  ]
+}

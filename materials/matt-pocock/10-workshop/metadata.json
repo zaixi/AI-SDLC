@@ -1,0 +1,44 @@
+{
+  "id": "matt-workshop",
+  "title": "AI Engineer：Full Walkthrough — Workflow for AI Coding",
+  "directory": "materials/matt-pocock/10-workshop",
+  "kind": "作者文章 / 访谈 / 官方演讲",
+  "status": "公开文字已保存",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "公开原文",
+      "url": "https://ai.engineer/talks/-QFHIoCo-Ko-ai-coding-workflow"
+    }
+  ],
+  "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。 保存官方页面公开的自动转录，reviewStatus=needs_review；未观看完整视频，转录可能有误。",
+  "files": [
+    "materials/matt-pocock/10-workshop/page.html",
+    "materials/matt-pocock/10-workshop/page.txt",
+    "materials/matt-pocock/10-workshop/transcript.json",
+    "materials/matt-pocock/10-workshop/transcript.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/matt-pocock/10-workshop/page.html",
+      "bytes": 515617,
+      "sha256": "df98ae95b5aee44d096d2fef03b8f4c76871e09a03261865d66d8fc488787807"
+    },
+    {
+      "path": "materials/matt-pocock/10-workshop/page.txt",
+      "bytes": 114185,
+      "sha256": "0ca7ce0fbf68a1be124e292ff4a32dfbd0b0d7d8e5d746a019aa36e60e58978f"
+    },
+    {
+      "path": "materials/matt-pocock/10-workshop/transcript.json",
+      "bytes": 123320,
+      "sha256": "ec42259bda5417daea82e1be368ae257b76c75f168462866c91af029d2ba627c"
+    },
+    {
+      "path": "materials/matt-pocock/10-workshop/transcript.txt",
+      "bytes": 96625,
+      "sha256": "b204d1d5abbb2b5227f015122ecd839783b836bea86c6f05cb22e6407dcf26fc"
+    }
+  ]
+}

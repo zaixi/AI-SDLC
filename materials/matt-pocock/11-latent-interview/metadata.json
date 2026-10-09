@@ -1,0 +1,32 @@
+{
+  "id": "matt-latent-interview",
+  "title": "Latent Space：Wayfinder 访谈",
+  "directory": "materials/matt-pocock/11-latent-interview",
+  "kind": "作者文章 / 访谈 / 官方演讲",
+  "status": "公开文字已保存",
+  "publication_date": "2026-08-20",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "公开原文",
+      "url": "https://www.latent.space/p/wayfinder-skill"
+    }
+  ],
+  "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。",
+  "files": [
+    "materials/matt-pocock/11-latent-interview/page.html",
+    "materials/matt-pocock/11-latent-interview/page.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/matt-pocock/11-latent-interview/page.html",
+      "bytes": 226972,
+      "sha256": "6404071122ea5c25f0a2a2e1ed8b4e10aa4c86d0c386a9e10c8bc4415d2bb0bb"
+    },
+    {
+      "path": "materials/matt-pocock/11-latent-interview/page.txt",
+      "bytes": 8336,
+      "sha256": "8a26f12e80b4c7db7c96b23dcc248e9e9de3f38a806cfe83ae6277c5c48786f6"
+    }
+  ]
+}

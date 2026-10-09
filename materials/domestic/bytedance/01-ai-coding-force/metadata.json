@@ -1,0 +1,60 @@
+{
+  "id": "byte-force",
+  "title": "洪定坤：AI Coding 的实践与探索",
+  "directory": "materials/domestic/bytedance/01-ai-coding-force",
+  "kind": "大会演讲媒体报道",
+  "status": "媒体报道已保存；官方原文无法连接",
+  "publication_date": "2026-06-24（报道）",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "火山引擎原文",
+      "url": "https://mp.weixin.qq.com/s/mdmaAyUIvxE8WT_GEbF2wQ"
+    },
+    {
+      "label": "IT时代网报道",
+      "url": "https://news.qq.com/rain/a/20260624A0B28B00"
+    }
+  ],
+  "note": "演讲 2026-06-23，媒体报道 06-24。数字目前为媒体转述，未取得官方实录。",
+  "files": [
+    "materials/domestic/bytedance/01-ai-coding-force/images.md",
+    "materials/domestic/bytedance/01-ai-coding-force/images/b3a82746c126d8bc.jpg",
+    "materials/domestic/bytedance/01-ai-coding-force/media-report.html",
+    "materials/domestic/bytedance/01-ai-coding-force/media-report.txt",
+    "materials/domestic/bytedance/01-ai-coding-force/source-index.html",
+    "materials/domestic/bytedance/01-ai-coding-force/source-index.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/bytedance/01-ai-coding-force/images.md",
+      "bytes": 309,
+      "sha256": "5c06c19cc0692864faca399dc5b6dc8c7c24b2dbd79d8430083b538e0b2a3b89"
+    },
+    {
+      "path": "materials/domestic/bytedance/01-ai-coding-force/images/b3a82746c126d8bc.jpg",
+      "bytes": 29932,
+      "sha256": "06c7cdca3d11ddc70c37d6148869d3f39d83503eca7b423018adbc3a3bc0d1d2"
+    },
+    {
+      "path": "materials/domestic/bytedance/01-ai-coding-force/media-report.html",
+      "bytes": 76361,
+      "sha256": "19e03f8414da6f13a91c3390aaa7b0bb793808f7449164001e6fe2f9afecf12e"
+    },
+    {
+      "path": "materials/domestic/bytedance/01-ai-coding-force/media-report.txt",
+      "bytes": 2774,
+      "sha256": "31965b28c0478e7cb4aa4a24c2f5aa3d6e49edee8967a72075275ab5d7632921"
+    },
+    {
+      "path": "materials/domestic/bytedance/01-ai-coding-force/source-index.html",
+      "bytes": 132819,
+      "sha256": "f9c1d77a8b884efeae9ff66de88b108020f87bac38aa37fdbdcd144843542815"
+    },
+    {
+      "path": "materials/domestic/bytedance/01-ai-coding-force/source-index.txt",
+      "bytes": 9661,
+      "sha256": "bb04a307a690573c0192ce4e6d8d8638bf4bfaf34ebf21c8e1b591c358729691"
+    }
+  ]
+}

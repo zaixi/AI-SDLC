@@ -1,0 +1,98 @@
+{
+  "id": "huawei-engineering",
+  "title": "华为 AI 软件工程实践：30 年专业经验沉淀打造企业级确定性的高质量软件",
+  "directory": "materials/domestic/huawei/01-ai-software-engineering",
+  "kind": "专业媒体实践文章",
+  "status": "正文快照已保存",
+  "publication_date": "2026-03-26",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "InfoQ",
+      "url": "https://www.infoq.cn/article/IPk1UBNeqdj88ZlEWFsk"
+    }
+  ],
+  "note": "",
+  "files": [
+    "materials/domestic/huawei/01-ai-software-engineering/article.html",
+    "materials/domestic/huawei/01-ai-software-engineering/article.txt",
+    "materials/domestic/huawei/01-ai-software-engineering/images.md",
+    "materials/domestic/huawei/01-ai-software-engineering/images/124535e17bd19ac9.png",
+    "materials/domestic/huawei/01-ai-software-engineering/images/34647c6fe937bc0e.png",
+    "materials/domestic/huawei/01-ai-software-engineering/images/365a42c425f98b03.jpg",
+    "materials/domestic/huawei/01-ai-software-engineering/images/4160843dad3c526c.png",
+    "materials/domestic/huawei/01-ai-software-engineering/images/4ce469be08f9902b.png",
+    "materials/domestic/huawei/01-ai-software-engineering/images/5d726436a7ec43cd.png",
+    "materials/domestic/huawei/01-ai-software-engineering/images/9b0b57f5dda05b5a.png",
+    "materials/domestic/huawei/01-ai-software-engineering/images/bcba9d09fcebb97c.png",
+    "materials/domestic/huawei/01-ai-software-engineering/images/cbd85bb209e9f6ce.png",
+    "materials/domestic/huawei/01-ai-software-engineering/images/cfb1a6da68c104ad.png"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/huawei/01-ai-software-engineering/article.html",
+      "bytes": 421642,
+      "sha256": "75fdf4c16fc34348217308a7d9d5ca2d9ed52fe3627c59c278bd0ec5e53f74bc"
+    },
+    {
+      "path": "materials/domestic/huawei/01-ai-software-engineering/article.txt",
+      "bytes": 28188,
+      "sha256": "685553fffbee4e17fd717172b765a8174efdf9e964134212fb54fd34bc16b727"
+    },
+    {
+      "path": "materials/domestic/huawei/01-ai-software-engineering/images.md",
+      "bytes": 1720,
+      "sha256": "cf4db6857e5fb015b9253b9b49ad05c8a72d83c91622bb3b50621267d5b0d6da"
+    },
+    {
+      "path": "materials/domestic/huawei/01-ai-software-engineering/images/124535e17bd19ac9.png",
+      "bytes": 676105,
+      "sha256": "9d4f83a43c85f03f15a17c459a3b64b33a027bc0c55f765271f7ef4d88e3196d"
+    },
+    {
+      "path": "materials/domestic/huawei/01-ai-software-engineering/images/34647c6fe937bc0e.png",
+      "bytes": 1996,
+      "sha256": "fb6218c3dc43ac7215dfc222a2302c5ec6b67508eeb4d6db3c0127a0ad36157d"
+    },
+    {
+      "path": "materials/domestic/huawei/01-ai-software-engineering/images/365a42c425f98b03.jpg",
+      "bytes": 25177,
+      "sha256": "03e968c4b03e062af22a0bfc6e6be4a9cd6cbc913ad47e6dee17f5c3f22f1516"
+    },
+    {
+      "path": "materials/domestic/huawei/01-ai-software-engineering/images/4160843dad3c526c.png",
+      "bytes": 1553,
+      "sha256": "fac9973dfaeeb6aaf40cc7d129222709817359f6bc11eb7a415003f62673dfa6"
+    },
+    {
+      "path": "materials/domestic/huawei/01-ai-software-engineering/images/4ce469be08f9902b.png",
+      "bytes": 794,
+      "sha256": "7323b9fd9607cc4dd77b4e73798bc46ce54fcaf9ec7b4e08fda3cf56d2aaa0de"
+    },
+    {
+      "path": "materials/domestic/huawei/01-ai-software-engineering/images/5d726436a7ec43cd.png",
+      "bytes": 1392,
+      "sha256": "f76914e4c980997d2f00f25ae9a0ccb712754a22ee3b526a78935e3bf2458354"
+    },
+    {
+      "path": "materials/domestic/huawei/01-ai-software-engineering/images/9b0b57f5dda05b5a.png",
+      "bytes": 651403,
+      "sha256": "87f0d78f31304d35c513fe4d4b1d7265b4cd6cad5dc2f84245825cabb7260e3b"
+    },
+    {
+      "path": "materials/domestic/huawei/01-ai-software-engineering/images/bcba9d09fcebb97c.png",
+      "bytes": 440840,
+      "sha256": "7586862cd94a4dc235a578eb86c6e579f653af9826647d71c94f2aec788e01d6"
+    },
+    {
+      "path": "materials/domestic/huawei/01-ai-software-engineering/images/cbd85bb209e9f6ce.png",
+      "bytes": 287411,
+      "sha256": "e6a87c378d6feaa3900697ff5c45ec81d7d91a0dab84dfbde1a9ccbc557f4510"
+    },
+    {
+      "path": "materials/domestic/huawei/01-ai-software-engineering/images/cfb1a6da68c104ad.png",
+      "bytes": 139741,
+      "sha256": "73674cc54095364e014564ad725408f9584ba2d641038e135d6bd97439a9cf4e"
+    }
+  ]
+}

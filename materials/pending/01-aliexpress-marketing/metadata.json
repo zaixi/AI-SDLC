@@ -1,0 +1,98 @@
+{
+  "id": "pending-ali-marketing",
+  "title": "AliExpress 营销系统 AI Coding 实践",
+  "directory": "materials/pending/01-aliexpress-marketing",
+  "kind": "第三方提炼摘要",
+  "status": "摘要已保存；原文跳转需要登录",
+  "publication_date": "2026-07-20（聚合页标注）",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "BestHub 摘要",
+      "url": "https://www.besthub.dev/articles/how-aliexpress-applies-ai-coding-to-boost-marketing-system-development-e5a81517f513"
+    }
+  ],
+  "note": "BestHub 声明内容经过提炼；精确数字未据原文核实。",
+  "files": [
+    "materials/pending/01-aliexpress-marketing/images.md",
+    "materials/pending/01-aliexpress-marketing/images/14f8264425954e5e.webp",
+    "materials/pending/01-aliexpress-marketing/images/228782b91ac4ec36.webp",
+    "materials/pending/01-aliexpress-marketing/images/236b4f2a7568c9ef.webp",
+    "materials/pending/01-aliexpress-marketing/images/513bfb58e751f2a9.webp",
+    "materials/pending/01-aliexpress-marketing/images/6861159873494584.webp",
+    "materials/pending/01-aliexpress-marketing/images/6c56d29acd0a42f9.webp",
+    "materials/pending/01-aliexpress-marketing/images/7d0dd02153ffd75f.png",
+    "materials/pending/01-aliexpress-marketing/images/9befc47d001a617b.webp",
+    "materials/pending/01-aliexpress-marketing/images/c506641afe14a815.webp",
+    "materials/pending/01-aliexpress-marketing/images/ebba4770440690b8.webp",
+    "materials/pending/01-aliexpress-marketing/third-party-summary.html",
+    "materials/pending/01-aliexpress-marketing/third-party-summary.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/pending/01-aliexpress-marketing/images.md",
+      "bytes": 2882,
+      "sha256": "8f79818dcbf20b5f34039b3720b1423df5fcf1259e99bd2cd0d29779789bc84f"
+    },
+    {
+      "path": "materials/pending/01-aliexpress-marketing/images/14f8264425954e5e.webp",
+      "bytes": 1946,
+      "sha256": "9647aa150876d07a93682a812db1720353ff7ec0d28007e979e3f05991a7793c"
+    },
+    {
+      "path": "materials/pending/01-aliexpress-marketing/images/228782b91ac4ec36.webp",
+      "bytes": 5306,
+      "sha256": "186666e05c7a3807089fe38b66b3996bfaa1ebe9a90c102fbb392b1b12bf4d33"
+    },
+    {
+      "path": "materials/pending/01-aliexpress-marketing/images/236b4f2a7568c9ef.webp",
+      "bytes": 1418,
+      "sha256": "62613b60a75e26090712296d23ed2bef8c43a5db0ef3646cf55a54c18f29b5f3"
+    },
+    {
+      "path": "materials/pending/01-aliexpress-marketing/images/513bfb58e751f2a9.webp",
+      "bytes": 103594,
+      "sha256": "60b1555284d18c75734f5cafb065ca5681debf1e60061b2ee19eaba5f5edb6ac"
+    },
+    {
+      "path": "materials/pending/01-aliexpress-marketing/images/6861159873494584.webp",
+      "bytes": 5676,
+      "sha256": "53b4da2174ae1bdbeac61c5d36c7769bb23ead33230837223b1bd047400179d1"
+    },
+    {
+      "path": "materials/pending/01-aliexpress-marketing/images/6c56d29acd0a42f9.webp",
+      "bytes": 13944,
+      "sha256": "3e332b22547bfcefb0c5e1e548553b661bb3f6951056806838145315c1294c92"
+    },
+    {
+      "path": "materials/pending/01-aliexpress-marketing/images/7d0dd02153ffd75f.png",
+      "bytes": 13116,
+      "sha256": "527931bd73ff9d8dfa7fb650a09074e7427f18a96f967f49457c14d992f15ba0"
+    },
+    {
+      "path": "materials/pending/01-aliexpress-marketing/images/9befc47d001a617b.webp",
+      "bytes": 6022,
+      "sha256": "5a29c217c091019d56b7aa99fd2e31577cb8c577e2f9f1a91467296cc6514131"
+    },
+    {
+      "path": "materials/pending/01-aliexpress-marketing/images/c506641afe14a815.webp",
+      "bytes": 138442,
+      "sha256": "fa61b73cd2bd2917c4491fbccada34437842e80f1fc7e9ac83795c43f2bb6662"
+    },
+    {
+      "path": "materials/pending/01-aliexpress-marketing/images/ebba4770440690b8.webp",
+      "bytes": 20634,
+      "sha256": "2daa272a0c997986ea797743a89852f88265c6551b9a12c32f68b44c2754c06d"
+    },
+    {
+      "path": "materials/pending/01-aliexpress-marketing/third-party-summary.html",
+      "bytes": 67273,
+      "sha256": "f98195ac1d1c3263bae5c2dd2e8731ba92955f2232fce53288b39c071aaf051d"
+    },
+    {
+      "path": "materials/pending/01-aliexpress-marketing/third-party-summary.txt",
+      "bytes": 12492,
+      "sha256": "cbeb241f736e8ea09463a46cf003b95b701a330d8fb76fbef0af033b989cd136"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "matt-wayfinder",
+  "title": "Wayfinder：跨会话探索与规划",
+  "directory": "materials/matt-pocock/06-wayfinder",
+  "kind": "作者文章 / 访谈 / 官方演讲",
+  "status": "公开文字已保存",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "公开原文",
+      "url": "https://www.aihero.dev/skills-wayfinder"
+    },
+    {
+      "label": "固定提交的 Skill 原文",
+      "url": "https://github.com/mattpocock/skills/blob/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/wayfinder/SKILL.md"
+    }
+  ],
+  "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。",
+  "files": [
+    "materials/matt-pocock/06-wayfinder/page.html",
+    "materials/matt-pocock/06-wayfinder/page.txt",
+    "materials/matt-pocock/06-wayfinder/SKILL.snapshot.md"
+  ],
+  "assets": [
+    {
+      "path": "materials/matt-pocock/06-wayfinder/page.html",
+      "bytes": 371084,
+      "sha256": "f72ee50791f0ead7f89bdfaba8ea992dcd49936b062d94780e9de18dac67c73f"
+    },
+    {
+      "path": "materials/matt-pocock/06-wayfinder/page.txt",
+      "bytes": 16565,
+      "sha256": "43af92fe142d2aa09b0b0ab6057f59ba6386ff64f9b2fe2833fa2897cc11d21e"
+    },
+    {
+      "path": "materials/matt-pocock/06-wayfinder/SKILL.snapshot.md",
+      "bytes": 12380,
+      "sha256": "9be7b478c389605a24517d27752f278933588da97a1b5921b165f455edf4c5b7"
+    }
+  ]
+}

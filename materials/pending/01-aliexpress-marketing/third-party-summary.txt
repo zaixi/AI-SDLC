@@ -1,0 +1,249 @@
+How AliExpress Applies AI Coding to Boost Marketing Sy… | BestHub
+Discover
+Categories
+Artificial Intelligence
+Backend Development
+Mobile Development
+Product Management
+Cloud Native
+Frontend Development
+Fundamentals
+Big Data
+Cloud Computing
+Game Development
+R&D Management
+Operations
+Databases
+Information Security
+Blockchain
+User Experience Design
+Interview Experience
+Industry Insights
+View all →
+Topics
+Tags
+Trends
+Ranking
+Sign in
+Discover
+Categories
+Artificial Intelligence
+Backend Development
+Mobile Development
+Product Management
+Cloud Native
+Frontend Development
+Fundamentals
+Big Data
+Cloud Computing
+Game Development
+R&D Management
+Operations
+Databases
+Information Security
+Blockchain
+User Experience Design
+Interview Experience
+Industry Insights
+View all →
+Topics
+Tags
+Trends
+Ranking
+Sign in
+Home
+/
+Categories
+/
+Artificial Intelligence
+/
+How AliExpress Applies AI Coding to Boost Marketing System…
+Artificial Intelligence
+35 min read
+How AliExpress Applies AI Coding to Boost Marketing System Development
+The article analyzes the challenges of applying AI coding to AliExpress' high‑traffic, complex marketing system, introduces an SDD‑driven AAIC workflow, builds a business‑knowledge base for the dynamic‑Ticket feature, validates improvements with precision/recall metrics, and outlines architecture and testing upgrades to sustain AI‑assisted development.
+AliExpress Tech
+AliExpress Tech
+Jul 20, 2026
+Background and Core Challenges
+The marketing system is a core component of AliExpress' cross‑border e‑commerce platform, handling site‑wide price calculation and discount logic for dozens of tools, dozens of business parties, and hundreds of customizations. Because of multiple time zones, currencies, countries, and business models, the system exhibits five "high" characteristics:
+High traffic – almost the entire site’s price‑calculation flow passes through it.
+High business complexity – each calculation may involve hundreds of scenarios and dozens of intersecting tools.
+High stability requirement – a single logic error can crash the system and cause financial loss.
+High performance sensitivity – any performance degradation directly harms user experience.
+High machine cost – heavy traffic and rich discount logic make the marketing domain a major cost center.
+With large‑model advances and mature AI coding techniques, the key question is how to apply AI coding to such a system in a high‑quality, sustainable, and verifiable way.
+SDD‑Driven Development (SDD New Paradigm)
+We adopt Specification‑Driven Development (SDD) as the methodological framework. The overall process passes context via a Spec , completing requirements step‑by‑step. AAIC (AliExpress AI Coding) is the internal engineering realization of SDD. It uses the Spec as a context carrier and orchestrates four stages—
+explore
+,
+propose
+,
+apply
+,
+test
+—while injecting a knowledge base,
+Skill
+, and
+SubAgent
+at each stage to close the loop from requirement understanding to code testing.
+SDD workflow diagram
+The essential insight is that AI coding quality depends not only on model intelligence but also on the "world" and "knowledge" the AI sees: context management plus domain‑knowledge injection.
+Two Core Problems
+How to organize the development workflow and let information flow between agents.
+How to provide the AI with sufficient business knowledge so that its output is accurate and reliable.
+Case Study: "Dynamic Ticket" in the "Category New Smart Investment" Feature
+We use the Category New Smart Investment (dynamic‑Ticket) scenario to illustrate knowledge‑base construction.
+Requirement example: If a user holds a qualifying ticket, the subsidy rate should be increased based on the ticket’s coefficient. Original subsidy 10% + 50% ticket coefficient = final 15% (10% × (1+50%)). The core change is the "Dynamic Ticket" addition.
+Manual analysis identified seven key modification points:
+Identify the user’s ticket qualification data.
+Identify the activity instance that allows ticket usage.
+Match activity and ticket information.
+Select the highest‑priority ticket.
+Update the activity instance’s discount rate based on the ticket.
+For activities without a matching ticket, proceed with normal calculation.
+Write original discount, ticket info, and ticket coefficient into the order‑discount snapshot for later reconciliation.
+Stage 1 – Knowledge from Code Layering
+We first built a knowledge base based on the system’s code‑layer structure (L1‑L4: domain, scenario, interface, process node). AI would traverse this hierarchy to narrow the search space. However, validation showed poor results:
+AI matched 19 candidate change points, but only 1 was correct (precision 5.26%).
+Expected 7 change points, only 1 was recalled (recall 14.28%).
+Technical‑layer knowledge helped with pure code changes (e.g., adding a rate‑limit), but failed on business‑driven requirements like dynamic‑Ticket.
+Conclusion: the gap between PRD (business language) and code‑layer knowledge (technical language) caused low precision and recall.
+Stage 2 – Business‑Level Knowledge
+We shifted to a business‑knowledge‑driven approach, aligning the knowledge base with PRD terminology. The knowledge base now contains two core elements for each capability:
+Business‑capability description – used for PRD matching.
+Customization logic description – guides AI to the exact code location.
+For the dynamic‑Ticket capability, the knowledge includes definitions, responsibilities, customization content, and code locations (e.g.,
+DynamicTicketPromotionProcessor
+,
+DynamicTicketCategory
+).
+# DynamicTicket
+## 1. Definition
+| Name | Description |
+|------|-------------|
+| Responsibility | Handles the full‑process business customization when a user must hold a ticket to hit a promotion. |
+## 2. Responsibility
+- Admission check → Classification → Claim + Parse Activity ID → Unified query → Sorting → Match & Enrich → Fallback check → Return promotions
+## 3. Custom content description
+| Stage | Processing step | Custom content |
+|------|----------------|----------------|
+| Admission | Custom admission check | Add staticTicketPromotions before classification |
+... (omitted for brevity) ...
+## 4. Code location
+| Type | Location |
+|------|----------|
+| Core processor | `DynamicTicketPromotionProcessor` |
+| Ticket enum | `DynamicTicketCategory` |
+Stage 3 – Architecture Upgrade and Extension‑Point Design
+We introduced the NF framework (business isolation and extension‑point framework) to transform coarse‑grained business methods into atomic, indexable extension points. Each extension point has stable code, clear responsibilities, input‑output contracts, execution order, and a concrete location.
+Key benefits:
+AI can directly locate the extension point instead of scanning massive process code.
+Extension points are grouped into product packages, making the knowledge base three‑layered: business capability → extension point → product‑package implementation.
+Example extension‑point list for dynamic‑Ticket:
+| No. | Extension code | Name | Responsibility |
+|-----|----------------|------|----------------|
+| 1 | `CUSTOM_STATIC_TICKET_VALIDATION` | Custom admission check | Add ticket‑related validation before classification |
+| 2 | `CLASSIFY_BUYER_RESOURCES` | Dynamic‑Ticket classification | Split ticket types by business scenario |
+| 3 | `CLAIM_STATIC_PROMOTIONS` | Instance claim | Bind static activities to tickets |
+| 4 | `RESOLVE_ACTIVITY_IDS` | Parse activity IDs | Extract dynamic activity IDs from tickets |
+| 5 | `RESOLVE_SORT_STRATEGY` | Business sorting rule | Determine ticket ordering |
+| 6 | `MATCH_PROMOTIONS_AND_ENRICH` | Match & enhance | Write ticket ID and adjust amount/rights |
+| 7 | `RESOLVE_UNMATCHED_TICKET_STRATEGY` | Unmatched‑ticket handling | Decide fallback for non‑matched tickets |
+Verification Results After Business Knowledge Integration
+Repeating the same dynamic‑Ticket requirement yielded significant improvements:
+Precision: AI identified 6 change points, all correct – 100% precision.
+Recall: 6 out of 7 expected points were matched – 85.7% recall.
+However, three deviation types remained:
+Recall bias – AI missed the handling strategy for unmatched discounts.
+Location bias – The discount‑rate modification was located incorrectly, requiring manual clarification.
+Implementation bias – Some generated code had logical errors (e.g., missing multi‑currency handling).
+Overall code‑line correctness after manual correction was 64% .
+Conclusion: transitioning from technical‑layer knowledge to business‑level knowledge gave AI a correct direction and measurable gains, but further knowledge (precise change anchors and marketing‑code specifications) is needed for the final “last‑mile” improvement.
+Design of Business Knowledge
+Business capability definitions must be co‑created by product and technology to form a unified language. Two principles:
+The definition must be understandable to product, matching business semantics, not pure technical terms.
+The capability describes what the platform can support ("what") and is separate from concrete implementation details ("how").
+The knowledge base acts as a bridge between PRD and code, describing core concepts, usage scenarios, customization locations, and explanations. This enables AI to map PRD to the correct code path.
+Testing and Quality Assurance
+Given the marketing system’s ultra‑low tolerance for errors, we embed a two‑level testing strategy:
+Function‑level correctness – Test‑Driven Development (TDD) where AI first generates unit tests, then iteratively refines code until all tests pass.
+Link‑level correctness – Automated integration tests driven by a Test Skill that uses a marketing‑test knowledge base (interface‑level input construction, expected output assertions, and business‑scenario rules).
+Both levels are integrated into the AAIC workflow, forming a closed loop: generate code → run tests → auto‑refine → verify.
+Testing workflow diagram
+Knowledge Growth and Future Roadmap
+Each delivered requirement enriches the knowledge base (new capabilities, extension points, product‑package implementations, and coding standards). Subsequent demands benefit from this accumulated knowledge, creating a virtuous “delivery → knowledge update → verification → reuse” cycle.
+Future plans include extending AI assistance to PRD creation, post‑release risk tracking, and full‑chain safety production, moving AI from merely solving coding problems to addressing the entire development lifecycle.
+Full‑process AI development architecture
+Original Source
+Signed-in readers can open the original source through BestHub's protected redirect.
+Sign in to view source
+Republication Notice
+This article has been distilled and summarized from source material, then republished for learning and reference. If you believe it infringes your rights, please contact
+adm
+in
+@
+best
+hub
+.
+dev
+and we will review it promptly.
+AI coding
+testing automation
+extension points
+marketing system
+SDD
+business knowledge base
+Written by
+AliExpress Tech
+Official tech channel of AliExpress International Tech Division, showcasing the latest technology developments and innovations in global e‑commerce.
+0 followers
+Reader feedback
+How this landed with the community
+Sign in to like
+Rate this article
+Was this worth your time?
+Sign in to rate
+Discussion
+0 Comments
+Thoughtful readers leave field notes, pushback, and hard-won operational detail here.
+Sign in to comment
+Share
+Keep reading
+Related stories
+Artificial Intelligence
+EvoOntology: Self-Evolving Ontology Layer Lets Data Agents Maintain Their Own Semantic Knowledge
+Artificial Intelligence
+OpenAI Drops 722 Math Papers Overnight: Riemann, BSD, Hodge Conjectures Claimed
+Artificial Intelligence
+Multi-GPU LLM Inference: Step-by-Step Deployment Guide for Memory-Constrained Environments
+On this page
+Likes
+Views
+1
+Read time
+35 min
+Rating
+0.0
+No ratings yet
+Related tags
+Node.js
+Operations
+Code Execution
+software architecture
+TiDB
+HTTP
+testing
+deep learning
+memory management
+programming languages
+BestHub
+Editorial precision for engineers who prefer signal over noise. Deep reads, careful curation, and sharper frontiers in software.
+Best Hub for Dev. Power Your Build.
+Navigation
+Discover
+Tags
+Topics
+System Status
+Privacy Terms
+Rss Feed

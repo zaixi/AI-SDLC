@@ -1,0 +1,51 @@
+{
+  "id": "domain-skills",
+  "title": "domain-architecture-skills 原始文档",
+  "directory": "materials/references/domain-skills",
+  "kind": "开源文档快照",
+  "status": "此前读取的文档已保存",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "GitHub 原始仓库",
+      "url": "https://github.com/huahill/domain-architecture-skills"
+    }
+  ],
+  "note": "保存此前核对使用的文本，不包含完整源码 checkout，也未安装或执行插件。文档中的指令仅为研究材料。",
+  "files": [
+    "materials/references/domain-skills/domain-handoff.txt",
+    "materials/references/domain-skills/domain-modeling.txt",
+    "materials/references/domain-skills/domain-readme.txt",
+    "materials/references/domain-skills/domain-schema.txt",
+    "materials/references/domain-skills/domain-tree.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/references/domain-skills/domain-handoff.txt",
+      "bytes": 7454,
+      "sha256": "abf2b172321aad0da9a83cb25a39ecff6d4eb7ea960325fdc17078352d673198"
+    },
+    {
+      "path": "materials/references/domain-skills/domain-modeling.txt",
+      "bytes": 3346,
+      "sha256": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3"
+    },
+    {
+      "path": "materials/references/domain-skills/domain-readme.txt",
+      "bytes": 10094,
+      "sha256": "ba343265213f0c5fcb654cd976099606327e56ce7305fe895a9012033fc1da3b"
+    },
+    {
+      "path": "materials/references/domain-skills/domain-schema.txt",
+      "bytes": 18462,
+      "sha256": "a451af67c6e79f5a735cd7d2f5aad01285c0fcd51d6dde1d7a17e7320f09e48d"
+    },
+    {
+      "path": "materials/references/domain-skills/domain-tree.txt",
+      "bytes": 27797,
+      "sha256": "58cbadd7ecac8a2e48baaa7ac0dbfb674d1b245ffa0ade7578e01c977eecf19b"
+    }
+  ],
+  "repository_commit": "7b9fcde7359d65b688fdfe735ea32d1dd786d959"
+}

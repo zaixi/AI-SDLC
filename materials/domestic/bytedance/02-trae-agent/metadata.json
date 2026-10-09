@@ -1,0 +1,106 @@
+{
+  "id": "byte-trae-paper",
+  "title": "Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling",
+  "directory": "materials/domestic/bytedance/02-trae-agent",
+  "kind": "技术论文与官方开源文档",
+  "status": "论文 HTML、官方 README 已保存，PDF 已保存",
+  "publication_date": "2025（论文 v1）",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "论文固定版本 v1",
+      "url": "https://arxiv.org/html/2507.23370v1"
+    },
+    {
+      "label": "论文 PDF v1",
+      "url": "https://arxiv.org/pdf/2507.23370v1"
+    },
+    {
+      "label": "官方仓库",
+      "url": "https://github.com/bytedance/trae-agent"
+    }
+  ],
+  "note": "论文固定为 v1；README 是 2026-10-08 检索时 main 快照。未运行或复现实验，未安装项目。",
+  "files": [
+    "materials/domestic/bytedance/02-trae-agent/images.md",
+    "materials/domestic/bytedance/02-trae-agent/images/386a25b5feaa3ae3.svg",
+    "materials/domestic/bytedance/02-trae-agent/images/45f59089fadc9997.png",
+    "materials/domestic/bytedance/02-trae-agent/images/496ea8dde926ed67.png",
+    "materials/domestic/bytedance/02-trae-agent/images/7fe224947dc8caf7.png",
+    "materials/domestic/bytedance/02-trae-agent/images/80ef4d623aa6c6d4.png",
+    "materials/domestic/bytedance/02-trae-agent/images/9d5a7d935e3421b0.png",
+    "materials/domestic/bytedance/02-trae-agent/images/fe17514434def8ef.png",
+    "materials/domestic/bytedance/02-trae-agent/paper-v1.html",
+    "materials/domestic/bytedance/02-trae-agent/paper-v1.pdf",
+    "materials/domestic/bytedance/02-trae-agent/paper-v1.txt",
+    "materials/domestic/bytedance/02-trae-agent/repository-readme.md",
+    "materials/domestic/bytedance/02-trae-agent/repository-readme.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/bytedance/02-trae-agent/images.md",
+      "bytes": 1040,
+      "sha256": "93468220e3ec9a243e8e91801d3e49c00d2ab6dc5c3d1729b3fe190d64aaf9e5"
+    },
+    {
+      "path": "materials/domestic/bytedance/02-trae-agent/images/386a25b5feaa3ae3.svg",
+      "bytes": 2621,
+      "sha256": "d8ddbd1909e144056810b2a0f4b64f34d92ad6597f314cec27e92b913c3e27bc"
+    },
+    {
+      "path": "materials/domestic/bytedance/02-trae-agent/images/45f59089fadc9997.png",
+      "bytes": 133160,
+      "sha256": "1d4453c79a54176c5f3eafb08b2d0730e82da3abf82a93e4407abaafa55c1235"
+    },
+    {
+      "path": "materials/domestic/bytedance/02-trae-agent/images/496ea8dde926ed67.png",
+      "bytes": 302867,
+      "sha256": "af31500782bb011900383ba778441765e864fd63f917dc75b5aa272dddd20905"
+    },
+    {
+      "path": "materials/domestic/bytedance/02-trae-agent/images/7fe224947dc8caf7.png",
+      "bytes": 248806,
+      "sha256": "77e437c41d05f4b3d3a20e124d6b3504f010dd54c345d0db4ca987faa9852949"
+    },
+    {
+      "path": "materials/domestic/bytedance/02-trae-agent/images/80ef4d623aa6c6d4.png",
+      "bytes": 341678,
+      "sha256": "c45b3550c494f6b7617f1fffb71f33f5b75658205d39c0237a8ca028fdf8ed70"
+    },
+    {
+      "path": "materials/domestic/bytedance/02-trae-agent/images/9d5a7d935e3421b0.png",
+      "bytes": 93397,
+      "sha256": "632aa50c13e565272eafbc3b6f9bcf0947e0fb03519b323a373b84a1ca48de0e"
+    },
+    {
+      "path": "materials/domestic/bytedance/02-trae-agent/images/fe17514434def8ef.png",
+      "bytes": 214578,
+      "sha256": "5c7dc904ea4e2490e5213bd06b169dd8c79a58747114c80b696beed4b7964c1e"
+    },
+    {
+      "path": "materials/domestic/bytedance/02-trae-agent/paper-v1.html",
+      "bytes": 261022,
+      "sha256": "87f56ac5f4ff1ab37d33f4e9fc828bb1188ffa172c727e1c92b7fff9a2b305b0"
+    },
+    {
+      "path": "materials/domestic/bytedance/02-trae-agent/paper-v1.pdf",
+      "bytes": 6081225,
+      "sha256": "14c484acc76c08a70a0db90bc2179a0d63d90360d28c414df2872b8ff4929306"
+    },
+    {
+      "path": "materials/domestic/bytedance/02-trae-agent/paper-v1.txt",
+      "bytes": 78263,
+      "sha256": "da689123cde8a47a7e0df0f1a711b9755bf0ca955b173ebb0a55ed6a945c0289"
+    },
+    {
+      "path": "materials/domestic/bytedance/02-trae-agent/repository-readme.md",
+      "bytes": 10238,
+      "sha256": "6ff2b6c84def1b93ffa8f754b949fdf12a9d3c5d77644984d3a81f3f5b197089"
+    },
+    {
+      "path": "materials/domestic/bytedance/02-trae-agent/repository-readme.txt",
+      "bytes": 10237,
+      "sha256": "41809017d01665c40cd31bd829726a5747e46dffd61c7a3ae8ba64ed233d1d43"
+    }
+  ]
+}

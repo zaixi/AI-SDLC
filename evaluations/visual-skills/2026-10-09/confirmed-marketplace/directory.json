@@ -1,0 +1,66 @@
+[
+  {
+    "name": "README.md",
+    "path": "skills/softaworks/mermaid-diagrams/README.md",
+    "sha": "9b09be96f7eb2307433ceacd58442defe0aeb943",
+    "size": 9219,
+    "url": "https://api.github.com/repos/aiskillstore/marketplace/contents/skills/softaworks/mermaid-diagrams/README.md?ref=26421118b848d9f1efc0aa169d8a7a9e7e0a877e",
+    "html_url": "https://github.com/aiskillstore/marketplace/blob/26421118b848d9f1efc0aa169d8a7a9e7e0a877e/skills/softaworks/mermaid-diagrams/README.md",
+    "git_url": "https://api.github.com/repos/aiskillstore/marketplace/git/blobs/9b09be96f7eb2307433ceacd58442defe0aeb943",
+    "download_url": "https://raw.githubusercontent.com/aiskillstore/marketplace/26421118b848d9f1efc0aa169d8a7a9e7e0a877e/skills/softaworks/mermaid-diagrams/README.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aiskillstore/marketplace/contents/skills/softaworks/mermaid-diagrams/README.md?ref=26421118b848d9f1efc0aa169d8a7a9e7e0a877e",
+      "git": "https://api.github.com/repos/aiskillstore/marketplace/git/blobs/9b09be96f7eb2307433ceacd58442defe0aeb943",
+      "html": "https://github.com/aiskillstore/marketplace/blob/26421118b848d9f1efc0aa169d8a7a9e7e0a877e/skills/softaworks/mermaid-diagrams/README.md"
+    }
+  },
+  {
+    "name": "SKILL.md",
+    "path": "skills/softaworks/mermaid-diagrams/SKILL.md",
+    "sha": "ece9c4e7421c259a1d949de0c06e17bf24396d37",
+    "size": 7366,
+    "url": "https://api.github.com/repos/aiskillstore/marketplace/contents/skills/softaworks/mermaid-diagrams/SKILL.md?ref=26421118b848d9f1efc0aa169d8a7a9e7e0a877e",
+    "html_url": "https://github.com/aiskillstore/marketplace/blob/26421118b848d9f1efc0aa169d8a7a9e7e0a877e/skills/softaworks/mermaid-diagrams/SKILL.md",
+    "git_url": "https://api.github.com/repos/aiskillstore/marketplace/git/blobs/ece9c4e7421c259a1d949de0c06e17bf24396d37",
+    "download_url": "https://raw.githubusercontent.com/aiskillstore/marketplace/26421118b848d9f1efc0aa169d8a7a9e7e0a877e/skills/softaworks/mermaid-diagrams/SKILL.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aiskillstore/marketplace/contents/skills/softaworks/mermaid-diagrams/SKILL.md?ref=26421118b848d9f1efc0aa169d8a7a9e7e0a877e",
+      "git": "https://api.github.com/repos/aiskillstore/marketplace/git/blobs/ece9c4e7421c259a1d949de0c06e17bf24396d37",
+      "html": "https://github.com/aiskillstore/marketplace/blob/26421118b848d9f1efc0aa169d8a7a9e7e0a877e/skills/softaworks/mermaid-diagrams/SKILL.md"
+    }
+  },
+  {
+    "name": "references",
+    "path": "skills/softaworks/mermaid-diagrams/references",
+    "sha": "30702a7858943ab97ada4cade4a12d0d0bfc79a6",
+    "size": 0,
+    "url": "https://api.github.com/repos/aiskillstore/marketplace/contents/skills/softaworks/mermaid-diagrams/references?ref=26421118b848d9f1efc0aa169d8a7a9e7e0a877e",
+    "html_url": "https://github.com/aiskillstore/marketplace/tree/26421118b848d9f1efc0aa169d8a7a9e7e0a877e/skills/softaworks/mermaid-diagrams/references",
+    "git_url": "https://api.github.com/repos/aiskillstore/marketplace/git/trees/30702a7858943ab97ada4cade4a12d0d0bfc79a6",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/aiskillstore/marketplace/contents/skills/softaworks/mermaid-diagrams/references?ref=26421118b848d9f1efc0aa169d8a7a9e7e0a877e",
+      "git": "https://api.github.com/repos/aiskillstore/marketplace/git/trees/30702a7858943ab97ada4cade4a12d0d0bfc79a6",
+      "html": "https://github.com/aiskillstore/marketplace/tree/26421118b848d9f1efc0aa169d8a7a9e7e0a877e/skills/softaworks/mermaid-diagrams/references"
+    }
+  },
+  {
+    "name": "skill-report.json",
+    "path": "skills/softaworks/mermaid-diagrams/skill-report.json",
+    "sha": "680266ac2e48d4640c129a360c4bd1a26254aec9",
+    "size": 239054,
+    "url": "https://api.github.com/repos/aiskillstore/marketplace/contents/skills/softaworks/mermaid-diagrams/skill-report.json?ref=26421118b848d9f1efc0aa169d8a7a9e7e0a877e",
+    "html_url": "https://github.com/aiskillstore/marketplace/blob/26421118b848d9f1efc0aa169d8a7a9e7e0a877e/skills/softaworks/mermaid-diagrams/skill-report.json",
+    "git_url": "https://api.github.com/repos/aiskillstore/marketplace/git/blobs/680266ac2e48d4640c129a360c4bd1a26254aec9",
+    "download_url": "https://raw.githubusercontent.com/aiskillstore/marketplace/26421118b848d9f1efc0aa169d8a7a9e7e0a877e/skills/softaworks/mermaid-diagrams/skill-report.json",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aiskillstore/marketplace/contents/skills/softaworks/mermaid-diagrams/skill-report.json?ref=26421118b848d9f1efc0aa169d8a7a9e7e0a877e",
+      "git": "https://api.github.com/repos/aiskillstore/marketplace/git/blobs/680266ac2e48d4640c129a360c4bd1a26254aec9",
+      "html": "https://github.com/aiskillstore/marketplace/blob/26421118b848d9f1efc0aa169d8a7a9e7e0a877e/skills/softaworks/mermaid-diagrams/skill-report.json"
+    }
+  }
+]

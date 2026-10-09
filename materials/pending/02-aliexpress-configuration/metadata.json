@@ -1,0 +1,26 @@
+{
+  "id": "pending-ali-config",
+  "title": "AliExpress 详情域 AAIC 配置实践",
+  "directory": "materials/pending/02-aliexpress-configuration",
+  "kind": "检索线索",
+  "status": "仅有搜索摘要；正文返回空响应",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "索引页",
+      "url": "https://tool.lu/article/82a/detail"
+    }
+  ],
+  "note": "检索摘要包含三大配置平台、九个 Skill、影子表及人工发布。HTTP 204 空正文，未保存为成功文章。",
+  "files": [
+    "materials/pending/02-aliexpress-configuration/search-results.json"
+  ],
+  "assets": [
+    {
+      "path": "materials/pending/02-aliexpress-configuration/search-results.json",
+      "bytes": 4902,
+      "sha256": "d2b2dd0ad7304969356357a4492f32f547c779dc2a8bdc563158f8fd14399a8b"
+    }
+  ]
+}

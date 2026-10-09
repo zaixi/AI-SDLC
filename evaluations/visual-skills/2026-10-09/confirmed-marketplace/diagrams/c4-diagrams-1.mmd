@@ -1,0 +1,9 @@
+C4Context
+    title System Context for Banking System
+    
+    Person(customer, "Customer", "A banking customer")
+    System(banking, "Banking System", "Allows customers to manage accounts")
+    System_Ext(email, "Email System", "Sends emails")
+    
+    Rel(customer, banking, "Uses")
+    Rel(banking, email, "Sends emails via")

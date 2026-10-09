@@ -1,0 +1,16 @@
+classDiagram
+    Title -- Genre
+    Title *-- Season
+    Title *-- Review
+    User --> Review : creates
+
+    class Title {
+        +string name
+        +int releaseYear
+        +play()
+    }
+
+    class Genre {
+        +string name
+        +getTopTitles()
+    }

@@ -1,0 +1,52 @@
+[
+  {
+    "title": "美团正式发布 CatPaw：全场景 AI Agent，从个人提效到企业智能化 | 美团 · 技术团队",
+    "url": "https://tech.meituan.com/2026/07/28/CatPaw-LongCat.html",
+    "snippet": "搭载美团 LongCat 2.0 的全场景 AI Agent 平台 CatPaw 正式上线，我们将模型能力从\"跑得动\"推向\"用得好\"。CatPaw 提供开箱即用的 AI 智能工作台与企业级 Agent 开发托管能力。"
+  },
+  {
+    "title": "免费!美团AI IDE编程工具CatPaw上线 - 知乎",
+    "url": "https://zhuanlan.zhihu.com/p/1971246380942090820",
+    "snippet": "太密了。 美团搞起AI大模型后，动作和发布实在太密了。 这不就在最近，美团又出了一款AI IDE编程工具。 代号 Meituan CatPaw，官方介绍是酱紫的——Meituan CatPaw是美团推出的AI IDE，通过Agent驱动编程体验革新…"
+  },
+  {
+    "title": "妙手 - 全场景 AI Agent 平台 | words create worlds",
+    "url": "https://catpaw.meituan.com/",
+    "snippet": "妙手 既提供开箱即用的 AI 智能工作台，也面向企业提供 Agent 开发与托管能力，助力企业构建 AI 数字员工、推进业务 AI 化改造。"
+  },
+  {
+    "title": "独家!美团将开放AI编程能力并推出新产品NoCode | 36氪",
+    "url": "https://eu.36kr.com/zh/p/3300639590680584",
+    "snippet": "除NoCode外，美团还开发了另一款更专业的AI开发工具CatPaw，对标Cursor等面向开发者群体的AI编程工具，但CatPaw目前主要面向内部开放。 从结果来看，AI的确显著提升了美团的运营和工作效率。 财报中，美团表示公司内27%的新增代码由AI生成。"
+  },
+  {
+    "title": "美团CatPaw AI编程IDE解析：四大能力与落地数据|AI自学笔记",
+    "url": "https://fluxbbs.com/meituan-catpaw-ai-ide/",
+    "snippet": "美团发布自研AI编程IDE工具CatPaw，集成LongCat大模型并支持多模型混合调用，提供Tab补全、Agent问答生码、Browser预览调试、Codebase项目分析四大能力。官方披露内部研发覆盖率超95。本文逐项拆解其与上手建议。"
+  },
+  {
+    "title": "美团 CatPaw (猫爪 IDE) 介绍 | AI Coding 技术论坛 - LearnKu",
+    "url": "https://learnku.com/articles/91854",
+    "snippet": "美团发布自研AI集成开发环境CatPaw（猫爪IDE），该产品以Agent协作为核心，搭载自研LongCat系列大模型，采用MoE架构实现高效推理。它提供智能代码补全、复杂任务自动化执行等功能，并支持集成多种国产大模型。文章详细介绍了其技术架构、核心功能、内部测试数据及实战集成指南，属于技术知识 ..."
+  },
+  {
+    "title": "NoCode-零代码应用生成平台",
+    "url": "https://nocode.cn/",
+    "snippet": "NoCode 是一款无需编程背景和经验，通过自然语言和对话形式，即可快速生成应用的平台。可帮助不同角色以'零代码'的方式创建个人提效工具、产品原型、可交互页面等，降低开发门槛，实现创意释放。"
+  },
+  {
+    "title": "美团 CatPaw 免费 AI 编程 IDE：内置 GLM-5.2 等 5 款旗舰模型，支持 Skills 系统",
+    "url": "https://www.xmsumi.com/detail/3729",
+    "snippet": "CatPaw 从 2022 年就开始做，2023 年在美团内部以编辑器插件形式上线，内部研发人员渗透率超过 95%，增量代码中 AI 生成比例超过 50%。 现在把这个工具对外开放，不收钱。 值不值得装一个 如果你刚开始用 AI 编程，不想花钱试错，CatPaw 是最低成本的入门选项之一。"
+  },
+  {
+    "title": "CatPaw — 星流Wiki - starfeed.cn",
+    "url": "https://starfeed.cn/products/catpaw",
+    "snippet": "LongCat 多模态扩展 → CatPaw 能力扩展 — LongCat 未来加视觉 / 音频能力,CatPaw 可能扩展到\"AI 设计协作\" / \"AI 文档生成\"等场景 这条协同跟其他互联网厂的\"模型 + 编程工具\"飞轮思路一致,但 美团 LongCat + CatPaw 的耦合度可能更深 — 美团内部研发场景的反馈给 LongCat 编程 ..."
+  },
+  {
+    "title": "美团 CatPaw 中文教程_w3cschool",
+    "url": "https://www.w3cschool.cn/catpawguides/",
+    "snippet": "美团 CatPaw 是美团推出的 AI 编程伙伴，本教程涵盖安装更新、代码补全、Agent 模式、项目调试等核心功能，提供 PC / 移动端多端阅读，助开发者提升编程效率。_来自美团 CatPaw 中文教程，w3cschool编程狮。"
+  }
+]

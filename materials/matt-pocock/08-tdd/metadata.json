@@ -1,0 +1,42 @@
+{
+  "id": "matt-tdd",
+  "title": "TDD：公开行为与短反馈循环",
+  "directory": "materials/matt-pocock/08-tdd",
+  "kind": "作者文章 / 访谈 / 官方演讲",
+  "status": "公开文字已保存",
+  "publication_date": "2026-08-24",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "公开原文",
+      "url": "https://www.aihero.dev/skills-tdd"
+    },
+    {
+      "label": "固定提交的 Skill 原文",
+      "url": "https://github.com/mattpocock/skills/blob/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/tdd/SKILL.md"
+    }
+  ],
+  "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。",
+  "files": [
+    "materials/matt-pocock/08-tdd/page.html",
+    "materials/matt-pocock/08-tdd/page.txt",
+    "materials/matt-pocock/08-tdd/SKILL.snapshot.md"
+  ],
+  "assets": [
+    {
+      "path": "materials/matt-pocock/08-tdd/page.html",
+      "bytes": 361717,
+      "sha256": "5fd2002e2f534a8116e21138894693284fb6897268fe469c9b87500d569cee9d"
+    },
+    {
+      "path": "materials/matt-pocock/08-tdd/page.txt",
+      "bytes": 11849,
+      "sha256": "8cdb16a2f514d4cd6da7900ed571563f29dff95e78d3a8e83cbb138ce1efc114"
+    },
+    {
+      "path": "materials/matt-pocock/08-tdd/SKILL.snapshot.md",
+      "bytes": 3629,
+      "sha256": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+sequenceDiagram
+    participant U as 用户
+    participant S as 会话模块
+    participant N as 网络请求
+    U->>S: 在会话 A 发起请求
+    S->>N: 请求携带版本 A
+    U->>S: 切换到会话 B
+    N-->>S: 返回版本 A 的响应
+    alt 响应版本与当前会话一致
+        S->>S: 更新数据
+    else 版本不一致
+        S->>S: 丢弃响应
+    end

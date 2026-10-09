@@ -1,0 +1,751 @@
+<!DOCTYPE html><html lang="zh-CN" data-astro-cid-z4jru4n3> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="base" content="/ai"><meta name="description" content="洪定坤把字节用 AI Coding 一年踩的坑和实验数据摊开讲，尤其‘过度重视代码贡献率’的反思和 Harness 基建的实证，是所有推 AI 编程的团队必看的复盘。"><meta name="keywords" content="字节跳动"><title>字节跳动技术副总裁洪定坤：AI Coding 的实践与探索｜觉醒AI知识库</title><link rel="canonical" href="https://www.jxxy.net/ai/articles/ah-10276830/"><meta property="og:site_name" content="觉醒AI知识库｜普通人的 AI 使用手册"><meta property="og:type" content="article"><meta property="og:title" content="字节跳动技术副总裁洪定坤：AI Coding 的实践与探索｜觉醒AI知识库"><meta property="og:description" content="洪定坤把字节用 AI Coding 一年踩的坑和实验数据摊开讲，尤其‘过度重视代码贡献率’的反思和 Harness 基建的实证，是所有推 AI 编程的团队必看的复盘。"><meta property="og:url" content="https://www.jxxy.net/ai/articles/ah-10276830/"><meta property="og:image" content="https://www.jxxy.net/ai/media/about/og-default.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="zh_CN"><meta property="article:published_time" content="2026-06-24"><meta property="article:modified_time" content="2026-06-24"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="字节跳动技术副总裁洪定坤：AI Coding 的实践与探索｜觉醒AI知识库"><meta name="twitter:description" content="洪定坤把字节用 AI Coding 一年踩的坑和实验数据摊开讲，尤其‘过度重视代码贡献率’的反思和 Harness 基建的实证，是所有推 AI 编程的团队必看的复盘。"><meta name="twitter:image" content="https://www.jxxy.net/ai/media/about/og-default.jpg"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ac4bec3b22faf0e902348d270f1a9032";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="/ai/_astro/BaseLayout.BRhh_Rwp.css"><style>.copy-btn{color:#fff;background:var(--accent,#d06b4c);cursor:pointer;border:none;border-radius:6px;align-items:center;gap:.4rem;padding:.5rem 1rem;font-family:inherit;font-size:.85rem;font-weight:600;transition:background .15s,transform .1s;display:inline-flex;position:relative}.copy-btn:hover{background:color-mix(in srgb, var(--accent,#d06b4c) 88%, #000)}.copy-btn:active{transform:translateY(1px)}.copy-btn__icon{flex-shrink:0}.copy-btn__done{display:none!important}.copy-btn.is-done .copy-btn__label{display:none}.copy-btn.is-done .copy-btn__done{display:inline!important}.copy-btn.is-done{color:#fff;background:#15803d}
+.article-share{flex-wrap:wrap;align-items:center;gap:.5rem;display:flex}.article-share--left{justify-content:flex-start}.article-share--right{justify-content:flex-end}.article-share__btn{border:1px solid var(--border,#e5e7eb);min-height:34px;color:var(--text,#1f2937);font:inherit;cursor:pointer;background:#fff;border-radius:6px;justify-content:center;align-items:center;padding:.42rem .72rem;font-size:.8rem;font-weight:600;line-height:1;text-decoration:none;transition:border-color .15s,color .15s,background .15s,transform .1s;display:inline-flex}.article-share__btn:hover{color:var(--accent,#d06b4c);border-color:color-mix(in srgb, var(--accent,#d06b4c) 55%, #fff);background:color-mix(in srgb, var(--accent,#d06b4c) 8%, #fff)}.article-share__btn:active{transform:translateY(1px)}.article-share__btn--primary{color:#fff;background:#1f2937;border-color:#1f2937}.article-share__btn--primary:hover{color:#fff;background:#111827;border-color:#111827}.article-share__btn--reward{color:#fff;background:#dc2626;border-color:#dc2626}.article-share__btn--reward:hover{color:#fff;background:#b91c1c;border-color:#b91c1c}.article-share__fav.fav-btn{color:#fff;cursor:pointer;white-space:nowrap;background:#dc2626;border:1px solid #dc2626;border-radius:999px;align-items:center;gap:.3rem;padding:.3rem .75rem;font-size:.8rem;font-weight:600;line-height:1.4;transition:background .15s,border-color .15s;display:inline-flex}.article-share__fav.fav-btn:hover{background:#b91c1c;border-color:#b91c1c}.article-share__fav.fav-btn.is-faved{color:#dc2626;background:#fff}.article-share__fav.fav-btn.is-faved:hover{background:#fef2f2}.article-share__fav .fav-btn__icon{flex:none}.article-share__btn.is-done{color:#fff;background:#15803d;border-color:#15803d}.share-modal{z-index:2000;background:#11182794;justify-content:center;align-items:center;padding:1.25rem;display:none;position:fixed;inset:0}.share-modal.is-open{display:flex}.share-modal-open{overflow:hidden}.share-modal__panel{background:#fff;border-radius:10px;width:min(92vw,520px);max-height:90vh;position:relative;overflow:auto;box-shadow:0 24px 70px #0f172a47}.share-modal__close{z-index:1;border:1px solid var(--border,#e5e7eb);color:#374151;cursor:pointer;background:#fff;border-radius:50%;width:34px;height:34px;font-size:1.35rem;line-height:1;position:absolute;top:.7rem;right:.7rem}.share-modal__body{padding:1.6rem}.share-modal__qr,.share-modal__poster,.share-modal__loading{text-align:center}.share-modal h2{color:var(--text,#1f2937);margin:0 0 1rem;font-size:1.08rem}.share-modal p{max-width:24rem;color:var(--text-muted,#6b7280);margin:.9rem auto 0;font-size:.88rem;line-height:1.6}.share-modal__qr img{border:1px solid var(--border,#e5e7eb);border-radius:8px;width:260px;max-width:100%;height:260px}.share-modal__reward{text-align:center}.share-modal__reward img{border-radius:8px;width:min(100%,320px);margin:0 auto;display:block;box-shadow:0 12px 35px #0f172a2e}.share-modal__poster img{border-radius:8px;width:min(100%,360px);margin:0 auto;display:block;box-shadow:0 12px 35px #0f172a2e}.share-modal__actions{justify-content:center;margin-top:1rem;display:flex}.share-modal__download{background:var(--accent,#d06b4c);color:#fff;border-radius:6px;justify-content:center;align-items:center;padding:.62rem 1rem;font-size:.88rem;font-weight:700;text-decoration:none;display:inline-flex}@media (width<=720px){.article-share,.article-share--right{justify-content:flex-start}.article-share__btn{min-height:36px}.share-modal__body{padding:1.4rem 1rem}}
+.ad-slot-mount[data-astro-cid-ygkiugat]{width:100%;margin:1.75rem 0 0;display:block}.ad-slot-mount[data-astro-cid-ygkiugat][hidden]{display:none}.content-tags[data-astro-cid-6jxy6wt6]{flex-wrap:wrap;gap:.5rem;margin-top:1rem;display:flex}.tag-chip[data-astro-cid-6jxy6wt6]{background:var(--surface-2,#f3f4f6);color:var(--text,#1f2937);border:1px solid #0000;border-radius:999px;align-items:baseline;gap:.35rem;padding:.3rem .7rem;font-size:.85rem;text-decoration:none;transition:background .15s,border-color .15s;display:inline-flex}.tag-chip[data-astro-cid-6jxy6wt6]:hover{background:var(--surface-3,#e5e7eb);border-color:var(--accent,#d06b4c)}.tag-chip__val[data-astro-cid-6jxy6wt6]{font-weight:500}
+.glogin-mask{z-index:3000;background:#0f172a80;justify-content:center;align-items:center;padding:16px;display:none;position:fixed;inset:0}.glogin-mask.show{display:flex}.glogin-card{background:#fff;border-radius:14px;width:100%;max-width:380px;padding:28px;position:relative;box-shadow:0 24px 70px #0f172a47}.glogin-card h3{color:#1a2233;margin:0 0 6px;font-size:18px}.glogin-tip{color:#667085;margin:0 0 12px;font-size:13px}.glogin-close{color:#667085;cursor:pointer;background:#fff;border:1px solid #e4e7ec;border-radius:50%;width:30px;height:30px;font-size:18px;line-height:1;position:absolute;top:12px;right:12px}.glogin-close:hover{color:#1a2233;border-color:#cfd6e0}.glogin-card input{box-sizing:border-box;border:1px solid #e4e7ec;border-radius:8px;outline:none;width:100%;margin:8px 0;padding:11px 12px;font-size:15px;transition:border-color .15s}.glogin-card input:focus{border-color:#2563eb}.glogin-row{gap:8px;display:flex}.glogin-row input{flex:1}.glogin-codebtn{color:#2563eb;cursor:pointer;white-space:nowrap;background:#fff;border:1px solid #2563eb;border-radius:8px;padding:0 14px;font-size:14px}.glogin-codebtn:disabled{color:#999;cursor:not-allowed;border-color:#ddd}.glogin-submit{color:#fff;cursor:pointer;background:#2563eb;border:none;border-radius:8px;width:100%;margin-top:12px;padding:12px 0;font-size:15px;font-weight:600}.glogin-submit:hover{background:#1d4ed8}.glogin-divider{color:#98a2b3;align-items:center;gap:10px;margin:16px 0 10px;font-size:12px;display:flex}.glogin-divider:before,.glogin-divider:after{content:"";background:#e4e7ec;flex:1;height:1px}.glogin-oauth{gap:8px;display:flex}.glogin-oauth-btn{color:#1a2233;cursor:pointer;background:#fff;border:1px solid #e4e7ec;border-radius:8px;flex:1;justify-content:center;align-items:center;gap:6px;padding:9px 0;font-size:13.5px;transition:border-color .15s,background .15s;display:flex}.glogin-oauth-btn:hover{background:#f9fafb;border-color:#cfd6e0}.glogin-oauth-btn.glogin-oauth-off{opacity:.45;cursor:not-allowed;filter:grayscale()}.glogin-oauth-btn.glogin-oauth-off:after{content:attr(data-off-label, "暂未开放");color:#b54708;margin-top:1px;font-size:10px;display:block}.glogin-toast{z-index:3100;color:#fff;opacity:0;pointer-events:none;background:#1a1a1a;border-radius:8px;padding:10px 20px;font-size:14px;transition:opacity .2s;position:fixed;bottom:32px;left:50%;transform:translate(-50%)}.glogin-toast.show{opacity:.92}
+.sidebar__toggle[data-astro-cid-fah7qfcj]{font:inherit;color:var(--accent,#d06b4c);border:1px solid var(--border,#e5e7eb);cursor:pointer;background:0 0;border-radius:6px;padding:.25rem .6rem;font-size:.78rem;font-weight:600;transition:background .15s,border-color .15s}.sidebar__toggle[data-astro-cid-fah7qfcj]:hover{background:var(--surface-2,#f9fafb);border-color:var(--accent,#d06b4c)}
+</style><link rel="stylesheet" href="/ai/_astro/_slug_.-jOWA5pS.css"></head> <body data-astro-cid-z4jru4n3>  <div class="shell" data-astro-cid-z4jru4n3> <header class="site-header"> <div class="site-header__inner"> <a class="brand" href="/ai/" aria-label="觉醒AI知识库 首页"> <img class="brand__logo" src="/ai/logo.png" alt="觉醒AI知识库" width="160" height="30"> </a> <form class="search-box" id="topbar-search-form"> <input id="topbar-search-input" name="q" type="search" placeholder="搜索关键词、标签、标题"> <button type="submit">搜索</button> </form> <script>
+      (function() {
+        var f = document.getElementById('topbar-search-form');
+        var i = document.getElementById('topbar-search-input');
+        if (!f || !i) return;
+        f.addEventListener('submit', function(e) {
+          e.preventDefault();
+          var q = (i.value || '').trim();
+          var baseEl = document.querySelector('meta[name="base"]');
+          var base = baseEl ? baseEl.content : '/ai';
+          var url = base + '/search/' + (q ? '?q=' + encodeURIComponent(q) : '');
+          window.location.href = url;
+        });
+      })();
+    </script><nav class="header-actions" aria-label="快捷入口"> <a class="text-link" href="https://www.jxxy.net/" target="_blank" rel="noopener noreferrer">觉醒学院</a> <a class="text-link" href="/ai/tags/">全部标签</a> <a class="text-link" href="/ai/sitemap/">网站地图</a> <a class="text-link" href="/ai/about/">关于我们</a> <a class="text-link" href="https://www.jxxy.net/topics/ai/training" target="_blank" rel="noopener noreferrer">AI服务</a> </nav> </div> <nav class="top-tabs" aria-label="顶部浏览入口"> <div class="top-tabs__inner"> <a class="top-tab" href="/ai/">首页</a><a class="top-tab" href="/ai/categories/ai-beginner/">新手入门</a><a class="top-tab" href="/ai/prompts/">提示词</a><a class="top-tab" href="/ai/categories/ai-tools-models/">工具模型</a><a class="top-tab" href="/ai/industries/">行业方案</a><a class="top-tab" href="/ai/business-scenes/">业务场景</a><a class="top-tab" href="/ai/paths/workbuddy-basics/">WorkBuddy入门</a><a class="top-tab" href="/ai/paths/codex-basics/">Codex入门</a><a class="top-tab" href="/ai/paths/fde/">FDE入门</a><a class="top-tab" href="/ai/categories/ai-tools-models/github-projects/">GitHub项目</a><a class="top-tab" href="/ai/paths/">免费课程</a><a class="top-tab" href="/ai/updates/">今日更新</a><a class="top-tab" href="/ai/sources/">信源广场</a><a class="top-tab" href="/ai/my/favorites/">我的收藏</a><a class="top-tab top-tab--login" id="member-login-tab" href="/ai/my/account/">会员登录</a> </div> </nav> <script type="module">var e=document.querySelector(`.top-tabs__inner`);e&&e.addEventListener(`click`,e=>{let t=e.target.closest(`#member-login-tab`);if(t&&t.getAttribute(`data-logged-in`)!==`1`){e.preventDefault();let n=window.openLogin;typeof n==`function`?n():window.location.href=t.getAttribute(`href`)||`/ai/my/account/`}}),(function(){fetch(`/ai/top-nav.json`).then(e=>e.ok?e.json():null).then(e=>{let t=e&&Array.isArray(e.items)?e.items:null;if(!t||!t.length)return;let n=document.querySelector(`.top-tabs__inner`);if(!n)return;let r=decodeURIComponent(location.pathname);r.endsWith(`/`)||(r+=`/`);let i=r.slice(3)||`/`,a=e=>e.matchPrefix===`/`||e.url===`/`?`/`:e.loginTab?`/my/`:e.matchPrefix||e.url||`/`,o=e=>{let t=a(e);return t===`/`?i===`/`:i===t||i.startsWith(t)},s=Array.from(n.querySelectorAll(`a.top-tab`)).map(e=>({title:(e.textContent||``).trim(),href:e.getAttribute(`href`)||``,login:e.id===`member-login-tab`}));if(s.length===t.length&&t.every((e,t)=>{let n=s[t];return n&&n.title===(e.title||``).trim()&&n.href===`/ai`+(e.url||`/`)&&n.login===!!e.loginTab}))return;let c=t.map(e=>{if(!o(e))return!1;let n=a(e);return!t.some(t=>t!==e&&o(t)&&a(t).length>n.length)}),l=document.createDocumentFragment();t.forEach((e,t)=>{let n=document.createElement(`a`),r=(e.title||``).trim();if(e.loginTab){n.className=`top-tab top-tab--login`+(c[t]?` top-tab--active`:``),n.id=`member-login-tab`;let i=document.getElementById(`member-login-tab`);if(i&&i.getAttribute(`data-logged-in`)===`1`){n.setAttribute(`data-logged-in`,`1`),n.textContent=i.textContent||`我的账户`,n.href=i.getAttribute(`href`)||`/ai`+(e.url||`/my/account/`),l.appendChild(n);return}n.textContent=r,n.href=`/ai`+(e.url||`/my/account/`),l.appendChild(n);return}n.className=`top-tab`+(c[t]?` top-tab--active`:``),c[t]&&n.setAttribute(`aria-current`,`page`),n.textContent=r,n.href=`/ai`+(e.url||`/`),l.appendChild(n)}),n.replaceChildren(l);let u=n.querySelector(`.top-tab--active`);u&&u.scrollIntoView({block:`nearest`,inline:`center`})}).catch(()=>{})})(),requestAnimationFrame(()=>{document.querySelector(`.top-tabs .top-tab--active`)?.scrollIntoView({block:`nearest`,inline:`center`})});</script><div class="glogin-mask" id="gloginMask" role="dialog" aria-modal="true" aria-label="登录觉醒AI知识库"> <div class="glogin-card"> <button class="glogin-close" type="button" data-glogin-close aria-label="关闭">×</button> <h3>登录觉醒AI知识库</h3> <p class="glogin-tip">邮箱验证码登录，新邮箱自动注册</p> <input id="gloginEmail" type="email" placeholder="你的邮箱" autocomplete="email"> <div class="glogin-row"> <input id="gloginCode" type="text" inputmode="numeric" maxlength="6" placeholder="6 位验证码" autocomplete="one-time-code"> <button class="glogin-codebtn" id="gloginSendBtn" type="button">获取验证码</button> </div> <button class="glogin-submit" type="button">登 录</button> <div class="glogin-divider"><span>其他登录方式</span></div> <div class="glogin-oauth" id="gloginOauth"></div> </div> </div> <script>
+  (function () {
+    // 全局登录命名空间：window.openLogin(after) / window.__gloginUser
+    var pendingAfterLogin = null;
+
+    // ===== OAuth 三方登录按钮（微信/QQ/Gmail，按后端配置动态渲染）=====
+    var OAUTH_META = {
+      wechat: { name: "微信", icon: "data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#09bb07" d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.092 10.16 10.16 0 0 0 2.837.403c.276 0 .548-.012.817-.032a4.866 4.866 0 0 1-.204-1.354c0-3.39 3.236-6.142 7.227-6.142.225 0 .447.012.667.027C16.524 5.016 12.972 2.188 8.691 2.188zm5.485 17.629c3.302 0 5.98-2.276 5.98-5.084 0-2.808-2.678-5.085-5.98-5.085-3.302 0-5.98 2.277-5.98 5.085 0 1.088.4 2.097 1.075 2.923a.513.513 0 0 1 .114.5l-.303 1.171c-.038.145-.105.29-.105.437 0 .143.114.259.256.259a.293.293 0 0 0 .147-.041l1.553-.89a.766.766 0 0 1 .633-.073 7.058 7.058 0 0 0 2.61.498zM6.87 8.565c.618 0 1.12-.499 1.12-1.115 0-.615-.502-1.114-1.12-1.114-.619 0-1.12.499-1.12 1.114 0 .616.501 1.115 1.12 1.115zm5.486-1.115c0 .616.501 1.115 1.12 1.115.618 0 1.12-.499 1.12-1.115 0-.615-.502-1.114-1.12-1.114-.619 0-1.12.499-1.12 1.114z"/></svg>') },
+      qq: { name: "QQ", icon: "data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#12b7f5" d="M12 2C7.58 2 4 5.13 4 9.5c0 1.44.45 2.77 1.24 3.9-.3.83-.8 2.31-.97 3.27-.21 1.2.16 1.38.9.99.55-.29 1.83-.92 2.6-1.31.98.36 2.07.57 3.23.57h.4c-.08.36-.12.73-.12 1.11 0 2.3 1.79 4.16 4 4.16s4-1.86 4-4.16c0-.61-.13-1.19-.36-1.71.35-.17.68-.35.99-.55.63-.42.95-.88.66-1.16-.26-.26-.98-.4-1.68-.38-.3.01-.63.05-.97.11.5-.98.78-2.08.78-3.24C20.68 5.59 16.42 2 12 2z"/></svg>') },
+      google: { name: "Gmail", icon: "data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.54-.19-2.27H12v4.51h6.47c-.29 1.48-1.14 2.73-2.4 3.58v3h3.86c2.26-2.09 3.56-5.17 3.56-8.82z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.86-3c-1.08.72-2.45 1.16-4.07 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.09C3.26 21.3 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.27 14.29c-.25-.72-.38-1.49-.38-2.29s.14-1.57.38-2.29V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.98 3.09C6.22 6.86 8.87 4.75 12 4.75z"/></svg>') }
+    };
+    function renderOauthButtons() {
+      fetch("/api/auth/providers").then(function (r) { return r.json(); }).then(function (j) {
+        var box = document.getElementById("gloginOauth");
+        if (!box) return;
+        var list = (j && j.providers) || [];
+        box.innerHTML = list.map(function (p) {
+          var m = OAUTH_META[p.key] || {};
+          var off = p.disabled ? ' glogin-oauth-off' : '';
+          var disAttr = p.disabled ? ' disabled title="审核中，即将开放"' : '';
+          var label = p.disabled ? ' data-off-label="审核中"' : '';
+          return '<button type="button" class="glogin-oauth-btn' + off + '"' + disAttr + label + ' data-oauth="' + p.key + '">' +
+            '<img src="' + (m.icon || "") + '" alt="' + p.name + '" width="22" height="22" />' +
+            '<span>' + p.name + '登录</span></button>';
+        }).join("");
+        // Gmail 不做可达性判断：能点到它的用户自然有 VPN（用户决策 2026-09-14）
+      }).catch(function () { /* 网络异常时静默隐藏 */ });
+    }
+    document.addEventListener("click", function (e) {
+      var btn = e.target instanceof Element ? e.target.closest("[data-oauth]") : null;
+      if (!btn || btn.disabled) return;
+      var provider = btn.getAttribute("data-oauth");
+      var back = location.pathname + location.hash;
+      window.location.href = "/api/auth/oauth/" + provider + "/authorize?redirect_to=" + encodeURIComponent("/ai/auth/done/?back=" + encodeURIComponent(back));
+    });
+    renderOauthButtons();
+
+
+    function gToast(msg) {
+      var t = document.querySelector(".glogin-toast");
+      if (!t) {
+        t = document.createElement("div");
+        t.className = "glogin-toast";
+        document.body.appendChild(t);
+      }
+      t.textContent = msg;
+      t.classList.add("show");
+      setTimeout(function () { t.classList.remove("show"); }, 2200);
+    }
+
+    function mask() { return document.getElementById("gloginMask"); }
+
+    window.openLogin = function (after) {
+      pendingAfterLogin = after || null;
+      mask().classList.add("show");
+      var e = document.getElementById("gloginEmail");
+      if (e) e.focus();
+    };
+
+    function closeLogin() { mask().classList.remove("show"); }
+
+    document.addEventListener("click", function (e) {
+      var el = e.target;
+      if (!(el instanceof Element)) return;
+      if (el.id === "gloginMask" || el.closest("[data-glogin-close]")) closeLogin();
+      if (el.id === "gloginSendBtn") doSendCode();
+      if (el.closest(".glogin-submit")) doLogin();
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeLogin();
+    });
+
+    var cdTimer = null;
+    async function doSendCode() {
+      var email = document.getElementById("gloginEmail").value.trim();
+      if (!email) return gToast("请输入邮箱");
+      var btn = document.getElementById("gloginSendBtn");
+      btn.disabled = true;
+      var s = 60;
+      btn.textContent = s + "s";
+      cdTimer = setInterval(function () {
+        s--;
+        btn.textContent = s + "s";
+        if (s <= 0) { clearInterval(cdTimer); btn.disabled = false; btn.textContent = "重新获取"; }
+      }, 1000);
+      try {
+        var r = await fetch("/api/auth/send-code", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: email }) });
+        var j = await r.json().catch(function () { return {}; });
+        if (!r.ok) {
+          gToast(j.error || "发送失败");
+          clearInterval(cdTimer);
+          btn.disabled = false;
+          btn.textContent = "获取验证码";
+        } else {
+          gToast("验证码已发送");
+        }
+      } catch (err) {
+        gToast("发送失败，请稍后重试");
+        clearInterval(cdTimer);
+        btn.disabled = false;
+        btn.textContent = "获取验证码";
+      }
+    }
+
+    async function doLogin() {
+      var email = document.getElementById("gloginEmail").value.trim();
+      var code = document.getElementById("gloginCode").value.trim();
+      if (!email || !code) return gToast("请输入邮箱和验证码");
+      try {
+        var r = await fetch("/api/auth/login", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: email, code: code }) });
+        var j = await r.json().catch(function () { return {}; });
+        if (!r.ok) return gToast(j.error || "登录失败");
+        closeLogin();
+        gToast("登录成功");
+        refreshUser();
+        if (pendingAfterLogin) { var f = pendingAfterLogin; pendingAfterLogin = null; f(); }
+      } catch (err) {
+        gToast("登录失败，请稍后重试");
+      }
+    }
+
+    async function refreshUser() {
+      try {
+        var r = await fetch("/api/auth/me");
+        var j = await r.json();
+        window.__gloginUser = j;
+        // 兼容会员页旧全局：window.__me（my/index、topics、briefing 等页面读取）
+        window.__me = j;
+        // 同步顶部「会员登录」Tab 状态
+        var tab = document.getElementById("member-login-tab");
+        if (tab && j.logged_in) {
+          tab.textContent = "我的账户";
+          tab.setAttribute("data-logged-in", "1");
+        }
+        // 广播事件，收藏按钮等组件监听
+        document.dispatchEvent(new CustomEvent("glogin:user", { detail: j }));
+      } catch (e) { /* 静默 */ }
+    }
+
+    window.__gloginRefreshUser = refreshUser;
+    window.__gloginLogout = async function () {
+      try { await fetch("/api/auth/logout", { method: "POST" }); } catch (e) {}
+      gToast("已退出登录");
+      refreshUser();
+      setTimeout(function () { location.reload(); }, 600);
+    };
+
+    refreshUser();
+  })();
+</script> <script>
+    // 修复：site-header 的 backdrop-filter 会创建 containing block，
+    // 导致内部 position:fixed 的登录弹窗以 header 为基准（压扁在顶部）。
+    // 页面加载后把弹窗 DOM 提升到 body 直属，恢复以视口为定位基准。
+    (function () {
+      var mask = document.getElementById("gloginMask");
+      if (mask && mask.parentElement && mask.parentElement !== document.body) {
+        document.body.appendChild(mask);
+      }
+    })();
+  </script></header>  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"字节跳动技术副总裁洪定坤：AI Coding 的实践与探索","url":"https://www.jxxy.net/ai/articles/ah-10276830/","description":"洪定坤把字节用 AI Coding 一年踩的坑和实验数据摊开讲，尤其‘过度重视代码贡献率’的反思和 Harness 基建的实证，是所有推 AI 编程的团队必看的复盘。"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://www.jxxy.net/ai/"},{"@type":"ListItem","position":2,"name":"AI 工具与模型","item":"https://www.jxxy.net/ai/categories/ai-tools-models/"},{"@type":"ListItem","position":3,"name":"字节跳动技术副总裁洪定坤：AI Coding 的实践与探索","item":"https://www.jxxy.net/ai/articles/ah-10276830/"}]}</script> <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"字节跳动技术副总裁洪定坤：AI Coding 的实践与探索","description":"洪定坤把字节用 AI Coding 一年踩的坑和实验数据摊开讲，尤其‘过度重视代码贡献率’的反思和 Harness 基建的实证，是所有推 AI 编程的团队必看的复盘。","url":"https://www.jxxy.net/ai/articles/ah-10276830/","mainEntityOfPage":"https://www.jxxy.net/ai/articles/ah-10276830/","image":"https://www.jxxy.net/ai/media/about/og-default.jpg","datePublished":"2026-06-24","dateModified":"2026-06-24","publisher":{"@type":"Organization","name":"觉醒AI知识库","url":"https://www.jxxy.net/ai/"}}</script>  <div class="app-frame app-frame--lesson" data-astro-cid-62dzsm7q> <aside class="sidebar" aria-label="左侧目录" data-astro-cid-fah7qfcj> <div class="sidebar__head" data-astro-cid-fah7qfcj> <p class="sidebar__title" data-astro-cid-fah7qfcj>目录</p> <button type="button" id="sidebar-toggle-all" class="sidebar__toggle" aria-expanded="false" data-astro-cid-fah7qfcj>展开全部目录</button> </div> <nav class="sidebar__nav" aria-label="AI 课程目录" data-astro-cid-fah7qfcj> <details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/paths/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>01</span> <span data-astro-cid-fah7qfcj>热门AI产品使用手册</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/claudecode-basics/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>Claude Code入门到精通</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/codex-basics/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>Codex 从入门到精通</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/deepseek-mastery/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>DeepSeek 从入门到精通</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/deepseek-harness/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>DeepSeek Harness 从入门到精通</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/workbuddy-basics/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>WorkBuddy入门到精通</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/openclaw-basics/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>06</span> <span class="lesson-title" data-astro-cid-fah7qfcj>OpenClaw 入门到精通</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/qclaw-practice-20-lessons/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>07</span> <span class="lesson-title" data-astro-cid-fah7qfcj>QClaw入门到精通</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/coze-agent-mastery/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>08</span> <span class="lesson-title" data-astro-cid-fah7qfcj>扣子智能体从入门到精通</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/feishu-base-mastery/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>09</span> <span class="lesson-title" data-astro-cid-fah7qfcj>飞书多维表格入门到精通</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/qoder-deep-research/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>10</span> <span class="lesson-title" data-astro-cid-fah7qfcj>Qoder 从入门到精通</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/trae-work/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>11</span> <span class="lesson-title" data-astro-cid-fah7qfcj>TRAE Work 从入门到精通</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/fde/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>12</span> <span class="lesson-title" data-astro-cid-fah7qfcj>前线部署工程师入门到精通</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/agentic-ai-guide/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>13</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI智能体入门到精通</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/context-engineering/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>14</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI大模型上下文工程入门到精通</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/categories/hot-industry-ai-playbooks/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>02</span> <span data-astro-cid-fah7qfcj>热门行业AI实战手册</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/content-ai-playbook/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>内容创作AI实战手册</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/sales-ai-playbook/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>销售转化AI实战手册</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/private-traffic-ai-playbook/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>私域运营AI实战手册</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/customer-service-ai-playbook/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>客户服务AI实战手册</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/data-ai-playbook/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>数据分析AI实战手册</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/management-ai-playbook/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>06</span> <span class="lesson-title" data-astro-cid-fah7qfcj>企业管理AI实战手册</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/hr-ai-playbook/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>07</span> <span class="lesson-title" data-astro-cid-fah7qfcj>人力资源AI实战手册</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/finance-ai-playbook/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>08</span> <span class="lesson-title" data-astro-cid-fah7qfcj>财务法务AI实战手册</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/manufacturing-ai-playbook/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>09</span> <span class="lesson-title" data-astro-cid-fah7qfcj>制造生产AI实战手册</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/supply-chain-ai-playbook/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>10</span> <span class="lesson-title" data-astro-cid-fah7qfcj>供应链与采购AI实战手册</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/course-ai-playbook/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>11</span> <span class="lesson-title" data-astro-cid-fah7qfcj>课程交付AI实战手册</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/categories/ai-beginner/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>03</span> <span data-astro-cid-fah7qfcj>AI 新手入门</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-beginner/ai-daily/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>普通人AI使用日报</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-beginner/basic-concepts/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI基本概念入门</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-beginner/basic-tools/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI基本工具入门</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-beginner/prompt-basics/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI提示词入门</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-beginner/workflow-basics/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI工作流入门</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-beginner/skills-basics/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>06</span> <span class="lesson-title" data-astro-cid-fah7qfcj>Skills入门</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-beginner/doubao-basics/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>07</span> <span class="lesson-title" data-astro-cid-fah7qfcj>豆包使用入门</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-beginner/ai-image-basics/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>08</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI生成图片入门</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-beginner/ai-video-basics/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>09</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI生成视频入门</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-beginner/ai-ppt-basics/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>10</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI生成PPT入门</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-beginner/ai-digital-human-basics/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>11</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI数字人入门</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/ai-beginner-mastery/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>12</span> <span class="lesson-title" data-astro-cid-fah7qfcj>普通人AI入门到精通手册</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/paths/llm-internals/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>13</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI大模型原理与架构入门到精通</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/categories/ai-tools-models/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>04</span> <span data-astro-cid-fah7qfcj>AI 工具与模型</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-tools-models/chat-tools/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI 聊天工具</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-tools-models/image-tools/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI 图片工具</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-tools-models/video-tools/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI 视频工具</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-tools-models/presentation-tools/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI PPT 工具</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-tools-models/automation-tools/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI 自动化工具</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-tools-models/agent-platforms/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>06</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI Agent 平台</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-tools-models/coding-tools/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>07</span> <span class="lesson-title" data-astro-cid-fah7qfcj>AI 编程工具</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-tools-models/github-projects/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>08</span> <span class="lesson-title" data-astro-cid-fah7qfcj>GitHub项目推荐</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-tools-models/model-selection/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>09</span> <span class="lesson-title" data-astro-cid-fah7qfcj>模型选择指南</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #8b6bb2; --mod-bg: color-mix(in srgb, #8b6bb2 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/prompts/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>05</span> <span data-astro-cid-fah7qfcj>AI 提示词库</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/prompts/text/" style="--mod-color: #8b6bb2; --mod-bg: color-mix(in srgb, #8b6bb2 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>文生文提示词</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/prompts/image/" style="--mod-color: #8b6bb2; --mod-bg: color-mix(in srgb, #8b6bb2 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>文生图片提示词</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/prompts/video/" style="--mod-color: #8b6bb2; --mod-bg: color-mix(in srgb, #8b6bb2 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>文生视频提示词</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/prompts/agent/" style="--mod-color: #8b6bb2; --mod-bg: color-mix(in srgb, #8b6bb2 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>智能体提示词</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #c46a87; --mod-bg: color-mix(in srgb, #c46a87 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/categories/ai-workflows/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>06</span> <span data-astro-cid-fah7qfcj>AI 工作流库</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-workflows/content-workflows/" style="--mod-color: #c46a87; --mod-bg: color-mix(in srgb, #c46a87 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>内容创作工作流</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-workflows/sales-workflows/" style="--mod-color: #c46a87; --mod-bg: color-mix(in srgb, #c46a87 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>销售转化工作流</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-workflows/private-traffic-workflows/" style="--mod-color: #c46a87; --mod-bg: color-mix(in srgb, #c46a87 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>私域运营工作流</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-workflows/management-workflows/" style="--mod-color: #c46a87; --mod-bg: color-mix(in srgb, #c46a87 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>企业管理工作流</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-workflows/manufacturing-workflows/" style="--mod-color: #c46a87; --mod-bg: color-mix(in srgb, #c46a87 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>制造生产工作流</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/categories/ai-content-marketing/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>07</span> <span data-astro-cid-fah7qfcj>AI 内容创作案例</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-content-marketing/xiaohongshu/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>小红书</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-content-marketing/wechat-video/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>视频号</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-content-marketing/wechat-official-account/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>公众号</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-content-marketing/douyin/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>抖音</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-content-marketing/bilibili/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>B站</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-content-marketing/short-video/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>06</span> <span class="lesson-title" data-astro-cid-fah7qfcj>短视频</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-content-marketing/livestream/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>07</span> <span class="lesson-title" data-astro-cid-fah7qfcj>直播</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-content-marketing/geo-content/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>08</span> <span class="lesson-title" data-astro-cid-fah7qfcj>GEO 内容</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-content-marketing/multi-platform-distribution/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>09</span> <span class="lesson-title" data-astro-cid-fah7qfcj>多平台分发</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/categories/ai-sales-conversion/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>08</span> <span data-astro-cid-fah7qfcj>AI 销售转化案例</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-sales-conversion/customer-analysis/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>客户分析</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-sales-conversion/sales-follow-up/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>销售跟进</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-sales-conversion/objection-handling/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>异议处理</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-sales-conversion/closing-script/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>成交话术</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-sales-conversion/customer-segmentation/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>客户分层</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-sales-conversion/quotation-plan/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>06</span> <span class="lesson-title" data-astro-cid-fah7qfcj>报价方案</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-sales-conversion/real-estate-visit/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>07</span> <span class="lesson-title" data-astro-cid-fah7qfcj>房产带看</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-sales-conversion/key-account-sales/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>08</span> <span class="lesson-title" data-astro-cid-fah7qfcj>大客户销售</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-sales-conversion/repurchase-activation/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>09</span> <span class="lesson-title" data-astro-cid-fah7qfcj>复购激活</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-sales-conversion/sales-review/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>10</span> <span class="lesson-title" data-astro-cid-fah7qfcj>销售复盘</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/categories/ai-private-traffic/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>09</span> <span data-astro-cid-fah7qfcj>AI 私域运营案例</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-private-traffic/moments/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>朋友圈</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-private-traffic/community-operations/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>社群运营</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-private-traffic/private-chat-conversion/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>私聊转化</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-private-traffic/wecom/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>企业微信</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-private-traffic/private-traffic-sop/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>私域 SOP</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-private-traffic/customer-tags/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>06</span> <span class="lesson-title" data-astro-cid-fah7qfcj>客户标签</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-private-traffic/private-livestream/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>07</span> <span class="lesson-title" data-astro-cid-fah7qfcj>私域直播</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-private-traffic/private-repurchase/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>08</span> <span class="lesson-title" data-astro-cid-fah7qfcj>复购激活</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/categories/ai-customer-service/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>10</span> <span data-astro-cid-fah7qfcj>AI 客户服务案例</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-customer-service/support-replies/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>客服回复</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-customer-service/ticket-processing/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>工单处理</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-customer-service/complaint-analysis/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>投诉分析</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-customer-service/after-sales-follow-up/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>售后跟进</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-customer-service/customer-callback/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>用户回访</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-customer-service/faq-knowledge-base/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>06</span> <span class="lesson-title" data-astro-cid-fah7qfcj>FAQ 知识库</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-customer-service/service-quality-check/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>07</span> <span class="lesson-title" data-astro-cid-fah7qfcj>服务质检</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/categories/ai-data-analysis/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>11</span> <span data-astro-cid-fah7qfcj>AI 数据分析案例</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-data-analysis/spreadsheet-analysis/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>表格分析</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-data-analysis/data-cleaning/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>数据清洗</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-data-analysis/business-dashboard/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>经营报表</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-data-analysis/customer-value-analysis/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>客户价值分析</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-data-analysis/channel-performance-analysis/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>渠道效果分析</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-data-analysis/decision-recommendation/" style="--mod-color: #b78a3d; --mod-bg: color-mix(in srgb, #b78a3d 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>06</span> <span class="lesson-title" data-astro-cid-fah7qfcj>决策建议</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/categories/ai-business-management/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>12</span> <span data-astro-cid-fah7qfcj>AI 企业管理案例</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-business-management/meeting-notes/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>会议纪要</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-business-management/work-report/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>工作汇报</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-business-management/project-management/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>项目管理</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-business-management/business-review/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>经营复盘</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-business-management/knowledge-base/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>知识库</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-business-management/policy-documents/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>06</span> <span class="lesson-title" data-astro-cid-fah7qfcj>制度文档</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-business-management/okr-management/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>07</span> <span class="lesson-title" data-astro-cid-fah7qfcj>OKR 管理</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-business-management/decision-support/" style="--mod-color: #4f8a8b; --mod-bg: color-mix(in srgb, #4f8a8b 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>08</span> <span class="lesson-title" data-astro-cid-fah7qfcj>决策辅助</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #8b6bb2; --mod-bg: color-mix(in srgb, #8b6bb2 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/categories/ai-human-resources/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>13</span> <span data-astro-cid-fah7qfcj>AI 人力资源案例</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-human-resources/job-description/" style="--mod-color: #8b6bb2; --mod-bg: color-mix(in srgb, #8b6bb2 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>招聘 JD</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-human-resources/resume-screening/" style="--mod-color: #8b6bb2; --mod-bg: color-mix(in srgb, #8b6bb2 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>简历筛选</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-human-resources/interview-question-bank/" style="--mod-color: #8b6bb2; --mod-bg: color-mix(in srgb, #8b6bb2 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>面试题库</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-human-resources/onboarding-training/" style="--mod-color: #8b6bb2; --mod-bg: color-mix(in srgb, #8b6bb2 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>入职培训</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-human-resources/employee-training/" style="--mod-color: #8b6bb2; --mod-bg: color-mix(in srgb, #8b6bb2 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>员工培训</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-human-resources/performance-review/" style="--mod-color: #8b6bb2; --mod-bg: color-mix(in srgb, #8b6bb2 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>06</span> <span class="lesson-title" data-astro-cid-fah7qfcj>绩效复盘</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-human-resources/organization-diagnosis/" style="--mod-color: #8b6bb2; --mod-bg: color-mix(in srgb, #8b6bb2 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>07</span> <span class="lesson-title" data-astro-cid-fah7qfcj>组织诊断</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-human-resources/employee-qa/" style="--mod-color: #8b6bb2; --mod-bg: color-mix(in srgb, #8b6bb2 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>08</span> <span class="lesson-title" data-astro-cid-fah7qfcj>员工问答</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #c46a87; --mod-bg: color-mix(in srgb, #c46a87 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/categories/ai-finance-legal/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>14</span> <span data-astro-cid-fah7qfcj>AI 财务法务案例</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-finance-legal/contract-review/" style="--mod-color: #c46a87; --mod-bg: color-mix(in srgb, #c46a87 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>合同审核</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-finance-legal/financial-analysis/" style="--mod-color: #c46a87; --mod-bg: color-mix(in srgb, #c46a87 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>财务分析</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-finance-legal/expense-review/" style="--mod-color: #c46a87; --mod-bg: color-mix(in srgb, #c46a87 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>报销审核</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-finance-legal/accounts-receivable-follow-up/" style="--mod-color: #c46a87; --mod-bg: color-mix(in srgb, #c46a87 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>应收跟进</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-finance-legal/compliance-check/" style="--mod-color: #c46a87; --mod-bg: color-mix(in srgb, #c46a87 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>合规检查</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-finance-legal/risk-warning/" style="--mod-color: #c46a87; --mod-bg: color-mix(in srgb, #c46a87 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>06</span> <span class="lesson-title" data-astro-cid-fah7qfcj>风险提示</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-finance-legal/audit-materials-organization/" style="--mod-color: #c46a87; --mod-bg: color-mix(in srgb, #c46a87 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>07</span> <span class="lesson-title" data-astro-cid-fah7qfcj>审计资料整理</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/categories/ai-manufacturing/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>15</span> <span data-astro-cid-fah7qfcj>AI 制造生产案例</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-manufacturing/production-planning/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>生产计划</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-manufacturing/production-scheduling/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>排产方案</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-manufacturing/production-daily-report/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>生产日报</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-manufacturing/process-documents/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>工艺文件</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-manufacturing/work-instructions/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>作业指导书</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-manufacturing/sop-standardization/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>06</span> <span class="lesson-title" data-astro-cid-fah7qfcj>SOP 标准化</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-manufacturing/quality-inspection/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>07</span> <span class="lesson-title" data-astro-cid-fah7qfcj>质量检测</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-manufacturing/equipment-maintenance/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>08</span> <span class="lesson-title" data-astro-cid-fah7qfcj>设备维护</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-manufacturing/inspection-report/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>09</span> <span class="lesson-title" data-astro-cid-fah7qfcj>巡检报告</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-manufacturing/safety-training/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>10</span> <span class="lesson-title" data-astro-cid-fah7qfcj>安全培训</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-manufacturing/supply-chain-collaboration/" style="--mod-color: #5f8b68; --mod-bg: color-mix(in srgb, #5f8b68 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>11</span> <span class="lesson-title" data-astro-cid-fah7qfcj>供应链协同</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/categories/ai-supply-chain/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>16</span> <span data-astro-cid-fah7qfcj>AI 供应链与采购案例</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-supply-chain/purchase-demand-analysis/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>采购需求分析</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-supply-chain/supplier-evaluation/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>供应商评估</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-supply-chain/material-shortage-warning/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>物料缺口预警</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-supply-chain/inventory-turnover-analysis/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>库存周转分析</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-supply-chain/delivery-risk-detection/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>交期风险识别</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-supply-chain/purchase-negotiation-script/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>06</span> <span class="lesson-title" data-astro-cid-fah7qfcj>采购谈判话术</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-supply-chain/supply-chain-incident-review/" style="--mod-color: #c07845; --mod-bg: color-mix(in srgb, #c07845 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>07</span> <span class="lesson-title" data-astro-cid-fah7qfcj>供应链异常复盘</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/categories/ai-course-delivery/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>17</span> <span data-astro-cid-fah7qfcj>AI 课程与交付案例</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-course-delivery/course-development/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>课程开发</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-course-delivery/slide-generation/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>课件生成</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-course-delivery/course-script/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>课程脚本</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-course-delivery/student-diagnosis/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>学员诊断</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-course-delivery/coaching-plan/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>陪跑计划</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-course-delivery/bootcamp-sop/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>06</span> <span class="lesson-title" data-astro-cid-fah7qfcj>训练营 SOP</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-course-delivery/assignment-design/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>07</span> <span class="lesson-title" data-astro-cid-fah7qfcj>作业设计</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-course-delivery/delivery-review/" style="--mod-color: #d06b4c; --mod-bg: color-mix(in srgb, #d06b4c 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>08</span> <span class="lesson-title" data-astro-cid-fah7qfcj>交付复盘</span> </a> </li> </ul> </details><details class="nav-group mod-group" data-sidebar-group data-astro-cid-fah7qfcj> <summary class="mod-head" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="mod-bar" aria-hidden="true" data-astro-cid-fah7qfcj></span> <a class="mod-name" href="/ai/categories/ai-industry-solutions/" data-astro-cid-fah7qfcj> <span class="mod-index" data-astro-cid-fah7qfcj>18</span> <span data-astro-cid-fah7qfcj>AI 行业解决方案案例</span> </a> <span class="mod-arrow" aria-hidden="true" data-astro-cid-fah7qfcj>›</span> </summary> <ul class="mod-lessons" data-astro-cid-fah7qfcj> <li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-industry-solutions/manufacturing/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>01</span> <span class="lesson-title" data-astro-cid-fah7qfcj>制造业</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-industry-solutions/real-estate-construction/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>02</span> <span class="lesson-title" data-astro-cid-fah7qfcj>房地产与建筑</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-industry-solutions/education-knowledge/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>03</span> <span class="lesson-title" data-astro-cid-fah7qfcj>教育与知识服务</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-industry-solutions/retail-consumer/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>04</span> <span class="lesson-title" data-astro-cid-fah7qfcj>零售与电商</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-industry-solutions/business-services/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>05</span> <span class="lesson-title" data-astro-cid-fah7qfcj>专业与商务服务</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-industry-solutions/finance-insurance/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>06</span> <span class="lesson-title" data-astro-cid-fah7qfcj>金融与保险</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-industry-solutions/healthcare/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>07</span> <span class="lesson-title" data-astro-cid-fah7qfcj>医疗与健康</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-industry-solutions/logistics-supply-chain/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>08</span> <span class="lesson-title" data-astro-cid-fah7qfcj>物流与交通运输</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-industry-solutions/foreign-trade-cross-border/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>09</span> <span class="lesson-title" data-astro-cid-fah7qfcj>外贸与跨境</span> </a> </li><li data-astro-cid-fah7qfcj> <a class="lesson-link" href="/ai/categories/ai-industry-solutions/other-industries/" style="--mod-color: #6f8d5f; --mod-bg: color-mix(in srgb, #6f8d5f 12%, transparent);" data-astro-cid-fah7qfcj> <span class="lesson-num" data-astro-cid-fah7qfcj>10</span> <span class="lesson-title" data-astro-cid-fah7qfcj>其他行业</span> </a> </li> </ul> </details> </nav> </aside>  <script>
+  (function() {
+    function ready(fn) {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', fn);
+      } else {
+        fn();
+      }
+    }
+    ready(function() {
+      var btn = document.getElementById('sidebar-toggle-all');
+      if (!btn) return;
+      var groups = document.querySelectorAll('details[data-sidebar-group]');
+      function syncBtn() {
+        var allOpen = true;
+        groups.forEach(function(g) { if (!g.hasAttribute('open')) allOpen = false; });
+        btn.textContent = allOpen ? '收起全部目录' : '展开全部目录';
+        btn.setAttribute('aria-expanded', allOpen ? 'true' : 'false');
+      }
+      btn.addEventListener('click', function() {
+        var allOpen = true;
+        groups.forEach(function(g) { if (!g.hasAttribute('open')) allOpen = false; });
+        groups.forEach(function(g) {
+          if (allOpen) {
+            g.removeAttribute('open');
+          } else {
+            g.setAttribute('open', '');
+          }
+        });
+        syncBtn();
+      });
+      // 用户手动切换某个 details 时，同步按钮文案
+      groups.forEach(function(g) {
+        g.addEventListener('toggle', syncBtn);
+      });
+      syncBtn();
+    });
+  })();
+</script> <main class="main" data-astro-cid-62dzsm7q> <nav class="breadcrumbs" aria-label="面包屑" data-astro-cid-62dzsm7q> <a href="/ai/" data-astro-cid-62dzsm7q>首页</a> <span data-astro-cid-62dzsm7q>/</span> <a href="/ai/categories/ai-tools-models/" data-astro-cid-62dzsm7q>AI 工具与模型</a> <span data-astro-cid-62dzsm7q>/</span> <span data-astro-cid-62dzsm7q>字节跳动技术副总裁洪定坤：AI Coding 的实践与探索</span> </nav> <article class="content-page" data-content-detail data-astro-cid-62dzsm7q> <header class="content-page__header" data-astro-cid-62dzsm7q> <h1 data-astro-cid-62dzsm7q>字节跳动技术副总裁洪定坤：AI Coding 的实践与探索</h1> <p class="content-page__lead" data-astro-cid-62dzsm7q>洪定坤把字节用 AI Coding 一年踩的坑和实验数据摊开讲，尤其‘过度重视代码贡献率’的反思和 Harness 基建的实证，是所有推 AI 编程的团队必看的复盘。</p> <p class="content-page__date" data-astro-cid-62dzsm7q>更新时间：<time datetime="2026-06-24" data-astro-cid-62dzsm7q>2026-06-24</time></p> <div class="content-tags-row" data-astro-cid-62dzsm7q> <div class="content-tags" aria-label="标签" data-astro-cid-6jxy6wt6> <a class="tag-chip" href="/ai/tags/product/~E5~AD~97~E8~8A~82~E8~B7~B3~E5~8A~A8/" data-astro-cid-6jxy6wt6> <span class="tag-chip__val" data-astro-cid-6jxy6wt6>字节跳动</span> </a><a class="tag-chip" href="/ai/tags/tech/~E6~99~BA~E8~83~BD~E4~BD~93/" data-astro-cid-6jxy6wt6> <span class="tag-chip__val" data-astro-cid-6jxy6wt6>智能体</span> </a><a class="tag-chip" href="/ai/tags/scene/~E8~90~A5~E9~94~80~E8~8E~B7~E5~AE~A2/" data-astro-cid-6jxy6wt6> <span class="tag-chip__val" data-astro-cid-6jxy6wt6>营销获客</span> </a><a class="tag-chip" href="/ai/tags/form/~E8~A7~82~E7~82~B9~E5~88~86~E6~9E~90/" data-astro-cid-6jxy6wt6> <span class="tag-chip__val" data-astro-cid-6jxy6wt6>观点分析</span> </a> </div> <button type="button" class="fav-btn" id="article-fav-btn" aria-label="收藏本文" data-item-id="ah-10276830" data-item-type="article" data-title="字节跳动技术副总裁洪定坤：AI Coding 的实践与探索" data-summary="洪定坤把字节用 AI Coding 一年踩的坑和实验数据摊开讲，尤其‘过度重视代码贡献率’的反思和 Harness 基建的实证，是所有推 AI 编程的团队必看的复盘。" data-page-url="https://www.jxxy.net/ai/articles/ah-10276830/" data-astro-cid-62dzsm7q> <svg class="fav-btn__icon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" data-astro-cid-62dzsm7q> <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="currentColor" data-astro-cid-62dzsm7q></path> </svg> <span class="fav-btn__text" data-astro-cid-62dzsm7q>收藏本文</span> </button> </div> </header> <div class="content-body" id="content-body" data-astro-cid-62dzsm7q>  <h2 id="一句话结论">一句话结论</h2>
+<p>洪定坤把字节用 AI Coding 一年踩的坑和实验数据摊开讲，尤其‘过度重视代码贡献率’的反思和 Harness 基建的实证，是所有推 AI 编程的团队必看的复盘。</p>
+<h2 id="这事是什么">这事是什么</h2>
+<p>字节跳动技术副总裁洪定坤：AI Coding 的实践与探索。来源：<a href="https://mp.weixin.qq.com/s/mdmaAyUIvxE8WT_GEbF2wQ">公众号：火山引擎</a>。</p>
+<h2 id="为什么重要">为什么重要</h2>
+<p>洪定坤把字节用 AI Coding 一年踩的坑和实验数据摊开讲，尤其‘过度重视代码贡献率’的反思和 Harness 基建的实证，是所有推 AI 编程的团队必看的复盘。</p>
+<h2 id="对谁有用怎么用">对谁有用、怎么用</h2>
+<p>适合关注 观点深度 动态的开发者、产品经理和行业分析师。</p>
+<h2 id="边界与风险">边界与风险</h2>
+<p>参考原文：<a href="https://mp.weixin.qq.com/s/mdmaAyUIvxE8WT_GEbF2wQ">https://mp.weixin.qq.com/s/mdmaAyUIvxE8WT_GEbF2wQ</a></p>
+<h2 id="原文信息">原文信息</h2>
+<ul>
+<li>来源：公众号：火山引擎</li>
+<li>类型：观点深度</li>
+<li>原文：<a href="https://mp.weixin.qq.com/s/mdmaAyUIvxE8WT_GEbF2wQ">https://mp.weixin.qq.com/s/mdmaAyUIvxE8WT_GEbF2wQ</a></li>
+</ul> <div style="display:none" aria-hidden="true"><button type="button" class="copy-btn" data-copy-btn aria-label="复制提示词"> <svg class="copy-btn__icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"> <path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 16H8V7h11v14z" fill="currentColor"></path> </svg> <span class="copy-btn__label">复制提示词</span> <span class="copy-btn__done" aria-hidden="true">已复制</span> </button> <script>(function(){
+  // 纯 JS 实现，避免 TypeScript 语法在浏览器报错
+  (function () {
+    function copyText(text, btn) {
+      var done = function () {
+        btn.classList.add("is-done");
+        setTimeout(function () { btn.classList.remove("is-done"); }, 1800);
+      };
+      var fallback = function () {
+        var ta = document.createElement("textarea");
+        ta.value = text;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        try { document["exec" + "Command"]("copy"); done(); } catch (e) {}
+        document.body.removeChild(ta);
+      };
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(done).catch(fallback);
+      } else {
+        fallback();
+      }
+    }
+
+    function handleClick(e) {
+      var target = e.target;
+      if (!target || !target.closest) return;
+      var btn = target.closest("[data-copy-btn]");
+      if (!btn) return;
+      e.preventDefault();
+      e.stopPropagation();
+
+      // 1. 优先用 data-copy-text 内联文本
+      var inlineText = btn.getAttribute("data-copy-text");
+      if (inlineText && inlineText.length > 0 && inlineText !== "undefined") {
+        copyText(inlineText, btn);
+        return;
+      }
+
+      // 2. 从 DOM 找复制源
+      // 按钮和 prompt-block 是兄弟元素，所以先找按钮所在的 prompt-layout 容器
+      var scope = btn.closest(".prompt-block") ||
+                  btn.closest(".prompt-detail") ||
+                  btn.closest(".prompt-layout") ||
+                  btn.closest(".prompt-copy-bar")?.previousElementSibling ||
+                  btn.parentElement;
+
+      // 回退：页面里任意 .prompt-block[data-copy-source]
+      if (!scope || (!scope.querySelector("pre") && !scope.matches("[data-copy-source]"))) {
+        scope = document.querySelector(".prompt-block[data-copy-source]") ||
+                document.querySelector(".prompt-block");
+      }
+
+      if (!scope) return;
+
+      // 在 scope 内找 pre code / pre / data-copy-source
+      var target_el =
+        scope.querySelector("pre code") ||
+        scope.querySelector("pre") ||
+        scope.querySelector("[data-copy-source] pre code") ||
+        scope.querySelector("[data-copy-source] pre") ||
+        (scope.matches && scope.matches("[data-copy-source]") ? scope : null);
+
+      var selector = btn.getAttribute("data-copy-selector");
+      if (!target_el && selector) {
+        target_el = document.querySelector(selector);
+      }
+
+      if (!target_el) return;
+      var text = (target_el.innerText || target_el.textContent || "").trim();
+      if (text) copyText(text, btn);
+    }
+
+    // 等待 DOM ready，避免脚本在 button 之前执行导致监听丢失
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("click", handleClick);
+      });
+    } else {
+      document.addEventListener("click", handleClick);
+    }
+  })();
+})();</script></div>   <div id="unified-source-info" hidden data-astro-cid-62dzsm7q> <h2>原文信息</h2>
+<ul class="src-info">
+<li><span class="src-info__key">发布时间</span><span class="src-info__val">未知</span></li>
+<li><span class="src-info__key">原文链接</span><span class="src-info__val"><a href="https://mp.weixin.qq.com/s/mdmaAyUIvxE8WT_GEbF2wQ" target="_blank" rel="noopener noreferrer">mp.weixin.qq.com/s/mdmaAyUIvxE8WT_GEbF2wQ</a></span></li>
+</ul> </div>   </div>  <div class="ad-slot-mount" data-ad-slot="article-bottom" hidden data-astro-cid-ygkiugat></div> <script>
+  (function () {
+    var SLOT = "article-bottom";
+    var els = document.querySelectorAll('[data-ad-slot="' + SLOT + '"]');
+    if (!els.length) return;
+    // 缓存策略：nginx 已对 /ai/ad-slots.json 发 no-cache 头，浏览器每次带 ETag 协商，
+    // 内容未变时 304 极快，内容变了即拿新版——无需 cache-bust 参数
+    var base = document.querySelector("base") ? "" : "";
+    // 站点部署在 https://www.jxxy.net/ai/ 下；用绝对路径适配任意深度的详情页
+    var url = "/ai/ad-slots.json";
+    fetch(url)
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (cfg) {
+        if (!cfg || !cfg[SLOT] || !cfg[SLOT].html) return;
+        var html = cfg[SLOT].html;
+        // 注入到当前页所有同 ID 广告位（详情页通常只有 1 个）
+        els.forEach(function (el) {
+          el.innerHTML = html;
+          el.hidden = false;
+        });
+      })
+      .catch(function () { /* 静默降级：广告位保持隐藏，不影响页面 */ });
+  })();
+</script> <div class="content-share-row" data-astro-cid-62dzsm7q>  <div class="article-share article-share--left" data-article-share data-share-title="字节跳动技术副总裁洪定坤：AI Coding 的实践与探索" data-share-description="洪定坤把字节用 AI Coding 一年踩的坑和实验数据摊开讲，尤其‘过度重视代码贡献率’的反思和 Harness 基建的实证，是所有推 AI 编程的团队必看的复盘。" data-share-url="https://www.jxxy.net/ai/articles/ah-10276830/"> <button type="button" class="article-share__btn article-share__btn--primary" data-share-poster>
+生成海报
+</button> <button type="button" class="article-share__btn" data-share-copy>
+复制链接
+</button> <a class="article-share__btn" href="https://www.jxxy.net/topics/ai/training" target="_blank" rel="noopener noreferrer">
+AI服务
+</a> <a class="article-share__btn" href="https://www.jxxy.net/ai/about/" target="_blank" rel="noopener noreferrer">
+联系我们
+</a> <button type="button" class="fav-btn article-share__fav" data-share-fav aria-label="收藏本文"> <svg class="fav-btn__icon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"> <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="currentColor"></path> </svg> <span class="fav-btn__text">收藏本文</span> </button> <a class="article-share__btn article-share__btn--case" href="/ai/case/" target="_blank" rel="noopener">
+客户案例
+</a> </div><script type="module" src="/ai/_astro/ArticleShare.astro_astro_type_script_index_0_lang.BIVTXqa6.js"></script> </div> <nav class="lesson-pager" aria-label="上一篇下一篇"> <a class="pager-card pager-card--prev" href="/ai/articles/ah-07db01c2/"> <span>上一篇</span> <strong>OpenAI 与 Broadcom 发布面向 LLM 推理的定制芯片 Jalapeño</strong> </a> <a class="pager-card pager-card--home" href="/ai/categories/ai-tools-models/"> <span>目录</span> <strong>AI 工具与模型</strong> </a> <a class="pager-card pager-card--next" href="/ai/articles/ah-2cd4db1f/"> <span>下一篇</span> <strong>Grok Build 推出 /goal 模式，支持长时间自主任务执行</strong> </a> </nav> </article> </main> <aside class="lesson-tools" aria-label="页面工具" data-astro-cid-62dzsm7q>  <nav class="tool-card tool-nav tool-nav--compact" id="toc-nav" data-astro-cid-62dzsm7q> <p class="tool-card__label" data-astro-cid-62dzsm7q>本文目录</p>  </nav>  <div class="tool-card related-card" data-astro-cid-62dzsm7q> <p class="tool-card__label" data-astro-cid-62dzsm7q>相关内容</p> <div class="related-grid" data-astro-cid-62dzsm7q> <a class="related-card-item" href="/ai/articles/YannisHan77-2090442605775540258/" data-astro-cid-62dzsm7q> <span class="related-card-item__badge" data-astro-cid-62dzsm7q>文章</span> <span class="related-card-item__title" data-astro-cid-62dzsm7q>我宁可错过一个时代，也不愿夜不能寐——写给存储的遗书</span> <span class="related-card-item__summary" data-astro-cid-62dzsm7q>这可能是一篇不太合时宜的文章。 因为当所有人都在讨论 AI、HBM、NAND 涨价、国产替代、存储周期反转的时候，我反而越来越想问自己一个简单的问题： 如果一个资产让我每天都要盯盘、计算库存、猜价格、判断周期，那么即使它真的处在一个伟大的产业时代里，我是否还需要参与？ 我的答案是：我宁愿错过一个时代</span> </a><a class="related-card-item" href="/ai/articles/better_christal-2095868663249449258/" data-astro-cid-62dzsm7q> <span class="related-card-item__badge" data-astro-cid-62dzsm7q>文章</span> <span class="related-card-item__title" data-astro-cid-62dzsm7q>一个人用 AI 跑通内容获客、小样成交和月度维护</span> <span class="related-card-item__summary" data-astro-cid-62dzsm7q>AI 副业最容易卡住的时刻，是有人来问“你能帮我做什么”，自己却开始介绍模型、插件和工作流。工具没有错，问题在于客户听不懂第一单会拿到什么。 普通人更适合先跑一条小闭环：内容获客 小样成交 月度维护。别急着做“大而全的 AI 自动化”，先把一件小事交付到能被客户反复打开。 先定义一种人、一件事、一份</span> </a><a class="related-card-item" href="/ai/articles/kongge_space-2093910933017964594/" data-astro-cid-62dzsm7q> <span class="related-card-item__badge" data-astro-cid-62dzsm7q>文章</span> <span class="related-card-item__title" data-astro-cid-62dzsm7q>做了 10 几款产品，拆解下我的赚钱方法</span> <span class="related-card-item__summary" data-astro-cid-62dzsm7q>2024 年，我认识了现在的开发搭档。 他负责后端，我负责设计和前端。就这样我俩做了很多款产品。 上面图片是去年做的，再加上我今年自己做的飞书排版、onepod、cowrite、SkillDeck ... 10 款都不止了。 这些产品里有些营收非常不错。时不时有人加我订阅会员，每次有人付费，跟捡了钱</span> </a><a class="related-card-item" href="/ai/articles/wangray-2083845474805772561/" data-astro-cid-62dzsm7q> <span class="related-card-item__badge" data-astro-cid-62dzsm7q>文章</span> <span class="related-card-item__title" data-astro-cid-62dzsm7q>一人公司的非共识机会，藏在“还没有按钮”的那一步</span> <span class="related-card-item__summary" data-astro-cid-62dzsm7q>Alexandr Wang 19 岁用 Y Combinator 的 batch 启动了 Scale AI。但他最初做的不是数据生意，而是一个帮人获得医疗服务的 AI Agent。 做了一两个月，YC 的合伙人 Jared Friedman 把他拉到一边：这个方向现在走不通。 Wang 没有继续说服</span> </a><a class="related-card-item" href="/ai/articles/khazix0918-ai-org-7-lessons/" data-astro-cid-62dzsm7q> <span class="related-card-item__badge" data-astro-cid-62dzsm7q>文章</span> <span class="related-card-item__title" data-astro-cid-62dzsm7q>创业2年半后，想跟你分享关于AI组织的这7点心得。</span> <span class="related-card-item__summary" data-astro-cid-62dzsm7q>开公司两年半、AI 渗透率 100% 却越用越传统：薄中台厚一线、数据应存尽存、Agent 吃掉重复工作后真诚交流反而更贵。省下的时间给了谁、管理者暴露的无能、新人如何在 80 分答案时代长出判断力，七点心得讲透 AI 组织变革最后考验的是公司怎么对待人。</span> </a><a class="related-card-item" href="/ai/articles/hiiinternet-cursor-hiring-1100/" data-astro-cid-62dzsm7q> <span class="related-card-item__badge" data-astro-cid-62dzsm7q>文章</span> <span class="related-card-item__title" data-astro-cid-62dzsm7q>想极速做到 600 亿美元需要在 Cursor 招什么样的人？Cursor 1100 人招聘全拆解</span> <span class="related-card-item__summary" data-astro-cid-62dzsm7q>从 4 名 MIT 创始人到被 SpaceX 600 亿美元收购时的 1100 人：按年份拆解 Cursor 招聘史——2023 年仅 1 名工程师，2024 年 15 人，2025 年超 200 人、GTM 首次与工程持平，2026 年再进 650 人、Rubrik 系 12 人把公司改造成企业销售组织。</span> </a><a class="related-card-item" href="/ai/articles/aiwhisperx-coding-agent-24b-arr/" data-astro-cid-62dzsm7q> <span class="related-card-item__badge" data-astro-cid-62dzsm7q>文章</span> <span class="related-card-item__title" data-astro-cid-62dzsm7q>写在Coding Agent 240亿时刻：大模型进入挤兑阶段</span> <span class="related-card-item__summary" data-astro-cid-62dzsm7q>Claude Code 151 亿、Codex 88 亿年化收入背后：模型层商品化、产品层靠工作流嵌入、渠道层被云厂通吃的三层格局。编程 Agent 是 chatbot 订阅之外第二个被大规模验证的变现场景，前沿模型同时停发意味着什么，以及 TickerTrends 这类支付面板数据该怎么读。</span> </a><a class="related-card-item" href="/ai/articles/samzong-lathe-cli-trust/" data-astro-cid-62dzsm7q> <span class="related-card-item__badge" data-astro-cid-62dzsm7q>文章</span> <span class="related-card-item__title" data-astro-cid-62dzsm7q>CLI 凭什么被信任：我为什么做 Lathe</span> <span class="related-card-item__summary" data-astro-cid-62dzsm7q>Agent 进入真实业务系统后凭什么被信任？Lathe 把声明式 API 规格编译成可检查的 CLI：命令可展开、请求可预演、凭据可确认、规格变了会失效。对人类 CLI 是界面，对 Agent 是协议。能力合同、挣得的自治、系统侧记忆三个机制，让 Agent 每次动手都像一次签名提交。</span> </a> </div> </div> </aside> </div>  <footer class="site-footer" data-astro-cid-z4jru4n3> <p class="site-footer__brand" data-astro-cid-z4jru4n3>
+觉醒AI知识库｜普通人的 AI 使用手册
+<a class="site-footer__sitemap-link" href="/ai/sitemap.xml" data-astro-cid-z4jru4n3>sitemap.xml</a> </p> <p class="site-footer__copyright" data-astro-cid-z4jru4n3>
+Copyright © 2026 广州数智营销科技有限公司 觉醒学院版权所有 粤ICP备2023093176号
+</p> <p class="site-footer__legal" data-astro-cid-z4jru4n3> <a href="/ai/privacy/" data-astro-cid-z4jru4n3>隐私政策</a> <span class="sep" data-astro-cid-z4jru4n3>·</span> <a href="/ai/terms/" data-astro-cid-z4jru4n3>用户协议</a> <span class="sep" data-astro-cid-z4jru4n3>·</span> <a href="/ai/about/" data-astro-cid-z4jru4n3>关于我们</a> </p> </footer> </div>  <div class="glogin-mask" id="gloginMask" role="dialog" aria-modal="true" aria-label="登录觉醒AI知识库"> <div class="glogin-card"> <button class="glogin-close" type="button" data-glogin-close aria-label="关闭">×</button> <h3>登录觉醒AI知识库</h3> <p class="glogin-tip">邮箱验证码登录，新邮箱自动注册</p> <input id="gloginEmail" type="email" placeholder="你的邮箱" autocomplete="email"> <div class="glogin-row"> <input id="gloginCode" type="text" inputmode="numeric" maxlength="6" placeholder="6 位验证码" autocomplete="one-time-code"> <button class="glogin-codebtn" id="gloginSendBtn" type="button">获取验证码</button> </div> <button class="glogin-submit" type="button">登 录</button> <div class="glogin-divider"><span>其他登录方式</span></div> <div class="glogin-oauth" id="gloginOauth"></div> </div> </div> <script>
+  (function () {
+    // 全局登录命名空间：window.openLogin(after) / window.__gloginUser
+    var pendingAfterLogin = null;
+
+    // ===== OAuth 三方登录按钮（微信/QQ/Gmail，按后端配置动态渲染）=====
+    var OAUTH_META = {
+      wechat: { name: "微信", icon: "data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#09bb07" d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.092 10.16 10.16 0 0 0 2.837.403c.276 0 .548-.012.817-.032a4.866 4.866 0 0 1-.204-1.354c0-3.39 3.236-6.142 7.227-6.142.225 0 .447.012.667.027C16.524 5.016 12.972 2.188 8.691 2.188zm5.485 17.629c3.302 0 5.98-2.276 5.98-5.084 0-2.808-2.678-5.085-5.98-5.085-3.302 0-5.98 2.277-5.98 5.085 0 1.088.4 2.097 1.075 2.923a.513.513 0 0 1 .114.5l-.303 1.171c-.038.145-.105.29-.105.437 0 .143.114.259.256.259a.293.293 0 0 0 .147-.041l1.553-.89a.766.766 0 0 1 .633-.073 7.058 7.058 0 0 0 2.61.498zM6.87 8.565c.618 0 1.12-.499 1.12-1.115 0-.615-.502-1.114-1.12-1.114-.619 0-1.12.499-1.12 1.114 0 .616.501 1.115 1.12 1.115zm5.486-1.115c0 .616.501 1.115 1.12 1.115.618 0 1.12-.499 1.12-1.115 0-.615-.502-1.114-1.12-1.114-.619 0-1.12.499-1.12 1.114z"/></svg>') },
+      qq: { name: "QQ", icon: "data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#12b7f5" d="M12 2C7.58 2 4 5.13 4 9.5c0 1.44.45 2.77 1.24 3.9-.3.83-.8 2.31-.97 3.27-.21 1.2.16 1.38.9.99.55-.29 1.83-.92 2.6-1.31.98.36 2.07.57 3.23.57h.4c-.08.36-.12.73-.12 1.11 0 2.3 1.79 4.16 4 4.16s4-1.86 4-4.16c0-.61-.13-1.19-.36-1.71.35-.17.68-.35.99-.55.63-.42.95-.88.66-1.16-.26-.26-.98-.4-1.68-.38-.3.01-.63.05-.97.11.5-.98.78-2.08.78-3.24C20.68 5.59 16.42 2 12 2z"/></svg>') },
+      google: { name: "Gmail", icon: "data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.54-.19-2.27H12v4.51h6.47c-.29 1.48-1.14 2.73-2.4 3.58v3h3.86c2.26-2.09 3.56-5.17 3.56-8.82z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.86-3c-1.08.72-2.45 1.16-4.07 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.09C3.26 21.3 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.27 14.29c-.25-.72-.38-1.49-.38-2.29s.14-1.57.38-2.29V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.98 3.09C6.22 6.86 8.87 4.75 12 4.75z"/></svg>') }
+    };
+    function renderOauthButtons() {
+      fetch("/api/auth/providers").then(function (r) { return r.json(); }).then(function (j) {
+        var box = document.getElementById("gloginOauth");
+        if (!box) return;
+        var list = (j && j.providers) || [];
+        box.innerHTML = list.map(function (p) {
+          var m = OAUTH_META[p.key] || {};
+          var off = p.disabled ? ' glogin-oauth-off' : '';
+          var disAttr = p.disabled ? ' disabled title="审核中，即将开放"' : '';
+          var label = p.disabled ? ' data-off-label="审核中"' : '';
+          return '<button type="button" class="glogin-oauth-btn' + off + '"' + disAttr + label + ' data-oauth="' + p.key + '">' +
+            '<img src="' + (m.icon || "") + '" alt="' + p.name + '" width="22" height="22" />' +
+            '<span>' + p.name + '登录</span></button>';
+        }).join("");
+        // Gmail 不做可达性判断：能点到它的用户自然有 VPN（用户决策 2026-09-14）
+      }).catch(function () { /* 网络异常时静默隐藏 */ });
+    }
+    document.addEventListener("click", function (e) {
+      var btn = e.target instanceof Element ? e.target.closest("[data-oauth]") : null;
+      if (!btn || btn.disabled) return;
+      var provider = btn.getAttribute("data-oauth");
+      var back = location.pathname + location.hash;
+      window.location.href = "/api/auth/oauth/" + provider + "/authorize?redirect_to=" + encodeURIComponent("/ai/auth/done/?back=" + encodeURIComponent(back));
+    });
+    renderOauthButtons();
+
+
+    function gToast(msg) {
+      var t = document.querySelector(".glogin-toast");
+      if (!t) {
+        t = document.createElement("div");
+        t.className = "glogin-toast";
+        document.body.appendChild(t);
+      }
+      t.textContent = msg;
+      t.classList.add("show");
+      setTimeout(function () { t.classList.remove("show"); }, 2200);
+    }
+
+    function mask() { return document.getElementById("gloginMask"); }
+
+    window.openLogin = function (after) {
+      pendingAfterLogin = after || null;
+      mask().classList.add("show");
+      var e = document.getElementById("gloginEmail");
+      if (e) e.focus();
+    };
+
+    function closeLogin() { mask().classList.remove("show"); }
+
+    document.addEventListener("click", function (e) {
+      var el = e.target;
+      if (!(el instanceof Element)) return;
+      if (el.id === "gloginMask" || el.closest("[data-glogin-close]")) closeLogin();
+      if (el.id === "gloginSendBtn") doSendCode();
+      if (el.closest(".glogin-submit")) doLogin();
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeLogin();
+    });
+
+    var cdTimer = null;
+    async function doSendCode() {
+      var email = document.getElementById("gloginEmail").value.trim();
+      if (!email) return gToast("请输入邮箱");
+      var btn = document.getElementById("gloginSendBtn");
+      btn.disabled = true;
+      var s = 60;
+      btn.textContent = s + "s";
+      cdTimer = setInterval(function () {
+        s--;
+        btn.textContent = s + "s";
+        if (s <= 0) { clearInterval(cdTimer); btn.disabled = false; btn.textContent = "重新获取"; }
+      }, 1000);
+      try {
+        var r = await fetch("/api/auth/send-code", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: email }) });
+        var j = await r.json().catch(function () { return {}; });
+        if (!r.ok) {
+          gToast(j.error || "发送失败");
+          clearInterval(cdTimer);
+          btn.disabled = false;
+          btn.textContent = "获取验证码";
+        } else {
+          gToast("验证码已发送");
+        }
+      } catch (err) {
+        gToast("发送失败，请稍后重试");
+        clearInterval(cdTimer);
+        btn.disabled = false;
+        btn.textContent = "获取验证码";
+      }
+    }
+
+    async function doLogin() {
+      var email = document.getElementById("gloginEmail").value.trim();
+      var code = document.getElementById("gloginCode").value.trim();
+      if (!email || !code) return gToast("请输入邮箱和验证码");
+      try {
+        var r = await fetch("/api/auth/login", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: email, code: code }) });
+        var j = await r.json().catch(function () { return {}; });
+        if (!r.ok) return gToast(j.error || "登录失败");
+        closeLogin();
+        gToast("登录成功");
+        refreshUser();
+        if (pendingAfterLogin) { var f = pendingAfterLogin; pendingAfterLogin = null; f(); }
+      } catch (err) {
+        gToast("登录失败，请稍后重试");
+      }
+    }
+
+    async function refreshUser() {
+      try {
+        var r = await fetch("/api/auth/me");
+        var j = await r.json();
+        window.__gloginUser = j;
+        // 兼容会员页旧全局：window.__me（my/index、topics、briefing 等页面读取）
+        window.__me = j;
+        // 同步顶部「会员登录」Tab 状态
+        var tab = document.getElementById("member-login-tab");
+        if (tab && j.logged_in) {
+          tab.textContent = "我的账户";
+          tab.setAttribute("data-logged-in", "1");
+        }
+        // 广播事件，收藏按钮等组件监听
+        document.dispatchEvent(new CustomEvent("glogin:user", { detail: j }));
+      } catch (e) { /* 静默 */ }
+    }
+
+    window.__gloginRefreshUser = refreshUser;
+    window.__gloginLogout = async function () {
+      try { await fetch("/api/auth/logout", { method: "POST" }); } catch (e) {}
+      gToast("已退出登录");
+      refreshUser();
+      setTimeout(function () { location.reload(); }, 600);
+    };
+
+    refreshUser();
+  })();
+</script>  <script src="/ai/member-widgets.js" defer></script></body> </html> <script>
+  // 客户端脚本：统一原文信息替换（2026-09-12）
+  // 正文旧「## 原文信息」段整段删除，把 #unified-source-info 的内容插到原位置
+  (function() {
+    const body = document.getElementById('content-body');
+    const unified = document.getElementById('unified-source-info');
+    if (!body || !unified) return;
+    const heads = body.querySelectorAll('h2');
+    let oldHead = null;
+    for (const h of heads) {
+      if (h.textContent.trim() === '原文信息') { oldHead = h; break; }
+    }
+    if (oldHead) {
+      // 旧段 = h2 + 后续所有兄弟节点（到正文末尾）
+      const parent = oldHead.parentNode;
+      let node = oldHead.nextSibling;
+      const toRemove = [];
+      while (node) { toRemove.push(node); node = node.nextSibling; }
+      toRemove.forEach(n => n.remove());
+      parent.insertBefore(unified, oldHead);
+      oldHead.remove();
+    } else {
+      // 无旧段：追加到正文末尾
+      body.appendChild(unified);
+    }
+    unified.hidden = false;
+  })();
+
+  // 客户端脚本：把「所属专题」回流卡移到「原文信息」h2 上方（找不到则保留在正文末尾）
+  (function() {
+    const mount = document.getElementById('path-reflow-mount');
+    if (!mount || mount.children.length === 0) return;
+    const body = document.getElementById('content-body');
+    if (!body) return;
+    const heads = body.querySelectorAll('h2');
+    let anchor = null;
+    for (const h of heads) {
+      if (h.textContent.trim() === '原文信息') { anchor = h; break; }
+    }
+    // 把每张回流卡单独插入到 anchor 之前（保持多专题时的顺序）
+    while (mount.firstChild) {
+      const card = mount.firstChild;
+      if (anchor) body.insertBefore(card, anchor);
+      else body.appendChild(card);
+    }
+    mount.remove();
+  })();
+
+  // 客户端脚本：扫描正文 h2 生成一级目录（只显示 h2，不显示 h3）
+  (function() {
+    const body = document.getElementById('content-body');
+    const nav = document.getElementById('toc-nav');
+    if (!body || !nav) return;
+    const headings = body.querySelectorAll('h2');
+    if (headings.length === 0) {
+      nav.style.display = 'none';
+      return;
+    }
+    headings.forEach((h, i) => {
+      if (!h.id) h.id = 'heading-' + i;
+    });
+    const frag = document.createDocumentFragment();
+    headings.forEach((h) => {
+      const a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.textContent = h.textContent;
+      a.className = 'toc-top';
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.getElementById(h.id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+      frag.appendChild(a);
+    });
+    nav.appendChild(frag);
+  })();
+
+  // === 收藏按钮（2026-09-12）：红底白字，未登录弹登录 ===
+  (function() {
+    const btn = document.getElementById('article-fav-btn');
+    if (!btn) return;
+    const itemId = btn.getAttribute('data-item-id');
+    const itemType = btn.getAttribute('data-item-type') || 'article';
+    const title = btn.getAttribute('data-title') || '';
+    const summary = (btn.getAttribute('data-summary') || '').slice(0, 200);
+    const pageUrl = btn.getAttribute('data-page-url') || location.pathname;
+    let favState = false;
+
+    function render() {
+      btn.classList.toggle('is-faved', favState);
+      btn.querySelector('.fav-btn__text').textContent = favState ? '已收藏' : '收藏本文';
+    }
+
+    function toast(msg) {
+      var t = document.querySelector('.glogin-toast');
+      if (!t) { t = document.createElement('div'); t.className = 'glogin-toast'; document.body.appendChild(t); }
+      t.textContent = msg; t.classList.add('show');
+      setTimeout(function() { t.classList.remove('show'); }, 2200);
+    }
+
+    async function checkFaved() {
+      try {
+        const r = await fetch('/api/favorites');
+        if (!r.ok) return;
+        const j = await r.json();
+        const list = j.favorites || [];
+        favState = list.some(f => String(f.item_id) === String(itemId));
+        render();
+      } catch (e) { /* 静默 */ }
+    }
+
+    async function doFav() {
+      const r = await fetch('/api/favorites', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ item_type: itemType, item_id: itemId, title: title, summary: summary, url: pageUrl })
+      });
+      if (r.status === 401) {
+        // 未登录：弹登录，登录成功后自动收藏
+        if (typeof window.openLogin === 'function') {
+          window.openLogin(function() { doFav(); });
+        }
+        return;
+      }
+      const j = await r.json().catch(() => ({}));
+      if (r.ok) { favState = true; render(); toast('已收藏，可在「我的收藏」查看'); }
+      else toast(j.error || '收藏失败');
+    }
+
+    async function unFav() {
+      const r = await fetch('/api/favorites', {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ item_type: itemType, item_id: itemId })
+      });
+      if (r.ok) { favState = false; render(); toast('已取消收藏'); }
+    }
+
+    btn.addEventListener('click', () => {
+      if (favState) unFav(); else doFav();
+    });
+
+    // 已登录才检查收藏状态
+    fetch('/api/auth/me').then(r => r.json()).then(j => {
+      if (j.logged_in) checkFaved();
+    }).catch(() => {});
+
+    document.addEventListener('glogin:user', (e) => {
+      if (e.detail && e.detail.logged_in) checkFaved();
+    });
+  })();
+
+  // === 图片灯箱：点击正文图片全屏放大 ===
+  (function() {
+    const body = document.getElementById('content-body');
+    if (!body) return;
+
+    // 创建/获取 lightbox DOM（每页一个）
+    let lb = document.getElementById('app-lightbox');
+    if (!lb) {
+      lb = document.createElement('div');
+      lb.id = 'app-lightbox';
+      lb.className = 'lightbox';
+      lb.setAttribute('role', 'dialog');
+      lb.setAttribute('aria-modal', 'true');
+      lb.setAttribute('aria-label', '图片预览');
+      lb.innerHTML =
+        '<button class="lightbox__close" type="button" aria-label="关闭（Esc）">×</button>' +
+        '<div class="lightbox__inner"><img class="lightbox__img" alt=""></div>' +
+        '<div class="lightbox__caption" hidden></div>';
+      document.body.appendChild(lb);
+
+      const lbImg = lb.querySelector('.lightbox__img');
+      const lbCaption = lb.querySelector('.lightbox__caption');
+      const closeBtn = lb.querySelector('.lightbox__close');
+
+      function shortAlt(alt) {
+        if (!alt) return '';
+        // 去掉前缀"图片展示了"、"图示"等
+        const cleaned = alt.replace(/^(图片展示了?|图示[：:]\s*|图片[：:]\s*)/, '');
+        if (cleaned.length <= 50) return cleaned;
+        return cleaned.slice(0, 50) + '…';
+      }
+
+      function open(src, alt) {
+        lbImg.src = src;
+        lbImg.alt = alt || '';
+        const caption = shortAlt(alt);
+        if (caption) {
+          lbCaption.textContent = caption;
+          lbCaption.title = alt || '';
+          lbCaption.hidden = false;
+        } else {
+          lbCaption.hidden = true;
+        }
+        lb.classList.add('is-open');
+        document.body.classList.add('lightbox-open');
+      }
+      function close() {
+        lb.classList.remove('is-open');
+        document.body.classList.remove('lightbox-open');
+        // 清空 src 避免大图继续占内存
+        setTimeout(() => { lbImg.src = ''; }, 220);
+      }
+
+      // 点击遮罩关闭（点图片本身不关）
+      lb.addEventListener('click', (e) => {
+        if (e.target === lb || e.target.classList.contains('lightbox__inner')) {
+          close();
+        }
+      });
+      closeBtn.addEventListener('click', close);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lb.classList.contains('is-open')) {
+          close();
+        }
+      });
+
+      // 暴露给后续绑定逻辑
+      window.__appLightbox = { open, close };
+    }
+
+    const lbCtrl = window.__appLightbox;
+    if (!lbCtrl) return;
+
+    // 给正文所有图片绑 click 放大
+    body.querySelectorAll('img').forEach((img) => {
+      // 跳过已经被 <a> 包过的（保留链接语义）
+      if (img.closest('a')) return;
+      img.addEventListener('click', (e) => {
+        e.preventDefault();
+        // 优先用 currentSrc（处理 srcset 的浏览器解析后结果）
+        const src = img.currentSrc || img.getAttribute('src') || img.src;
+        lbCtrl.open(src, img.alt);
+      });
+    });
+  })();
+</script>

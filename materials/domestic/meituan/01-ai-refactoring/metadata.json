@@ -1,0 +1,128 @@
+{
+  "id": "meituan-refactor",
+  "title": "用 Agent 评测思路管理 AI Coding——31 万行代码 AI 重构的实践",
+  "directory": "materials/domestic/meituan/01-ai-refactoring",
+  "kind": "官方技术文章",
+  "status": "全文快照已保存",
+  "publication_date": "2026-05-07",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "美团技术团队",
+      "url": "https://tech.meituan.com/2026/05/07/Agent-AI-Coding.html"
+    }
+  ],
+  "note": "",
+  "files": [
+    "materials/domestic/meituan/01-ai-refactoring/article.html",
+    "materials/domestic/meituan/01-ai-refactoring/article.txt",
+    "materials/domestic/meituan/01-ai-refactoring/images.md",
+    "materials/domestic/meituan/01-ai-refactoring/images/05eaf3786a591152.png",
+    "materials/domestic/meituan/01-ai-refactoring/images/11a48f8d5cc789ff.png",
+    "materials/domestic/meituan/01-ai-refactoring/images/148a2c37d6d99829.png",
+    "materials/domestic/meituan/01-ai-refactoring/images/1e67bc5a9fe64715.png",
+    "materials/domestic/meituan/01-ai-refactoring/images/2b74d7663c013adc.jpg",
+    "materials/domestic/meituan/01-ai-refactoring/images/367ce64af49004f6.png",
+    "materials/domestic/meituan/01-ai-refactoring/images/554784b22ddca2fa.png",
+    "materials/domestic/meituan/01-ai-refactoring/images/61264103afa3ee52.png",
+    "materials/domestic/meituan/01-ai-refactoring/images/799ebf9eea851f53.jpg",
+    "materials/domestic/meituan/01-ai-refactoring/images/8c12ac5dcfc0b136.png",
+    "materials/domestic/meituan/01-ai-refactoring/images/a69e5b2f822d8686.png",
+    "materials/domestic/meituan/01-ai-refactoring/images/aadc7abd6726d5ae.png",
+    "materials/domestic/meituan/01-ai-refactoring/images/cadd8ee03b3e5f83.jpg",
+    "materials/domestic/meituan/01-ai-refactoring/images/e6c015a509ba910b.png",
+    "materials/domestic/meituan/01-ai-refactoring/images/eae4d94877545761.png"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/article.html",
+      "bytes": 47295,
+      "sha256": "0371bb60ddee6ce466c736eaf4223866cac45d99672a8c8da04dd3e531e8a9ab"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/article.txt",
+      "bytes": 19698,
+      "sha256": "04e28b9bda25303f183132e318c15eb307df7b6ed1941b8bda3f4309f8564e88"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/images.md",
+      "bytes": 2483,
+      "sha256": "652390ab50ea02fd8f6f1e4cd6d1451e7043f59443c4f7367e775806fbc58ad3"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/images/05eaf3786a591152.png",
+      "bytes": 111988,
+      "sha256": "0390370ce1a33e1f1bc3aac2344e365ae50de8cac24ad4e6711206573342da4e"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/images/11a48f8d5cc789ff.png",
+      "bytes": 364266,
+      "sha256": "be6127b2b499bd8cb79ced94c7d3a914a513f80de3edb8a8da8974102974dc58"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/images/148a2c37d6d99829.png",
+      "bytes": 2265392,
+      "sha256": "9734d5a0f4f7ff05fd93a4b661cc479a21bb671b35f88a196b12227b735ea869"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/images/1e67bc5a9fe64715.png",
+      "bytes": 265516,
+      "sha256": "afdc19273fe93174842065a0417b383f8c1369ed991c425b782a53535ee2122d"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/images/2b74d7663c013adc.jpg",
+      "bytes": 152781,
+      "sha256": "93465d43f9c56f48bb04e1d7952b292c1959664d074dbbe819ffd3089b9add9e"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/images/367ce64af49004f6.png",
+      "bytes": 1367631,
+      "sha256": "9bcb1ff0d5fbcf9dc790bcaf175532f03d478a27ad188d374c91f2f59c947fe6"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/images/554784b22ddca2fa.png",
+      "bytes": 442376,
+      "sha256": "1267fdf7f3151b48bf3c6509d666178b561c94fd3a37aee5f37bf46bec0cc0a3"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/images/61264103afa3ee52.png",
+      "bytes": 4209929,
+      "sha256": "b27fce666be23c66698f0957d48e02840b32d79aa6ca6b425e1793f6caaf29ee"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/images/799ebf9eea851f53.jpg",
+      "bytes": 24023,
+      "sha256": "6afac01382f0f469bf4db66da5e7893b2def320fa643f8f7ffee5dde5b17e56a"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/images/8c12ac5dcfc0b136.png",
+      "bytes": 1313083,
+      "sha256": "77d59f148f1db1225c22ae003c9be6032bd460f1c20f85eaee33273906f6f087"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/images/a69e5b2f822d8686.png",
+      "bytes": 1981409,
+      "sha256": "ea5a41b438a702ae9a9c830dfcd1dcdabaf06bf4aeba9df3c9bd3d3a1be2262e"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/images/aadc7abd6726d5ae.png",
+      "bytes": 3785482,
+      "sha256": "a155f5b43af2ed8372a5a7f34dd0dd3b762d16dc6f36e3a95f0d2bf42ea16fdd"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/images/cadd8ee03b3e5f83.jpg",
+      "bytes": 18862,
+      "sha256": "3410a01a6a1daa8bb6a09a81aed8220007c52684e2eaca8213e76c262ac392a1"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/images/e6c015a509ba910b.png",
+      "bytes": 142218,
+      "sha256": "56cf039dddf14ca8ba35936e3fccea4e5409e2d2377440c91684d199bacbd932"
+    },
+    {
+      "path": "materials/domestic/meituan/01-ai-refactoring/images/eae4d94877545761.png",
+      "bytes": 1225959,
+      "sha256": "c9e9b7d9148c8a144ab4908e068424e8a3edbb7ad4dd7be8e0b0a4aae1ccfe08"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "matt-real-feature",
+  "title": "Real-world Feature Build with Claude Code",
+  "directory": "materials/matt-pocock/05-real-feature",
+  "kind": "作者文章 / 访谈 / 官方演讲",
+  "status": "公开文字已保存",
+  "publication_date": "2026-03-20",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "公开原文",
+      "url": "https://www.aihero.dev/real-world-feature-build-with-claude-code"
+    }
+  ],
+  "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。 保存的是公开视频/播客介绍与文字摘要，未保存完整音视频或完整转录。",
+  "files": [
+    "materials/matt-pocock/05-real-feature/page.html",
+    "materials/matt-pocock/05-real-feature/page.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/matt-pocock/05-real-feature/page.html",
+      "bytes": 293082,
+      "sha256": "e8c7ad3ce182488c1f26ab685c605e440e33ee8ada203f56388190ef977f58c3"
+    },
+    {
+      "path": "materials/matt-pocock/05-real-feature/page.txt",
+      "bytes": 2836,
+      "sha256": "197becc4af8963609f674c363bb4bd4f7f28f7d282e421e059a00ad8f0dc834d"
+    }
+  ]
+}

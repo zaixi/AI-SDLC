@@ -1,0 +1,56 @@
+{
+  "id": "pending-tencent-mobile-skill",
+  "title": "从代码生成到需求交付：一个开发 Skill 的工程化实践",
+  "directory": "materials/pending/03-tencent-mobile-development-skill",
+  "kind": "第三方转述线索",
+  "status": "第三方概述页已保存；腾讯原文未定位",
+  "publication_date": "2026-07-29",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "霍格沃兹-测试开发学社投稿",
+      "url": "https://cloud.tencent.com/developer/article/2717608"
+    }
+  ],
+  "note": "发布者并非腾讯技术工程。可读内容只有概述，不能算完整腾讯原文。",
+  "files": [
+    "materials/pending/03-tencent-mobile-development-skill/images.md",
+    "materials/pending/03-tencent-mobile-development-skill/images/146c4047afb55d87.png",
+    "materials/pending/03-tencent-mobile-development-skill/images/1ceb3665dd28be4d.png",
+    "materials/pending/03-tencent-mobile-development-skill/images/c5d13faff13d7b82.png",
+    "materials/pending/03-tencent-mobile-development-skill/third-party-overview.html",
+    "materials/pending/03-tencent-mobile-development-skill/third-party-overview.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/pending/03-tencent-mobile-development-skill/images.md",
+      "bytes": 590,
+      "sha256": "b84d334a967b78fb8df41e49a3006bd6061abcf80adb0e324bb83bc504cba6a5"
+    },
+    {
+      "path": "materials/pending/03-tencent-mobile-development-skill/images/146c4047afb55d87.png",
+      "bytes": 11016,
+      "sha256": "2ba94748d3714e2ecc51eab7725904718184f0de73d7d8e0cf08d937e2873c89"
+    },
+    {
+      "path": "materials/pending/03-tencent-mobile-development-skill/images/1ceb3665dd28be4d.png",
+      "bytes": 9818,
+      "sha256": "65aa0d8e6dbc4a4a915f1a0681bccf2f210c119096c3f9379dfc80ffa1cdd493"
+    },
+    {
+      "path": "materials/pending/03-tencent-mobile-development-skill/images/c5d13faff13d7b82.png",
+      "bytes": 1253,
+      "sha256": "9dde6a7080ff702ca972e8f06449688d81322ff512d2bdfc793f68cde0492946"
+    },
+    {
+      "path": "materials/pending/03-tencent-mobile-development-skill/third-party-overview.html",
+      "bytes": 99520,
+      "sha256": "dad2b99df71f417290e4673de48d8b95571ab42db30d22497c390da334191481"
+    },
+    {
+      "path": "materials/pending/03-tencent-mobile-development-skill/third-party-overview.txt",
+      "bytes": 3020,
+      "sha256": "519b8e5962015079cd32ff42ef91dbc11da2ab07c3909e79282e8ae5ad8e0875"
+    }
+  ]
+}

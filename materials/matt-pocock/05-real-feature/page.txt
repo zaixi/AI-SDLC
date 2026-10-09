@@ -1,0 +1,93 @@
+Real-world feature build with Claude Code: every step explained
+AI
+Hero
+Courses
+Search
+Newsletter
+Explore
+Map
+Skills
+Open source
+Videos
+Guides
+LLM Fundamentals
+AI Engineer Roadmap
+AI Coding Dictionary
+Topics
+Loading
+Updated Mar 20, 2026
+Real-world feature build with Claude Code: every step explained
+Learn Claude Code workflow: grill sessions, PRDs, GitHub issues, AFK agents, and QA loops for building features efficiently with AI.
+Matt Pocock
+Subscribe
+Copy page
+Copy page
+Share
+On this page
+Related reading
+In this video, I walk through a real-world example of using Claude Code with my course video manager, a React Router application I use daily for creating content, organizing courses, and managing videos.
+I'll show you my entire workflow: from initial feature brainstorming with the "grill me" skill, through creating PRDs and breaking them into issues, to running autonomous Ralph loops that implement features while I'm away from my desk.
+This isn't a polished tutorial. It's a raw, unscripted look at how I actually work with AI agents on a real codebase with over 1,200 commits and 637 closed issues. You'll see the messy parts, the QA loops, and the decisions I make along the way.
+The feature I'm building involves improving how "ghost" and "real" lessons work in my app. Ghost lessons exist only in the database, while real lessons have actual files on disk. The current workflow is clunky, requiring multiple steps to create or delete lessons. By the end of this session, I'll have streamlined the entire process and added support for "ghost courses" too.
+If you want to learn these skills from the ground up, check out
+Claude Code for Real Engineers
+, my cohort that teaches you how to apply real engineering practices to AI-assisted development.
+On this page
+Related reading
+Share
+Share on X
+Share on Bluesky
+Share on LinkedIn
+Copy URL
+Share
+Share on X
+Share on Bluesky
+Share on LinkedIn
+Copy URL
+Related reading
+Article · 5 min read
+Getting Started With Ralph
+Video
+5 Agent Skills I Use Every Day
+Learn
+AI Coding Crash Course
+AI SDK v6 Crash Course
+LLM Fundamentals
+AI Coding Dictionary
+The AI Engineer Roadmap
+Vercel AI SDK Tutorial
+Model Context Protocol Tutorial
+Cohorts
+AI Coding for Real Engineers
+Claude Code for Real Engineers
+Build Your Own AI Personal Assistant in TypeScript
+Build DeepSearch in TypeScript
+Account
+Agents
+sitemap.md
+llms.txt
+skills.md
+rss.xml
+Browse All
+Skills
+Free course
+Dictionary
+FAQ
+Terms
+Theme
+New
+AI Coding Crash Course is out now.
+Skills
+Think Like an AI Engineer
+Learn How LLMs Think
+Set Up Your Agent
+Score First Wins
+Real-world feature build with Claude Code: every step explained
+5 Agent Skills I Use Every Day
+Essential AI Coding Feedback Loops For TypeScript Projects
+All
+Get Better Results
+Build the Right Thing
+Ship Solid Code
+Build a Software Factory
+Meta / Announcements

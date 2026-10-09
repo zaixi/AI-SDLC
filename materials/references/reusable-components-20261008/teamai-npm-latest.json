@@ -1,0 +1,137 @@
+{
+  "bin": {
+    "teamai": "dist/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Tencent/teamai-cli/issues"
+  },
+  "dist": {
+    "shasum": "cfe0e510bfc26572d6af3f151176181d359aaa1f",
+    "tarball": "https://registry.npmjs.org/teamai-cli/-/teamai-cli-0.26.0.tgz",
+    "fileCount": 40,
+    "integrity": "sha512-PsXmc8S7e6b88IK3Ze411q2Oj6i/2pl4FNg1t3WkXgLN2ndSY9H15Wwxg0KRjkbIaXH0tgNlsBlAq/N1DkhAug==",
+    "signatures": [
+      {
+        "sig": "MEYCIQDbg36x5RJI6nGnx5HvX4lxR8JeAcpUsIMBZZ1iUFqQ3wIhAPR8ebs7D1MnwFykzMKUuYZTeSjZetuhcoP3TSnochit",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "sig": "MEMCIAkx1NfK1KtBWyHDFDdzDs6NpmVaf7Lm5cC+5DS7VPoJAh9xnpGFu2AL/X6Zr8wDEVT407sfouLfSC59a46eMb9Y",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/teamai-cli@0.26.0",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 2801565
+  },
+  "main": "index.js",
+  "name": "teamai-cli",
+  "type": "module",
+  "author": {
+    "name": "jeffyxu",
+    "email": "jeffyxu@tencent.com"
+  },
+  "gitHead": "96e5331a2ea5dded15c866c4eaac946602bb0702",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsup --watch",
+    "lint": "oxlint --type-aware --deny-warnings --report-unused-disable-directives",
+    "test": "vitest run",
+    "build": "tsup",
+    "release": "standard-version",
+    "test:e2e": "vitest run --config vitest.e2e.config.ts",
+    "typecheck": "tsc --noEmit",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run build"
+  },
+  "_npmUser": {
+    "name": "GitHub Actions",
+    "email": "npm-oidc-no-reply@github.com",
+    "trustedPublisher": {
+      "id": "github",
+      "oidcConfigId": "85177045-a079-4a38-9e3e-ec8f622bc564"
+    }
+  },
+  "homepage": "https://github.com/Tencent/teamai-cli#readme",
+  "keywords": [
+    "ai",
+    "team",
+    "devkit",
+    "skills",
+    "sharing"
+  ],
+  "overrides": {
+    "nanoid": "3.3.19",
+    "js-yaml": "^3.15.2",
+    "postcss": "8.5.28",
+    "picomatch": "4.0.7",
+    "brace-expansion@1": "1.1.18",
+    "brace-expansion@2": "2.1.4",
+    "brace-expansion@5": "5.0.9"
+  },
+  "repository": {
+    "url": "git+https://github.com/Tencent/teamai-cli.git",
+    "type": "git"
+  },
+  "_npmVersion": "11.20.0",
+  "description": "TeamAI — Make Every Team AI Native (skill sync + shared knowledge base, powered by Git)",
+  "directories": {
+    "doc": "docs",
+    "test": "test",
+    "example": "examples"
+  },
+  "maintainers": [
+    {
+      "name": "jeffzf",
+      "email": "hsuchifeng@gmail.com"
+    }
+  ],
+  "_nodeVersion": "22.23.2",
+  "dependencies": {
+    "ora": "^8.1.0",
+    "zod": "^3.24.0",
+    "yaml": "^2.6.0",
+    "chalk": "^5.3.0",
+    "fflate": "^0.8.3",
+    "listr2": "^9.0.5",
+    "semver": "^7.8.5",
+    "fs-extra": "^11.2.0",
+    "commander": "^12.1.0",
+    "smol-toml": "^1.7.1",
+    "simple-git": "^3.36.0",
+    "cross-spawn": "^7.0.6",
+    "gray-matter": "^4.0.3",
+    "web-tree-sitter": "0.25.10",
+    "tree-sitter-wasms": "0.1.13"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "_hasShrinkwrap": false,
+  "devDependencies": {
+    "tsup": "^8.3.0",
+    "oxlint": "1.85.0",
+    "vitest": "^3.2.7",
+    "fast-check": "^4.10.2",
+    "typescript": "^5.7.0",
+    "@types/node": "^20.17.0",
+    "opencode-ai": "1.18.23",
+    "@types/semver": "^7.8.0",
+    "@types/fs-extra": "^11.0.4",
+    "oxlint-tsgolint": "7.0.2003",
+    "standard-version": "^9.5.0",
+    "@types/cross-spawn": "^6.0.6",
+    "@vitest/coverage-v8": "^3.2.7"
+  },
+  "_npmOperationalInternal": {
+    "tmp": "tmp/teamai-cli_0.26.0_1790662930822_0.44387325721479987",
+    "host": "s3://npm-registry-packages-npm-production"
+  },
+  "_id": "teamai-cli@0.26.0",
+  "version": "0.26.0"
+}

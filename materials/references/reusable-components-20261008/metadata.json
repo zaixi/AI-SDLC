@@ -1,0 +1,254 @@
+{
+  "id": "reusable-components-20261008",
+  "title": "现成组件的直接使用与更新方式核对",
+  "directory": "materials/references/reusable-components-20261008",
+  "kind": "官方仓库文档与元数据",
+  "status": "公开文档已保存；未安装或运行",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "Matt Skills",
+      "url": "https://github.com/mattpocock/skills"
+    },
+    {
+      "label": "TeamAI",
+      "url": "https://github.com/Tencent/teamai-cli"
+    },
+    {
+      "label": "TeamAI 模板",
+      "url": "https://github.com/teamai-hub/teamai-template"
+    },
+    {
+      "label": "Trae Agent",
+      "url": "https://github.com/bytedance/trae-agent"
+    },
+    {
+      "label": "DeerFlow",
+      "url": "https://github.com/bytedance/deer-flow"
+    },
+    {
+      "label": "Show Me",
+      "url": "https://github.com/humanlayer/skills/tree/main/plugins/show-me"
+    },
+    {
+      "label": "Qoder Repo Wiki",
+      "url": "https://docs.qoder.com/user-guide/repo-wiki"
+    },
+    {
+      "label": "Qoder Skills",
+      "url": "https://docs.qoder.com/extensions/skills"
+    },
+    {
+      "label": "TRAE Skills",
+      "url": "https://docs.trae.ai/ide/skills"
+    },
+    {
+      "label": "Qwen Code",
+      "url": "https://github.com/QwenLM/qwen-code"
+    }
+  ],
+  "note": "核对 main 文档与 npm latest 元数据；发布版本与 main 功能可能不同。外部 Skill 文件仅作为资料保存，未调用。",
+  "files": [
+    "materials/references/reusable-components-20261008/Tencent-teamai-cli.json",
+    "materials/references/reusable-components-20261008/bytedance-deer-flow.json",
+    "materials/references/reusable-components-20261008/bytedance-trae-agent.json",
+    "materials/references/reusable-components-20261008/deer-readme.md",
+    "materials/references/reusable-components-20261008/humanlayer-show-me.md",
+    "materials/references/reusable-components-20261008/matt-architecture.md",
+    "materials/references/reusable-components-20261008/matt-head.json",
+    "materials/references/reusable-components-20261008/matt-pr.md",
+    "materials/references/reusable-components-20261008/matt-readme.md",
+    "materials/references/reusable-components-20261008/matt-review.md",
+    "materials/references/reusable-components-20261008/matt-setup.md",
+    "materials/references/reusable-components-20261008/matt-teach.md",
+    "materials/references/reusable-components-20261008/mattpocock-skills.json",
+    "materials/references/reusable-components-20261008/teamai-guide.md",
+    "materials/references/reusable-components-20261008/teamai-head.json",
+    "materials/references/reusable-components-20261008/teamai-hub.json",
+    "materials/references/reusable-components-20261008/teamai-license.md",
+    "materials/references/reusable-components-20261008/teamai-npm-latest.json",
+    "materials/references/reusable-components-20261008/teamai-package.json",
+    "materials/references/reusable-components-20261008/teamai-product.md",
+    "materials/references/reusable-components-20261008/teamai-providers.md",
+    "materials/references/reusable-components-20261008/teamai-readme.md",
+    "materials/references/reusable-components-20261008/teamai-tree.json",
+    "materials/references/reusable-components-20261008/template-readme.md",
+    "materials/references/reusable-components-20261008/trae-readme.md",
+    "materials/references/reusable-components-20261008/qoder-wiki.html",
+    "materials/references/reusable-components-20261008/qoder-wiki.txt",
+    "materials/references/reusable-components-20261008/qoder-skills.html",
+    "materials/references/reusable-components-20261008/trae-skills.html",
+    "materials/references/reusable-components-20261008/trae-skills-body.txt",
+    "materials/references/reusable-components-20261008/trae-rules.html",
+    "materials/references/reusable-components-20261008/trae-rules-body.txt",
+    "materials/references/reusable-components-20261008/qwen-readme.md"
+  ],
+  "assets": [
+    {
+      "path": "materials/references/reusable-components-20261008/Tencent-teamai-cli.json",
+      "bytes": 6846,
+      "sha256": "725c468d4a13560ee57c7069156d5835670f5dfc94a97ac42b5ec50871d6d72c"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/bytedance-deer-flow.json",
+      "bytes": 7505,
+      "sha256": "e1c67dee93837a1645ac95e159c6d72227fa1c56120be6085de8d32f7ca52ecb"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/bytedance-trae-agent.json",
+      "bytes": 7139,
+      "sha256": "8ac86004e26243d9103f5ad0338d0652b0aa58a79cd1417d85a60fe8c2f8a035"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/deer-readme.md",
+      "bytes": 255669,
+      "sha256": "939af89648d0ae13143de78c1d797fa3db9f8e6ad96eda76b35e91e9b1254e5c"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/humanlayer-show-me.md",
+      "bytes": 3328,
+      "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/matt-architecture.md",
+      "bytes": 6000,
+      "sha256": "552240a5ab5cec6b67c15dd1ad6e9f6962b1bca6ce870059a8c2713760c20392"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/matt-head.json",
+      "bytes": 25069,
+      "sha256": "0b6763ad65cad50ca316e540ba644c5f852cf88db1a7145ef8ac9c64fa0de9e5"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/matt-pr.md",
+      "bytes": 4169,
+      "sha256": "ab63f1cf78647389edcd386c9427c5dfca27ed2836930c24773ffee834c19bcd"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/matt-readme.md",
+      "bytes": 16461,
+      "sha256": "345041d56cf1411b6b3ca1cc54014d26c563890f817f4cb9e2cb193dcd771a3e"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/matt-review.md",
+      "bytes": 6670,
+      "sha256": "09eb147f793e4647949edd32dbad278f0554dfb56e0d46b699cd4c2c55bf0357"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/matt-setup.md",
+      "bytes": 6978,
+      "sha256": "f148858ffb7f63c03c06fca06e6fdb1d91a35c6b293244b8fdfacd5f4cc028c4"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/matt-teach.md",
+      "bytes": 9733,
+      "sha256": "550482c2d674b085c9043b87bfdc14a8f2ec453c736119e7fcbb1e9332bffeba"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/mattpocock-skills.json",
+      "bytes": 5828,
+      "sha256": "8366c133ce310a3565876916f1e05f7710a9eed280e71f5b36840e7f588745fe"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/teamai-guide.md",
+      "bytes": 308343,
+      "sha256": "c86db6fd180080f6ce38010a2d1968c8317cebe066c0796b6168ec121db0026c"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/teamai-head.json",
+      "bytes": 24508,
+      "sha256": "4bc5d95b7f8cfb57ee6262c55aac53ea58a9d264f18e747f70499a4fd7744efe"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/teamai-hub.json",
+      "bytes": 18560,
+      "sha256": "07cbbe4ca1160cc69773aa5c5bf96919f6a558fd064835449bd0f2245e9a5b02"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/teamai-license.md",
+      "bytes": 1418,
+      "sha256": "31154d9c1a8bd8d37b449bdbb8a04f9b4618e5d330b52b0fdb7c452414d75a41"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/teamai-npm-latest.json",
+      "bytes": 3882,
+      "sha256": "957e74b3baf6e7e46d9943e4cc8c2d54f4b8fd0d4146df177701e0881935216e"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/teamai-package.json",
+      "bytes": 2500,
+      "sha256": "e4080427fee068d3f39bd035a55aa1af183cfb36f40d16949670bc8fa33f0686"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/teamai-product.md",
+      "bytes": 11275,
+      "sha256": "b5fad5d1ebd37b6225abf43487feff29c2aeb1e409e1b12544fe0b50c53ef7dd"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/teamai-providers.md",
+      "bytes": 23329,
+      "sha256": "72d1389a37b14429fb643fa6bcd9d2c2512264048eba21e2246e0dcc658cff4f"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/teamai-readme.md",
+      "bytes": 12788,
+      "sha256": "757aa61d249b785ae3125e19e3d4ddedec189a06f8f7b2c81a3f65215e38b10c"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/teamai-tree.json",
+      "bytes": 235657,
+      "sha256": "b8d6307ff8d330393f4107de12f1bcce2297a0f0b6ac063078cbc85487d7afd8"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/template-readme.md",
+      "bytes": 2097,
+      "sha256": "874c8237181dcb9e4576481e50d776c91b1e4ad623cff254411f15a20496cf23"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/trae-readme.md",
+      "bytes": 10238,
+      "sha256": "6ff2b6c84def1b93ffa8f754b949fdf12a9d3c5d77644984d3a81f3f5b197089"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/qoder-wiki.html",
+      "bytes": 1103466,
+      "sha256": "eb814316e0687a216f64b29a8c385bbd6bc2a9ff590f66bb943a80a5cc9689be"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/qoder-wiki.txt",
+      "bytes": 9952,
+      "sha256": "402c2d17548be2756da1a22cee3c533759806a03b04b46c3dad9a5a44001c3f5"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/qoder-skills.html",
+      "bytes": 1084765,
+      "sha256": "2b59871c4e30ca98c12338dee9a3f7849ddae78d62d06ceb6c3651d711908204"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/trae-skills.html",
+      "bytes": 1906026,
+      "sha256": "16b9ab9d8e4ae2a6732fdf82e952e31b4e4fcf02b20d65f4622e2a4391b2e346"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/trae-skills-body.txt",
+      "bytes": 11626,
+      "sha256": "a0f794f9468c0be41712bc70839c9554e2b3626eac181cbc2e234f0e6d1207df"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/trae-rules.html",
+      "bytes": 1938663,
+      "sha256": "e9aecc769bf1810bce1ea6eb3218061dff730b7f688f7b51fca1931bde8dccd4"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/trae-rules-body.txt",
+      "bytes": 13237,
+      "sha256": "70980a1fdb410a888f0ebba23be214a34be06e8ea4ddba712a15046d5dea119f"
+    },
+    {
+      "path": "materials/references/reusable-components-20261008/qwen-readme.md",
+      "bytes": 13274,
+      "sha256": "0370888b25018bef847a5edb740947bd02e06cf785e1923797a8f901b7c835f7"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "upload-matt-manager",
+  "title": "技术一把手用 Matt Pocock Skills 提升团队效率",
+  "directory": "materials/uploaded/01-matt-manager",
+  "kind": "用户上传 PDF",
+  "status": "完整 PDF 已保存",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "用户提供的微信公众号链接",
+      "url": "https://mp.weixin.qq.com/s/eVGIuzCPeJEUUXNRYq1wSA"
+    }
+  ],
+  "note": "",
+  "files": [
+    "materials/uploaded/01-matt-manager/text.txt",
+    "materials/uploaded/01-matt-manager/技术一把手用 Matt Pocock Skills 提升团队效率.pdf"
+  ],
+  "assets": [
+    {
+      "path": "materials/uploaded/01-matt-manager/text.txt",
+      "bytes": 22906,
+      "sha256": "5af4323fb3081f0e9448c99fa6df6b836bc05add1755d1325244874b1ec8ac69"
+    },
+    {
+      "path": "materials/uploaded/01-matt-manager/技术一把手用 Matt Pocock Skills 提升团队效率.pdf",
+      "bytes": 1011712,
+      "sha256": "8bd0b2361e23acbc17d47296edfc9646525151e682932398489391a044e3052d"
+    }
+  ]
+}

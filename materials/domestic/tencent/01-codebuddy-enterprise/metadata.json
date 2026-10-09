@@ -1,0 +1,308 @@
+{
+  "id": "tencent-enterprise",
+  "title": "CodeBuddy AI Coding 企业场景落地实践与思考",
+  "directory": "materials/domestic/tencent/01-codebuddy-enterprise",
+  "kind": "官方账号文章",
+  "status": "正文快照已保存",
+  "publication_date": "2025-08-15",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "腾讯云开发者",
+      "url": "https://cloud.tencent.com/developer/article/2555275"
+    }
+  ],
+  "note": "",
+  "files": [
+    "materials/domestic/tencent/01-codebuddy-enterprise/article.html",
+    "materials/domestic/tencent/01-codebuddy-enterprise/article.txt",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images.md",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/00f9e00e85ca669c.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/056073df425cf5e6.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/07d6c913d0b36c77.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/0dc1ea810614e09e.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/0efb5347bfc40586.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/146c4047afb55d87.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/1ceb3665dd28be4d.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/1dfd025624ccf921.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/256d0c118c80f0ba.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/2fd9995035a2ff39.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/31411f3533eb5611.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/34d722e6da66a05c.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/40949e3e4d2250d5.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/4a1fe1d7e555f5ea.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/4a4106bcb7d23d81.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/4a679f2b3423b3dd.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/509572eb4d3b759f.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/5d7417d3b7a9cd5d.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/6d01b5bc7977d76f.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/6df27641274dc8cd.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/6f25b4cac3dc38bb.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/70a85a1b1e73c1b1.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/71ac62640ad3ce2e.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/71df5bb30225eced.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/7dfe183a9a07f81b.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/82f7136992ab9b39.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/9fc5c0d4e10bc9a4.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/a3468ee86abc6c9c.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/a618395b584e75fa.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/a68feaf3ef45e7c1.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/ac8c0be89c9af021.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/b159e3b31ae1f592.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/b5fc2de42c88280c.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/b9638713582a0be6.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/c003fb22a10209d2.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/c5d13faff13d7b82.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/caf80885c220e094.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/d48a5a47cecb328e.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/da84473be7b233e4.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/ddd5e6e42a03e85c.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/df17a922e775b465.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/e0075bd3d386b24d.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/ed80165b4571705e.png",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/fd5e3e771468dbcd.jpg",
+    "materials/domestic/tencent/01-codebuddy-enterprise/images/fe5d0385dd8371ee.png"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/article.html",
+      "bytes": 324803,
+      "sha256": "02c56b1ba8c2bb784b98405222d705928413720d839d14c7ce6717fc3c4b2dba"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/article.txt",
+      "bytes": 53472,
+      "sha256": "d17d95e45a861b6562d683c498ccdf934739ba29369a89cbf806465f8ea7fe57"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images.md",
+      "bytes": 7550,
+      "sha256": "2a3a021560133a29450ac998216ee70d6dd99bc7afab334ce67c66e8cb6ed2da"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/00f9e00e85ca669c.png",
+      "bytes": 357243,
+      "sha256": "09961245f87841496cb89d856b54b26f9a4654e212156e6f9ee3f9c50374f096"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/056073df425cf5e6.png",
+      "bytes": 71281,
+      "sha256": "597d7f1f436ca3b49e9610e2fd8842ca69cfd706332832344ca849fbb6b3cf3d"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/07d6c913d0b36c77.png",
+      "bytes": 126685,
+      "sha256": "c9da2ed1a3206273a6ce465c985c7830c3fb9a07a8daab54254a5c5fb93a211f"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/0dc1ea810614e09e.png",
+      "bytes": 293232,
+      "sha256": "09dfa8c8b5aa2cbe34e306c0a5c3dbe7c6c7419ccb9bb53f46165d69232a24f6"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/0efb5347bfc40586.png",
+      "bytes": 326226,
+      "sha256": "b293ef02535383ae24c62a548569cf36d07013ee4cf7d584bf742fce420eb2c2"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/146c4047afb55d87.png",
+      "bytes": 11016,
+      "sha256": "2ba94748d3714e2ecc51eab7725904718184f0de73d7d8e0cf08d937e2873c89"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/1ceb3665dd28be4d.png",
+      "bytes": 9818,
+      "sha256": "65aa0d8e6dbc4a4a915f1a0681bccf2f210c119096c3f9379dfc80ffa1cdd493"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/1dfd025624ccf921.png",
+      "bytes": 178997,
+      "sha256": "5083d7e4c3375aad48978eb77bda223b4e50184cb0c1b446ab0f3ff67035e2f6"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/256d0c118c80f0ba.png",
+      "bytes": 299976,
+      "sha256": "d5a19b38296167d6462d3dff8ee8f122f20a207e15eba0e945b7b1bf20b33ce5"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/2fd9995035a2ff39.png",
+      "bytes": 561181,
+      "sha256": "5853126fbb532b571a70413aff35838343f1f2c71bb706a9808d9cacac22a5af"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/31411f3533eb5611.png",
+      "bytes": 116213,
+      "sha256": "f8b7349d04c9d212afcdd789113be3a82b6c0062ab389ea18f27613c65aaa01e"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/34d722e6da66a05c.png",
+      "bytes": 5063,
+      "sha256": "6afe73e9e3c994d193f290bbb678d2ae13404110a6c25da132ca1b508d121660"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/40949e3e4d2250d5.png",
+      "bytes": 293823,
+      "sha256": "78a0ba1900214dd41b69d94f017e1fd6b02c2e844b54faf65c0d0e68eb8dc51f"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/4a1fe1d7e555f5ea.png",
+      "bytes": 156156,
+      "sha256": "d2717745a1f64c6286ec6db183ccfa0a672bbe8d6b79d997ab17103b0db7c02c"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/4a4106bcb7d23d81.png",
+      "bytes": 163340,
+      "sha256": "d6577c264302a21ac435719fe3db24ea4279aad5a93df0061c1870c91ee611bc"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/4a679f2b3423b3dd.png",
+      "bytes": 239814,
+      "sha256": "04666a24ebf1136ea1ec418d49e676d608f5b0ec9cd9a02e7fd4c08fd11a5822"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/509572eb4d3b759f.png",
+      "bytes": 97501,
+      "sha256": "dc2d19fcfca470726577f245382e4fe1eee3b4b52301d8ca349ccd2797896a51"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/5d7417d3b7a9cd5d.png",
+      "bytes": 294330,
+      "sha256": "9990e4f10ed2ec7fc907d6bb381488fc64ce09eb9b4227529da955ad2792f0f1"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/6d01b5bc7977d76f.png",
+      "bytes": 73830,
+      "sha256": "79ffa7521fee3bc9d32938e55972ab7cff7cecea9b487aca26eed19da4474290"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/6df27641274dc8cd.png",
+      "bytes": 298237,
+      "sha256": "019662f5fd3c712aee457f2e72ee0d7894896f1a4857e77129d24ad3aaf26fc7"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/6f25b4cac3dc38bb.png",
+      "bytes": 247463,
+      "sha256": "4c4091e1c0a27e6ebd7874df45bb5101276d81427ec54783d967771a0b6c88b2"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/70a85a1b1e73c1b1.png",
+      "bytes": 224594,
+      "sha256": "7aef93170007c93cc0aa9ecdf98e5042131e00b7693ff55e5bcf58335e9c9005"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/71ac62640ad3ce2e.png",
+      "bytes": 208046,
+      "sha256": "2f6b1a38fa907d95a9384576e85cbd76246da2a5e638158be6b2dfcb83f81b2d"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/71df5bb30225eced.png",
+      "bytes": 70428,
+      "sha256": "e967a8a26b0358abf3c7c89b72a4cd4f10c360ac9e22412b75bb5edc2188afbb"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/7dfe183a9a07f81b.png",
+      "bytes": 342771,
+      "sha256": "a35b3af57b757657def8692861640ee4f663563c351fe8b8fae8697fe86cc272"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/82f7136992ab9b39.png",
+      "bytes": 342780,
+      "sha256": "39ce7c3ba0815ee7c7fcb30b53cbbe88ed4179a6d7971ac552a6b5b9b71bc5a7"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/9fc5c0d4e10bc9a4.png",
+      "bytes": 279849,
+      "sha256": "a69f472a243d28639e12a0d28ba890c09c987dd519a2c2c8dd6ed33b884109cb"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/a3468ee86abc6c9c.png",
+      "bytes": 208379,
+      "sha256": "44b50186b90af43129e2d50afe489ae3a11809d8d06372bbd64a4afd34f133e3"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/a618395b584e75fa.png",
+      "bytes": 80756,
+      "sha256": "be3d974fef8764d56216664a1954b5cce1bc36b11d9d9407b5566bdc8f89a2bd"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/a68feaf3ef45e7c1.png",
+      "bytes": 103067,
+      "sha256": "233b6809491f43f7f41c95613a315931c0e23bb6b12d6578d75eb1693e92204c"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/ac8c0be89c9af021.png",
+      "bytes": 416109,
+      "sha256": "a73619479171dc0c89b6966effe14ab5397df601e262e538fa59786ba6e2929a"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/b159e3b31ae1f592.png",
+      "bytes": 105931,
+      "sha256": "5e541cb0699c07a337ff30595e64d2052708224151268984f0fbfd4307176e50"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/b5fc2de42c88280c.png",
+      "bytes": 397402,
+      "sha256": "bfe5cd57f2c1cb50530c7c229a061303342dc0a1bacdda1ae18538d9bf324738"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/b9638713582a0be6.png",
+      "bytes": 448664,
+      "sha256": "86a8640e3c13194a011c591d8220b8a39067fa539ca3356cc88035fdcc0d605c"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/c003fb22a10209d2.png",
+      "bytes": 125546,
+      "sha256": "a383d16c1c3fc4fc49c6bf5bdf28f42e60c069731882663b688396012c1e735c"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/c5d13faff13d7b82.png",
+      "bytes": 1253,
+      "sha256": "9dde6a7080ff702ca972e8f06449688d81322ff512d2bdfc793f68cde0492946"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/caf80885c220e094.png",
+      "bytes": 142431,
+      "sha256": "1229d76e6269b2f53c818f86859b07dc73e31b8169f98245ee4fa9b94a9986e7"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/d48a5a47cecb328e.png",
+      "bytes": 227290,
+      "sha256": "c55a030e1af6684f8756396ebd49c1e2285301dcf778b0b979b29c11ef5daa5d"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/da84473be7b233e4.png",
+      "bytes": 263150,
+      "sha256": "7fae2642465118c9f4b5ded42a8dfe2adb2ff83e332cea8b48782f1d5af76ba0"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/ddd5e6e42a03e85c.png",
+      "bytes": 117194,
+      "sha256": "aeb4bf5b8103d869738bcf86e26f7be5bfa739b39fe9bc096f0d23b6de6a5216"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/df17a922e775b465.png",
+      "bytes": 186812,
+      "sha256": "b95f5da18a54809fb7085e50b87cb6979e20622c6e03a3cc891422bda1107491"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/e0075bd3d386b24d.png",
+      "bytes": 163058,
+      "sha256": "589b40d149cb47a486a76f11a79dac38fb2e96d4a218846ee9d5fff52ca71917"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/ed80165b4571705e.png",
+      "bytes": 298309,
+      "sha256": "e5e8ada0e76649e6a60ecb9e39122197b5cb829c238b2dd770414b68f491aa8e"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/fd5e3e771468dbcd.jpg",
+      "bytes": 115952,
+      "sha256": "613f61744de80dc84ece18c873538f7ef9f580bd27c122c386c501039e131933"
+    },
+    {
+      "path": "materials/domestic/tencent/01-codebuddy-enterprise/images/fe5d0385dd8371ee.png",
+      "bytes": 114805,
+      "sha256": "5e50a739f1a3780ad821d34d8512dab4576a1b0ce43fc1d90277fc47d3746f33"
+    }
+  ]
+}

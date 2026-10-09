@@ -1,0 +1,74 @@
+{
+  "id": "byte-aicon",
+  "title": "AI Native 应用的新范式，Trae 在 Coding Agent 中的工程实践",
+  "directory": "materials/domestic/bytedance/04-trae-aicon",
+  "kind": "会议介绍",
+  "status": "公开介绍页已保存；非完整演讲实录",
+  "publication_date": "2025-08-13",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "InfoQ",
+      "url": "https://www.infoq.cn/article/A6mSqtblyrHSNRxdV8b5"
+    }
+  ],
+  "note": "",
+  "files": [
+    "materials/domestic/bytedance/04-trae-aicon/conference-introduction.html",
+    "materials/domestic/bytedance/04-trae-aicon/conference-introduction.txt",
+    "materials/domestic/bytedance/04-trae-aicon/images.md",
+    "materials/domestic/bytedance/04-trae-aicon/images/1a6450b03c373df5.jpg",
+    "materials/domestic/bytedance/04-trae-aicon/images/34647c6fe937bc0e.png",
+    "materials/domestic/bytedance/04-trae-aicon/images/4160843dad3c526c.png",
+    "materials/domestic/bytedance/04-trae-aicon/images/4ce469be08f9902b.png",
+    "materials/domestic/bytedance/04-trae-aicon/images/5d726436a7ec43cd.png",
+    "materials/domestic/bytedance/04-trae-aicon/images/81821328d6037c46.jpg"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/bytedance/04-trae-aicon/conference-introduction.html",
+      "bytes": 329467,
+      "sha256": "f103c5d8da3af599e815ab410d8aa6c1ab768992ad2b55802a9e4e958d4e34c2"
+    },
+    {
+      "path": "materials/domestic/bytedance/04-trae-aicon/conference-introduction.txt",
+      "bytes": 5424,
+      "sha256": "76de2c85a554ec9742797ab97ad7d10c597a3d9b4c136b0df34b60605e166d86"
+    },
+    {
+      "path": "materials/domestic/bytedance/04-trae-aicon/images.md",
+      "bytes": 1123,
+      "sha256": "8df1dc12e96786b2bb8166e6addbc62ea307f1c258011eaa9c8cd461a69a35bd"
+    },
+    {
+      "path": "materials/domestic/bytedance/04-trae-aicon/images/1a6450b03c373df5.jpg",
+      "bytes": 469916,
+      "sha256": "749362ce3f54f5d37f28de31c3f00c5bb24557034d4bef574790636a99886ebc"
+    },
+    {
+      "path": "materials/domestic/bytedance/04-trae-aicon/images/34647c6fe937bc0e.png",
+      "bytes": 1996,
+      "sha256": "fb6218c3dc43ac7215dfc222a2302c5ec6b67508eeb4d6db3c0127a0ad36157d"
+    },
+    {
+      "path": "materials/domestic/bytedance/04-trae-aicon/images/4160843dad3c526c.png",
+      "bytes": 1553,
+      "sha256": "fac9973dfaeeb6aaf40cc7d129222709817359f6bc11eb7a415003f62673dfa6"
+    },
+    {
+      "path": "materials/domestic/bytedance/04-trae-aicon/images/4ce469be08f9902b.png",
+      "bytes": 794,
+      "sha256": "7323b9fd9607cc4dd77b4e73798bc46ce54fcaf9ec7b4e08fda3cf56d2aaa0de"
+    },
+    {
+      "path": "materials/domestic/bytedance/04-trae-aicon/images/5d726436a7ec43cd.png",
+      "bytes": 1392,
+      "sha256": "f76914e4c980997d2f00f25ae9a0ccb712754a22ee3b526a78935e3bf2458354"
+    },
+    {
+      "path": "materials/domestic/bytedance/04-trae-aicon/images/81821328d6037c46.jpg",
+      "bytes": 149944,
+      "sha256": "b985fc55a9d5f95392e0b762d2fffd4dc322ad132f468f793ac975cbd10be24c"
+    }
+  ]
+}

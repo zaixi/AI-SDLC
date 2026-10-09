@@ -1,0 +1,94 @@
+{
+  "id": "ali-taote",
+  "title": "AI 编码实践：从 Vibe Coding 到 SDD",
+  "directory": "materials/domestic/alibaba/04-taote-vibe-to-sdd",
+  "kind": "团队实践转载",
+  "status": "转载正文已保存；公众号原文无法连接",
+  "publication_date": "2025-12-30（转载）",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "原文",
+      "url": "https://mp.weixin.qq.com/s/xVff9O2DPLssbfzp_GRwXQ"
+    },
+    {
+      "label": "可读转载",
+      "url": "https://blog.wyan.vip/2025/12/ai_VibeCoding_to_SSD.html"
+    },
+    {
+      "label": "阿里云同题页面",
+      "url": "https://developer.aliyun.com/article/1709229"
+    }
+  ],
+  "note": "日期为可读转载日期，非已核实原始发布日期。微信公众号请求被网络代理拒绝。",
+  "files": [
+    "materials/domestic/alibaba/04-taote-vibe-to-sdd/community-summary.html",
+    "materials/domestic/alibaba/04-taote-vibe-to-sdd/community-summary.txt",
+    "materials/domestic/alibaba/04-taote-vibe-to-sdd/images.md",
+    "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/770634ed8454e86f.gif",
+    "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/8be15a48a857f6ee.png",
+    "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/ab6f63f14b9dd959.png",
+    "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/b31a0b8d5211765d.png",
+    "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/d2b8953e4696221d.png",
+    "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/fd761f3606dc9140.webp",
+    "materials/domestic/alibaba/04-taote-vibe-to-sdd/republication.html",
+    "materials/domestic/alibaba/04-taote-vibe-to-sdd/republication.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/community-summary.html",
+      "bytes": 186562,
+      "sha256": "5294d484cdf75c1e5a7f1632f8b2a227417218c155ae6fa1684cf62e4215bcff"
+    },
+    {
+      "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/community-summary.txt",
+      "bytes": 4781,
+      "sha256": "a2594614bdf1ba65761a90695c14d07f0fc98fdca5735af16fd7fd0c792653de"
+    },
+    {
+      "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/images.md",
+      "bytes": 1034,
+      "sha256": "79e1e59f26a98488d93154e612e8bb1621e24f47c544b3f9cf5e7218729e0c04"
+    },
+    {
+      "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/770634ed8454e86f.gif",
+      "bytes": 3376,
+      "sha256": "b94e138d94e27aa65a6dea14aac1325d709f56e02f07a6bba95fdf10f296cb6a"
+    },
+    {
+      "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/8be15a48a857f6ee.png",
+      "bytes": 428027,
+      "sha256": "0a8e538a46b5862bf58515df872b23ffc0df56a56f5f214b3147818924b9bb93"
+    },
+    {
+      "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/ab6f63f14b9dd959.png",
+      "bytes": 19256,
+      "sha256": "a20583c81805fe64f7fa210851ce29754af9d25fd6aa5a3225a9557529602513"
+    },
+    {
+      "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/b31a0b8d5211765d.png",
+      "bytes": 2330,
+      "sha256": "974bbcc14bfad5995a138aedb25584422ea73ce59a2b21730da38b2c139f2692"
+    },
+    {
+      "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/d2b8953e4696221d.png",
+      "bytes": 9138,
+      "sha256": "d81071ee678356860b822a3ce5d11ed057462390ab1869a82411912322dd82ab"
+    },
+    {
+      "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/images/fd761f3606dc9140.webp",
+      "bytes": 10516,
+      "sha256": "31b7d2c805ff882f23843a6d3fa49988e67da87eb8c86b08c0996e3de2626f7c"
+    },
+    {
+      "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/republication.html",
+      "bytes": 132548,
+      "sha256": "1981706e051d6e33a2cc16b9f34e66049fb0079feb202caa247ea5da6dd589ce"
+    },
+    {
+      "path": "materials/domestic/alibaba/04-taote-vibe-to-sdd/republication.txt",
+      "bytes": 41458,
+      "sha256": "a099e702c62ea6898d2863007d9e1d34e4d019170fae2912235562c3721dc24f"
+    }
+  ]
+}

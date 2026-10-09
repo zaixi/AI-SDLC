@@ -1,0 +1,242 @@
+{
+  "id": "company-tools-20261008",
+  "title": "美团、华为、京东、百度现成工具补查",
+  "directory": "materials/references/company-tools-20261008",
+  "kind": "官方产品文档与搜索发现记录",
+  "status": "公开资料已保存；未安装或实测",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "meituan-release",
+      "url": "https://tech.meituan.com/2026/07/28/CatPaw-LongCat.html"
+    },
+    {
+      "label": "meituan-product",
+      "url": "https://catpaw.meituan.com/"
+    },
+    {
+      "label": "huawei-product",
+      "url": "https://codearts.huaweicloud.com/"
+    },
+    {
+      "label": "huawei-knowledge",
+      "url": "https://support.huaweicloud.com/usermanual-codeartsagent/codeartsagent_ug_0013.html"
+    },
+    {
+      "label": "jd-skills",
+      "url": "https://joycode.jd.com/docs/functions/functions-skills/"
+    },
+    {
+      "label": "jd-docs",
+      "url": "https://joycode.jd.com/docs/"
+    },
+    {
+      "label": "baidu-skills",
+      "url": "https://cloud.baidu.com/doc/COMATE/s/Nmma28iqe"
+    },
+    {
+      "label": "huawei-wiki",
+      "url": "https://support.huaweicloud.com/usermanual-codeartsagent/codeartsagent_ug_0037.md"
+    },
+    {
+      "label": "huawei-skills",
+      "url": "https://support.huaweicloud.com/usermanual-codeartsagent/codeartsagent_ug_0024.md"
+    },
+    {
+      "label": "jd-wiki",
+      "url": "https://joycode.jd.com/docs/functions/functions/repoWiki/"
+    }
+  ],
+  "note": "搜索摘要仅作发现入口。京东 RepoWiki 文档限制内部 Coding 仓库；百度 Skills 页面未取得完整功能正文。",
+  "files": [
+    "materials/references/company-tools-20261008/baidu-skills-links.json",
+    "materials/references/company-tools-20261008/baidu-skills.html",
+    "materials/references/company-tools-20261008/baidu-skills.txt",
+    "materials/references/company-tools-20261008/huawei-knowledge-links.json",
+    "materials/references/company-tools-20261008/huawei-knowledge.html",
+    "materials/references/company-tools-20261008/huawei-knowledge.txt",
+    "materials/references/company-tools-20261008/huawei-product-links.json",
+    "materials/references/company-tools-20261008/huawei-product.html",
+    "materials/references/company-tools-20261008/huawei-product.txt",
+    "materials/references/company-tools-20261008/huawei-skills.md",
+    "materials/references/company-tools-20261008/huawei-wiki.md",
+    "materials/references/company-tools-20261008/jd-skills-links.json",
+    "materials/references/company-tools-20261008/jd-skills.html",
+    "materials/references/company-tools-20261008/jd-skills.txt",
+    "materials/references/company-tools-20261008/jd-wiki.html",
+    "materials/references/company-tools-20261008/jd-wiki.txt",
+    "materials/references/company-tools-20261008/meituan-product-links.json",
+    "materials/references/company-tools-20261008/meituan-product.html",
+    "materials/references/company-tools-20261008/meituan-product.txt",
+    "materials/references/company-tools-20261008/meituan-release-links.json",
+    "materials/references/company-tools-20261008/meituan-release.html",
+    "materials/references/company-tools-20261008/meituan-release.txt",
+    "materials/references/company-tools-20261008/reuse-baidu.json",
+    "materials/references/company-tools-20261008/reuse-catpaw-ide.json",
+    "materials/references/company-tools-20261008/reuse-huawei-skills.json",
+    "materials/references/company-tools-20261008/reuse-huawei.json",
+    "materials/references/company-tools-20261008/reuse-jd-wiki.json",
+    "materials/references/company-tools-20261008/reuse-jd.json",
+    "materials/references/company-tools-20261008/reuse-meituan-open.json",
+    "materials/references/company-tools-20261008/reuse-meituan.json",
+    "materials/references/company-tools-20261008/sources.json"
+  ],
+  "assets": [
+    {
+      "path": "materials/references/company-tools-20261008/baidu-skills-links.json",
+      "bytes": 13144,
+      "sha256": "5e1ea2043c5670b8dca7eca5ee42fdf8ae05c1a94134cd2bdb24ad817d0884c3"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/baidu-skills.html",
+      "bytes": 78145,
+      "sha256": "8a6f5ed817f52f961718f41ac3569af78ecbc9da306852898920c084ef3be4cd"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/baidu-skills.txt",
+      "bytes": 9375,
+      "sha256": "7b30f2e4adf8c334c53d8fb3284a50b24968ae144d50acbf86f8b09fed9f93a0"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/huawei-knowledge-links.json",
+      "bytes": 7445,
+      "sha256": "123f85b52c86ef8d7167db353a0f6d0619753d9c501c5df550057fb63662a735"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/huawei-knowledge.html",
+      "bytes": 84020,
+      "sha256": "cad06afdac6d76322bcbcd015f2eae740d36505f5580334b1d6113e936424c35"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/huawei-knowledge.txt",
+      "bytes": 5251,
+      "sha256": "a54aca2b7109052c5cd219d81727137335bae477d15822a7ef509b311e6ef1e1"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/huawei-product-links.json",
+      "bytes": 7286,
+      "sha256": "67116217425d96529d2546d07c0dfc2655d6920ff5c7b8e15300e78335fe3b02"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/huawei-product.html",
+      "bytes": 246768,
+      "sha256": "82d7e6ae5ac815a1c35810fe2d718ef76269c4acb44e2c864280291e9d098ea4"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/huawei-product.txt",
+      "bytes": 9436,
+      "sha256": "3eae4ea21d87d6ffdb07948ebcb05dd022ffed72d7d144a0f89b35300a13d6d4"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/huawei-skills.md",
+      "bytes": 30544,
+      "sha256": "51b943bf7b46fc15eb530b85611502d5754e5184cfce349760a5fc42e9f8288c"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/huawei-wiki.md",
+      "bytes": 2021,
+      "sha256": "2a774a9d143e9e3c1df988b42d24227172356842b7d74745de2e0f8d72f90134"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/jd-skills-links.json",
+      "bytes": 1501,
+      "sha256": "2a2d625fecea8f2652a3f8e114b57a5d47f474fc028661e8aa673e2191709d24"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/jd-skills.html",
+      "bytes": 43043,
+      "sha256": "db514ebd102433cbee8bafa78e52dc159a35c39f592d433f224164d15176fee2"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/jd-skills.txt",
+      "bytes": 9064,
+      "sha256": "e080a87cac86afd0461e1757fa9c44ae6226d4f169b048564344090dfc9266b3"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/jd-wiki.html",
+      "bytes": 16791,
+      "sha256": "dcde9f2373b3b76e10de46d7446371680171a4e0528846961245cdfd266ef870"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/jd-wiki.txt",
+      "bytes": 2493,
+      "sha256": "6022b62776c57c99ffc7147c41ca58af26898a01a37af54be5890438f3aa321c"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/meituan-product-links.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/meituan-product.html",
+      "bytes": 4255,
+      "sha256": "acf75a1adfc89d07d1c0f70e279e4ba122105d8d3f1d0154326a5155e08ba80b"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/meituan-product.txt",
+      "bytes": 56,
+      "sha256": "051f35b50a34efd2eb0d3cb012f55538c7057238cda1c19b04e4252b58ff5e8b"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/meituan-release-links.json",
+      "bytes": 3193,
+      "sha256": "008269a55e2f1ce46c6ad678568004f9715c956efd7f4acacb4a56e2ff228f98"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/meituan-release.html",
+      "bytes": 33730,
+      "sha256": "342f89510437f28bb6a3b1abf6c704ffa3bbb6f9e551cda4f56782a5820ac57f"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/meituan-release.txt",
+      "bytes": 7324,
+      "sha256": "0082948a002b4f29658381b05c75569cd4c94c56b88820daf81b3da600b108c9"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/reuse-baidu.json",
+      "bytes": 4500,
+      "sha256": "2ae534d48b0d88a6ee88d43ae591aef92baa5dd955952a950010dc542c334838"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/reuse-catpaw-ide.json",
+      "bytes": 798,
+      "sha256": "54b7e2bc67430ef23dd94d6d7f49234ea37ce3cf815941988622014d1b64eb6c"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/reuse-huawei-skills.json",
+      "bytes": 5791,
+      "sha256": "34bea1ff6a21627307491473217d69eef46e501ccc79a572d50255223a1a9d00"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/reuse-huawei.json",
+      "bytes": 4782,
+      "sha256": "12aba58e462ae5bbc42ebdec40f0c1363004ad333fbb9f423af5652367fc8abe"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/reuse-jd-wiki.json",
+      "bytes": 4040,
+      "sha256": "090ec82d2683f21f35ad02225b495ce7a67000661493f36374ec34565fb867c3"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/reuse-jd.json",
+      "bytes": 4913,
+      "sha256": "5fc88e2275983c2327384d076b7070bf46d0a686b60883abfb26af99b8989f76"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/reuse-meituan-open.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/reuse-meituan.json",
+      "bytes": 4479,
+      "sha256": "5091977cf47f71b625ddba2ab4fd48b5c6e9e12678422083d586bc9a2cc2161d"
+    },
+    {
+      "path": "materials/references/company-tools-20261008/sources.json",
+      "bytes": 767,
+      "sha256": "3e1d1652141618124875dfd4e1838c7c3b2a5dd288fd578b2c635c45fca0722b"
+    }
+  ]
+}

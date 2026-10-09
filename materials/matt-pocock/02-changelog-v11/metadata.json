@@ -1,0 +1,32 @@
+{
+  "id": "matt-changelog-v11",
+  "title": "v1.1：Wayfinder、To Spec、To Tickets 与工作流变更",
+  "directory": "materials/matt-pocock/02-changelog-v11",
+  "kind": "作者文章 / 访谈 / 官方演讲",
+  "status": "公开文字已保存",
+  "publication_date": "2026-07-08",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "公开原文",
+      "url": "https://www.aihero.dev/skills/skills-changelog-v1-1-wayfinder-to-spec-to-tickets-grilling-improvements"
+    }
+  ],
+  "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。",
+  "files": [
+    "materials/matt-pocock/02-changelog-v11/page.html",
+    "materials/matt-pocock/02-changelog-v11/page.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/matt-pocock/02-changelog-v11/page.html",
+      "bytes": 337235,
+      "sha256": "fe10feaddf7d04f9c5b8d542d94b41856e411bfde796a540fb99b049fa6bbeaf"
+    },
+    {
+      "path": "materials/matt-pocock/02-changelog-v11/page.txt",
+      "bytes": 12902,
+      "sha256": "867b053afd860999f83e5c4f0ea393e612d16bdb1b52089af7302a2d4cbba354"
+    }
+  ]
+}

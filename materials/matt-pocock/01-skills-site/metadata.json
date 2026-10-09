@@ -1,0 +1,32 @@
+{
+  "id": "matt-skills-site",
+  "title": "Skills 工作流总览",
+  "directory": "materials/matt-pocock/01-skills-site",
+  "kind": "作者文章 / 访谈 / 官方演讲",
+  "status": "公开文字已保存",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "公开原文",
+      "url": "https://www.aihero.dev/skills"
+    }
+  ],
+  "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。",
+  "files": [
+    "materials/matt-pocock/01-skills-site/page.html",
+    "materials/matt-pocock/01-skills-site/page.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/matt-pocock/01-skills-site/page.html",
+      "bytes": 482600,
+      "sha256": "08c9ca93eea47b8ab70c4b9f780ecf99ccd72f696efcb489ef184cad2a245437"
+    },
+    {
+      "path": "materials/matt-pocock/01-skills-site/page.txt",
+      "bytes": 9281,
+      "sha256": "e7cdcd51bfdb95fc6f599a4fa21f955247eac1939a44d2599ce645b2ffa11cd0"
+    }
+  ]
+}

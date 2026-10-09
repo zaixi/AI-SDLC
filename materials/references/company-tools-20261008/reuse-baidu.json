@@ -1,0 +1,52 @@
+[
+  {
+    "title": "智能代码助手 Comate-产品文档-百度智能云",
+    "url": "https://cloud.baidu.com/doc/COMATE/s/vm66asjm4",
+    "snippet": "智能代码助手 COMATE Baidu Comate（智能代码助手）是基于文心大模型，结合百度积累多年的编程现场大数据和外部优秀开源数据，打造的新一代编码辅助工具。"
+  },
+  {
+    "title": "Skills - 智能代码助手公有云COMATE | 百度智能云文档",
+    "url": "https://cloud.baidu.com/doc/COMATE/s/Nmma28iqe",
+    "snippet": "百度智能云文档中心帮助大家了解百度智能云Skills智能代码助手公有云COMATE的相关内容，帮助新用户更好的了解百度智能云，使用百度智能云产品。"
+  },
+  {
+    "title": "Baidu Comate · 使用手册",
+    "url": "https://comate.baidu.com/zh/readme",
+    "snippet": "百度智能云文档中心提供文心快码的使用手册，帮助用户了解及使用智能代码助手公有云COMATE。"
+  },
+  {
+    "title": "Baidu Comate · 使用手册",
+    "url": "https://kuaima.baidu.com/zh/readme",
+    "snippet": "百度智能云文档中心帮助大家了解百度智能云产品介绍智能代码助手公有云COMATE的相关内容，帮助新用户更好的了解百度智能云，使用百度智能云产品。"
+  },
+  {
+    "title": "文心快码Zulu：AI编程助手如何重塑开发工作流_comate zulu-CSDN博客",
+    "url": "https://blog.csdn.net/qq_40380468/article/details/146185062",
+    "snippet": "文心快码Comate Zulu(Zero-code Unified Language Understanding)是首个实现\"自然语言全链路开发\"的智能编程助手，将对话式交互、多模态理解、智能决策能力深度融入开发全流程，是文心快码（Baidu Comate）全新推出的自动编程智能体，旨在 ..."
+  },
+  {
+    "title": "Comate使用指南：从插件管理到Zulu智能体激活_文心快码",
+    "url": "https://comate.baidu.com/zh/page/1krch6h0owg",
+    "snippet": "Zulu智能体激活与使用指南 购买后的自动激活流程 购买Zulu智能体后，系统会自动将百度账号与购买记录关联，登录Comate时付费功能自动生效。 验证步骤： 登录Comate 进入 设置 > 智能体管理 确认Zulu智能体状态为\"已激活\" 异常状态排查与解决 若Zulu未激活，可尝试以下操作： 确保登录账号与付款 ..."
+  },
+  {
+    "title": "文心快码Coding智能体Zulu正式发布：国内首个多模态AI程序员正式上岗-百度开发者中心",
+    "url": "https://developer.baidu.com/article/detail.html?id=3546866",
+    "snippet": "Zulu核心能力 基于文心快码Comate Zulu核心功能，文心快码可帮助专业开发团队 实现「需求-编码-调试-验证」端到端生成，帮助每位工程师驾驭Coding Agent，成为\"十倍工程师\"，现场，百度文心快码团队高级经理彭云鹏详细介绍了Zulu智能体的优势。"
+  },
+  {
+    "title": "文心快码Coding智能体Zulu正式发布：国内首个多模态AI程序员正式上岗 - 百度安全社区",
+    "url": "https://shadu.baidu.com/article/1928",
+    "snippet": "\"AI是百度提升工程效率最重要的生产力来源，智能体是大模型能力与研发生产力之间最关键的桥梁。 \"百度工程效能部总监臧志表示。 在本次文心快码3.5版本的升级中，百度重点发布了国内首个多模态、全栈自动编程智能体：文心快码Comate Zulu。"
+  },
+  {
+    "title": "文心快码 Comate 教程：百度 AI 编程助手上手指南（2026）",
+    "url": "https://ai.cheemao.com/blog/wenxin-kuaima-comate-tutorial",
+    "snippet": "文心快码（Baidu Comate）是百度推出的智能代码助手，支持 VS Code、JetBrains 全家桶等主流 IDE，内置 Zulu 多智能体和 Spec 模式。本文讲清楚文心快码怎么安装、免费版够不够用、核心功能有哪些，并和通义灵码、CodeBuddy 做对比，帮你选对国产 AI 编程工具。"
+  },
+  {
+    "title": "文心快码 (Baidu Comate)是什么？多智能体AI IDE与代码助手详解",
+    "url": "https://www.skillsbot.cn/agent/780",
+    "snippet": "文心快码 百度文心快码是基于大模型的智能代码助手，可自动补全、生成代码，提供解释与纠错，有效提升开发效率。，文心快码（Comate）由百度基于文心大模型打造，是一款智能代码助手。它深度集成于多种主流IDE，支持超过100种编程语言。开发者可享受行级/..."
+  }
+]

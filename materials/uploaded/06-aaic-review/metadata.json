@@ -1,0 +1,32 @@
+{
+  "id": "upload-aaic-review",
+  "title": "在新的研发模式下，如何看懂AI写的技术方案？",
+  "directory": "materials/uploaded/06-aaic-review",
+  "kind": "用户上传 PDF",
+  "status": "完整 PDF 已保存",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "用户提供的微信公众号链接",
+      "url": "https://mp.weixin.qq.com/s/eF-cdFtdiDX-laykhVEdqg"
+    }
+  ],
+  "note": "",
+  "files": [
+    "materials/uploaded/06-aaic-review/text.txt",
+    "materials/uploaded/06-aaic-review/在新的研发模式下，如何看懂AI写的技术方案？.pdf"
+  ],
+  "assets": [
+    {
+      "path": "materials/uploaded/06-aaic-review/text.txt",
+      "bytes": 18974,
+      "sha256": "a46cd1169b09b55fa0811e554d55e0604c2a3e0e1200ac8a96a2bd47566ac4aa"
+    },
+    {
+      "path": "materials/uploaded/06-aaic-review/在新的研发模式下，如何看懂AI写的技术方案？.pdf",
+      "bytes": 1961641,
+      "sha256": "b9b84e4e74072faabddd1bac733fffc7e9b5a0f16dd7c20957c36b6e0537ba56"
+    }
+  ]
+}

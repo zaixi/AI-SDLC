@@ -1,0 +1,383 @@
+{
+  "schemaVersion": 1,
+  "talkId": "kgv2:talk:e75a6be154cc8d6bdb5530dc",
+  "reviewStatus": "needs_review",
+  "segments": [
+    {
+      "startMs": 220,
+      "text": "[upbeat music] Hello, everyone."
+    },
+    {
+      "startMs": 15720,
+      "text": "Having a good conference so far? Yeah. Are you having a good conference so far? Yeah. [cheers] Good. Wonderful."
+    },
+    {
+      "startMs": 22340,
+      "text": "I have a message for you that I hope will be, um, a comforting message for folks who believe that, uh, their skill set is no longer worth anything in this new age, which is I believe that software fundamentals matter now more than they actually ever have."
+    },
+    {
+      "startMs": 39180,
+      "text": "And I'm a teacher, and I've been recently teaching a course called Claude Code for Real Engineers. Nice and provocative. And in the process of kind of working on this course, I had to come up with a curriculum about AI coding, which is a bit of a nightmare because things are changing all the time, right?"
+    },
+    {
+      "startMs": 60240,
+      "text": "AI is a whole new paradigm. We need to chuck out all of the old rules, surely, so that we can bring in the new stuff."
+    },
+    {
+      "startMs": 68160,
+      "text": "And there's a kind of movement that has come up around this, which is the specs-to-code movement, and the specs-to-code movement says that, okay, you can write a specification about how an application is supposed to work, then you can use AI to turn it into code."
+    },
+    {
+      "startMs": 83720,
+      "text": "If there's a problem with the application, you then go back to the spec. You don't really look at the code. You just change the spec, you run the compiler again, and you end up with more code."
+    },
+    {
+      "startMs": 94360,
+      "text": "Raise your hand if you've heard of that."
+    },
+    {
+      "startMs": 97260,
+      "text": "Keep your hand raised if you've tried it. Okay. I've tried it too. You can put your hands down. And what I noticed was I would run it, and I would try not to look at the code,"
+    },
+    {
+      "startMs": 108620,
+      "text": "but I would look at the code, and I realized I would get code out first of all, and then I would run it, and I would get worse code, and I did it again, I got even worse code, and I got it again."
+    },
+    {
+      "startMs": 118100,
+      "text": "I kept running the compiler, kept running the compiler, and I would just end up with garbage. [scoffs]"
+    },
+    {
+      "startMs": 123720,
+      "text": "You know, raise your hand if that's happened to you. Yes. I don't think this works. The idea that we can just ignore the code and just have the code, let it manage itself, is just sort of vibe coding by another name."
+    },
+    {
+      "startMs": 136660,
+      "text": "And I didn't believe that back then. I thought, \"Okay, how do I fix the compiler? How do I make it so that it doesn't produce bad code each time or worse code?\""
+    },
+    {
+      "startMs": 145460,
+      "text": "And so I thought, \"Okay, I need to explain to the LLM in English what a good code base looks like.\" Let me dig out one of my old favorite books, which is A Philosophy of Software Design by John Ousterhout."
+    },
+    {
+      "startMs": 157840,
+      "text": "Go on Amazon, get it. Um, and he has a definition for what bad code looks like. He calls it complex code. Complexity is anything related to the structure of a software system that makes it hard to understand and modify the system, right?"
+    },
+    {
+      "startMs": 173620,
+      "text": "So a, a bad code base is a code base that's hard to change. If you can't change a code base without causing bugs, then it's a bad code base."
+    },
+    {
+      "startMs": 181580,
+      "text": "Good code bases are easy to change. So I thought, \"Ooh, that was good. Let's try another book. Let's try The Pragmatic Programmer.\" Go on Amazon, get it."
+    },
+    {
+      "startMs": 190820,
+      "text": "They have a whole chapter on something called software entropy, and this is exactly what I was seeing. Entropy is the idea that things tend towards, um, disaster and, uh, floating away from each other and collapse, and this is exactly how most software systems behave too, is that every time you make a change to a code base, if"
+    },
+    {
+      "startMs": 208320,
+      "text": "you're only thinking about that change, not thinking about the design of the whole system, your code base is gonna get worse and worse and worse, and that's what I was seeing."
+    },
+    {
+      "startMs": 217040,
+      "text": "Everything inside the specs to code idea that you just run the compiler again and again was making worse code. Now, there's an idea that sort of drives the specs to code movement, which is that code is cheap."
+    },
+    {
+      "startMs": 230340,
+      "text": "Raise your hand if you've heard that phrase before, that code is cheap. Yeah."
+    },
+    {
+      "startMs": 235100,
+      "text": "Well, I don't think this is right. I think code is not cheap. In fact, bad code is the most expensive it's ever been because if you have a code base that's hard to change, you're not able to take all of the bounty that AI can offer 'cause AI in a good code base actually does really, really well."
+    },
+    {
+      "startMs": 255180,
+      "text": "And this means good code bases matter more than ever, which means software fundamentals matter more than ever. That's the thesis of this talk."
+    },
+    {
+      "startMs": 262960,
+      "text": "So let's actually get into practical stuff. I'm gonna talk about different failure modes that you may have experienced or you may not have experienced yet with AI and how you can avoid them by just going back to old books and looking at good software practices."
+    },
+    {
+      "startMs": 274840,
+      "text": "Sound good? So the first one is that the AI didn't do what I wanted. You know? I, I thought I had a good idea in my head, and the AI just did something totally different, or it did some, uh, like specs that I..."
+    },
+    {
+      "startMs": 287520,
+      "text": "You know, it just made something I didn't want. Raise your hand if you've hit this mode."
+    },
+    {
+      "startMs": 291780,
+      "text": "Cool. Okay. Well, this is what they say in The Pragmatic Programmer, is that no one knows exactly what they want. It's that you and the AI, there is a communication barrier there, right?"
+    },
+    {
+      "startMs": 304070,
+      "text": "And so when you're talking to the AI, that's kind of like the AI doing its requirements gathering. It's basically t- working out from you what it is that you need."
+    },
+    {
+      "startMs": 312840,
+      "text": "And I realized that there was another book, Frederick P. Brooks, The Design of Design, and it talks about this idea called the design concept. It's that when you have more than one person designing something together, you have this idea sort of floating between you, this ephemeral idea of the thing that you're building, and that thing that you're"
+    },
+    {
+      "startMs": 332800,
+      "text": "building or the idea of it is called the design concept. It's not an asset. It's not something you can put in a markdown file. It is the invisible sort of theory of what you're building."
+    },
+    {
+      "startMs": 344100,
+      "text": "And so I thought, \"Okay, that's what's going on. Me and the AI don't share a design concept.\" So I came up with a skill. This skill is very, very simple."
+    },
+    {
+      "startMs": 353380,
+      "text": "It's called Grill Me, and it looks like this. Interview me relentlessly about every ax- aspect of this plan until we reach a shared understanding. Walk down each branch of the design tree, which is another thing from Frederick P."
+    },
+    {
+      "startMs": 366576,
+      "text": "Brooks, resolving dependencies between decisions one by one. This skill is like, uh, the repo containing this skill has, like, thirteen thousand stars or something. Like, it just went nuts, went viral."
+    },
+    {
+      "startMs": 377036,
+      "text": "People love this thing. It-- these couple of lines means the AI asks you, like, forty questions, sixty questions. I've had it ask, uh, people a hundred questions before it's satisfied they've reached a shared understanding."
+    },
+    {
+      "startMs": 389616,
+      "text": "And it means it turns the a-AI into a kind of adversary, where it's just continually pinging you ideas and trying to reach a shared understanding. And that means that the conversation that you then generate, you can take that and turn it into a product requirements document or something."
+    },
+    {
+      "startMs": 405456,
+      "text": "Or if it's a small change, you can just, uh, do, uh, turn it directly into issues."
+    },
+    {
+      "startMs": 412076,
+      "text": "And then your AFK agent will then pick it up. And don't at me on this, but I personally believe this is better than the default plan mode in the, the tool that I use, which is called Claude Code."
+    },
+    {
+      "startMs": 424496,
+      "text": "Plan mode is extremely eager to create an asset. It really wants to, uh, just create a plan and start working. Whereas I think it's a lot nicer to reach a shared design concept first."
+    },
+    {
+      "startMs": 438816,
+      "text": "So that's tip number one. Now, failure mode number two is that the AI is just way too verbose. It's like you're almost talking across purposes with the AI. Raise your hand if you, uh, feel this, if you ever experienced that failure mode."
+    },
+    {
+      "startMs": 452696,
+      "text": "Yeah. It's kind of like the AI is, like, talking, just using too many words to try to communicate what it's doing. It's not like you're talking, uh, using the same language."
+    },
+    {
+      "startMs": 462026,
+      "text": "And this to me felt very, very familiar, right? If you've ever been a developer for a long time and you've worked with, let's say, domain experts, someone building an application, um, let's say the domain expert wants you to build something on, uh, I don't know, microchips."
+    },
+    {
+      "startMs": 475176,
+      "text": "You have no idea what microchips are. You need to establish some kind of shared language, right? Because otherwise they're gonna be using terms you don't understand. You're gonna be translating that into code that maybe you don't even understand, and certainly the domain expert won't."
+    },
+    {
+      "startMs": 487856,
+      "text": "And so there's this kind of language gap between you and the domain expert. And so I went back to domain-driven design, DDD. This is something I'm still kind of on the edge of exploring, but everything I'm reading about DDD is just music to my ears."
+    },
+    {
+      "startMs": 504156,
+      "text": "I freaking love it. And DDD has a concept of a ubiquitous language."
+    },
+    {
+      "startMs": 510996,
+      "text": "With a ubiquitous language, conversations among developers and expressions of the code and conversations with domain experts are all derived from the same domain model. It's essentially a markdown file full of a list of terms that you and the AI have in common, and you really focus on those terms, and you really make sure that they're aligned with"
+    },
+    {
+      "startMs": 528636,
+      "text": "what it actually means, and you use them all the time in the code, when you're talking about the code, when you're talking to domain experts, or in our case, when you're talking with AI."
+    },
+    {
+      "startMs": 537776,
+      "text": "So I made a skill. This skill is the ubiquitous language skill. Basically just scans your code base, looks for terminology, and then, um, creates a markdown file. Creates the ubiquitous language markdown file, a bunch of markdown tables with all of the terminology."
+    },
+    {
+      "startMs": 554916,
+      "text": "And this, then I pass it to the AI, and I'm able to read it too, and I actually have it open all the time when I'm grilling with the AI and planning and that."
+    },
+    {
+      "startMs": 563796,
+      "text": "And what I noticed by reading the thinking traces of the AI, it not only improves the planning, but it allows the AI to think in a less verbose way, and actually means that the implementation is more aligned with what you actually planned."
+    },
+    {
+      "startMs": 577136,
+      "text": "So this has absolutely been a powerhouse. It's, I mean, unbelievably good. So that's tip number two: create a shared language with the AI. So okay. Let's imagine that you've aligned with the AI."
+    },
+    {
+      "startMs": 589056,
+      "text": "You know what it is you're supposed to be building. The AI has built the right thing, but it doesn't work. Raise your hands if that's happened to you."
+    },
+    {
+      "startMs": 597916,
+      "text": "Yep. Just doesn't work. Well, there's an obvious thing that we can do to make that better, which is we can use feedback loops. We can use, um, static types, you know, if you're not using TypeScript, uh, that's crazy."
+    },
+    {
+      "startMs": 610576,
+      "text": "Uh, if you're not using, uh, if you're building a front-end app and you're not giving it the LLM access to the browser, so it can look around, absolutely needs that."
+    },
+    {
+      "startMs": 619156,
+      "text": "And you obviously also need automated tests. And one sort of thing I notice here is that even with these feedback loops, the LLM doesn't use them very well. It doesn't kind of like get the most out of its feedback loops in the way that a veteran developer would."
+    },
+    {
+      "startMs": 636996,
+      "text": "And so it does... What it tends to do is just does way too much at once. It will produce, like, huge amounts of code and then think, \"Oh, I should probably type check that actually,\" or, \"I should, uh, you know, maybe check a test on that or maybe do something like that.\""
+    },
+    {
+      "startMs": 650696,
+      "text": "And this, in The Pragmatic Programmer, they describe as outrunning your headlights, as essentially driving too fast because the rate of feedback is your speed limit. The rate of feedback is your speed limit, which means that you should be testing as you go, taking small, deliberate steps."
+    },
+    {
+      "startMs": 668896,
+      "text": "And the AI by default is really not very good at that. So skill number three is TDD. You should be using test-driven development because TDD forces the LLM to really take small steps."
+    },
+    {
+      "startMs": 683776,
+      "text": "You create a test first, you make that test pass, and then you refactor the code to make it nicer and consider the design."
+    },
+    {
+      "startMs": 692366,
+      "text": "The issue here is that testing is really hard. Testing has always been hard. And the reason for that"
+    },
+    {
+      "startMs": 701676,
+      "text": "is there are a ton of different decisions you need to make when you write a test. You need to figure out how big a unit do you want to test."
+    },
+    {
+      "startMs": 710636,
+      "text": "You need to figure out what to mock. You need to figure out what behaviors do you even want to test in the first place. And all of these decisions are dependent."
+    },
+    {
+      "startMs": 717316,
+      "text": "So if you are testing a really big unit, like an entire, uh, massive application, then it might be quite flaky. You might not wanna test that many behaviors. You know, if you only test this unit, you need to mock this unit."
+    },
+    {
+      "startMs": 729056,
+      "text": "You know, it's all interlinked. And I've been thinking about this for years, for my entire development career."
+    },
+    {
+      "startMs": 735292,
+      "text": "And what we notice is that good codebases are easy codebases to test, right? So here we're starting to get back to the idea of code being important, is that the better your codebase is, the better your feedback loops are because you're able to, um,"
+    },
+    {
+      "startMs": 751812,
+      "text": "give better feedback to the LLM, it produces better code."
+    },
+    {
+      "startMs": 755692,
+      "text": "And so I thought, what does a good codebase, what does a testable codebase look like? Again, we go to John Ousterhout. He talks about having deep modules in your codebase."
+    },
+    {
+      "startMs": 766632,
+      "text": "Not shallow modules, not lots of modules that expose like kind of, um, lots of functions. They should be relatively few large, deep modules with simple interfaces. Let's compare them quickly."
+    },
+    {
+      "startMs": 779572,
+      "text": "Deep modules, lots of functionality hidden behind a simple interface, hiding the complexity. You can look inside the deep module if you want to, but you don't need to. You can just use the interface."
+    },
+    {
+      "startMs": 789852,
+      "text": "Shallow modules, not much functionality, complex interface. And I'll just wait for you to take the photos."
+    },
+    {
+      "startMs": 798492,
+      "text": "Shallow modules in a codebase kind of look like this, where you have a ton of different tiny little blobs that the AI has to walk through and navigate, and this is really hard for the AI to explore, actually."
+    },
+    {
+      "startMs": 811052,
+      "text": "And so often what you'll see is if you have a codebase like this, which AI is really good at creating codebases like this, is that you'll have a situation where AI doesn't understand what your code is doing."
+    },
+    {
+      "startMs": 821172,
+      "text": "It will attempt to explore the code, but because it's poorly laid out and filled with shallow modules, it doesn't maybe get to the right module in time, or doesn't understand all the dependencies, all that stuff."
+    },
+    {
+      "startMs": 831552,
+      "text": "It doesn't understand your code. And so what does a codebase full of deep modules look like? Well, it looks like this,"
+    },
+    {
+      "startMs": 840432,
+      "text": "where it's the same code, but it's just structured inside boundaries where you have these interfaces on the top."
+    },
+    {
+      "startMs": 848692,
+      "text": "And these interfaces, you should probably have a lot of control over them and design them really well. Otherwise, you know, AI might mess up the design. But the implementation, you can kind of leave that to the AI a bit."
+    },
+    {
+      "startMs": 861072,
+      "text": "So how do you turn a codebase that looks like this into a codebase that looks like that? Well, I've got a skill for that. Improve codebase architecture. Turns out this is not-- It, it's quite complicated to do this, but it's a s- like a set of steps that you can reusably do again and again."
+    },
+    {
+      "startMs": 880532,
+      "text": "You just sort of explore the codebase, look for opportunities where there's code that's kind of lo- um, related, and wrap all of that in a deep module."
+    },
+    {
+      "startMs": 890112,
+      "text": "And this is a testable codebase because the boundaries around this code are so, so simple. You test at the interface, you verify using that interface, and you're good to go."
+    },
+    {
+      "startMs": 900101,
+      "text": "And so this is a codebase that rewards TDD."
+    },
+    {
+      "startMs": 904352,
+      "text": "But how about failure mode number six, which is your... Okay, let's say your feedback loops are working. Let's say that things are kicking into gear. You're able to ship more code than you ever have before, but your brain can't keep up,"
+    },
+    {
+      "startMs": 916692,
+      "text": "right? Uh, raise your hand if you felt more tired than you have ever before in your development career. Yeah, me too. It's knackering. And I think that this is a codebase that actually makes it harder for your brain because you, as well as the AI, need to keep all of that information in your head."
+    },
+    {
+      "startMs": 934872,
+      "text": "Whereas this, not only is it simpler for you to read and understand, it also means you can kind of treat these modules or these deep modules as gray boxes."
+    },
+    {
+      "startMs": 947492,
+      "text": "You can kind of say, \"Okay, I'm gonna just design the interface, but I'm not gonna worry too much or not review the implementation too much.\" You can do this obviously with, uh, things that are less critical in your application."
+    },
+    {
+      "startMs": 960552,
+      "text": "Can't do this with, uh, you know, various things like, uh, uh, finance or whatever. But in many, many modules in your app, you don't need to think about the implementation too much as long as you have a testable boundary outside the module, and as long as you understand its purpose and can design it from the outside."
+    },
+    {
+      "startMs": 975792,
+      "text": "I have found this has really saved my brain because I can just go, \"Okay, the AI, I'll let you handle what's inside the big blob. I'm just gonna test from the outside and verify it.\""
+    },
+    {
+      "startMs": 986092,
+      "text": "So that's tip number five: Design the interface, delegate the implementation."
+    },
+    {
+      "startMs": 992071,
+      "text": "But this means that whenever we're touching the code, whenever we're planning stuff, we need to think about and be aware of the modules in our application. We need to know that map really well."
+    },
+    {
+      "startMs": 1002552,
+      "text": "It needs to be part of our ubiquitous language. We need to build it into our planning skills as well. So my write-a-PRD, inside the PRD, I'm specific about the module changes and the interfaces inside those modules, how they're being modified."
+    },
+    {
+      "startMs": 1015052,
+      "text": "I'm thinking about them all the time. And this comes from Kent Beck: Invest in the design of the system every day. And this is the core of it, right?"
+    },
+    {
+      "startMs": 1024032,
+      "text": "Because specs-to-code, we are not investing in the design of the system. We are divesting from it. We're getting rid of that. Whereas this, I think, is absolutely key."
+    },
+    {
+      "startMs": 1036512,
+      "text": "And so code is not cheap. That's the message I want you to take away. Code is important. And if we think about AI as a really great on-the-ground programmer, a kind of tactical programmer, a sergeant on the ground making the code changes, you need someone above that."
+    },
+    {
+      "startMs": 1055652,
+      "text": "You need someone thinking on the strategic level, and that's you. And that requires software fundamental skills that we've been using for twenty years, for m- longer."
+    },
+    {
+      "startMs": 1066512,
+      "text": "Now, if you are interested in any of the skills I put up here, it's in the GitHub repo [REDACTED:username]. And if you're interested in the training that I do or, uh, any free stuff, I'm on YouTube, I'm on Twitter, but I'm also at aihero.dev, where I have a newsletter that you can check out."
+    },
+    {
+      "startMs": 1081132,
+      "text": "Thank you so much. I hope that this gives you confidence in this new AI age- [audience clapping] that you can actually make a good impact. Thank you. [outro music]"
+    }
+  ]
+}

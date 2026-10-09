@@ -1,0 +1,52 @@
+[
+  {
+    "title": "RepoWiki | JoyCode",
+    "url": "https://joycode.jd.com/docs/functions/functions/repoWiki/",
+    "snippet": "RepoWiki 是一款专为开发团队设计的代码仓库知识管理工具，通过自动解析代码仓库，为您的团队打造集中、结构化、可视化的知识图谱。帮助开发者高效理解项目结构、提升协作效率，让文档实时与代码同步，知识沉淀不再是难题!"
+  },
+  {
+    "title": "Tags | JoyCode",
+    "url": "http://joycode.jd.com/docs/tags/",
+    "snippet": "Tags | JoyCode Tags"
+  },
+  {
+    "title": "快速上手 | JoyCode",
+    "url": "http://joycode.jd.com/docs/start/quickstart/",
+    "snippet": "一. 安装 在JetBrains IDEs 中安装 安装流程以IntelliJ IDEA为例： 打开 IntelliJ IDEA 设置窗口，在插件市场中搜索 JoyCoder，找到JoyCoder后单击安装。 安装完成后，请重启 IntelliJ IDEA。安装成功后，JoyCoder将出现在侧边栏 在Visual Studio Code 中安装 打开 Visual Studio Code 扩展窗口，搜索 JoyCoder，找到JoyCoder后单击安装 ..."
+  },
+  {
+    "title": "从一个简单任务开始：用 JoyCode 自动完成银行股价对比分析",
+    "url": "http://joycode.jd.com/docs/examples/examples/bank-stock-analysis/",
+    "snippet": "场景 从一个简单任务开始：用 JoyCode 自动完成银行股价对比分析 场景 我希望对比招商银行与四大国有银行的股价表现，并生成一张清晰、可读的趋势图。 按照传统方式，这个需求通常需要： 查找并下载历史股价数据； 处理不同股票的数据格式； 编写代码完成数据清洗和可视化； 调试运行环境和 ..."
+  },
+  {
+    "title": "索引 | JoyCode",
+    "url": "http://joycode.jd.com/docs/context/index/",
+    "snippet": "索引 | JoyCode ... @选项"
+  },
+  {
+    "title": "价格 | JoyCode",
+    "url": "https://joycode.jd.com/docs/account/pricing/",
+    "snippet": "价格 本文档为 JoyCode 的定价、计费规则，以及企业资源包说明。 1.1. 积分套餐 采用人/月标准化计费模式，支持按使用人数、使用时长灵活选购，当前提供以下两种规格的积分套餐："
+  },
+  {
+    "title": "快捷键 | JoyCode",
+    "url": "https://joycode.jd.com/docs/configs/shortcuts/",
+    "snippet": "快捷键 JoyCode 提供完整的键盘快捷键体系，覆盖聊天、编辑器操作与代码补全等核心能力。 快捷键设计参考 VS Code 按键绑定体系，用户可在此基础上快速上手。同时，所有包括 JoyCode 专属功能在内的按键绑定均支持自定义修改。 聊天快捷键 以下为聊天输入框相关快捷键："
+  },
+  {
+    "title": "FAQ | JoyCode",
+    "url": "http://joycode.jd.com/docs/vscode/faq/",
+    "snippet": "常见问题 常见问题 常见问题 如尝试解决后问题依赖存在，请截图或复制相关链接 点击加群 反馈 1. 错误: 无法安装，找不到与VSCode当前版本（xxxx）兼容的扩展\"JoyCoder.joycoder-fe\" 版本过低，请安装最新版本VSCode后重试。 mac端VSCode: 下载地址 windows端VSCode: 下载地址 2. 登录错误页、登录后依然提示去 ..."
+  },
+  {
+    "title": "规则 | JoyCode",
+    "url": "http://joycode.jd.com/docs/context/rules/",
+    "snippet": "规则 通过配置 Rules，可以对智能体的行为进行精确约束与规范，从而控制其输出质量与风格。 Rules 允许开发者自定义 AI 助手的行为方式，例如： 遵循特定编码风格与开发规范 定义项目架构偏好 控制输出内容与格式 提升智能体对项目需求的理解一致性 通过规则配置，可以让智能体生成的代码与 ..."
+  },
+  {
+    "title": "内置智能体 | JoyCode",
+    "url": "http://joycode.jd.com/docs/scalability/%E5%86%85%E7%BD%AE%E6%99%BA%E8%83%BD%E4%BD%93/",
+    "snippet": "在 JoyCode 中，智能体（Agent） 是核心编程助手。通过智能体，JoyCode 可以理解开发者的自然语言需求，进行端到端的自主操作，包括："
+  }
+]

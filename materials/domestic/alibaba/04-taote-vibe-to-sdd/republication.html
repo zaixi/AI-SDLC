@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="CAXaj5Tu8PhUU_YNOusai4yMCW8JHyu8wQAUWMygVuo">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-mac-osx.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.wyan.vip","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2643466400323139"
+     crossorigin="anonymous"></script>
+  <meta name="description" content="原文地址   本文系统回顾了淘特导购团队在AI编码实践中的演进历程，从初期的代码智能补全到Agent Coding再到引入Rules约束，最终探索SDD（Specification Driven Development，规格驱动开发）——以自然语言规格（spec.md）为唯一真理源，驱动代码、测试、文档自动生成，实现设计先行、可测试性内建与文档永不过期。实践中发现SDD理念先进但落地门槛高、工具">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[转载] AI编码实践：从Vibe Coding到SDD">
+<meta property="og:url" content="https://blog.wyan.vip/2025/12/ai_VibeCoding_to_SSD.html">
+<meta property="og:site_name" content="微言 | wyanassert &lt;br&gt;个人工作总结&lt;br&gt;">
+<meta property="og:description" content="原文地址   本文系统回顾了淘特导购团队在AI编码实践中的演进历程，从初期的代码智能补全到Agent Coding再到引入Rules约束，最终探索SDD（Specification Driven Development，规格驱动开发）——以自然语言规格（spec.md）为唯一真理源，驱动代码、测试、文档自动生成，实现设计先行、可测试性内建与文档永不过期。实践中发现SDD理念先进但落地门槛高、工具">
+<meta property="og:locale">
+<meta property="article:published_time" content="2025-12-30T11:43:40.000Z">
+<meta property="article:modified_time" content="2026-05-13T11:56:35.164Z">
+<meta property="article:author" content="wyanassert">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="Vibe">
+<meta property="article:tag" content="SpecCoding">
+<meta property="article:tag" content="AICoding">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://blog.wyan.vip/2025/12/ai_VibeCoding_to_SSD.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-Hans'
+  };
+</script>
+
+  <title>[转载] AI编码实践：从Vibe Coding到SDD | 微言 | wyanassert <br>个人工作总结<br></title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="微言 | wyanassert <br>个人工作总结<br>" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">微言 | wyanassert <br>个人工作总结<br></h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">博客内容主要是 iOS 技术分享, 以及随笔.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-订阅">
+
+    <a href="https://rss.wyan.vip/" rel="noopener" target="_blank"><i class="fa fa-rss fa-fw"></i>订阅</a>
+
+  </li>
+        <li class="menu-item menu-item-常用">
+
+    <a href="https://blog.wyan.vip/2022/10/mac_shell.html" rel="section"><i class="fa fa-bookmark fa-fw"></i>常用</a>
+
+  </li>
+        <li class="menu-item menu-item-图谱">
+
+    <a href="https://blog.wyan.vip/2023/11/iOS_knowledge.html" rel="section"><i class="fa fa-book fa-fw"></i>图谱</a>
+
+  </li>
+        <li class="menu-item menu-item-工具">
+
+    <a href="https://blog.wyan.vip/2024/12/web_tools.html" rel="section"><i class="fa fa-toolbox fa-fw"></i>工具</a>
+
+  </li>
+        <li class="menu-item menu-item-it-tools">
+
+    <a href="https://tool.wyan.vip/" rel="noopener" target="_blank"><i class="fa fa-hammer fa-fw"></i>it-tools</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://blog.wyan.vip/2025/12/ai_VibeCoding_to_SSD.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/apple-touch-icon-next.png">
+      <meta itemprop="name" content="wyanassert">
+      <meta itemprop="description" content=" 博学而孱守，微言而笃行">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="微言 | wyanassert <br>个人工作总结<br>">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          [转载] AI编码实践：从Vibe Coding到SDD
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-12-30 19:43:40" itemprop="dateCreated datePublished" datetime="2025-12-30T19:43:40+08:00">2025-12-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>22k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>20 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <blockquote>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/xVff9O2DPLssbfzp_GRwXQ">原文地址</a></p>
+</blockquote>
+<blockquote>
+<p>本文系统回顾了淘特导购团队在AI编码实践中的演进历程，从初期的<strong>代码智能补全</strong>到<strong>Agent Coding</strong>再到引入<strong>Rules约束</strong>，最终探索<strong>SDD（Specification Driven Development，规格驱动开发）</strong>——以自然语言规格（spec.md）为唯一真理源，驱动代码、测试、文档自动生成，实现设计先行、可测试性内建与文档永不过期。实践中发现SDD理念先进但落地门槛高、工具链不成熟、历史代码集成难，因此团队当前采用融合策略：<strong>以轻量级技术方案模板为输入 + Rules严格约束 + Agent Coding高效实现 + AI自动汇总架构文档</strong>，形成兼顾规范性、效率与可维护性的AI辅助编程最佳实践。</p>
+</blockquote>
+<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><h2 id="业务背景"><a href="#业务背景" class="headerlink" title="业务背景"></a>业务背景</h2><p>生成式AI技术的范式突破正驱动智能开发工具进入超线性演进阶段，主流代码生成工具的迭代周期已从季度级压缩至周级，智能体架构创新推动开发效能持续提升。</p>
+<p>淘特导购系统承载着商品推荐、会场投放、活动营销等多样化的业务场景，技术团队面临着需求迭代频繁、代码腐化及团队协作度高的问题，如何提升开发效率、保证代码质量、降低维护成本成为我们面临的重要挑战。正是在这样的背景下，我们开始尝试将AI技术融入到日常开发流程中，探索从传统编码到AI辅助编程的转变之路。</p>
+<h2 id="AI编程工具的引入"><a href="#AI编程工具的引入" class="headerlink" title="AI编程工具的引入"></a>AI编程工具的引入</h2><p>2024年初，团队开始探索AI编程工具，希望通过AI提升开发效率和代码质量。最初接触的是Aone Copilot（阿里内部AI工具）的代码智能补全功能，后来逐步尝试Agentic Coding、Rules约束、SDD（Specification Driven Development）等多种AI编程模式。本文将详细记录我们的探索历程、实践经验以及对AI编程未来的思考。</p>
+ <span id="more"></span>
+
+<h1 id="代码智能补全与单方法改写"><a href="#代码智能补全与单方法改写" class="headerlink" title="代码智能补全与单方法改写"></a>代码智能补全与单方法改写</h1><h2 id="初识AI编程"><a href="#初识AI编程" class="headerlink" title="初识AI编程"></a>初识AI编程</h2><p><strong>场景1：代码自动补全</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 开发者输入：</span></span><br><span class="line"><span class="keyword">public</span> List&lt;ItemCardVO&gt; <span class="title function_">buildItemCards</span><span class="params">(List&lt;ContentEntity&gt; entities)</span> &#123;</span><br><span class="line">    List&lt;ItemCardVO&gt; result = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">    <span class="comment">// AI自动补全以下代码</span></span><br><span class="line">    <span class="keyword">for</span> (ContentEntity entity : entities) &#123;</span><br><span class="line">        <span class="type">ItemCardVO</span> <span class="variable">itemCard</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ItemCardVO</span>();</span><br><span class="line">        itemCard.setItemId(entity.getItemId());</span><br><span class="line">        itemCard.setItemTitle(entity.getTitle());</span><br><span class="line">        itemCard.setItemImg(entity.getPicUrl());</span><br><span class="line">        result.add(itemCard);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>场景2：单方法重构</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 原始代码（冗长难读）</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">getDiscountText</span><span class="params">(Long finalPrice, Long nnPrice)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (finalPrice == <span class="literal">null</span> || nnPrice == <span class="literal">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (finalPrice &lt;= nnPrice) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">Long</span> <span class="variable">discount</span> <span class="operator">=</span> finalPrice - nnPrice;</span><br><span class="line">    <span class="keyword">if</span> (discount &lt;= <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">String</span> <span class="variable">discountYuan</span> <span class="operator">=</span> String.valueOf(discount / <span class="number">100.0</span>);</span><br><span class="line">    <span class="keyword">return</span> discountYuan + <span class="string">&quot;元&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// AI重构后（简洁优雅）</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">getDiscountText</span><span class="params">(Long finalPrice, Long nnPrice)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (finalPrice == <span class="literal">null</span> || nnPrice == <span class="literal">null</span> || finalPrice &lt;= nnPrice) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">Money</span> <span class="variable">discount</span> <span class="operator">=</span> Money.ofFen(finalPrice).subtract(Money.ofFen(nnPrice));</span><br><span class="line">    <span class="keyword">if</span> (discount.getCent() &lt;= <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> String.format(<span class="string">&quot;%s元&quot;</span>, discount.getYuan());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="初步收益"><a href="#初步收益" class="headerlink" title="初步收益"></a>初步收益</h2><p><strong>效率提升：</strong></p>
+<ul>
+<li>去年某次商详项目中，代码补全在对象构建、模型转换中减少70-80%的键盘输入。</li>
+<li>单方法重构速度提升50%。</li>
+</ul>
+<p><strong>体验优化：</strong></p>
+<ul>
+<li>减少了查找API文档的时间</li>
+<li>避免了拼写错误和语法错误</li>
+<li>让开发者更专注于业务逻辑</li>
+</ul>
+<h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><p>然而，这个阶段也暴露出一些问题：</p>
+<ol>
+<li>局限于局部优化：只能帮助完成单个方法或代码片段，无法理解整体业务逻辑</li>
+<li>缺乏上下文理解：不了解项目的架构规范和代码风格</li>
+<li>无法应对复杂需求：对于跨多个类、多个模块的需求无能为力</li>
+</ol>
+<h1 id="Agentic-Coding的探索与挑战"><a href="#Agentic-Coding的探索与挑战" class="headerlink" title="Agentic Coding的探索与挑战"></a>Agentic Coding的探索与挑战</h1><h2 id="Agentic-Coding的尝试"><a href="#Agentic-Coding的尝试" class="headerlink" title="Agentic Coding的尝试"></a>Agentic Coding的尝试</h2><p>带着上面的问题，我们开始尝试Agentic Coding模式，通过编写详细的提示词（Prompt），让AI一次性实现整个功能。</p>
+<p>AI工具：Aone Copilot，模型：Qwen3-coder。</p>
+<p><strong>典型的Prompt结构：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">需求：实现NN页面红包模块</span><br><span class="line">背景：</span><br><span class="line">- 需要展示用户可用的红包列表</span><br><span class="line">- 红包按门槛从小到大排序</span><br><span class="line">实现要求：</span><br><span class="line">1. 创建数据服务类 NnRedPacketDataService，查询用户红包</span><br><span class="line">2. 创建模块VO NnRedPacketVO，包含红包列表、总金额等字段</span><br><span class="line">3. 创建模块构建器 NnRedPacketModuleBuilder，组装数据</span><br><span class="line">技术细节：</span><br><span class="line">- 数据服务需要实现 DataService&lt;List&lt;FundQueryDTO&gt;&gt; 接口</span><br><span class="line">- 数据服务实现类需要依赖FpProvider，并执行红包查询，参数请参考已有实现</span><br><span class="line">- 模块构建器需要继承 BaseModuleBuilder&lt;NnRedPacketVO&gt;</span><br><span class="line">- 使用 @Component 注解标记为Spring Bean</span><br><span class="line">- 遵循项目代码规范</span><br><span class="line">请生成完整的代码。</span><br></pre></td></tr></table></figure>
+<p><strong>AI生成的代码示例：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 数据服务</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">NnRedPacketDataService</span> <span class="keyword">implements</span> <span class="title class_">DataService</span>&lt;List&lt;FundQueryDTO&gt;&gt; &#123;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> FpProvider fpProvider;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> List&lt;FundQueryDTO&gt; <span class="title function_">execute</span><span class="params">(InvocationContext context, JSONObject req)</span> &#123;</span><br><span class="line">        <span class="comment">// 从配置获取红包池ID</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">poolIds</span> <span class="operator">=</span> req.getString(<span class="string">&quot;nnRedPacketPoolIds&quot;</span>);</span><br><span class="line">        List&lt;Long&gt; fundPoolIds = Arrays.stream(poolIds.split(<span class="string">&quot;,&quot;</span>))</span><br><span class="line">            .map(Long::parseLong)</span><br><span class="line">            .collect(Collectors.toList());</span><br><span class="line">        <span class="comment">// 查询用户红包</span></span><br><span class="line">        <span class="keyword">return</span> fpProvider.queryUserFundBuyPoolId(</span><br><span class="line">            context, </span><br><span class="line">            fundPoolIds, </span><br><span class="line">            customRuleId, </span><br><span class="line">            securityCode</span><br><span class="line">        );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 2. 模块VO</span></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@Builder</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">NnRedPacketVO</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> List&lt;RedPacketItem&gt; redPacketList;</span><br><span class="line">    <span class="keyword">private</span> String totalAmount;</span><br><span class="line">    <span class="keyword">private</span> String expandText;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 3. 模块构建器</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">NnRedPacketModuleBuilder</span> <span class="keyword">extends</span> <span class="title class_">BaseModuleBuilder</span>&lt;NnRedPacketVO&gt; &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;nnRedPacket&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> NnRedPacketVO <span class="title function_">doBuild</span><span class="params">(InvocationContext context)</span> &#123;</span><br><span class="line">        <span class="comment">// 获取红包数据</span></span><br><span class="line">        List&lt;FundQueryDTO&gt; funds = ContextUtils</span><br><span class="line">            .&lt;List&lt;FundQueryDTO&gt;&gt;getBizResult(</span><br><span class="line">                NnRedPacketDataService.class.getSimpleName(), </span><br><span class="line">                context, </span><br><span class="line">                <span class="number">500</span></span><br><span class="line">            )</span><br><span class="line">            .orElse(Collections.emptyList());</span><br><span class="line">        <span class="keyword">if</span> (CollectionUtils.isEmpty(funds)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 构建VO</span></span><br><span class="line">        <span class="keyword">return</span> NnRedPacketVO.builder()</span><br><span class="line">            .redPacketList(buildRedPacketList(funds))</span><br><span class="line">            .totalAmount(calculateTotalAmount(funds))</span><br><span class="line">            .build();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">private</span> List&lt;RedPacketItem&gt; <span class="title function_">buildRedPacketList</span><span class="params">(List&lt;FundQueryDTO&gt; funds)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> funds.stream()</span><br><span class="line">            .map(<span class="built_in">this</span>::toRedPacketItem)</span><br><span class="line">            .collect(Collectors.toList());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// ... 其他方法</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="显著的效率提升"><a href="#显著的效率提升" class="headerlink" title="显著的效率提升"></a>显著的效率提升</h2><p>Agentic Coding实现了开发效率的显著优化，通过提示词驱动的自动代码生成替代了传统手动编写，虽然Prompt设计需要额外时间，但综合效率提升效果明显。</p>
+<h2 id="快速暴露的问题"><a href="#快速暴露的问题" class="headerlink" title="快速暴露的问题"></a>快速暴露的问题</h2><p>然而，在后续的需求迭代中，我们发现了严重的问题：</p>
+<p><strong>问题1：代码延续性差</strong></p>
+<p>现象： 同样的NN业务，第二次让AI实现时，生成的代码风格完全不同</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 第一次生成（简洁风格）</span></span><br><span class="line"><span class="keyword">private</span> String <span class="title function_">buildDiscountText</span><span class="params">(Money discount)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> String.format(<span class="string">&quot;省%s元&quot;</span>, discount.getYuan());</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 第二次生成（冗长风格）  </span></span><br><span class="line"><span class="keyword">private</span> String <span class="title function_">buildDiscountText</span><span class="params">(Money discount)</span> &#123;</span><br><span class="line">    <span class="type">BigDecimal</span> <span class="variable">yuan</span> <span class="operator">=</span> BigDecimal.valueOf(discount.getCent())</span><br><span class="line">        .divide(BigDecimal.valueOf(<span class="number">100</span>), <span class="number">2</span>, RoundingMode.HALF_UP);</span><br><span class="line">    <span class="type">String</span> <span class="variable">yuanStr</span> <span class="operator">=</span> yuan.stripTrailingZeros().toPlainString();</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;省&quot;</span> + yuanStr + <span class="string">&quot;元&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>影响： 同一个项目内，类似功能的实现方式五花八门，维护成本高</p>
+<p><strong>问题2：代码风格不一致</strong></p>
+<p>现象： AI不了解项目的代码规范，导致生成的代码风格和存量代码不一致。</p>
+<p><strong>问题3：团队协同性差</strong></p>
+<p>现象： 不同开发者写的Prompt差异大，生成的代码质量参差不齐</p>
+<ul>
+<li>新手写的Prompt过于简单，AI生成的代码质量差</li>
+<li>老手写的Prompt详细但冗长，难以复用</li>
+<li>缺乏统一的Prompt模板和最佳实践</li>
+</ul>
+<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>这些问题的根本原因在于：<strong>AI缺乏项目特定的上下文和约束</strong></p>
+<ul>
+<li><strong>没有项目规范：</strong> AI不知道项目的代码风格、架构模式、命名规范</li>
+<li><strong>没有领域知识：</strong> AI不了解淘特导购业务的特定术语和设计模式</li>
+<li><strong>没有历史经验：</strong> 每次都是”零基础”生成代码，无法从历史代码中学习</li>
+</ul>
+<p>这让我们意识到，需要给AI建立”项目规范”和”领域知识”。</p>
+<h1 id="Rules约束-建立AI的”项目规范”"><a href="#Rules约束-建立AI的”项目规范”" class="headerlink" title="Rules约束 - 建立AI的”项目规范”"></a>Rules约束 - 建立AI的”项目规范”</h1><h2 id="引入Rules文件"><a href="#引入Rules文件" class="headerlink" title="引入Rules文件"></a>引入Rules文件</h2><p>我们开始尝试用Rules文件来约束AI的行为，将项目规范、架构模式、领域知识固化下来。</p>
+<p>Rules文件体系：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.aone_copilot/</span><br><span class="line">├── rules/</span><br><span class="line">│   ├── code-style.aonerule           # 代码风格规范</span><br><span class="line">│   ├── project-structure.aonerule    # 项目结构规范</span><br><span class="line">│   └── features.aonerule              # 功能实现规范</span><br><span class="line">└── tech/</span><br><span class="line">    ├── xx秒杀-技术方案.md      # 具体需求的技术方案</span><br><span class="line">    └── xx红包模块-技术方案.md</span><br></pre></td></tr></table></figure>
+
+<h2 id="Rules文件内容示例"><a href="#Rules文件内容示例" class="headerlink" title="Rules文件内容示例"></a>Rules文件内容示例</h2><p><strong>代码风格规范（code-style.aonerule）</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"># 代码风格规范</span><br><span class="line"></span><br><span class="line">## Java代码规范</span><br><span class="line">- 类名使用大驼峰命名法（PascalCase）</span><br><span class="line">- 方法名和变量名使用小驼峰命名法（camelCase）</span><br><span class="line">- 常量使用全大写，单词间用下划线分隔（CONSTANT_CASE）</span><br><span class="line"></span><br><span class="line">## 空值判断</span><br><span class="line">- 集合判空统一使用：CollectionUtils.isEmpty() 或 isNotEmpty()</span><br><span class="line">- 字符串判空统一使用：StringUtils.isBlank() 或 isNotBlank()</span><br><span class="line">- 对象判空统一使用：Objects.isNull() 或 Objects.nonNull()</span><br><span class="line"></span><br><span class="line">## 日志规范</span><br><span class="line">- 使用 LogUtil 工具类记录日志</span><br><span class="line">- 错误日志格式：LogUtil.error(&quot;类名, 方法名, 错误描述, 关键参数=&#123;&#125;&quot;, param, exception)</span><br><span class="line"></span><br><span class="line">## 注解使用</span><br><span class="line">- Service类使用 @Component 注解</span><br><span class="line">- 数据服务实现 DataService&lt;T&gt; 接口</span><br><span class="line">- 模块构建器继承 BaseModuleBuilder&lt;T&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>项目结构规范</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># 项目结构规范</span><br><span class="line">## 包结构</span><br><span class="line">com.alibaba.aladdin.app/</span><br><span class="line">├── module/              # 模块构建器</span><br><span class="line">│   ├── nn/             # NN业务模块</span><br><span class="line">│   ├── seckill/        # 秒杀业务模块</span><br><span class="line">│   └── common/         # 通用模块</span><br><span class="line">├── domain/             # 领域对象</span><br><span class="line">│   ├── module/         # 模块VO（继承ModuleObject）</span><br><span class="line">│   └── [业务名]/       # 业务领域对象（BO、DTO）</span><br><span class="line">├── dataservice/impl/   # 数据服务实现</span><br><span class="line">└── provider/           # 外部服务提供者</span><br><span class="line">## 命名规范</span><br><span class="line">- 数据服务：[业务名]DataService（如 NnRedPacketDataService）</span><br><span class="line">- 模块构建器：[业务名]ModuleBuilder（如 NnFeedsModuleBuilder）</span><br><span class="line">- 模块VO：[业务名]VO（如 NnRedPacketVO）</span><br><span class="line">- 业务BO：[业务名]BO（如 NnRoundFeatureBO）</span><br></pre></td></tr></table></figure>
+
+<p><strong>功能实现规范</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># 功能实现规范</span><br><span class="line">## 数据服务层</span><br><span class="line">- 必须实现 DataService&lt;T&gt; 接口</span><br><span class="line">- 使用 @Component 注解</span><br><span class="line">- execute方法的第一个参数是 InvocationContext</span><br><span class="line">- execute方法的第二个参数是 JSONObject businessReq</span><br><span class="line">示例：</span><br><span class="line">```java</span><br><span class="line">@Component</span><br><span class="line">public class NnRedPacketDataService implements DataService&lt;List&lt;FundQueryDTO&gt;&gt; &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public List&lt;FundQueryDTO&gt; execute(InvocationContext context, JSONObject businessReq) &#123;</span><br><span class="line">        // 实现逻辑</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="模块构建器"><a href="#模块构建器" class="headerlink" title="模块构建器"></a>模块构建器</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">- 必须继承 BaseModuleBuilder</span><br><span class="line">- 使用 @Component 注解</span><br><span class="line">- 实现 getName()、doBuild()、bottomTransform() 三个方法</span><br><span class="line">- 通过 ContextUtils.getBizResult() 获取数据服务结果</span><br><span class="line">示例：</span><br><span class="line"></span><br><span class="line">@Component</span><br><span class="line">public class NnRedPacketModuleBuilder extends BaseModuleBuilder&lt;NnRedPacketVO&gt; &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public String getName() &#123;</span><br><span class="line">        return &quot;nnRedPacket&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    @Override</span><br><span class="line">    protected NnRedPacketVO doBuild(InvocationContext context) &#123;</span><br><span class="line">        List&lt;FundQueryDTO&gt; funds = ContextUtils</span><br><span class="line">            .&lt;List&lt;FundQueryDTO&gt;&gt;getBizResult(</span><br><span class="line">                NnRedPacketDataService.class.getSimpleName(),</span><br><span class="line">                context,</span><br><span class="line">                500</span><br><span class="line">            )</span><br><span class="line">            .orElse(Collections.emptyList());</span><br><span class="line">        // 构建逻辑</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="技术方案模板"><a href="#技术方案模板" class="headerlink" title="技术方案模板"></a>技术方案模板</h2><p>除了Rules文件，我们还为每个需求创建技术方案文档，明确定义需要生成的代码：</p>
+<p><strong>技术方案示例（NN红包模块-技术方案.md）：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">## 业务定义</span><br><span class="line">NN红包模块用于展示用户在NN业务场景下可用的红包列表。</span><br><span class="line">## 业务领域对象</span><br><span class="line">无（复用 FundQueryDTO）</span><br><span class="line">## 模块领域对象</span><br><span class="line">| 对象含义 | 实现方案 | 属性及类型 |</span><br><span class="line">|---------|---------|-----------|</span><br><span class="line">| NN红包模块VO | 新增 | 1. redPacketList：List&lt;RedPacketItem&gt; - 红包列表&lt;br&gt;2. totalAmount：String - 总金额&lt;br&gt;3. expandText：String - 展开文案 |</span><br><span class="line">## 数据服务层</span><br><span class="line">| 数据服务定义 | 实现方案 | execute |</span><br><span class="line">|------------|---------|---------|</span><br><span class="line">| NN红包查询服务 | 新增 | 1. 从配置获取红包池ID列表&lt;br&gt;2. 调用FpProvider查询用户红包&lt;br&gt;3. 过滤可用红包（状态=2，未过期）&lt;br&gt;4. 返回红包列表 |</span><br><span class="line">## 模块构建器</span><br><span class="line">| 模块构建器定义 | 实现方案 | doBuild逻辑 |</span><br><span class="line">|--------------|---------|-------------|</span><br><span class="line">| NN红包模块构建器 | 新增 | 1. 获取红包数据&lt;br&gt;2. 过滤门槛&gt;20元的红包&lt;br&gt;3. 按门槛从小到大排序&lt;br&gt;4. 构建VO |</span><br></pre></td></tr></table></figure>
+<h2 id="显著改善的效果"><a href="#显著改善的效果" class="headerlink" title="显著改善的效果"></a>显著改善的效果</h2><p>引入Rules文件后，我们看到了明显的改善：</p>
+<p><strong>代码一致性：</strong></p>
+<ul>
+<li>所有生成的代码都遵循统一的命名规范</li>
+<li>项目结构清晰，模块划分明确</li>
+<li>代码风格保持一致</li>
+</ul>
+<p><strong>开发效率：</strong></p>
+<ul>
+<li>技术方案填写时间从2小时降低到20分钟</li>
+<li>代码实现时间从1天降低到2小时（需要人工收尾）</li>
+</ul>
+<p><strong>团队协作：</strong></p>
+<ul>
+<li>技术方案成为团队共同语言</li>
+<li>Code Review效率提升50%</li>
+<li>新人上手时间从1周降低到2天</li>
+</ul>
+<h2 id="依然存在的问题"><a href="#依然存在的问题" class="headerlink" title="依然存在的问题"></a>依然存在的问题</h2><p>虽然Rules带来了显著改善，但仍存在一些问题：</p>
+<ol>
+<li><strong>需求理解不够深入</strong>：AI仍然是基于技术方案”翻译”成代码，对业务语义理解有限</li>
+<li><strong>测试质量参差不齐</strong>：虽然能生成单测，但测试用例的通过率和覆盖度仍需人工把关</li>
+<li><strong>文档滞后</strong>：代码变更后，文档更新容易遗漏</li>
+<li><strong>依赖关系管理</strong>：对于复杂的模块依赖关系，AI处理不够优雅</li>
+</ol>
+<p>这些问题让我们思考：能否找到一种方式，让AI能更加规范和延续的coding？</p>
+<h1 id="SDD探索-规格驱动开发"><a href="#SDD探索-规格驱动开发" class="headerlink" title="SDD探索 - 规格驱动开发"></a>SDD探索 - 规格驱动开发</h1><h2 id="SDD的引入"><a href="#SDD的引入" class="headerlink" title="SDD的引入"></a>SDD的引入</h2><p>近期，我们开始初步尝试SDD（Specification Driven Development，规格驱动开发），使用了Spec Kit工具链。</p>
+<p><strong>SDD的核心理念：</strong></p>
+<p><strong>规格是唯一真理源（Single Source of Truth）</strong></p>
+<ul>
+<li>所有的代码、测试、文档都从规格生成</li>
+<li>规格即文档，文档永不过期</li>
+</ul>
+<p><strong>设计先于实现</strong></p>
+<ul>
+<li>先用自然语言描述”做什么”（规格）</li>
+<li>再让AI生成”怎么做”（代码）</li>
+</ul>
+<p><strong>可测试性内建</strong></p>
+<ul>
+<li>规格中明确定义测试用例</li>
+<li>自动生成完整的单元测试</li>
+</ul>
+<h2 id="Speckit执行流程"><a href="#Speckit执行流程" class="headerlink" title="Speckit执行流程"></a>Speckit执行流程</h2><h3 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h3><p>我们主要使用了两种工具：</p>
+<ol>
+<li>iflow + qwen3 coder plus + spec kit</li>
+<li>qwen + qwen3 coder plus + spec kit</li>
+</ol>
+<p><strong>文件体系：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">├── .specify/</span><br><span class="line">│   ├── memory/</span><br><span class="line">│   │   └── constitution.md</span><br><span class="line">│   ├── scripts/</span><br><span class="line">│   └── templates/</span><br><span class="line">├── specs/</span><br><span class="line">│   └── 001-nn-redpacket-module/</span><br><span class="line">│       ├── checklists/</span><br><span class="line">│       │   └── requirements.md</span><br><span class="line">│       ├── contracts/</span><br><span class="line">│       │   └── api-contract.md</span><br><span class="line">│       ├── data-model.md</span><br><span class="line">│       ├── plan.md</span><br><span class="line">│       ├── quickstart.md</span><br><span class="line">│       ├── research.md</span><br><span class="line">│       └── spec.md</span><br><span class="line">└── req/</span><br><span class="line">    └── nn-redpacket.md</span><br></pre></td></tr></table></figure>
+<h3 id="speckit-constitution—制定整个项目的原则"><a href="#speckit-constitution—制定整个项目的原则" class="headerlink" title="speckit.constitution—制定整个项目的原则"></a>speckit.constitution—制定整个项目的原则</h3><p>这一步会生成项目全局的宪章，constitution.md</p>
+<p>以下是部分节选：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">## 核心原则</span><br><span class="line"></span><br><span class="line">### I. 模块化服务架构</span><br><span class="line">所有服务必须遵循模块化设计原则，具有明确的关注点分离和定义良好的接口。每个模块应具有单一职责并可独立部署。模块必须以松耦合和高内聚的方式设计，以增强可维护性和可扩展性，遵循最小依赖原则。</span><br><span class="line">### II. 阿里巴巴开发标准</span><br><span class="line">所有代码必须遵循阿里巴巴Java开发指南（基于阿里巴巴Java编码规范）。这包括命名约定、异常处理实践、日志标准、安全最佳实践和性能优化模式。代码必须遵守样式一致性要求，以保持代码库的统一性。</span><br><span class="line">### III. 质量保证实践</span><br><span class="line">全面测试是强制性的：对所有业务逻辑进行单元测试，对服务交互进行集成测试，对API兼容性进行合同测试。代码覆盖率必须保持在80％以上，特别关注关键业务路径。代码质量工具必须集成到CI/CD管道中以执行标准，遵循阿里巴巴开发规范以确保质量和可靠性。</span><br><span class="line">### IV. 模块设计原则</span><br><span class="line">遵循单一职责原则，每个模块都有一个明确的目的。模块必须以松耦合和高内聚的方式设计，遵循关注点分离原则。模块边界应与业务能力和领域上下文对齐。所有模块都遵循最小依赖原则，仅导入必要的依赖项以减少系统复杂性。</span><br><span class="line">### V. 项目架构设计原则</span><br><span class="line">本项目采用分层架构设计，通过模块化组织代码，支持淘特投放业务的各种场景需求。架构层次包括：</span><br><span class="line">1. **接入层**：处理请求接入和协议转换</span><br><span class="line">2. **解决方案层**：业务解决方案的统一入口</span><br><span class="line">3. **子解决方案层**：细粒度的业务处理能力</span><br><span class="line">4. **模块构建层**：按业务功能划分的模块构建器</span><br><span class="line">5. **数据服务层**：负责各种业务数据的获取、处理和封装</span><br><span class="line">6. **外部服务层**：负责调用外部服务并进行模型转换</span><br><span class="line">7. **领域模型层**：定义核心业务对象和数据传输对象</span><br><span class="line">8. **基础设施层**：包含基础组件和框架封装</span><br><span class="line">9. **通用模块层**：公共组件和工具类</span><br><span class="line">### VI. 依赖管理</span><br><span class="line">遵循最小依赖原则：每个模块应只拥有其实际需要的依赖项。避免模块之间的循环依赖。使用依赖注入实现松耦合。定期审核和更新依赖项以最小化安全漏洞。这确保了可维护和高效的代码结构。</span><br><span class="line">### VII. 代码风格一致性</span><br><span class="line">在整个项目中保持一致的代码风格，使用标准化的格式化规则。所有代码在合并前必须通过静态分析检查。一致地遵循设计模式，并对与标准实践的任何偏差提供清晰的证明。这确保了统一的代码规范和样式，符合项目标准。</span><br><span class="line">### VIII. Speckit中文本地化</span><br><span class="line">所有speckit相关文件、文档和配置都应使用中文，以支持本地开发团队。`.specify/`和`specs/`目录中的文件和相关speckit构件必须使用中文，以便本地开发人员更好地理解和维护，同时应为可能服务国际市场面向用户的组件保留国际化支持。</span><br><span class="line">## 安全和合规要求</span><br><span class="line">所有代码必须符合阿里巴巴的安全标准，并在部署前进行强制性安全审查。必须为所有暴露的端点实现适当的身份验证和授权。敏感数据必须根据内部合规要求进行处理。必须扫描依赖项中的安全漏洞。</span><br><span class="line">## 开发工作流程</span><br><span class="line">1. 所有代码更改必须遵循标准的阿里巴巴开发工作流程：功能分支、代码审查、自动化测试和CI/CD管道验证。拉取请求必须通过所有测试并获得指定审阅者的批准后才能合并。除非明确批准进行具有迁移计划的破坏性更改，否则所有更改必须向后兼容。每次更改都必须遵循模块设计原则并保持代码风格一致性。</span><br><span class="line">2. 所有操作不要创建新分支，而是在当前分支下进行</span><br><span class="line">3. 代码生成必须遵循code-generation-prompt.aonerule文件</span><br><span class="line">## 治理</span><br><span class="line">本宪法凌驾于所有其他开发实践之上，必须在存储库中的所有工作中遵循。对本宪法的任何修改都需要正式文档、团队批准和迁移计划。所有PR和代码审查必须验证是否符合这些原则。</span><br></pre></td></tr></table></figure>
+
+<h3 id="speckit-specify—编写规格说明"><a href="#speckit-specify—编写规格说明" class="headerlink" title="speckit.specify—编写规格说明"></a>speckit.specify—编写规格说明</h3><p>这一步会新建一个分支，创建spec.md、requirements.md等文件，这里反复修改了多次，主要还是后续的执行不理想的返工。</p>
+<p>NN红包模块规格说明（spec.md）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># NN红包模块规格说明</span><br><span class="line">## 功能概述</span><br><span class="line">NN红包模块用于在NN频道页面展示用户可用的红包列表，帮助用户了解可以使用的优惠。</span><br><span class="line">## 功能需求</span><br><span class="line">### FR-1: 红包数据获取</span><br><span class="line">**描述：** 系统应该能够查询用户在当前NN业务场景下可用的红包</span><br><span class="line">**前置条件：**</span><br><span class="line">- 用户已登录</span><br><span class="line">- 配置了红包池ID（fundPoolIds）</span><br><span class="line">- 配置了规则id（customRuleId）</span><br><span class="line">- 配置了securityCode</span><br><span class="line">**输入：**</span><br><span class="line">- userId：用户ID</span><br><span class="line">- fundPoolIds：红包池ID列表</span><br><span class="line">- customRuleId：自定义规则ID</span><br><span class="line">- securityCode：安全码</span><br><span class="line">**处理逻辑：**</span><br><span class="line">1. 调用FpProvider.queryUserFundBuyPoolId()查询红包</span><br><span class="line">2. 过滤条件：</span><br><span class="line">   - 红包状态（payStatus）= 2（可使用）</span><br><span class="line">   - 红包未过期（当前时间在startTime和endTime之间）</span><br><span class="line">   - 红包门槛 &lt;= 配置的amountThreshold（默认20元）</span><br><span class="line">**输出：**</span><br><span class="line">- 返回符合条件的红包列表</span><br><span class="line">**异常处理：**</span><br><span class="line">- 如果FpProvider调用失败，返回空列表</span><br><span class="line">- 如果用户未登录，返回空列表</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">**处理逻辑：**</span><br><span class="line">1. 如果红包列表为空，不展示模块（返回null）</span><br><span class="line">2. 构建NnRedPacketVO：</span><br><span class="line">   - redPacketList：转换每个红包为RedPacketItem</span><br><span class="line">   - totalAmount：计算所有红包金额总和</span><br><span class="line">   - expandText：从配置获取展开文案</span><br><span class="line">**输出：** NnRedPacketVO</span><br><span class="line">## 非功能需求</span><br><span class="line">### NFR-1: 性能要求</span><br><span class="line">- 红包查询超时时间：500ms</span><br><span class="line">- 如果超时，返回空列表，不影响页面其他模块</span><br><span class="line">### NFR-2: 可扩展性</span><br><span class="line">- 支持配置不同的红包池ID</span><br><span class="line">- 支持配置不同的门槛限制</span><br><span class="line">## 测试用例</span><br><span class="line">### TC-1: 正常流程 - 有可用红包</span><br><span class="line">**前置条件：**</span><br><span class="line">- 用户ID：123456</span><br><span class="line">- 配置的红包池ID：[1001, 1002]</span><br><span class="line">- FpProvider返回2个可用红包：</span><br><span class="line">  - 红包1：金额5元，门槛15元</span><br><span class="line">  - 红包2：金额10元，门槛25元</span><br><span class="line">**执行步骤：**</span><br><span class="line">1. 调用 doBuild(context)</span><br><span class="line">**预期结果：**</span><br><span class="line">- 返回的VO不为null</span><br><span class="line">- redPacketList包含2个红包</span><br><span class="line">- totalAmount = &quot;15.00&quot;（5 + 10）</span><br><span class="line">- 红包按门槛排序（红包1在前）</span><br><span class="line">### TC-2: 边界条件 - 红包门槛超限</span><br><span class="line">**前置条件：**</span><br><span class="line">- FpProvider返回1个红包，门槛25元</span><br><span class="line">- 配置的amountThreshold = 20元（2000分）</span><br><span class="line">**预期结果：**</span><br><span class="line">- 返回null（因为门槛超限，红包被过滤）</span><br><span class="line">...</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<h3 id="speckit-plan—制定实施计划"><a href="#speckit-plan—制定实施计划" class="headerlink" title="speckit.plan—制定实施计划"></a>speckit.plan—制定实施计划</h3><p>这一步会生成data-model.md、api.md等几个文件，最重要的是plan.md</p>
+<h3 id="speckit-tasks—任务分解"><a href="#speckit-tasks—任务分解" class="headerlink" title="speckit.tasks—任务分解"></a>speckit.tasks—任务分解</h3><p>生成task.md</p>
+<h3 id="speckit-implement—实现代码"><a href="#speckit-implement—实现代码" class="headerlink" title="speckit.implement—实现代码"></a>speckit.implement—实现代码</h3><p>数据服务实现</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">NnRedPacketDataService</span> <span class="keyword">implements</span> <span class="title class_">DataService</span>&lt;List&lt;FundQueryDTO&gt;&gt; &#123;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> FpProvider fpProvider;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> List&lt;FundQueryDTO&gt; <span class="title function_">execute</span><span class="params">(InvocationContext context, JSONObject businessReq)</span> &#123;</span><br><span class="line">        <span class="type">long</span> <span class="variable">userId</span> <span class="operator">=</span> context.getUserId();</span><br><span class="line">        <span class="keyword">if</span> (userId &lt;= <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> Collections.emptyList();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 获取配置</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">poolIdsStr</span> <span class="operator">=</span> businessReq.getString(<span class="string">&quot;nnRedPacketPoolIds&quot;</span>);</span><br><span class="line">        List&lt;Long&gt; fundPoolIds = parsePoolIds(poolIdsStr);</span><br><span class="line">        <span class="type">Long</span> <span class="variable">customRuleId</span> <span class="operator">=</span> businessReq.getLong(<span class="string">&quot;customRuleId&quot;</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">securityCode</span> <span class="operator">=</span> businessReq.getString(<span class="string">&quot;securityCode&quot;</span>);</span><br><span class="line">        <span class="comment">// 查询红包</span></span><br><span class="line">        List&lt;FundQueryDTO&gt; funds = fpProvider.queryUserFundBuyPoolId(</span><br><span class="line">            context, fundPoolIds, customRuleId, securityCode</span><br><span class="line">        );</span><br><span class="line">        <span class="keyword">if</span> (CollectionUtils.isEmpty(funds)) &#123;</span><br><span class="line">            <span class="keyword">return</span> Collections.emptyList();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 过滤可用红包（按规格FR-1的过滤条件）</span></span><br><span class="line">        <span class="type">Long</span> <span class="variable">amountThreshold</span> <span class="operator">=</span> businessReq.getLong(<span class="string">&quot;amountThreshold&quot;</span>, <span class="number">2000L</span>);</span><br><span class="line">        <span class="keyword">return</span> funds.stream()</span><br><span class="line">            .filter(fund -&gt; fund.getPayStatus() == <span class="number">2</span>)  <span class="comment">// 可使用状态</span></span><br><span class="line">            .filter(fund -&gt; isNotExpired(fund))         <span class="comment">// 未过期</span></span><br><span class="line">            .filter(fund -&gt; fund.getAmountThreshold() &lt;= amountThreshold)  <span class="comment">// 门槛限制</span></span><br><span class="line">            .collect(Collectors.toList());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">boolean</span> <span class="title function_">isNotExpired</span><span class="params">(FundQueryDTO fund)</span> &#123;</span><br><span class="line">        <span class="type">long</span> <span class="variable">now</span> <span class="operator">=</span> System.currentTimeMillis();</span><br><span class="line">        <span class="keyword">return</span> fund.getStartTime() &lt;= now &amp;&amp; now &lt;= fund.getEndTime();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// ... 其他方法</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>模块构建器实现</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">NnRedPacketModuleBuilder</span> <span class="keyword">extends</span> <span class="title class_">BaseModuleBuilder</span>&lt;NnRedPacketVO&gt; &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;nnRedPacket&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> NnRedPacketVO <span class="title function_">doBuild</span><span class="params">(InvocationContext context)</span> &#123;</span><br><span class="line">        <span class="comment">// 获取红包数据（FR-1）</span></span><br><span class="line">        List&lt;FundQueryDTO&gt; funds = ContextUtils</span><br><span class="line">            .&lt;List&lt;FundQueryDTO&gt;&gt;getBizResult(</span><br><span class="line">                NnRedPacketDataService.class.getSimpleName(),</span><br><span class="line">                context,</span><br><span class="line">                <span class="number">500</span></span><br><span class="line">            )</span><br><span class="line">            .orElse(Collections.emptyList());</span><br><span class="line">        <span class="comment">// 如果无可用红包，不展示模块（FR-3）</span></span><br><span class="line">        <span class="keyword">if</span> (CollectionUtils.isEmpty(funds)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 红包排序（FR-2）</span></span><br><span class="line">        List&lt;FundQueryDTO&gt; sortedFunds = sortFunds(funds, context);</span><br><span class="line">        <span class="comment">// 构建VO（FR-3）</span></span><br><span class="line">        <span class="keyword">return</span> NnRedPacketVO.builder()</span><br><span class="line">            .redPacketList(buildRedPacketList(sortedFunds))</span><br><span class="line">            .totalAmount(calculateTotalAmount(sortedFunds))</span><br><span class="line">            .expandText(getExpandText(context))</span><br><span class="line">            .build();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 红包排序：NN专属红包优先，其次按门槛从小到大</span></span><br><span class="line"><span class="comment">     * 对应规格 FR-2</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> List&lt;FundQueryDTO&gt; <span class="title function_">sortFunds</span><span class="params">(List&lt;FundQueryDTO&gt; funds, InvocationContext context)</span> &#123;</span><br><span class="line">        <span class="type">JSONObject</span> <span class="variable">extraParams</span> <span class="operator">=</span> getExtraParams(context);</span><br><span class="line">        <span class="type">String</span> <span class="variable">nnPoolIdsStr</span> <span class="operator">=</span> extraParams.getString(<span class="string">&quot;nnRedPacketPoolIds&quot;</span>);</span><br><span class="line">        Set&lt;Long&gt; nnPoolIds = parsePoolIds(nnPoolIdsStr).stream()</span><br><span class="line">            .collect(Collectors.toSet());</span><br><span class="line">        <span class="keyword">return</span> funds.stream()</span><br><span class="line">            .sorted(Comparator</span><br><span class="line">                .comparing((FundQueryDTO fund) -&gt; </span><br><span class="line">                    nnPoolIds.contains(fund.getFromFundId()) ? <span class="number">0</span> : <span class="number">1</span>)</span><br><span class="line">                .thenComparing(FundQueryDTO::getAmountThreshold))</span><br><span class="line">            .collect(Collectors.toList());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// ... 其他方法</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>完整的单元测试</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RunWith(MockitoJUnitRunner.class)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">NnRedPacketModuleBuilderTest</span> &#123;</span><br><span class="line">    <span class="meta">@Mock</span></span><br><span class="line">    <span class="keyword">private</span> InvocationContext context;</span><br><span class="line">    <span class="meta">@Mock</span></span><br><span class="line">    <span class="keyword">private</span> NnRedPacketDataService dataService;</span><br><span class="line">    <span class="meta">@InjectMocks</span></span><br><span class="line">    <span class="keyword">private</span> NnRedPacketModuleBuilder builder;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 测试用例 TC-1: 正常流程 - 有可用红包</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">testBuild_WithAvailableFunds_ShouldReturnVO</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 准备数据</span></span><br><span class="line">        List&lt;FundQueryDTO&gt; mockFunds = Arrays.asList(</span><br><span class="line">            createFund(<span class="number">1L</span>, <span class="number">500L</span>, <span class="number">1500L</span>),   <span class="comment">// 5元，门槛15元</span></span><br><span class="line">            createFund(<span class="number">2L</span>, <span class="number">1000L</span>, <span class="number">2500L</span>)   <span class="comment">// 10元，门槛25元</span></span><br><span class="line">        );</span><br><span class="line">        <span class="comment">// Mock</span></span><br><span class="line">        when(dataService.execute(any(), any())).thenReturn(mockFunds);</span><br><span class="line">        mockContext(context, <span class="string">&quot;nnRedPacketPoolIds&quot;</span>, <span class="string">&quot;1,2&quot;</span>);</span><br><span class="line">        mockBizResult(context, NnRedPacketDataService.class.getSimpleName(), mockFunds);</span><br><span class="line">        <span class="comment">// 执行</span></span><br><span class="line">        <span class="type">NnRedPacketVO</span> <span class="variable">result</span> <span class="operator">=</span> builder.doBuild(context);</span><br><span class="line">        <span class="comment">// 验证（按规格预期结果）</span></span><br><span class="line">        assertNotNull(result);</span><br><span class="line">        assertEquals(<span class="number">2</span>, result.getRedPacketList().size());</span><br><span class="line">        assertEquals(<span class="string">&quot;15.00&quot;</span>, result.getTotalAmount());</span><br><span class="line">        <span class="comment">// 验证排序：门槛低的在前</span></span><br><span class="line">        assertEquals(<span class="number">1500L</span>, result.getRedPacketList().get(<span class="number">0</span>).getAmountThreshold());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 测试用例 TC-2: 边界条件 - 红包门槛超限</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">testBuild_ThresholdExceeded_ShouldReturnNull</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 准备数据：门槛25元，超过配置的20元</span></span><br><span class="line">        List&lt;FundQueryDTO&gt; mockFunds = Arrays.asList(</span><br><span class="line">            createFund(<span class="number">1L</span>, <span class="number">500L</span>, <span class="number">2500L</span>)</span><br><span class="line">        );</span><br><span class="line">        <span class="comment">// Mock（配置amountThreshold=2000，即20元）</span></span><br><span class="line">        <span class="type">JSONObject</span> <span class="variable">businessReq</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">JSONObject</span>();</span><br><span class="line">        businessReq.put(<span class="string">&quot;amountThreshold&quot;</span>, <span class="number">2000L</span>);</span><br><span class="line">        when(dataService.execute(any(), eq(businessReq))).thenReturn(Collections.emptyList());</span><br><span class="line">        mockBizResult(context, NnRedPacketDataService.class.getSimpleName(), Collections.emptyList());</span><br><span class="line">        <span class="comment">// 执行</span></span><br><span class="line">        <span class="type">NnRedPacketVO</span> <span class="variable">result</span> <span class="operator">=</span> builder.doBuild(context);</span><br><span class="line">        <span class="comment">// 验证（按规格预期结果）</span></span><br><span class="line">        assertNull(result);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 测试用例 TC-3: 异常场景 - FpProvider返回null</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">testBuild_ProviderReturnsNull_ShouldReturnNull</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// Mock</span></span><br><span class="line">        when(dataService.execute(any(), any())).thenReturn(<span class="literal">null</span>);</span><br><span class="line">        mockBizResult(context, NnRedPacketDataService.class.getSimpleName(), <span class="literal">null</span>);</span><br><span class="line">        <span class="comment">// 执行</span></span><br><span class="line">        <span class="type">NnRedPacketVO</span> <span class="variable">result</span> <span class="operator">=</span> builder.doBuild(context);</span><br><span class="line">        <span class="comment">// 验证（按规格预期结果）</span></span><br><span class="line">        assertNull(result);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 测试用例 TC-4: 异常场景 - 用户未登录</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">testBuild_UserNotLogin_ShouldReturnNull</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// Mock：userId = 0</span></span><br><span class="line">        when(context.getUserId()).thenReturn(<span class="number">0L</span>);</span><br><span class="line">        when(dataService.execute(any(), any())).thenReturn(Collections.emptyList());</span><br><span class="line">        mockBizResult(context, NnRedPacketDataService.class.getSimpleName(), Collections.emptyList());</span><br><span class="line">        <span class="comment">// 执行</span></span><br><span class="line">        <span class="type">NnRedPacketVO</span> <span class="variable">result</span> <span class="operator">=</span> builder.doBuild(context);</span><br><span class="line">        <span class="comment">// 验证（按规格预期结果）</span></span><br><span class="line">        assertNull(result);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 辅助方法</span></span><br><span class="line">    <span class="keyword">private</span> FundQueryDTO <span class="title function_">createFund</span><span class="params">(Long id, Long amount, Long threshold)</span> &#123;</span><br><span class="line">        <span class="type">FundQueryDTO</span> <span class="variable">fund</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FundQueryDTO</span>();</span><br><span class="line">        fund.setFundId(id);</span><br><span class="line">        fund.setAvailableAmount(amount);</span><br><span class="line">        fund.setAmountThreshold(threshold);</span><br><span class="line">        fund.setPayStatus(<span class="number">2</span>);  <span class="comment">// 可使用</span></span><br><span class="line">        fund.setStartTime(System.currentTimeMillis() - <span class="number">3600000</span>);  <span class="comment">// 1小时前开始</span></span><br><span class="line">        fund.setEndTime(System.currentTimeMillis() + <span class="number">3600000</span>);    <span class="comment">// 1小时后结束</span></span><br><span class="line">        <span class="keyword">return</span> fund;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="SDD带来的改进"><a href="#SDD带来的改进" class="headerlink" title="SDD带来的改进"></a>SDD带来的改进</h2><h3 id="一致性显著提升"><a href="#一致性显著提升" class="headerlink" title="一致性显著提升"></a>一致性显著提升</h3><p>代码层面：</p>
+<ul>
+<li>所有代码都严格遵循规格说明，消除了理解偏差</li>
+<li>不同开发者实现相同规格，代码风格完全一致</li>
+<li>代码变更时，必须先更新规格，保证文档与代码同步</li>
+</ul>
+<p>业务层面：</p>
+<ul>
+<li>产品、开发、测试对需求的理解高度一致</li>
+<li>减少了需求理解偏差导致的返工</li>
+</ul>
+<h3 id="可测试性大幅提升"><a href="#可测试性大幅提升" class="headerlink" title="可测试性大幅提升"></a>可测试性大幅提升</h3><p>测试覆盖：</p>
+<ul>
+<li>自动生成的测试用例覆盖了所有正常和异常流程</li>
+<li>测试用例与规格说明一一对应，确保完整性</li>
+<li>边界条件和异常场景都有明确的测试用例</li>
+</ul>
+<p>测试质量：</p>
+<ul>
+<li>Mock方式规范统一，符合项目最佳实践</li>
+<li>断言准确全面，不会遗漏关键验证点</li>
+<li>测试代码可读性好，易于维护</li>
+</ul>
+<h3 id="可维护性显著改善"><a href="#可维护性显著改善" class="headerlink" title="可维护性显著改善"></a>可维护性显著改善</h3><p>文档永不过期：</p>
+<ul>
+<li>规格说明就是最准确的文档</li>
+<li>任何变更都先更新规格，再同步代码</li>
+<li>新人通过阅读规格说明就能快速理解功能</li>
+</ul>
+<p>变更影响分析：</p>
+<ul>
+<li>修改规格时，清晰知道影响哪些代码模块</li>
+<li>依赖关系在规格中明确定义</li>
+<li>重构时可以基于规格验证正确性</li>
+</ul>
+<p>代码可读性：</p>
+<ul>
+<li>代码结构清晰，层次分明</li>
+<li>注释完整准确，与规格保持一致</li>
+<li>命名规范统一，易于理解</li>
+</ul>
+<h3 id="团队协作效率提升"><a href="#团队协作效率提升" class="headerlink" title="团队协作效率提升"></a>团队协作效率提升</h3><ul>
+<li>新人通过阅读规格说明快速上手</li>
+<li>跨团队协作时，规格成为统一语言</li>
+<li>历史需求回溯更容易，规格即完整记录</li>
+</ul>
+<h2 id="SDD的问题与挑战"><a href="#SDD的问题与挑战" class="headerlink" title="SDD的问题与挑战"></a>SDD的问题与挑战</h2><p>虽然SDD带来了价值，但在实践中也遇到了一些明显的问题：</p>
+<p><strong>问题1：规格编写门槛高</strong></p>
+<p>现象： 编写高质量的规格说明需要较强的抽象能力和文档编写能力</p>
+<ul>
+<li>新手往往写不好规格，过于技术化或过于模糊</li>
+<li>规格模板虽然有，但如何填写仍需要经验</li>
+<li>不合格的规格对后面的代码实现影响</li>
+</ul>
+<p>影响： 对于简单需求，写规格的时间甚至超过直接写代码</p>
+<p><strong>问题2：Spec Kit工具链不成熟</strong></p>
+<p>遇到的具体问题：</p>
+<ol>
+<li>规格解析不准确<ul>
+<li>AI有时无法正确理解规格中的复杂逻辑</li>
+<li>需要用非常精确的语言描述，稍有歧义就可能理解错误</li>
+</ul>
+</li>
+<li>代码生成质量不稳定<ul>
+<li>相同的规格，不同时间生成的代码质量差异大</li>
+<li>有时生成的代码过于冗长，有时又过于简化</li>
+</ul>
+</li>
+<li>增量更新困难<ul>
+<li>规格修改后，很难做到只更新变化的部分</li>
+<li>往往需要重新生成整个文件，导致手工修改的部分丢失</li>
+</ul>
+</li>
+</ol>
+<p><strong>问题3：与现有代码库集成困难</strong></p>
+<p>现象： 我们的代码库已经有大量历史代码，SDD更适合从零开始的新项目</p>
+<ul>
+<li>历史代码缺乏规格说明，无法纳入SDD体系</li>
+<li>新老代码风格混杂，维护成本反而增加</li>
+<li>团队一部分人用SDD，一部分人用传统方式，协作困难</li>
+</ul>
+<p><strong>问题4：学习成本高</strong></p>
+<p>数据：</p>
+<ul>
+<li>写出合格的第一份规格说明，平均需要3-5次迭代</li>
+<li>老员工接受度较低，认为”还不如直接写代码快”</li>
+</ul>
+<h2 id="SDD适用场景分析"><a href="#SDD适用场景分析" class="headerlink" title="SDD适用场景分析"></a>SDD适用场景分析</h2><p>经过3个月的实践，我们总结出SDD的适用场景：</p>
+<p><strong>适合使用SDD：</strong></p>
+<p>✅ 全新的项目或模块</p>
+<p>✅ 核心业务逻辑，需要长期维护</p>
+<p>✅ 复杂度高，需要详细设计的功能</p>
+<p>✅ 多人协作的大型需求</p>
+<p>✅ 对质量要求极高的场景</p>
+<p><strong>不适合使用SDD：</strong></p>
+<p>❌ 简单的工具函数或配置修改</p>
+<p>❌ 快速验证的实验性功能</p>
+<p>❌ 一次性的临时需求</p>
+<p>❌ 对现有代码的小修改</p>
+<h1 id="当前最佳实践"><a href="#当前最佳实践" class="headerlink" title="当前最佳实践 -"></a>当前最佳实践 -</h1><p>Rules + Agentic Coding + AI文档汇总</p>
+<h2 id="融合各阶段优势"><a href="#融合各阶段优势" class="headerlink" title="融合各阶段优势"></a>融合各阶段优势</h2><p>核心思路：</p>
+<ol>
+<li>用Rules约束AI</li>
+<li>用技术方案指导实现</li>
+<li>用Agentic Coding快速迭代</li>
+<li>用AI汇总文档保持同步</li>
+</ol>
+<h2 id="技术方案模板优化"><a href="#技术方案模板优化" class="headerlink" title="技术方案模板优化"></a>技术方案模板优化</h2><p>我们优化了技术方案模板，更加轻量级：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"># [需求名称]-技术方案</span><br><span class="line">## 业务定义</span><br><span class="line">[简要描述业务背景和目标，1-2句话]</span><br><span class="line">## 业务领域对象</span><br><span class="line">[如果需要新增/修改BO或DTO，在此说明]</span><br><span class="line">## 模块领域对象</span><br><span class="line">[需要新增/修改的VO对象]</span><br><span class="line">| 对象含义 | 实现方案 | 属性及类型 |</span><br><span class="line">|---------|---------|-----------|</span><br><span class="line">| [对象名] | 新增/修改 | 1. 字段1：类型 - 说明&lt;br&gt;2. 字段2：类型 - 说明 |</span><br><span class="line">## 数据服务层</span><br><span class="line">[需要新增/修改的数据服务]</span><br><span class="line">| 数据服务定义 | 实现方案 | execute逻辑 |</span><br><span class="line">|------------|---------|-----------|</span><br><span class="line">| [服务名] | 新增/复用 | 1. 步骤1&lt;br&gt;2. 步骤2 |</span><br><span class="line">## 模块构建器</span><br><span class="line">[需要新增/修改的模块构建器]</span><br><span class="line">| 模块构建器定义 | 实现方案 | doBuild逻辑 |</span><br><span class="line">|--------------|---------|-------------|</span><br><span class="line">| [构建器名] | 新增/修改 | 1. 获取数据&lt;br&gt;2. 处理逻辑&lt;br&gt;3. 构建VO |</span><br></pre></td></tr></table></figure>
+<p>特点：</p>
+<ol>
+<li>比SDD规格更轻量，编写时间从2小时降低到30分钟</li>
+<li>比纯Agentic Coding更规范，有明确的结构约束</li>
+<li>聚焦于”做什么”，而非”怎么做”（实现细节交给AI）</li>
+</ol>
+<h2 id="AI文档汇总机制"><a href="#AI文档汇总机制" class="headerlink" title="AI文档汇总机制"></a>AI文档汇总机制</h2><p><strong>即：让AI自动维护”整体架构与业务逻辑文档”</strong></p>
+<h3 id="文档汇总流程"><a href="#文档汇总流程" class="headerlink" title="文档汇总流程"></a>文档汇总流程</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">完成需求开发 → 提交AI：&quot;将本次代码逻辑汇总到汇总文档&quot; → AI分析代码 → AI更新文档</span><br></pre></td></tr></table></figure>
+
+<p>Prompt示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">我刚完成了NN红包模块的开发，请分析以下代码：</span><br><span class="line">- NnRedPacketDataService.java</span><br><span class="line">- NnRedPacketModuleBuilder.java</span><br><span class="line">- NnRedPacketVO.java</span><br><span class="line">然后将其业务逻辑汇总到&quot;NN业务整体架构与逻辑文档.md&quot;中，确保：</span><br><span class="line">1. 描述模块的核心功能和业务价值</span><br><span class="line">2. 说明数据流转过程</span><br><span class="line">3. 列出关键的业务规则和判断逻辑</span><br><span class="line">4. 保持与现有文档的风格一致</span><br></pre></td></tr></table></figure>
+
+<h3 id="架构文档结构"><a href="#架构文档结构" class="headerlink" title="架构文档结构"></a>架构文档结构</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"># NN业务整体架构与逻辑文档</span><br><span class="line">## 一、业务概述</span><br><span class="line">[业务背景、目标、核心价值]</span><br><span class="line">## 二、整体架构</span><br><span class="line">### 2.1 技术架构</span><br><span class="line">[分层架构图、技术栈]</span><br><span class="line">### 2.2 模块组成</span><br><span class="line">[各个模块的功能和关系]</span><br><span class="line">## 三、核心模块详解</span><br><span class="line">### 3.1 NN Feeds模块</span><br><span class="line">#### 3.1.1 功能说明</span><br><span class="line">[模块的核心功能]</span><br><span class="line">#### 3.1.2 数据流转</span><br><span class="line">[数据从哪里来，经过哪些处理，最终输出什么]</span><br><span class="line">#### 3.1.3 关键逻辑</span><br><span class="line">[重要的业务规则、计算逻辑、判断条件]</span><br><span class="line">#### 3.1.4 代码位置</span><br><span class="line">[对应的类和方法]</span><br><span class="line">### 3.2 NN红包模块</span><br><span class="line">[类似结构]</span><br><span class="line">### 3.3 NN吊钩层模块</span><br><span class="line">[类似结构]</span><br><span class="line">## 四、数据服务层</span><br><span class="line">[各个数据服务的功能和依赖]</span><br><span class="line">## 五、关键流程</span><br><span class="line">[重要的业务流程时序图]</span><br><span class="line">## 六、配置说明</span><br><span class="line">[配置项说明]</span><br><span class="line">## 七、扩展点</span><br><span class="line">[未来可能的扩展方向]</span><br></pre></td></tr></table></figure>
+
+<h3 id="AI汇总效果示例"><a href="#AI汇总效果示例" class="headerlink" title="AI汇总效果示例"></a>AI汇总效果示例</h3><p>AI生成的文档片段：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">### 3.2 NN红包模块</span><br><span class="line">#### 3.2.1 功能说明</span><br><span class="line">NN红包模块用于在NN频道页面展示用户可用的红包列表，帮助用户了解可以使用的优惠，提升转化率。</span><br><span class="line">#### 3.2.2 数据流转</span><br><span class="line">用户请求 → NnRedPacketDataService </span><br><span class="line">         → 调用FpProvider查询用户红包</span><br><span class="line">         → 过滤可用红包（状态=2，未过期，门槛&lt;=20元）</span><br><span class="line">         → 返回红包列表</span><br><span class="line">         ↓</span><br><span class="line">NnRedPacketModuleBuilder</span><br><span class="line">         → 获取红包数据</span><br><span class="line">         → 红包排序（NN专属优先，门槛从小到大）</span><br><span class="line">         → 构建NnRedPacketVO</span><br><span class="line">         → 返回前端</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">#### 3.2.3 关键逻辑</span><br><span class="line">**1. 红包过滤规则**</span><br><span class="line">```java</span><br><span class="line">// 只展示满足以下条件的红包：</span><br><span class="line">// 1. 状态为可使用（payStatus = 2）</span><br><span class="line">// 2. 未过期（当前时间在startTime和endTime之间）</span><br><span class="line">// 3. 门槛 &lt;= 配置的amountThreshold（默认20元）</span><br><span class="line">if (fund.getPayStatus() != 2) return false;</span><br><span class="line">if (fund.getStartTime() &gt; now || now &gt; fund.getEndTime()) return false;</span><br><span class="line">if (fund.getAmountThreshold() &gt; amountThreshold) return false;</span><br><span class="line">**2. 红包排序规则**</span><br><span class="line">```java</span><br><span class="line">// 排序规则：</span><br><span class="line">// 1. NN专属红包（配置的nnRedPacketPoolIds）优先</span><br><span class="line">// 2. 其次按门槛从小到大排序</span><br><span class="line">funds.stream()</span><br><span class="line">    .sorted(Comparator</span><br><span class="line">        .comparing(fund -&gt; nnPoolIds.contains(fund.getFromFundId()) ? 0 : 1)</span><br><span class="line">        .thenComparing(FundQueryDTO::getAmountThreshold))</span><br><span class="line">**3. 总金额计算**</span><br><span class="line">```java</span><br><span class="line">// 计算所有可用红包的金额总和</span><br><span class="line">String totalAmount = funds.stream()</span><br><span class="line">    .map(FundQueryDTO::getAvailableAmount)</span><br><span class="line">    .reduce(0L, Long::sum)</span><br><span class="line">    .map(PriceUtils::getPriceFenToYuan)</span><br><span class="line">    .orElse(&quot;0.00&quot;);</span><br><span class="line">#### 3.2.4 代码位置</span><br><span class="line">- 数据服务：`NnRedPacketDataService`</span><br><span class="line">  - 位置：`dataservice/impl/nn/NnRedPacketDataService.java`</span><br><span class="line">  - 核心方法：`execute(InvocationContext, JSONObject)`</span><br><span class="line">- 模块构建器：`NnRedPacketModuleBuilder`</span><br><span class="line">  - 位置：`module/nn/NnRedPacketModuleBuilder.java`</span><br><span class="line">  - 核心方法：`doBuild(InvocationContext)`、`sortFunds(List&lt;FundQueryDTO&gt;)`</span><br><span class="line">- 模块VO：`NnRedPacketVO`</span><br><span class="line">  - 位置：`domain/module/nn/NnRedPacketVO.java`</span><br><span class="line">#### 3.2.5 配置项</span><br><span class="line">```json</span><br><span class="line">&#123;</span><br><span class="line">  &quot;nnRedPacketPoolIds&quot;: &quot;1001,1002,1003&quot;,  // NN专属红包池ID</span><br><span class="line">  &quot;amountThreshold&quot;: 2000,                  // 红包门槛上限（分）</span><br><span class="line">  &quot;expandText&quot;: &quot;展开查看更多&quot;              // 展开文案</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="思考总结"><a href="#思考总结" class="headerlink" title="思考总结"></a>思考总结</h1><p>在淘特导购业务的AIcoding实践中，我们经历了从简单代码补全到Agentic Coding，再到基于规则和SDD的编程模式的演进过程。每个阶段都有其价值和局限性：</p>
+<ol>
+<li>初期探索让我们认识到AI在编码辅助方面的潜力，但也暴露了缺乏规范指导的问题；</li>
+<li>Agentic Coding提升了功能实现的完整性，但可延续性和一致性仍有不足；</li>
+<li>基于规则的模式有效解决了代码规范和架构一致性问题，成为当前的主要实践方式；</li>
+<li>SDD尝试虽然在理念上很有价值，但在实际应用中还需要进一步完善。</li>
+</ol>
+<p>虽然在SDD编程方面遇到了一些挑战，但我们认为AI规范化编程是未来发展的方向。团队中的同学正在持续探索和优化：</p>
+<ol>
+<li>完善工具链：改进Spec Kit等工具，提升自动化能力</li>
+<li>优化流程整合：更好地将SDD模式与现有开发流程结合</li>
+<li>降低学习成本：通过培训和实践案例帮助团队成员适应新模式</li>
+<li>持续改进规则：根据实践经验不断完善规则定义</li>
+</ol>
+<p>我们相信，通过持续的探索和实践，一定能找到更适合团队的AI辅助编程模式，进一步提升开发效率和代码质量。</p>
+
+    </div>
+
+    
+    
+    
+
+    <div>
+      
+      <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+      
+  <div class="popular-posts-header">相关文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2025/12/ai_VibeCoding_to_SpecCoding.html" rel="bookmark">跨越 AI 编程的工程鸿沟：从Vibe Coding到Spec Coding的工程实践</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2025/12/AICoding_Agent.html" rel="bookmark">[转载] AI coding 智能体设计</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2025/12/ai_VibeCoding.html" rel="bookmark">Qcon 上海 2025 Vibe Coding 在代码生成与协作中的实践与思考</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2026/01/iOS_AICoding.html" rel="bookmark">iOS AI Coding提效探索阶段性小结和思考</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2025/12/CLI_to_Coding.html" rel="bookmark">[转载] 从CLI原理出发，如何做好AI Coding</a></div>
+    </li>
+  </ul>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>wyanassert
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://blog.wyan.vip/2025/12/ai_VibeCoding_to_SSD.html" title="[转载] AI编码实践：从Vibe Coding到SDD">https://blog.wyan.vip/2025/12/ai_VibeCoding_to_SSD.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/AI/" rel="tag"><i class="fa fa-tag"></i> AI</a>
+              <a href="/tags/Vibe/" rel="tag"><i class="fa fa-tag"></i> Vibe</a>
+              <a href="/tags/SpecCoding/" rel="tag"><i class="fa fa-tag"></i> SpecCoding</a>
+              <a href="/tags/AICoding/" rel="tag"><i class="fa fa-tag"></i> AICoding</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2025/12/tencent_kuikly.html" rel="prev" title="Kuikly 开发框架笔记">
+      <i class="fa fa-chevron-left"></i> Kuikly 开发框架笔记
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2025/12/CLI_to_Coding.html" rel="next" title="[转载] 从CLI原理出发，如何做好AI Coding">
+      [转载] 从CLI原理出发，如何做好AI Coding <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%9A%E5%8A%A1%E8%83%8C%E6%99%AF"><span class="nav-number">1.1.</span> <span class="nav-text">业务背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7%E7%9A%84%E5%BC%95%E5%85%A5"><span class="nav-number">1.2.</span> <span class="nav-text">AI编程工具的引入</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E8%A1%A5%E5%85%A8%E4%B8%8E%E5%8D%95%E6%96%B9%E6%B3%95%E6%94%B9%E5%86%99"><span class="nav-number">2.</span> <span class="nav-text">代码智能补全与单方法改写</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E8%AF%86AI%E7%BC%96%E7%A8%8B"><span class="nav-number">2.1.</span> <span class="nav-text">初识AI编程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E6%AD%A5%E6%94%B6%E7%9B%8A"><span class="nav-number">2.2.</span> <span class="nav-text">初步收益</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">2.3.</span> <span class="nav-text">遇到的问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Agentic-Coding%E7%9A%84%E6%8E%A2%E7%B4%A2%E4%B8%8E%E6%8C%91%E6%88%98"><span class="nav-number">3.</span> <span class="nav-text">Agentic Coding的探索与挑战</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Agentic-Coding%E7%9A%84%E5%B0%9D%E8%AF%95"><span class="nav-number">3.1.</span> <span class="nav-text">Agentic Coding的尝试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%98%BE%E8%91%97%E7%9A%84%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87"><span class="nav-number">3.2.</span> <span class="nav-text">显著的效率提升</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E6%9A%B4%E9%9C%B2%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">3.3.</span> <span class="nav-text">快速暴露的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90"><span class="nav-number">3.4.</span> <span class="nav-text">原因分析</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Rules%E7%BA%A6%E6%9D%9F-%E5%BB%BA%E7%AB%8BAI%E7%9A%84%E2%80%9D%E9%A1%B9%E7%9B%AE%E8%A7%84%E8%8C%83%E2%80%9D"><span class="nav-number">4.</span> <span class="nav-text">Rules约束 - 建立AI的”项目规范”</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E5%85%A5Rules%E6%96%87%E4%BB%B6"><span class="nav-number">4.1.</span> <span class="nav-text">引入Rules文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Rules%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E7%A4%BA%E4%BE%8B"><span class="nav-number">4.2.</span> <span class="nav-text">Rules文件内容示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A8%A1%E5%9D%97%E6%9E%84%E5%BB%BA%E5%99%A8"><span class="nav-number">4.3.</span> <span class="nav-text">模块构建器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88%E6%A8%A1%E6%9D%BF"><span class="nav-number">4.4.</span> <span class="nav-text">技术方案模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%98%BE%E8%91%97%E6%94%B9%E5%96%84%E7%9A%84%E6%95%88%E6%9E%9C"><span class="nav-number">4.5.</span> <span class="nav-text">显著改善的效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%9D%E7%84%B6%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">4.6.</span> <span class="nav-text">依然存在的问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SDD%E6%8E%A2%E7%B4%A2-%E8%A7%84%E6%A0%BC%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91"><span class="nav-number">5.</span> <span class="nav-text">SDD探索 - 规格驱动开发</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SDD%E7%9A%84%E5%BC%95%E5%85%A5"><span class="nav-number">5.1.</span> <span class="nav-text">SDD的引入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Speckit%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B"><span class="nav-number">5.2.</span> <span class="nav-text">Speckit执行流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87"><span class="nav-number">5.2.1.</span> <span class="nav-text">环境准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#speckit-constitution%E2%80%94%E5%88%B6%E5%AE%9A%E6%95%B4%E4%B8%AA%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%8E%9F%E5%88%99"><span class="nav-number">5.2.2.</span> <span class="nav-text">speckit.constitution—制定整个项目的原则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#speckit-specify%E2%80%94%E7%BC%96%E5%86%99%E8%A7%84%E6%A0%BC%E8%AF%B4%E6%98%8E"><span class="nav-number">5.2.3.</span> <span class="nav-text">speckit.specify—编写规格说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#speckit-plan%E2%80%94%E5%88%B6%E5%AE%9A%E5%AE%9E%E6%96%BD%E8%AE%A1%E5%88%92"><span class="nav-number">5.2.4.</span> <span class="nav-text">speckit.plan—制定实施计划</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#speckit-tasks%E2%80%94%E4%BB%BB%E5%8A%A1%E5%88%86%E8%A7%A3"><span class="nav-number">5.2.5.</span> <span class="nav-text">speckit.tasks—任务分解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#speckit-implement%E2%80%94%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81"><span class="nav-number">5.2.6.</span> <span class="nav-text">speckit.implement—实现代码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SDD%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%94%B9%E8%BF%9B"><span class="nav-number">5.3.</span> <span class="nav-text">SDD带来的改进</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E8%87%B4%E6%80%A7%E6%98%BE%E8%91%97%E6%8F%90%E5%8D%87"><span class="nav-number">5.3.1.</span> <span class="nav-text">一致性显著提升</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%AF%E6%B5%8B%E8%AF%95%E6%80%A7%E5%A4%A7%E5%B9%85%E6%8F%90%E5%8D%87"><span class="nav-number">5.3.2.</span> <span class="nav-text">可测试性大幅提升</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%AF%E7%BB%B4%E6%8A%A4%E6%80%A7%E6%98%BE%E8%91%97%E6%94%B9%E5%96%84"><span class="nav-number">5.3.3.</span> <span class="nav-text">可维护性显著改善</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87"><span class="nav-number">5.3.4.</span> <span class="nav-text">团队协作效率提升</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SDD%E7%9A%84%E9%97%AE%E9%A2%98%E4%B8%8E%E6%8C%91%E6%88%98"><span class="nav-number">5.4.</span> <span class="nav-text">SDD的问题与挑战</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SDD%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF%E5%88%86%E6%9E%90"><span class="nav-number">5.5.</span> <span class="nav-text">SDD适用场景分析</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BD%93%E5%89%8D%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5"><span class="nav-number">6.</span> <span class="nav-text">当前最佳实践 -</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%9E%8D%E5%90%88%E5%90%84%E9%98%B6%E6%AE%B5%E4%BC%98%E5%8A%BF"><span class="nav-number">6.1.</span> <span class="nav-text">融合各阶段优势</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88%E6%A8%A1%E6%9D%BF%E4%BC%98%E5%8C%96"><span class="nav-number">6.2.</span> <span class="nav-text">技术方案模板优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI%E6%96%87%E6%A1%A3%E6%B1%87%E6%80%BB%E6%9C%BA%E5%88%B6"><span class="nav-number">6.3.</span> <span class="nav-text">AI文档汇总机制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E6%A1%A3%E6%B1%87%E6%80%BB%E6%B5%81%E7%A8%8B"><span class="nav-number">6.3.1.</span> <span class="nav-text">文档汇总流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%B6%E6%9E%84%E6%96%87%E6%A1%A3%E7%BB%93%E6%9E%84"><span class="nav-number">6.3.2.</span> <span class="nav-text">架构文档结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AI%E6%B1%87%E6%80%BB%E6%95%88%E6%9E%9C%E7%A4%BA%E4%BE%8B"><span class="nav-number">6.3.3.</span> <span class="nav-text">AI汇总效果示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%9D%E8%80%83%E6%80%BB%E7%BB%93"><span class="nav-number">7.</span> <span class="nav-text">思考总结</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="wyanassert"
+      src="/images/apple-touch-icon-next.png">
+  <p class="site-author-name" itemprop="name">wyanassert</p>
+  <div class="site-description" itemprop="description"> 博学而孱守，微言而笃行</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">213</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">161</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/wyanassert" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wyanassert" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.jianshu.com/u/8dcadcf720f6" title="简书 → https:&#x2F;&#x2F;www.jianshu.com&#x2F;u&#x2F;8dcadcf720f6" rel="noopener" target="_blank"><i class="fas fa-blog fa-fw"></i>简书</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:wyanassert@gmail.com" title="E-Mail → mailto:wyanassert@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://blog.wyan.vip/" title="https:&#x2F;&#x2F;blog.wyan.vip">博客</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        <div class="readtime">
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">鄂ICP备2021004189号-1 </a>
+    <span class="post-meta-divider">|</span>
+      <img src="/images/beian.png" style="display: inline-block;"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42018502005354" rel="noopener" target="_blank">鄂公网安备 42018502005354号 </a>
+  </div>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">
+  
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2026</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wyan assert</span>
+</div>
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+<span class="post-meta-divider">|</span>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+
+<span class="post-meta-divider">|</span>
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共841.7k字</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : '[object Object]',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'fb8b87a6e817200a3c04',
+      clientSecret: 'dd313dbe0dea0db98225b80f979c11c5d573e7d7',
+      repo        : 'wyanassert.github.io',
+      owner       : 'wyanassert',
+      admin       : ['wyanassert'],
+      id          : '603057e7232a5f0c0de872b0f5783062',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

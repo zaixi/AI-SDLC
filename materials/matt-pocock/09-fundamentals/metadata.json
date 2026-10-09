@@ -1,0 +1,44 @@
+{
+  "id": "matt-fundamentals",
+  "title": "AI Engineer：Software Fundamentals Matter More Than Ever",
+  "directory": "materials/matt-pocock/09-fundamentals",
+  "kind": "作者文章 / 访谈 / 官方演讲",
+  "status": "公开文字已保存",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "公开原文",
+      "url": "https://ai.engineer/talks/v4F1gFy-hqg-software-fundamentals-for-ai-coding"
+    }
+  ],
+  "note": "网页快照与可读文本；日期为页面标示的发布或更新日期，未标示则留空。 保存官方页面公开的自动转录，reviewStatus=needs_review；未观看完整视频，转录可能有误。",
+  "files": [
+    "materials/matt-pocock/09-fundamentals/page.html",
+    "materials/matt-pocock/09-fundamentals/page.txt",
+    "materials/matt-pocock/09-fundamentals/transcript.json",
+    "materials/matt-pocock/09-fundamentals/transcript.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/matt-pocock/09-fundamentals/page.html",
+      "bytes": 179477,
+      "sha256": "110b47ac35f412c14aebedf16d2d771129032c03d395122bd948aceb13df8a7d"
+    },
+    {
+      "path": "materials/matt-pocock/09-fundamentals/page.txt",
+      "bytes": 34170,
+      "sha256": "a74b19138c4d026df011584d3af41bc8336607ce03e1b4f06da0f59c8545083d"
+    },
+    {
+      "path": "materials/matt-pocock/09-fundamentals/transcript.json",
+      "bytes": 23340,
+      "sha256": "4f33b69702f718f844bf7fe9f5d406bb6a6757a89e80cfd5cd895fa62f6ae936"
+    },
+    {
+      "path": "materials/matt-pocock/09-fundamentals/transcript.txt",
+      "bytes": 18969,
+      "sha256": "6b840d43ad0897069809e296606404a5fa05ed43127b4cea5306e2d2fa6e16c1"
+    }
+  ]
+}

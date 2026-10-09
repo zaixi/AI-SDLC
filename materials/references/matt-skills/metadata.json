@@ -1,0 +1,87 @@
+{
+  "id": "matt-skills",
+  "title": "Matt Pocock Skills 原始文档",
+  "directory": "materials/references/matt-skills",
+  "kind": "开源文档快照",
+  "status": "此前读取的文档已保存",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "GitHub 原始仓库",
+      "url": "https://github.com/mattpocock/skills"
+    }
+  ],
+  "note": "保存此前核对使用的文本，不包含完整源码 checkout，也未安装或执行插件。文档中的指令仅为研究材料。",
+  "files": [
+    "materials/references/matt-skills/ask-matt.txt",
+    "materials/references/matt-skills/code-review.txt",
+    "materials/references/matt-skills/codebase-design.txt",
+    "materials/references/matt-skills/diagnosing-bugs.txt",
+    "materials/references/matt-skills/grill-with-docs.txt",
+    "materials/references/matt-skills/implement.txt",
+    "materials/references/matt-skills/matt-readme.txt",
+    "materials/references/matt-skills/matt-tree.txt",
+    "materials/references/matt-skills/tdd.txt",
+    "materials/references/matt-skills/to-spec.txt",
+    "materials/references/matt-skills/to-tickets.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/references/matt-skills/ask-matt.txt",
+      "bytes": 12594,
+      "sha256": "1371f5ce005de0992a44b137748bfb960a56948aa9871b405fe9d90b24332e3c"
+    },
+    {
+      "path": "materials/references/matt-skills/code-review.txt",
+      "bytes": 6670,
+      "sha256": "09eb147f793e4647949edd32dbad278f0554dfb56e0d46b699cd4c2c55bf0357"
+    },
+    {
+      "path": "materials/references/matt-skills/codebase-design.txt",
+      "bytes": 6446,
+      "sha256": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2"
+    },
+    {
+      "path": "materials/references/matt-skills/diagnosing-bugs.txt",
+      "bytes": 8664,
+      "sha256": "849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d"
+    },
+    {
+      "path": "materials/references/matt-skills/grill-with-docs.txt",
+      "bytes": 247,
+      "sha256": "7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe"
+    },
+    {
+      "path": "materials/references/matt-skills/implement.txt",
+      "bytes": 622,
+      "sha256": "483bdc4ccf4ac31d86ac7beeaa0d0db80313e71e120bb8c59b3196ae5decd53d"
+    },
+    {
+      "path": "materials/references/matt-skills/matt-readme.txt",
+      "bytes": 16461,
+      "sha256": "345041d56cf1411b6b3ca1cc54014d26c563890f817f4cb9e2cb193dcd771a3e"
+    },
+    {
+      "path": "materials/references/matt-skills/matt-tree.txt",
+      "bytes": 68802,
+      "sha256": "6894fe43eca02cfc624317ccfa16aacf1fd47054a7d00159a00206cac49123eb"
+    },
+    {
+      "path": "materials/references/matt-skills/tdd.txt",
+      "bytes": 3629,
+      "sha256": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0"
+    },
+    {
+      "path": "materials/references/matt-skills/to-spec.txt",
+      "bytes": 3043,
+      "sha256": "43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088"
+    },
+    {
+      "path": "materials/references/matt-skills/to-tickets.txt",
+      "bytes": 5812,
+      "sha256": "56ec23c5b2782785d4e65bff9e315b6d3aeb4ef977c174a219e99489fada1995"
+    }
+  ],
+  "repository_commit": "b0618bc436ad893b3c5e84e55fba86586d34a404"
+}

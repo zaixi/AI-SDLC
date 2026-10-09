@@ -1,0 +1,104 @@
+{
+  "id": "meituan-unit-test",
+  "title": "AI Coding 与单元测试的协同进化：从验证到驱动",
+  "directory": "materials/domestic/meituan/02-ai-unit-testing",
+  "kind": "官方技术文章",
+  "status": "正文与代码案例已保存",
+  "publication_date": "2025-12-05",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "美团技术团队",
+      "url": "https://tech.meituan.com/2025/12/05/AI-Coding-Unit-Testing.html"
+    }
+  ],
+  "note": "",
+  "files": [
+    "materials/domestic/meituan/02-ai-unit-testing/article.html",
+    "materials/domestic/meituan/02-ai-unit-testing/article.txt",
+    "materials/domestic/meituan/02-ai-unit-testing/images.md",
+    "materials/domestic/meituan/02-ai-unit-testing/images/05eaf3786a591152.png",
+    "materials/domestic/meituan/02-ai-unit-testing/images/554784b22ddca2fa.png",
+    "materials/domestic/meituan/02-ai-unit-testing/images/799ebf9eea851f53.jpg",
+    "materials/domestic/meituan/02-ai-unit-testing/images/7f13f28b72928b33.png",
+    "materials/domestic/meituan/02-ai-unit-testing/images/a42af27dc97abf7f.jpg",
+    "materials/domestic/meituan/02-ai-unit-testing/images/aadc7abd6726d5ae.png",
+    "materials/domestic/meituan/02-ai-unit-testing/images/b04a60bca96c301a.png",
+    "materials/domestic/meituan/02-ai-unit-testing/images/c067a6e246cd22b5.png",
+    "materials/domestic/meituan/02-ai-unit-testing/images/cadd8ee03b3e5f83.jpg",
+    "materials/domestic/meituan/02-ai-unit-testing/images/e6c015a509ba910b.png",
+    "materials/domestic/meituan/02-ai-unit-testing/images/e865c92eb41434a2.png"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/meituan/02-ai-unit-testing/article.html",
+      "bytes": 93767,
+      "sha256": "c11994f7f8688deb243376a0974e035213c0a35fab27c7608436db652fea82c4"
+    },
+    {
+      "path": "materials/domestic/meituan/02-ai-unit-testing/article.txt",
+      "bytes": 31687,
+      "sha256": "a20e7552c4dad7151079d685f2ee2daef76d7e794027932327145d3837d2c23c"
+    },
+    {
+      "path": "materials/domestic/meituan/02-ai-unit-testing/images.md",
+      "bytes": 1853,
+      "sha256": "c89ad79b381fe675ec2b70917530c29fae894cacb15130e9a182166ef271dfad"
+    },
+    {
+      "path": "materials/domestic/meituan/02-ai-unit-testing/images/05eaf3786a591152.png",
+      "bytes": 111988,
+      "sha256": "0390370ce1a33e1f1bc3aac2344e365ae50de8cac24ad4e6711206573342da4e"
+    },
+    {
+      "path": "materials/domestic/meituan/02-ai-unit-testing/images/554784b22ddca2fa.png",
+      "bytes": 442376,
+      "sha256": "1267fdf7f3151b48bf3c6509d666178b561c94fd3a37aee5f37bf46bec0cc0a3"
+    },
+    {
+      "path": "materials/domestic/meituan/02-ai-unit-testing/images/799ebf9eea851f53.jpg",
+      "bytes": 24023,
+      "sha256": "6afac01382f0f469bf4db66da5e7893b2def320fa643f8f7ffee5dde5b17e56a"
+    },
+    {
+      "path": "materials/domestic/meituan/02-ai-unit-testing/images/7f13f28b72928b33.png",
+      "bytes": 120924,
+      "sha256": "d9250543083fad9b3f3e3e93688f3f22ee86cdc4d3ae16449f7df9c402f654a0"
+    },
+    {
+      "path": "materials/domestic/meituan/02-ai-unit-testing/images/a42af27dc97abf7f.jpg",
+      "bytes": 106841,
+      "sha256": "c643548d2a52145fefa3b841f9d52c53a90b52801f426861d11324fe13f26941"
+    },
+    {
+      "path": "materials/domestic/meituan/02-ai-unit-testing/images/aadc7abd6726d5ae.png",
+      "bytes": 3785482,
+      "sha256": "a155f5b43af2ed8372a5a7f34dd0dd3b762d16dc6f36e3a95f0d2bf42ea16fdd"
+    },
+    {
+      "path": "materials/domestic/meituan/02-ai-unit-testing/images/b04a60bca96c301a.png",
+      "bytes": 335690,
+      "sha256": "532d196d4af05808f6565db57837309274f638fb27366a6e3e408dd24aba8f5e"
+    },
+    {
+      "path": "materials/domestic/meituan/02-ai-unit-testing/images/c067a6e246cd22b5.png",
+      "bytes": 173093,
+      "sha256": "65dbe2f8e77a42ad41323ab4edb51b7d26dc0515a3879947d9d4a4c80a77f95f"
+    },
+    {
+      "path": "materials/domestic/meituan/02-ai-unit-testing/images/cadd8ee03b3e5f83.jpg",
+      "bytes": 18862,
+      "sha256": "3410a01a6a1daa8bb6a09a81aed8220007c52684e2eaca8213e76c262ac392a1"
+    },
+    {
+      "path": "materials/domestic/meituan/02-ai-unit-testing/images/e6c015a509ba910b.png",
+      "bytes": 142218,
+      "sha256": "56cf039dddf14ca8ba35936e3fccea4e5409e2d2377440c91684d199bacbd932"
+    },
+    {
+      "path": "materials/domestic/meituan/02-ai-unit-testing/images/e865c92eb41434a2.png",
+      "bytes": 100746,
+      "sha256": "ff21e8995fcae419b2a67a94bc4a16348bd2146915aff824d4afe0d89e92400f"
+    }
+  ]
+}

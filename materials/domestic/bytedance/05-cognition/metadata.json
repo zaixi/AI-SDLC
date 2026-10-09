@@ -1,0 +1,50 @@
+{
+  "id": "byte-cognition",
+  "title": "TRAE 的思考：AI 时代程序员的认知进化",
+  "directory": "materials/domestic/bytedance/05-cognition",
+  "kind": "官方演讲资源",
+  "status": "公开介绍与提纲已保存；完整附件未取得",
+  "publication_date": "2025-10-24（资源发布）",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "火山引擎官方资源页",
+      "url": "https://developer.volcengine.com/resource/7564369099334107162"
+    }
+  ],
+  "note": "未登录页面没有可直接下载的公开附件 URL；仅有附件内部标识，未绕过登录获取文件。发布日期来自页面公开元数据，不代表演讲日期。",
+  "files": [
+    "materials/domestic/bytedance/05-cognition/images.md",
+    "materials/domestic/bytedance/05-cognition/images/96566d721d3da68c.svg",
+    "materials/domestic/bytedance/05-cognition/images/a0227d2c348e44bd.jpg",
+    "materials/domestic/bytedance/05-cognition/official-resource-page.html",
+    "materials/domestic/bytedance/05-cognition/official-resource-page.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/bytedance/05-cognition/images.md",
+      "bytes": 589,
+      "sha256": "ffcad5ab89b26578b92dbe03185c6fc213a3feae93e408d990df5e9d92dac2ef"
+    },
+    {
+      "path": "materials/domestic/bytedance/05-cognition/images/96566d721d3da68c.svg",
+      "bytes": 5208,
+      "sha256": "f54968fbdaa16d6839b8f03929400182b9260b699c3978184360554bdb8fbbe0"
+    },
+    {
+      "path": "materials/domestic/bytedance/05-cognition/images/a0227d2c348e44bd.jpg",
+      "bytes": 132886,
+      "sha256": "bea83e3c4fae6d8cc3284f1395fd21cfa51d5562f36a26ee104e434546960f1f"
+    },
+    {
+      "path": "materials/domestic/bytedance/05-cognition/official-resource-page.html",
+      "bytes": 102522,
+      "sha256": "d63c90e7c5f3cf05e699bc0857499f0281dbb95f4348b260127070d331409669"
+    },
+    {
+      "path": "materials/domestic/bytedance/05-cognition/official-resource-page.txt",
+      "bytes": 1532,
+      "sha256": "a2585b0a40437405344ae8897a7add88f4cebf3519807b757d7a3677f48a768d"
+    }
+  ]
+}

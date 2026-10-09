@@ -1,0 +1,48 @@
+{
+  "id": "baidu-comate",
+  "title": "文心快码官网与使用手册入口",
+  "directory": "materials/domestic/baidu/01-comate",
+  "kind": "产品与文档入口",
+  "status": "入口 HTML 已保存；动态正文未完整取得",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "官网",
+      "url": "https://comate.baidu.com/zh"
+    },
+    {
+      "label": "使用手册",
+      "url": "https://comate.baidu.com/zh/readme"
+    }
+  ],
+  "note": "官网主要通过 JS 加载；HTML 与少量可见文字不等于完整产品手册或团队实践。",
+  "files": [
+    "materials/domestic/baidu/01-comate/manual-entry.html",
+    "materials/domestic/baidu/01-comate/manual-entry.txt",
+    "materials/domestic/baidu/01-comate/product-page.html",
+    "materials/domestic/baidu/01-comate/product-page.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/baidu/01-comate/manual-entry.html",
+      "bytes": 19364,
+      "sha256": "2aca050a77e29c88fe6c8f4102c1db4308a9bf7d063444f2d76d41ea022f59c1"
+    },
+    {
+      "path": "materials/domestic/baidu/01-comate/manual-entry.txt",
+      "bytes": 28,
+      "sha256": "afe1fe6ba27d83c56436c7aee9f6e7a2a4cce91fbf1ed5c53c147fe86b40cbe6"
+    },
+    {
+      "path": "materials/domestic/baidu/01-comate/product-page.html",
+      "bytes": 25073,
+      "sha256": "c6ff177b471d024590c47e8ec60b9b8324d39cd1537fb9450d10f0f79aee7b36"
+    },
+    {
+      "path": "materials/domestic/baidu/01-comate/product-page.txt",
+      "bytes": 54,
+      "sha256": "87b67886ebbea5a1e7d5b6e7242d9fdeb8ab75aec2adaef5f541116c1a52696d"
+    }
+  ]
+}

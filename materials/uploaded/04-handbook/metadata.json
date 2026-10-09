@@ -1,0 +1,32 @@
+{
+  "id": "upload-handbook",
+  "title": "AI Native 研发体系建设与落地手册",
+  "directory": "materials/uploaded/04-handbook",
+  "kind": "用户上传 PDF",
+  "status": "完整 PDF 已保存",
+  "publication_date": null,
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "用户提供的微信公众号链接",
+      "url": "https://mp.weixin.qq.com/s/Hp-fdkcAt7g3pCPHQpqg_g"
+    }
+  ],
+  "note": "",
+  "files": [
+    "materials/uploaded/04-handbook/AI Native 研发体系建设与落地手册.pdf",
+    "materials/uploaded/04-handbook/text.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/uploaded/04-handbook/AI Native 研发体系建设与落地手册.pdf",
+      "bytes": 979085,
+      "sha256": "7885bb2fbb50018ee94c9f058d3d9e1472ebf67fc205d3302f395fbcb2e4e3da"
+    },
+    {
+      "path": "materials/uploaded/04-handbook/text.txt",
+      "bytes": 66993,
+      "sha256": "d03330029e9084eb0fae4bde825bf9486697447319706d8ec374a892f06e04b9"
+    }
+  ]
+}

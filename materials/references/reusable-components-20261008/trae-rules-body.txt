@@ -1,0 +1,164 @@
+You can establish rules to regulate AI's behavior within TraeCode, including code style, language and framework, interaction methods, and more, making the AI's output better aligned with your personal preferences and project requirements.
+*About rules
+Use cases
+The main use cases for rules are as follows:
+Efficiency improvement
+Transform personal experience and project requirements into reusable rules, allowing a single configuration to remain effective over time, reducing communication costs with AI and manual review time.
+StandardizationStructure team guidelines and project standards into rules so that the content managed by all members remains consistent in style, structure, and quality, avoiding deviations.
+Quality assuranceEnsure that AI understands the project's core constraints (such as architecture design, naming conventions, code style, and more), preventing common errors.
+Rule types
+You can configure two types of rules: user rules and project rules.
+Global rules: Global rules are rules customized for the AI based on personal usage habits and needs, aiming to make the AI's output better meet the user's personalized requirements. Global rules take effect in all projects.
+Project rules: Project rules are the rules that the AI must follow for the current project, and they are only effective within the current project.
+Rule directories
+: 
+macOS/Linux: ~/.trae/user_rules under the local home directory.
+Windows: %userprofile%/.trae/user_rules: the .trae/rules/ directory under the project path.
+Create global rules
+Create one or more global rules according to your personal preferences. The AI will comply with the global rules you create in all projects.
+In IDE mode, click the Settings icon in the upper-right corner to enter the settings center.
+OR
+In SOLO mode, click the  icon in the upper-right corner of the chat panel to enter the settings center.
+In the left navigation panel, select Rules.
+The rule management panel appears.
+In the Rules section, click the + Create button, and select Global from the drop-down list.
+In the rule input box, enter a global rule, then click the   button.
+The global rule you add will be displayed in the rule list.
+Create project rules
+Procedure
+Project rules are written using Markdown syntax and are only effective within the project in which they are created.
+When creating project rules, you can specify how the rules take effect. Depending on the application mode, the system will automatically modify the rule's alwaysApply property. You also need to configure the rule's description or globs property according to the activation method.
+The steps for creating project rules are as follows:
+Open a project.
+Project from the drop-down list. 
+Create Rule popup, enter the rule name, then click the The system will automatically create a .trae/rules folder in the project's directory, create the rule file you named in that folder, and open the rule file in the editor for editing.
+Set the rule's Set relevant properties in the form according to the rule's application mode.
+Below ---, add the rule's content using Markdown syntax.
+Click the About multi-level rule nesting
+When there are many rules in the project root directory, placing all types of rules directly in the  root directory makes searching and maintenance difficult.
+You can create subfolders under the  directory and categorize rule files of the same type into the corresponding subfolders. The system will automatically read the rules in these directories recursively. Currently, up to three levels of nesting are supported.
+The structure is as follows:
+About creating rules for subdirectories
+In a large project, there are usually multiple folders, each representing a different module or technology stack. If all rules (including AGENTS.md) are configured in the project root directory, it is not only difficult to maintain but may also cause exclusive rules for one module to interfere with other modules.
+TraeCode supports reading the  folder in any subdirectory of the project. To configure rules for a specific module, you can directly place the rule files in that module's folder. When you mention files in that directory in a chat, or when the AI reads files in that directory while dealing with tasks, the system will automatically apply the exclusive rules in that directory.
+Example structure:
+Reference rules in a chat
+For rules of the “” type, reference them in the chat input box using #Rule.
+Edit/delete rules
+ list in the settings center, find the target rule.
+ icon on the right.
+Select  in the menu.
+Complete the corresponding operation.
+Import , CLAUDE.md, and CLAUDE.local.mdIn addition to TraeCode's native project rules, you can also reuse the following two types of rule files located in the project root directory. Both are project-level rules and apply only to the current project:
+: A project rule file for AI. It uses clear, readable text to describe the instructions and conventions that must be followed within the project.  is a cross-tool convention. An  file created in TraeCode can be reused in other IDEs that support this convention, and vice versa.
+ and : Claude Code project rule files. TraeCode is compatible with these files. When you migrate a project from Claude Code to TraeCode, these files are imported along with the project.
+To make  work in TraeCode, use the following steps:
+Make sure the rule files are located in the project root directory: 
+ must be manually placed in the project root directory.
+ are automatically included during project migration.
+Go to  > In , toggle the  switches on.
+Once enabled, the agent will read the  files in the root directory and add them to the context.
+Set rules for Git commit messages
+TraeCode supports setting rules for AI-generated Git commit messages to ensure they meet project requirements. You only need to configure the scene: git_message field in the rule file.
+The  field is compatible with existing fields such as . As long as the rule file contains this field, regardless of how other fields are configured, the AI will follow the rule in  when generating Git commit messages.
+If multiple rule files in the project contain , the AI will follow the rules in all of these files.
+Method 1: Add rules to an existing fileThe steps for setting rules for AI-generated Git commit messages are as follows:
+In the current project, open an existing rule file.
+Add the scene field to the file and set it to git_messageAdd desired rules below the  separator.
+Method 2: Add rules in the git-commit-message.md fileIn the left navigation bar, click the Source Contro icon.
+This opens the Source Control panel.
+On the right side of the top commit message input box, click the dropdown icon, then select Configure Commit Message Generation Rules from the menu.
+The system automatically generates the  file in the  directory.
+Add desired rules in the  file.
+How to let the AI generate Git commit messages?
+Open the Generate Commit Message icon, or click the dropdown icon and select Best practices
+Control the granularity of each rule's content to avoid including too much information in a single rule, keeping it clear, focused, and easy to understand.
+Rules must not conflict with or override each other.
+When specifying file paths, use relative paths based on the project root directory to ensure that the AI can accurately locate the file.
+When referencing rules, prioritize those that are strongly related to the current chat or task.
+After creating or modifying a rule, it is recommended to start a brand new chat before using it to avoid conflicts between historical context and the new rule.
+If there is already a large amount of non-compliant code in the project, AI may follow the existing code style rather than the new rules. In this case, it is recommended to:
+Clearly inform the model that the current task is “refactoring”.
+In specific scenarios, require the AI to strictly follow the new rules.
+Initiate a dedicated refactoring project to gradually improve the overall code quality.
+Example
+Rules for different use cases
+Multi-level nesting of project rules
+Suppose your project has many rules related to frontend design and development; you can organize them as follows:
+Application ModeDescriptionThis rule is effective for all AI chats within the current project.
+This rule is only effective when matching files specified in the  field. When the file you mention in the chat input box matches the  setting, this rule will be automatically activated.
+Based on the use case you add for this rule in the  field, the AI will determine relevance in the chat and decide whether to use this rule.
+This rule is only effective when it is mentioned in a chat using #Rule.
+Property Settings field has been automatically set to truefalseAt , use wildcards to specify the files to which the rule applies (for example, *.jssrc/**/*.ts), and you can configure multiple wildcards separated by ,. This setting will be automatically synchronized to the  field.
+, enter the use case for this rule, for example: When writing test code for React components, use this rule field below has been automatically set to .trae/rules/                      
+├── global-rules.md                
+├── module-a/                                   # Level 1
+│    ├── rules-a.md
+│    ├── submodule-a1/                         # Level 2
+│    │    └── rules-a1.md
+│    └── submodule-a2/                         # Level 2
+│          └── submodule-a2-b1/                # Level 3
+│                ├── rules-a2-b1.md            ← Deepest readable level
+│                └── submodule-a2-b1-c1/       # Level 4 (unreadable）
+│                     └── rule-a2-b1-c1.md     ← Exceeds limit (unreadable）└── module-b/                                   # Level 1
+     └── rules-b.md
+my-project/
+├── .trae/
+│    └── rules/                 # Project root directory
+│          └── global-style.md
+├── frontend-module/             # A frontend module
+│    ├── AGENTS.md              # Takes effect only when files related to frontend-module are read or mentioned
+│    └── .trae/
+│          └── rules/           # Takes effect only when files related to frontend-module are read or mentioned│                └── react-best-practices.md
+└── backend-module/              # A backend module
+     └── .trae/
+           └── rules/            # Takes effect only when files related to backend-module are read or                  └── api-design.md
+Among rule referencing methods, #Rule has the highest priority. For project rules with application mode of “” or “”, if you mention these rules in the chat using #Rule, the AI will also use them in this chat.
+---
+scene: git_message
+Body: Rules for generating Git commit messages.
+If you have already added  and rules in an existing rule file, the system will open that file directly instead of creating All responses must be provided in Chinese.
+If code is provided, add concise Chinese comments for key logic and sections that may be difficult to understand.
+When the generated code exceeds 20 lines, first consider whether appropriate abstraction or aggregation can be applied.
+Avoid unnecessary object copying or cloning.
+Avoid deep nesting; return early.
+Use appropriate concurrency control mechanisms.
+Incremental refactoring:
+Make only one small change at a time, then test.
+Commit frequently to keep the code always working.Test assurance:
+Ensure sufficient tests before refactoring.
+Run tests after each modification to ensure behavior remains unchangedCode review:
+Conduct a code review after refactoring to ensure quality.
+Naming conventions:
+Use meaningful and descriptive names.
+Follow the naming conventions of the project or language.
+Avoid abbreviations and single-letter variables (unless they are conventional, such as 'i' in loops).
+Code organization:
+Group related code together.
+Each function should do only one thing.
+Maintain appropriate levels of abstraction.
+Comments and documentation:
+Comments should explain why, not what.
+Provide clear documentation for public APIs.
+Update comments to reflect code changes.
+Memory optimization:
+Avoid unnecessary object creation.
+Release resources that are no longer needed in a timely manner.
+Be aware of memory leak issues.
+Computation optimization:
+Avoid redundant computations.
+Use appropriate data structures and algorithms.
+Defer computation until necessary.
+Parallel optimization:
+Identify tasks that can be parallelized.
+Avoid unnecessary synchronization.
+Be aware of thread safety issues.
+.trae/rules/
+├── general-rules.md                 # General rules
+├── frontend/
+│    ├── react-best-practices.md    # React standards
+│    ├── css-naming.md              # CSS naming conventions│    └── testing/
+│         └── unit-test-rules.md    # Frontend unit test standards├── backend/
+│    ├── api-design.md              # API design standards
+│    └── error-handling.md          # Error handling standards└── devops/
+     └── ci-rules.md                 # CI/CD standards

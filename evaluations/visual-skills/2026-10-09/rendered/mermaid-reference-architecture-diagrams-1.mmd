@@ -1,0 +1,6 @@
+architecture-beta
+    group public_api(cloud)[Public API]
+    service api1(server)[API Server] in public_api
+    service db(database)[Database]
+
+    api1:R --> L:db

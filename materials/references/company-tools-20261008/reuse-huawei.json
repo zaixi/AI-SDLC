@@ -1,0 +1,52 @@
+[
+  {
+    "title": "玩转skill，成为skill大师——使用CodeArts代码智能体构建个人skill-云社区-华为云",
+    "url": "https://bbs.huaweicloud.com/blogs/475828",
+    "snippet": "【摘要】 本案例将基于华为云码道（CodeArts）代码智能体配置SKILL构建个人skill1 概述1.1 案例流程skills是一种为大型语言模型获取新能力的模块化封装标准。"
+  },
+  {
+    "title": "用户指南 - 智能开发助手 (CodeArts Snap) 2.2.0 使用指南 01 - 华为",
+    "url": "https://support.huawei.com/enterprise/zh/doc/EDOC1100417508/c0126439",
+    "snippet": "智能开发助手 (CodeArts Snap) 2.2.0 使用指南 01 用户指南 CodeArts Snap安装配置 CodeArts Snap基本管理 CodeArts Snap插件入口 CodeArts Snap插件使用 收藏 下载文档 更新时间：2025-06-26"
+  },
+  {
+    "title": "玩转skill，成为skill大师——使用码道代码智能体+find-skills快速安装pdf-skill-云社区-华为云",
+    "url": "https://bbs.huaweicloud.com/blogs/475683",
+    "snippet": "\" 在找到后，find-skills会询问用户需要哪一个skill，这里作者选择了第一个，等待IDE华为云码道（CODEARTS）代码智能体自动安装skill 安装完成后会给予用户完整的指南。 新skill功能测试 准备好一个pdf，这里作者的pdf放在桌面。 在聊天框中输入："
+  },
+  {
+    "title": "CodeArts Snap插件使用 - 智能开发助手 (CodeArts Snap) 2.2.0 使用指南 01 - 华为",
+    "url": "https://support.huawei.com/enterprise/zh/doc/EDOC1100417508/4b5cdfa7",
+    "snippet": "在CodeArts Snap Chat窗口输入需求描述，编程语言注释或自然语言均可。 示例\"使用Java编写一个冒泡排序方法，不包含main函数\"。 单击或使用\"Enter\"快捷键发送。 等待CodeArts Snap给出回答，回答内容包含描述及代码块，代码块提供复制、插入、另存为文件功能。"
+  },
+  {
+    "title": "华为云码道CodeArts代码智能体_懂你的编码专家-华为云",
+    "url": "https://www.huaweicloud.com/intl/zh-cn/product/codearts/ai.html",
+    "snippet": "下载客户端IDE 控制台 华为云码道代码智能体 获取华为云码道CodeArts代码智能体 资源管理器 web-calendar-project calendar.html calendar.js calendar.css"
+  },
+  {
+    "title": "知识库_上下文_用户指南（码道IDE）_华为云码道CodeArts代码智能体-华为云",
+    "url": "https://support.huaweicloud.com/usermanual-codeartsagent/codeartsagent_ug_0013.html",
+    "snippet": "进入知识库管理页面 在码道IDE顶部菜单栏中，单击设置图标 ，进入全局设置页面。 单击\"知识库\"，跳转至外部浏览器打开知识空间页面。 若尚未登录华为云码道代码智能体控制台，将跳转到登录页面。登录后，即可进入知识空间页面。"
+  },
+  {
+    "title": "华为云码道代码智能体_懂你的编码专家_企业级智能编码平台_华为云",
+    "url": "https://codearts.huaweicloud.com/",
+    "snippet": "华为云码道CodeArts代码智能体是华为云打造的智能编码产品，深度融合开发工具链，支持代码自主开发与研发办公，实现全流程研发提效，立即免费体验。"
+  },
+  {
+    "title": "CodeArts Snap：辅助你编程的神器-华为开发者话题 | 华为开发者联盟",
+    "url": "https://developer.huawei.com/consumer/cn/forum/topic/0204112469098576447",
+    "snippet": "华为云CodeArts Snap在各阶段均采取了针对性措施，有效规避了业界产品普遍带来的编程安全隐患。 例如为避免开源代码带来的系统性风险，在数据预处理阶段，预训练数据对可能产生问题的licence涉及的代码进行了精细的过滤，从根本上杜绝开源licence风险，并会尽 ..."
+  },
+  {
+    "title": "【AI编程工具】华为CodeArts Snap 极速上手指南：从安装到高效编码_华为的ai插件-CSDN博客",
+    "url": "https://blog.csdn.net/qq_43584113/article/details/160413250",
+    "snippet": "文章浏览阅读1k次，点赞3次，收藏4次。CodeArts Snap（又称\"码道\"）是华为云推出的一款智能开发助手。它基于盘古代码大模型，深度融合了华为30年的研发实践，尤其在以及上表现卓越。本教程将带你从零开始，掌握 CodeArts Snap 的核心用法，让你的编码效率实现质的飞跃。_华为的ai插件"
+  },
+  {
+    "title": "【AI编程工具】华为CodeArts Snap 极速上手指南：从安装到高效编码 - 技术栈",
+    "url": "https://jishuzhan.net/article/2047132429555662850",
+    "snippet": "CodeArts Snap（又称\"码道\"）是华为云推出的一款智能开发助手。它基于盘古代码大模型，深度融合了华为30年的研发实践 ..."
+  }
+]

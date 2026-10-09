@@ -1,0 +1,100 @@
+In TraeCode, skills are defined and managed through the SKILL.md file.
+Each skill encapsulates instructions, scripts, and related resources, providing reusable, scenario-specific professional capabilities for the agent.
+A skill can be regarded as a set of "professional capability documentation" (similar to a user manual or operation guide) provided to the agent. When performing tasks, the agent can load the corresponding skills as needed, thereby enhancing its understanding and execution capabilities for the task.
+*Learn about skills
+Highlights
+Structured
+Each skill corresponds to a  file, which describes in a structured manner the information required to complete a certain type of task, for example: task objectives and use cases; key constraints and cautions; recommended processes or steps; optional scripts, templates, or examples.
+Dynamic on-demand loadingThe agent does not read the full content of all skills at the start of a task. Before executing a task, the agent first scans the brief descriptions of all skills, and only loads the detailed content of a skill when it determines that the current task is highly relevant to that skill. This on-demand loading mechanism can effectively reduce token consumption in the context and prevent irrelevant information from interfering with the agent's decision-making.
+Use cases
+Ensure consistency and standardization of output resultsIt is necessary for the agent to always output results according to established standards across different times and tasks. For example, requirements such as unified design specifications, enforcing team standards, maintaining brand consistency, or ensuring code complies with project conventions can be encapsulated as skills, thereby transforming implicit personal or team standards into explicit, reusable professional capabilities, ultimately making output results more stable and controllable.
+Automate repetitive workflowsThere is a need to frequently execute identical or highly similar multi-step tasks. For example, for unavoidable daily tasks such as testing workflows, code reviews, and data analysis, existing SOPs can be encapsulated as skills. Once the relevant task is triggered, the agent can automatically execute it according to the defined process, thereby reducing repeated command input and improving efficiency.
+Summarize and share professional capabilitiesSummarize personal experience or team standards, and reuse them more broadly. For example, share skills on public platforms such as communities and chat groups, so that the same skills can be reused across different agents, projects, and teams.
+Skills versus other features
+Skills vs. RulesRules are loaded in full: once a chat starts, all rules are injected into and continuously occupy the context window. Skills, by contrast, are loaded on demand and are only injected into the context when they are actually called, significantly reducing token consumption.
+Skills vs. MCP ServersSkills describe how TraeCode should accomplish a task, while MCP servers provide the tools that TraeCode can invoke.
+For example, TraeCode can obtain automated testing capabilities—such as page interactions—through the Playwright MCP server. The corresponding skill, however, defines the test project structure, Page Object Model (POM) design conventions, and common test authoring and execution workflows, guiding TraeCode to call these capabilities efficiently and within the correct context.
+Skill types
+Skill structure
+A skill must include a  file. Based on actual needs, you can add optional files like executable scripts, references such as templates and style guides, and more. For example:
+  directory
+Skill-related files are stored in the following directories:
+Project skill: The .trae/skills/ directory under the project path.
+Global skill:
+macOS/Linux: The local root directory ~/.trae/skills.
+Windows: The local root directory %userprofile%/.trae/skills file format
+The format of the  file is as follows:
+Built-in skills
+TraeCode provides the following built-in skills:
+Create skills
+Method 1: Automatically create skills via chat with AI
+You can directly create skills through chat. You only need to describe your requirements to the AI, and the AI will automatically generate the corresponding  file for your skill.
+For example: 
+Method 2: Manually create skills
+You can manually create skills by entering the skill name, description, and instructions.
+Go to Settings > Skills & CommandsIn the  section, click the Create button, and select a skill type (Global / Project).
+The Create Skill window pops up.
+Set the , , and  fields.
+Click the  button.
+For a global skill, after being added, it will appear directly under the  tab in the  panel.
+For a project skill, after being added, TraeCode will automatically create a  file in the .trae/skills/{skill_name} directory of the current project. The file contains your custom skill configuration. At the same time, this skill will also appear under the (Optional) Based on the instructions, manually add the required scripts and other resources to the {skill_name} folder.
+Method 3: Manually import external skills
+To use externally created skills, you can directly import the  file or a .zip file containing  and other related files into TraeCode.
+Upload a  file or a .zip file containing the filTraeCode will analyze the uploaded skill file and then automatically fill in relevant information in the Modify the auto-filled contents of the  fields as needed, then click the For a project skill, TraeCode will automatically create a  folder in the  directory, which contains all the files you have uploaded. At the same time,  this skill will also appear under the Enable/disable skills
+After creating a skill, you can enable or disable it by toggling its switch.
+After disabling skills, TraeCode will create a skill-config.json file in the project's .trae/ directory. This file lists the disabled project skills. Disabled global skills will not appear in this file.
+Edit/delete skills
+Click the gear icon to the right of the target skill, then select  or  in the menu to perform the corresponding operation as needed. 
+For project skills, you can also click  to change them to global skills.
+Use skills in chat
+Method 1: Manually invoke skills
+You can instruct AI to use a specific skill to complete a task, for example, "Use the codemap skill to summarize the changes in this branch".
+Method 2: AI automatically invokes skills
+When performing tasks, the AI will analyze the current task and the descriptions such as "use case" or "when to use" defined for each skill to determine whether a skill needs to be loaded, and will automatically invoke the relevant skill at the appropriate stage.
+For example, suppose you have defined a code review skill with the trigger condition "when the user requests code feedback or review". When you make requests such as "How is this function written?" or "Please review the following code", the AI will recognize the relevance of these requests to the code review skill and will load and use the skill without additional instructions to complete the corresponding code analysis and feedback.
+Use the .agents skill directory
+.agents skill directory (that is, .agents/skills/) is a convention-based directory specified by Agent Skills for storing skills. You can add this directory to your project, enabling the agent to automatically discover and load the skills within it at runtime.
+Important notesIf a skill you create in TraeCode (located in the  directory) has the same name as a skill in , the system will prioritize the skill in the  directory.
+Install skills in the .agents/skills/ directory
+You can use a skill named "find-skills" to quickly install the required skills in the "find-skills" relies on a command-line tool called skills, enabling you to search, install, and manage various modular skill packages from the open Agent Skills ecosystem. For more information, refer to Use the .agents/skills/ directory
+Add the  directory to your project.
+Enable the  section, toggle the  switch on.
+Best practices
+Skill development is not a one-time effort, but a continuous process of iteration. For best practices on building and iterating skills, refer to "How to build a good skill: best practices from creation to iteration".
+TypeDescriptionGlobal skills
+Skills that take effect globally across projects and can be used for:
+Standardizing general development paradigms for individuals or teams, such as unified code style, naming conventions, and commenting practices;
+Providing reusable engineering capabilities across projects, such as using general toolchains (Git, CI/CD, Playwright, and more);
+Solidifying long-term preferences of individuals or organizations, such as output structure (whether to provide conclusions first, whether to list steps, whether to give examples).
+Project skills
+Skills that take effect only in the current project and can be used for:
+Injecting project-specific business knowledge and rules, such as mandatory business constraints and boundary conditions, internal project terminology, and concept mapping;Constraining AI to work according to the project's established technical solutions, such as technology stack, framework versions, and architecture limitationsEnabling AI to deeply participate in the development and maintenance of the current project, such as generating tests, mocks, and scaffold code for the project; collaborating with the MCP Server or internal tools used by the project.
+skill-name/
+├── SKILL.md               # (Required) Core instructions for the agent
+├── examples/              # (Optional) Example input/output
+    ├── input.md
+    └── output.md
+├── templates/             # (Optional) Reusable templates
+    └── component.tsx
+└── resources/             # (Optional) References, scripts, materials, etc
+    └── style-guide.md
+---
+name: skill name
+description: briefly describe what the skill does and when to use it
+# SKill name## DescriptionDescribe what the skill does.
+## When to useDescribe when to use the skill.
+## InstructionsClear step-by-step instructions that tell the agent exactly what to do.
+## Examples (optional)Input/output examples that demonstrate the expected results.
+Skill NameTRAE-generate-mini-app
+This skill is used to generate high-quality, runnable multi-platform mini app code based on the Taro framework. It is triggered when the user’s intent involves mini apps, Taro, WeChat Mini Programs, cross-platform mini apps, or any other mini app-related requirements.
+TRAE-debugger
+This skill is used to debug complex issues that require runtime evidence collection. It starts a debugging server, collects logs over HTTP, and follows a systematic debugging workflow: hypothesis > instrumentation > reproduction > analysis > fix > verification. It applies to bugs that cannot be diagnosed through static code analysis alone, and is triggered when the user explicitly requests runtime debugging or when an issue remains unresolved through static analysis after multiple rounds of interaction.
+TRAE-code-review
+This skill is used to perform code reviews. It applies to reviewing merge requests and code diffs, providing structured feedback on code quality, correctness, and best practices.
+Craete a new skill under the ./trae/skills directory
+The name of the skill is xxx
+This skill can do the following:
+- xxx
+FieldGive this skill a short and distinctive name.
+Briefly describe what the skill is and when this skill should be used.
+When this skill is triggered, what rules or information do you want the AI to follow.

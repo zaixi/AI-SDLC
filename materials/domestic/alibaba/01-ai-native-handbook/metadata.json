@@ -1,0 +1,60 @@
+{
+  "id": "ali-handbook",
+  "title": "AI Native 研发范式实践手册",
+  "directory": "materials/domestic/alibaba/01-ai-native-handbook",
+  "kind": "官方手册",
+  "status": "完整 PDF 与 OCR 已保存",
+  "publication_date": "2026-09",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "官方在线阅读",
+      "url": "https://ai-native.alistatic.com/app/ainativeinfra/ai-native-handbook-web/index"
+    },
+    {
+      "label": "官方 PDF",
+      "url": "https://g.alistatic.com/s/v/ainativeinfra/ai-native-handbook/0.0.1/ai-native-handbook.pdf"
+    }
+  ],
+  "note": "68 页。与 uploaded/04-handbook 的 29 页资料不同。OCR 非原始文字层，数字与引用应回看 PDF；重点章节已审阅。",
+  "files": [
+    "materials/domestic/alibaba/01-ai-native-handbook/ocr.txt",
+    "materials/domestic/alibaba/01-ai-native-handbook/original.pdf",
+    "materials/domestic/alibaba/01-ai-native-handbook/reader-page.html",
+    "materials/domestic/alibaba/01-ai-native-handbook/reader-page.txt",
+    "materials/domestic/alibaba/01-ai-native-handbook/third-party-interpretation.html",
+    "materials/domestic/alibaba/01-ai-native-handbook/third-party-interpretation.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/alibaba/01-ai-native-handbook/ocr.txt",
+      "bytes": 168743,
+      "sha256": "b6751b5cacb0f555f1170d984ac2f4c9a461f45cee5f2468b9d69a98d6a4e64a"
+    },
+    {
+      "path": "materials/domestic/alibaba/01-ai-native-handbook/original.pdf",
+      "bytes": 27286928,
+      "sha256": "6929f3e9e57fef9550129d457ba82ac40a4a9368e1c5926c6ac2206d8aaeced3"
+    },
+    {
+      "path": "materials/domestic/alibaba/01-ai-native-handbook/reader-page.html",
+      "bytes": 3634,
+      "sha256": "fdc88ddea86d2198e41f57de50367a2b86baca9364b1ab29332d059346bc2bbe"
+    },
+    {
+      "path": "materials/domestic/alibaba/01-ai-native-handbook/reader-page.txt",
+      "bytes": 305,
+      "sha256": "1aff85bb7c152a9abec5382de2a4b03dfb6b71683c7a9f72928b5fb5e049f7db"
+    },
+    {
+      "path": "materials/domestic/alibaba/01-ai-native-handbook/third-party-interpretation.html",
+      "bytes": 243952,
+      "sha256": "765d03d8ec9829956ebb33dd8a5d54aa0a83bde151f8ab6305fe860a1e306dfa"
+    },
+    {
+      "path": "materials/domestic/alibaba/01-ai-native-handbook/third-party-interpretation.txt",
+      "bytes": 196553,
+      "sha256": "87150256c43ae36e778946beb1152c31deb8f5fdf0803e76a1684a37dac8c590"
+    }
+  ]
+}

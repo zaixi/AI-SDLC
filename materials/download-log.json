@@ -1,0 +1,45 @@
+[
+  {
+    "key": "trae-paper-pdf",
+    "url": "https://arxiv.org/pdf/2507.23370v1",
+    "final_url": "https://arxiv.org/pdf/2507.23370v1",
+    "bytes": 6081225,
+    "content_type": "application/pdf",
+    "status": "saved"
+  },
+  {
+    "key": "baidu-manual",
+    "url": "https://comate.baidu.com/zh/readme",
+    "final_url": "https://comate.baidu.com/zh/readme",
+    "bytes": 19364,
+    "content_type": "text/html; charset=utf-8",
+    "status": "saved"
+  },
+  {
+    "key": "ali-taote-original",
+    "url": "https://mp.weixin.qq.com/s/xVff9O2DPLssbfzp_GRwXQ",
+    "status": "unavailable",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "key": "ali-aaic-original",
+    "url": "https://mp.weixin.qq.com/s/eF-cdFtdiDX-laykhVEdqg",
+    "status": "unavailable",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "key": "byte-force-original",
+    "url": "https://mp.weixin.qq.com/s/mdmaAyUIvxE8WT_GEbF2wQ",
+    "status": "unavailable",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "key": "ali-config-original",
+    "url": "https://tool.lu/article/82a/detail",
+    "final_url": "https://tool.lu/article/82a/detail",
+    "bytes": 0,
+    "content_type": "",
+    "status": "empty-response",
+    "note": "HTTP 204，没有文章正文"
+  }
+]

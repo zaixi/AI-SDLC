@@ -1,0 +1,50 @@
+{
+  "id": "byte-vecli",
+  "title": "veCLI：命令行超级智能体的最佳实践",
+  "directory": "materials/domestic/bytedance/06-vecli",
+  "kind": "官方演讲资源",
+  "status": "公开介绍与提纲已保存；完整附件未取得",
+  "publication_date": "2025-10-24（资源发布）",
+  "archived_on": "2026-10-08",
+  "sources": [
+    {
+      "label": "火山引擎官方资源页",
+      "url": "https://developer.volcengine.com/resource/7564595926895951923"
+    }
+  ],
+  "note": "未登录页面没有可直接下载的公开附件 URL；仅有附件内部标识，未绕过登录获取文件。发布日期来自页面公开元数据，不代表演讲日期。",
+  "files": [
+    "materials/domestic/bytedance/06-vecli/images.md",
+    "materials/domestic/bytedance/06-vecli/images/7502d31ccc2dc715.jpg",
+    "materials/domestic/bytedance/06-vecli/images/96566d721d3da68c.svg",
+    "materials/domestic/bytedance/06-vecli/official-resource-page.html",
+    "materials/domestic/bytedance/06-vecli/official-resource-page.txt"
+  ],
+  "assets": [
+    {
+      "path": "materials/domestic/bytedance/06-vecli/images.md",
+      "bytes": 589,
+      "sha256": "88faab829f577224b547385c8741f3c5a8de5133ce9a47eeddfe2064471407b4"
+    },
+    {
+      "path": "materials/domestic/bytedance/06-vecli/images/7502d31ccc2dc715.jpg",
+      "bytes": 127216,
+      "sha256": "77dc33cc5c70e44021bdecfdb9d0b1683a420a302042e67ab5e1dc9186f3f00c"
+    },
+    {
+      "path": "materials/domestic/bytedance/06-vecli/images/96566d721d3da68c.svg",
+      "bytes": 5208,
+      "sha256": "f54968fbdaa16d6839b8f03929400182b9260b699c3978184360554bdb8fbbe0"
+    },
+    {
+      "path": "materials/domestic/bytedance/06-vecli/official-resource-page.html",
+      "bytes": 102109,
+      "sha256": "8617105ac555d17773dad49ac940c6fc38be27a72e8a1d6c37b1039ee0601951"
+    },
+    {
+      "path": "materials/domestic/bytedance/06-vecli/official-resource-page.txt",
+      "bytes": 1333,
+      "sha256": "720cb336a2933c73c3006d3ebff98fc95ff9eec8bc5db822d257feb67850fdfa"
+    }
+  ]
+}
