@@ -1,0 +1,9 @@
+{
+  "scope": "host CLI diagnosis; not a benchmark",
+  "exit_code": 1,
+  "diagnostic_categories": [
+    "runtime_readonly_filesystem",
+    "runtime_initialization_failed"
+  ],
+  "benchmark_answers": 0
+}

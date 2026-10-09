@@ -1,0 +1,27 @@
+{
+  "benchmark_answers": 0,
+  "model_smoke_requested": true,
+  "filesystem": {
+    "image_id": "sha256:19400faacfebe49481f619b5b785dbbdb5d86fd1c3a71aa0d5e01278f600e8bf",
+    "assigned_file_readable": true,
+    "peer_host_file_absent": true,
+    "host_repository_absent": true,
+    "docker_socket_absent": true,
+    "assigned_mount_readonly": true,
+    "network": "none",
+    "check_output": "filesystem-checks-passed"
+  },
+  "model_smoke": {
+    "status": "failed",
+    "exit_code": 1,
+    "diagnostic_categories": [
+      "authentication_rejected",
+      "auxiliary_service_rejected"
+    ],
+    "code_mode_host_mounted": true,
+    "network": "Docker bridge, existing proxy; not egress isolated",
+    "note": "A zero exit code alone does not prove local tool execution; this is not a benchmark."
+  },
+  "retry_reason": "User reported quota restored; retry existing isolated CLI route.",
+  "checked_at_utc": "2026-10-09T12:17:36.680710+00:00"
+}
