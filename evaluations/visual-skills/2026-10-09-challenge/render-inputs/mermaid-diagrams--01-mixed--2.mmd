@@ -1,0 +1,17 @@
+flowchart TD
+    N([创建发布单]) --> D["草稿"]
+    D -->|"发布人提交"| R["待审"]
+    R -->|"审阅人拒绝"| D
+    R -->|"审阅人通过<br/>且不是该单提交人"| Q["待执行"]
+    Q -->|"发布人取消"| C["已取消"]
+    Q -->|"调度器开始执行"| E["执行中<br/>不能取消"]
+    E -->|"当前批成功，仍有后续批次"| E
+    E -->|"任一批失败：停止后续批次"| F["失败<br/>已成功批次不自动回滚"]
+    E -->|"全部批次成功"| S["完成"]
+
+    classDef success fill:#e5f5e9,stroke:#388e3c
+    classDef failure fill:#fde8e8,stroke:#c62828
+    classDef active fill:#e6f0ff,stroke:#1565c0
+    class S success
+    class F failure
+    class Q,E active

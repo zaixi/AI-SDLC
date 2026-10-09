@@ -1,0 +1,137 @@
+Apply the primary skill below to the task. The guide and relevant reference, when supplied, are already loaded as text in this fresh conversation. Generate directly from the supplied materials; do not use any tools, fetch network resources, install anything, delegate, render or save files. Reply in Chinese with the visual and brief necessary explanation. Do not discuss the test or skill names. Do not redesign the provided system.
+
+<primary_skill>
+---
+name: show-me
+description: Help the user understand the current topic visually with concise diagrams, code-shape sketches, and focused HTML artifacts.
+disable-model-invocation: true
+---
+
+Help the user understand the current topic of conversation visually. Skip the preamble and keep prose brief. Pick the smallest view that makes the key point clear.
+
+- Show logic or an algorithm as pseudocode:
+
+```text
+on(save)
+  if content is unchanged
+    return cached result
+  write new content
+  return fresh result
+```
+
+- Show runtime control flow as a call tree:
+
+```text
+submitForm
+  createSession
+    persistPrompt
+    launchAgent
+  navigateToSession
+```
+
+- Show UI structure as a component tree, including state and module boundaries that matter:
+
+```tsx
+<SessionPage> (apps/example/src/routes/session.tsx)
+  useSessionEvents()
+  <SessionToolbar>
+    <RunSkillButton> (packages/ui)
+```
+
+- Show file responsibility or a broad refactor as a shallow file tree:
+
+```text
+src/
+├── commands/       # parses user actions
+├── sessions/       # owns session state
+└── transport/      # sends API requests
+```
+
+- Show component interaction, control flow, or data flow with Mermaid:
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant UI
+    participant Daemon
+    User->>UI: choose command
+    UI->>Daemon: send expanded prompt
+    Daemon-->>UI: stream result
+```
+
+- Use `diff` when the point is what changes and the surrounding shape already exists. Match the diff shape to the topic.
+
+For a component change:
+
+```diff
+ <SessionPage>
+   useSessionEvents()
+   <SessionToolbar>
++    <RunSkillButton />
+   <SessionTimeline>
++    <SkillResultCard />
+```
+
+For a file-layout change:
+
+```diff
+ src/
+ ├── commands/
++│   └── show-me.ts       # expands the slash command
+ ├── sessions/
+-└── transport.ts
++└── transport/
++    ├── client.ts
++    └── stream.ts
+```
+
+For a call-tree or call-stack change:
+
+```diff
+ submitForm
+   createSession
+     persistPrompt
++    expandSkillMention
+     launchAgent
+-  navigateToSession
++  navigateToSession
++    subscribeToEvents
+```
+
+For a state or control-flow change:
+
+```diff
+ on(save)
+-  write content
++  if content is unchanged
++    return cached result
++  write new content
++  invalidate cache
+```
+
+- Show the whole block when most of it is new, when omitted context would hide ownership or order, or when the user needs a copyable target shape:
+
+```ts
+function expandSkill(command: string): string {
+  const skillName = command.slice(1)
+  return `use the ${skillName} skill`
+}
+```
+
+- For a visual UI, layout, state comparison, or concept too dense for Mermaid, write one focused HTML file — a diagram, an infographic, or a short slide deck, whichever fits the point. Match the product's colors, type, spacing, and components; use real labels and data; support desktop and mobile. Then open it for the user:
+
+```
+Bash(open path/to/show-me-{description}.html)
+```
+
+### guidance
+
+Place each visual next to the short text it supports. Keep only the calls, files, props, states, and boundaries needed to answer the user's current question or the options to resolve the current discussion point.
+
+You may use one of these, you may use several, it is unlikely you will use all of them. Use your judgement and don't overwhelm the user.
+
+</primary_skill>
+
+<task>
+请把以下已确认的发布体系解释给新同事。自行选取和组织最小而充分的视觉视图，不指定图种，不把所有信息硬塞成一张图；保留重要约束，不能重新设计。发布单关联且仅关联一个不可变构建产物；同一产物可被多个发布单使用。发布单创建后为草稿，提交后待审，审核通过后待执行，拒绝回草稿；待执行可取消，执行中不能取消。调度器只执行待执行单，先进入执行中，按服务批次逐批部署；每批成功才推进下一批，任一批失败则停止后续批次并进入失败，已成功批次不自动回滚；全部成功才进入完成。审阅人只能审批，发布人只能提交/取消，调度器只能推进执行状态。一个人可拥有两个角色，但同一单的提交人不能审批该单。部署工作器接收调度器批次任务并返回批次结果，调度器据此更新发布状态。工作器可能重复返回同一批结果，调度器忽略已记录批次的重复结果，不再次推进批次。系统含发布门户、发布API、调度器、工作器和产物仓库；门户向API提交/审批/取消，API记录发布单；调度器读取API的待执行单并写回状态；工作器从产物仓库读取该单指定产物。未提供数据库、消息队列、通知、超时、自动重试或失败后恢复方案。需要让人看清：各部分怎样协作、发布状态与异常如何演变、审批约束落在哪里。中文表达，短文只补图不能清楚表达的部分。
+</task>

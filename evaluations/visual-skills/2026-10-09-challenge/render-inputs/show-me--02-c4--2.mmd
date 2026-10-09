@@ -1,0 +1,50 @@
+flowchart TB
+    buyer["采购员"]
+    support["支持工程师"]
+
+    subgraph company["本公司 · 采购协同系统边界"]
+        web["Web门户<br/>容器"]
+        api["采购API<br/>容器 · 独立部署进程"]
+        publisher["事件发布器<br/>容器"]
+        gateway["回调网关<br/>容器"]
+        kafka["内部Kafka<br/>消息容器"]
+        orderProcessor["订单处理器<br/>容器"]
+        paymentProcessor["付款处理器<br/>容器"]
+        admin["管理门户<br/>容器"]
+        query["查询API<br/>容器 · 独立部署进程"]
+
+        orders[("订单库<br/>PostgreSQL · 独立实例①")]
+        outbox[("Outbox库<br/>PostgreSQL · 独立实例②")]
+        payments[("付款库<br/>PostgreSQL · 独立实例③")]
+
+        web -->|"HTTPS 调用"| api
+        api -->|"读写订单"| orders
+        api -->|"写待发送事件"| outbox
+        api -->|"写付款申请事件"| kafka
+
+        publisher -->|"读取事件"| outbox
+        gateway -->|"写事件"| kafka
+        orderProcessor -->|"消费交付事件"| kafka
+        orderProcessor -->|"写订单"| orders
+        paymentProcessor -->|"消费付款申请事件、付款结果"| kafka
+        paymentProcessor -->|"写付款结果"| payments
+
+        admin -->|"HTTPS 调用"| query
+        query -->|"只读"| orders
+        query -->|"只读"| payments
+    end
+
+    subgraph supplierOrg["合作供应商"]
+        supplier["供应商系统<br/>外部软件系统"]
+    end
+
+    subgraph bankOrg["银行"]
+        bank["付款系统<br/>外部软件系统"]
+    end
+
+    buyer -->|"使用 · 发订单"| web
+    support -->|"仅查看处理状态"| admin
+    publisher -->|"HTTPS 发送订单"| supplier
+    supplier -->|"HTTPS 发送交付事件"| gateway
+    paymentProcessor -->|"HTTPS 发送付款请求"| bank
+    bank -->|"HTTPS 异步回传付款结果"| gateway

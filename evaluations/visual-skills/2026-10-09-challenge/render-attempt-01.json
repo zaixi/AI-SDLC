@@ -1,0 +1,8 @@
+{
+  "renderer": "upstream mermaid-cli Docker image",
+  "digest": "sha256:2c5d27365df71da06c288beebe531ea3637cf9b422b871239a3b016233591d24",
+  "status": "environment_failure",
+  "reason": "Docker VFS image layers exhausted root disk; 14 bulk renders failed, no skill syntax attribution",
+  "recovery": "Removed task-only unused images via Docker image prune; repository inputs and original answers untouched",
+  "approval_rejection": "Proposed temporary truncation of derived repo inputs rejected; never executed"
+}

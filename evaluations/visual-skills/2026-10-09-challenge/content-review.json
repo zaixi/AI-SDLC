@@ -1,0 +1,49 @@
+{
+  "method": "root qualitative review; source labels visible, not independent/blinded or a reader study",
+  "01-mixed": {
+    "show-me": {
+      "coverage": "key requirements covered using two diagrams and a table",
+      "issues": [
+        "State self-loop does not explicitly exclude the final successful batch; completion transition provides context.",
+        "Proposes enforcing constraints at the API boundary; input did not confirm enforcement implementation. This is phrased as advice, not an additional diagram fact."
+      ],
+      "render": "Two diagrams clear overall; state chart tall, batch detail carried in note."
+    },
+    "mermaid-diagrams": {
+      "coverage": "key requirements covered in collaboration, state and sequence views",
+      "issues": [
+        "Collaboration graph states API validates operation permissions; this implementation location was not supplied."
+      ],
+      "render": "All three views readable overall; extra sequence shows duplicate handling and break, but longer output."
+    },
+    "visual-v041": {
+      "coverage": "key requirements covered in three diagrams and a table",
+      "issues": [],
+      "render": "Clear separation; sequence covers per-batch deduplication. Explicitly notes permission-check implementation location unspecified."
+    }
+  },
+  "02-c4": {
+    "all": "Two levels, three organization ownership boundaries, three independent database instances, two separately deployed APIs, nineteen container relationships and external callbacks covered. No cache/auth/recovery inventions. Consumer-to-Kafka action arrows versus Kafka-to-consumer event arrows are explained in text; do not count this as automatic reversal.",
+    "show-me": {
+      "notation": "C4 concepts expressed in flowchart; task requested C4 framework, not mandatory Mermaid C4 syntax",
+      "render": "Container graph compact and traceable relative to specialized C4 graphs, but many crossing lines. Context graph has crowded/overlapping relation labels; not an unqualified visual pass."
+    },
+    "mermaid-diagrams": {
+      "notation": "Dedicated C4Context/C4Container",
+      "render": "Context opposing relation labels overlap; container units form very tall single column, edges cross boxes and labels overlap. Needs layout revision.",
+      "boundary_note": "Procurement grouping uses Container_Boundary and renderer emits [CONTAINER]; supplied C4 reference uses the same convention for systems. This is not scored as a model layer error; inspect rendered labels as part of readability."
+    },
+    "visual-v041": {
+      "notation": "Dedicated C4Context/C4Container",
+      "render": "Same principal layout defects; factual wording careful but specialized notation did not yield usable container layout.",
+      "boundary_note": "Procurement grouping uses Container_Boundary and renderer emits [CONTAINER]; supplied C4 reference uses the same convention for systems. This is not scored as a model layer error; inspect rendered labels as part of readability."
+    }
+  },
+  "limits": [
+    "Only one answer per task/condition",
+    "Input injection, no dynamic guide-loading test",
+    "Evaluation specific to renderer version 12.1.0",
+    "Rendered sources were never hand-corrected",
+    "No global best-skill claim"
+  ]
+}

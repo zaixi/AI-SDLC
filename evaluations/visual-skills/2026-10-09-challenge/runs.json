@@ -1,0 +1,162 @@
+[
+  {
+    "condition": "show-me",
+    "case": "01-mixed",
+    "exit_code": 0,
+    "container": "visual-case-0c71f90276f34f788bc8463f11ef708c",
+    "mount_roles": [
+      "assigned input readonly",
+      "login-only auth volume readonly",
+      "CLI binaries readonly"
+    ],
+    "image_id": "sha256:192c30fa1185c45631cd9182d3055dc76cdb2867f69817066daf4e96b1ce719d",
+    "input_files": {
+      "model-input.txt": "42f84bf0eb681137c36f92f4fcf48727327a3ec410bb60c54156fa04c28ac03c",
+      "task.txt": "e51e36a775314faa8ba20e5271e3e402abc228681b4c0bcf16f512f17cd195ad",
+      "skill/LICENSE": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+      "skill/SKILL.md": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    "status": "generated",
+    "answer_sha256": "52c63c162b86020e081f395bea2fb704e6d49380d767548913757f44362f7c3e"
+  },
+  {
+    "condition": "show-me",
+    "case": "02-c4",
+    "exit_code": 0,
+    "container": "visual-case-bfe404fbb2b64935a1ad43655e0055d8",
+    "mount_roles": [
+      "assigned input readonly",
+      "login-only auth volume readonly",
+      "CLI binaries readonly"
+    ],
+    "image_id": "sha256:192c30fa1185c45631cd9182d3055dc76cdb2867f69817066daf4e96b1ce719d",
+    "input_files": {
+      "model-input.txt": "6d2d5285b138ed824f0492dbcd7453391a2a10a40eeaf7d9c28af2885693f0be",
+      "task.txt": "e235a600932eb49f42aabdbbdf40baae2807ca82b7400fe52551cd768e1f0c65",
+      "skill/LICENSE": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+      "skill/SKILL.md": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    "status": "generated",
+    "answer_sha256": "c7245cf6d73f3fa3e442924dd2af761c62aed508a3e24ed0acd08fe07a400e9b"
+  },
+  {
+    "condition": "mermaid-diagrams",
+    "case": "01-mixed",
+    "exit_code": 0,
+    "container": "visual-case-04ac40a1bca74e0cacbe180580dc3769",
+    "mount_roles": [
+      "assigned input readonly",
+      "login-only auth volume readonly",
+      "CLI binaries readonly"
+    ],
+    "image_id": "sha256:192c30fa1185c45631cd9182d3055dc76cdb2867f69817066daf4e96b1ce719d",
+    "input_files": {
+      "model-input.txt": "68d3bb2fc806440f0842be42fbf56d7a4eeb05119a7134fad483f16f9919859c",
+      "task.txt": "e51e36a775314faa8ba20e5271e3e402abc228681b4c0bcf16f512f17cd195ad",
+      "skill/README.md": "cbd1ef77946fbf893236c89a3562a59cb96258a81e474b77a57758592be0731c",
+      "skill/LICENSE": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321",
+      "skill/skill-report.json": "f1568bfa0c31af74e07b04cb1beb790242239397f2a873558e0de5d8c5e48b48",
+      "skill/SKILL.md": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9",
+      "skill/references/advanced-features.md": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc",
+      "skill/references/flowcharts.md": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96",
+      "skill/references/sequence-diagrams.md": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b",
+      "skill/references/erd-diagrams.md": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff",
+      "skill/references/c4-diagrams.md": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9",
+      "skill/references/class-diagrams.md": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3"
+    },
+    "status": "generated",
+    "answer_sha256": "ad7b5a16ac4c5fb706e6ef6302e2b5d72ece78b235064a893070d57ca9a6e2f5"
+  },
+  {
+    "condition": "mermaid-diagrams",
+    "case": "02-c4",
+    "exit_code": 0,
+    "container": "visual-case-edad9f548065457fad9d6e71ddf00409",
+    "mount_roles": [
+      "assigned input readonly",
+      "login-only auth volume readonly",
+      "CLI binaries readonly"
+    ],
+    "image_id": "sha256:192c30fa1185c45631cd9182d3055dc76cdb2867f69817066daf4e96b1ce719d",
+    "input_files": {
+      "model-input.txt": "3660e4f0394849f8bef70be1951bfa6185cb42ebd07b8655c405edd8d55e754d",
+      "task.txt": "e235a600932eb49f42aabdbbdf40baae2807ca82b7400fe52551cd768e1f0c65",
+      "skill/README.md": "cbd1ef77946fbf893236c89a3562a59cb96258a81e474b77a57758592be0731c",
+      "skill/LICENSE": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321",
+      "skill/skill-report.json": "f1568bfa0c31af74e07b04cb1beb790242239397f2a873558e0de5d8c5e48b48",
+      "skill/SKILL.md": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9",
+      "skill/references/advanced-features.md": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc",
+      "skill/references/flowcharts.md": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96",
+      "skill/references/sequence-diagrams.md": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b",
+      "skill/references/erd-diagrams.md": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff",
+      "skill/references/c4-diagrams.md": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9",
+      "skill/references/class-diagrams.md": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3"
+    },
+    "status": "generated",
+    "answer_sha256": "b9c9de3d1f966131e877ba5f6fae7fcdf04715ba197bb138d118e5eb5df3e437"
+  },
+  {
+    "condition": "visual-v041",
+    "case": "01-mixed",
+    "exit_code": 0,
+    "container": "visual-case-35b9337cb8df47bbbcea3a697b854bfe",
+    "mount_roles": [
+      "assigned input readonly",
+      "login-only auth volume readonly",
+      "CLI binaries readonly"
+    ],
+    "image_id": "sha256:192c30fa1185c45631cd9182d3055dc76cdb2867f69817066daf4e96b1ce719d",
+    "input_files": {
+      "model-input.txt": "38688cbd515159cb1baf7ee5bc881410528efc2cf2e4bc5a7aa1f9d75e1e4577",
+      "task.txt": "e51e36a775314faa8ba20e5271e3e402abc228681b4c0bcf16f512f17cd195ad",
+      "mermaid-diagrams/README.md": "cbd1ef77946fbf893236c89a3562a59cb96258a81e474b77a57758592be0731c",
+      "mermaid-diagrams/LICENSE": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321",
+      "mermaid-diagrams/skill-report.json": "f1568bfa0c31af74e07b04cb1beb790242239397f2a873558e0de5d8c5e48b48",
+      "mermaid-diagrams/SKILL.md": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9",
+      "skill/README.md": "7e84825c58edd037941b018fe5de28aeecd9a55c0d5944672fa298d61e86cf8d",
+      "skill/LICENSE": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+      "skill/SKILL.md": "4d34f80691b09fe43edee2f298ee4af3c5951a3a350724100c2af85d79af68ba",
+      "mermaid-diagrams/references/advanced-features.md": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc",
+      "mermaid-diagrams/references/flowcharts.md": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96",
+      "mermaid-diagrams/references/sequence-diagrams.md": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b",
+      "mermaid-diagrams/references/erd-diagrams.md": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff",
+      "mermaid-diagrams/references/c4-diagrams.md": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9",
+      "mermaid-diagrams/references/class-diagrams.md": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3",
+      "skill/references/show-me.upstream.md": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    "status": "generated",
+    "answer_sha256": "40099c8015a8d3a4a14ca53bb05ec8a0c3272fdbf7318095fbc983cdf42e09e7"
+  },
+  {
+    "condition": "visual-v041",
+    "case": "02-c4",
+    "exit_code": 0,
+    "container": "visual-case-53388f3f937a4fcaa4a4962dd2032c7c",
+    "mount_roles": [
+      "assigned input readonly",
+      "login-only auth volume readonly",
+      "CLI binaries readonly"
+    ],
+    "image_id": "sha256:192c30fa1185c45631cd9182d3055dc76cdb2867f69817066daf4e96b1ce719d",
+    "input_files": {
+      "model-input.txt": "d14680cccaacaba8b208ad39af4c6fc7b2fe8514b7fa388958c26884905fcc79",
+      "task.txt": "e235a600932eb49f42aabdbbdf40baae2807ca82b7400fe52551cd768e1f0c65",
+      "mermaid-diagrams/README.md": "cbd1ef77946fbf893236c89a3562a59cb96258a81e474b77a57758592be0731c",
+      "mermaid-diagrams/LICENSE": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321",
+      "mermaid-diagrams/skill-report.json": "f1568bfa0c31af74e07b04cb1beb790242239397f2a873558e0de5d8c5e48b48",
+      "mermaid-diagrams/SKILL.md": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9",
+      "skill/README.md": "7e84825c58edd037941b018fe5de28aeecd9a55c0d5944672fa298d61e86cf8d",
+      "skill/LICENSE": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+      "skill/SKILL.md": "4d34f80691b09fe43edee2f298ee4af3c5951a3a350724100c2af85d79af68ba",
+      "mermaid-diagrams/references/advanced-features.md": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc",
+      "mermaid-diagrams/references/flowcharts.md": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96",
+      "mermaid-diagrams/references/sequence-diagrams.md": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b",
+      "mermaid-diagrams/references/erd-diagrams.md": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff",
+      "mermaid-diagrams/references/c4-diagrams.md": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9",
+      "mermaid-diagrams/references/class-diagrams.md": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3",
+      "skill/references/show-me.upstream.md": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    "status": "generated",
+    "answer_sha256": "af4adc69964676e2e32ffdfd12938709876ec70268cdff93670236242660d46b"
+  }
+]

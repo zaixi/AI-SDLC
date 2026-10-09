@@ -1,0 +1,23 @@
+from pathlib import Path
+import subprocess,re,json,hashlib,concurrent.futures,struct
+b=Path('/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-challenge');inp=b/'render-inputs';out=b/'rendered'
+image='visual-small-browser:local'
+for f in (b/'outputs').rglob('*.md'):
+ for i,m in enumerate(re.finditer(r'```mermaid\s*\n([\s\S]*?)```',f.read_text()),1): (inp/(f.parent.name+'--'+f.stem+'--'+str(i)+'.mmd')).write_text(m.group(1))
+(out/'smoke.svg').unlink(missing_ok=True)
+def render(f):
+ r={'source':str(f.relative_to(b)),'sha256':hashlib.sha256(f.read_bytes()).hexdigest()}
+ for ext in ['svg','png']:
+  target=out/(f.stem+'.'+ext)
+  args=['docker','run','--rm','--user','1000:1000','--network','none','--cap-drop','ALL','--security-opt','no-new-privileges','--read-only','--tmpfs','/tmp:rw,nosuid,size=256m','--mount',f'type=bind,src={inp},dst=/input,readonly','--mount',f'type=bind,src={out},dst=/output','--mount','type=bind,src=/tmp/visual-small-render-tools,dst=/opt/render-tools,readonly','--mount','type=bind,src=/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node,dst=/usr/local/bin/node,readonly','--entrypoint','/usr/local/bin/node',image,'/opt/render-tools/node_modules/@mermaid-js/mermaid-cli/src/cli.js','-p','/input/puppeteer-config.json','-i','/input/'+f.name,'-o','/output/'+target.name,'--size','1600','--no-font-embed','-b','white']
+  try:
+   p=subprocess.run(args,text=True,capture_output=True,timeout=90)
+   r[ext]={'exit_code':p.returncode,'status':'passed' if p.returncode==0 and target.exists() else 'failed','diagnostic':(p.stdout+p.stderr)[-2000:]}
+   if target.exists():
+    r[ext]['file']=str(target.relative_to(b))
+    if ext=='png':r[ext]['pixels']=struct.unpack('>II',target.read_bytes()[16:24])
+  except subprocess.TimeoutExpired:r[ext]={'status':'timeout'}
+ print(f.stem,r['svg']['status'],r['png']['status'],flush=True)
+ return r
+with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:results=list(pool.map(render,sorted(inp.glob('*.mmd'))))
+(b/'render-results.json').write_text(json.dumps({'renderer_image':image,'mmdc_version':'12.0.0','network':'none','results':results},ensure_ascii=False,indent=2)+'\n')

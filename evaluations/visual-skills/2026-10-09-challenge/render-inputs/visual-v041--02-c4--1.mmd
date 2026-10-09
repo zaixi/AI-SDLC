@@ -1,0 +1,22 @@
+C4Context
+    title 跨组织集成：系统上下文
+
+    Person(buyer, "采购员", "发订单")
+    Person(support, "支持工程师", "只查看处理状态")
+
+    Enterprise_Boundary(company, "本公司") {
+        System(procurement, "采购协同系统", "订单协同与付款处理")
+    }
+    Enterprise_Boundary(supplier_org, "合作供应商") {
+        System_Ext(supplier, "供应商系统", "接收订单并发送交付事件")
+    }
+    Enterprise_Boundary(bank_org, "银行") {
+        System_Ext(bank, "付款系统", "接收付款请求并异步回传结果")
+    }
+
+    Rel(buyer, procurement, "发订单")
+    Rel(support, procurement, "通过管理门户查看处理状态")
+    Rel(procurement, supplier, "发送订单", "HTTPS")
+    Rel(supplier, procurement, "发送交付事件", "HTTPS")
+    Rel(procurement, bank, "请求付款", "HTTPS")
+    Rel(bank, procurement, "异步回传付款结果", "HTTPS")

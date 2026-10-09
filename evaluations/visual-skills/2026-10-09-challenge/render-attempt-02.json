@@ -1,0 +1,203 @@
+{
+  "renderer_image": "visual-small-browser:local",
+  "mmdc_version": "12.0.0",
+  "network": "none",
+  "results": [
+    {
+      "source": "render-inputs/mermaid-diagrams--01-mixed--1.mmd",
+      "sha256": "53c86c458eca6f166841da326927fce168c14c2d15ee1613b2c3694edfc1c396",
+      "svg": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      },
+      "png": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      }
+    },
+    {
+      "source": "render-inputs/mermaid-diagrams--01-mixed--2.mmd",
+      "sha256": "4bef434eb6905bed0ec4c1a73eb03be321abd1bfa85fb7713ffabaca9f1e24b9",
+      "svg": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      },
+      "png": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      }
+    },
+    {
+      "source": "render-inputs/mermaid-diagrams--01-mixed--3.mmd",
+      "sha256": "9e50ad3d1e89f1d37aba901102bda63bdda90ccada97cabd6a05a4052fdf79aa",
+      "svg": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      },
+      "png": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      }
+    },
+    {
+      "source": "render-inputs/mermaid-diagrams--02-c4--1.mmd",
+      "sha256": "8ff1964ee7fae6f245cb732697703325099a0303ab970436774d18b62b84ce5c",
+      "svg": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      },
+      "png": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      }
+    },
+    {
+      "source": "render-inputs/mermaid-diagrams--02-c4--2.mmd",
+      "sha256": "eb74b073ca98bbda7ab1f2e49df45825ef68fccd2bc1da48aae8ee1dd9927af7",
+      "svg": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      },
+      "png": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      }
+    },
+    {
+      "source": "render-inputs/show-me--01-mixed--1.mmd",
+      "sha256": "eed16f3b18f5458f6dce50c870091b6fa7371a20ecc311562d3ca89ae88af330",
+      "svg": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      },
+      "png": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      }
+    },
+    {
+      "source": "render-inputs/show-me--01-mixed--2.mmd",
+      "sha256": "b21e20ed6ea5bf1e60eb3e524e4342527b9b91771b55f48295660fd152a730e2",
+      "svg": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      },
+      "png": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      }
+    },
+    {
+      "source": "render-inputs/show-me--02-c4--1.mmd",
+      "sha256": "7908f13b3845a1855131f8376c22ab8163c44b6e9f1ca577b82b4ab80000ff0a",
+      "svg": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      },
+      "png": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      }
+    },
+    {
+      "source": "render-inputs/show-me--02-c4--2.mmd",
+      "sha256": "40b654903ff5c860c9eeb35a0214c99652794a9305461ae8028a9e318801f465",
+      "svg": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      },
+      "png": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      }
+    },
+    {
+      "source": "render-inputs/visual-v041--01-mixed--1.mmd",
+      "sha256": "a2c95df60cefe87a063557ca823eecb6d56b3c8be617a806dc2179a35f95c6e7",
+      "svg": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      },
+      "png": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      }
+    },
+    {
+      "source": "render-inputs/visual-v041--01-mixed--2.mmd",
+      "sha256": "ec60f80c1b4f6f29e8834f62d1ef2d68e78dd2974b0fdaa65fe44e045a320894",
+      "svg": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      },
+      "png": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      }
+    },
+    {
+      "source": "render-inputs/visual-v041--01-mixed--3.mmd",
+      "sha256": "cbd8d2a95c4457b02135db56f259139bb24eaaa0eadefc5bf591c1b0d8c3afb9",
+      "svg": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      },
+      "png": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      }
+    },
+    {
+      "source": "render-inputs/visual-v041--02-c4--1.mmd",
+      "sha256": "3b9498bb07abf3158f2b1ef4055196f0373b7daf7859483843770f81465edf09",
+      "svg": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      },
+      "png": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      }
+    },
+    {
+      "source": "render-inputs/visual-v041--02-c4--2.mmd",
+      "sha256": "4ee007b2eb4e6ae2b46ed05cce9142aac176e1ebcdd23ed236c6a68262917e71",
+      "svg": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      },
+      "png": {
+        "exit_code": 1,
+        "status": "failed",
+        "diagnostic": "error: unknown option '-w'\n"
+      }
+    }
+  ]
+}
