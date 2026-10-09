@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-09",
+  "conditions": [
+    "show-me",
+    "mermaid-diagrams",
+    "visual-v041"
+  ],
+  "answers_per_condition": 2,
+  "total_answers": 6,
+  "generation": "fresh fork_turns=none agent for each condition-case, one answer per session",
+  "model": "same inherited default model/reasoning; no override or fixed seed",
+  "tools": "read allowed local guides/prompts, save own output; no network/install/render/subagents",
+  "available_mermaid_guide": "inputs/mermaid-diagrams/SKILL.md and its references; advertised to all conditions with same wording; use according to assigned Skill",
+  "reading_scope": "own assigned Skill plus advertised optional Mermaid guide, common prompts; instruction-limited shared filesystem",
+  "review": "source-hidden independent review, root evidence checks",
+  "not_tested": [
+    "real client automatic discovery",
+    "native nested Skill invocation API",
+    "layout/render",
+    "cross-model generalization"
+  ],
+  "sources": {
+    "visual-v041": "014d81c current snapshot",
+    "show-me": "ca7c8088db69e315a8b2deea43820270457f8f3c",
+    "mermaid-diagrams": "aiskillstore/marketplace @ 26421118b848d9f1efc0aa169d8a7a9e7e0a877e"
+  },
+  "invocation_measurement": "Read provenance for whether optional Mermaid Skill was loaded; not proof of real client automatic invocation",
+  "agents": {
+    "show-me/01-library": "/root/v041_show_library",
+    "show-me/02-enrollment": "/root/v041_show_enrollment",
+    "mermaid-diagrams/01-library": "/root/v041_mermaid_library",
+    "mermaid-diagrams/02-enrollment": "/root/v041_mermaid_enrollment",
+    "visual-v041/01-library": "/root/v041_visual_library",
+    "visual-v041/02-enrollment": "/root/v041_visual_enrollment"
+  },
+  "review_agent": "/root/v041_blind_review"
+}

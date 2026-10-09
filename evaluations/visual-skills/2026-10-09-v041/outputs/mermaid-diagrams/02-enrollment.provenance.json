@@ -1,0 +1,8 @@
+{
+  "read_files": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v041/inputs/mermaid-diagrams/SKILL.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v041/inputs/prompts.json"
+  ],
+  "read_available_mermaid_diagrams_main_guidance": true,
+  "output_path": "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v041/outputs/mermaid-diagrams/02-enrollment.md"
+}

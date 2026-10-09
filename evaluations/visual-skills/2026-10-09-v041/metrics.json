@@ -1,0 +1,60 @@
+[
+  {
+    "case": "01-library",
+    "condition": "show-me",
+    "file": "outputs/show-me/01-library.md",
+    "sha256": "723af4722916a613a817a02256f34214ea675c0698322d8938e6b630b3eabe1b",
+    "characters": 290,
+    "mermaid_main_read": true,
+    "mermaid_references_read": []
+  },
+  {
+    "case": "01-library",
+    "condition": "mermaid-diagrams",
+    "file": "outputs/mermaid-diagrams/01-library.md",
+    "sha256": "f6a83f0435431bc8787302ebde6c8b22b9edc0aeb3e7f265ba690588b2f03072",
+    "characters": 322,
+    "mermaid_main_read": true,
+    "mermaid_references_read": [
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v041/inputs/mermaid-diagrams/references/flowcharts.md"
+    ]
+  },
+  {
+    "case": "01-library",
+    "condition": "visual-v041",
+    "file": "outputs/visual-v041/01-library.md",
+    "sha256": "2ac9b770034eda1d82cc683651d84d7ced3ba31e57999b0cb8170c3da1c6d7de",
+    "characters": 316,
+    "mermaid_main_read": true,
+    "mermaid_references_read": [
+      "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v041/inputs/mermaid-diagrams/references/flowcharts.md"
+    ]
+  },
+  {
+    "case": "02-enrollment",
+    "condition": "show-me",
+    "file": "outputs/show-me/02-enrollment.md",
+    "sha256": "88cb38fb6a02cdb6ff60b29768c5be989faa87a8fb6d99a329f80563d86c991e",
+    "characters": 404,
+    "mermaid_main_read": false,
+    "mermaid_references_read": []
+  },
+  {
+    "case": "02-enrollment",
+    "condition": "mermaid-diagrams",
+    "file": "outputs/mermaid-diagrams/02-enrollment.md",
+    "sha256": "a05c913f92aa952eeae54ddde66e838d80043af28c81467d869444d6d9629cc5",
+    "characters": 523,
+    "mermaid_main_read": true,
+    "mermaid_references_read": []
+  },
+  {
+    "case": "02-enrollment",
+    "condition": "visual-v041",
+    "file": "outputs/visual-v041/02-enrollment.md",
+    "sha256": "194646cd91d1125d9f33fa92807fab8865ed04cc30f2c8bc876ecbab96f6c3b4",
+    "characters": 578,
+    "mermaid_main_read": true,
+    "mermaid_references_read": []
+  }
+]

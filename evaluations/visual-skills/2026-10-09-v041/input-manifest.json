@@ -1,0 +1,70 @@
+[
+  {
+    "file": "inputs/mermaid-diagrams/LICENSE",
+    "sha256": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321"
+  },
+  {
+    "file": "inputs/mermaid-diagrams/README.md",
+    "sha256": "cbd1ef77946fbf893236c89a3562a59cb96258a81e474b77a57758592be0731c"
+  },
+  {
+    "file": "inputs/mermaid-diagrams/SKILL.md",
+    "sha256": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9"
+  },
+  {
+    "file": "inputs/mermaid-diagrams/references/advanced-features.md",
+    "sha256": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc"
+  },
+  {
+    "file": "inputs/mermaid-diagrams/references/c4-diagrams.md",
+    "sha256": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9"
+  },
+  {
+    "file": "inputs/mermaid-diagrams/references/class-diagrams.md",
+    "sha256": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3"
+  },
+  {
+    "file": "inputs/mermaid-diagrams/references/erd-diagrams.md",
+    "sha256": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff"
+  },
+  {
+    "file": "inputs/mermaid-diagrams/references/flowcharts.md",
+    "sha256": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96"
+  },
+  {
+    "file": "inputs/mermaid-diagrams/references/sequence-diagrams.md",
+    "sha256": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b"
+  },
+  {
+    "file": "inputs/mermaid-diagrams/skill-report.json",
+    "sha256": "f1568bfa0c31af74e07b04cb1beb790242239397f2a873558e0de5d8c5e48b48"
+  },
+  {
+    "file": "inputs/prompts.json",
+    "sha256": "3a380bd1fde9704946dbbe378508fafd9300e4a5a8d7a86d3e70b45cdc1ecd31"
+  },
+  {
+    "file": "inputs/show-me/LICENSE",
+    "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+  },
+  {
+    "file": "inputs/show-me/SKILL.md",
+    "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+  },
+  {
+    "file": "inputs/visual-v041/LICENSE",
+    "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+  },
+  {
+    "file": "inputs/visual-v041/README.md",
+    "sha256": "1c64f8d0b5283cd0a21950307c14f2703736e815f888e6a757d2e91d07a4735a"
+  },
+  {
+    "file": "inputs/visual-v041/SKILL.md",
+    "sha256": "4d34f80691b09fe43edee2f298ee4af3c5951a3a350724100c2af85d79af68ba"
+  },
+  {
+    "file": "inputs/visual-v041/references/show-me.upstream.md",
+    "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+  }
+]

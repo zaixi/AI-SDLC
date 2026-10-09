@@ -1,0 +1,10 @@
+{
+  "read_files": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v041/inputs/visual-v041/SKILL.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v041/inputs/prompts.json",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v041/inputs/mermaid-diagrams/SKILL.md"
+  ],
+  "mermaid_diagrams_main_guidance_read": true,
+  "output_path": "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v041/outputs/visual-v041/02-enrollment.md",
+  "provenance_path": "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v041/outputs/visual-v041/02-enrollment.provenance.json"
+}

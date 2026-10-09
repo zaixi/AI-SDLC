@@ -1,0 +1,10 @@
+{
+  "reviewed": 6,
+  "raw_hashes": "matched",
+  "raw_answers": "all embedded verbatim",
+  "input_hashes": "unchanged",
+  "active_skill": "matches tested 0.4.1",
+  "content": "no substantive omissions, wrong transitions or invented policies found in these two cases",
+  "mermaid_loading": "v041 2/2 read; show-me 1/2 read; guide availability advertised equally; not client invocation proof",
+  "render": "not_run"
+}
