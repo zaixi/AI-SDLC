@@ -15,7 +15,7 @@
 
 ## 当前边界
 
-当前版本为 0.3.0，没有在 Codex、Claude、OpenCode、Zed 或 Qoder 中完成安装及调用测试。Mermaid 示例未执行渲染验证。
+当前版本为 0.2.0，没有在 Codex、Claude、OpenCode、Zed 或 Qoder 中完成安装及调用测试。Mermaid 示例未执行渲染验证。
 
 复用 [Humanlayer Show Me 固定提交](https://github.com/humanlayer/skills/blob/ca7c8088db69e315a8b2deea43820270457f8f3c/plugins/show-me/skills/show-me/SKILL.md)的完整正文。保存 [上游原文件](references/show-me.upstream.md)与 [MIT 许可证](LICENSE)。原文件含仅用户触发的标志；本 Skill 的入口元数据不含该标志，以允许模型匹配。
 
@@ -24,7 +24,3 @@
 ## 更新方式
 
 本 Skill 尚无自动拉取上游机制。更新时读取 show-me 新版本，比较保存的上游原文件，替换主文件中“show-me 上游正文”后的完整正文，更新固定提交并检查本地规则是否仍适用。保持本地规则与设计图指引独立，保留许可证。上游元数据需单独评估，不能盲目覆盖本 Skill 的入口设置。
-
-## 0.3.0：关系与未知项
-
-模块职责不自动生成调用链；先核对已有机制，再将未知项分为待核实、待验证、待决策和建议。优先复用现有决定，合并关键缺口，避免图变成大量问号。详见 [规则](references/uncertainty.md)。diff 和文本视图不附渲染提示，默认保存策略不反复说明。

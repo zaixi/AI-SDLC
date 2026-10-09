@@ -1,0 +1,44 @@
+[
+  {
+    "version": "v020",
+    "case": "05-scope",
+    "characters": 562,
+    "sha256": "c86d73cee562af391c7774a95984dac55f50c00e4a72cb64ac208e375374136d",
+    "path": "outputs/v020/05-scope.md"
+  },
+  {
+    "version": "v030",
+    "case": "05-scope",
+    "characters": 580,
+    "sha256": "0aec790d1a1914bb8d63b1438b605494716769de31e74c24af54be4955779ae2",
+    "path": "outputs/v030/05-scope.md"
+  },
+  {
+    "version": "v020",
+    "case": "03-diff",
+    "characters": 151,
+    "sha256": "725bacda9e36ac948f0ddb4950b53f1e6bcc317808bcbecc0d4706e36f9e0c57",
+    "path": "outputs/v020/03-diff.md"
+  },
+  {
+    "version": "v030",
+    "case": "03-diff",
+    "characters": 139,
+    "sha256": "26f376dc5f5d566404008a469791bcb9df3ea3f9dfa0348325d7110d0f330880",
+    "path": "outputs/v030/03-diff.md"
+  },
+  {
+    "version": "v020",
+    "case": "06-existing",
+    "characters": 580,
+    "sha256": "3a3ca61fa3bd930f94765929039b24507e07a81dde71cd1cd82d570e97f9b189",
+    "path": "outputs/v020/06-existing.md"
+  },
+  {
+    "version": "v030",
+    "case": "06-existing",
+    "characters": 538,
+    "sha256": "d93c6ac37e154a11078dee8b282bfda8728fd9ac761e7344f22d893da01c968a",
+    "path": "outputs/v030/06-existing.md"
+  }
+]
