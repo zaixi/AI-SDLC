@@ -1,0 +1,8 @@
+{
+  "read_files": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v033/inputs/v033/SKILL.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v033/inputs/prompts.json",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v033/inputs/v033/references/design-views.md"
+  ],
+  "output_path": "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v033/outputs/v033/08-tradeoff.md"
+}

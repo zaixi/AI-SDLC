@@ -18,3 +18,5 @@ AI 原生软件研发生命周期的资料收集与研究。
 - [图示 Skill 0.3.1：图承载判断与新发现的语义问题](evaluations/visual-skills/2026-10-09-v031/README.md)
 
 - [五组图示指引扩展比较：十题、两轮、100份独立回答](evaluations/visual-skills/2026-10-09-expanded/README.md)
+
+- [后续两题回归：保留0.3.2，不升级0.3.3](evaluations/visual-skills/2026-10-09-v033/README.md)

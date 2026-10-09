@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "case": "08-tradeoff",
+    "condition": "v033",
+    "file": "outputs/v033/08-tradeoff.md",
+    "sha256": "2739398c460998a34c99872d663dc6c2891ff3b05e1ef18859714f88d0ab16d0"
+  },
+  {
+    "id": "2",
+    "case": "07-incident",
+    "condition": "v032",
+    "file": "outputs/v032/07-incident.md",
+    "sha256": "9f77d368c645ac4589dd6eb9dc902e21a34cd86b3a456aceef797856dcb2415d"
+  },
+  {
+    "id": "3",
+    "case": "08-tradeoff",
+    "condition": "v032",
+    "file": "outputs/v032/08-tradeoff.md",
+    "sha256": "ec39059456764af66fa157fefbbc3e5ffb4d4155b748457a09c9e4c81dec3c03"
+  },
+  {
+    "id": "4",
+    "case": "07-incident",
+    "condition": "v033",
+    "file": "outputs/v033/07-incident.md",
+    "sha256": "16c215434f00a9a50fd3a7db07d642143268ca8f644d40fff196460d9966cda1"
+  }
+]

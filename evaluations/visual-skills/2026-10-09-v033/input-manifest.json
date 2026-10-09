@@ -1,0 +1,70 @@
+[
+  {
+    "file": "inputs/prompts.json",
+    "sha256": "04046306deef7a115700fe1cf4977e39c580945f4c773fc1be70fbeee7b1c955"
+  },
+  {
+    "file": "inputs/v032/LICENSE",
+    "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+  },
+  {
+    "file": "inputs/v032/README.md",
+    "sha256": "2e219826815a252d148b9bad8d407080bf2ca9a3d5a7aee61e663810f4328ed7"
+  },
+  {
+    "file": "inputs/v032/SKILL.md",
+    "sha256": "61b76b8dab1605ec98ee8a46a9d6f6e95d29cd041360612de8c98682b4cfccd7"
+  },
+  {
+    "file": "inputs/v032/references/design-views.md",
+    "sha256": "2e8fcfad8f45cfcbb1d6b5927317c72ed9ae9232b5a609f51f99e64c6cdcba32"
+  },
+  {
+    "file": "inputs/v032/references/diagram-patterns.md",
+    "sha256": "571d7474aa4e205f6cca89339d36cf560bd26d60f3b6416b4121ffb66f0abda1"
+  },
+  {
+    "file": "inputs/v032/references/show-me.upstream.md",
+    "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+  },
+  {
+    "file": "inputs/v032/references/uncertainty.md",
+    "sha256": "ac4a0904a4116ef1e2388cfd6ff5dda9830ad59042d53177ffdbdc87a06cb61f"
+  },
+  {
+    "file": "inputs/v032/refinement.md",
+    "sha256": "9b31359656ae5a8920dc413ae205d5190c07f6147132c5779ab35a4066462b06"
+  },
+  {
+    "file": "inputs/v033/LICENSE",
+    "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+  },
+  {
+    "file": "inputs/v033/README.md",
+    "sha256": "2e219826815a252d148b9bad8d407080bf2ca9a3d5a7aee61e663810f4328ed7"
+  },
+  {
+    "file": "inputs/v033/SKILL.md",
+    "sha256": "788ea6082a39693feb49396300182b47c0054cf36ccb25f0060f9d79e9bdfea0"
+  },
+  {
+    "file": "inputs/v033/references/design-views.md",
+    "sha256": "4a7202751bae520f6228cc8433e1f80da8735a96358d282f09662821d01d346e"
+  },
+  {
+    "file": "inputs/v033/references/diagram-patterns.md",
+    "sha256": "571d7474aa4e205f6cca89339d36cf560bd26d60f3b6416b4121ffb66f0abda1"
+  },
+  {
+    "file": "inputs/v033/references/show-me.upstream.md",
+    "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+  },
+  {
+    "file": "inputs/v033/references/uncertainty.md",
+    "sha256": "2cda3721868085ab4a794344d7acdef28ec1b33bec6d6533cde109d6df005f1f"
+  },
+  {
+    "file": "inputs/v033/refinement.md",
+    "sha256": "9b31359656ae5a8920dc413ae205d5190c07f6147132c5779ab35a4066462b06"
+  }
+]

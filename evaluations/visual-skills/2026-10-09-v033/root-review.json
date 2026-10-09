@@ -1,0 +1,7 @@
+{
+  "reviewed": 4,
+  "evidence_quotes": "all matched raw answers",
+  "active_core_files": "restored byte-for-byte to v032",
+  "decision": "do not promote v033",
+  "review_note": "Unknown publisher is useful evidence-boundary disclosure, not an accuracy defect; update object ambiguity is a clarity issue; no layout claims."
+}
