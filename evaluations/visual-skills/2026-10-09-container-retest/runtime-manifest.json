@@ -1,0 +1,15 @@
+{
+  "cli_version": "0.162.0",
+  "distribution": "official npm @openai/codex; installed with npm integrity verification",
+  "binaries_sha256": {
+    "codex": "50ed828f357c655a3c82054d346cab8434f24901f14ec19b8267571bdd008b38",
+    "codex-code-mode-host": "4c1984f440b743db476002c6364a31b2d8c437bebd628e9cb676d4742fcb1d8c"
+  },
+  "base_image_digest": "sha256:7c7b2c966bc9ee8cedfeef67e0e279108992c77681fa595db4a9d65c06ccc587",
+  "bubblewrap": "Debian signed repository package 0.8.0-2+deb12u1",
+  "authentication": "Successful normal device-code login; credentials retained only in runtime Docker volume, not repository",
+  "notes": [
+    "bubblewrap is installed but nested user namespaces were unavailable",
+    "No model local file tool capability is claimed"
+  ]
+}

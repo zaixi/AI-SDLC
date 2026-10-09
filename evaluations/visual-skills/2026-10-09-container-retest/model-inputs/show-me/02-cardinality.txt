@@ -1,0 +1,137 @@
+Apply the primary skill below to the task. The guide and relevant reference, when supplied, are already loaded as text in this fresh conversation. Generate directly from the supplied materials; do not use any tools, fetch network resources, install anything, delegate, render or save files. Reply in Chinese with the visual and brief necessary explanation. Do not discuss the test or skill names. Do not redesign the provided system.
+
+<primary_skill>
+---
+name: show-me
+description: Help the user understand the current topic visually with concise diagrams, code-shape sketches, and focused HTML artifacts.
+disable-model-invocation: true
+---
+
+Help the user understand the current topic of conversation visually. Skip the preamble and keep prose brief. Pick the smallest view that makes the key point clear.
+
+- Show logic or an algorithm as pseudocode:
+
+```text
+on(save)
+  if content is unchanged
+    return cached result
+  write new content
+  return fresh result
+```
+
+- Show runtime control flow as a call tree:
+
+```text
+submitForm
+  createSession
+    persistPrompt
+    launchAgent
+  navigateToSession
+```
+
+- Show UI structure as a component tree, including state and module boundaries that matter:
+
+```tsx
+<SessionPage> (apps/example/src/routes/session.tsx)
+  useSessionEvents()
+  <SessionToolbar>
+    <RunSkillButton> (packages/ui)
+```
+
+- Show file responsibility or a broad refactor as a shallow file tree:
+
+```text
+src/
+├── commands/       # parses user actions
+├── sessions/       # owns session state
+└── transport/      # sends API requests
+```
+
+- Show component interaction, control flow, or data flow with Mermaid:
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant UI
+    participant Daemon
+    User->>UI: choose command
+    UI->>Daemon: send expanded prompt
+    Daemon-->>UI: stream result
+```
+
+- Use `diff` when the point is what changes and the surrounding shape already exists. Match the diff shape to the topic.
+
+For a component change:
+
+```diff
+ <SessionPage>
+   useSessionEvents()
+   <SessionToolbar>
++    <RunSkillButton />
+   <SessionTimeline>
++    <SkillResultCard />
+```
+
+For a file-layout change:
+
+```diff
+ src/
+ ├── commands/
++│   └── show-me.ts       # expands the slash command
+ ├── sessions/
+-└── transport.ts
++└── transport/
++    ├── client.ts
++    └── stream.ts
+```
+
+For a call-tree or call-stack change:
+
+```diff
+ submitForm
+   createSession
+     persistPrompt
++    expandSkillMention
+     launchAgent
+-  navigateToSession
++  navigateToSession
++    subscribeToEvents
+```
+
+For a state or control-flow change:
+
+```diff
+ on(save)
+-  write content
++  if content is unchanged
++    return cached result
++  write new content
++  invalidate cache
+```
+
+- Show the whole block when most of it is new, when omitted context would hide ownership or order, or when the user needs a copyable target shape:
+
+```ts
+function expandSkill(command: string): string {
+  const skillName = command.slice(1)
+  return `use the ${skillName} skill`
+}
+```
+
+- For a visual UI, layout, state comparison, or concept too dense for Mermaid, write one focused HTML file — a diagram, an infographic, or a short slide deck, whichever fits the point. Match the product's colors, type, spacing, and components; use real labels and data; support desktop and mobile. Then open it for the user:
+
+```
+Bash(open path/to/show-me-{description}.html)
+```
+
+### guidance
+
+Place each visual next to the short text it supports. Keep only the calls, files, props, states, and boundaries needed to answer the user's current question or the options to resolve the current discussion point.
+
+You may use one of these, you may use several, it is unlikely you will use all of them. Use your judgement and don't overwhelm the user.
+
+</primary_skill>
+
+<task>
+请用一张领域关系图解释下列全部数量关系和约束，可按内容选择类图或实体关系图，不把领域规则写成已有数据库实现：平台有团队、用户、成员资格、项目、任务、分派六个概念。每个成员资格连接且只连接一个团队与一个用户；团队可有零到多个成员资格，用户也可有零到多个成员资格。每个项目属于且只属于一个团队；团队可有零到多个项目。每个任务属于且只属于一个项目，项目可有零到多个任务。每个分派连接且只连接一个任务与一个成员资格；任务可暂时没有分派或有多个分派，一个成员资格可没有分派或有多个分派。分派中的成员资格必须来自任务所属项目的团队；同一任务与同一成员资格最多有一个分派。用户退出团队只停用成员资格，历史分派仍保留；未规定删除团队、项目、任务或用户的行为，没有表结构、外键或级联删除设计。保留中文概念名称，用简短中文说明普通关系线无法完整表达的约束，不增加新政策。
+</task>

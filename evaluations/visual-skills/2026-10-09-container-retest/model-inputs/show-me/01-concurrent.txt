@@ -1,0 +1,137 @@
+Apply the primary skill below to the task. The guide and relevant reference, when supplied, are already loaded as text in this fresh conversation. Generate directly from the supplied materials; do not use any tools, fetch network resources, install anything, delegate, render or save files. Reply in Chinese with the visual and brief necessary explanation. Do not discuss the test or skill names. Do not redesign the provided system.
+
+<primary_skill>
+---
+name: show-me
+description: Help the user understand the current topic visually with concise diagrams, code-shape sketches, and focused HTML artifacts.
+disable-model-invocation: true
+---
+
+Help the user understand the current topic of conversation visually. Skip the preamble and keep prose brief. Pick the smallest view that makes the key point clear.
+
+- Show logic or an algorithm as pseudocode:
+
+```text
+on(save)
+  if content is unchanged
+    return cached result
+  write new content
+  return fresh result
+```
+
+- Show runtime control flow as a call tree:
+
+```text
+submitForm
+  createSession
+    persistPrompt
+    launchAgent
+  navigateToSession
+```
+
+- Show UI structure as a component tree, including state and module boundaries that matter:
+
+```tsx
+<SessionPage> (apps/example/src/routes/session.tsx)
+  useSessionEvents()
+  <SessionToolbar>
+    <RunSkillButton> (packages/ui)
+```
+
+- Show file responsibility or a broad refactor as a shallow file tree:
+
+```text
+src/
+├── commands/       # parses user actions
+├── sessions/       # owns session state
+└── transport/      # sends API requests
+```
+
+- Show component interaction, control flow, or data flow with Mermaid:
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant UI
+    participant Daemon
+    User->>UI: choose command
+    UI->>Daemon: send expanded prompt
+    Daemon-->>UI: stream result
+```
+
+- Use `diff` when the point is what changes and the surrounding shape already exists. Match the diff shape to the topic.
+
+For a component change:
+
+```diff
+ <SessionPage>
+   useSessionEvents()
+   <SessionToolbar>
++    <RunSkillButton />
+   <SessionTimeline>
++    <SkillResultCard />
+```
+
+For a file-layout change:
+
+```diff
+ src/
+ ├── commands/
++│   └── show-me.ts       # expands the slash command
+ ├── sessions/
+-└── transport.ts
++└── transport/
++    ├── client.ts
++    └── stream.ts
+```
+
+For a call-tree or call-stack change:
+
+```diff
+ submitForm
+   createSession
+     persistPrompt
++    expandSkillMention
+     launchAgent
+-  navigateToSession
++  navigateToSession
++    subscribeToEvents
+```
+
+For a state or control-flow change:
+
+```diff
+ on(save)
+-  write content
++  if content is unchanged
++    return cached result
++  write new content
++  invalidate cache
+```
+
+- Show the whole block when most of it is new, when omitted context would hide ownership or order, or when the user needs a copyable target shape:
+
+```ts
+function expandSkill(command: string): string {
+  const skillName = command.slice(1)
+  return `use the ${skillName} skill`
+}
+```
+
+- For a visual UI, layout, state comparison, or concept too dense for Mermaid, write one focused HTML file — a diagram, an infographic, or a short slide deck, whichever fits the point. Match the product's colors, type, spacing, and components; use real labels and data; support desktop and mobile. Then open it for the user:
+
+```
+Bash(open path/to/show-me-{description}.html)
+```
+
+### guidance
+
+Place each visual next to the short text it supports. Keep only the calls, files, props, states, and boundaries needed to answer the user's current question or the options to resolve the current discussion point.
+
+You may use one of these, you may use several, it is unlikely you will use all of them. Use your judgement and don't overwhelm the user.
+
+</primary_skill>
+
+<task>
+请把以下已确认的支付交互画成时序图，准确展示并发、重试、条件分支及迟到消息，不重新设计系统。参与者为客户端、订单服务、支付服务、支付渠道。客户端向订单服务提交payment_id；订单服务向支付服务发起扣款；支付服务向渠道请求扣款。渠道及时返回成功时，支付服务通知订单服务置paid并返回客户端。若渠道响应超时，支付服务通知订单服务置pending并向客户端返回“结果未知”，超时不进入failed。超时之后两条路径可并发：客户端至多两次以同一payment_id重试，订单服务把重试转给支付服务，支付服务每次只向渠道查询结果，不再次请求扣款；同时渠道可能发送成功回调到支付服务。查询或回调首先确认成功时，支付服务原子登记一次成功并通知订单服务置paid；后到的成功结果被支付服务忽略，不再次通知订单服务。两次查询都未知时保持pending，之后仍可接受迟到的成功回调。没有提供渠道明确失败时的处理或退款流程，不添加这些分支。图中区分渠道扣款、结果查询和订单状态通知；简短中文，保留必要细节。
+</task>

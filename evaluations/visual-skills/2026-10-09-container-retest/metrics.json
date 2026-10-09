@@ -1,0 +1,114 @@
+{
+  "image_id": "sha256:192c30fa1185c45631cd9182d3055dc76cdb2867f69817066daf4e96b1ce719d",
+  "cli": "official npm @openai/codex@0.162.0",
+  "results": [
+    {
+      "condition": "show-me",
+      "case": "01-concurrent",
+      "characters": 1666,
+      "answer_sha256": "2663723d7475f3c27cb22722eb85551d83ad75e5cefe009bba6fe8168f99e346",
+      "completed_item_types": [
+        "agent_message"
+      ],
+      "usage": {
+        "input_tokens": 15327,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 613,
+        "reasoning_output_tokens": 0
+      },
+      "model_input_sha256": "ba824777d5241ca9bb8951a49a6c8c4b9092bde811e794b728f599f2eac05ca9",
+      "guide_mode": "not_supplied"
+    },
+    {
+      "condition": "show-me",
+      "case": "02-cardinality",
+      "characters": 482,
+      "answer_sha256": "3bc5ee4516b313074476b502528ec78887cc45c8dcb85ff63f1e6ef0e5a22eee",
+      "completed_item_types": [
+        "agent_message"
+      ],
+      "usage": {
+        "input_tokens": 15332,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 274,
+        "reasoning_output_tokens": 0
+      },
+      "model_input_sha256": "bff9d4d0d4423ec984c225f3de042cb2bc573923c61406d37c13f43ef6a25e5c",
+      "guide_mode": "not_supplied"
+    },
+    {
+      "condition": "mermaid-diagrams",
+      "case": "01-concurrent",
+      "characters": 1829,
+      "answer_sha256": "47ada63c52b4c6a403c30f6ca6f31d91fc51f808a5d074b7e72dcb034b198ec1",
+      "completed_item_types": [
+        "agent_message"
+      ],
+      "usage": {
+        "input_tokens": 18388,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 643,
+        "reasoning_output_tokens": 0
+      },
+      "model_input_sha256": "030b2ff4cc8b2fbd87901ca33287b3e834ea75dd16e27873b835e6d241822215",
+      "guide_mode": "injected"
+    },
+    {
+      "condition": "mermaid-diagrams",
+      "case": "02-cardinality",
+      "characters": 518,
+      "answer_sha256": "37c08cd9a2b0b5b4c54a412647dedf876c6108b5de7a4ea43b41d757bc3df70b",
+      "completed_item_types": [
+        "agent_message"
+      ],
+      "usage": {
+        "input_tokens": 17930,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 297,
+        "reasoning_output_tokens": 0
+      },
+      "model_input_sha256": "102f3bc78c16f59c2cbeb75bbbb9f5391a5cd0304b8066e129da6cf8a06317df",
+      "guide_mode": "injected"
+    },
+    {
+      "condition": "visual-v041",
+      "case": "01-concurrent",
+      "characters": 1606,
+      "answer_sha256": "28817c36fe0843e28d22c442366f673d53092eef2c24d95049dc9579d2d3b7e9",
+      "completed_item_types": [
+        "agent_message"
+      ],
+      "usage": {
+        "input_tokens": 19594,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 595,
+        "reasoning_output_tokens": 0
+      },
+      "model_input_sha256": "55f6684efd2c0202363f94d43acb95db44adca46a9feda90bdf0aad8053f1abf",
+      "guide_mode": "injected"
+    },
+    {
+      "condition": "visual-v041",
+      "case": "02-cardinality",
+      "characters": 659,
+      "answer_sha256": "17c2493f626ce1df90d054bde89643f4146794e3080abc1a1c3a11aa97ada714",
+      "completed_item_types": [
+        "agent_message"
+      ],
+      "usage": {
+        "input_tokens": 19136,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 295,
+        "reasoning_output_tokens": 0
+      },
+      "model_input_sha256": "824d2674ab26fa71729a8fbbf9fec7408733fc1e11db1314b28a04ebde22f014",
+      "guide_mode": "injected"
+    }
+  ]
+}

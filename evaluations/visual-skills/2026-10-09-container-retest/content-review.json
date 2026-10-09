@@ -1,0 +1,43 @@
+{
+  "reviewer": "root; source labels visible; not an independent or blinded review",
+  "cases": {
+    "01-concurrent": {
+      "show-me": {
+        "key_requirements": "covered",
+        "material_errors": [],
+        "minor_additions": [
+          "及时成功路径增加了原子登记步骤；题目只在查询/回调首次确认成功处规定该步骤。"
+        ],
+        "note": "未知查询注释明确未确认成功时保持pending，迟到回调单独展示。"
+      },
+      "mermaid-diagrams": {
+        "key_requirements": "covered",
+        "material_errors": [],
+        "minor_additions": [
+          "及时成功路径增加了原子登记步骤。",
+          "增加了每次重试向订单服务和客户端返回当前状态的消息，题目未规定这些返回消息。"
+        ],
+        "note": "显式说明paid不回退，异步回调箭头及autonumber。"
+      },
+      "visual-v041": {
+        "key_requirements": "covered",
+        "material_errors": [],
+        "minor_additions": [],
+        "note": "及时成功路径没有增加原子登记步骤；未知查询保留当前状态，后续未知且未成功时保持pending。"
+      }
+    },
+    "02-cardinality": {
+      "all_conditions": {
+        "key_requirements": "six relations and all three cross-relation/lifecycle constraints covered",
+        "material_errors": [],
+        "note": "全部普通关联线，未伪称数据库/外键/级联实现；v041使用英文ID+中文标签，另外两组直接中文类名，均解析通过。"
+      }
+    }
+  },
+  "limits": [
+    "minor additions are unsupported extra detail, not proven payment logic bugs",
+    "No participant readability study",
+    "No rendered-layout evaluation",
+    "Only two synthetic cases; no universal ranking"
+  ]
+}

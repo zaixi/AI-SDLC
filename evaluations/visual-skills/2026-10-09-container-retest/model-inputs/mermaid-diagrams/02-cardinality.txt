@@ -1,0 +1,590 @@
+Apply the primary skill below to the task. The guide and relevant reference, when supplied, are already loaded as text in this fresh conversation. Generate directly from the supplied materials; do not use any tools, fetch network resources, install anything, delegate, render or save files. Reply in Chinese with the visual and brief necessary explanation. Do not discuss the test or skill names. Do not redesign the provided system.
+
+<primary_skill>
+---
+name: mermaid-diagrams
+description: Comprehensive guide for creating software diagrams using Mermaid syntax. Use when users need to create, visualize, or document software through diagrams including class diagrams (domain modeling, object-oriented design), sequence diagrams (application flows, API interactions, code execution), flowcharts (processes, algorithms, user journeys), entity relationship diagrams (database schemas), C4 architecture diagrams (system context, containers, components), state diagrams, git graphs, pie charts, gantt charts, or any other diagram type. Triggers include requests to "diagram", "visualize", "model", "map out", "show the flow", or when explaining system architecture, database design, code structure, or user/application flows.
+---
+
+# Mermaid Diagramming
+
+Create professional software diagrams using Mermaid's text-based syntax. Mermaid renders diagrams from simple text definitions, making diagrams version-controllable, easy to update, and maintainable alongside code.
+
+## Core Syntax Structure
+
+All Mermaid diagrams follow this pattern:
+
+```mermaid
+diagramType
+  definition content
+```
+
+**Key principles:**
+- First line declares diagram type (e.g., `classDiagram`, `sequenceDiagram`, `flowchart`)
+- Use `%%` for comments
+- Line breaks and indentation improve readability but aren't required
+- Unknown words break diagrams; parameters fail silently
+
+## Diagram Type Selection Guide
+
+**Choose the right diagram type:**
+
+1. **Class Diagrams** - Domain modeling, OOP design, entity relationships
+   - Domain-driven design documentation
+   - Object-oriented class structures
+   - Entity relationships and dependencies
+
+2. **Sequence Diagrams** - Temporal interactions, message flows
+   - API request/response flows
+   - User authentication flows
+   - System component interactions
+   - Method call sequences
+
+3. **Flowcharts** - Processes, algorithms, decision trees
+   - User journeys and workflows
+   - Business processes
+   - Algorithm logic
+   - Deployment pipelines
+
+4. **Entity Relationship Diagrams (ERD)** - Database schemas
+   - Table relationships
+   - Data modeling
+   - Schema design
+
+5. **C4 Diagrams** - Software architecture at multiple levels
+   - System Context (systems and users)
+   - Container (applications, databases, services)
+   - Component (internal structure)
+   - Code (class/interface level)
+
+6. **State Diagrams** - State machines, lifecycle states
+7. **Git Graphs** - Version control branching strategies
+8. **Gantt Charts** - Project timelines, scheduling
+9. **Pie/Bar Charts** - Data visualization
+
+## Quick Start Examples
+
+### Class Diagram (Domain Model)
+```mermaid
+classDiagram
+    Title -- Genre
+    Title *-- Season
+    Title *-- Review
+    User --> Review : creates
+    
+    class Title {
+        +string name
+        +int releaseYear
+        +play()
+    }
+    
+    class Genre {
+        +string name
+        +getTopTitles()
+    }
+```
+
+### Sequence Diagram (API Flow)
+```mermaid
+sequenceDiagram
+    participant User
+    participant API
+    participant Database
+    
+    User->>API: POST /login
+    API->>Database: Query credentials
+    Database-->>API: Return user data
+    alt Valid credentials
+        API-->>User: 200 OK + JWT token
+    else Invalid credentials
+        API-->>User: 401 Unauthorized
+    end
+```
+
+### Flowchart (User Journey)
+```mermaid
+flowchart TD
+    Start([User visits site]) --> Auth{Authenticated?}
+    Auth -->|No| Login[Show login page]
+    Auth -->|Yes| Dashboard[Show dashboard]
+    Login --> Creds[Enter credentials]
+    Creds --> Validate{Valid?}
+    Validate -->|Yes| Dashboard
+    Validate -->|No| Error[Show error]
+    Error --> Login
+```
+
+### ERD (Database Schema)
+```mermaid
+erDiagram
+    USER ||--o{ ORDER : places
+    ORDER ||--|{ LINE_ITEM : contains
+    PRODUCT ||--o{ LINE_ITEM : includes
+    
+    USER {
+        int id PK
+        string email UK
+        string name
+        datetime created_at
+    }
+    
+    ORDER {
+        int id PK
+        int user_id FK
+        decimal total
+        datetime created_at
+    }
+```
+
+## Detailed References
+
+For in-depth guidance on specific diagram types, see:
+
+- **[references/class-diagrams.md](references/class-diagrams.md)** - Domain modeling, relationships (association, composition, aggregation, inheritance), multiplicity, methods/properties
+- **[references/sequence-diagrams.md](references/sequence-diagrams.md)** - Actors, participants, messages (sync/async), activations, loops, alt/opt/par blocks, notes
+- **[references/flowcharts.md](references/flowcharts.md)** - Node shapes, connections, decision logic, subgraphs, styling
+- **[references/erd-diagrams.md](references/erd-diagrams.md)** - Entities, relationships, cardinality, keys, attributes
+- **[references/c4-diagrams.md](references/c4-diagrams.md)** - System context, container, component diagrams, boundaries
+- **[references/advanced-features.md](references/advanced-features.md)** - Themes, styling, configuration, layout options
+
+## Best Practices
+
+1. **Start Simple** - Begin with core entities/components, add details incrementally
+2. **Use Meaningful Names** - Clear labels make diagrams self-documenting
+3. **Comment Extensively** - Use `%%` comments to explain complex relationships
+4. **Keep Focused** - One diagram per concept; split large diagrams into multiple focused views
+5. **Version Control** - Store `.mmd` files alongside code for easy updates
+6. **Add Context** - Include titles and notes to explain diagram purpose
+7. **Iterate** - Refine diagrams as understanding evolves
+
+## Configuration and Theming
+
+Configure diagrams using frontmatter:
+
+```mermaid
+---
+config:
+  theme: base
+  themeVariables:
+    primaryColor: "#ff6b6b"
+---
+flowchart LR
+    A --> B
+```
+
+**Available themes:** default, forest, dark, neutral, base
+
+**Layout options:**
+- `layout: dagre` (default) - Classic balanced layout
+- `layout: elk` - Advanced layout for complex diagrams (requires integration)
+
+**Look options:**
+- `look: classic` - Traditional Mermaid style
+- `look: handDrawn` - Sketch-like appearance
+
+## Exporting and Rendering
+
+**Native support in:**
+- GitHub/GitLab - Automatically renders in Markdown
+- VS Code - With Markdown Mermaid extension
+- Notion, Obsidian, Confluence - Built-in support
+
+**Export options:**
+- [Mermaid Live Editor](https://mermaid.live) - Online editor with PNG/SVG export
+- Mermaid CLI - `npm install -g @mermaid-js/mermaid-cli` then `mmdc -i input.mmd -o output.png`
+- Docker - `docker run --rm -v $(pwd):/data minlag/mermaid-cli -i /data/input.mmd -o /data/output.png`
+
+## Common Pitfalls
+
+- **Breaking characters** - Avoid `{}` in comments, use proper escape sequences for special characters
+- **Syntax errors** - Misspellings break diagrams; validate syntax in Mermaid Live
+- **Overcomplexity** - Split complex diagrams into multiple focused views
+- **Missing relationships** - Document all important connections between entities
+
+## When to Create Diagrams
+
+**Always diagram when:**
+- Starting new projects or features
+- Documenting complex systems
+- Explaining architecture decisions
+- Designing database schemas
+- Planning refactoring efforts
+- Onboarding new team members
+
+**Use diagrams to:**
+- Align stakeholders on technical decisions
+- Document domain models collaboratively
+- Visualize data flows and system interactions
+- Plan before coding
+- Create living documentation that evolves with code
+
+</primary_skill>
+
+<related_reference>
+# Class Diagrams
+
+Class diagrams model object-oriented designs and domain models. They show entities (classes), their attributes/methods, and relationships.
+
+## Basic Syntax
+
+```mermaid
+classDiagram
+    ClassName
+```
+
+## Defining Classes with Members
+
+```mermaid
+classDiagram
+    class BankAccount {
+        +String owner
+        +Decimal balance
+        -String accountNumber
+        +deposit(amount)
+        +withdraw(amount)
+        +getBalance() Decimal
+    }
+```
+
+**Visibility modifiers:**
+- `+` Public
+- `-` Private
+- `#` Protected
+- `~` Package/Internal
+
+**Member syntax:**
+- `+type attribute` - Attribute with type
+- `+method(params) ReturnType` - Method with parameters and return type
+
+## Relationships
+
+### Association (`--`)
+Loose relationship where entities use each other but exist independently.
+
+```mermaid
+classDiagram
+    Title -- Genre
+```
+
+### Composition (`*--`)
+Strong ownership - child cannot exist without parent. When parent is deleted, children are deleted.
+
+```mermaid
+classDiagram
+    Order *-- LineItem
+    House *-- Room
+```
+
+### Aggregation (`o--`)
+Weaker ownership - child can exist independently. Represents "has-a" relationship.
+
+```mermaid
+classDiagram
+    Department o-- Employee
+    Playlist o-- Song
+```
+
+### Inheritance (`<|--`)
+"Is-a" relationship. Child class inherits from parent class.
+
+```mermaid
+classDiagram
+    Animal <|-- Dog
+    Animal <|-- Cat
+    
+    class Animal {
+        +String name
+        +makeSound()
+    }
+    
+    class Dog {
+        +bark()
+    }
+```
+
+### Dependency (`<..`)
+One class depends on another, often as a parameter or local variable.
+
+```mermaid
+classDiagram
+    OrderProcessor <.. PaymentGateway
+```
+
+### Realization/Implementation (`<|..`)
+Class implements an interface.
+
+```mermaid
+classDiagram
+    class Drawable {
+        <<interface>>
+        +draw()
+    }
+    Drawable <|.. Circle
+    Drawable <|.. Rectangle
+```
+
+## Multiplicity
+
+Show how many instances participate in a relationship:
+
+```mermaid
+classDiagram
+    Customer "1" --> "0..*" Order : places
+    Order "1" *-- "1..*" LineItem : contains
+    Author "1..*" -- "1..*" Book : writes
+```
+
+**Common multiplicities:**
+- `1` - Exactly one
+- `0..1` - Zero or one
+- `0..*` or `*` - Zero or many
+- `1..*` - One or many
+- `m..n` - Between m and n
+
+## Relationship Labels
+
+```mermaid
+classDiagram
+    Customer --> Order : places
+    Order --> Product : contains
+    Driver --> Vehicle : drives
+```
+
+## Class Stereotypes
+
+Mark special class types:
+
+```mermaid
+classDiagram
+    class IRepository {
+        <<interface>>
+        +save(entity)
+        +findById(id)
+    }
+    
+    class UserService {
+        <<service>>
+        +createUser()
+    }
+    
+    class UserDTO {
+        <<dataclass>>
+        +String name
+        +String email
+    }
+```
+
+## Abstract Classes and Methods
+
+```mermaid
+classDiagram
+    class Shape {
+        <<abstract>>
+        +int x
+        +int y
+        +draw()* abstract
+        +move(x, y)
+    }
+    
+    Shape <|-- Circle
+    Shape <|-- Rectangle
+```
+
+## Generic Classes
+
+```mermaid
+classDiagram
+    class List~T~ {
+        +add(item: T)
+        +get(index: int) T
+    }
+    
+    List~String~ <-- StringProcessor
+```
+
+## Comprehensive Example: E-Commerce Domain
+
+```mermaid
+classDiagram
+    %% Core entities
+    class Customer {
+        +UUID id
+        +String email
+        +String name
+        +Address shippingAddress
+        +placeOrder(cart: Cart) Order
+        +getOrderHistory() List~Order~
+    }
+    
+    class Order {
+        +UUID id
+        +DateTime orderDate
+        +OrderStatus status
+        +Decimal total
+        +calculateTotal() Decimal
+        +ship()
+        +cancel()
+    }
+    
+    class LineItem {
+        +int quantity
+        +Decimal pricePerUnit
+        +getSubtotal() Decimal
+    }
+    
+    class Product {
+        +UUID id
+        +String name
+        +String description
+        +Decimal price
+        +int stockQuantity
+        +reduceStock(quantity: int)
+        +isAvailable() bool
+    }
+    
+    class Category {
+        +String name
+        +String description
+    }
+    
+    class Cart {
+        +addItem(product: Product, quantity: int)
+        +removeItem(product: Product)
+        +getTotal() Decimal
+        +clear()
+    }
+    
+    %% Relationships
+    Customer "1" --> "0..*" Order : places
+    Customer "1" --> "1" Cart : has
+    Order "1" *-- "1..*" LineItem : contains
+    LineItem "1" --> "1" Product : references
+    Product "0..*" --> "1" Category : belongs to
+    Cart "1" o-- "0..*" Product : contains
+    
+    %% Enums
+    class OrderStatus {
+        <<enumeration>>
+        PENDING
+        PAID
+        SHIPPED
+        DELIVERED
+        CANCELLED
+    }
+    
+    Order --> OrderStatus
+```
+
+## Domain-Driven Design Patterns
+
+### Entities
+```mermaid
+classDiagram
+    class User {
+        <<entity>>
+        -UUID id
+        +String email
+        +String name
+    }
+```
+
+### Value Objects
+```mermaid
+classDiagram
+    class Money {
+        <<value object>>
+        +Decimal amount
+        +String currency
+        +add(other: Money) Money
+    }
+    
+    class Address {
+        <<value object>>
+        +String street
+        +String city
+        +String postalCode
+    }
+```
+
+### Aggregates
+```mermaid
+classDiagram
+    class Order {
+        <<aggregate root>>
+        -UUID id
+        +addLineItem(item)
+        +removeLineItem(item)
+    }
+    
+    Order *-- LineItem
+```
+
+## Tips for Effective Class Diagrams
+
+1. **Start with core entities** - Add attributes and methods incrementally
+2. **Show only relevant details** - Omit obvious getters/setters unless important
+3. **Use appropriate relationships** - Choose between association, aggregation, and composition carefully
+4. **Add multiplicity** - Clarifies how many instances participate
+5. **Group related classes** - Use notes or visual proximity
+6. **Document invariants** - Use notes to explain business rules
+
+## Common Patterns
+
+### Repository Pattern
+```mermaid
+classDiagram
+    class IRepository~T~ {
+        <<interface>>
+        +save(entity: T)
+        +findById(id: UUID) T
+        +delete(entity: T)
+    }
+    
+    class UserRepository {
+        +findByEmail(email: String) User
+    }
+    
+    IRepository~User~ <|.. UserRepository
+```
+
+### Factory Pattern
+```mermaid
+classDiagram
+    class ShapeFactory {
+        +createShape(type: String) Shape
+    }
+    
+    class Shape {
+        <<abstract>>
+        +draw()*
+    }
+    
+    ShapeFactory ..> Shape : creates
+    Shape <|-- Circle
+    Shape <|-- Rectangle
+```
+
+### Strategy Pattern
+```mermaid
+classDiagram
+    class PaymentProcessor {
+        -PaymentStrategy strategy
+        +setStrategy(strategy: PaymentStrategy)
+        +processPayment(amount: Decimal)
+    }
+    
+    class PaymentStrategy {
+        <<interface>>
+        +pay(amount: Decimal)*
+    }
+    
+    PaymentStrategy <|.. CreditCardPayment
+    PaymentStrategy <|.. PayPalPayment
+    PaymentProcessor --> PaymentStrategy
+```
+
+</related_reference>
+
+<task>
+请用一张领域关系图解释下列全部数量关系和约束，可按内容选择类图或实体关系图，不把领域规则写成已有数据库实现：平台有团队、用户、成员资格、项目、任务、分派六个概念。每个成员资格连接且只连接一个团队与一个用户；团队可有零到多个成员资格，用户也可有零到多个成员资格。每个项目属于且只属于一个团队；团队可有零到多个项目。每个任务属于且只属于一个项目，项目可有零到多个任务。每个分派连接且只连接一个任务与一个成员资格；任务可暂时没有分派或有多个分派，一个成员资格可没有分派或有多个分派。分派中的成员资格必须来自任务所属项目的团队；同一任务与同一成员资格最多有一个分派。用户退出团队只停用成员资格，历史分派仍保留；未规定删除团队、项目、任务或用户的行为，没有表结构、外键或级联删除设计。保留中文概念名称，用简短中文说明普通关系线无法完整表达的约束，不增加新政策。
+</task>

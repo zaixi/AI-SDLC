@@ -1,0 +1,126 @@
+[
+  {
+    "condition": "show-me",
+    "case": "01-concurrent",
+    "exit_code": 0,
+    "container": "visual-case-ae4a1b543c954aa5bee71b7f53e86034",
+    "input_files": {
+      "model-input.txt": "ba824777d5241ca9bb8951a49a6c8c4b9092bde811e794b728f599f2eac05ca9",
+      "task.txt": "beb3561b7cca5d361b89c7797453de2a9a97f31481a73143c57e414ea6883ed1",
+      "skill/LICENSE": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+      "skill/SKILL.md": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    "status": "generated",
+    "answer_sha256": "2663723d7475f3c27cb22722eb85551d83ad75e5cefe009bba6fe8168f99e346"
+  },
+  {
+    "condition": "show-me",
+    "case": "02-cardinality",
+    "exit_code": 0,
+    "container": "visual-case-401413ff12194f48b3dbb6d0d8fd3ed5",
+    "input_files": {
+      "model-input.txt": "bff9d4d0d4423ec984c225f3de042cb2bc573923c61406d37c13f43ef6a25e5c",
+      "task.txt": "d003d2b41a17a4fa94a032d517a734a41af422f97dc5b6251252cd515da4987f",
+      "skill/LICENSE": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+      "skill/SKILL.md": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    "status": "generated",
+    "answer_sha256": "3bc5ee4516b313074476b502528ec78887cc45c8dcb85ff63f1e6ef0e5a22eee"
+  },
+  {
+    "condition": "mermaid-diagrams",
+    "case": "01-concurrent",
+    "exit_code": 0,
+    "container": "visual-case-7733eee93b8847e3b71da0115e94266e",
+    "input_files": {
+      "model-input.txt": "030b2ff4cc8b2fbd87901ca33287b3e834ea75dd16e27873b835e6d241822215",
+      "task.txt": "beb3561b7cca5d361b89c7797453de2a9a97f31481a73143c57e414ea6883ed1",
+      "skill/README.md": "cbd1ef77946fbf893236c89a3562a59cb96258a81e474b77a57758592be0731c",
+      "skill/LICENSE": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321",
+      "skill/skill-report.json": "f1568bfa0c31af74e07b04cb1beb790242239397f2a873558e0de5d8c5e48b48",
+      "skill/SKILL.md": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9",
+      "skill/references/advanced-features.md": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc",
+      "skill/references/flowcharts.md": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96",
+      "skill/references/sequence-diagrams.md": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b",
+      "skill/references/erd-diagrams.md": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff",
+      "skill/references/c4-diagrams.md": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9",
+      "skill/references/class-diagrams.md": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3"
+    },
+    "status": "generated",
+    "answer_sha256": "47ada63c52b4c6a403c30f6ca6f31d91fc51f808a5d074b7e72dcb034b198ec1"
+  },
+  {
+    "condition": "mermaid-diagrams",
+    "case": "02-cardinality",
+    "exit_code": 0,
+    "container": "visual-case-12e454d7960a4948bbef33a3ccdda978",
+    "input_files": {
+      "model-input.txt": "102f3bc78c16f59c2cbeb75bbbb9f5391a5cd0304b8066e129da6cf8a06317df",
+      "task.txt": "d003d2b41a17a4fa94a032d517a734a41af422f97dc5b6251252cd515da4987f",
+      "skill/README.md": "cbd1ef77946fbf893236c89a3562a59cb96258a81e474b77a57758592be0731c",
+      "skill/LICENSE": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321",
+      "skill/skill-report.json": "f1568bfa0c31af74e07b04cb1beb790242239397f2a873558e0de5d8c5e48b48",
+      "skill/SKILL.md": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9",
+      "skill/references/advanced-features.md": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc",
+      "skill/references/flowcharts.md": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96",
+      "skill/references/sequence-diagrams.md": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b",
+      "skill/references/erd-diagrams.md": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff",
+      "skill/references/c4-diagrams.md": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9",
+      "skill/references/class-diagrams.md": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3"
+    },
+    "status": "generated",
+    "answer_sha256": "37c08cd9a2b0b5b4c54a412647dedf876c6108b5de7a4ea43b41d757bc3df70b"
+  },
+  {
+    "condition": "visual-v041",
+    "case": "01-concurrent",
+    "exit_code": 0,
+    "container": "visual-case-b8a0a573164f441b9929b253ba7ab82a",
+    "input_files": {
+      "model-input.txt": "55f6684efd2c0202363f94d43acb95db44adca46a9feda90bdf0aad8053f1abf",
+      "task.txt": "beb3561b7cca5d361b89c7797453de2a9a97f31481a73143c57e414ea6883ed1",
+      "mermaid-diagrams/README.md": "cbd1ef77946fbf893236c89a3562a59cb96258a81e474b77a57758592be0731c",
+      "mermaid-diagrams/LICENSE": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321",
+      "mermaid-diagrams/skill-report.json": "f1568bfa0c31af74e07b04cb1beb790242239397f2a873558e0de5d8c5e48b48",
+      "mermaid-diagrams/SKILL.md": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9",
+      "skill/README.md": "7e84825c58edd037941b018fe5de28aeecd9a55c0d5944672fa298d61e86cf8d",
+      "skill/LICENSE": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+      "skill/SKILL.md": "4d34f80691b09fe43edee2f298ee4af3c5951a3a350724100c2af85d79af68ba",
+      "mermaid-diagrams/references/advanced-features.md": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc",
+      "mermaid-diagrams/references/flowcharts.md": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96",
+      "mermaid-diagrams/references/sequence-diagrams.md": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b",
+      "mermaid-diagrams/references/erd-diagrams.md": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff",
+      "mermaid-diagrams/references/c4-diagrams.md": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9",
+      "mermaid-diagrams/references/class-diagrams.md": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3",
+      "skill/references/show-me.upstream.md": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    "status": "generated",
+    "answer_sha256": "28817c36fe0843e28d22c442366f673d53092eef2c24d95049dc9579d2d3b7e9"
+  },
+  {
+    "condition": "visual-v041",
+    "case": "02-cardinality",
+    "exit_code": 0,
+    "container": "visual-case-7c5cd9e47adb458faee19758c0f5d6ea",
+    "input_files": {
+      "model-input.txt": "824d2674ab26fa71729a8fbbf9fec7408733fc1e11db1314b28a04ebde22f014",
+      "task.txt": "d003d2b41a17a4fa94a032d517a734a41af422f97dc5b6251252cd515da4987f",
+      "mermaid-diagrams/README.md": "cbd1ef77946fbf893236c89a3562a59cb96258a81e474b77a57758592be0731c",
+      "mermaid-diagrams/LICENSE": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321",
+      "mermaid-diagrams/skill-report.json": "f1568bfa0c31af74e07b04cb1beb790242239397f2a873558e0de5d8c5e48b48",
+      "mermaid-diagrams/SKILL.md": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9",
+      "skill/README.md": "7e84825c58edd037941b018fe5de28aeecd9a55c0d5944672fa298d61e86cf8d",
+      "skill/LICENSE": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+      "skill/SKILL.md": "4d34f80691b09fe43edee2f298ee4af3c5951a3a350724100c2af85d79af68ba",
+      "mermaid-diagrams/references/advanced-features.md": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc",
+      "mermaid-diagrams/references/flowcharts.md": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96",
+      "mermaid-diagrams/references/sequence-diagrams.md": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b",
+      "mermaid-diagrams/references/erd-diagrams.md": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff",
+      "mermaid-diagrams/references/c4-diagrams.md": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9",
+      "mermaid-diagrams/references/class-diagrams.md": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3",
+      "skill/references/show-me.upstream.md": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    "status": "generated",
+    "answer_sha256": "17c2493f626ce1df90d054bde89643f4146794e3080abc1a1c3a11aa97ada714"
+  }
+]

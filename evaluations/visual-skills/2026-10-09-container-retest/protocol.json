@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-09",
+  "conditions": [
+    "show-me",
+    "mermaid-diagrams",
+    "visual-v041"
+  ],
+  "answers_per_condition": 2,
+  "cases": [
+    "01-concurrent",
+    "02-cardinality"
+  ],
+  "total_planned_answers": 6,
+  "generation": "One new Docker container and ephemeral --no-daemon CLI session per condition/case; identical tasks from previous complex test.",
+  "input_mode": "Primary SKILL full text injected into user input. For Mermaid-only, main guide and matching reference; for visual-v041, primary plus Mermaid main and matching reference. No tools requested. Not an automatic skill loading evaluation.",
+  "model": "Same official Codex CLI 0.162.0 default configuration; no model override, seed or sampling control. Actual serving model not recorded by CLI JSON events.",
+  "filesystem": "Readonly root, assigned input only, no repo/peer mount, no Docker socket, uid1000, all capabilities dropped, no-new-privileges. Login-only auth volume at /credentials readonly; fresh CLI home in tmpfs.",
+  "network": "Docker bridge and existing proxy for model requests; not egress isolated. Generation instructed not to use tools or fetch external content.",
+  "tools": "Local model tool execution unavailable due namespace constraints; textual sources supplied directly, not discovered or dynamically loaded.",
+  "review": "Fixed rubric copied from previous complex test before generation; root review, not blinded independent reviewer.",
+  "limits": [
+    "Only two synthetic cases, one sample per case/condition",
+    "CLI default may differ from previous agent default; no matched-model historical causal inference",
+    "Content injection comparison, not native skill invocation",
+    "Syntax validation separate from rendering; no automatic renderer currently requested",
+    "No universal skill ranking"
+  ],
+  "sources": "Snapshots copied verbatim from 2026-10-09-complex/inputs; hashes in input-manifest.json"
+}
