@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-09",
+  "context": "用户要求在此前人工构造样例之后重新执行独立生成比较",
+  "conditions": [
+    "show-me",
+    "visual-explanation",
+    "mermaid-diagrams"
+  ],
+  "sessions_per_condition": 2,
+  "questions_per_session": 5,
+  "answers": 30,
+  "context_isolation": "六次spawn_agent使用fork_turns=none，无对话历史；各Agent仅获得指定Skill路径、相同输入与相同执行限制",
+  "filesystem_isolation": "共享文件系统；通过任务指令限制读取其他条件，不是操作系统级访问隔离",
+  "model_control": "全部继承主Agent默认模型与推理设置，没有指定不同模型；未固定seed或显式采样参数",
+  "tools": "均可读取指定文件和保存原始回答；生成阶段禁止联网、安装、渲染、查看其他结果或调用子Agent",
+  "question_isolation": "每次会话连续回答同一组五题；题目之间不建立新会话，可能存在组内上下文影响",
+  "human_editing": "主Agent不改写生成回答，保存原始文件哈希；汇总页逐字引用",
+  "syntax": "统一使用Mermaid 12.1.0解析生成的Mermaid块；不是布局或行为验证",
+  "review": "另一个fork_turns=none评审Agent只读来源标签隐藏的回答副本、题目和统一rubric。主Agent随后核对评审，不是双盲或多人用户研究",
+  "not_tested": [
+    "客户端安装兼容性",
+    "自动发现与触发",
+    "其他Skill嵌套委托",
+    "视觉布局",
+    "不同模型间泛化"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "show-me": {
+    "answers": 10,
+    "mean_characters": 304.1,
+    "by_case": {
+      "01-lease": [
+        414,
+        337
+      ],
+      "02-intent": [
+        193,
+        199
+      ],
+      "03-diff": [
+        161,
+        111
+      ],
+      "04-state": [
+        416,
+        365
+      ],
+      "05-scope": [
+        431,
+        414
+      ]
+    }
+  },
+  "visual-explanation": {
+    "answers": 10,
+    "mean_characters": 429.8,
+    "by_case": {
+      "01-lease": [
+        494,
+        434
+      ],
+      "02-intent": [
+        388,
+        361
+      ],
+      "03-diff": [
+        213,
+        179
+      ],
+      "04-state": [
+        516,
+        508
+      ],
+      "05-scope": [
+        581,
+        624
+      ]
+    }
+  },
+  "mermaid-diagrams": {
+    "answers": 10,
+    "mean_characters": 398.9,
+    "by_case": {
+      "01-lease": [
+        439,
+        436
+      ],
+      "02-intent": [
+        354,
+        285
+      ],
+      "03-diff": [
+        277,
+        244
+      ],
+      "04-state": [
+        439,
+        436
+      ],
+      "05-scope": [
+        536,
+        543
+      ]
+    }
+  }
+}

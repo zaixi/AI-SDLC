@@ -1,0 +1,22 @@
+{
+  "skill_read": "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/visual-explanation/SKILL.md",
+  "references_read": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/visual-explanation/references/design-views.md"
+  ],
+  "input_read": "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/prompts.json",
+  "outputs": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/outputs/visual-explanation/01-lease.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/outputs/visual-explanation/02-intent.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/outputs/visual-explanation/03-diff.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/outputs/visual-explanation/04-state.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/outputs/visual-explanation/05-scope.md"
+  ],
+  "rendering": {
+    "performed": false,
+    "reason": "评估要求不执行渲染；仅检查回答源文本。"
+  },
+  "network_used": false,
+  "packages_installed": false,
+  "other_skills_or_condition_outputs_read": false,
+  "project_design_documents_created": false
+}

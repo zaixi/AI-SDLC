@@ -1,0 +1,18 @@
+{
+  "skill_read": "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/show-me.SKILL.md",
+  "input_read": "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/prompts.json",
+  "outputs": [
+    "01-lease.md",
+    "02-intent.md",
+    "03-diff.md",
+    "04-state.md",
+    "05-scope.md"
+  ],
+  "output_directory": "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/outputs/show-me",
+  "method": "依次独立作答，直接保存自然回答；未读取其他Skill、其他条件输出或仓库资料。",
+  "rendered": false,
+  "rendering_note": "按评估约束未执行渲染，仅生成Markdown源文本。",
+  "network_used": false,
+  "packages_installed": false,
+  "subagents_used": false
+}

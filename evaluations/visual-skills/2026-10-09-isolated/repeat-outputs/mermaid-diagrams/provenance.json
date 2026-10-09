@@ -1,0 +1,18 @@
+{
+  "read_files": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/mermaid-diagrams/SKILL.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/prompts.json",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/mermaid-diagrams/references/sequence-diagrams.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/mermaid-diagrams/references/flowcharts.md"
+  ],
+  "output_files": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/mermaid-diagrams/01-lease.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/mermaid-diagrams/02-intent.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/mermaid-diagrams/03-diff.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/mermaid-diagrams/04-state.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/mermaid-diagrams/05-scope.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/mermaid-diagrams/provenance.json"
+  ],
+  "rendered": false,
+  "validation": "仅自查答案文本；未渲染，未联网，未安装，未调用子 Agent。"
+}

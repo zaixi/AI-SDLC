@@ -1,0 +1,19 @@
+{
+  "read_files": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/show-me.SKILL.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/prompts.json"
+  ],
+  "output_files": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/show-me/01-lease.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/show-me/02-intent.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/show-me/03-diff.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/show-me/04-state.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/show-me/05-scope.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/show-me/provenance.json"
+  ],
+  "rendered": false,
+  "network_used": false,
+  "installed_dependencies": false,
+  "subagents_used": false,
+  "notes": "独立依据指定Skill与五道题生成；未读取其他试验结果或仓库文件；未渲染。"
+}

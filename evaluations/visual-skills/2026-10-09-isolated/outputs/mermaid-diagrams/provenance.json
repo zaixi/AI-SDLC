@@ -1,0 +1,22 @@
+{
+  "condition": "mermaid-diagrams",
+  "skill_read": "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/mermaid-diagrams/SKILL.md",
+  "references_read": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/mermaid-diagrams/references/sequence-diagrams.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/mermaid-diagrams/references/flowcharts.md"
+  ],
+  "input_read": "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/prompts.json",
+  "outputs": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/outputs/mermaid-diagrams/01-lease.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/outputs/mermaid-diagrams/02-intent.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/outputs/mermaid-diagrams/03-diff.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/outputs/mermaid-diagrams/04-state.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/outputs/mermaid-diagrams/05-scope.md"
+  ],
+  "rendering": {
+    "performed": false,
+    "reason": "Evaluation prohibits rendering; no network access or package installation performed."
+  },
+  "other_materials_read": [],
+  "response_method": "Five separate natural Chinese answers based on the assigned skill and each prompt; no parent answer template or other condition outputs used."
+}

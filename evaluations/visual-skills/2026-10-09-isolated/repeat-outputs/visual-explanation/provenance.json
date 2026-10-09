@@ -1,0 +1,19 @@
+{
+  "trial": "independent repeat",
+  "skill": "visual-explanation",
+  "actual_read_files": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/visual-explanation/SKILL.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/prompts.json",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/inputs/visual-explanation/references/design-views.md"
+  ],
+  "outputs": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/visual-explanation/01-lease.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/visual-explanation/02-intent.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/visual-explanation/03-diff.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/visual-explanation/04-state.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/visual-explanation/05-scope.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/visual-explanation/provenance.json"
+  ],
+  "rendered": false,
+  "validation": "文本自查；未渲染验证。未联网、未安装、未调用子Agent，未读取其他试验结果。"
+}

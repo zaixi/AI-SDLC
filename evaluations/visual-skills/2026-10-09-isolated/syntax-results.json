@@ -1,0 +1,161 @@
+{
+  "mermaid_version": "12.1.0",
+  "results": [
+    {
+      "file": "outputs/mermaid-diagrams/01-lease.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/mermaid-diagrams/02-intent.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/mermaid-diagrams/03-diff.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/mermaid-diagrams/04-state.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/mermaid-diagrams/05-scope.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/show-me/01-lease.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/show-me/02-intent.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/show-me/04-state.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/show-me/05-scope.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-explanation/01-lease.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-explanation/02-intent.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-explanation/04-state.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "outputs/visual-explanation/05-scope.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/mermaid-diagrams/01-lease.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/mermaid-diagrams/02-intent.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/mermaid-diagrams/03-diff.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/mermaid-diagrams/04-state.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/mermaid-diagrams/05-scope.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/show-me/01-lease.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/show-me/02-intent.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/show-me/04-state.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/show-me/05-scope.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-explanation/01-lease.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-explanation/02-intent.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-explanation/04-state.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    },
+    {
+      "file": "repeat-outputs/visual-explanation/05-scope.md",
+      "block": 1,
+      "render": "not_run",
+      "syntax": "passed"
+    }
+  ]
+}

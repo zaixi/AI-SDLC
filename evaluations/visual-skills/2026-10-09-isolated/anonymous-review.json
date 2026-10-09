@@ -1,0 +1,635 @@
+{
+  "scope": "独立匿名内容审阅；仅读取给定prompts.json、rubric.json及30份匿名Markdown，不搜索来源映射或其他资料、不联网。",
+  "method": "按统一rubric逐份人工判断。core_coverage=adequate表示所有关键要求被正确覆盖；partial表示至少一项存在实质缺口。unsupported_claims区分未标注的合理推断与无依据关系。不给总评分。",
+  "limits": [
+    "每组两个run、五种题目，样本有限。",
+    "本次只判断源码表达的语义与文字负担；语法解析由主Agent另检，实际渲染、阅读速度及自动触发均未测。",
+    "组别来源隐藏，不能把差异归因于具体指引文本或模型机制。"
+  ],
+  "reviews": [
+    {
+      "file": "A-run1-01-lease.md",
+      "group": "A",
+      "run": "run1",
+      "prompt": "01-lease",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "时序包含0秒领取、31秒重领、35秒过期提交被拒；区别平台提交规则与执行/外部副作用。重复执行只作为可能性，不当作已发生事实。",
+        "添加来源/未渲染验证说明，短但不是用户要求的业务解释。"
+      ],
+      "burden": {
+        "source_characters": 494,
+        "prose_characters_approx": 115,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "A-run1-02-intent.md",
+      "group": "A",
+      "run": "run1",
+      "prompt": "02-intent",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "入队、消费写库、ADR禁止API直写库及队列动机未知均覆盖；调用关系在本题有明确输入支持。",
+        "来源/未渲染说明增加少量元信息。"
+      ],
+      "burden": {
+        "source_characters": 388,
+        "prose_characters_approx": 132,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "A-run1-03-diff.md",
+      "group": "A",
+      "run": "run1",
+      "prompt": "03-diff",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate_compact_diff",
+      "verbosity": "concise",
+      "notes": [
+        "正确覆盖未变化返回缓存、变化时写入、写入后失效缓存。",
+        "短diff直接表达新增条件及失效步骤，视觉源码负担小。",
+        "A-run1额外说明写入失败未知；来源/验证说明并非完成题目所必需。"
+      ],
+      "burden": {
+        "source_characters": 213,
+        "prose_characters_approx": 99,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "A-run1-04-state.md",
+      "group": "A",
+      "run": "run1",
+      "prompt": "04-state",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "取消请求保持running、确认停止进入cancelled、先完成可succeeded、queued可取消、failed可重排及succeeded重试未知均覆盖。",
+        "状态图适合表达取消与完成的竞争；不评价解析或实际布局。",
+        "正文明确queued→running和running→failed是状态含义推断，故不计作未标注的既定事实；来源/未渲染说明增加文字。"
+      ],
+      "burden": {
+        "source_characters": 516,
+        "prose_characters_approx": 181,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "A-run1-05-scope.md",
+      "group": "A",
+      "run": "run1",
+      "prompt": "05-scope",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "lengthy_for_brief_request",
+      "notes": [
+        "订单拥有订单状态、计费拥有扣款状态、审计记录结果均正确；超时结果可能未知及幂等方案待定/待验证均覆盖。",
+        "覆盖幂等键、并发、保存期限、外部支付及崩溃窗口，均以建议/待决定/验证形式限定；信息相关但显著超过简短影响边界评审所需。",
+        "已知模块无调用链，虚线由需求指向模块，仅表示待评审影响。"
+      ],
+      "burden": {
+        "source_characters": 581,
+        "prose_characters_approx": 284,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "A-run2-01-lease.md",
+      "group": "A",
+      "run": "run2",
+      "prompt": "01-lease",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "时序包含0秒领取、31秒重领、35秒过期提交被拒；区别平台提交规则与执行/外部副作用。重复执行只作为可能性，不当作已发生事实。",
+        "添加来源/未渲染验证说明，短但不是用户要求的业务解释。"
+      ],
+      "burden": {
+        "source_characters": 434,
+        "prose_characters_approx": 106,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "A-run2-02-intent.md",
+      "group": "A",
+      "run": "run2",
+      "prompt": "02-intent",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "入队、消费写库、ADR禁止API直写库及队列动机未知均覆盖；调用关系在本题有明确输入支持。",
+        "来源/未渲染说明增加少量元信息。"
+      ],
+      "burden": {
+        "source_characters": 361,
+        "prose_characters_approx": 118,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "A-run2-03-diff.md",
+      "group": "A",
+      "run": "run2",
+      "prompt": "03-diff",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate_compact_diff",
+      "verbosity": "concise",
+      "notes": [
+        "正确覆盖未变化返回缓存、变化时写入、写入后失效缓存。",
+        "短diff直接表达新增条件及失效步骤，视觉源码负担小。",
+        "来源与无需渲染说明为额外元信息。"
+      ],
+      "burden": {
+        "source_characters": 179,
+        "prose_characters_approx": 65,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "A-run2-04-state.md",
+      "group": "A",
+      "run": "run2",
+      "prompt": "04-state",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "取消请求保持running、确认停止进入cancelled、先完成可succeeded、queued可取消、failed可重排及succeeded重试未知均覆盖。",
+        "状态图适合表达取消与完成的竞争；不评价解析或实际布局。",
+        "正文明确queued→running和running→failed是状态含义推断，故不计作未标注的既定事实；来源/未渲染说明增加文字。"
+      ],
+      "burden": {
+        "source_characters": 508,
+        "prose_characters_approx": 178,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "A-run2-05-scope.md",
+      "group": "A",
+      "run": "run2",
+      "prompt": "05-scope",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "lengthy_for_brief_request",
+      "notes": [
+        "订单拥有订单状态、计费拥有扣款状态、审计记录结果均正确；超时结果可能未知及幂等方案待定/待验证均覆盖。",
+        "覆盖幂等键、并发、保存期限、外部支付及崩溃窗口，均以建议/待决定/验证形式限定；信息相关但显著超过简短影响边界评审所需。",
+        "G→O→B→A虽呈链形，但边明确标为建议/待设计，正文也声明现有调用关系未提供；不计为编造已有调用关系。"
+      ],
+      "burden": {
+        "source_characters": 624,
+        "prose_characters_approx": 303,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "B-run1-01-lease.md",
+      "group": "B",
+      "run": "run1",
+      "prompt": "01-lease",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "时序包含0秒领取、31秒重领、35秒过期提交被拒；区别平台提交规则与执行/外部副作用。重复执行只作为可能性，不当作已发生事实。"
+      ],
+      "burden": {
+        "source_characters": 414,
+        "prose_characters_approx": 78,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "B-run1-02-intent.md",
+      "group": "B",
+      "run": "run1",
+      "prompt": "02-intent",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "入队、消费写库、ADR禁止API直写库及队列动机未知均覆盖；调用关系在本题有明确输入支持。"
+      ],
+      "burden": {
+        "source_characters": 193,
+        "prose_characters_approx": 90,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "B-run1-03-diff.md",
+      "group": "B",
+      "run": "run1",
+      "prompt": "03-diff",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate_compact_diff",
+      "verbosity": "concise",
+      "notes": [
+        "正确覆盖未变化返回缓存、变化时写入、写入后失效缓存。",
+        "短diff直接表达新增条件及失效步骤，视觉源码负担小。"
+      ],
+      "burden": {
+        "source_characters": 161,
+        "prose_characters_approx": 28,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "B-run1-04-state.md",
+      "group": "B",
+      "run": "run1",
+      "prompt": "04-state",
+      "core_coverage": "adequate",
+      "unsupported_claims": [
+        {
+          "quote": "queued --> running: Worker开始执行",
+          "reason": "题目未明确queued→running转移。按状态名称作常规推断很合理，但该边未标为推断，图中呈现为既定规则。此为低强度证据边界问题，不是关键取消规则错误。",
+          "kind": "unmarked_inference"
+        }
+      ],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "取消请求保持running、确认停止进入cancelled、先完成可succeeded、queued可取消、failed可重排及succeeded重试未知均覆盖。",
+        "状态图适合表达取消与完成的竞争；不评价解析或实际布局。",
+        "running→failed在正文明确标为按状态名称理解的路径；queued→running未作同样限定。"
+      ],
+      "burden": {
+        "source_characters": 416,
+        "prose_characters_approx": 152,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "B-run1-05-scope.md",
+      "group": "B",
+      "run": "run1",
+      "prompt": "05-scope",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "订单拥有订单状态、计费拥有扣款状态、审计记录结果均正确；超时结果可能未知及幂等方案待定/待验证均覆盖。",
+        "无既定模块调用链；需求到模块的虚线及正文把内容限定为评审问题。"
+      ],
+      "burden": {
+        "source_characters": 431,
+        "prose_characters_approx": 176,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "B-run2-01-lease.md",
+      "group": "B",
+      "run": "run2",
+      "prompt": "01-lease",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "时序包含0秒领取、31秒重领、35秒过期提交被拒；区别平台提交规则与执行/外部副作用。重复执行只作为可能性，不当作已发生事实。"
+      ],
+      "burden": {
+        "source_characters": 337,
+        "prose_characters_approx": 63,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "B-run2-02-intent.md",
+      "group": "B",
+      "run": "run2",
+      "prompt": "02-intent",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "入队、消费写库、ADR禁止API直写库及队列动机未知均覆盖；调用关系在本题有明确输入支持。"
+      ],
+      "burden": {
+        "source_characters": 199,
+        "prose_characters_approx": 86,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "B-run2-03-diff.md",
+      "group": "B",
+      "run": "run2",
+      "prompt": "03-diff",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate_compact_diff",
+      "verbosity": "concise",
+      "notes": [
+        "正确覆盖未变化返回缓存、变化时写入、写入后失效缓存。",
+        "短diff直接表达新增条件及失效步骤，视觉源码负担小。"
+      ],
+      "burden": {
+        "source_characters": 111,
+        "prose_characters_approx": 37,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "B-run2-04-state.md",
+      "group": "B",
+      "run": "run2",
+      "prompt": "04-state",
+      "core_coverage": "adequate",
+      "unsupported_claims": [
+        {
+          "quote": "queued --> running: Worker开始执行",
+          "reason": "题目未明确queued→running转移。按状态名称作常规推断很合理，但该边未标为推断，图中呈现为既定规则。此为低强度证据边界问题，不是关键取消规则错误。",
+          "kind": "unmarked_inference"
+        },
+        {
+          "quote": "running --> failed: 执行失败",
+          "reason": "题目列出failed状态及failed可重新排队，未明确running→failed转移；常规推断未标注。此为低强度证据边界问题。",
+          "kind": "unmarked_inference"
+        }
+      ],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "取消请求保持running、确认停止进入cancelled、先完成可succeeded、queued可取消、failed可重排及succeeded重试未知均覆盖。",
+        "状态图适合表达取消与完成的竞争；不评价解析或实际布局。"
+      ],
+      "burden": {
+        "source_characters": 365,
+        "prose_characters_approx": 92,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "B-run2-05-scope.md",
+      "group": "B",
+      "run": "run2",
+      "prompt": "05-scope",
+      "core_coverage": "partial",
+      "unsupported_claims": [
+        {
+          "quote": "G[入口网关] --> O[订单模块：拥有订单状态]",
+          "reason": "仅给定模块存在与职责，没有网关到订单的有向关联；实线箭头增加未提供的关系。",
+          "kind": "unsupported_relationship"
+        },
+        {
+          "quote": "O --- B[计费模块：拥有扣款状态]\n    O --- A[审计模块：记录结果]\n    B --- A",
+          "reason": "订单—计费、订单—审计、计费—审计关联均未由题目给定；无向边虽不指定调用顺序，仍断言关系存在。",
+          "kind": "unsupported_relationship"
+        },
+        {
+          "quote": "实线表示已知职责的关联，不指定调用顺序",
+          "reason": "将前述新增模块关系称为“已知”；不指定调用顺序不能消除对关系存在性的无依据断言。",
+          "kind": "unsupported_relationship"
+        }
+      ],
+      "view_fit": "mixed_unsupported_solid_relationships",
+      "verbosity": "concise",
+      "notes": [
+        "订单拥有订单状态、计费拥有扣款状态、审计记录结果均正确；超时结果可能未知及幂等方案待定/待验证均覆盖。",
+        "关键所有权、风险与待验证幂等仍完整；partial专指未清楚区分事实与推断关系。未把幂等画为已有保证。"
+      ],
+      "burden": {
+        "source_characters": 414,
+        "prose_characters_approx": 120,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "C-run1-01-lease.md",
+      "group": "C",
+      "run": "run1",
+      "prompt": "01-lease",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "时序包含0秒领取、31秒重领、35秒过期提交被拒；区别平台提交规则与执行/外部副作用。重复执行只作为可能性，不当作已发生事实。"
+      ],
+      "burden": {
+        "source_characters": 439,
+        "prose_characters_approx": 93,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "C-run1-02-intent.md",
+      "group": "C",
+      "run": "run1",
+      "prompt": "02-intent",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "入队、消费写库、ADR禁止API直写库及队列动机未知均覆盖；调用关系在本题有明确输入支持。"
+      ],
+      "burden": {
+        "source_characters": 354,
+        "prose_characters_approx": 105,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "C-run1-03-diff.md",
+      "group": "C",
+      "run": "run1",
+      "prompt": "03-diff",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate_flowchart_more_elaborate",
+      "verbosity": "concise",
+      "notes": [
+        "正确覆盖未变化返回缓存、变化时写入、写入后失效缓存。",
+        "并列新旧流程清楚，但相对短diff使用更多节点与图源码；不能据此判断实际渲染后的阅读速度。"
+      ],
+      "burden": {
+        "source_characters": 277,
+        "prose_characters_approx": 53,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "C-run1-04-state.md",
+      "group": "C",
+      "run": "run1",
+      "prompt": "04-state",
+      "core_coverage": "adequate",
+      "unsupported_claims": [
+        {
+          "quote": "queued --> running: Worker 开始执行",
+          "reason": "题目未明确queued→running转移。按状态名称作常规推断很合理，但该边未标为推断，图中呈现为既定规则。此为低强度证据边界问题，不是关键取消规则错误。",
+          "kind": "unmarked_inference"
+        },
+        {
+          "quote": "running --> failed: 执行失败",
+          "reason": "题目列出failed状态及failed可重新排队，未明确running→failed转移；常规推断未标注。此为低强度证据边界问题。",
+          "kind": "unmarked_inference"
+        }
+      ],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "取消请求保持running、确认停止进入cancelled、先完成可succeeded、queued可取消、failed可重排及succeeded重试未知均覆盖。",
+        "状态图适合表达取消与完成的竞争；不评价解析或实际布局。"
+      ],
+      "burden": {
+        "source_characters": 439,
+        "prose_characters_approx": 79,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "C-run1-05-scope.md",
+      "group": "C",
+      "run": "run1",
+      "prompt": "05-scope",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "订单拥有订单状态、计费拥有扣款状态、审计记录结果均正确；超时结果可能未知及幂等方案待定/待验证均覆盖。",
+        "将职责节点与评审问题分组、以虚线表示影响，明确否定已有调用链解释；信息量适中。"
+      ],
+      "burden": {
+        "source_characters": 536,
+        "prose_characters_approx": 155,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "C-run2-01-lease.md",
+      "group": "C",
+      "run": "run2",
+      "prompt": "01-lease",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "时序包含0秒领取、31秒重领、35秒过期提交被拒；区别平台提交规则与执行/外部副作用。重复执行只作为可能性，不当作已发生事实。"
+      ],
+      "burden": {
+        "source_characters": 436,
+        "prose_characters_approx": 83,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "C-run2-02-intent.md",
+      "group": "C",
+      "run": "run2",
+      "prompt": "02-intent",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "入队、消费写库、ADR禁止API直写库及队列动机未知均覆盖；调用关系在本题有明确输入支持。"
+      ],
+      "burden": {
+        "source_characters": 285,
+        "prose_characters_approx": 85,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "C-run2-03-diff.md",
+      "group": "C",
+      "run": "run2",
+      "prompt": "03-diff",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate_flowchart_more_elaborate",
+      "verbosity": "concise",
+      "notes": [
+        "正确覆盖未变化返回缓存、变化时写入、写入后失效缓存。",
+        "并列新旧流程清楚，但相对短diff使用更多节点与图源码；不能据此判断实际渲染后的阅读速度。"
+      ],
+      "burden": {
+        "source_characters": 244,
+        "prose_characters_approx": 36,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "C-run2-04-state.md",
+      "group": "C",
+      "run": "run2",
+      "prompt": "04-state",
+      "core_coverage": "adequate",
+      "unsupported_claims": [
+        {
+          "quote": "queued --> running: Worker 开始执行",
+          "reason": "题目未明确queued→running转移。按状态名称作常规推断很合理，但该边未标为推断，图中呈现为既定规则。此为低强度证据边界问题，不是关键取消规则错误。",
+          "kind": "unmarked_inference"
+        },
+        {
+          "quote": "running --> failed: 执行失败",
+          "reason": "题目列出failed状态及failed可重新排队，未明确running→failed转移；常规推断未标注。此为低强度证据边界问题。",
+          "kind": "unmarked_inference"
+        }
+      ],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "取消请求保持running、确认停止进入cancelled、先完成可succeeded、queued可取消、failed可重排及succeeded重试未知均覆盖。",
+        "状态图适合表达取消与完成的竞争；不评价解析或实际布局。"
+      ],
+      "burden": {
+        "source_characters": 436,
+        "prose_characters_approx": 104,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    },
+    {
+      "file": "C-run2-05-scope.md",
+      "group": "C",
+      "run": "run2",
+      "prompt": "05-scope",
+      "core_coverage": "adequate",
+      "unsupported_claims": [],
+      "view_fit": "appropriate",
+      "verbosity": "concise",
+      "notes": [
+        "订单拥有订单状态、计费拥有扣款状态、审计记录结果均正确；超时结果可能未知及幂等方案待定/待验证均覆盖。",
+        "将职责节点与评审问题分组、以虚线表示影响，明确否定已有调用链解释；信息量适中。"
+      ],
+      "burden": {
+        "source_characters": 543,
+        "prose_characters_approx": 94,
+        "method": "字符数仅辅助观察篇幅；围栏外文字为近似正文，不是阅读时间、token数或评分。"
+      }
+    }
+  ]
+}

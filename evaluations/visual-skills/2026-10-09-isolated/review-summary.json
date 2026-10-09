@@ -1,0 +1,20 @@
+{
+  "label_map": {
+    "B": "show-me",
+    "A": "visual-explanation",
+    "C": "mermaid-diagrams"
+  },
+  "coverage": {
+    "show-me": {
+      "adequate": 9,
+      "partial": 1
+    },
+    "visual-explanation": {
+      "adequate": 10
+    },
+    "mermaid-diagrams": {
+      "adequate": 10
+    }
+  },
+  "note": "关键要求覆盖分类，不是综合质量分数、故障率或统计显著性"
+}
