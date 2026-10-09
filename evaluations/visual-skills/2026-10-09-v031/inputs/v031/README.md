@@ -19,7 +19,7 @@
 
 复用 [Humanlayer Show Me 固定提交](https://github.com/humanlayer/skills/blob/ca7c8088db69e315a8b2deea43820270457f8f3c/plugins/show-me/skills/show-me/SKILL.md)的完整正文。保存 [上游原文件](references/show-me.upstream.md)与 [MIT 许可证](LICENSE)。原文件含仅用户触发的标志；本 Skill 的入口元数据不含该标志，以允许模型匹配。
 
-未将 `mermaid-diagrams` 或 `architecture-report` 包复制为本 Skill 的依赖。已核对用户指定的 [mermaid-diagrams 来源与测试快照](../../evaluations/visual-skills/2026-10-09-isolated/README.md)；客户端兼容性及自动委托仍未验证，`architecture-report` 的具体来源仍待核对。现有内容可直接生成设计图，不依赖安装这些包。
+未复制未确认来源的 `mermaid-diagrams` 或 `architecture-report` 包；这些名称对应的具体仓库、许可证和兼容性尚待核对。现有内容可直接生成设计图，不依赖安装这些包。
 
 ## 更新方式
 
@@ -32,5 +32,3 @@
 ## 0.3.1：图承载关键判断
 
 按当前问题和证据选择视图。图不只罗列模块：把关键风险、验证缺口或下一步放进图中或紧邻批注；必要正文解释原因和依据，避免重复逐项读图。没有调用关系依据时，仍不补造运行时架构。
-
-[两题独立回归与原始输出](../../evaluations/visual-skills/2026-10-09-v031/README.md)显示图内信息更充分，也暴露了正文误写状态所有权的问题。因此增加图文主体、行为与所有权核对；这条回归后补充的规则尚未做独立生成复测。四张图通过语法解析，实际布局和阅读负担未验证。

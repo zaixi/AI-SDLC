@@ -14,3 +14,5 @@ AI 原生软件研发生命周期的资料收集与研究。
 - [三套图示 Skill 独立 Agent 重测：30 份原始回答](evaluations/visual-skills/2026-10-09-isolated/README.md)
 
 - [图示 Skill 0.3.0：关系与未知项回归](evaluations/visual-skills/2026-10-09-v030/README.md)
+
+- [图示 Skill 0.3.1：图承载判断与新发现的语义问题](evaluations/visual-skills/2026-10-09-v031/README.md)

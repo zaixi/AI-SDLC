@@ -1,0 +1,22 @@
+[
+  {
+    "file": "outputs/v030/05-scope.md",
+    "characters": 629,
+    "sha256": "2bb9a55280663c3b697f5c2cc5d027731bd23911d46b7c5d750980ee28f45425"
+  },
+  {
+    "file": "outputs/v030/06-existing.md",
+    "characters": 644,
+    "sha256": "9c248065a14ddb222dc7f627f502fc71b9fa8916fad622a78ef6bb457e821dcf"
+  },
+  {
+    "file": "outputs/v031/05-scope.md",
+    "characters": 639,
+    "sha256": "e453d0252fa124fe97f289558b6855f47553d14a227b61ff72b1438a4b6a0a11"
+  },
+  {
+    "file": "outputs/v031/06-existing.md",
+    "characters": 717,
+    "sha256": "3e11849a7a16ed6ea901e0787c10a413201226ca506d37163bfdd6e1ca7770ff"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "read_files": [
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v031/inputs/v030/SKILL.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v031/inputs/v030/references/uncertainty.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v031/inputs/v030/references/design-views.md",
+    "/workspace/AI-SDLC/evaluations/visual-skills/2026-10-09-v031/inputs/prompts.json"
+  ]
+}
