@@ -1,0 +1,16 @@
+flowchart TB
+    Result["收到工作器的批次结果"]
+    Recorded{"该批结果<br/>已记录？"}
+    Ignore["忽略重复结果<br/>不再次推进"]
+    Record["记录本批结果"]
+    Outcome{"本批结果与进度"}
+    Fail["写回失败<br/>停止后续批次"]
+    Next["发送下一批任务<br/>仍为执行中"]
+    Done["写回完成"]
+
+    Result --> Recorded
+    Recorded -->|"是"| Ignore
+    Recorded -->|"否"| Record --> Outcome
+    Outcome -->|"本批失败"| Fail
+    Outcome -->|"本批成功，尚有下一批"| Next
+    Outcome -->|"全部批次成功"| Done

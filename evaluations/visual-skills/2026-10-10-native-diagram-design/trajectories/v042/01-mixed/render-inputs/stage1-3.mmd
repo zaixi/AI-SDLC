@@ -1,0 +1,20 @@
+flowchart TB
+    Send["调度器发送当前批次任务"]
+    Deploy["工作器读取指定产物<br/>部署当前服务批次"]
+    Result["工作器返回批次结果"]
+    Recorded{"调度器：该批次<br/>结果已记录？"}
+    Ignore["忽略重复结果<br/>不再次推进批次"]
+    Record["记录该批次结果"]
+    Success{"本批成功？"}
+    More{"还有后续批次？"}
+    Next["推进到下一批<br/>发布单仍为执行中"]
+    Fail["写回失败状态<br/>停止后续批次<br/>已成功批次不自动回滚"]
+    Done["写回完成状态"]
+
+    Send --> Deploy --> Result --> Recorded
+    Recorded -->|"是"| Ignore
+    Recorded -->|"否"| Record --> Success
+    Success -->|"否"| Fail
+    Success -->|"是"| More
+    More -->|"是"| Next --> Send
+    More -->|"否：全部批次成功"| Done

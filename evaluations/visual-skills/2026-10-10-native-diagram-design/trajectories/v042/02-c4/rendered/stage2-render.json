@@ -1,0 +1,117 @@
+[
+  {
+    "block": 1,
+    "format": "html",
+    "type": "HTML with inline SVG",
+    "source_sha256": "d6e1b366057fbb6185250b718d5ea9b6f8a07ba971e85e2ba381d7f6a4da58a5",
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "{\"status\":\"passed\",\"diagrams\":3,\"desktop\":\"stage2-1-desktop.png\",\"mobile\":\"stage2-1-mobile.png\"}\n",
+      "file": "stage2-1-desktop.png"
+    },
+    "browser": {
+      "viewport": [
+        1600,
+        1000
+      ],
+      "javascript": "disabled",
+      "blockedRequests": [],
+      "diagrams": [
+        {
+          "index": 1,
+          "file": "stage2-1-svg1.png",
+          "bounds": {
+            "x": 217,
+            "y": 241.375,
+            "height": 388.65625,
+            "width": 1166
+          },
+          "geometry": {
+            "viewBox": "0 0 1200 400",
+            "title": "采购协同系统的系统上下文",
+            "fonts": [
+              "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", \"PingFang SC\", sans-serif"
+            ],
+            "textCount": 20
+          }
+        },
+        {
+          "index": 2,
+          "file": "stage2-1-svg2.png",
+          "bounds": {
+            "x": 217,
+            "y": 814.40625,
+            "height": 971.65625,
+            "width": 1166
+          },
+          "geometry": {
+            "viewBox": "0 0 1200 1000",
+            "title": "采购协同系统交易容器视图",
+            "fonts": [
+              "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", \"PingFang SC\", sans-serif"
+            ],
+            "textCount": 46
+          }
+        },
+        {
+          "index": 3,
+          "file": "stage2-1-svg3.png",
+          "bounds": {
+            "x": 217,
+            "y": 1205.046875,
+            "height": 310.921875,
+            "width": 1166
+          },
+          "geometry": {
+            "viewBox": "0 0 1200 320",
+            "title": "支持工程师只读查询路径",
+            "fonts": [
+              "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", \"PingFang SC\", sans-serif"
+            ],
+            "textCount": 15
+          }
+        }
+      ],
+      "mobile": {
+        "viewport": 390,
+        "pageWidth": 390,
+        "localScrollers": [
+          {
+            "tag": "DIV",
+            "width": 324,
+            "scrollWidth": 1000
+          },
+          {
+            "tag": "DIV",
+            "width": 324,
+            "scrollWidth": 1000
+          },
+          {
+            "tag": "DIV",
+            "width": 324,
+            "scrollWidth": 1000
+          }
+        ]
+      }
+    },
+    "svg_images": [
+      "stage2-1-svg1.png",
+      "stage2-1-svg2.png",
+      "stage2-1-svg3.png"
+    ],
+    "mobile_file": "stage2-1-mobile.png",
+    "checks": {
+      "self_check": {
+        "status": "passed",
+        "exit_code": 0,
+        "diagnostic": "OK /work/stage2-1.html\n"
+      },
+      "geometry": {
+        "status": "passed",
+        "exit_code": 0,
+        "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+      }
+    }
+  }
+]

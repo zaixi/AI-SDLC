@@ -25,8 +25,6 @@
 
 另做了[0.4.2与原版show-me的同等图片反馈比较](../../evaluations/visual-skills/2026-10-09-v042-show-me/comparison.md)：每组两题、四条新容器/新会话轨迹。show-me的发布图更紧凑，但把未提供的API校验位置写成事实；0.4.2保留该未知。复杂架构最终均完整可读，未显示Mermaid指引的必需性。最终15图实际渲染及语法解析通过；小样本不证明普遍优势。
 
-另做了[diagram-design、show-me 与 0.4.2 的原生输出比较](../../evaluations/visual-skills/2026-10-10-native-diagram-design/comparison.md)：每组两题、六条新容器/会话轨迹，允许 Mermaid 或 HTML/SVG并给予两轮图片反馈。三组保留关键事实；diagram-design 更侧重统一排版，源码与生成量更大，0.4.2 也能主动产出清楚的 HTML/SVG。发现了几何检查器的跨 SVG 误报及 CSS 箭头覆盖缺口，因此脚本通过不能取代看图。小样本支持按需补充，暂不修改当前规则。
-
 ## 来源与更新
 
 复用[Humanlayer show-me固定提交](https://github.com/humanlayer/skills/blob/ca7c8088db69e315a8b2deea43820270457f8f3c/plugins/show-me/skills/show-me/SKILL.md)的完整正文，保留[上游原文件](references/show-me.upstream.md)和[MIT许可证](LICENSE)。更新时比较固定原文件，独立评估上游元数据与本地补充，避免覆盖客户端调用设置；尚无自动拉取上游机制。

@@ -1,0 +1,15 @@
+flowchart TB
+    Created(["创建发布单"]) --> Draft["草稿"]
+    Draft -->|"发布人：提交"| Review["待审"]
+    Review -->|"审阅人：拒绝"| Draft
+    Review -->|"审阅人：审核通过<br/>该单提交人不得审批"| Ready["待执行"]
+
+    Ready -->|"发布人：取消"| Cancelled["已取消"]
+    Ready -->|"调度器：开始执行"| Running["执行中"]
+
+    Running -->|"调度器：当前批成功<br/>仍有后续批次，推进下一批"| Running
+    Running -->|"调度器：任一批失败"| Failed["失败<br/>停止后续批次<br/>已成功批次不自动回滚"]
+    Running -->|"调度器：全部批次成功"| Complete["完成"]
+
+    Note["执行中不能取消"]
+    Note -.- Running

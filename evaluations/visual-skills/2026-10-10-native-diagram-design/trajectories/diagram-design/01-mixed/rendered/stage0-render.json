@@ -1,0 +1,118 @@
+[
+  {
+    "block": 1,
+    "format": "html",
+    "type": "HTML with inline SVG",
+    "source_sha256": "235cbb44fa105660975e254605362e0d41a79c122753461bf0fdf483584c2cf7",
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "{\"status\":\"passed\",\"diagrams\":3,\"desktop\":\"stage0-1-desktop.png\",\"mobile\":\"stage0-1-mobile.png\"}\n",
+      "file": "stage0-1-desktop.png"
+    },
+    "browser": {
+      "viewport": [
+        1600,
+        1000
+      ],
+      "javascript": "disabled",
+      "blockedRequests": [],
+      "diagrams": [
+        {
+          "index": 1,
+          "file": "stage0-1-svg1.png",
+          "bounds": {
+            "x": 160,
+            "y": 219.578125,
+            "height": 720,
+            "width": 1280
+          },
+          "geometry": {
+            "viewBox": "0 0 1280 720",
+            "title": "发布体系的组件协作",
+            "fonts": [
+              "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif"
+            ],
+            "textCount": 24
+          }
+        },
+        {
+          "index": 2,
+          "file": "stage0-1-svg2.png",
+          "bounds": {
+            "x": 160,
+            "y": 1028.578125,
+            "height": 720,
+            "width": 1280
+          },
+          "geometry": {
+            "viewBox": "0 0 1280 720",
+            "title": "发布单状态与异常分支",
+            "fonts": [
+              "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif"
+            ],
+            "textCount": 29
+          }
+        },
+        {
+          "index": 3,
+          "file": "stage0-1-svg3.png",
+          "bounds": {
+            "x": 160,
+            "y": 948.578125,
+            "height": 720,
+            "width": 1280
+          },
+          "geometry": {
+            "viewBox": "0 0 1280 720",
+            "title": "调度器与工作器的批次执行时序",
+            "fonts": [
+              "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+              "\"Geist Mono\", ui-monospace, monospace"
+            ],
+            "textCount": 21
+          }
+        }
+      ],
+      "mobile": {
+        "viewport": 390,
+        "pageWidth": 390,
+        "localScrollers": [
+          {
+            "tag": "DIV",
+            "width": 358,
+            "scrollWidth": 1280
+          },
+          {
+            "tag": "DIV",
+            "width": 358,
+            "scrollWidth": 1280
+          },
+          {
+            "tag": "DIV",
+            "width": 358,
+            "scrollWidth": 1280
+          }
+        ]
+      }
+    },
+    "svg_images": [
+      "stage0-1-svg1.png",
+      "stage0-1-svg2.png",
+      "stage0-1-svg3.png"
+    ],
+    "mobile_file": "stage0-1-mobile.png",
+    "checks": {
+      "self_check": {
+        "status": "passed",
+        "exit_code": 0,
+        "diagnostic": "OK /work/stage0-1.html\n"
+      },
+      "geometry": {
+        "status": "failed",
+        "exit_code": 1,
+        "diagnostic": "stage0-1.html:157: connector <path d=\"M944 232 H1072\"> runs on top of <path d=\"M864 232 H976\"> (line 89) for about 34px - offset one route by at least 12px so each arrow stays traceable\nstage0-1.html:277: connector <line 40,688 -> 80,688> runs on top of <line 40,688 -> 80,688> (line 129) for about 40px - offset one route by at least 12px so each arrow stays traceable\nstage0-1.html:279: connector <line 280,688 -> 320,688> runs on top of <line 252,688 -> 292,688> (line 131) for about 14px - offset one route by at least 12px so each arrow stays traceable\nSummary: 1 file(s) checked, 3 finding(s).\n"
+      }
+    }
+  }
+]

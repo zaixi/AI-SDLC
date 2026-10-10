@@ -1,0 +1,16 @@
+flowchart LR
+    Draft["草稿<br/>创建后的初始状态"]
+    Review["待审"]
+    Ready["待执行"]
+    Running["执行中<br/>不能取消"]
+    Cancelled["已取消"]
+    Failed["失败"]
+    Complete["完成"]
+
+    Draft -->|"发布人：提交"| Review
+    Review -->|"审阅人：拒绝"| Draft
+    Review -->|"审阅人：通过"| Ready
+    Ready -->|"发布人：取消"| Cancelled
+    Ready -->|"调度器：先进入执行中"| Running
+    Running -->|"调度器：任一批失败"| Failed
+    Running -->|"调度器：全部批次成功"| Complete

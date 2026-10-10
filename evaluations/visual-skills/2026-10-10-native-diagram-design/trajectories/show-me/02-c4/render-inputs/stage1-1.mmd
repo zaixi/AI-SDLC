@@ -1,0 +1,23 @@
+flowchart TB
+    buyer["采购员<br/>【人员】"]
+    support["支持工程师<br/>【人员】"]
+
+    subgraph company["本公司"]
+        procurement["采购协同系统<br/>【软件系统】"]
+    end
+
+    subgraph supplierOrg["合作供应商"]
+        supplier["供应商系统<br/>【软件系统】"]
+    end
+
+    subgraph bankOrg["银行"]
+        bank["付款系统<br/>【软件系统】"]
+    end
+
+    buyer -->|"发订单"| procurement
+    support -->|"通过管理门户查看处理状态"| procurement
+
+    procurement -->|"发送订单"| supplier
+    supplier -->|"交付事件"| procurement
+    procurement -->|"付款请求"| bank
+    bank -->|"异步付款结果"| procurement

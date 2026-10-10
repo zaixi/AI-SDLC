@@ -1,0 +1,11 @@
+{
+  "repo": "cathrynlavery/diagram-design",
+  "commit": "cdfdc9686cd7465da70b68b036581833b503810c",
+  "files": [
+    "skills/diagram-design/SKILL.md",
+    "skills/diagram-design/references/style-guide.md",
+    "skills/diagram-design/references/output-spec.md",
+    "skills/diagram-design/references/type-architecture.md",
+    "skills/diagram-design/references/layout-budget.md"
+  ]
+}

@@ -1,0 +1,136 @@
+Apply the primary skill to the task below. Choose the native output format that fits the skill and task: Markdown with editable Mermaid blocks, or one complete static self-contained HTML document with inline SVG in a fenced html block. Include brief necessary prose/tables. All output must work offline with system font fallbacks, no external resources or animation. A rendering service is available through this test controller: first return the current draft; actual images of that draft will then be appended in this same conversation. Further rendered feedback will be supplied if you change the draft. The operator has configured the evaluation style and canvas: shipped colors, offline font source, doc-wide if an HTML diagram needs a size preset. No client branding is requested. State the chosen views and size briefly, then generate this draft without waiting for another reply. This is one authorized comparison task, not an installation or client onboarding. Do not invoke tools, install packages, fetch resources, delegate, save profiles or read credentials. Do not discuss test/skill names. Do not redesign the supplied system. Reply in Chinese.
+<primary_skill>
+---
+name: show-me
+description: Help the user understand the current topic visually with concise diagrams, code-shape sketches, and focused HTML artifacts.
+disable-model-invocation: true
+---
+
+Help the user understand the current topic of conversation visually. Skip the preamble and keep prose brief. Pick the smallest view that makes the key point clear.
+
+- Show logic or an algorithm as pseudocode:
+
+```text
+on(save)
+  if content is unchanged
+    return cached result
+  write new content
+  return fresh result
+```
+
+- Show runtime control flow as a call tree:
+
+```text
+submitForm
+  createSession
+    persistPrompt
+    launchAgent
+  navigateToSession
+```
+
+- Show UI structure as a component tree, including state and module boundaries that matter:
+
+```tsx
+<SessionPage> (apps/example/src/routes/session.tsx)
+  useSessionEvents()
+  <SessionToolbar>
+    <RunSkillButton> (packages/ui)
+```
+
+- Show file responsibility or a broad refactor as a shallow file tree:
+
+```text
+src/
+├── commands/       # parses user actions
+├── sessions/       # owns session state
+└── transport/      # sends API requests
+```
+
+- Show component interaction, control flow, or data flow with Mermaid:
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant UI
+    participant Daemon
+    User->>UI: choose command
+    UI->>Daemon: send expanded prompt
+    Daemon-->>UI: stream result
+```
+
+- Use `diff` when the point is what changes and the surrounding shape already exists. Match the diff shape to the topic.
+
+For a component change:
+
+```diff
+ <SessionPage>
+   useSessionEvents()
+   <SessionToolbar>
++    <RunSkillButton />
+   <SessionTimeline>
++    <SkillResultCard />
+```
+
+For a file-layout change:
+
+```diff
+ src/
+ ├── commands/
++│   └── show-me.ts       # expands the slash command
+ ├── sessions/
+-└── transport.ts
++└── transport/
++    ├── client.ts
++    └── stream.ts
+```
+
+For a call-tree or call-stack change:
+
+```diff
+ submitForm
+   createSession
+     persistPrompt
++    expandSkillMention
+     launchAgent
+-  navigateToSession
++  navigateToSession
++    subscribeToEvents
+```
+
+For a state or control-flow change:
+
+```diff
+ on(save)
+-  write content
++  if content is unchanged
++    return cached result
++  write new content
++  invalidate cache
+```
+
+- Show the whole block when most of it is new, when omitted context would hide ownership or order, or when the user needs a copyable target shape:
+
+```ts
+function expandSkill(command: string): string {
+  const skillName = command.slice(1)
+  return `use the ${skillName} skill`
+}
+```
+
+- For a visual UI, layout, state comparison, or concept too dense for Mermaid, write one focused HTML file — a diagram, an infographic, or a short slide deck, whichever fits the point. Match the product's colors, type, spacing, and components; use real labels and data; support desktop and mobile. Then open it for the user:
+
+```
+Bash(open path/to/show-me-{description}.html)
+```
+
+### guidance
+
+Place each visual next to the short text it supports. Keep only the calls, files, props, states, and boundaries needed to answer the user's current question or the options to resolve the current discussion point.
+
+You may use one of these, you may use several, it is unlikely you will use all of them. Use your judgement and don't overwhelm the user.
+
+</primary_skill>
+
+<task>
+请用C4体系解释这套跨组织集成系统，分别让业务负责人看清系统与组织边界、让工程师看清本公司系统内部的运行单元和关键通信，中文标签。自行安排视图，不新增连接、不把组件/容器/系统混成一个层级。本公司拥有“采购协同系统”，合作供应商拥有“供应商系统”，银行拥有“付款系统”。采购员使用采购协同系统发订单；供应商系统接收订单并发送交付事件；采购协同系统向银行付款系统请求付款，银行异步回传付款结果。采购协同系统内部：Web门户通过HTTPS调用采购API；采购API向订单库读写订单、向Outbox库写待发送事件；订单库与Outbox库是独立运行的两个PostgreSQL实例，不画成一个实例。事件发布器从Outbox库读事件，经HTTPS向供应商系统发订单；供应商系统通过HTTPS向回调网关发交付事件，银行同样向回调网关发付款结果。回调网关向内部Kafka写事件；订单处理器从Kafka消费交付事件并写订单库；付款处理器从Kafka消费付款结果并写付款库，付款库为第三个独立PostgreSQL实例。付款处理器也通过HTTPS向银行付款系统发送付款请求，采购API向Kafka写付款申请事件，付款处理器消费这些申请事件。支持工程师只通过管理门户查看处理状态；管理门户通过HTTPS调用查询API，查询API只读订单库与付款库。采购API和查询API是两个独立部署进程。没有规定供应商/银行内部容器，也没有缓存、身份服务、补偿/重试或Kafka具体主题。保留所有已确认通信与读写方向；不推定供应商属于本公司，也不画采购员直接访问银行。
+</task>

@@ -1,0 +1,86 @@
+{
+  "viewport": [
+    1600,
+    1000
+  ],
+  "javascript": "disabled",
+  "blockedRequests": [],
+  "diagrams": [
+    {
+      "index": 1,
+      "file": "stage0-1-svg1.png",
+      "bounds": {
+        "x": 160,
+        "y": 219.578125,
+        "height": 720,
+        "width": 1280
+      },
+      "geometry": {
+        "viewBox": "0 0 1280 720",
+        "title": "发布体系的组件协作",
+        "fonts": [
+          "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif"
+        ],
+        "textCount": 24
+      }
+    },
+    {
+      "index": 2,
+      "file": "stage0-1-svg2.png",
+      "bounds": {
+        "x": 160,
+        "y": 1028.578125,
+        "height": 720,
+        "width": 1280
+      },
+      "geometry": {
+        "viewBox": "0 0 1280 720",
+        "title": "发布单状态与异常分支",
+        "fonts": [
+          "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif"
+        ],
+        "textCount": 29
+      }
+    },
+    {
+      "index": 3,
+      "file": "stage0-1-svg3.png",
+      "bounds": {
+        "x": 160,
+        "y": 948.578125,
+        "height": 720,
+        "width": 1280
+      },
+      "geometry": {
+        "viewBox": "0 0 1280 720",
+        "title": "调度器与工作器的批次执行时序",
+        "fonts": [
+          "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+          "\"Geist Mono\", ui-monospace, monospace"
+        ],
+        "textCount": 21
+      }
+    }
+  ],
+  "mobile": {
+    "viewport": 390,
+    "pageWidth": 390,
+    "localScrollers": [
+      {
+        "tag": "DIV",
+        "width": 358,
+        "scrollWidth": 1280
+      },
+      {
+        "tag": "DIV",
+        "width": 358,
+        "scrollWidth": 1280
+      },
+      {
+        "tag": "DIV",
+        "width": 358,
+        "scrollWidth": 1280
+      }
+    ]
+  }
+}

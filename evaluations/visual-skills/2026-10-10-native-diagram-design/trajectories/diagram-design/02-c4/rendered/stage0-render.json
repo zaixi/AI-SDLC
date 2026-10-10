@@ -1,0 +1,144 @@
+[
+  {
+    "block": 1,
+    "format": "html",
+    "type": "HTML with inline SVG",
+    "source_sha256": "8094419737c6b2e799b3e8e2ed41620ce14516206c5956440a410682a9758d8e",
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "{\"status\":\"passed\",\"diagrams\":4,\"desktop\":\"stage0-1-desktop.png\",\"mobile\":\"stage0-1-mobile.png\"}\n",
+      "file": "stage0-1-desktop.png"
+    },
+    "browser": {
+      "viewport": [
+        1600,
+        1000
+      ],
+      "javascript": "disabled",
+      "blockedRequests": [],
+      "diagrams": [
+        {
+          "index": 1,
+          "file": "stage0-1-svg1.png",
+          "bounds": {
+            "x": 160,
+            "y": 228.59375,
+            "height": 720,
+            "width": 1280
+          },
+          "geometry": {
+            "viewBox": "0 0 1280 720",
+            "title": "采购协同系统的组织与系统边界",
+            "fonts": [
+              "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif"
+            ],
+            "textCount": 20
+          }
+        },
+        {
+          "index": 2,
+          "file": "stage0-1-svg2.png",
+          "bounds": {
+            "x": 160,
+            "y": 1057.390625,
+            "height": 720,
+            "width": 1280
+          },
+          "geometry": {
+            "viewBox": "0 0 1280 720",
+            "title": "订单发送与付款申请的容器通信",
+            "fonts": [
+              "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+              "\"Geist Mono\", ui-monospace, monospace"
+            ],
+            "textCount": 29
+          }
+        },
+        {
+          "index": 3,
+          "file": "stage0-1-svg3.png",
+          "bounds": {
+            "x": 160,
+            "y": 969.1875,
+            "height": 720,
+            "width": 1280
+          },
+          "geometry": {
+            "viewBox": "0 0 1280 720",
+            "title": "交付事件与付款结果的内部处理",
+            "fonts": [
+              "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+              "\"Geist Mono\", ui-monospace, monospace"
+            ],
+            "textCount": 27
+          }
+        },
+        {
+          "index": 4,
+          "file": "stage0-1-svg4.png",
+          "bounds": {
+            "x": 160,
+            "y": 1108.984375,
+            "height": 720,
+            "width": 1280
+          },
+          "geometry": {
+            "viewBox": "0 0 1280 720",
+            "title": "支持工程师的只读状态查询路径",
+            "fonts": [
+              "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+              "\"Geist Mono\", ui-monospace, monospace"
+            ],
+            "textCount": 16
+          }
+        }
+      ],
+      "mobile": {
+        "viewport": 390,
+        "pageWidth": 390,
+        "localScrollers": [
+          {
+            "tag": "DIV",
+            "width": 310,
+            "scrollWidth": 1280
+          },
+          {
+            "tag": "DIV",
+            "width": 310,
+            "scrollWidth": 1280
+          },
+          {
+            "tag": "DIV",
+            "width": 310,
+            "scrollWidth": 1280
+          },
+          {
+            "tag": "DIV",
+            "width": 310,
+            "scrollWidth": 1280
+          }
+        ]
+      }
+    },
+    "svg_images": [
+      "stage0-1-svg1.png",
+      "stage0-1-svg2.png",
+      "stage0-1-svg3.png",
+      "stage0-1-svg4.png"
+    ],
+    "mobile_file": "stage0-1-mobile.png",
+    "checks": {
+      "self_check": {
+        "status": "passed",
+        "exit_code": 0,
+        "diagnostic": "OK /work/stage0-1.html\n"
+      },
+      "geometry": {
+        "status": "passed",
+        "exit_code": 0,
+        "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+      }
+    }
+  }
+]

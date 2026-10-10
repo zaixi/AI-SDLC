@@ -1,0 +1,9 @@
+{
+  "diagram_design": {
+    "repository": "https://github.com/cathrynlavery/diagram-design",
+    "commit": "cdfdc9686cd7465da70b68b036581833b503810c",
+    "acquisition": "Immutable codeload tarball for complete skill subtree; root LICENSE and geometry checker also archived. inputs/diagram-design-source.json records the earlier selected-file inspection, not full acquisition inventory.",
+    "archived_skill_files_with_license": 280,
+    "verification": "All archived files SHA256 recorded in input-manifest.json, working style differs only by font source."
+  }
+}

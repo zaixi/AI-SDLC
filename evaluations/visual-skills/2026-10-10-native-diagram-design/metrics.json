@@ -1,0 +1,188 @@
+[
+  {
+    "condition": "show-me",
+    "case": "01-mixed",
+    "formats": [
+      "mermaid",
+      "mermaid"
+    ],
+    "answer_chars": 1548,
+    "all_fenced_source_chars": 933,
+    "source_chars": 684,
+    "source_bytes": 926,
+    "source_lines": 33,
+    "diagrams": 2,
+    "usage": {
+      "input_tokens": 109515,
+      "cached_input_tokens": 87680,
+      "output_tokens": 5961
+    },
+    "revision_diffs": [
+      {
+        "added_lines": 9,
+        "removed_lines": 8
+      },
+      {
+        "added_lines": 0,
+        "removed_lines": 0
+      }
+    ],
+    "final_document_source_changed": false,
+    "final_changed_after_last_feedback": false
+  },
+  {
+    "condition": "v042",
+    "case": "01-mixed",
+    "formats": [
+      "mermaid",
+      "mermaid",
+      "mermaid"
+    ],
+    "answer_chars": 1871,
+    "all_fenced_source_chars": 1157,
+    "source_chars": 1157,
+    "source_bytes": 1643,
+    "source_lines": 47,
+    "diagrams": 3,
+    "usage": {
+      "input_tokens": 161243,
+      "cached_input_tokens": 111360,
+      "output_tokens": 6597
+    },
+    "revision_diffs": [
+      {
+        "added_lines": 39,
+        "removed_lines": 41
+      },
+      {
+        "added_lines": 17,
+        "removed_lines": 21
+      }
+    ],
+    "final_document_source_changed": true,
+    "final_changed_after_last_feedback": true
+  },
+  {
+    "condition": "diagram-design",
+    "case": "01-mixed",
+    "formats": [
+      "html"
+    ],
+    "answer_chars": 14514,
+    "all_fenced_source_chars": 14431,
+    "source_chars": 14431,
+    "source_bytes": 16839,
+    "source_lines": 317,
+    "diagrams": 3,
+    "usage": {
+      "input_tokens": 345184,
+      "cached_input_tokens": 196480,
+      "output_tokens": 36316
+    },
+    "revision_diffs": [
+      {
+        "added_lines": 94,
+        "removed_lines": 83
+      },
+      {
+        "added_lines": 0,
+        "removed_lines": 0
+      }
+    ],
+    "final_document_source_changed": false,
+    "final_changed_after_last_feedback": false
+  },
+  {
+    "condition": "diagram-design",
+    "case": "02-c4",
+    "formats": [
+      "html"
+    ],
+    "answer_chars": 18762,
+    "all_fenced_source_chars": 18655,
+    "source_chars": 18655,
+    "source_bytes": 21625,
+    "source_lines": 325,
+    "diagrams": 4,
+    "usage": {
+      "input_tokens": 343220,
+      "cached_input_tokens": 193792,
+      "output_tokens": 44367
+    },
+    "revision_diffs": [
+      {
+        "added_lines": 172,
+        "removed_lines": 110
+      },
+      {
+        "added_lines": 0,
+        "removed_lines": 0
+      }
+    ],
+    "final_document_source_changed": false,
+    "final_changed_after_last_feedback": false
+  },
+  {
+    "condition": "v042",
+    "case": "02-c4",
+    "formats": [
+      "html"
+    ],
+    "answer_chars": 10956,
+    "all_fenced_source_chars": 10851,
+    "source_chars": 10851,
+    "source_bytes": 13123,
+    "source_lines": 242,
+    "diagrams": 3,
+    "usage": {
+      "input_tokens": 187860,
+      "cached_input_tokens": 120064,
+      "output_tokens": 27831
+    },
+    "revision_diffs": [
+      {
+        "added_lines": 35,
+        "removed_lines": 28
+      },
+      {
+        "added_lines": 2,
+        "removed_lines": 1
+      }
+    ],
+    "final_document_source_changed": true,
+    "final_changed_after_last_feedback": false
+  },
+  {
+    "condition": "show-me",
+    "case": "02-c4",
+    "formats": [
+      "mermaid",
+      "mermaid",
+      "mermaid",
+      "mermaid"
+    ],
+    "answer_chars": 3326,
+    "all_fenced_source_chars": 2597,
+    "source_chars": 2597,
+    "source_bytes": 3536,
+    "source_lines": 97,
+    "diagrams": 4,
+    "usage": {
+      "input_tokens": 111451,
+      "cached_input_tokens": 86272,
+      "output_tokens": 7401
+    },
+    "revision_diffs": [
+      {
+        "added_lines": 53,
+        "removed_lines": 34
+      },
+      {
+        "added_lines": 0,
+        "removed_lines": 0
+      }
+    ],
+    "final_document_source_changed": false,
+    "final_changed_after_last_feedback": false
+  }
+]

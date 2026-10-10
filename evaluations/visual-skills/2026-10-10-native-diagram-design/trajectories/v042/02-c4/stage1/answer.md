@@ -1,0 +1,245 @@
+保留三张视图与原有尺寸：1200×400、1200×1000、1200×320。根据实际画面，调整交易图的交叉线与标签；采购API到订单库用单向关系箭头表示“读写”，与其余数据库访问关系保持一致。
+
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>采购协同系统 · C4 架构</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f4f6f8;color:#172b40;font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif}
+main{max-width:1280px;margin:auto;padding:32px}
+h1{font-size:28px;margin:0 0 10px}
+h2{font-size:22px;margin:0 0 8px}
+p{line-height:1.7;margin:8px 0 16px;color:#46586b}
+section{background:white;border:1px solid #d5dde5;border-radius:12px;padding:24px;margin:24px 0}
+.scroll{overflow-x:auto}
+svg{display:block;width:100%;min-width:1000px;height:auto}
+svg text{font-family:inherit;text-anchor:middle;fill:#172b40;font-size:15px}
+svg .title{font-size:17px;font-weight:700}
+svg .meta{font-size:13px;fill:#46586b}
+svg .boundary{fill:#f5f9fd;stroke:#7593af;stroke-width:1.5;stroke-dasharray:7 5}
+svg .org{fill:#f8fafc;stroke:#a3afba;stroke-width:1.5;stroke-dasharray:7 5}
+svg .node{fill:#e2effa;stroke:#276494;stroke-width:1.5}
+svg .external{fill:#edf0f3;stroke:#74818e;stroke-width:1.5}
+svg .db{fill:#e8f3ef;stroke:#387663;stroke-width:1.5}
+svg .person{fill:#fff2d9;stroke:#a77b29;stroke-width:1.5}
+svg .edge{fill:none;stroke:#46586b;stroke-width:1.7;marker-end:url(#arrow)}
+svg .bridge{fill:none;stroke:#f5f9fd;stroke-width:8}
+svg .label{font-size:13px;paint-order:stroke;stroke:white;stroke-width:6px;stroke-linejoin:round}
+svg .boundary-label{text-anchor:start;font-size:16px;font-weight:700}
+.note{font-size:14px;border-left:3px solid #7593af;padding-left:12px}
+@media(max-width:700px){main{padding:16px}section{padding:16px}h1{font-size:24px}}
+</style>
+</head>
+<body>
+<main>
+<h1>采购协同系统：组织边界与运行单元</h1>
+<p>业务视图说明系统归属与跨组织通信；工程视图展开本公司系统的运行单元。两张工程图均为 C4 容器层级，重复数据库表示同一实例。</p>
+
+<section>
+<h2>01 · 系统上下文｜业务负责人</h2>
+<p>三个系统分别归属本公司、合作供应商和银行。采购员发订单，支持工程师查看处理状态。</p>
+<div class="scroll">
+<svg viewBox="0 0 1200 400" role="img" aria-labelledby="context-title context-desc">
+<title id="context-title">采购协同系统的系统上下文</title>
+<desc id="context-desc">采购员与支持工程师使用采购协同系统。采购协同系统向合作供应商的供应商系统发送订单，供应商返回交付事件；采购协同系统向银行付款系统请求付款，银行异步回传付款结果。</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0L10 5L0 10Z" fill="#46586b"/>
+</marker>
+</defs>
+
+<rect class="org" x="305" y="35" width="325" height="330" rx="12"/>
+<text class="boundary-label" x="325" y="65">本公司</text>
+<rect class="org" x="845" y="35" width="330" height="150" rx="12"/>
+<text class="boundary-label" x="865" y="65">合作供应商</text>
+<rect class="org" x="845" y="220" width="330" height="145" rx="12"/>
+<text class="boundary-label" x="865" y="250">银行</text>
+
+<rect class="person" x="25" y="100" width="175" height="70" rx="8"/>
+<text class="title" x="112" y="130">采购员</text>
+<text class="meta" x="112" y="153">人员</text>
+<rect class="person" x="25" y="260" width="175" height="70" rx="8"/>
+<text class="title" x="112" y="290">支持工程师</text>
+<text class="meta" x="112" y="313">人员</text>
+<rect class="node" x="345" y="145" width="245" height="110" rx="8"/>
+<text class="title" x="467" y="185">采购协同系统</text>
+<text class="meta" x="467" y="210">软件系统</text>
+<text class="meta" x="467" y="233">订单协同与付款处理</text>
+<rect class="external" x="885" y="90" width="245" height="70" rx="8"/>
+<text class="title" x="1007" y="120">供应商系统</text>
+<text class="meta" x="1007" y="144">外部软件系统</text>
+<rect class="external" x="885" y="275" width="245" height="70" rx="8"/>
+<text class="title" x="1007" y="305">付款系统</text>
+<text class="meta" x="1007" y="329">外部软件系统</text>
+
+<path class="edge" d="M200 135H265V175H345"/>
+<text class="label" x="265" y="121">发订单</text>
+<path class="edge" d="M200 295H265V225H345"/>
+<text class="label" x="270" y="315">查看处理状态</text>
+<path class="edge" d="M590 170H710V110H885"/>
+<text class="label" x="740" y="96">发送订单</text>
+<path class="edge" d="M885 145H760V195H590"/>
+<text class="label" x="735" y="182">发送交付事件</text>
+<path class="edge" d="M590 220H710V290H885"/>
+<text class="label" x="750" y="278">请求付款</text>
+<path class="edge" d="M885 325H665V245H590"/>
+<text class="label" x="755" y="345">异步回传付款结果</text>
+</svg>
+</div>
+</section>
+
+<section>
+<h2>02 · 容器视图｜订单与付款运行链路</h2>
+<p>蓝色为本公司运行单元，绿色为独立数据库实例，灰色为外部软件系统。数据库访问箭头由访问方指向数据库；事件消费箭头由 Kafka 指向消费者。交叉线留白表示经过，不表示连接。</p>
+<div class="scroll">
+<svg viewBox="0 0 1200 1000" role="img" aria-labelledby="runtime-title runtime-desc">
+<title id="runtime-title">采购协同系统交易容器视图</title>
+<desc id="runtime-desc">Web门户通过HTTPS调用采购API。采购API读写订单库、写Outbox库并向Kafka写付款申请。事件发布器读取Outbox并通过HTTPS向供应商发送订单。供应商与银行通过HTTPS向回调网关发送交付事件和付款结果，网关写Kafka。订单处理器消费交付事件并写订单库；付款处理器消费付款申请及付款结果，写付款库并通过HTTPS向银行请求付款。三个PostgreSQL实例独立运行。</desc>
+
+<rect class="boundary" x="15" y="20" width="945" height="955" rx="12"/>
+<text class="boundary-label" x="35" y="50">本公司 · 采购协同系统</text>
+<text class="meta" x="790" y="48">C4 容器层级</text>
+
+<rect class="node" x="45" y="90" width="180" height="80" rx="8"/>
+<text class="title" x="135" y="121">Web门户</text>
+<text class="meta" x="135" y="147">容器 · 采购入口</text>
+<rect class="node" x="315" y="90" width="200" height="80" rx="8"/>
+<text class="title" x="415" y="121">采购API</text>
+<text class="meta" x="415" y="147">容器 · 独立部署进程</text>
+<rect class="db" x="650" y="90" width="220" height="80" rx="8"/>
+<text class="title" x="760" y="120">订单库</text>
+<text class="meta" x="760" y="147">PostgreSQL · 实例 1</text>
+
+<rect class="db" x="315" y="280" width="200" height="80" rx="8"/>
+<text class="title" x="415" y="310">Outbox库</text>
+<text class="meta" x="415" y="337">PostgreSQL · 实例 2</text>
+<rect class="node" x="650" y="280" width="220" height="80" rx="8"/>
+<text class="title" x="760" y="310">事件发布器</text>
+<text class="meta" x="760" y="337">容器</text>
+
+<rect class="node" x="650" y="470" width="220" height="80" rx="8"/>
+<text class="title" x="760" y="500">回调网关</text>
+<text class="meta" x="760" y="527">容器</text>
+<rect class="node" x="315" y="470" width="200" height="80" rx="8"/>
+<text class="title" x="415" y="500">Kafka</text>
+<text class="meta" x="415" y="527">容器 · 内部事件流</text>
+
+<rect class="node" x="650" y="675" width="220" height="80" rx="8"/>
+<text class="title" x="760" y="705">订单处理器</text>
+<text class="meta" x="760" y="732">容器</text>
+<rect class="node" x="315" y="850" width="200" height="80" rx="8"/>
+<text class="title" x="415" y="880">付款处理器</text>
+<text class="meta" x="415" y="907">容器</text>
+<rect class="db" x="45" y="850" width="180" height="80" rx="8"/>
+<text class="title" x="135" y="880">付款库</text>
+<text class="meta" x="135" y="907">PostgreSQL · 实例 3</text>
+
+<rect class="org" x="980" y="260" width="205" height="150" rx="10"/>
+<text class="boundary-label" x="995" y="289">合作供应商</text>
+<rect class="external" x="995" y="310" width="175" height="75" rx="8"/>
+<text class="title" x="1082" y="339">供应商系统</text>
+<text class="meta" x="1082" y="365">外部软件系统</text>
+
+<rect class="org" x="980" y="805" width="205" height="160" rx="10"/>
+<text class="boundary-label" x="995" y="835">银行</text>
+<rect class="external" x="995" y="855" width="175" height="80" rx="8"/>
+<text class="title" x="1082" y="886">付款系统</text>
+<text class="meta" x="1082" y="912">外部软件系统</text>
+
+<!-- 先绘制纵向线路，横向线路经过时留白 -->
+<path class="edge" d="M870 715H895V130H870"/>
+<text class="label" x="895" y="221">写订单</text>
+<path class="edge" d="M995 875H930V535H870"/>
+<text class="label" x="1020" y="624">异步付款结果</text>
+<text class="label" x="1020" y="646">HTTPS</text>
+
+<!-- 采购入口及数据库访问 -->
+<path class="edge" d="M225 130H315"/>
+<text class="label" x="270" y="115">HTTPS</text>
+<path class="edge" d="M515 130H650"/>
+<text class="label" x="582" y="113">读 / 写订单</text>
+<path class="edge" d="M415 170V280"/>
+<text class="label" x="415" y="223">写待发送事件</text>
+<path class="edge" d="M650 320H515"/>
+<text class="label" x="583" y="304">读取事件</text>
+
+<!-- 发订单线路跨过订单库写入线路 -->
+<path class="bridge" d="M886 320H904"/>
+<path class="edge" d="M870 320H995"/>
+<text class="label" x="938" y="299">订单</text>
+<text class="label" x="938" y="343">HTTPS</text>
+
+<!-- 付款申请从采购API写入Kafka -->
+<path class="edge" d="M315 150H270V510H315"/>
+<text class="label" x="174" y="406">写付款申请事件</text>
+
+<!-- 外部回调与内部事件写入 -->
+<path class="bridge" d="M885 510H940"/>
+<path class="edge" d="M1082 385V510H870"/>
+<text class="label" x="1046" y="456">交付事件</text>
+<text class="label" x="1046" y="477">HTTPS</text>
+<path class="edge" d="M650 510H515"/>
+<text class="label" x="582" y="493">写事件</text>
+
+<!-- 事件消费及处理结果 -->
+<path class="edge" d="M475 550V715H650"/>
+<text class="label" x="565" y="699">消费交付事件</text>
+<path class="edge" d="M415 550V850"/>
+<text class="label" x="415" y="778">消费付款申请</text>
+<text class="label" x="415" y="801">及付款结果</text>
+<path class="edge" d="M315 890H225"/>
+<text class="label" x="270" y="872">写付款</text>
+<path class="edge" d="M515 905H995"/>
+<text class="label" x="737" y="891">付款请求 · HTTPS</text>
+</svg>
+</div>
+<p class="note">订单库、Outbox库、付款库分别是独立 PostgreSQL 实例。Kafka 的具体主题及其他未指定通信协议保持未定；未加入缓存、身份服务、补偿或重试。</p>
+</section>
+
+<section>
+<h2>03 · 容器视图｜支持工程师查看状态</h2>
+<p>支持工程师只通过管理门户查看处理状态。查询API与采购API是两个独立部署进程；这里的订单库和付款库与交易图中的实例相同。</p>
+<div class="scroll">
+<svg viewBox="0 0 1200 320" role="img" aria-labelledby="query-title query-desc">
+<title id="query-title">支持工程师只读查询路径</title>
+<desc id="query-desc">支持工程师使用管理门户查看状态。管理门户通过HTTPS调用查询API，查询API只读订单库实例1和付款库实例3。</desc>
+
+<rect class="boundary" x="265" y="20" width="915" height="275" rx="12"/>
+<text class="boundary-label" x="285" y="50">本公司 · 采购协同系统（查询局部）</text>
+
+<rect class="person" x="20" y="120" width="180" height="80" rx="8"/>
+<text class="title" x="110" y="151">支持工程师</text>
+<text class="meta" x="110" y="178">人员</text>
+<rect class="node" x="300" y="120" width="190" height="80" rx="8"/>
+<text class="title" x="395" y="151">管理门户</text>
+<text class="meta" x="395" y="178">容器</text>
+<rect class="node" x="605" y="120" width="210" height="80" rx="8"/>
+<text class="title" x="710" y="151">查询API</text>
+<text class="meta" x="710" y="178">容器 · 独立部署进程</text>
+<rect class="db" x="945" y="75" width="210" height="80" rx="8"/>
+<text class="title" x="1050" y="106">订单库</text>
+<text class="meta" x="1050" y="133">PostgreSQL · 实例 1</text>
+<rect class="db" x="945" y="190" width="210" height="80" rx="8"/>
+<text class="title" x="1050" y="221">付款库</text>
+<text class="meta" x="1050" y="248">PostgreSQL · 实例 3</text>
+
+<path class="edge" d="M200 160H300"/>
+<text class="label" x="250" y="144">查看状态</text>
+<path class="edge" d="M490 160H605"/>
+<text class="label" x="547" y="144">HTTPS</text>
+<path class="edge" d="M815 140H870V115H945"/>
+<text class="label" x="885" y="99">只读</text>
+<path class="edge" d="M815 180H870V230H945"/>
+<text class="label" x="885" y="252">只读</text>
+</svg>
+</div>
+<p class="note">工程视图仅展开本公司容器。供应商和银行仍作为外部软件系统出现，其内部结构未作推定；本次布局调整尚待实际渲染复核。</p>
+</section>
+</main>
+</body>
+</html>
+```

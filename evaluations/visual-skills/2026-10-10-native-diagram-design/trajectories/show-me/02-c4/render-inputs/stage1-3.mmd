@@ -1,0 +1,23 @@
+flowchart TB
+    subgraph company["本公司"]
+        subgraph procurement["采购协同系统 · 付款局部视图"]
+            api["采购API<br/>【容器：独立部署进程】"]
+            kafka[("内部Kafka<br/>【容器：事件平台】")]
+            worker["付款处理器<br/>【容器：应用】"]
+            gateway["回调网关<br/>【容器：应用】"]
+            payments[("付款库<br/>【容器：PostgreSQL实例 3】")]
+
+            api -->|"写付款申请事件"| kafka
+            kafka -->|"消费付款申请事件"| worker
+            gateway -->|"写事件"| kafka
+            kafka -->|"消费付款结果"| worker
+            worker -->|"写付款结果"| payments
+        end
+    end
+
+    subgraph bankOrg["银行"]
+        bank["付款系统<br/>【外部软件系统】"]
+    end
+
+    worker -->|"HTTPS：付款请求"| bank
+    bank -->|"HTTPS：异步付款结果"| gateway

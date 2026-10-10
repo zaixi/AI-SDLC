@@ -1,0 +1,77 @@
+{
+  "note": "Derived individual SVG snippets used only to diagnose cross-root SVG false positives; raw feedback/checks unmodified.",
+  "release_initial": [
+    {
+      "svg": 1,
+      "exit_code": 0,
+      "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+    },
+    {
+      "svg": 2,
+      "exit_code": 0,
+      "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+    },
+    {
+      "svg": 3,
+      "exit_code": 0,
+      "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+    }
+  ],
+  "connector_coverage": [
+    {
+      "answer": "trajectories/diagram-design/01-mixed/stage0/answer.md",
+      "html_block": 1,
+      "recognized_connector_count": 22,
+      "note": "Only explicit marker-start/end attributes are recognized. CSS-defined arrows ignored; zero count is not validation of actual connections."
+    },
+    {
+      "answer": "trajectories/diagram-design/01-mixed/stage1/answer.md",
+      "html_block": 1,
+      "recognized_connector_count": 17,
+      "note": "Only explicit marker-start/end attributes are recognized. CSS-defined arrows ignored; zero count is not validation of actual connections."
+    },
+    {
+      "answer": "trajectories/diagram-design/01-mixed/stage2/answer.md",
+      "html_block": 1,
+      "recognized_connector_count": 17,
+      "note": "Only explicit marker-start/end attributes are recognized. CSS-defined arrows ignored; zero count is not validation of actual connections."
+    },
+    {
+      "answer": "trajectories/diagram-design/02-c4/stage0/answer.md",
+      "html_block": 1,
+      "recognized_connector_count": 0,
+      "note": "Only explicit marker-start/end attributes are recognized. CSS-defined arrows ignored; zero count is not validation of actual connections."
+    },
+    {
+      "answer": "trajectories/diagram-design/02-c4/stage1/answer.md",
+      "html_block": 1,
+      "recognized_connector_count": 19,
+      "note": "Only explicit marker-start/end attributes are recognized. CSS-defined arrows ignored; zero count is not validation of actual connections."
+    },
+    {
+      "answer": "trajectories/diagram-design/02-c4/stage2/answer.md",
+      "html_block": 1,
+      "recognized_connector_count": 19,
+      "note": "Only explicit marker-start/end attributes are recognized. CSS-defined arrows ignored; zero count is not validation of actual connections."
+    },
+    {
+      "answer": "trajectories/v042/02-c4/stage0/answer.md",
+      "html_block": 1,
+      "recognized_connector_count": 0,
+      "note": "Only explicit marker-start/end attributes are recognized. CSS-defined arrows ignored; zero count is not validation of actual connections."
+    },
+    {
+      "answer": "trajectories/v042/02-c4/stage1/answer.md",
+      "html_block": 1,
+      "recognized_connector_count": 0,
+      "note": "Only explicit marker-start/end attributes are recognized. CSS-defined arrows ignored; zero count is not validation of actual connections."
+    },
+    {
+      "answer": "trajectories/v042/02-c4/stage2/answer.md",
+      "html_block": 1,
+      "recognized_connector_count": 0,
+      "note": "Only explicit marker-start/end attributes are recognized. CSS-defined arrows ignored; zero count is not validation of actual connections."
+    }
+  ],
+  "implementation_evidence": "verify-geometry.py shapes() does not tag independent root SVG coordinate spaces; stacked_connectors() compares global pairs. connectors() requires inline marker attributes, not CSS marker declarations."
+}

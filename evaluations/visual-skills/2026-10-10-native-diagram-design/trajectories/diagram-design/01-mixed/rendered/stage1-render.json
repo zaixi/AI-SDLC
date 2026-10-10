@@ -1,0 +1,118 @@
+[
+  {
+    "block": 1,
+    "format": "html",
+    "type": "HTML with inline SVG",
+    "source_sha256": "3bfe6a5fe7843c88605680b1241fa703fe49716998ff6ddebc1b840efbc1e00c",
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "{\"status\":\"passed\",\"diagrams\":3,\"desktop\":\"stage1-1-desktop.png\",\"mobile\":\"stage1-1-mobile.png\"}\n",
+      "file": "stage1-1-desktop.png"
+    },
+    "browser": {
+      "viewport": [
+        1600,
+        1000
+      ],
+      "javascript": "disabled",
+      "blockedRequests": [],
+      "diagrams": [
+        {
+          "index": 1,
+          "file": "stage1-1-svg1.png",
+          "bounds": {
+            "x": 160,
+            "y": 219.578125,
+            "height": 720,
+            "width": 1280
+          },
+          "geometry": {
+            "viewBox": "0 0 1280 720",
+            "title": "发布体系的组件协作",
+            "fonts": [
+              "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif"
+            ],
+            "textCount": 24
+          }
+        },
+        {
+          "index": 2,
+          "file": "stage1-1-svg2.png",
+          "bounds": {
+            "x": 160,
+            "y": 1028.578125,
+            "height": 720,
+            "width": 1280
+          },
+          "geometry": {
+            "viewBox": "0 0 1280 720",
+            "title": "发布单状态与异常分支",
+            "fonts": [
+              "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif"
+            ],
+            "textCount": 29
+          }
+        },
+        {
+          "index": 3,
+          "file": "stage1-1-svg3.png",
+          "bounds": {
+            "x": 160,
+            "y": 948.578125,
+            "height": 720,
+            "width": 1280
+          },
+          "geometry": {
+            "viewBox": "0 0 1280 720",
+            "title": "调度器与工作器的批次执行时序",
+            "fonts": [
+              "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+              "\"Geist Mono\", ui-monospace, monospace"
+            ],
+            "textCount": 21
+          }
+        }
+      ],
+      "mobile": {
+        "viewport": 390,
+        "pageWidth": 390,
+        "localScrollers": [
+          {
+            "tag": "DIV",
+            "width": 358,
+            "scrollWidth": 1280
+          },
+          {
+            "tag": "DIV",
+            "width": 358,
+            "scrollWidth": 1280
+          },
+          {
+            "tag": "DIV",
+            "width": 358,
+            "scrollWidth": 1280
+          }
+        ]
+      }
+    },
+    "svg_images": [
+      "stage1-1-svg1.png",
+      "stage1-1-svg2.png",
+      "stage1-1-svg3.png"
+    ],
+    "mobile_file": "stage1-1-mobile.png",
+    "checks": {
+      "self_check": {
+        "status": "passed",
+        "exit_code": 0,
+        "diagnostic": "OK /work/stage1-1.html\n"
+      },
+      "geometry": {
+        "status": "passed",
+        "exit_code": 0,
+        "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+      }
+    }
+  }
+]

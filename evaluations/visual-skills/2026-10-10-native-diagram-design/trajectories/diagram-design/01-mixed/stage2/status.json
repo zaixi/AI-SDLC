@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "thread_id": "01a1239d-3b3e-75d2-8cc1-cd1d4dcf0297",
+  "usage": [
+    {
+      "input_tokens": 185034,
+      "cached_input_tokens": 122880,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 18000,
+      "reasoning_output_tokens": 522
+    }
+  ],
+  "completed_item_types": [
+    "agent_message"
+  ]
+}

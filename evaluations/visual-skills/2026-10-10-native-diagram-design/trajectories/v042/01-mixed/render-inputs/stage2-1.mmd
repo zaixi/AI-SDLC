@@ -1,0 +1,13 @@
+flowchart LR
+    Portal["发布门户"]
+    API["发布 API<br/>记录发布单"]
+    Scheduler["调度器"]
+    Worker["部署工作器"]
+    Repository[("产物仓库")]
+
+    Portal -->|"提交 / 审批 / 取消"| API
+    Scheduler -->|"读取待执行单"| API
+    Scheduler -->|"写回发布状态"| API
+    Scheduler -->|"发送服务批次任务"| Worker
+    Worker -->|"返回批次结果<br/>可能重复"| Scheduler
+    Worker -->|"读取该单指定产物"| Repository

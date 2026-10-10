@@ -1,0 +1,1965 @@
+[
+  {
+    "condition": "show-me",
+    "case": "01-mixed",
+    "status": "completed",
+    "thread_id": "01a12398-8a4f-7670-b333-f1b9af924dfe",
+    "model_context": [
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      }
+    ],
+    "draft_sha256": "23f0a3a7c01f2bb971ffc552c462d80c1a40fda058cef6f021a0ab6147960f7d",
+    "final_sha256": "76fbafb090db83bfd08aa52f35064f873de347419261157cd1dbe0a7cc2df99d",
+    "stages": [
+      {
+        "stage": "stage0",
+        "render": [
+          {
+            "block": 1,
+            "type": "flowchart LR",
+            "format": "mermaid",
+            "source_sha256": "95aa7ea5711d877153c7e89d7232e80a4caa18997b32abbae78bcc11c8b529e3",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.png",
+              "pixels": [
+                1600,
+                424
+              ]
+            }
+          },
+          {
+            "block": 2,
+            "type": "stateDiagram-v2",
+            "format": "mermaid",
+            "source_sha256": "ee53da7f59c78c4ac0d2e221876db925609bfc40c58a8e6cf18c44a5d032ed98",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-2.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-2.png",
+              "pixels": [
+                1289,
+                1600
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage0-1.png",
+          "stage0-2.png"
+        ],
+        "source_changed_after_feedback": true
+      },
+      {
+        "stage": "stage1",
+        "render": [
+          {
+            "block": 1,
+            "type": "flowchart LR",
+            "format": "mermaid",
+            "source_sha256": "64bc5bdf76ddee46b5fca47711462ebcb3200e7342cce58709f6fb043c29829c",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.png",
+              "pixels": [
+                1600,
+                415
+              ]
+            }
+          },
+          {
+            "block": 2,
+            "type": "stateDiagram-v2",
+            "format": "mermaid",
+            "source_sha256": "557d9932c01225db06278adcdbeec8a87b63994029f913e43a65371b15586065",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-2.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-2.png",
+              "pixels": [
+                1600,
+                189
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage1-1.png",
+          "stage1-2.png"
+        ],
+        "source_changed_after_feedback": false
+      }
+    ],
+    "final_source_changed": false,
+    "final_render": [
+      {
+        "block": 1,
+        "type": "flowchart LR",
+        "format": "mermaid",
+        "source_sha256": "64bc5bdf76ddee46b5fca47711462ebcb3200e7342cce58709f6fb043c29829c",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-1.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-1.png",
+          "pixels": [
+            1600,
+            415
+          ]
+        }
+      },
+      {
+        "block": 2,
+        "type": "stateDiagram-v2",
+        "format": "mermaid",
+        "source_sha256": "557d9932c01225db06278adcdbeec8a87b63994029f913e43a65371b15586065",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-2.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-2.png",
+          "pixels": [
+            1600,
+            189
+          ]
+        }
+      }
+    ],
+    "image_id": "sha256:333c1453624a56948e5d1c30354431f8623333c504f9fe0861c00fa37f5ff798"
+  },
+  {
+    "condition": "v042",
+    "case": "01-mixed",
+    "status": "completed",
+    "thread_id": "01a12399-e42e-7782-9756-a569ce053b53",
+    "model_context": [
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      }
+    ],
+    "draft_sha256": "2310be790da4a712c79ba43743587a9794af1388c077e08d5ed88f92c31171b5",
+    "final_sha256": "41d64769b1403f9f567be6a1c6efba93ef827dce12c39ef20a0690f47b35424a",
+    "stages": [
+      {
+        "stage": "stage0",
+        "render": [
+          {
+            "block": 1,
+            "type": "flowchart LR",
+            "format": "mermaid",
+            "source_sha256": "10d3d23d8ded8204e4ce2ed6068ff6c3e0a391f9f5972c45c834792f963d83d4",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.png",
+              "pixels": [
+                1600,
+                343
+              ]
+            }
+          },
+          {
+            "block": 2,
+            "type": "flowchart TB",
+            "format": "mermaid",
+            "source_sha256": "46ffc6b1bc97e04cb153544b84261b51dcef374ebdd05e44036b5cb16453efe1",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-2.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-2.png",
+              "pixels": [
+                1237,
+                1600
+              ]
+            }
+          },
+          {
+            "block": 3,
+            "type": "sequenceDiagram",
+            "format": "mermaid",
+            "source_sha256": "9d594f39205c10e33f47e0484200be01dc9c66756b9e4e108fc7363ea1595875",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-3.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-3.png",
+              "pixels": [
+                1417,
+                1600
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage0-1.png",
+          "stage0-2.png",
+          "stage0-3.png"
+        ],
+        "source_changed_after_feedback": true
+      },
+      {
+        "stage": "stage1",
+        "render": [
+          {
+            "block": 1,
+            "type": "flowchart LR",
+            "format": "mermaid",
+            "source_sha256": "8cde0e8b39c4d6d61b7303f064e6bf52bd573ccd575fb2c5e88d093a327b1da2",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.png",
+              "pixels": [
+                1600,
+                443
+              ]
+            }
+          },
+          {
+            "block": 2,
+            "type": "flowchart LR",
+            "format": "mermaid",
+            "source_sha256": "157153b7c7f392fb2540c1375a03687ecf345a6c1ee8765be6e62717ae2bf044",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-2.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-2.png",
+              "pixels": [
+                1600,
+                207
+              ]
+            }
+          },
+          {
+            "block": 3,
+            "type": "flowchart TB",
+            "format": "mermaid",
+            "source_sha256": "1e0ea6d39aa99d0a08c0c1cb2867734ffb58aa1da20595aa95b1e492a7fcc308",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-3.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-3.png",
+              "pixels": [
+                687,
+                1600
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage1-1.png",
+          "stage1-2.png",
+          "stage1-3.png"
+        ],
+        "source_changed_after_feedback": true
+      }
+    ],
+    "final_source_changed": true,
+    "final_render": [
+      {
+        "block": 1,
+        "type": "flowchart LR",
+        "format": "mermaid",
+        "source_sha256": "8cde0e8b39c4d6d61b7303f064e6bf52bd573ccd575fb2c5e88d093a327b1da2",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-1.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-1.png",
+          "pixels": [
+            1600,
+            443
+          ]
+        }
+      },
+      {
+        "block": 2,
+        "type": "flowchart TB",
+        "format": "mermaid",
+        "source_sha256": "ca14ca2bdd1c5616e214c1018af30a34cf211a1343d4654f6300e7b83b7fa91e",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-2.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-2.png",
+          "pixels": [
+            1031,
+            1600
+          ]
+        }
+      },
+      {
+        "block": 3,
+        "type": "flowchart TB",
+        "format": "mermaid",
+        "source_sha256": "914dad646d0cd993de61220238999a30696ec6efe97b4b600671433681e52b30",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-3.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-3.png",
+          "pixels": [
+            1028,
+            1600
+          ]
+        }
+      }
+    ],
+    "image_id": "sha256:333c1453624a56948e5d1c30354431f8623333c504f9fe0861c00fa37f5ff798"
+  },
+  {
+    "condition": "diagram-design",
+    "case": "01-mixed",
+    "status": "failed",
+    "reason": "[Errno 7] Argument list too long: 'docker'"
+  },
+  {
+    "condition": "diagram-design",
+    "case": "01-mixed",
+    "status": "completed",
+    "thread_id": "01a1239d-3b3e-75d2-8cc1-cd1d4dcf0297",
+    "model_context": [
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      }
+    ],
+    "draft_sha256": "fbb2b4a6de30e99a65cc3f38fe664fbb26c07f005a4ad02a66022e96129b36af",
+    "final_sha256": "ba44de621990f1eb77d95882ea95ff6a18f214dd465e4592b267aad04531870f",
+    "stages": [
+      {
+        "stage": "stage0",
+        "render": [
+          {
+            "block": 1,
+            "format": "html",
+            "type": "HTML with inline SVG",
+            "source_sha256": "235cbb44fa105660975e254605362e0d41a79c122753461bf0fdf483584c2cf7",
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "{\"status\":\"passed\",\"diagrams\":3,\"desktop\":\"stage0-1-desktop.png\",\"mobile\":\"stage0-1-mobile.png\"}\n",
+              "file": "stage0-1-desktop.png"
+            },
+            "browser": {
+              "viewport": [
+                1600,
+                1000
+              ],
+              "javascript": "disabled",
+              "blockedRequests": [],
+              "diagrams": [
+                {
+                  "index": 1,
+                  "file": "stage0-1-svg1.png",
+                  "bounds": {
+                    "x": 160,
+                    "y": 219.578125,
+                    "height": 720,
+                    "width": 1280
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1280 720",
+                    "title": "发布体系的组件协作",
+                    "fonts": [
+                      "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif"
+                    ],
+                    "textCount": 24
+                  }
+                },
+                {
+                  "index": 2,
+                  "file": "stage0-1-svg2.png",
+                  "bounds": {
+                    "x": 160,
+                    "y": 1028.578125,
+                    "height": 720,
+                    "width": 1280
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1280 720",
+                    "title": "发布单状态与异常分支",
+                    "fonts": [
+                      "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif"
+                    ],
+                    "textCount": 29
+                  }
+                },
+                {
+                  "index": 3,
+                  "file": "stage0-1-svg3.png",
+                  "bounds": {
+                    "x": 160,
+                    "y": 948.578125,
+                    "height": 720,
+                    "width": 1280
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1280 720",
+                    "title": "调度器与工作器的批次执行时序",
+                    "fonts": [
+                      "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+                      "\"Geist Mono\", ui-monospace, monospace"
+                    ],
+                    "textCount": 21
+                  }
+                }
+              ],
+              "mobile": {
+                "viewport": 390,
+                "pageWidth": 390,
+                "localScrollers": [
+                  {
+                    "tag": "DIV",
+                    "width": 358,
+                    "scrollWidth": 1280
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 358,
+                    "scrollWidth": 1280
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 358,
+                    "scrollWidth": 1280
+                  }
+                ]
+              }
+            },
+            "svg_images": [
+              "stage0-1-svg1.png",
+              "stage0-1-svg2.png",
+              "stage0-1-svg3.png"
+            ],
+            "mobile_file": "stage0-1-mobile.png",
+            "checks": {
+              "self_check": {
+                "status": "passed",
+                "exit_code": 0,
+                "diagnostic": "OK /work/stage0-1.html\n"
+              },
+              "geometry": {
+                "status": "failed",
+                "exit_code": 1,
+                "diagnostic": "stage0-1.html:157: connector <path d=\"M944 232 H1072\"> runs on top of <path d=\"M864 232 H976\"> (line 89) for about 34px - offset one route by at least 12px so each arrow stays traceable\nstage0-1.html:277: connector <line 40,688 -> 80,688> runs on top of <line 40,688 -> 80,688> (line 129) for about 40px - offset one route by at least 12px so each arrow stays traceable\nstage0-1.html:279: connector <line 280,688 -> 320,688> runs on top of <line 252,688 -> 292,688> (line 131) for about 14px - offset one route by at least 12px so each arrow stays traceable\nSummary: 1 file(s) checked, 3 finding(s).\n"
+              }
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage0-1-svg1.png",
+          "stage0-1-svg2.png",
+          "stage0-1-svg3.png",
+          "stage0-1-desktop.png"
+        ],
+        "source_changed_after_feedback": true
+      },
+      {
+        "stage": "stage1",
+        "render": [
+          {
+            "block": 1,
+            "format": "html",
+            "type": "HTML with inline SVG",
+            "source_sha256": "3bfe6a5fe7843c88605680b1241fa703fe49716998ff6ddebc1b840efbc1e00c",
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "{\"status\":\"passed\",\"diagrams\":3,\"desktop\":\"stage1-1-desktop.png\",\"mobile\":\"stage1-1-mobile.png\"}\n",
+              "file": "stage1-1-desktop.png"
+            },
+            "browser": {
+              "viewport": [
+                1600,
+                1000
+              ],
+              "javascript": "disabled",
+              "blockedRequests": [],
+              "diagrams": [
+                {
+                  "index": 1,
+                  "file": "stage1-1-svg1.png",
+                  "bounds": {
+                    "x": 160,
+                    "y": 219.578125,
+                    "height": 720,
+                    "width": 1280
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1280 720",
+                    "title": "发布体系的组件协作",
+                    "fonts": [
+                      "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif"
+                    ],
+                    "textCount": 24
+                  }
+                },
+                {
+                  "index": 2,
+                  "file": "stage1-1-svg2.png",
+                  "bounds": {
+                    "x": 160,
+                    "y": 1028.578125,
+                    "height": 720,
+                    "width": 1280
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1280 720",
+                    "title": "发布单状态与异常分支",
+                    "fonts": [
+                      "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif"
+                    ],
+                    "textCount": 29
+                  }
+                },
+                {
+                  "index": 3,
+                  "file": "stage1-1-svg3.png",
+                  "bounds": {
+                    "x": 160,
+                    "y": 948.578125,
+                    "height": 720,
+                    "width": 1280
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1280 720",
+                    "title": "调度器与工作器的批次执行时序",
+                    "fonts": [
+                      "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+                      "\"Geist Mono\", ui-monospace, monospace"
+                    ],
+                    "textCount": 21
+                  }
+                }
+              ],
+              "mobile": {
+                "viewport": 390,
+                "pageWidth": 390,
+                "localScrollers": [
+                  {
+                    "tag": "DIV",
+                    "width": 358,
+                    "scrollWidth": 1280
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 358,
+                    "scrollWidth": 1280
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 358,
+                    "scrollWidth": 1280
+                  }
+                ]
+              }
+            },
+            "svg_images": [
+              "stage1-1-svg1.png",
+              "stage1-1-svg2.png",
+              "stage1-1-svg3.png"
+            ],
+            "mobile_file": "stage1-1-mobile.png",
+            "checks": {
+              "self_check": {
+                "status": "passed",
+                "exit_code": 0,
+                "diagnostic": "OK /work/stage1-1.html\n"
+              },
+              "geometry": {
+                "status": "passed",
+                "exit_code": 0,
+                "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+              }
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage1-1-svg1.png",
+          "stage1-1-svg2.png",
+          "stage1-1-svg3.png",
+          "stage1-1-desktop.png"
+        ],
+        "source_changed_after_feedback": false
+      }
+    ],
+    "final_source_changed": false,
+    "final_render": [
+      {
+        "block": 1,
+        "format": "html",
+        "type": "HTML with inline SVG",
+        "source_sha256": "3bfe6a5fe7843c88605680b1241fa703fe49716998ff6ddebc1b840efbc1e00c",
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "{\"status\":\"passed\",\"diagrams\":3,\"desktop\":\"stage1-1-desktop.png\",\"mobile\":\"stage1-1-mobile.png\"}\n",
+          "file": "stage1-1-desktop.png"
+        },
+        "browser": {
+          "viewport": [
+            1600,
+            1000
+          ],
+          "javascript": "disabled",
+          "blockedRequests": [],
+          "diagrams": [
+            {
+              "index": 1,
+              "file": "stage1-1-svg1.png",
+              "bounds": {
+                "x": 160,
+                "y": 219.578125,
+                "height": 720,
+                "width": 1280
+              },
+              "geometry": {
+                "viewBox": "0 0 1280 720",
+                "title": "发布体系的组件协作",
+                "fonts": [
+                  "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif"
+                ],
+                "textCount": 24
+              }
+            },
+            {
+              "index": 2,
+              "file": "stage1-1-svg2.png",
+              "bounds": {
+                "x": 160,
+                "y": 1028.578125,
+                "height": 720,
+                "width": 1280
+              },
+              "geometry": {
+                "viewBox": "0 0 1280 720",
+                "title": "发布单状态与异常分支",
+                "fonts": [
+                  "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif"
+                ],
+                "textCount": 29
+              }
+            },
+            {
+              "index": 3,
+              "file": "stage1-1-svg3.png",
+              "bounds": {
+                "x": 160,
+                "y": 948.578125,
+                "height": 720,
+                "width": 1280
+              },
+              "geometry": {
+                "viewBox": "0 0 1280 720",
+                "title": "调度器与工作器的批次执行时序",
+                "fonts": [
+                  "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+                  "\"Geist Mono\", ui-monospace, monospace"
+                ],
+                "textCount": 21
+              }
+            }
+          ],
+          "mobile": {
+            "viewport": 390,
+            "pageWidth": 390,
+            "localScrollers": [
+              {
+                "tag": "DIV",
+                "width": 358,
+                "scrollWidth": 1280
+              },
+              {
+                "tag": "DIV",
+                "width": 358,
+                "scrollWidth": 1280
+              },
+              {
+                "tag": "DIV",
+                "width": 358,
+                "scrollWidth": 1280
+              }
+            ]
+          }
+        },
+        "svg_images": [
+          "stage1-1-svg1.png",
+          "stage1-1-svg2.png",
+          "stage1-1-svg3.png"
+        ],
+        "mobile_file": "stage1-1-mobile.png",
+        "checks": {
+          "self_check": {
+            "status": "passed",
+            "exit_code": 0,
+            "diagnostic": "OK /work/stage1-1.html\n"
+          },
+          "geometry": {
+            "status": "passed",
+            "exit_code": 0,
+            "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+          }
+        }
+      }
+    ],
+    "image_id": "sha256:333c1453624a56948e5d1c30354431f8623333c504f9fe0861c00fa37f5ff798"
+  },
+  {
+    "condition": "diagram-design",
+    "case": "02-c4",
+    "status": "completed",
+    "thread_id": "01a123a2-8ec5-7060-8c68-757bf0a85f42",
+    "model_context": [
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      }
+    ],
+    "draft_sha256": "70e1251a7ff180caba40fbe1a8b1da2127d15c80c0f27b26b7b2cc91ef6a4fe7",
+    "final_sha256": "d7354fd6570f2613e61c64c208821099b0640a2808a7400a333e7c19c08d5ba0",
+    "stages": [
+      {
+        "stage": "stage0",
+        "render": [
+          {
+            "block": 1,
+            "format": "html",
+            "type": "HTML with inline SVG",
+            "source_sha256": "8094419737c6b2e799b3e8e2ed41620ce14516206c5956440a410682a9758d8e",
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "{\"status\":\"passed\",\"diagrams\":4,\"desktop\":\"stage0-1-desktop.png\",\"mobile\":\"stage0-1-mobile.png\"}\n",
+              "file": "stage0-1-desktop.png"
+            },
+            "browser": {
+              "viewport": [
+                1600,
+                1000
+              ],
+              "javascript": "disabled",
+              "blockedRequests": [],
+              "diagrams": [
+                {
+                  "index": 1,
+                  "file": "stage0-1-svg1.png",
+                  "bounds": {
+                    "x": 160,
+                    "y": 228.59375,
+                    "height": 720,
+                    "width": 1280
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1280 720",
+                    "title": "采购协同系统的组织与系统边界",
+                    "fonts": [
+                      "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif"
+                    ],
+                    "textCount": 20
+                  }
+                },
+                {
+                  "index": 2,
+                  "file": "stage0-1-svg2.png",
+                  "bounds": {
+                    "x": 160,
+                    "y": 1057.390625,
+                    "height": 720,
+                    "width": 1280
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1280 720",
+                    "title": "订单发送与付款申请的容器通信",
+                    "fonts": [
+                      "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+                      "\"Geist Mono\", ui-monospace, monospace"
+                    ],
+                    "textCount": 29
+                  }
+                },
+                {
+                  "index": 3,
+                  "file": "stage0-1-svg3.png",
+                  "bounds": {
+                    "x": 160,
+                    "y": 969.1875,
+                    "height": 720,
+                    "width": 1280
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1280 720",
+                    "title": "交付事件与付款结果的内部处理",
+                    "fonts": [
+                      "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+                      "\"Geist Mono\", ui-monospace, monospace"
+                    ],
+                    "textCount": 27
+                  }
+                },
+                {
+                  "index": 4,
+                  "file": "stage0-1-svg4.png",
+                  "bounds": {
+                    "x": 160,
+                    "y": 1108.984375,
+                    "height": 720,
+                    "width": 1280
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1280 720",
+                    "title": "支持工程师的只读状态查询路径",
+                    "fonts": [
+                      "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+                      "\"Geist Mono\", ui-monospace, monospace"
+                    ],
+                    "textCount": 16
+                  }
+                }
+              ],
+              "mobile": {
+                "viewport": 390,
+                "pageWidth": 390,
+                "localScrollers": [
+                  {
+                    "tag": "DIV",
+                    "width": 310,
+                    "scrollWidth": 1280
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 310,
+                    "scrollWidth": 1280
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 310,
+                    "scrollWidth": 1280
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 310,
+                    "scrollWidth": 1280
+                  }
+                ]
+              }
+            },
+            "svg_images": [
+              "stage0-1-svg1.png",
+              "stage0-1-svg2.png",
+              "stage0-1-svg3.png",
+              "stage0-1-svg4.png"
+            ],
+            "mobile_file": "stage0-1-mobile.png",
+            "checks": {
+              "self_check": {
+                "status": "passed",
+                "exit_code": 0,
+                "diagnostic": "OK /work/stage0-1.html\n"
+              },
+              "geometry": {
+                "status": "passed",
+                "exit_code": 0,
+                "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+              }
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage0-1-svg1.png",
+          "stage0-1-svg2.png",
+          "stage0-1-svg3.png",
+          "stage0-1-svg4.png",
+          "stage0-1-desktop.png"
+        ],
+        "source_changed_after_feedback": true
+      },
+      {
+        "stage": "stage1",
+        "render": [
+          {
+            "block": 1,
+            "format": "html",
+            "type": "HTML with inline SVG",
+            "source_sha256": "c80f881340243195d5fc5915cb54e6dcb083619b69372cfe60d62b24a6cd2015",
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "{\"status\":\"passed\",\"diagrams\":4,\"desktop\":\"stage1-1-desktop.png\",\"mobile\":\"stage1-1-mobile.png\"}\n",
+              "file": "stage1-1-desktop.png"
+            },
+            "browser": {
+              "viewport": [
+                1600,
+                1000
+              ],
+              "javascript": "disabled",
+              "blockedRequests": [],
+              "diagrams": [
+                {
+                  "index": 1,
+                  "file": "stage1-1-svg1.png",
+                  "bounds": {
+                    "x": 160,
+                    "y": 228.59375,
+                    "height": 720,
+                    "width": 1280
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1280 720",
+                    "title": "采购协同系统的组织与系统边界",
+                    "fonts": [
+                      "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif"
+                    ],
+                    "textCount": 20
+                  }
+                },
+                {
+                  "index": 2,
+                  "file": "stage1-1-svg2.png",
+                  "bounds": {
+                    "x": 160,
+                    "y": 1057.390625,
+                    "height": 720,
+                    "width": 1280
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1280 720",
+                    "title": "订单发送与付款申请的容器通信",
+                    "fonts": [
+                      "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+                      "\"Geist Mono\", ui-monospace, monospace"
+                    ],
+                    "textCount": 29
+                  }
+                },
+                {
+                  "index": 3,
+                  "file": "stage1-1-svg3.png",
+                  "bounds": {
+                    "x": 160,
+                    "y": 969.1875,
+                    "height": 720,
+                    "width": 1280
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1280 720",
+                    "title": "交付事件与付款结果的内部处理",
+                    "fonts": [
+                      "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+                      "\"Geist Mono\", ui-monospace, monospace"
+                    ],
+                    "textCount": 27
+                  }
+                },
+                {
+                  "index": 4,
+                  "file": "stage1-1-svg4.png",
+                  "bounds": {
+                    "x": 160,
+                    "y": 1108.984375,
+                    "height": 720,
+                    "width": 1280
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1280 720",
+                    "title": "支持工程师的只读状态查询路径",
+                    "fonts": [
+                      "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+                      "\"Geist Mono\", ui-monospace, monospace"
+                    ],
+                    "textCount": 16
+                  }
+                }
+              ],
+              "mobile": {
+                "viewport": 390,
+                "pageWidth": 390,
+                "localScrollers": [
+                  {
+                    "tag": "DIV",
+                    "width": 310,
+                    "scrollWidth": 1280
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 310,
+                    "scrollWidth": 1280
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 310,
+                    "scrollWidth": 1280
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 310,
+                    "scrollWidth": 1280
+                  }
+                ]
+              }
+            },
+            "svg_images": [
+              "stage1-1-svg1.png",
+              "stage1-1-svg2.png",
+              "stage1-1-svg3.png",
+              "stage1-1-svg4.png"
+            ],
+            "mobile_file": "stage1-1-mobile.png",
+            "checks": {
+              "self_check": {
+                "status": "passed",
+                "exit_code": 0,
+                "diagnostic": "OK /work/stage1-1.html\n"
+              },
+              "geometry": {
+                "status": "passed",
+                "exit_code": 0,
+                "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+              }
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage1-1-svg1.png",
+          "stage1-1-svg2.png",
+          "stage1-1-svg3.png",
+          "stage1-1-svg4.png",
+          "stage1-1-desktop.png"
+        ],
+        "source_changed_after_feedback": false
+      }
+    ],
+    "final_source_changed": false,
+    "final_render": [
+      {
+        "block": 1,
+        "format": "html",
+        "type": "HTML with inline SVG",
+        "source_sha256": "c80f881340243195d5fc5915cb54e6dcb083619b69372cfe60d62b24a6cd2015",
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "{\"status\":\"passed\",\"diagrams\":4,\"desktop\":\"stage1-1-desktop.png\",\"mobile\":\"stage1-1-mobile.png\"}\n",
+          "file": "stage1-1-desktop.png"
+        },
+        "browser": {
+          "viewport": [
+            1600,
+            1000
+          ],
+          "javascript": "disabled",
+          "blockedRequests": [],
+          "diagrams": [
+            {
+              "index": 1,
+              "file": "stage1-1-svg1.png",
+              "bounds": {
+                "x": 160,
+                "y": 228.59375,
+                "height": 720,
+                "width": 1280
+              },
+              "geometry": {
+                "viewBox": "0 0 1280 720",
+                "title": "采购协同系统的组织与系统边界",
+                "fonts": [
+                  "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif"
+                ],
+                "textCount": 20
+              }
+            },
+            {
+              "index": 2,
+              "file": "stage1-1-svg2.png",
+              "bounds": {
+                "x": 160,
+                "y": 1057.390625,
+                "height": 720,
+                "width": 1280
+              },
+              "geometry": {
+                "viewBox": "0 0 1280 720",
+                "title": "订单发送与付款申请的容器通信",
+                "fonts": [
+                  "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+                  "\"Geist Mono\", ui-monospace, monospace"
+                ],
+                "textCount": 29
+              }
+            },
+            {
+              "index": 3,
+              "file": "stage1-1-svg3.png",
+              "bounds": {
+                "x": 160,
+                "y": 969.1875,
+                "height": 720,
+                "width": 1280
+              },
+              "geometry": {
+                "viewBox": "0 0 1280 720",
+                "title": "交付事件与付款结果的内部处理",
+                "fonts": [
+                  "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+                  "\"Geist Mono\", ui-monospace, monospace"
+                ],
+                "textCount": 27
+              }
+            },
+            {
+              "index": 4,
+              "file": "stage1-1-svg4.png",
+              "bounds": {
+                "x": 160,
+                "y": 1108.984375,
+                "height": 720,
+                "width": 1280
+              },
+              "geometry": {
+                "viewBox": "0 0 1280 720",
+                "title": "支持工程师的只读状态查询路径",
+                "fonts": [
+                  "Geist, \"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+                  "\"Geist Mono\", ui-monospace, monospace"
+                ],
+                "textCount": 16
+              }
+            }
+          ],
+          "mobile": {
+            "viewport": 390,
+            "pageWidth": 390,
+            "localScrollers": [
+              {
+                "tag": "DIV",
+                "width": 310,
+                "scrollWidth": 1280
+              },
+              {
+                "tag": "DIV",
+                "width": 310,
+                "scrollWidth": 1280
+              },
+              {
+                "tag": "DIV",
+                "width": 310,
+                "scrollWidth": 1280
+              },
+              {
+                "tag": "DIV",
+                "width": 310,
+                "scrollWidth": 1280
+              }
+            ]
+          }
+        },
+        "svg_images": [
+          "stage1-1-svg1.png",
+          "stage1-1-svg2.png",
+          "stage1-1-svg3.png",
+          "stage1-1-svg4.png"
+        ],
+        "mobile_file": "stage1-1-mobile.png",
+        "checks": {
+          "self_check": {
+            "status": "passed",
+            "exit_code": 0,
+            "diagnostic": "OK /work/stage1-1.html\n"
+          },
+          "geometry": {
+            "status": "passed",
+            "exit_code": 0,
+            "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+          }
+        }
+      }
+    ],
+    "image_id": "sha256:333c1453624a56948e5d1c30354431f8623333c504f9fe0861c00fa37f5ff798"
+  },
+  {
+    "condition": "v042",
+    "case": "02-c4",
+    "status": "completed",
+    "thread_id": "01a123a8-96c9-7e73-8d82-3d9de4acd1b1",
+    "model_context": [
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      }
+    ],
+    "draft_sha256": "a0da1170b789a071b92fb4c4123f1509a77922b792a7526744aa85759f824573",
+    "final_sha256": "a912017a278de686e894c8b1ac5dff008179304a4142fb29e0e7d083e08610f0",
+    "stages": [
+      {
+        "stage": "stage0",
+        "render": [
+          {
+            "block": 1,
+            "format": "html",
+            "type": "HTML with inline SVG",
+            "source_sha256": "19384b2409b6412f1e090e95ac352c0d2c279c844397db90ccdf0da822262645",
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "{\"status\":\"passed\",\"diagrams\":3,\"desktop\":\"stage0-1-desktop.png\",\"mobile\":\"stage0-1-mobile.png\"}\n",
+              "file": "stage0-1-desktop.png"
+            },
+            "browser": {
+              "viewport": [
+                1600,
+                1000
+              ],
+              "javascript": "disabled",
+              "blockedRequests": [],
+              "diagrams": [
+                {
+                  "index": 1,
+                  "file": "stage0-1-svg1.png",
+                  "bounds": {
+                    "x": 217,
+                    "y": 241.375,
+                    "height": 388.65625,
+                    "width": 1166
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1200 400",
+                    "title": "采购协同系统的系统上下文",
+                    "fonts": [
+                      "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", \"PingFang SC\", sans-serif"
+                    ],
+                    "textCount": 20
+                  }
+                },
+                {
+                  "index": 2,
+                  "file": "stage0-1-svg2.png",
+                  "bounds": {
+                    "x": 217,
+                    "y": 787.21875,
+                    "height": 971.65625,
+                    "width": 1166
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1200 1000",
+                    "title": "采购协同系统交易容器视图",
+                    "fonts": [
+                      "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", \"PingFang SC\", sans-serif"
+                    ],
+                    "textCount": 45
+                  }
+                },
+                {
+                  "index": 3,
+                  "file": "stage0-1-svg3.png",
+                  "bounds": {
+                    "x": 217,
+                    "y": 1204.859375,
+                    "height": 310.921875,
+                    "width": 1166
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1200 320",
+                    "title": "支持工程师只读查询路径",
+                    "fonts": [
+                      "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", \"PingFang SC\", sans-serif"
+                    ],
+                    "textCount": 15
+                  }
+                }
+              ],
+              "mobile": {
+                "viewport": 390,
+                "pageWidth": 390,
+                "localScrollers": [
+                  {
+                    "tag": "DIV",
+                    "width": 324,
+                    "scrollWidth": 1000
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 324,
+                    "scrollWidth": 1000
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 324,
+                    "scrollWidth": 1000
+                  }
+                ]
+              }
+            },
+            "svg_images": [
+              "stage0-1-svg1.png",
+              "stage0-1-svg2.png",
+              "stage0-1-svg3.png"
+            ],
+            "mobile_file": "stage0-1-mobile.png",
+            "checks": {
+              "self_check": {
+                "status": "passed",
+                "exit_code": 0,
+                "diagnostic": "OK /work/stage0-1.html\n"
+              },
+              "geometry": {
+                "status": "passed",
+                "exit_code": 0,
+                "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+              }
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage0-1-svg1.png",
+          "stage0-1-svg2.png",
+          "stage0-1-svg3.png",
+          "stage0-1-desktop.png"
+        ],
+        "source_changed_after_feedback": true
+      },
+      {
+        "stage": "stage1",
+        "render": [
+          {
+            "block": 1,
+            "format": "html",
+            "type": "HTML with inline SVG",
+            "source_sha256": "dea1f65fec90d5eddd9c45746dd179bb1752a5fcb7ea0281e2cf41bc592a17b8",
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "{\"status\":\"passed\",\"diagrams\":3,\"desktop\":\"stage1-1-desktop.png\",\"mobile\":\"stage1-1-mobile.png\"}\n",
+              "file": "stage1-1-desktop.png"
+            },
+            "browser": {
+              "viewport": [
+                1600,
+                1000
+              ],
+              "javascript": "disabled",
+              "blockedRequests": [],
+              "diagrams": [
+                {
+                  "index": 1,
+                  "file": "stage1-1-svg1.png",
+                  "bounds": {
+                    "x": 217,
+                    "y": 241.375,
+                    "height": 388.65625,
+                    "width": 1166
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1200 400",
+                    "title": "采购协同系统的系统上下文",
+                    "fonts": [
+                      "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", \"PingFang SC\", sans-serif"
+                    ],
+                    "textCount": 20
+                  }
+                },
+                {
+                  "index": 2,
+                  "file": "stage1-1-svg2.png",
+                  "bounds": {
+                    "x": 217,
+                    "y": 814.40625,
+                    "height": 971.65625,
+                    "width": 1166
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1200 1000",
+                    "title": "采购协同系统交易容器视图",
+                    "fonts": [
+                      "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", \"PingFang SC\", sans-serif"
+                    ],
+                    "textCount": 46
+                  }
+                },
+                {
+                  "index": 3,
+                  "file": "stage1-1-svg3.png",
+                  "bounds": {
+                    "x": 217,
+                    "y": 1205.046875,
+                    "height": 310.921875,
+                    "width": 1166
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1200 320",
+                    "title": "支持工程师只读查询路径",
+                    "fonts": [
+                      "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", \"PingFang SC\", sans-serif"
+                    ],
+                    "textCount": 15
+                  }
+                }
+              ],
+              "mobile": {
+                "viewport": 390,
+                "pageWidth": 390,
+                "localScrollers": [
+                  {
+                    "tag": "DIV",
+                    "width": 324,
+                    "scrollWidth": 1000
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 324,
+                    "scrollWidth": 1000
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 324,
+                    "scrollWidth": 1000
+                  }
+                ]
+              }
+            },
+            "svg_images": [
+              "stage1-1-svg1.png",
+              "stage1-1-svg2.png",
+              "stage1-1-svg3.png"
+            ],
+            "mobile_file": "stage1-1-mobile.png",
+            "checks": {
+              "self_check": {
+                "status": "passed",
+                "exit_code": 0,
+                "diagnostic": "OK /work/stage1-1.html\n"
+              },
+              "geometry": {
+                "status": "passed",
+                "exit_code": 0,
+                "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+              }
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage1-1-svg1.png",
+          "stage1-1-svg2.png",
+          "stage1-1-svg3.png",
+          "stage1-1-desktop.png"
+        ],
+        "source_changed_after_feedback": true
+      }
+    ],
+    "final_source_changed": true,
+    "final_render": [
+      {
+        "block": 1,
+        "format": "html",
+        "type": "HTML with inline SVG",
+        "source_sha256": "d6e1b366057fbb6185250b718d5ea9b6f8a07ba971e85e2ba381d7f6a4da58a5",
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "{\"status\":\"passed\",\"diagrams\":3,\"desktop\":\"stage2-1-desktop.png\",\"mobile\":\"stage2-1-mobile.png\"}\n",
+          "file": "stage2-1-desktop.png"
+        },
+        "browser": {
+          "viewport": [
+            1600,
+            1000
+          ],
+          "javascript": "disabled",
+          "blockedRequests": [],
+          "diagrams": [
+            {
+              "index": 1,
+              "file": "stage2-1-svg1.png",
+              "bounds": {
+                "x": 217,
+                "y": 241.375,
+                "height": 388.65625,
+                "width": 1166
+              },
+              "geometry": {
+                "viewBox": "0 0 1200 400",
+                "title": "采购协同系统的系统上下文",
+                "fonts": [
+                  "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", \"PingFang SC\", sans-serif"
+                ],
+                "textCount": 20
+              }
+            },
+            {
+              "index": 2,
+              "file": "stage2-1-svg2.png",
+              "bounds": {
+                "x": 217,
+                "y": 814.40625,
+                "height": 971.65625,
+                "width": 1166
+              },
+              "geometry": {
+                "viewBox": "0 0 1200 1000",
+                "title": "采购协同系统交易容器视图",
+                "fonts": [
+                  "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", \"PingFang SC\", sans-serif"
+                ],
+                "textCount": 46
+              }
+            },
+            {
+              "index": 3,
+              "file": "stage2-1-svg3.png",
+              "bounds": {
+                "x": 217,
+                "y": 1205.046875,
+                "height": 310.921875,
+                "width": 1166
+              },
+              "geometry": {
+                "viewBox": "0 0 1200 320",
+                "title": "支持工程师只读查询路径",
+                "fonts": [
+                  "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", \"PingFang SC\", sans-serif"
+                ],
+                "textCount": 15
+              }
+            }
+          ],
+          "mobile": {
+            "viewport": 390,
+            "pageWidth": 390,
+            "localScrollers": [
+              {
+                "tag": "DIV",
+                "width": 324,
+                "scrollWidth": 1000
+              },
+              {
+                "tag": "DIV",
+                "width": 324,
+                "scrollWidth": 1000
+              },
+              {
+                "tag": "DIV",
+                "width": 324,
+                "scrollWidth": 1000
+              }
+            ]
+          }
+        },
+        "svg_images": [
+          "stage2-1-svg1.png",
+          "stage2-1-svg2.png",
+          "stage2-1-svg3.png"
+        ],
+        "mobile_file": "stage2-1-mobile.png",
+        "checks": {
+          "self_check": {
+            "status": "passed",
+            "exit_code": 0,
+            "diagnostic": "OK /work/stage2-1.html\n"
+          },
+          "geometry": {
+            "status": "passed",
+            "exit_code": 0,
+            "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+          }
+        }
+      }
+    ],
+    "image_id": "sha256:333c1453624a56948e5d1c30354431f8623333c504f9fe0861c00fa37f5ff798"
+  },
+  {
+    "condition": "show-me",
+    "case": "02-c4",
+    "status": "completed",
+    "thread_id": "01a123ad-2da5-7b51-a347-64a626db2b44",
+    "model_context": [
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      }
+    ],
+    "draft_sha256": "2658df64bcf2b46ce7337d9a5eaf23be953c7154f3423b9b5230be8d9ba11cfc",
+    "final_sha256": "2153e3ee0b1dde8c8f4bb4e1ee2dc59b00e40d6796580c2fc2546de8b28171fe",
+    "stages": [
+      {
+        "stage": "stage0",
+        "render": [
+          {
+            "block": 1,
+            "type": "flowchart LR",
+            "format": "mermaid",
+            "source_sha256": "925d0a1130ea03da1653c1bebf069e62a4a65075285b74798716aa0e46be80df",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.png",
+              "pixels": [
+                1600,
+                470
+              ]
+            }
+          },
+          {
+            "block": 2,
+            "type": "flowchart LR",
+            "format": "mermaid",
+            "source_sha256": "eac4e22bc73ea405b709e0999b41514beb861eab1c0bfe5fba08be7c0af82527",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-2.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-2.png",
+              "pixels": [
+                1600,
+                471
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage0-1.png",
+          "stage0-2.png"
+        ],
+        "source_changed_after_feedback": true
+      },
+      {
+        "stage": "stage1",
+        "render": [
+          {
+            "block": 1,
+            "type": "flowchart TB",
+            "format": "mermaid",
+            "source_sha256": "927cd8a9fa0a70104d05325506bd588dd4dcd76dadb7b4ed20988cd150b06f87",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.png",
+              "pixels": [
+                1196,
+                1600
+              ]
+            }
+          },
+          {
+            "block": 2,
+            "type": "flowchart TB",
+            "format": "mermaid",
+            "source_sha256": "3eae204899300912b23c258a5422ed5ece988d154fbe4de6bc37e172b92de0c8",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-2.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-2.png",
+              "pixels": [
+                851,
+                1600
+              ]
+            }
+          },
+          {
+            "block": 3,
+            "type": "flowchart TB",
+            "format": "mermaid",
+            "source_sha256": "8e7ceb60963c4532472965531394a9e0afd55ce35d01cc5107a084991efedeed",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-3.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-3.png",
+              "pixels": [
+                610,
+                1600
+              ]
+            }
+          },
+          {
+            "block": 4,
+            "type": "flowchart TB",
+            "format": "mermaid",
+            "source_sha256": "c59a3d21aeb1f036294f02126a8cfbb150af044ef7bed9beb9bc9d9d7e43b1f8",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-4.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-4.png",
+              "pixels": [
+                876,
+                1600
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage1-1.png",
+          "stage1-2.png",
+          "stage1-3.png",
+          "stage1-4.png"
+        ],
+        "source_changed_after_feedback": false
+      }
+    ],
+    "final_source_changed": false,
+    "final_render": [
+      {
+        "block": 1,
+        "type": "flowchart TB",
+        "format": "mermaid",
+        "source_sha256": "927cd8a9fa0a70104d05325506bd588dd4dcd76dadb7b4ed20988cd150b06f87",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-1.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-1.png",
+          "pixels": [
+            1196,
+            1600
+          ]
+        }
+      },
+      {
+        "block": 2,
+        "type": "flowchart TB",
+        "format": "mermaid",
+        "source_sha256": "3eae204899300912b23c258a5422ed5ece988d154fbe4de6bc37e172b92de0c8",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-2.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-2.png",
+          "pixels": [
+            851,
+            1600
+          ]
+        }
+      },
+      {
+        "block": 3,
+        "type": "flowchart TB",
+        "format": "mermaid",
+        "source_sha256": "8e7ceb60963c4532472965531394a9e0afd55ce35d01cc5107a084991efedeed",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-3.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-3.png",
+          "pixels": [
+            610,
+            1600
+          ]
+        }
+      },
+      {
+        "block": 4,
+        "type": "flowchart TB",
+        "format": "mermaid",
+        "source_sha256": "c59a3d21aeb1f036294f02126a8cfbb150af044ef7bed9beb9bc9d9d7e43b1f8",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-4.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-4.png",
+          "pixels": [
+            876,
+            1600
+          ]
+        }
+      }
+    ],
+    "image_id": "sha256:333c1453624a56948e5d1c30354431f8623333c504f9fe0861c00fa37f5ff798"
+  }
+]
