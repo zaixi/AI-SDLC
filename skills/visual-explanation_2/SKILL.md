@@ -1,143 +1,148 @@
 ---
 name: visual-explanation
-description: 用合适的视图帮助理解当前话题。用户要求画图、展示结构或变化，或关系、状态、过程、数据比较需要可视化时使用；就地展示，复杂内容按需展开。单一事实、纯命令执行和明确只要文字时不触发。
+description: 将当前内容转换为清楚、忠实、最小而充分的视觉表达，用图、树、时序、状态、伪代码、diff 或 HTML 帮助理解概念、关系、过程、结构和变化。用户要求画图或当前任务需要视觉解释时使用，领域不限。不用于一句话能说明的事实、纯命令执行或用户明确只要文字的情况。
+license: MIT
+metadata:
+  version: "0.4.2"
+  upstream: "humanlayer/skills show-me @ ca7c8088db69e315a8b2deea43820270457f8f3c"
 ---
 
-# 视觉解释
+# 用视觉表达帮助理解
 
-帮助读者理解当前话题。上下文足够时直接展示，省去选图前言，短说明紧邻视图。选能把关键点讲清的最小表达，复杂内容保留必要深度。
+按 show-me 原文选择和组织视图，只表达当前内容，不承担内容研究或领域决策。以下仅补充上游未覆盖的要求；冲突时以补充为准。
 
-## 默认：就地展示
+## 本地补充
 
-利用已有材料，只展示与当前问题有关的调用、文件、状态、参数和边界。只有歧义会改变含义时才追问。下面是表达示例，名称和行为按实际材料替换；每次选择有用的形式即可。
+- **忠实原意。** 保留给定的主体、关系、条件以及假设、建议和未知；不为图完整补造事实，不把不确定内容画成确定结论。
+- **验证与交付。** 环境支持且任务允许时，渲染 Mermaid 或 HTML，检查实际画面中文字是否可读、标签是否重叠、连线是否遮挡关键内容。发现明显问题，调整布局或拆分视图，保留原有主体、关系和条件，再渲染检查。区分语法检查与实际渲染，无法渲染或仍有未解决的显示问题时如实说明；普通文本、伪代码和 diff 无需渲染提示。按调用者要求展示或保存可编辑源。上游打开 HTML 的步骤仅在环境支持且任务允许时执行，否则提供文件位置与查看方式。
 
-**逻辑或算法：伪代码。** 面向开发者可直接展示判断与动作；分支本身是重点或读者不熟悉代码时，用决策图。
+## 主动使用 mermaid-diagrams
 
-```text
-on(load)
-  if cached item is still valid
-    return cached item
-  fetch current item
-  update cache
-  return current item
-```
+选用 Mermaid 表达时，若环境提供可由模型使用的 mermaid-diagrams，主动加载其指引或通过支持的接口调用，按图种读取所需参考，不等待用户另行触发。用它补充 show-me 的图种与语法细节，保留当前内容和关键条件，不扩展原任务。
 
-**运行时控制流：调用树。** 缩进表达调用归属，同层顺序按材料表达。
+若未安装或仅允许用户手动调用，直接生成 Mermaid，不要求用户再调用另一个入口，也不声称已使用它。该 Skill 是表达指引，不默认提供解析器或渲染器；实际检查使用环境中可用的工具。
 
-```text
-publish
-  prepareDocument
-    validate
-    render
-  saveDocument
-```
+## show-me 上游正文（完整保留）
 
-**UI 结构：组件树。** 标出与问题有关的状态、props 和模块边界。
+Help the user understand the current topic of conversation visually. Skip the preamble and keep prose brief. Pick the smallest view that makes the key point clear.
+
+- Show logic or an algorithm as pseudocode:
 
 ```text
-<EditorPage> (src/EditorPage.tsx)
-  useDraft()                  # 状态归页面所有
-  <Editor value={draft} />
-  <SaveButton onSave={save} /> (packages/ui)
+on(save)
+  if content is unchanged
+    return cached result
+  write new content
+  return fresh result
 ```
 
-**文件职责或整体重构：浅层目录树。** 在路径旁说明职责。
+- Show runtime control flow as a call tree:
+
+```text
+submitForm
+  createSession
+    persistPrompt
+    launchAgent
+  navigateToSession
+```
+
+- Show UI structure as a component tree, including state and module boundaries that matter:
+
+```tsx
+<SessionPage> (apps/example/src/routes/session.tsx)
+  useSessionEvents()
+  <SessionToolbar>
+    <RunSkillButton> (packages/ui)
+```
+
+- Show file responsibility or a broad refactor as a shallow file tree:
 
 ```text
 src/
-├── api/       # 接收请求
-├── jobs/      # 管理任务状态
-└── storage/   # 读写任务记录
+├── commands/       # parses user actions
+├── sessions/       # owns session state
+└── transport/      # sends API requests
 ```
 
-**组件交互、控制流或数据流：关系图或 Mermaid。** 跨参与者的先后顺序重要时用时序图，例如：
+- Show component interaction, control flow, or data flow with Mermaid:
 
 ```mermaid
 sequenceDiagram
-    participant UI as 页面
-    participant API
-    participant DB as 数据库
-    UI->>API: 查询订单
-    API->>DB: 读取订单
-    DB-->>API: 订单记录
-    API-->>UI: 查询结果
+    participant User
+    participant UI
+    participant Daemon
+    User->>UI: choose command
+    UI->>Daemon: send expanded prompt
+    Daemon-->>UI: stream result
 ```
 
-**已有上下文中的变化：diff。** diff 可表达代码，也可表达组件、目录、调用树和状态逻辑；沿用原有结构，使新增、删除和移动的位置清楚。
+- Use `diff` when the point is what changes and the surrounding shape already exists. Match the diff shape to the topic.
 
-组件变化：
+For a component change:
 
 ```diff
- <EditorPage>
-   <Editor />
-+  <SaveButton />
+ <SessionPage>
+   useSessionEvents()
+   <SessionToolbar>
++    <RunSkillButton />
+   <SessionTimeline>
++    <SkillResultCard />
 ```
 
-文件布局变化：
+For a file-layout change:
 
 ```diff
  src/
--└── storage.ts
-+└── storage/
-+    ├── reader.ts
-+    └── writer.ts
+ ├── commands/
++│   └── show-me.ts       # expands the slash command
+ ├── sessions/
+-└── transport.ts
++└── transport/
++    ├── client.ts
++    └── stream.ts
 ```
 
-调用顺序变化：
+For a call-tree or call-stack change:
 
 ```diff
- submit
-   validate
-+  normalize
-   send
+ submitForm
+   createSession
+     persistPrompt
++    expandSkillMention
+     launchAgent
+-  navigateToSession
++  navigateToSession
++    subscribeToEvents
 ```
 
-状态或控制逻辑变化：
+For a state or control-flow change:
 
 ```diff
- on(cancel)
--  remove job
-+  if job is running
-+    request stop
-+  else
-+    remove job
+ on(save)
+-  write content
++  if content is unchanged
++    return cached result
++  write new content
++  invalidate cache
 ```
 
-**需要完整目标时：给完整块。** 大部分内容是新的、省略会隐藏归属或顺序，或用户需要可复制的结果时，给完整代码/结构块。结构示意与可运行代码明确区分。例如完整函数：
+- Show the whole block when most of it is new, when omitted context would hide ownership or order, or when the user needs a copyable target shape:
 
-```python
-def display_name(name: str) -> str:
-    return name.strip() or "未命名"
+```ts
+function expandSkill(command: string): string {
+  const skillName = command.slice(1)
+  return `use the ${skillName} skill`
+}
 ```
 
-**一个视图已回答问题就交付。** 文本树、伪代码、diff、代码块和表格可以独立完成解释；它们只需核对含义，无需加载渲染或工具指引，也无需报告渲染状态。
+- For a visual UI, layout, state comparison, or concept too dense for Mermaid, write one focused HTML file — a diagram, an infographic, or a short slide deck, whichever fits the point. Match the product's colors, type, spacing, and components; use real labels and data; support desktop and mobile. Then open it for the user:
 
-## 按需展开，并保留含义
+```
+Bash(open path/to/show-me-{description}.html)
+```
 
-- 根据问题补充表达：对象的状态与转换用状态图，实体及基数用概念关系图或 ER 图，属性或权限比较用表格，数值与时间用对应的数据图。局部 diff 难以表达的关系重组可用前后图。
-- 以读者的问题决定深度。只有不同问题、不同层级或难以在一处读清的细节，才需要额外视图；复杂内容可先给总览，再展开相关部分。每个视图承担明确用途，同一对象跨图使用一致名称。
-- 精简先去掉装饰、重复和无关细节；保留决定结论的主体、关系、条件、数量和边界。用实际字号、追线难度和阅读路径判断是否拆图，而非固定节点或面板数。
-- 已知事实、提议和未知应可区分。图中的调用、先后、因果和实现位置都需要材料支持；材料未给出的内容保持未知。
-- 关键约束放在读者作判断的位置：转换线上、节点旁或对应表格单元。总览可以省略细节，但应指向承载这些细节的视图或说明。
+### guidance
 
-当分支条件、状态/权限、重复事件、消息顺序与角色交接、架构边界、实体基数或数据刻度决定解释是否正确时，读取 [语义要点](references/semantics.md) 的对应部分。其余任务直接核对当前材料。
+Place each visual next to the short text it supports. Keep only the calls, files, props, states, and boundaries needed to answer the user's current question or the options to resolve the current discussion point.
 
-## 再选载体与生成方式
-
-尊重用户指定的格式和交付位置。表达形式与文件格式分开选择：同一状态图既可嵌入文档，也可放进 HTML。
-
-- 默认在当前对话或目标文档内展示。常见关系、状态和时序可用 Mermaid；需要语法指导时才查对应资料。
-- 视觉 UI、布局、状态对比，或 Mermaid 难以读清且需要自由排版的概念，可直接做一个聚焦问题的 HTML 文件；按用途选图解、信息图或短幻灯片。独立图也可用 SVG。页面组织、交互、分享或导出是选择载体的依据，复杂程度本身不决定格式。
-- 页面样式以用户明确要求为先，其次沿用已有产品的颜色、字体、间距和组件；缺少这些依据时使用中性样式与系统字体。使用真实标签与数据，兼顾桌面和窄屏。交互应帮助比较、追踪或探索，静态总览应能表达核心结论。
-- 重复布局可交给已有的渲染器，模型负责内容和关系。先确认组件能忠实表达所需语义；不适合时换一种实现，保留必要条件和数据尺度。
-- 精确数据分析或出版图表优先用标准绘图库，保留数据与生成源。
-
-已选择 HTML 且需要现成排版，或需要专用 skill 补足语法与布局时，读取 [能力接入](references/integrations.md)，按其中的默认后端与适用边界执行。其余任务直接完成。
-
-## 核对与交付
-
-对照材料检查决定结论的事实与关系。实际图形按 [渲染与交付](references/rendering.md) 的对应部分检查画面；语法通过只能证明可解析。修复影响理解的问题后查看最终版本，画面已清楚即可交付。
-
-行内视图直接展示，文件产物提供可访问链接与可编辑源。宿主支持且符合用户偏好时，用其预览或打开能力展示 HTML；无图形界面时交付链接。说明只补充读者理解或使用结果所需的信息；无法检查实际图形时简短说明这一限制。
-
-以后设计实测时可参考 [行为验收场景](references/evaluation.md)；普通解释任务无需加载。
+You may use one of these, you may use several, it is unlikely you will use all of them. Use your judgement and don't overwhelm the user.
