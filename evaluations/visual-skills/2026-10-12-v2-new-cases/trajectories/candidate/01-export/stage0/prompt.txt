@@ -1,0 +1,172 @@
+Apply the primary skill to the task below. Choose the native output format that fits the skill and task: Markdown with editable Mermaid blocks, or one complete static self-contained HTML document with inline SVG in a fenced html block. Include brief necessary prose/tables. All output must work offline with system font fallbacks, no external resources or animation. A rendering service is available through this test controller: first return the current draft; actual images of that draft will then be appended in this same conversation. Further rendered feedback will be supplied if you change the draft. No optional extension skills (mermaid-diagrams, diagram-design or answer-me-with-html/am) are installed. Use the prescribed fallback without installing tools. Use neutral colors and system fonts; choose canvas dimensions for the content. No client branding is requested. State the chosen views and size briefly, then generate this draft without waiting for another reply. This is one authorized comparison task, not an installation or client onboarding. Do not invoke tools, install packages, fetch resources, delegate, save profiles or read credentials. Do not discuss test/skill names. Do not redesign the supplied system. Reply in Chinese.
+<primary_skill>
+---
+name: visual-explanation
+description: 用合适的视图帮助理解当前话题。用户要求画图、展示结构或变化，或关系、状态、过程、数据比较需要可视化时使用；就地展示，复杂内容按需展开。单一事实、纯命令执行和明确只要文字时不触发。
+---
+
+Help the user understand the current topic of conversation visually. Skip the preamble and keep prose brief. Pick the smallest view that makes the key point clear.
+
+- Compare a few values or options in a compact table. Use a chart when the point depends on a trend, distribution, or spatial relationship.
+
+- Show logic or an algorithm as pseudocode:
+
+```text
+on(save)
+  if content is unchanged
+    return cached result
+  write new content
+  return fresh result
+```
+
+- Show runtime control flow as a call tree:
+
+```text
+submitForm
+  createSession
+    persistPrompt
+    launchAgent
+  navigateToSession
+```
+
+- Show UI structure as a component tree, including state and module boundaries that matter:
+
+```tsx
+<SessionPage> (apps/example/src/routes/session.tsx)
+  useSessionEvents()
+  <SessionToolbar>
+    <RunSkillButton> (packages/ui)
+```
+
+- Show file responsibility or a broad refactor as a shallow file tree:
+
+```text
+src/
+├── commands/       # parses user actions
+├── sessions/       # owns session state
+└── transport/      # sends API requests
+```
+
+- Show component interaction, control flow, or data flow with Mermaid. When specific syntax or configuration needs help, consult [mermaid-diagrams](https://github.com/softaworks/agent-toolkit/tree/HEAD/skills/mermaid-diagrams) or the host renderer's documentation:
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant UI
+    participant Daemon
+    User->>UI: choose command
+    UI->>Daemon: send expanded prompt
+    Daemon-->>UI: stream result
+```
+
+- Use `diff` when the point is what changes and the surrounding shape already exists. Match the diff shape to the topic; mark only actual changes and keep unchanged context neutral.
+
+For a component change:
+
+```diff
+ <SessionPage>
+   useSessionEvents()
+   <SessionToolbar>
++    <RunSkillButton />
+   <SessionTimeline>
++    <SkillResultCard />
+```
+
+For a file-layout change:
+
+```diff
+ src/
+ ├── commands/
++│   └── show-me.ts       # expands the slash command
+ ├── sessions/
+-└── transport.ts
++└── transport/
++    ├── client.ts
++    └── stream.ts
+```
+
+For a call-tree or call-stack change:
+
+```diff
+ submitForm
+   createSession
+     persistPrompt
++    expandSkillMention
+     launchAgent
+-  navigateToSession
++  navigateToSession
++    subscribeToEvents
+```
+
+For a state or control-flow change:
+
+```diff
+ on(save)
+-  write content
++  if content is unchanged
++    return cached result
++  write new content
++  invalidate cache
+```
+
+- Show the whole block when most of it is new, when omitted context would hide ownership or order, or when the user needs a copyable target shape:
+
+```ts
+function expandSkill(command: string): string {
+  const skillName = command.slice(1)
+  return `use the ${skillName} skill`
+}
+```
+
+- Use HTML when requested, or when understanding needs visual layout, interaction, or coordinated views that an inline table, tree, or Mermaid diagram cannot provide. Write one focused HTML file — a diagram, an infographic, or a short slide deck, whichever fits the point. Match the product's colors, type, spacing, and components; use real labels and data; support desktop and mobile. Preview or open it with the host's available tools when supported and consistent with the user's preferences; otherwise provide a link.
+
+  Once HTML is chosen, prefer [answer-me-with-html](https://github.com/QingYunA/answer-me-with-html/tree/HEAD/skills/answer-me-with-html). Keep the page focused on the current question; let the content determine the number of panels. If its components cannot express the required layout or interaction, or the tool is unavailable, generate the HTML directly.
+
+### guidance
+
+Place each visual next to the short text it supports. Keep only the calls, files, props, states, and boundaries needed to answer the user's current question or the options to resolve the current discussion point.
+
+Default to one primary view. Add another only when it answers a different question; stop when the current question is answered.
+
+For complex topics, start with an overview of the key boundaries and relationships, then expand the relevant details. Put detail in the view where it is needed rather than fitting every node and connection into the overview.
+
+### extensions
+
+- Put conditions, quantity limits, and direction that affect the answer on the relevant nodes or connections; supporting prose must agree with the graphic. Distinguish facts, proposals, and unknowns. When simplifying conditions, ordering, boundaries, cardinality, or scales could change their meaning, consult the relevant [semantic guidance](references/semantics.md).
+- For precise connector routing, a specific visual style, or diagram import/export, use [diagram-design](https://github.com/cathrynlavery/diagram-design/tree/HEAD/skills/diagram-design) when its workflow fits the task. User-specified tools take priority. For data charts needing exact scales, use a standard plotting library.
+- Respect the requested format and destination; use a form the host can display. At reading size, check that the main graphic is legible, legends match the marks, and key rules are readable with the relationships they constrain. Check interactions, narrow screens, offline use, or exports when required. Provide a viewable artifact and editable source for file deliverables; briefly disclose any rendering or visual checks you could not perform.
+
+These skills are optional. Prefer existing installations; read only the selected skill's `SKILL.md` and relevant references, following its installed commands and runtime requirements. Keep the chosen format, scope, and deliverables; use another implementation if the extension's workflow conflicts. If missing, install only the needed skill when already authorized, respecting the host's rules and user-specified versions and locations; otherwise use available tools. Explain any limitation affecting a user-requested tool.
+
+Based on [show-me](https://github.com/humanlayer/skills/blob/bba9d13ab34f0a87f1cc33df4dd196372393ddfc/plugins/show-me/skills/show-me/SKILL.md). Its [MIT license](LICENSE.show-me) is included.
+
+</primary_skill>
+
+<related_reference name="semantics.md">
+# 语义要点
+
+当简化表达可能改变条件、顺序、边界、关系或尺度时，查阅对应部分。以下要点也适用于伪代码、表格和 HTML；选择工具仍由主文件负责。
+
+## 条件与事件
+
+- 保留“且／或／非”、数量与时间范围，以及规则作用的对象和操作；角色资格不等于具体身份，当前数量不等于历史次数。
+- 区分状态、动作与进度，按已知规则表达终态、默认分支及失败、取消、返回路径。去重保留键、范围与有效时间；忽略重复事件不等于执行失败。
+- 保留影响结论的判断、记录、更新与派发顺序；先后发生、等待完成和并发执行分别表达。角色职责不自动确定校验所在的服务。
+
+## 边界与关系
+
+- 区分组织归属、系统范围和部署边界，以及类型、实例、逻辑模块与运行单元。分组后仍保留与问题有关的实例数量和独立部署关系；调用树中的重复出现不等于多个实例。
+- 调用箭头从发起方指向目标，数据或事件箭头顺着信息方向；用标签或线型区分调用与数据返回，并单独表达同步／异步。读取请求指向数据源，读取结果指向接收方，同图中的约定保持一致。合并连线仍需保留相关关系。
+- 分别核对关系两端的基数与可选性；若图形符号不能准确表达数量范围（如 1..2），在对应连线上标明范围或改用其他表达。概念关系不要求补造字段。多重归属、交叉依赖或循环不应被树形布局隐藏。
+
+## 数据与时间
+
+- 保留原值、单位、类别和时间范围，区分缺失值与零；占比须有明确整体，流量宽度须有数量依据。
+- 比较绝对量的条形使用共同尺度和零基线；各自的占限额比例不能替代绝对量比较。独立尺度、截断轴、对数轴和聚合方式应明确说明，视觉长度与所标刻度相符。
+- 排期只画已知起止与依赖；只有相对顺序时保留相对顺序。
+
+</related_reference>
+
+<task>
+用中文向业务同事和工程师解释一个数据导出任务，优先让人看懂状态、停止边界和分页去重，可以自行拆图，不补设实现。输入事实：任务创建为草稿，提交后为待授权；数据所有者批准才进入可执行，拒绝回草稿。申请人可以同时是数据所有者，但不能授权自己提交的同一任务。仅可执行任务可撤销；一旦执行中不能撤销。执行器只启动可执行任务，先改为执行中，再按顺序发送分页导出请求。每页结果可能重复，已记录的页结果忽略，不重复写入也不推进；首次结果先记录。页成功且仍有下一页时保持执行中并请求下一页，所有页成功后改为完成，任一页失败则改为失败且不再请求后续页，已经导出的页不会自动删除。申请门户把提交、授权、撤销操作发给任务服务；任务服务保存任务。执行器读取任务服务的可执行任务、写回执行状态，并向导出工作器发分页请求；工作器读取数据源并返回页结果给执行器。没有提供授权检查的实现位置、请求标识传递、事务边界、数据库、队列、自动重试、超时及失败后的恢复方案。输出就地可读且保留可编辑 Mermaid；若选择自由排版，可给完整静态离线 HTML/inline SVG。
+</task>

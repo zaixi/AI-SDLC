@@ -1,0 +1,13 @@
+%%{init: {"theme":"base","themeVariables":{"fontFamily":"system-ui, sans-serif","fontSize":"16px","primaryColor":"#f4f4f4","primaryTextColor":"#222","primaryBorderColor":"#666","lineColor":"#555","edgeLabelBackground":"#fff"}}}%%
+flowchart TD
+    R["收到页结果"] --> D{"该页结果<br/>是否已记录？"}
+
+    D -->|是| I["忽略重复结果<br/>不写入、不推进<br/>本次处理结束"]
+    D -->|否| L["先记录首次结果"]
+    L --> OK{"该页是否成功？"}
+
+    OK -->|否| F["改为失败<br/>不再请求后续页"]
+    OK -->|是| NEXT{"仍有下一页？"}
+    NEXT -->|否| C["所有页成功<br/>改为完成"]
+    NEXT -->|是| Q["保持执行中<br/>顺序请求下一页"]
+    Q --> R

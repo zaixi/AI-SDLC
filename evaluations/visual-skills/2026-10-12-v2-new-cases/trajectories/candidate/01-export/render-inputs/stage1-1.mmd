@@ -1,0 +1,13 @@
+flowchart TD
+    A["草稿"] -->|提交| B["待授权"]
+    B -->|数据所有者拒绝| A
+    B -->|"数据所有者批准¹"| C["可执行"]
+    C -->|"撤销：仅此状态允许"| R["撤销后状态未提供"]
+    C -->|"执行器启动：先改状态"| D["执行中 · 不能撤销"]
+    D -->|"页成功且有下一页"| D
+    D -->|所有页成功| E["完成"]
+    D -->|任一页失败| F["失败 · 停止请求后续页"]
+
+    classDef default fill:#f5f5f5,stroke:#666,color:#222;
+    classDef unknown fill:#fff,stroke:#888,color:#444,stroke-dasharray:5 4;
+    class R unknown;

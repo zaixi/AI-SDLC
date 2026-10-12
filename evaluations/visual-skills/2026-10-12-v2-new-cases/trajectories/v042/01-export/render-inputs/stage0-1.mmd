@@ -1,0 +1,16 @@
+flowchart LR
+    D["草稿<br/>创建时的状态"] -->|提交| A["待授权"]
+    A -->|"数据所有者批准<br/>且不是该任务的提交人"| R["可执行"]
+    A -->|数据所有者拒绝| D
+    R -->|"执行器启动<br/>先改状态"| X["执行中"]
+    X -->|所有页成功| C["完成"]
+    X -->|任一页失败| F["失败"]
+
+    R -.- W["仅可执行任务可撤销<br/>撤销后的状态未提供"]
+    X -.- N["一旦执行中，不能撤销"]
+    A -.- O["申请人可以同时是数据所有者<br/>但不能授权自己提交的同一任务"]
+
+    classDef neutral fill:#f4f4f4,stroke:#666,color:#222;
+    classDef note fill:#fff,stroke:#999,color:#444,stroke-dasharray:4 4;
+    class D,A,R,X,C,F neutral;
+    class W,N,O note;
