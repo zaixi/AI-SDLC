@@ -1,0 +1,24 @@
+[
+  {
+    "block": 1,
+    "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"flowchart\":{\"htmlLabels\":false}}}%%",
+    "format": "mermaid",
+    "source_sha256": "652b4ccda52ad3e2517f0e98af72fd865053edd742fa161a305f93834782fa97",
+    "svg": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage1-1.svg"
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "Generating single mermaid chart\n",
+      "file": "stage1-1.png",
+      "pixels": [
+        1600,
+        337
+      ]
+    }
+  }
+]

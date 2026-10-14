@@ -1,0 +1,4 @@
+%%{init: {"theme":"neutral","fontFamily":"system-ui, sans-serif"}}%%
+flowchart LR
+    P["状态页"] -->|"调用"| A["状态 API"]
+    A -->|"只读"| J[("作业表")]

@@ -1,0 +1,4 @@
+%%{init: {"theme":"neutral","fontFamily":"system-ui, sans-serif"}}%%
+flowchart LR
+    W["OCR 工作者<br/>OCR 失败"] -->|"写入作业表"| F["失败"]
+    F -.->|"需要人工重新排队<br/>操作入口未确定"| P["待处理"]

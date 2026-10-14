@@ -1,0 +1,12 @@
+flowchart LR
+    A["收到采样消息<br/>去重键 = (device_id, boot_id, seq)"] --> B{"该键<br/>是否已记录？"}
+    B -- "是：重复消息" --> C["只重发 ACK<br/>不重复保存"]
+    B -- "否：首次处理" --> D["保存采样"]
+    D --> E{"保存<br/>是否成功？"}
+    E -- "成功" --> F["记录该键<br/>然后返回 ACK"]
+    E -- "失败" --> G["不记录该键<br/>不发送 ACK<br/>下次同一键仍按首次处理"]
+
+    classDef neutral fill:#f4f4f4,stroke:#666,color:#222;
+    classDef decision fill:#e8e8e8,stroke:#555,color:#222;
+    class A,C,D,F,G neutral;
+    class B,E decision;

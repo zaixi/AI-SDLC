@@ -1,0 +1,11 @@
+{
+  "inputs/prompts.json": "c853261fc9960aeefcd9f889bdb4ed4349c89b55c3704bd828bf8ba87a310211",
+  "inputs/verify-geometry.py": "ae8d271cfe04ccba7616ab64b060578be235835f416acfc3067f9339eefca1d0",
+  "inputs/candidate/SKILL.md": "eee6dd47a4b5504b38d9d4d35046b3d178d8df63e17e6c3034cf1f529a2787c7",
+  "inputs/candidate/LICENSE.show-me": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+  "inputs/v042/SKILL.md": "5992229f8c87b72bf245c7c7578861b31992e3702b3d9debeb92a7cf8d86548e",
+  "inputs/v042/LICENSE": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+  "inputs/diagram-design/scripts/self_check.py": "68625ad793f69565300da22b983da310549bebd6cd7e820f0ff22ddc99e54ed0",
+  "inputs/candidate/agents/openai.yaml": "65d98584992cba5083eaae46198d48caadabaec3ac327b4329b8305063cebfbc",
+  "inputs/v042/references/show-me.upstream.md": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+}

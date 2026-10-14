@@ -1,0 +1,1109 @@
+[
+  {
+    "condition": "v042",
+    "case": "01-dedup",
+    "status": "completed",
+    "thread_id": "01a13a64-7623-7e00-82d8-2e65b5173e24",
+    "model_context": [
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      }
+    ],
+    "draft_sha256": "f2f61503de503930cad41f4f6f74b75dfb5de96a6c41ef2c9332c84fa3351bf9",
+    "final_sha256": "97a68616ff5854bb975cd02c8483cc4b762b382f50ca9adda19a3d1b1c04b6da",
+    "stages": [
+      {
+        "stage": "stage0",
+        "render": [
+          {
+            "block": 1,
+            "type": "flowchart TD",
+            "format": "mermaid",
+            "source_sha256": "a9bfcbc9b673d345ea3d0d1e1ba52a386f47e8519d1ab7be5e5995fb4057b688",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.png",
+              "pixels": [
+                668,
+                1600
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage0-1.png"
+        ],
+        "source_changed_after_feedback": true
+      },
+      {
+        "stage": "stage1",
+        "render": [
+          {
+            "block": 1,
+            "type": "flowchart LR",
+            "format": "mermaid",
+            "source_sha256": "2b8f33e9182848a6700eb8490e38dda63889fc13e86101ea90f87c7045faf6a9",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.png",
+              "pixels": [
+                1600,
+                368
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage1-1.png"
+        ],
+        "source_changed_after_feedback": false
+      }
+    ],
+    "final_source_changed": false,
+    "final_render": [
+      {
+        "block": 1,
+        "type": "flowchart LR",
+        "format": "mermaid",
+        "source_sha256": "2b8f33e9182848a6700eb8490e38dda63889fc13e86101ea90f87c7045faf6a9",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-1.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-1.png",
+          "pixels": [
+            1600,
+            368
+          ]
+        }
+      }
+    ],
+    "image_id": "sha256:333c1453624a56948e5d1c30354431f8623333c504f9fe0861c00fa37f5ff798"
+  },
+  {
+    "condition": "candidate",
+    "case": "01-dedup",
+    "status": "completed",
+    "thread_id": "01a13a65-8287-7423-8cb4-9b72968dd32a",
+    "model_context": [
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      }
+    ],
+    "draft_sha256": "a63130e861371ef4200f115fd9788275d45d391bb1cad5a30107acfbf7aae596",
+    "final_sha256": "743b83640e88fa9e81df3d5f80f396a71ba0fade1ab5a9f48009ea97094aa2d4",
+    "stages": [
+      {
+        "stage": "stage0",
+        "render": [
+          {
+            "block": 1,
+            "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"flowchart\":{\"htmlLabels\":false}}}%%",
+            "format": "mermaid",
+            "source_sha256": "0420404574a96498ebf9ee65a65131b81c4ceedf1c7e99b57465e0bfe4c61899",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.png",
+              "pixels": [
+                669,
+                1600
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage0-1.png"
+        ],
+        "source_changed_after_feedback": true
+      },
+      {
+        "stage": "stage1",
+        "render": [
+          {
+            "block": 1,
+            "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"flowchart\":{\"htmlLabels\":false}}}%%",
+            "format": "mermaid",
+            "source_sha256": "652b4ccda52ad3e2517f0e98af72fd865053edd742fa161a305f93834782fa97",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.png",
+              "pixels": [
+                1600,
+                337
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage1-1.png"
+        ],
+        "source_changed_after_feedback": false
+      }
+    ],
+    "final_source_changed": false,
+    "final_render": [
+      {
+        "block": 1,
+        "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"flowchart\":{\"htmlLabels\":false}}}%%",
+        "format": "mermaid",
+        "source_sha256": "652b4ccda52ad3e2517f0e98af72fd865053edd742fa161a305f93834782fa97",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-1.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage1-1.png",
+          "pixels": [
+            1600,
+            337
+          ]
+        }
+      }
+    ],
+    "image_id": "sha256:333c1453624a56948e5d1c30354431f8623333c504f9fe0861c00fa37f5ff798"
+  },
+  {
+    "condition": "candidate",
+    "case": "02-overview",
+    "status": "completed",
+    "thread_id": "01a13a66-9944-7803-935d-34de5e8c3109",
+    "model_context": [
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      }
+    ],
+    "draft_sha256": "7f1869b934f585322be80b8970de14b00f11f203a7d00885160521711a7ac3f5",
+    "final_sha256": "df87001ef175a2bd1c8b6b6879c632e670dd98bd9ac088fe8cbd5d66a22e6845",
+    "stages": [
+      {
+        "stage": "stage0",
+        "render": [
+          {
+            "block": 1,
+            "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"flowchart\":{\"curve\":\"linear\"}}}%%",
+            "format": "mermaid",
+            "source_sha256": "0d4dd85109ad09a8cb65c0f72e0f2e6323252a63ad9dfab48b867d98c3a87b44",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-1.png",
+              "pixels": [
+                746,
+                1600
+              ]
+            }
+          },
+          {
+            "block": 2,
+            "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\"}}%%",
+            "format": "mermaid",
+            "source_sha256": "2d6398679f68eec48bf5ea074f5101c612fb55d523d3d4c8a45c739da135b693",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-2.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-2.png",
+              "pixels": [
+                1600,
+                731
+              ]
+            }
+          },
+          {
+            "block": 3,
+            "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\"}}%%",
+            "format": "mermaid",
+            "source_sha256": "b9e1b0c4628731d9cdc316b69033c687f268ade5b1e0528568cb614d30f8c3bf",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-3.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-3.png",
+              "pixels": [
+                1600,
+                243
+              ]
+            }
+          },
+          {
+            "block": 4,
+            "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"flowchart\":{\"curve\":\"linear\"}}}%%",
+            "format": "mermaid",
+            "source_sha256": "913b3f0013af521ad692ce2141e8021daa41ba0680f003ee29642c5a8eb396fc",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-4.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage0-4.png",
+              "pixels": [
+                1600,
+                305
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage0-1.png",
+          "stage0-2.png",
+          "stage0-3.png",
+          "stage0-4.png"
+        ],
+        "source_changed_after_feedback": true
+      },
+      {
+        "stage": "stage1",
+        "render": [
+          {
+            "block": 1,
+            "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"flowchart\":{\"curve\":\"linear\"}}}%%",
+            "format": "mermaid",
+            "source_sha256": "d6f221c43e96ef75a46c4b7ad4b25a3ee23b15feef4e8f857b37b84deb8623e8",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-1.png",
+              "pixels": [
+                1600,
+                345
+              ]
+            }
+          },
+          {
+            "block": 2,
+            "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"sequence\":{\"mirrorActors\":false}}}%%",
+            "format": "mermaid",
+            "source_sha256": "9aac622683d22892fe81e207c3572cb89e0b01f46057d87a2cc8c8f288601734",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-2.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-2.png",
+              "pixels": [
+                1600,
+                507
+              ]
+            }
+          },
+          {
+            "block": 3,
+            "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"sequence\":{\"mirrorActors\":false}}}%%",
+            "format": "mermaid",
+            "source_sha256": "23e4b611f6131b53b375b642d1705f87f29d532db0a533d9144bad1c56f1de7e",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-3.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-3.png",
+              "pixels": [
+                1600,
+                590
+              ]
+            }
+          },
+          {
+            "block": 4,
+            "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"sequence\":{\"mirrorActors\":false}}}%%",
+            "format": "mermaid",
+            "source_sha256": "b4d60c232c35343fd7f25bcc9b75145f96e937edae2ac687a268267b1dfb16b9",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-4.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-4.png",
+              "pixels": [
+                1600,
+                507
+              ]
+            }
+          },
+          {
+            "block": 5,
+            "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\"}}%%",
+            "format": "mermaid",
+            "source_sha256": "2d7c306251e461e6bec2aa20104686c55bd5ebc7303bfa9dec820aa8108d7767",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-5.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-5.png",
+              "pixels": [
+                1600,
+                243
+              ]
+            }
+          },
+          {
+            "block": 6,
+            "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\"}}%%",
+            "format": "mermaid",
+            "source_sha256": "50da9b0aefbae5a212960ac06f63a7be9c955fd49b8dfae626837e53ddfb3aa8",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-6.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-6.png",
+              "pixels": [
+                1600,
+                243
+              ]
+            }
+          },
+          {
+            "block": 7,
+            "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"sequence\":{\"mirrorActors\":false}}}%%",
+            "format": "mermaid",
+            "source_sha256": "1288582ed0783c4976ff4bf3720c07de852dc765fdab8f0e5e2cfdd58b3a5eee",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-7.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-7.png",
+              "pixels": [
+                1600,
+                497
+              ]
+            }
+          },
+          {
+            "block": 8,
+            "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\"}}%%",
+            "format": "mermaid",
+            "source_sha256": "f6187e59d556eeb1c1c30bafae3cab3ba3d06a5442d67643369671fb0361383e",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-8.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-8.png",
+              "pixels": [
+                1600,
+                168
+              ]
+            }
+          },
+          {
+            "block": 9,
+            "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\"}}%%",
+            "format": "mermaid",
+            "source_sha256": "b2dc656acab450b0ddfe07c307ed265a3316358406e0c53417016f62180dd7c5",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-9.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-9.png",
+              "pixels": [
+                1600,
+                685
+              ]
+            }
+          },
+          {
+            "block": 10,
+            "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\"}}%%",
+            "format": "mermaid",
+            "source_sha256": "b977eea34609931e59f1c2c8ea04a2b22ebb934e2b4cf052aa2e79aa5e2feab7",
+            "svg": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-10.svg"
+            },
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "Generating single mermaid chart\n",
+              "file": "stage1-10.png",
+              "pixels": [
+                1600,
+                719
+              ]
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage1-1.png",
+          "stage1-2.png",
+          "stage1-3.png",
+          "stage1-4.png",
+          "stage1-5.png",
+          "stage1-6.png",
+          "stage1-7.png",
+          "stage1-8.png",
+          "stage1-9.png",
+          "stage1-10.png"
+        ],
+        "source_changed_after_feedback": true
+      }
+    ],
+    "final_source_changed": true,
+    "final_render": [
+      {
+        "block": 1,
+        "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"flowchart\":{\"curve\":\"linear\"}}}%%",
+        "format": "mermaid",
+        "source_sha256": "e0172d1786814be8ccec22467d1faf4c9ca19c90918f883f54bae9201a03892a",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-1.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-1.png",
+          "pixels": [
+            1600,
+            241
+          ]
+        }
+      },
+      {
+        "block": 2,
+        "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"sequence\":{\"mirrorActors\":false}}}%%",
+        "format": "mermaid",
+        "source_sha256": "9aac622683d22892fe81e207c3572cb89e0b01f46057d87a2cc8c8f288601734",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-2.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-2.png",
+          "pixels": [
+            1600,
+            507
+          ]
+        }
+      },
+      {
+        "block": 3,
+        "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"sequence\":{\"mirrorActors\":false}}}%%",
+        "format": "mermaid",
+        "source_sha256": "23e4b611f6131b53b375b642d1705f87f29d532db0a533d9144bad1c56f1de7e",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-3.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-3.png",
+          "pixels": [
+            1600,
+            590
+          ]
+        }
+      },
+      {
+        "block": 4,
+        "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"sequence\":{\"mirrorActors\":false}}}%%",
+        "format": "mermaid",
+        "source_sha256": "b4d60c232c35343fd7f25bcc9b75145f96e937edae2ac687a268267b1dfb16b9",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-4.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-4.png",
+          "pixels": [
+            1600,
+            507
+          ]
+        }
+      },
+      {
+        "block": 5,
+        "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\"}}%%",
+        "format": "mermaid",
+        "source_sha256": "2d7c306251e461e6bec2aa20104686c55bd5ebc7303bfa9dec820aa8108d7767",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-5.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-5.png",
+          "pixels": [
+            1600,
+            243
+          ]
+        }
+      },
+      {
+        "block": 6,
+        "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\"}}%%",
+        "format": "mermaid",
+        "source_sha256": "50da9b0aefbae5a212960ac06f63a7be9c955fd49b8dfae626837e53ddfb3aa8",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-6.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-6.png",
+          "pixels": [
+            1600,
+            243
+          ]
+        }
+      },
+      {
+        "block": 7,
+        "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"sequence\":{\"mirrorActors\":false}}}%%",
+        "format": "mermaid",
+        "source_sha256": "1288582ed0783c4976ff4bf3720c07de852dc765fdab8f0e5e2cfdd58b3a5eee",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-7.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-7.png",
+          "pixels": [
+            1600,
+            497
+          ]
+        }
+      },
+      {
+        "block": 8,
+        "type": "%%{init: {\"theme\":\"neutral\",\"fontFamily\":\"system-ui, sans-serif\",\"flowchart\":{\"curve\":\"linear\"}}}%%",
+        "format": "mermaid",
+        "source_sha256": "ed4a856e5686f3b0438b29e1b31d585165465d311246663fbfc1b0338a136604",
+        "svg": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-8.svg"
+        },
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "Generating single mermaid chart\n",
+          "file": "stage2-8.png",
+          "pixels": [
+            1600,
+            1148
+          ]
+        }
+      }
+    ],
+    "image_id": "sha256:333c1453624a56948e5d1c30354431f8623333c504f9fe0861c00fa37f5ff798"
+  },
+  {
+    "condition": "v042",
+    "case": "02-overview",
+    "status": "completed",
+    "thread_id": "01a13a69-6020-78e1-8c12-7fd0d7723962",
+    "model_context": [
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "model": "gpt-6.1-sol"
+      }
+    ],
+    "draft_sha256": "25b8962332355c1f8523af9fe1e1660c637f02db8a0fb451bc03cf19b6dd8789",
+    "final_sha256": "5e37291ea72027e5d79ff738e1b69672f288e78c67cf07ceea79fbf5af2c4378",
+    "stages": [
+      {
+        "stage": "stage0",
+        "render": [
+          {
+            "block": 1,
+            "format": "html",
+            "type": "HTML with inline SVG",
+            "source_sha256": "1fd72264d3acd3565f5b093155ae529e111687d025f0ef9efda598834cd72e11",
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "{\"status\":\"passed\",\"diagrams\":2,\"desktop\":\"stage0-1-desktop.png\",\"mobile\":\"stage0-1-mobile.png\"}\n",
+              "file": "stage0-1-desktop.png"
+            },
+            "browser": {
+              "viewport": [
+                1600,
+                1000
+              ],
+              "javascript": "disabled",
+              "blockedRequests": [],
+              "diagrams": [
+                {
+                  "index": 1,
+                  "file": "stage0-1-svg1.png",
+                  "bounds": {
+                    "x": 276,
+                    "y": 291.21875,
+                    "height": 410,
+                    "width": 1048
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1048 410",
+                    "title": "数字化平台四个区域及十四个内部单元",
+                    "fonts": [
+                      "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", sans-serif"
+                    ],
+                    "textCount": 26
+                  }
+                },
+                {
+                  "index": 2,
+                  "file": "stage0-1-svg2.png",
+                  "bounds": {
+                    "x": 276,
+                    "y": 1815.625,
+                    "height": 308,
+                    "width": 1048
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1048 308",
+                    "title": "成功状态转换及三类失败的位置",
+                    "fonts": [
+                      "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", sans-serif"
+                    ],
+                    "textCount": 22
+                  }
+                }
+              ],
+              "mobile": {
+                "viewport": 390,
+                "pageWidth": 390,
+                "localScrollers": [
+                  {
+                    "tag": "DIV",
+                    "width": 358,
+                    "scrollWidth": 1048
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 358,
+                    "scrollWidth": 780
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 358,
+                    "scrollWidth": 1048
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 358,
+                    "scrollWidth": 780
+                  }
+                ]
+              }
+            },
+            "svg_images": [
+              "stage0-1-svg1.png",
+              "stage0-1-svg2.png"
+            ],
+            "mobile_file": "stage0-1-mobile.png",
+            "checks": {
+              "self_check": {
+                "status": "passed",
+                "exit_code": 0,
+                "diagnostic": "OK /work/stage0-1.html\n"
+              },
+              "geometry": {
+                "status": "passed",
+                "exit_code": 0,
+                "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+              }
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage0-1-svg1.png",
+          "stage0-1-svg2.png",
+          "stage0-1-desktop.png"
+        ],
+        "source_changed_after_feedback": true
+      },
+      {
+        "stage": "stage1",
+        "render": [
+          {
+            "block": 1,
+            "format": "html",
+            "type": "HTML with inline SVG",
+            "source_sha256": "cda256010beb8415d21b9d9a8a48ab3c77ed1d9b4f5ddba2814019f620b9ab22",
+            "png": {
+              "status": "passed",
+              "exit_code": 0,
+              "diagnostic": "{\"status\":\"passed\",\"diagrams\":2,\"desktop\":\"stage1-1-desktop.png\",\"mobile\":\"stage1-1-mobile.png\"}\n",
+              "file": "stage1-1-desktop.png"
+            },
+            "browser": {
+              "viewport": [
+                1600,
+                1000
+              ],
+              "javascript": "disabled",
+              "blockedRequests": [],
+              "diagrams": [
+                {
+                  "index": 1,
+                  "file": "stage1-1-svg1.png",
+                  "bounds": {
+                    "x": 276,
+                    "y": 291.21875,
+                    "height": 410,
+                    "width": 1048
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1048 410",
+                    "title": "数字化平台四个区域及十四个内部单元",
+                    "fonts": [
+                      "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", sans-serif"
+                    ],
+                    "textCount": 26
+                  }
+                },
+                {
+                  "index": 2,
+                  "file": "stage1-1-svg2.png",
+                  "bounds": {
+                    "x": 276,
+                    "y": 1815.625,
+                    "height": 308,
+                    "width": 1048
+                  },
+                  "geometry": {
+                    "viewBox": "0 0 1048 308",
+                    "title": "成功状态转换及三类失败的位置",
+                    "fonts": [
+                      "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", sans-serif"
+                    ],
+                    "textCount": 22
+                  }
+                }
+              ],
+              "mobile": {
+                "viewport": 390,
+                "pageWidth": 390,
+                "localScrollers": [
+                  {
+                    "tag": "DIV",
+                    "width": 358,
+                    "scrollWidth": 1048
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 358,
+                    "scrollWidth": 780
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 358,
+                    "scrollWidth": 1048
+                  },
+                  {
+                    "tag": "DIV",
+                    "width": 358,
+                    "scrollWidth": 780
+                  }
+                ]
+              }
+            },
+            "svg_images": [
+              "stage1-1-svg1.png",
+              "stage1-1-svg2.png"
+            ],
+            "mobile_file": "stage1-1-mobile.png",
+            "checks": {
+              "self_check": {
+                "status": "passed",
+                "exit_code": 0,
+                "diagnostic": "OK /work/stage1-1.html\n"
+              },
+              "geometry": {
+                "status": "passed",
+                "exit_code": 0,
+                "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+              }
+            }
+          }
+        ],
+        "images_supplied": [
+          "stage1-1-svg1.png",
+          "stage1-1-svg2.png",
+          "stage1-1-desktop.png"
+        ],
+        "source_changed_after_feedback": false
+      }
+    ],
+    "final_source_changed": false,
+    "final_render": [
+      {
+        "block": 1,
+        "format": "html",
+        "type": "HTML with inline SVG",
+        "source_sha256": "cda256010beb8415d21b9d9a8a48ab3c77ed1d9b4f5ddba2814019f620b9ab22",
+        "png": {
+          "status": "passed",
+          "exit_code": 0,
+          "diagnostic": "{\"status\":\"passed\",\"diagrams\":2,\"desktop\":\"stage1-1-desktop.png\",\"mobile\":\"stage1-1-mobile.png\"}\n",
+          "file": "stage1-1-desktop.png"
+        },
+        "browser": {
+          "viewport": [
+            1600,
+            1000
+          ],
+          "javascript": "disabled",
+          "blockedRequests": [],
+          "diagrams": [
+            {
+              "index": 1,
+              "file": "stage1-1-svg1.png",
+              "bounds": {
+                "x": 276,
+                "y": 291.21875,
+                "height": 410,
+                "width": 1048
+              },
+              "geometry": {
+                "viewBox": "0 0 1048 410",
+                "title": "数字化平台四个区域及十四个内部单元",
+                "fonts": [
+                  "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", sans-serif"
+                ],
+                "textCount": 26
+              }
+            },
+            {
+              "index": 2,
+              "file": "stage1-1-svg2.png",
+              "bounds": {
+                "x": 276,
+                "y": 1815.625,
+                "height": 308,
+                "width": 1048
+              },
+              "geometry": {
+                "viewBox": "0 0 1048 308",
+                "title": "成功状态转换及三类失败的位置",
+                "fonts": [
+                  "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", sans-serif"
+                ],
+                "textCount": 22
+              }
+            }
+          ],
+          "mobile": {
+            "viewport": 390,
+            "pageWidth": 390,
+            "localScrollers": [
+              {
+                "tag": "DIV",
+                "width": 358,
+                "scrollWidth": 1048
+              },
+              {
+                "tag": "DIV",
+                "width": 358,
+                "scrollWidth": 780
+              },
+              {
+                "tag": "DIV",
+                "width": 358,
+                "scrollWidth": 1048
+              },
+              {
+                "tag": "DIV",
+                "width": 358,
+                "scrollWidth": 780
+              }
+            ]
+          }
+        },
+        "svg_images": [
+          "stage1-1-svg1.png",
+          "stage1-1-svg2.png"
+        ],
+        "mobile_file": "stage1-1-mobile.png",
+        "checks": {
+          "self_check": {
+            "status": "passed",
+            "exit_code": 0,
+            "diagnostic": "OK /work/stage1-1.html\n"
+          },
+          "geometry": {
+            "status": "passed",
+            "exit_code": 0,
+            "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+          }
+        }
+      }
+    ],
+    "image_id": "sha256:333c1453624a56948e5d1c30354431f8623333c504f9fe0861c00fa37f5ff798"
+  }
+]

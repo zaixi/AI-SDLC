@@ -1,0 +1,5 @@
+%%{init: {"theme":"neutral","fontFamily":"system-ui, sans-serif"}}%%
+flowchart LR
+    M["邮件发送失败"] --> S["作业表：仍为已完成"]
+    S --> R["通知器只重试邮件发送<br/>重试时机未确定"]
+    K["OCR 与索引已成功<br/>不重跑 OCR 或索引"]

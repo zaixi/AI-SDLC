@@ -1,0 +1,16 @@
+%%{init: {"theme":"neutral","fontFamily":"system-ui, sans-serif","sequence":{"mirrorActors":false}}}%%
+sequenceDiagram
+    participant D as 调度器
+    participant J as 作业表
+    participant W as OCR 工作者
+    participant O as 原件库
+    participant T as 文本库
+    participant I as 索引工作者
+
+    D->>J: 读取待处理作业
+    D->>J: ① 状态改为处理中
+    D->>W: ② 派发 OCR
+    W->>O: 读取原件
+    W->>T: ① 写入识别文本
+    W->>J: ② 状态改为待索引
+    W->>I: ③ 通知索引

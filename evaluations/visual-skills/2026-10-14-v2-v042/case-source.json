@@ -1,0 +1,10 @@
+{
+  "repository_commit": "9013349ed306b1cdda7bf5cf737c02d462195be9",
+  "suite": "skills/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/inputs/cases.json",
+  "cases": {
+    "01-dedup": "B02",
+    "02-overview": "D03"
+  },
+  "fixture": "skills/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/inputs/fixtures/digitization.md",
+  "transformation": "D03 complete fixture appended inline; both conditions receive exact same text. Original filenames remain explanatory. Model reads no files/tools. Original other-model outputs not supplied."
+}

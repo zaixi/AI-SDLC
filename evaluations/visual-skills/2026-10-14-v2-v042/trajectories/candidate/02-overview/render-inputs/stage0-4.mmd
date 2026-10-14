@@ -1,0 +1,11 @@
+%%{init: {"theme":"neutral","fontFamily":"system-ui, sans-serif","flowchart":{"curve":"linear"}}}%%
+flowchart LR
+    P["待处理"] -->|"调度器先改状态"| R["处理中"]
+    R -->|"OCR 成功：文本已写入"| I["待索引"]
+    R -->|"OCR 工作者写失败状态"| F["失败"]
+    I -->|"索引成功后更新状态"| C["已完成"]
+
+    I -->|"索引失败：保持待索引<br/>只重试索引，保留文本"| I
+    C -->|"邮件失败：仍已完成<br/>通知器只重试邮件"| C
+
+    F -.->|"需人工重新排队<br/>入口未确定"| P

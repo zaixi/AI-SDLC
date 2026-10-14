@@ -1,0 +1,103 @@
+[
+  {
+    "block": 1,
+    "format": "html",
+    "type": "HTML with inline SVG",
+    "source_sha256": "1fd72264d3acd3565f5b093155ae529e111687d025f0ef9efda598834cd72e11",
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "{\"status\":\"passed\",\"diagrams\":2,\"desktop\":\"stage0-1-desktop.png\",\"mobile\":\"stage0-1-mobile.png\"}\n",
+      "file": "stage0-1-desktop.png"
+    },
+    "browser": {
+      "viewport": [
+        1600,
+        1000
+      ],
+      "javascript": "disabled",
+      "blockedRequests": [],
+      "diagrams": [
+        {
+          "index": 1,
+          "file": "stage0-1-svg1.png",
+          "bounds": {
+            "x": 276,
+            "y": 291.21875,
+            "height": 410,
+            "width": 1048
+          },
+          "geometry": {
+            "viewBox": "0 0 1048 410",
+            "title": "数字化平台四个区域及十四个内部单元",
+            "fonts": [
+              "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", sans-serif"
+            ],
+            "textCount": 26
+          }
+        },
+        {
+          "index": 2,
+          "file": "stage0-1-svg2.png",
+          "bounds": {
+            "x": 276,
+            "y": 1815.625,
+            "height": 308,
+            "width": 1048
+          },
+          "geometry": {
+            "viewBox": "0 0 1048 308",
+            "title": "成功状态转换及三类失败的位置",
+            "fonts": [
+              "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", sans-serif"
+            ],
+            "textCount": 22
+          }
+        }
+      ],
+      "mobile": {
+        "viewport": 390,
+        "pageWidth": 390,
+        "localScrollers": [
+          {
+            "tag": "DIV",
+            "width": 358,
+            "scrollWidth": 1048
+          },
+          {
+            "tag": "DIV",
+            "width": 358,
+            "scrollWidth": 780
+          },
+          {
+            "tag": "DIV",
+            "width": 358,
+            "scrollWidth": 1048
+          },
+          {
+            "tag": "DIV",
+            "width": 358,
+            "scrollWidth": 780
+          }
+        ]
+      }
+    },
+    "svg_images": [
+      "stage0-1-svg1.png",
+      "stage0-1-svg2.png"
+    ],
+    "mobile_file": "stage0-1-mobile.png",
+    "checks": {
+      "self_check": {
+        "status": "passed",
+        "exit_code": 0,
+        "diagnostic": "OK /work/stage0-1.html\n"
+      },
+      "geometry": {
+        "status": "passed",
+        "exit_code": 0,
+        "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+      }
+    }
+  }
+]

@@ -1,0 +1,5 @@
+%%{init: {"theme":"neutral","fontFamily":"system-ui, sans-serif"}}%%
+flowchart LR
+    I["索引工作者<br/>索引失败"] --> S["作业表：仍为待索引"]
+    S --> R["只重试索引<br/>调度者与时机未确定"]
+    T["文本库：已写入文本保留<br/>不重跑 OCR"]

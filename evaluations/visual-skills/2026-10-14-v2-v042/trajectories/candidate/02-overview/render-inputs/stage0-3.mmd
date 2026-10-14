@@ -1,0 +1,21 @@
+%%{init: {"theme":"neutral","fontFamily":"system-ui, sans-serif"}}%%
+flowchart TB
+    subgraph Q["搜索路径"]
+        direction LR
+        S["搜索页"] -->|"调用"| API["查询 API"]
+        API -->|"只读"| X[("搜索索引")]
+    end
+
+    subgraph ST["状态查看路径"]
+        direction LR
+        P["状态页"] -->|"调用"| A["状态 API"]
+        A -->|"只读"| J1[("作业表")]
+    end
+
+    subgraph N["完成通知路径"]
+        direction LR
+        NT["通知器"] -->|"读取已完成作业"| J2[("作业表")]
+        NT -->|"调用：发送完成通知"| M["外部邮件服务<br/>平台之外"]
+    end
+
+    style M fill:#fff,stroke:#666,stroke-dasharray:5 5

@@ -1,0 +1,129 @@
+[
+  {
+    "condition": "v042",
+    "case": "01-dedup",
+    "formats": [
+      "mermaid"
+    ],
+    "answer_chars": 1074,
+    "all_fenced_source_chars": 462,
+    "source_chars": 462,
+    "source_bytes": 620,
+    "source_lines": 12,
+    "diagrams": 1,
+    "usage": {
+      "input_tokens": 102638,
+      "cached_input_tokens": 79104,
+      "output_tokens": 3370
+    },
+    "revision_diffs": [
+      {
+        "added_lines": 9,
+        "removed_lines": 12
+      },
+      {
+        "added_lines": 0,
+        "removed_lines": 0
+      }
+    ],
+    "final_document_source_changed": false,
+    "final_changed_after_last_feedback": false
+  },
+  {
+    "condition": "candidate",
+    "case": "01-dedup",
+    "formats": [
+      "mermaid"
+    ],
+    "answer_chars": 915,
+    "all_fenced_source_chars": 339,
+    "source_chars": 339,
+    "source_bytes": 443,
+    "source_lines": 8,
+    "diagrams": 1,
+    "usage": {
+      "input_tokens": 103506,
+      "cached_input_tokens": 79360,
+      "output_tokens": 2972
+    },
+    "revision_diffs": [
+      {
+        "added_lines": 7,
+        "removed_lines": 10
+      },
+      {
+        "added_lines": 0,
+        "removed_lines": 0
+      }
+    ],
+    "final_document_source_changed": false,
+    "final_changed_after_last_feedback": false
+  },
+  {
+    "condition": "candidate",
+    "case": "02-overview",
+    "formats": [
+      "mermaid",
+      "mermaid",
+      "mermaid",
+      "mermaid",
+      "mermaid",
+      "mermaid",
+      "mermaid",
+      "mermaid"
+    ],
+    "answer_chars": 3760,
+    "all_fenced_source_chars": 2098,
+    "source_chars": 2098,
+    "source_bytes": 2744,
+    "source_lines": 74,
+    "diagrams": 8,
+    "usage": {
+      "input_tokens": 130646,
+      "cached_input_tokens": 105472,
+      "output_tokens": 10935
+    },
+    "revision_diffs": [
+      {
+        "added_lines": 50,
+        "removed_lines": 71
+      },
+      {
+        "added_lines": 12,
+        "removed_lines": 20
+      }
+    ],
+    "final_document_source_changed": true,
+    "final_changed_after_last_feedback": true
+  },
+  {
+    "condition": "v042",
+    "case": "02-overview",
+    "formats": [
+      "html"
+    ],
+    "answer_chars": 9449,
+    "all_fenced_source_chars": 9358,
+    "source_chars": 9358,
+    "source_bytes": 12413,
+    "source_lines": 269,
+    "diagrams": 2,
+    "usage": {
+      "input_tokens": 133184,
+      "cached_input_tokens": 94464,
+      "output_tokens": 25346
+    },
+    "revision_diffs": [
+      {
+        "added_lines": 12,
+        "removed_lines": 17
+      },
+      {
+        "added_lines": 0,
+        "removed_lines": 0
+      }
+    ],
+    "final_document_source_changed": false,
+    "final_changed_after_last_feedback": false
+  }
+]

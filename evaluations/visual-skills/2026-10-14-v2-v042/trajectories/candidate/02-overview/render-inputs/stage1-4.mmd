@@ -1,0 +1,10 @@
+%%{init: {"theme":"neutral","fontFamily":"system-ui, sans-serif","sequence":{"mirrorActors":false}}}%%
+sequenceDiagram
+    participant I as 索引工作者
+    participant T as 文本库
+    participant X as 搜索索引
+    participant J as 作业表
+
+    I->>T: 读取文本
+    I->>X: 写入搜索索引
+    I->>J: 索引成功后，状态改为已完成
