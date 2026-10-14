@@ -1,0 +1,76 @@
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"role":"assistant","content":"顺序"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"图"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"被"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"压"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"窄"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"，"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"消息"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"文字"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"叠"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"在"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"一起"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"我"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"把"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"主"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"链"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"改"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"成"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"按"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"步骤"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"展开"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"的"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"窄"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"流程图"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"，"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"并"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"拉"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"宽"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"页面"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"再"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"验"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"一次"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","created":1791969616,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-81850869-10d6-41a3-9bc1-6590d8bf1fe0-37","function":{"arguments":"","name":"bash"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","created":1791969616,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"command\":\"node /input/specialists/answer-me-with-html/scripts/am.mjs help format | head -80\",\"description\":\"Check draft layout options for wide diagrams\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","object":"chat.completion.chunk","created":1791969616,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-2bd0c3d2","created":1791969616,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":77,"prompt_tokens":43200,"total_tokens":43277,"prompt_tokens_details":{"cached_tokens":40320},"cost":0.026382}}
+
+data: [DONE]
+

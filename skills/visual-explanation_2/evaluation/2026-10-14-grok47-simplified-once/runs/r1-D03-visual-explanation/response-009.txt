@@ -1,0 +1,2 @@
+data: {"id":"chatcmpl-743118d3","object":"chat.completion.chunk","created":1791966453,"model":"grok-4.7","choices":[{"index":0,"delta":{"role":"assistant","content":"草稿"}}]}
+

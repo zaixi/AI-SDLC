@@ -1,0 +1,20 @@
+{
+  "id": "r1-B03-visual-explanation",
+  "group": "B",
+  "title": "实例边界与反向控制关系",
+  "prompt": "画给现场联调人员看的采集架构。东站、西站各有一台采集器、一个网关、一个缓冲库，都是独立实例。站内：采集器发送读数给本网关，网关读写本站缓冲库。中心有一个汇总服务和一个归档库。两站网关分别向汇总服务发送读数，汇总服务写归档库；汇总服务还分别向两站网关发出补传请求。需要能分清站点、实例和两种相反方向的交互。传输协议、认证、是否有消息队列均未决定，不替我设计。",
+  "fixtures": [],
+  "delivery": "reply_or_artifact",
+  "case": "B03",
+  "condition": "visual-explanation",
+  "repeat": 1,
+  "exit": -15,
+  "seconds": 169.33,
+  "requests": 6,
+  "model_requests": 5,
+  "output_tokens": 0,
+  "budget_exhausted": false,
+  "has_text": false,
+  "artifacts": [],
+  "errors": []
+}

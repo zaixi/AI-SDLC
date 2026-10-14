@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant User as 用户
+    participant List as TrackList
+    participant Page as LibraryPage
+    participant Player as Player
+    User->>List: 选择一条曲目
+    List->>Page: onSelect(id) = setSelectedId
+    Note over Page: selectedId 仍留在 LibraryPage
+    Page->>List: selectedId（标出当前行）
+    Page->>Player: trackId={selectedId}
+    Note over Player: muted 不读取、也不随 trackId 改变
+    Player->>Player: src = null ? undefined : /audio/{trackId}

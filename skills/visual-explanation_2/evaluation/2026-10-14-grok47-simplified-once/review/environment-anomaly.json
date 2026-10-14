@@ -1,0 +1,7 @@
+{
+  "time": "2026-10-14T08:14:20.827532+00:00",
+  "uptime": "16:14:21 up 57 days,  6:30, 84 users,  load average: 306.49, 327.08, 272.82",
+  "memory": "              total        used        free      shared  buff/cache   available\nMem:         257523      242238        1505         463       13779       10740\nSwap:           975         975           0\n",
+  "review_render_failure": "prepare_review.py: A02 Mermaid desktop rendering exceeded 60 seconds; no source artifact edits or generation reruns.",
+  "policy": "Defer further browser review until generation ends; generation budget unchanged. Wall-clock comparison is confounded by shared-host resource contention."
+}

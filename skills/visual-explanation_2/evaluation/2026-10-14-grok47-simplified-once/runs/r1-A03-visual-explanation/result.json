@@ -1,0 +1,20 @@
+{
+  "id": "r1-A03-visual-explanation",
+  "group": "A",
+  "title": "文件职责与职责迁移",
+  "prompt": "当前目录有 cli/main.py（解析命令行）、core/importer.py（读取 CSV、清洗字段、写入数据库）、web/handler.py（调用 importer 接收网页上传）。计划把 importer 中的 CSV 读取移到 formats/csv_reader.py，把清洗移到 core/cleaner.py；数据库写入仍留在 importer，两处入口继续调用 importer。用紧凑的结构示意让同事看清哪些职责移动了、哪些不动。不实现重构。",
+  "fixtures": [],
+  "delivery": "reply_or_artifact",
+  "case": "A03",
+  "condition": "visual-explanation",
+  "repeat": 1,
+  "exit": 0,
+  "seconds": 462.7,
+  "requests": 4,
+  "model_requests": 3,
+  "output_tokens": 1533,
+  "budget_exhausted": false,
+  "has_text": true,
+  "artifacts": [],
+  "errors": []
+}

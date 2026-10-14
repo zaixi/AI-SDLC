@@ -1,0 +1,6 @@
+{
+  "time": "2026-10-14T09:01:02.980686+00:00",
+  "uptime": "17:01:02 up 57 days,  7:16, 85 users,  load average: 25.07, 29.88, 51.84",
+  "memory": "              total        used        free      shared  buff/cache   available\nMem:         257523      162464        1881         485       93178       92048\nSwap:           975         975           0\n",
+  "cpu_count": "112"
+}

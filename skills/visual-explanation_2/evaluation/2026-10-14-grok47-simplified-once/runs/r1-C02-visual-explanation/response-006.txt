@@ -1,0 +1,38 @@
+data: {"id":"chatcmpl-fd1703b9","object":"chat.completion.chunk","created":1791966148,"model":"grok-4.7","choices":[{"index":0,"delta":{"role":"assistant","content":"检查"}}]}
+
+data: {"id":"chatcmpl-fd1703b9","object":"chat.completion.chunk","created":1791966148,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"超时"}}]}
+
+data: {"id":"chatcmpl-fd1703b9","object":"chat.completion.chunk","created":1791966148,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"了"}}]}
+
+data: {"id":"chatcmpl-fd1703b9","object":"chat.completion.chunk","created":1791966148,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"，"}}]}
+
+data: {"id":"chatcmpl-fd1703b9","object":"chat.completion.chunk","created":1791966148,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"我"}}]}
+
+data: {"id":"chatcmpl-fd1703b9","object":"chat.completion.chunk","created":1791966148,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"改"}}]}
+
+data: {"id":"chatcmpl-fd1703b9","object":"chat.completion.chunk","created":1791966148,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"成分"}}]}
+
+data: {"id":"chatcmpl-fd1703b9","object":"chat.completion.chunk","created":1791966148,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"开"}}]}
+
+data: {"id":"chatcmpl-fd1703b9","object":"chat.completion.chunk","created":1791966148,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"跑"}}]}
+
+data: {"id":"chatcmpl-fd1703b9","object":"chat.completion.chunk","created":1791966148,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"，"}}]}
+
+data: {"id":"chatcmpl-fd1703b9","object":"chat.completion.chunk","created":1791966148,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"先"}}]}
+
+data: {"id":"chatcmpl-fd1703b9","object":"chat.completion.chunk","created":1791966148,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"核对"}}]}
+
+data: {"id":"chatcmpl-fd1703b9","object":"chat.completion.chunk","created":1791966148,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"状态"}}]}
+
+data: {"id":"chatcmpl-fd1703b9","object":"chat.completion.chunk","created":1791966148,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-fd1703b9","created":1791966148,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-542e56e3-cc5b-4a2c-8bf5-33cba47dbe61-6","function":{"arguments":"","name":"bash"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-fd1703b9","created":1791966148,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"command\":\"node /tools/browser.mjs eval /work/answer.html /work/check-states.js\",\"description\":\"Evaluate save-state button behavior\",\"timeout\":60000.0}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-fd1703b9","object":"chat.completion.chunk","created":1791966148,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-fd1703b9","created":1791966148,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":56,"prompt_tokens":11749,"total_tokens":11805,"prompt_tokens_details":{"cached_tokens":11520},"cost":0.006554}}
+
+data: [DONE]
+

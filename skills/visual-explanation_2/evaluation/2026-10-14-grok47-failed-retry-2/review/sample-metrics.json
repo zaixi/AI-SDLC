@@ -1,0 +1,134 @@
+[
+  {
+    "sample": "Sec0bdaca77",
+    "run": "r1-B03-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "B03",
+    "group": "B",
+    "repeat": 1,
+    "seconds": 169.33,
+    "model_requests": 5,
+    "exit": -15,
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 0,
+    "output_tokens_including_reasoning": 0,
+    "reported_reasoning_tokens": null,
+    "reasoning_usage_records": 0,
+    "reported_cache_read_tokens": null,
+    "cache_usage_records": 0,
+    "usage_records": 0,
+    "tool_calls": 0,
+    "reference_path_tool_calls": 0,
+    "write_edit_calls": 0,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      }
+    },
+    "requests_without_usage": 5,
+    "upstream_http_error_records": 4
+  },
+  {
+    "sample": "S56b8bd2922",
+    "run": "r1-C01-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "C01",
+    "group": "C",
+    "repeat": 1,
+    "seconds": 169.33,
+    "model_requests": 4,
+    "exit": -15,
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 0,
+    "output_tokens_including_reasoning": 0,
+    "reported_reasoning_tokens": null,
+    "reasoning_usage_records": 0,
+    "reported_cache_read_tokens": null,
+    "cache_usage_records": 0,
+    "usage_records": 0,
+    "tool_calls": 0,
+    "reference_path_tool_calls": 0,
+    "write_edit_calls": 0,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      }
+    },
+    "requests_without_usage": 4,
+    "upstream_http_error_records": 4
+  },
+  {
+    "sample": "Sc31d7837e7",
+    "run": "r1-C04-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "C04",
+    "group": "C",
+    "repeat": 1,
+    "seconds": 169.33,
+    "model_requests": 4,
+    "exit": -15,
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 0,
+    "output_tokens_including_reasoning": 0,
+    "reported_reasoning_tokens": null,
+    "reasoning_usage_records": 0,
+    "reported_cache_read_tokens": null,
+    "cache_usage_records": 0,
+    "usage_records": 0,
+    "tool_calls": 0,
+    "reference_path_tool_calls": 0,
+    "write_edit_calls": 0,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      }
+    },
+    "requests_without_usage": 4,
+    "upstream_http_error_records": 4
+  }
+]

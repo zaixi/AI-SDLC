@@ -1,0 +1,22 @@
+{
+  "id": "r1-A02-visual-explanation",
+  "group": "A",
+  "title": "组件结构与状态归属",
+  "prompt": "音频库页面的代码在 /input/fixtures/LibraryPage.tsx。刚才这个结构，给我看看：选中曲目和静音分别由谁持有，列表选择怎样影响播放器？只依据这份代码解释，不修改代码。",
+  "fixtures": [
+    "LibraryPage.tsx"
+  ],
+  "delivery": "reply_or_artifact",
+  "case": "A02",
+  "condition": "visual-explanation",
+  "repeat": 1,
+  "exit": 0,
+  "seconds": 60.96,
+  "requests": 3,
+  "model_requests": 2,
+  "output_tokens": 4467,
+  "budget_exhausted": false,
+  "has_text": true,
+  "artifacts": [],
+  "errors": []
+}

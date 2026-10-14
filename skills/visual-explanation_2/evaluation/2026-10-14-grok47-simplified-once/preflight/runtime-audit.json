@@ -1,0 +1,8 @@
+[
+  {
+    "condition": "visual-explanation",
+    "filesystem": "passed",
+    "network": "offline",
+    "tools_exercised": 8
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "id": "r1-C03-visual-explanation",
+  "group": "C",
+  "title": "缺失数据的趋势展示",
+  "prompt": "做一张中文趋势图，交付静态、单文件、离线 HTML，桌面和手机可读。某仓库 6 月 1 日至 6 月 6 日每日处理包裹数依次为：80、92、未采集、88、115、112，单位为件。读者要看清每日变化，也要知道哪天没有数据。没有其他日期的数据。不要预测、补值或给缺失值记零。",
+  "fixtures": [],
+  "delivery": "html",
+  "case": "C03",
+  "condition": "visual-explanation",
+  "repeat": 1,
+  "exit": 0,
+  "seconds": 710.4,
+  "requests": 13,
+  "model_requests": 12,
+  "output_tokens": 10753,
+  "budget_exhausted": false,
+  "has_text": true,
+  "artifacts": [
+    "answer.html"
+  ],
+  "errors": []
+}

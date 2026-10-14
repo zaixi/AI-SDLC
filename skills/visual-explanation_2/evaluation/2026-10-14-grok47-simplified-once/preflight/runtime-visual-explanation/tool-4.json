@@ -1,0 +1,14 @@
+{
+  "command": [
+    "node",
+    "/tools/browser.mjs",
+    "screenshot",
+    "/work/smoke.svg",
+    "/work/svg-mobile.png",
+    "390",
+    "844"
+  ],
+  "exit": 0,
+  "stdout": "{\"output\":\"/work/svg-mobile.png\",\"errors\":[],\"viewport\":390,\"scrollWidth\":1200,\"text\":\"独立 SVG 检查\"}\n",
+  "stderr": ""
+}

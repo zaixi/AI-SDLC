@@ -1,0 +1,22 @@
+{
+  "evidence_version": 6,
+  "sample": "S39f649e95e",
+  "case": "A04",
+  "prompt": "新增一个 Python 函数 encode_runs(items)，把连续相同的字符串压成 (字符串, 连续次数) 元组，按原顺序返回列表。例如 ['a','a','b','a'] 返回 [('a',2),('b',1),('a',1)]，空列表返回 []。字符串比较区分大小写，也不去掉空白。让我看清逻辑并能直接复制函数使用，不写入仓库。",
+  "fixtures": [],
+  "delivery": "reply_only",
+  "reply_scope": "final_stop_message",
+  "expected_file_present": null,
+  "generation_ended": "finished",
+  "budget_exhausted": false,
+  "infrastructure_failure": false,
+  "artifacts": [],
+  "code_checks": {
+    "exit": 0,
+    "stdout": "[{\"input\": [], \"pass\": true, \"actual\": \"[]\", \"expected\": \"[]\"}, {\"input\": [\"a\"], \"pass\": true, \"actual\": \"[('a', 1)]\", \"expected\": \"[('a', 1)]\"}, {\"input\": [\"a\", \"a\", \"b\", \"a\"], \"pass\": true, \"actual\": \"[('a', 2), ('b', 1), ('a', 1)]\", \"expected\": \"[('a', 2), ('b', 1), ('a', 1)]\"}, {\"input\": [\"X\", \"x\", \" x\", \"\", \"\"], \"pass\": true, \"actual\": \"[('X', 1), ('x', 1), (' x', 1), ('', 2)]\", \"expected\": \"[('X', 1), ('x', 1), (' x', 1), ('', 2)]\"}]\n",
+    "stderr": ""
+  },
+  "ui_checks": null,
+  "chart_checks": null,
+  "portability_checks": null
+}

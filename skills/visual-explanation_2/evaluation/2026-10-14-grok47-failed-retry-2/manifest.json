@@ -1,0 +1,59 @@
+{
+  "suite_id": "2026-10-14-grok47-failed-retry-2",
+  "created_at_utc": "2026-10-14T10:02:04.898363+00:00",
+  "status": "complete_service_unavailable_all_three",
+  "source_suite": "/home/liyujiang/.codex/skill-evaluations/visual-explanation/2026-10-14-grok47-timeout-retry",
+  "retry_of": [
+    "B03",
+    "C01",
+    "C04"
+  ],
+  "attempt_per_case": 3,
+  "snapshot_hashes": {
+    "visual-explanation": {
+      "LICENSE.show-me": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+      "SKILL.md": "67cdc94475566310f9e48d846328e6a07560838bcd7bb79300f839a8c6da2112",
+      "agents/openai.yaml": "1fa624cb37f6816b07915c87de36c560fb0af78d5bf1a440daf5de03e1758aa6"
+    }
+  },
+  "generation_skill_allowlist": {
+    "visual-explanation": [
+      "SKILL.md"
+    ],
+    "none": []
+  },
+  "generation_specialist_allowlist": {
+    "visual-explanation": [
+      "mermaid-diagrams",
+      "diagram-design",
+      "answer-me-with-html"
+    ]
+  },
+  "conditions": [
+    "visual-explanation"
+  ],
+  "case_count": 3,
+  "planned_repeats": 1,
+  "planned_outputs": 3,
+  "completed_at_utc": "2026-10-14T10:07:51.994310+00:00",
+  "installed_skill_unchanged": true,
+  "dependencies_unchanged": true,
+  "generation_runner_unchanged": true,
+  "generation": {
+    "attempted_cases": 3,
+    "normal_replies": 0,
+    "http_requests": 13,
+    "recorded_http_500": 12,
+    "tool_calls": 0,
+    "artifacts": 0,
+    "early_termination_seconds": 169.33,
+    "token_usage": "unknown"
+  },
+  "consolidated": {
+    "cases": 16,
+    "attempts": 24,
+    "normal_cli_final": 12,
+    "provider_final_cli_missing": 1,
+    "unfinished": 3
+  }
+}

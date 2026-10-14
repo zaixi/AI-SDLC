@@ -1,0 +1,60 @@
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"role":"assistant","content":"页面"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"已"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"换成"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"顺序"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"图"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"我"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"再"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"截"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"主"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"链"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"和"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"失败"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"表"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"，"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"确认"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"参"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"与"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"者和"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"步骤"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"没有"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"挤"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"乱"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"\n"}}]}
+
+data: {"id":"chatcmpl-e401b0eb","created":1791969564,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-dde78da2-e37f-4f5f-b126-655126f26bce-29","function":{"arguments":"","name":"write"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-e401b0eb","created":1791969564,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/tmp/shot2.js\",\"content\":\"async (page) => {\\n  const panels = page.locator('.am-panel, article section, .am-doc-panel');\\n  // fallback: sections with headings\\n  const heads = page.locator('h2');\\n  const n = await heads.count();\\n  const out = [];\\n  for (let i = 0; i < n; i++) {\\n    const title = (await heads.nth(i).innerText()).replace(/\\\\s+/g, ' ').trim();\\n    const section = heads.nth(i).locator('xpath=ancestor::*[self::section or contains(@class,\\\"panel\\\")][1]');\\n    const handle = (await section.count()) ? section : heads.nth(i).locator('xpath=..');\\n    const safe = title.replace(/[^\\\\w\\\\u4e00-\\\\u9fff]+/g, '_').slice(0, 24);\\n    await handle.screenshot({ path: `/tmp/v2-${i}-${safe}.png` });\\n    const box = await handle.boundingBox();\\n    out.push({ i, title, box });\\n  }\\n  const svg = page.locator('svg').first();\\n  const texts = await page.evaluate(() => {\\n    const svg = document.querySelector('svg[aria-label], .am-sequence svg, figure svg');\\n    if (!svg) return { missing: true, svgs: [...document.querySelectorAll('svg')].map(s => s.getAttribute('aria-label') || s.getAttribute('class')) };\\n    const labels = [...svg.querySelectorAll('text')].map(t => {\\n      const r = t.getBoundingClientRect();\\n      return { t: (t.textContent||'').trim(), x: r.x, y: r.y, w: r.width, h: r.height };\\n    }).filter(x => x.t && x.w);\\n    const overlaps = [];\\n    for (let i = 0; i < labels.length; i++) {\\n      for (let j = i+1; j < labels.length; j++) {\\n        const a = labels[i], b = labels[j];\\n        const ix = Math.min(a.x+a.w, b.x+b.w) - Math.max(a.x, b.x);\\n        const iy = Math.min(a.y+a.h, b.y+b.h) - Math.max(a.y, b.y);\\n        if (ix > 2 && iy > 2) overlaps.push(a.t + ' ∩ ' + b.t);\\n      }\\n    }\\n    const vb = svg.viewBox.baseVal;\\n    return { aria: svg.getAttribute('aria-label'), viewBox: `${vb.x} ${vb.y} ${vb.width} ${vb.height}`, n: labels.length, overlaps: overlaps.slice(0, 15), overlapCount: overlaps.length };\\n  });\\n  return { out, texts };\\n}\\n\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-e401b0eb","object":"chat.completion.chunk","created":1791969564,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-e401b0eb","created":1791969564,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":687,"prompt_tokens":38362,"total_tokens":39049,"prompt_tokens_details":{"cached_tokens":36224},"cost":0.02651}}
+
+data: [DONE]
+

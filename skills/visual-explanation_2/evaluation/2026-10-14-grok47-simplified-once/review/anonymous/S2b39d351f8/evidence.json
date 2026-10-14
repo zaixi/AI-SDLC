@@ -1,0 +1,18 @@
+{
+  "evidence_version": 6,
+  "sample": "S2b39d351f8",
+  "case": "D02",
+  "prompt": "帮我理清这个虚构的内部配额方案，保持简洁。每月使用 480 次时，哪个方案费用最低？基础档每月 12 元含 100 次，超出每次 0.10 元；标准档每月 35 元含 500 次，超出每次 0.08 元；大额档每月 65 元含 1000 次，超出每次 0.05 元。额度不能跨月结转，没有其他费用。让我能核对你的判断。",
+  "fixtures": [],
+  "delivery": "reply_or_artifact",
+  "reply_scope": "final_stop_message",
+  "expected_file_present": null,
+  "generation_ended": "finished",
+  "budget_exhausted": false,
+  "infrastructure_failure": false,
+  "artifacts": [],
+  "code_checks": null,
+  "ui_checks": null,
+  "chart_checks": null,
+  "portability_checks": null
+}

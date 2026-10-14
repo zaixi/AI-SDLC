@@ -1,0 +1,56 @@
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"role":"assistant","content":"自"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"检"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"通过"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"接着"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"用"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"浏览器"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"看"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"实际"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"排"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"版"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"，"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"确认"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"中"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"文"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"和"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"连"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"线"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"没有"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"挤"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"在"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"一起"}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-a72ed887","created":1791965405,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-36d5cb7b-2f38-4cfd-aa01-84aad3e10952-16","function":{"arguments":"","name":"bash"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-a72ed887","created":1791965405,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"command\":\"node /tools/browser.mjs screenshot --url \\\"file:///work/collection-architecture.html\\\" --out /work/collection-architecture-preview.png --width 1400 --height 980\",\"description\":\"Screenshot the architecture diagram\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-a72ed887","object":"chat.completion.chunk","created":1791965405,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-a72ed887","created":1791965405,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":78,"prompt_tokens":49543,"total_tokens":49621,"prompt_tokens_details":{"cached_tokens":49408},"cost":0.025442}}
+
+data: [DONE]
+

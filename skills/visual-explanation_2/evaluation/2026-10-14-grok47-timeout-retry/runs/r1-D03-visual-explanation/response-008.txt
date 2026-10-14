@@ -1,0 +1,58 @@
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"role":"assistant","content":"页面"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"能"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"打开"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"我"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"再"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"看"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"主"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"链"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"图"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"的"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"实际"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"排布"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"，"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"确认"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"边"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"和"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"分组"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"没有"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"挤"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"在"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"一起"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"\n"}}]}
+
+data: {"id":"chatcmpl-cf570a93","created":1791969463,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-0cecd399-d565-45e7-808c-0d3400522ab6-9","function":{"arguments":"","name":"write"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-cf570a93","created":1791969463,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/tmp/check-layout.js\",\"content\":\"async (page) => {\\n  const figs = await page.$$eval('figure.am-flow', (nodes) => nodes.map((f) => {\\n    const svg = f.querySelector('svg');\\n    const box = svg.getBoundingClientRect();\\n    const labels = [...svg.querySelectorAll('text')].map(t => {\\n      const r = t.getBoundingClientRect();\\n      return { t: t.textContent.trim(), x: Math.round(r.x), y: Math.round(r.y), w: Math.round(r.width), h: Math.round(r.height) };\\n    });\\n    // overlap among labels that are short node names vs edge labels - check any text overlap\\n    const overlaps = [];\\n    for (let i = 0; i < labels.length; i++) {\\n      for (let j = i + 1; j < labels.length; j++) {\\n        const a = labels[i], b = labels[j];\\n        if (!a.t || !b.t) continue;\\n        const ix = Math.min(a.x + a.w, b.x + b.w) - Math.max(a.x, b.x);\\n        const iy = Math.min(a.y + a.h, b.y + b.h) - Math.max(a.y, b.y);\\n        if (ix > 4 && iy > 4) overlaps.push([a.t, b.t, ix, iy]);\\n      }\\n    }\\n    return {\\n      aria: svg.getAttribute('aria-label'),\\n      viewBox: svg.getAttribute('viewBox'),\\n      box: { w: Math.round(box.width), h: Math.round(box.height) },\\n      overflow: box.width > (f.getBoundingClientRect().width + 2),\\n      overlaps: overlaps.slice(0, 20),\\n      overlapCount: overlaps.length,\\n    };\\n  }));\\n  const panelOverflow = await page.$$eval('.am-panel', (nodes) => nodes.map(n => {\\n    const id = n.querySelector('.am-panel-title, h2, .am-kicker')?.textContent?.slice(0, 20);\\n    return { id, sw: n.scrollWidth, cw: n.clientWidth, sh: n.scrollHeight, ch: n.clientHeight };\\n  }));\\n  return { figs, panelOverflow };\\n}\\n\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-cf570a93","object":"chat.completion.chunk","created":1791969463,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-cf570a93","created":1791969463,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":560,"prompt_tokens":25371,"total_tokens":25931,"prompt_tokens_details":{"cached_tokens":23296},"cost":0.019158}}
+
+data: [DONE]
+

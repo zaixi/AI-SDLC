@@ -1,0 +1,16 @@
+{
+  "usage": {
+    "completion_tokens": 2610,
+    "prompt_tokens": 12453,
+    "total_tokens": 15063,
+    "completion_tokens_details": {
+      "reasoning_tokens": 2416,
+      "text_tokens": 194
+    },
+    "cost": 0.040566
+  },
+  "finish_reasons": [
+    "tool_calls"
+  ],
+  "seconds": 44.17
+}

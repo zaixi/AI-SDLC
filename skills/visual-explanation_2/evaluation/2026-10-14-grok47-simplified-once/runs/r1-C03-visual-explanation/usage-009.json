@@ -1,0 +1,15 @@
+{
+  "usage": {
+    "completion_tokens": 198,
+    "prompt_tokens": 16460,
+    "total_tokens": 16658,
+    "prompt_tokens_details": {
+      "cached_tokens": 15488
+    },
+    "cost": 0.010876
+  },
+  "finish_reasons": [
+    "tool_calls"
+  ],
+  "seconds": 8.276
+}

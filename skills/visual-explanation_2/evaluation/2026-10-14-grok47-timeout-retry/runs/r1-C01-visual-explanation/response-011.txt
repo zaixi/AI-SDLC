@@ -1,0 +1,80 @@
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"role":"assistant","content":"条"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"形"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"图"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"在"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"窄"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"屏"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"上"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"挤"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"成"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"一团"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"，"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"960"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" "}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"还"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"缺"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"单位"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"我"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"改"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"成"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"上下"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"两"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"张"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"全"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"宽"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"条"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"形"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"，"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"数值"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"固定"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"写"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"在"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"条"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"外"}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-50030164","created":1791969379,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-a723e0ed-c93c-44ed-9e5c-7ce992ef1574-13","function":{"arguments":"","name":"bash"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-50030164","created":1791969379,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"command\":\"python3 << 'PY'\\n# memory bars in viewBox width 840, plot from x=88 to x=760 = 672 px for 0..1400\\n# px per MB = 672/1400 = 0.48\\nscale = 672/1400\\nfor name,mb in [(\\\"std\\\",640),(\\\"bal\\\",960),(\\\"fast\\\",1200)]:\\n    w = mb*scale\\n    end = 88+w\\n    print(name, \\\"w\\\", round(w,1), \\\"end\\\", round(end,1), \\\"label_x\\\", round(end+8,1))\\nprint(\\\"ticks\\\")\\nfor t in [0,400,800,1200,1400]:\\n    print(t, round(88+t*scale,1))\\n\\n# time 0..40 in same plot width\\nts = 672/40\\nfor name,s in [(\\\"fast\\\",20),(\\\"bal\\\",28),(\\\"std\\\",32)]:\\n    w=s*ts\\n    print(name, \\\"w\\\", round(w,1), \\\"end\\\", round(88+w,1))\\nprint(\\\"time ticks\\\")\\nfor t in [0,10,20,30,40]:\\n    print(t, round(88+t*ts,1))\\nPY\",\"description\":\"Recalculate full-width bar geometry\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-50030164","object":"chat.completion.chunk","created":1791969379,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-50030164","created":1791969379,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":336,"prompt_tokens":32464,"total_tokens":32800,"prompt_tokens_details":{"cached_tokens":29312},"cost":0.022976}}
+
+data: [DONE]
+

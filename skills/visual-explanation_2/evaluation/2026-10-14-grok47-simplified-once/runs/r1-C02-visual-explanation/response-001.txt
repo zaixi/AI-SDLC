@@ -1,0 +1,58 @@
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"role":"assistant","content":"我"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"先"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"读取"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"指定"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"的"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" skill"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" "}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"和"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"样式"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"文件"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"，"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"再"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"按"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"其中"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"的"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"要求"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"做"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"这个"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"单"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"页"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"比较"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","created":1791965663,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-d2c07372-138e-4521-878e-35d8318bee09-0","function":{"arguments":"","name":"read"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","created":1791965663,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/input/skill/SKILL.md\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","created":1791965663,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-d2c07372-138e-4521-878e-35d8318bee09-1","function":{"arguments":"","name":"read"},"type":"function","index":1}]}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","created":1791965663,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/input/fixtures/editor-style.json\"}"},"type":"function","index":1}]}}]}
+
+data: {"id":"chatcmpl-d2c2b54b","object":"chat.completion.chunk","created":1791965663,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-d2c2b54b","created":1791965663,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":85,"prompt_tokens":6419,"total_tokens":6504,"completion_tokens_details":{"reasoning_tokens":29,"text_tokens":56},"prompt_tokens_details":{"cached_tokens":1152},"cost":0.01162}}
+
+data: [DONE]
+

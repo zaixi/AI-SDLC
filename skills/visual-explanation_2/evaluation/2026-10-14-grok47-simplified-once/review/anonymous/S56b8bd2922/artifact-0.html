@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>三种导出模式的取舍</title>
+<style>
+  :root {
+    --paper: #f5f5f5;
+    --paper-2: #ffffff;
+    --ink: #2d3142;
+    --muted: #5c6370;
+    --soft: #8b909a;
+    --rule: rgba(45, 49, 66, 0.14);
+    --rule-solid: #d5d6d8;
+    --accent: #bf4520;
+    --std: #2d3142;
+    --fast: #bf4520;
+    --bal: #4f5d75;
+    --ideal: #2f6f4e;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Songti SC", "Noto Serif SC", "Source Han Serif SC", serif;
+    --sans: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+    --mono: ui-monospace, "SFMono-Regular", "Source Han Mono SC", "Noto Sans Mono CJK SC", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  .page {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 32px 24px 48px;
+  }
+  header.mast {
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 20px;
+    margin-bottom: 24px;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    letter-spacing: 0;
+  }
+  .lead {
+    margin: 0;
+    max-width: 68ch;
+    font-size: 17px;
+  }
+  .lead strong { font-weight: 600; }
+  .meta {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .meta span { white-space: nowrap; }
+  section { margin-top: 28px; }
+  h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0 0 6px;
+  }
+  .note {
+    margin: 0 0 14px;
+    color: var(--muted);
+    font-size: 14px;
+    max-width: 72ch;
+  }
+  .frame {
+    background: var(--paper-2);
+    border: 1px solid var(--rule-solid);
+    border-radius: 8px;
+    padding: 12px 12px 8px;
+  }
+  .diagram-container { width: 100%; overflow-x: auto; }
+  svg.chart { width: 100%; height: auto; display: block; }
+  svg.scatter { min-width: 720px; }
+  svg.bars { min-width: 640px; }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    margin: 10px 4px 2px;
+    font-size: 13px;
+    color: var(--ink);
+  }
+  .legend i {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: -1px;
+    border: 1.5px solid currentColor;
+  }
+  .sw-std { color: var(--std); background: var(--std); }
+  .sw-fast { color: var(--fast); background: var(--fast); }
+  .sw-bal { color: var(--bal); background: var(--bal); }
+  .sw-ideal {
+    color: var(--ideal);
+    background: transparent;
+    border-style: dashed;
+    border-radius: 2px;
+  }
+  .reading {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .card {
+    background: var(--paper-2);
+    border: 1px solid var(--rule-solid);
+    border-radius: 8px;
+    padding: 14px 16px 12px;
+  }
+  .card h3 {
+    margin: 0 0 6px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .card p { margin: 0; font-size: 14px; color: var(--ink); }
+  .card .k {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--paper-2);
+    border: 1px solid var(--rule-solid);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--muted);
+    background: rgba(45, 49, 66, 0.03);
+  }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; font-family: var(--mono); font-size: 14px; }
+  tr:last-child td { border-bottom: 0; }
+  .name { font-weight: 600; }
+  .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: 1px;
+  }
+  .delta-good { color: var(--ideal); }
+  .delta-bad { color: var(--accent); }
+  footer {
+    margin-top: 28px;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 13px;
+  }
+  footer p { margin: 0 0 6px; }
+  @media (max-width: 720px) {
+    .page { padding: 20px 14px 36px; }
+    h1 { font-size: 28px; }
+    .reading { grid-template-columns: 1fr; }
+    th, td { padding: 8px 8px; }
+  }
+  @media print {
+    .diagram-container { overflow-x: visible; }
+    svg.scatter, svg.bars { min-width: 0; }
+    body { background: white; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="mast">
+    <p class="eyebrow">导出模式 · 两项指标 · 越低越好</p>
+    <h1>没有一种模式同时最快、最省内存</h1>
+    <p class="lead">三个点都落在左下理想区之外。<strong>快速</strong>用多出来的内存换最短耗时，<strong>标准</strong>用多出来的时间换最低内存，<strong>均衡</strong>夹在两者中间，两项都不是最好。</p>
+    <div class="meta">
+      <span>方向：原点一侧更好</span>
+      <span>无权重，不合成总分</span>
+      <span>无误差、无样本量</span>
+      <span>单次读数，不是区间</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>耗时 × 峰值内存</h2>
+    <p class="note">横轴是耗时，纵轴是峰值内存，两轴都从 0 起。虚线框是比三个实测点都更低的区域，目前是空的。点与点之间的斜线只标出换了什么，不是拟合趋势。</p>
+    <div class="frame">
+      <div class="diagram-container">
+        <svg class="chart scatter" viewBox="0 0 760 520" role="img" aria-labelledby="sc-title sc-desc">
+          <title id="sc-title">三种导出模式的耗时与峰值内存散点</title>
+          <desc id="sc-desc">横轴耗时 0 到 40 秒，纵轴峰值内存 0 到 1400 MB，越靠近左下越好。标准模式在 32 秒、640 MB；快速模式在 20 秒、1200 MB；均衡模式在 28 秒、960 MB。左下理想区没有实测点。没有合成总分，也没有误差线。</desc>
+          <!--
+            plot: x 88..700 (612px), y 36..400 (364px)
+            time 0..40 s → x = 88 + t/40*612
+            mem  0..1400 MB → y = 400 - m/1400*364
+            标准 32s, 640MB → x=577.6 y=233.6
+            快速 20s,1200MB → x=394   y=88
+            均衡 28s, 960MB → x=516.4 y=150.4
+            ideal corner: t<20 and m<640 → x<394, y>233.6
+          -->
+          <rect x="88" y="36" width="612" height="364" fill="#f3f7f4" stroke="none"/>
+          <rect x="88" y="233.6" width="306" height="166.4" fill="#e5f0e8" stroke="#2f6f4e" stroke-width="1" stroke-dasharray="4 3"/>
+          <text x="100" y="256" fill="#2f6f4e" font-family="ui-sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="500">理想区（空）</text>
+          <text x="100" y="274" fill="#2f6f4e" font-family="ui-sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12">比三者都更快，且内存更低</text>
+
+          <!-- gridlines: time 0,10,20,30,40 ; mem 0,350,700,1050,1400 -->
+          <g stroke="#2d3142" stroke-opacity="0.08" stroke-width="0.8">
+            <line x1="88" y1="400" x2="700" y2="400"/>
+            <line x1="241" y1="36" x2="241" y2="400"/>
+            <line x1="394" y1="36" x2="394" y2="400"/>
+            <line x1="547" y1="36" x2="547" y2="400"/>
+            <line x1="700" y1="36" x2="700" y2="400"/>
+            <line x1="88" y1="309" x2="700" y2="309"/>
+            <line x1="88" y1="218" x2="700" y2="218"/>
+            <line x1="88" y1="127" x2="700" y2="127"/>
+            <line x1="88" y1="36" x2="700" y2="36"/>
+          </g>
+          <line x1="88" y1="36" x2="88" y2="400" stroke="#2d3142" stroke-opacity="0.28" stroke-width="1"/>
+          <line x1="88" y1="400" x2="700" y2="400" stroke="#2d3142" stroke-opacity="0.28" stroke-width="1"/>
+
+          <!-- trade-off segments, drawn under points -->
+          <line x1="394" y1="88" x2="516.4" y2="150.4" stroke="#2d3142" stroke-opacity="0.35" stroke-width="1"/>
+          <line x1="516.4" y1="150.4" x2="577.6" y2="233.6" stroke="#2d3142" stroke-opacity="0.35" stroke-width="1"/>
+
+          <!-- points: paper underlay then fill. Fast is the editorial accent (extreme time/memory swap). -->
+          <circle cx="577.6" cy="233.6" r="7" fill="#ffffff"/>
+          <circle data-name="标准" data-x="32" data-y="640" cx="577.6" cy="233.6" r="7" fill="#2d3142" stroke="#2d3142" stroke-width="1.2"/>
+          <circle cx="516.4" cy="150.4" r="7" fill="#ffffff"/>
+          <circle data-name="均衡" data-x="28" data-y="960" cx="516.4" cy="150.4" r="7" fill="#4f5d75" stroke="#4f5d75" stroke-width="1.2"/>
+          <circle cx="394" cy="88" r="8" fill="#ffffff"/>
+          <circle data-name="快速" data-x="20" data-y="1200" cx="394" cy="88" r="8" fill="#bf4520" stroke="#bf4520" stroke-width="1.4"/>
+
+          <!-- labels with paper masks -->
+          <g font-family="ui-sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13">
+            <rect x="586" y="210" width="108" height="40" rx="3" fill="#ffffff"/>
+            <text data-name="标准" x="592" y="226" fill="#2d3142" font-weight="600">标准</text>
+            <text x="592" y="244" fill="#5c6370" font-size="12">32 s · 640 MB</text>
+
+            <rect x="428" y="118" width="80" height="40" rx="3" fill="#ffffff"/>
+            <text data-name="均衡" x="434" y="134" fill="#2d3142" font-weight="600">均衡</text>
+            <text x="434" y="152" fill="#5c6370" font-size="12">28 s · 960 MB</text>
+
+            <rect x="404" y="44" width="124" height="40" rx="3" fill="#ffffff"/>
+            <text data-name="快速" x="410" y="60" fill="#bf4520" font-weight="600">快速</text>
+            <text x="410" y="78" fill="#5c6370" font-size="12">20 s · 1200 MB</text>
+          </g>
+
+          <!-- ticks -->
+          <g fill="#5c6370" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12">
+            <text data-tick="x" data-value="0" x="88" y="418" text-anchor="middle">0</text>
+            <text data-tick="x" data-value="10" x="241" y="418" text-anchor="middle">10</text>
+            <text data-tick="x" data-value="20" x="394" y="418" text-anchor="middle">20</text>
+            <text data-tick="x" data-value="30" x="547" y="418" text-anchor="middle">30</text>
+            <text data-tick="x" data-value="40" x="700" y="418" text-anchor="middle">40</text>
+            <text data-tick="y" data-value="0" x="80" y="404" text-anchor="end">0</text>
+            <text data-tick="y" data-value="350" x="80" y="313" text-anchor="end">350</text>
+            <text data-tick="y" data-value="700" x="80" y="222" text-anchor="end">700</text>
+            <text data-tick="y" data-value="1050" x="80" y="131" text-anchor="end">1050</text>
+            <text data-tick="y" data-value="1400" x="80" y="40" text-anchor="end">1400</text>
+          </g>
+          <text x="394" y="448" text-anchor="middle" fill="#5c6370" font-family="ui-sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13">耗时（秒）→ 越右越慢</text>
+          <text transform="rotate(-90 22 218)" x="22" y="218" text-anchor="middle" fill="#5c6370" font-family="ui-sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13">峰值内存（MB）→ 越上越高</text>
+
+          <line x1="88" y1="478" x2="700" y2="478" stroke="#2d3142" stroke-opacity="0.14"/>
+          <g font-family="ui-sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#2d3142">
+            <circle cx="100" cy="498" r="5" fill="#2d3142"/>
+            <text x="112" y="502">标准 · 内存最低</text>
+            <circle cx="250" cy="498" r="5.5" fill="#bf4520"/>
+            <text x="264" y="502">快速 · 耗时最低</text>
+            <circle cx="410" cy="498" r="5" fill="#4f5d75"/>
+            <text x="422" y="502">均衡 · 两项都居中</text>
+            <rect x="568" y="491" width="12" height="12" fill="none" stroke="#2f6f4e" stroke-dasharray="3 2"/>
+            <text x="586" y="502">理想区为空</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="reading">
+      <div class="card">
+        <div class="k">怎么读这张图</div>
+        <h3>越靠近左下角越好，但没有点在那里</h3>
+        <p>从快速走到均衡：耗时多 8 秒，峰值内存少 240 MB。再走到标准：再多 4 秒，再少 320 MB。方向始终是用时间换内存，中间没有折返。</p>
+      </div>
+      <div class="card">
+        <div class="k">图上故意没有的东西</div>
+        <h3>不排名，也不画误差</h3>
+        <p>没有给定权重，所以不把秒和 MB 加成一个分数。也没有重复次数或误差，点是单次读数，不是置信区间。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>同一标尺上的两项</h2>
+    <p class="note">两张条形都从 0 起，长度可以直接比。最快的条和最省内存的条不是同一模式。</p>
+    <div class="frame">
+      <div class="diagram-container">
+        <svg class="chart bars" viewBox="0 0 720 340" role="img" aria-labelledby="bar-title bar-desc">
+          <title id="bar-title">耗时与峰值内存的分组条形</title>
+          <desc id="bar-desc">上半是耗时，从 0 到 40 秒：快速 20 秒最短，均衡 28 秒，标准 32 秒最长。下半是峰值内存，从 0 到 1400 MB：标准 640 MB 最低，均衡 960 MB，快速 1200 MB 最高。</desc>
+          <!--
+            plot x 132..680 = 548px
+            time: w = v/40*548 ; 20→274, 28→383.6, 32→438.4
+            mem:  w = v/1400*548 ; 640→250.5, 960→375.8, 1200→469.7
+          -->
+          <text x="8" y="28" fill="#5c6370" font-family="ui-sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13">耗时 · 越短越好</text>
+          <g font-family="ui-sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="600" fill="#2d3142">
+            <text x="124" y="62" text-anchor="end">快速</text>
+            <text x="124" y="98" text-anchor="end">均衡</text>
+            <text x="124" y="134" text-anchor="end">标准</text>
+          </g>
+          <g stroke="#2d3142" stroke-opacity="0.08" stroke-width="0.8">
+            <line x1="132" y1="44" x2="132" y2="148"/>
+            <line x1="269" y1="44" x2="269" y2="148"/>
+            <line x1="406" y1="44" x2="406" y2="148"/>
+            <line x1="543" y1="44" x2="543" y2="148"/>
+            <line x1="680" y1="44" x2="680" y2="148"/>
+          </g>
+          <line x1="132" y1="148" x2="680" y2="148" stroke="#2d3142" stroke-opacity="0.28"/>
+          <!-- time bars, best (fast) in accent -->
+          <rect x="132" y="48" width="274" height="20" fill="#ffffff"/>
+          <rect data-series="耗时" data-value="20" x="132" y="48" width="274" height="20" fill="#bf4520" fill-opacity="0.9"/>
+          <rect x="132" y="84" width="383.6" height="20" fill="#ffffff"/>
+          <rect data-series="耗时" data-value="28" x="132" y="84" width="383.6" height="20" fill="#4f5d75" fill-opacity="0.85"/>
+          <rect x="132" y="120" width="438.4" height="20" fill="#ffffff"/>
+          <rect data-series="耗时" data-value="32" x="132" y="120" width="438.4" height="20" fill="#2d3142" fill-opacity="0.78"/>
+          <g fill="#2d3142" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12">
+            <text x="414" y="62">20 s</text>
+            <text x="524" y="98">28 s</text>
+            <text x="578" y="134">32 s</text>
+          </g>
+          <g fill="#5c6370" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11">
+            <text data-tick="time" data-value="0" x="132" y="164" text-anchor="middle">0</text>
+            <text data-tick="time" data-value="10" x="269" y="164" text-anchor="middle">10</text>
+            <text data-tick="time" data-value="20" x="406" y="164" text-anchor="middle">20</text>
+            <text data-tick="time" data-value="30" x="543" y="164" text-anchor="middle">30</text>
+            <text data-tick="time" data-value="40" x="680" y="164" text-anchor="middle">40 s</text>
+          </g>
+
+          <text x="8" y="198" fill="#5c6370" font-family="ui-sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13">峰值内存 · 越低越好</text>
+          <g font-family="ui-sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="600" fill="#2d3142">
+            <text x="124" y="232" text-anchor="end">标准</text>
+            <text x="124" y="268" text-anchor="end">均衡</text>
+            <text x="124" y="304" text-anchor="end">快速</text>
+          </g>
+          <g stroke="#2d3142" stroke-opacity="0.08" stroke-width="0.8">
+            <line x1="132" y1="214" x2="132" y2="318"/>
+            <line x1="269" y1="214" x2="269" y2="318"/>
+            <line x1="406" y1="214" x2="406" y2="318"/>
+            <line x1="543" y1="214" x2="543" y2="318"/>
+            <line x1="680" y1="214" x2="680" y2="318"/>
+          </g>
+          <line x1="132" y1="318" x2="680" y2="318" stroke="#2d3142" stroke-opacity="0.28"/>
+          <!-- mem bars; lowest (standard) stays ink, highest (fast) accent so the swap is visible -->
+          <rect x="132" y="218" width="250.5" height="20" fill="#ffffff"/>
+          <rect data-series="内存" data-value="640" x="132" y="218" width="250.5" height="20" fill="#2d3142" fill-opacity="0.78"/>
+          <rect x="132" y="254" width="375.8" height="20" fill="#ffffff"/>
+          <rect data-series="内存" data-value="960" x="132" y="254" width="375.8" height="20" fill="#4f5d75" fill-opacity="0.85"/>
+          <rect x="132" y="290" width="469.7" height="20" fill="#ffffff"/>
+          <rect data-series="内存" data-value="1200" x="132" y="290" width="469.7" height="20" fill="#bf4520" fill-opacity="0.9"/>
+          <g fill="#2d3142" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12">
+            <text x="390" y="232">640 MB</text>
+            <text x="516" y="268">960 MB</text>
+            <text x="610" y="304">1200 MB</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>相对标准模式差了多少</h2>
+    <p class="note">以标准为参照，只看差额，不加权。正数是变差（更高），负数是变好（更低）。</p>
+    <div style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>模式</th>
+            <th class="num">耗时</th>
+            <th class="num">比标准</th>
+            <th class="num">峰值内存</th>
+            <th class="num">比标准</th>
+            <th>两项里的位置</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="name"><span class="dot" style="background:#2d3142"></span>标准</td>
+            <td class="num">32 s</td>
+            <td class="num">—</td>
+            <td class="num">640 MB</td>
+            <td class="num">—</td>
+            <td>耗时最差，内存最好</td>
+          </tr>
+          <tr>
+            <td class="name"><span class="dot" style="background:#bf4520"></span>快速</td>
+            <td class="num">20 s</td>
+            <td class="num delta-good">−12 s</td>
+            <td class="num">1200 MB</td>
+            <td class="num delta-bad">+560 MB</td>
+            <td>耗时最好，内存最差</td>
+          </tr>
+          <tr>
+            <td class="name"><span class="dot" style="background:#4f5d75"></span>均衡</td>
+            <td class="num">28 s</td>
+            <td class="num delta-good">−4 s</td>
+            <td class="num">960 MB</td>
+            <td class="num delta-bad">+320 MB</td>
+            <td>两项都不是最好，也不是最差</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>数据仅此六个数：标准 32 s / 640 MB，快速 20 s / 1200 MB，均衡 28 s / 960 MB。坐标按线性比例从 0 画出，没有截断轴。</p>
+    <p>未提供权重、重复次数、误差或样本量，因此页面不给出推荐名次，也不画不确定范围。</p>
+  </footer>
+</div>
+</body>
+</html>

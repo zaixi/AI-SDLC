@@ -1,0 +1,72 @@
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"role":"assistant","content":"图表"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"已"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"写"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"好"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"我"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"用"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"桌"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"面"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"和"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"手机"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"宽度"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"截"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"图"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"核对"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"："}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"折"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"线"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"是否"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"在"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"未"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"采集"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"日"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"断开"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"，"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"以及"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"文字"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"有"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"没有"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"溢出"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-c79ad92b","created":1791965987,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-d10e62ce-35f2-4c03-9de1-03ca35861f7e-6","function":{"arguments":"","name":"bash"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-c79ad92b","created":1791965987,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"command\":\"node /tools/browser.mjs screenshot /work/answer.html /tmp/chart-desktop.png 1280 900 && node /tools/browser.mjs screenshot /work/answer.html /tmp/chart-mobile.png 390 844\",\"description\":\"Screenshot chart at desktop and mobile widths\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-c79ad92b","object":"chat.completion.chunk","created":1791965987,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-c79ad92b","created":1791965987,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":99,"prompt_tokens":12826,"total_tokens":12925,"prompt_tokens_details":{"cached_tokens":9344},"cost":0.012230000000000001}}
+
+data: [DONE]
+

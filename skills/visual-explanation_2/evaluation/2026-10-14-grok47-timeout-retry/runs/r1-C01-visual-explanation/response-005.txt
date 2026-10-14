@@ -1,0 +1,10 @@
+data: {"id":"chatcmpl-33eb13cd","created":1791968920,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"role":"assistant","tool_calls":[{"id":"call-137a366c-500c-4ba0-830e-8320badf2537-5","function":{"arguments":"","name":"bash"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-33eb13cd","created":1791968920,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"command\":\"node /tools/browser.mjs screenshot /work/answer.html /work/preview-desktop.png 1280 900 && node /tools/browser.mjs screenshot /work/answer.html /work/preview-mobile.png 390 844\",\"description\":\"Screenshot desktop and mobile HTML previews\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-33eb13cd","object":"chat.completion.chunk","created":1791968920,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-33eb13cd","created":1791968920,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":92,"prompt_tokens":16677,"total_tokens":16769,"completion_tokens_details":{"reasoning_tokens":24,"text_tokens":68},"prompt_tokens_details":{"cached_tokens":11648},"cost":0.016434}}
+
+data: [DONE]
+

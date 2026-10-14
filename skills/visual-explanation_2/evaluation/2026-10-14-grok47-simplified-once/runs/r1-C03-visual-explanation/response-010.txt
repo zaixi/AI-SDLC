@@ -1,0 +1,12 @@
+data: {"id":"chatcmpl-d2433049","object":"chat.completion.chunk","created":1791966188,"model":"grok-4.7","choices":[{"index":0,"delta":{"role":"assistant","content":"\n"}}]}
+
+data: {"id":"chatcmpl-d2433049","created":1791966188,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-d8481464-0635-4d51-ae23-5c9f0000160e-13","function":{"arguments":"","name":"bash"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-d2433049","created":1791966188,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"command\":\"node /tools/browser.mjs screenshot /work/answer.html /tmp/chart-desktop.png 1280 900 && node /tools/browser.mjs screenshot /work/answer.html /tmp/chart-mobile.png 390 844\",\"description\":\"Re-screenshot desktop and mobile chart\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-d2433049","object":"chat.completion.chunk","created":1791966188,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-d2433049","created":1791966188,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":69,"prompt_tokens":16679,"total_tokens":16748,"prompt_tokens_details":{"cached_tokens":16384},"cost":0.009196}}
+
+data: [DONE]
+

@@ -1,0 +1,10 @@
+data: {"id":"chatcmpl-7e93403a","created":1791969779,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"role":"assistant","tool_calls":[{"id":"call-e4c87534-0bd3-460c-ad58-5bac0ff0cc62-47","function":{"arguments":"","name":"bash"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-7e93403a","created":1791969779,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"command\":\"node /tools/browser.mjs eval \\\"/home/eval/.answer-me-with-html/pages/数字化平台图解-20261014-092044.html\\\" /tmp/shot6.js\",\"description\":\"Screenshot corrected main-chain section\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-7e93403a","object":"chat.completion.chunk","created":1791969779,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-7e93403a","created":1791969779,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":59,"prompt_tokens":52955,"total_tokens":53014,"prompt_tokens_details":{"cached_tokens":52480},"cost":0.027544}}
+
+data: [DONE]
+

@@ -1,0 +1,5 @@
+用户显式要求使用本题提供的 skill。先读取 /input/skill/SKILL.md。
+
+完成下面的用户请求。输入文件只读；需要文件产物时写入 /work，并在最终回复给出文件路径。只完成当前请求。
+
+已有函数 ingest 的行为：先 decode(raw)；decode 抛错则直接向调用方抛出，不执行后续步骤。解码成功后调用 store(record)，store 成功后才调用 acknowledge(record.id)。现在只新增一项：store 成功后、acknowledge 之前调用 audit(record.id)。audit 失败时不 acknowledge，错误直接抛出。让同事一眼看清这次改动，简短一些。

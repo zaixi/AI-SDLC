@@ -1,0 +1,20 @@
+{
+  "time": "2026-10-14T10:05:48.971807+00:00",
+  "records": [
+    {
+      "pid": 4098164,
+      "process_group": 4098164,
+      "reason": "Repeated upstream HTTP 500 before any tool execution; stop invalid evaluation attempt."
+    },
+    {
+      "pid": 4098167,
+      "process_group": 4098167,
+      "reason": "Repeated upstream HTTP 500 before any tool execution; stop invalid evaluation attempt."
+    },
+    {
+      "pid": 4098168,
+      "process_group": 4098168,
+      "reason": "Repeated upstream HTTP 500 before any tool execution; stop invalid evaluation attempt."
+    }
+  ]
+}

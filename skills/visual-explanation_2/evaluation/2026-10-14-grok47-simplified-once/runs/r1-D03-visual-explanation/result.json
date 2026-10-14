@@ -1,0 +1,24 @@
+{
+  "id": "r1-D03-visual-explanation",
+  "group": "D",
+  "title": "复杂内容的总览与必要细节",
+  "prompt": "数字化平台的说明在 /input/fixtures/digitization.md。请做一份图解：让新同事先快速看懂全貌，也让值班工程师查清 OCR、索引和邮件通知失败时分别影响哪里。原文列出的内部单元和已知关系需要能在相关视图中找到，允许按理解需要组织多个视图，不限定图种或文件格式。不要补充未确定的协议、队列、重试调度或故障处理入口。",
+  "fixtures": [
+    "digitization.md"
+  ],
+  "delivery": "reply_or_artifact",
+  "case": "D03",
+  "condition": "visual-explanation",
+  "repeat": 1,
+  "exit": 0,
+  "seconds": 488.95,
+  "requests": 10,
+  "model_requests": 9,
+  "output_tokens": 13629,
+  "budget_exhausted": false,
+  "has_text": true,
+  "artifacts": [
+    "digitization.html"
+  ],
+  "errors": []
+}

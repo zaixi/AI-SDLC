@@ -1,0 +1,89 @@
+diff --git a/SKILL.md b/SKILL.md
+index eaec7af..fc4922e 100644
+--- a/SKILL.md
++++ b/SKILL.md
+@@ -1,11 +1,11 @@
+ ---
+ name: visual-explanation
+-description: 用合适的视图帮助理解当前话题。用户要求画图、展示结构或变化，或关系、状态、过程、数据比较需要可视化时使用；就地展示，复杂内容按需展开。单一事实、纯命令执行和明确只要文字时不触发。
++description: 用合适的视图帮助理解当前话题。用户要求画图、展示结构或变化，为文档补充图解，或关系、状态、过程、数据比较需要可视化时使用；就地展示，复杂内容按需展开。单一事实、纯命令执行和明确只要文字时不触发。
+ ---
+ 
+-Help the user understand the current topic of conversation visually. Skip the preamble and keep prose brief. Pick the smallest view that makes the key point clear.
++Help the user understand the current topic visually, in conversation or a document. Skip the preamble and keep prose brief. Pick the smallest view that makes the key point clear.
+ 
+-- Compare a few values or options in a compact table. Use a chart when the point depends on a trend, distribution, or spatial relationship.
++- Compare a few values or options in a compact table. Use a chart when the point depends on a trend, distribution, or spatial relationship. For data charts needing exact scales, use a standard plotting library.
+ 
+ - Show logic or an algorithm as pseudocode:
+ 
+@@ -45,7 +45,7 @@ src/
+ └── transport/      # sends API requests
+ ```
+ 
+-- Show component interaction, control flow, or data flow with Mermaid. When specific syntax or configuration needs help, consult [mermaid-diagrams](https://github.com/softaworks/agent-toolkit/tree/HEAD/skills/mermaid-diagrams) or the host renderer's documentation:
++- Show relationships, sequences, states, or flows with Mermaid. When specific syntax or configuration needs help, consult [mermaid-diagrams](https://github.com/softaworks/agent-toolkit/tree/HEAD/skills/mermaid-diagrams) or the host renderer's documentation:
+ 
+ ```mermaid
+ sequenceDiagram
+@@ -116,13 +116,17 @@ function expandSkill(command: string): string {
+ }
+ ```
+ 
+-- Use HTML when requested, or when understanding needs visual layout, interaction, or coordinated views that an inline table, tree, or Mermaid diagram cannot provide. Write one focused HTML file — a diagram, an infographic, or a short slide deck, whichever fits the point. Match the product's colors, type, spacing, and components; use real labels and data. Open it with the host's available tools when supported and consistent with the user's preferences; otherwise provide a link.
++- Use [diagram-design](https://github.com/cathrynlavery/diagram-design/tree/HEAD/skills/diagram-design) for a diagram that needs deliberate spatial arrangement of groups, boundaries, and connections beyond what a standard layout communicates clearly, or a specific visual style or diagram import/export. Follow its workflow when it fits the chosen scope and delivery format; complexity alone does not require it.
+ 
+-  Once HTML is chosen, prefer [answer-me-with-html](https://github.com/QingYunA/answer-me-with-html/tree/HEAD/skills/answer-me-with-html) when its existing components directly fit the content. For custom charts, layouts, or interactions that would require substantial template adaptation, or when the tool is unavailable, generate the HTML directly. Let the content determine the number of panels.
++- Use HTML when requested, or when understanding needs visual layout, interaction, or coordinated views that an inline table, tree, or Mermaid diagram cannot provide. Write one focused HTML file — a diagram, an infographic, or a short slide deck, whichever fits the point. Match the surrounding document or product's visual style when available; use real labels and data. Open it with the host's available tools when supported and consistent with the user's preferences; otherwise provide a link.
++
++  For an HTML explanation page combining diagrams, tables, code, or prose, prefer [answer-me-with-html](https://github.com/QingYunA/answer-me-with-html/tree/HEAD/skills/answer-me-with-html) when its existing components directly fit the content. For custom charts, layouts, or interactions that would require substantial template adaptation, or when the tool is unavailable, generate the HTML directly. Let the content determine the number of panels.
+ 
+ ### guidance
+ 
+-Place each visual next to the short text it supports. Keep only the calls, files, props, states, and boundaries needed to answer the user's current question or the options to resolve the current discussion point.
++Place each visual next to the short text it supports. Keep the entities, relationships, conditions, and boundaries needed to answer the user's current question or compare the options under discussion.
++
++In a long document, visualize relationships the reader would otherwise have to assemble from several passages. Place the diagram in the relevant section and let prose carry details that are clearer in words; preserve the document's requested format.
+ 
+ Start with the view that answers the user's main question. Add a view only for a requested aspect that would otherwise remain unclear.
+ 
+@@ -130,10 +134,9 @@ For complex topics, group the overview by meaningful boundaries and place detail
+ 
+ ### extensions
+ 
+-- Put conditions, quantity limits, and direction that affect the answer on the relevant nodes or connections; supporting prose must agree with the graphic. Base labels and relationships on the supplied evidence; mark proposals, illustrative names, and assumptions explicitly, and leave unavailable internals unknown. For conditions and ordering, boundaries, call or data direction, cardinality, state transitions, or quantitative scales, consult the relevant [semantic guidance](references/semantics.md).
+-- For precise connector routing, a specific visual style, or diagram import/export, use [diagram-design](https://github.com/cathrynlavery/diagram-design/tree/HEAD/skills/diagram-design) when its workflow fits the task. User-specified tools take priority. For data charts needing exact scales, use a standard plotting library.
++- Simplify the presentation while preserving relationships and constraints that affect the answer; distinguish supplied facts from assumptions.
+ - Respect the requested format and destination; use a form the host can display. An editable HTML or SVG file can serve as both the viewable artifact and its source; provide additional exports when requested or needed for viewing. Verify the actual deliverables against user-required interactions, screen sizes, offline use, or exports; disclose any requirement you could not verify. Once the content is accurate, readable, and meets the requested behavior and format, deliver it; revise further when a concrete defect remains.
+ 
+-These skills are optional implementation aids. Choose the view, scope, and delivery format first; use the selected skill to implement those choices. Prefer existing installations; read only the selected skill's `SKILL.md` and relevant references, following its installed commands and runtime requirements. Reuse the host's or installed rendering tools when they support the chosen format. Use another implementation if the extension's workflow conflicts. If missing, install only the needed skill when already authorized, respecting the host's rules and user-specified versions and locations; otherwise use available tools. Explain any limitation affecting a user-requested tool.
++These skills are optional implementation aids. Choose the view, scope, and delivery format first; use the selected skill to implement those choices. User-specified tools take priority. Prefer existing installations; read only the selected skill's `SKILL.md` and relevant references, following its installed commands and runtime requirements. Reuse the host's or installed rendering tools when they support the chosen format. Use another implementation if the extension's workflow conflicts. If missing, install only the needed skill when already authorized, respecting the host's rules and user-specified versions and locations; otherwise use available tools. Explain any limitation affecting a user-requested tool.
+ 
+ Based on [show-me](https://github.com/humanlayer/skills/blob/bba9d13ab34f0a87f1cc33df4dd196372393ddfc/plugins/show-me/skills/show-me/SKILL.md). Its [MIT license](LICENSE.show-me) is included.
+diff --git a/references/semantics.md b/references/semantics.md
+deleted file mode 100644
+index beca62a..0000000
+--- a/references/semantics.md
++++ /dev/null
+@@ -1,21 +0,0 @@
+-# 语义要点
+-
+-表达条件与顺序、边界、调用或数据方向、关系数量、状态转移或定量尺度时，查阅对应部分。以下要点也适用于伪代码、表格和 HTML；选择工具仍由主文件负责。
+-
+-## 条件与事件
+-
+-- 保留“且／或／非”、数量与时间范围，以及规则作用的对象和操作；角色资格不等于具体身份，当前数量不等于历史次数。
+-- 区分状态、动作与进度，按已知规则表达终态、默认分支及失败、取消、返回路径。去重保留键、范围与有效时间；忽略重复事件不等于执行失败。
+-- 保留影响结论的判断、记录、更新与派发顺序；先后发生、等待完成和并发执行分别表达。角色职责不自动确定校验所在的服务。
+-
+-## 边界与关系
+-
+-- 区分组织归属、系统范围和部署边界，以及类型、实例、逻辑模块与运行单元。分组后仍保留与问题有关的实例数量和独立部署关系；调用树中的重复出现不等于多个实例。
+-- 调用箭头从发起方指向目标，数据或事件箭头顺着信息方向；用标签或线型区分调用与数据返回，并单独表达同步／异步。读取请求指向数据源，读取结果指向接收方，同图中的约定保持一致。合并连线仍需保留相关关系。
+-- 先确定“每个 A 对应几个 B；每个 B 对应几个 A”，包括是否允许零个，再按所选图法的端点约定标注，全图使用同一约定。若符号不能准确表达数量范围（如 1..2），在对应连线上标明范围或改用其他表达。概念关系不要求补造字段。多重归属、交叉依赖或循环不应被树形布局隐藏。
+-
+-## 数据与时间
+-
+-- 保留原值、单位、类别和时间范围，区分缺失值与零；占比须有明确整体，流量宽度须有数量依据。
+-- 比较绝对量的条形使用共同尺度和零基线；各自的占限额比例不能替代绝对量比较。独立尺度、截断轴、对数轴和聚合方式应明确说明，视觉长度与所标刻度相符。
+-- 排期只画已知起止与依赖；只有相对顺序时保留相对顺序。

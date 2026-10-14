@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日处理包裹数 · 6月1日至6月6日</title>
+<style>
+  :root {
+    --ink: #1c2430;
+    --muted: #5c6775;
+    --line: #c5ced8;
+    --grid: #e6ebf0;
+    --paper: #f4f6f8;
+    --card: #ffffff;
+    --accent: #1f6f8b;
+    --accent-soft: #e5f2f6;
+    --gap: #b45309;
+    --gap-soft: #fef3e2;
+    --gap-line: #d97706;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  main {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 28px 20px 40px;
+  }
+  header h1 {
+    margin: 0 0 6px;
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+  header p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .card {
+    margin-top: 18px;
+    background: var(--card);
+    border: 1px solid #e2e7ed;
+    border-radius: 14px;
+    padding: 16px 12px 8px;
+    box-shadow: 0 1px 2px rgba(28, 36, 48, 0.04);
+  }
+  .chart-wrap { width: 100%; overflow: hidden; }
+  svg { display: block; width: 100%; height: auto; }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    margin: 4px 8px 12px;
+    font-size: 0.86rem;
+    color: var(--muted);
+  }
+  .legend span { display: inline-flex; align-items: center; gap: 7px; }
+  .swatch-line {
+    width: 22px; height: 0;
+    border-top: 3px solid var(--accent);
+    border-radius: 2px;
+  }
+  .swatch-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--accent);
+  }
+  .swatch-gap {
+    width: 2px; height: 14px;
+    background: var(--gap-line);
+    border-radius: 1px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 0.95rem;
+    background: var(--card);
+    border: 1px solid #e2e7ed;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  caption {
+    text-align: left;
+    font-weight: 650;
+    padding: 12px 14px 8px;
+    caption-side: top;
+  }
+  th, td {
+    padding: 10px 14px;
+    text-align: left;
+    border-top: 1px solid var(--grid);
+  }
+  th {
+    background: #f8fafb;
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 0.82rem;
+  }
+  td.num { font-variant-numeric: tabular-nums; font-weight: 650; }
+  tr.missing td { background: var(--gap-soft); }
+  .tag {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 999px;
+    background: #fff;
+    color: var(--gap);
+    border: 1px solid #f3d3a4;
+    font-size: 0.82rem;
+    font-weight: 650;
+  }
+  .note {
+    margin: 14px 2px 0;
+    color: var(--muted);
+    font-size: 0.84rem;
+  }
+  .note strong { color: var(--ink); font-weight: 650; }
+  @media (max-width: 640px) {
+    main { padding: 18px 12px 28px; }
+    header h1 { font-size: 1.22rem; }
+    th, td { padding: 9px 10px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>每日处理包裹数</h1>
+    <p>6月1日至6月6日 · 单位：件 · 仅展示已采集的六天</p>
+  </header>
+
+  <section class="card" aria-labelledby="chart-title">
+    <div class="legend" id="chart-title">
+      <span><i class="swatch-line"></i>已采集，相邻两日连线</span>
+      <span><i class="swatch-dot"></i>当日件数</span>
+      <span><i class="swatch-gap"></i>未采集日，折线断开、不补值</span>
+    </div>
+    <div class="chart-wrap">
+      <svg id="chart" viewBox="0 0 760 420" role="img" aria-labelledby="chart-title chart-desc">
+        <desc id="chart-desc">折线表示6月1日80件、2日92件，3日未采集故折线中断，随后4日88件、5日115件、6日112件。纵轴单位为件，缺失日不记为零。</desc>
+      </svg>
+    </div>
+  </section>
+
+  <table>
+    <caption>逐日明细</caption>
+    <thead>
+      <tr><th>日期</th><th>处理包裹数</th><th>相对前一日</th></tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+
+  <p class="note">6月3日<strong>没有采集数据</strong>。图中这一天单独标出，左右折线断开；没有用前后日期推算，也没有把缺失记成 0 件。没有 6 月 1 日之前或 6 月 6 日之后的数据。</p>
+</main>
+<script>
+(function () {
+  var days = [
+    { label: "6月1日", short: "6/1", value: 80 },
+    { label: "6月2日", short: "6/2", value: 92 },
+    { label: "6月3日", short: "6/3", value: null },
+    { label: "6月4日", short: "6/4", value: 88 },
+    { label: "6月5日", short: "6/5", value: 115 },
+    { label: "6月6日", short: "6/6", value: 112 }
+  ];
+
+  var W = 760, H = 420;
+  var pad = { l: 58, r: 28, t: 28, b: 56 };
+  var plotW = W - pad.l - pad.r;
+  var plotH = H - pad.t - pad.b;
+  var yMax = 140;
+  var yTicks = [0, 20, 40, 60, 80, 100, 120, 140];
+
+  function xAt(i) { return pad.l + (i / (days.length - 1)) * plotW; }
+  function yAt(v) { return pad.t + (1 - v / yMax) * plotH; }
+
+  var ns = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById("chart");
+  function el(name, attrs) {
+    var node = document.createElementNS(ns, name);
+    Object.keys(attrs).forEach(function (k) { node.setAttribute(k, attrs[k]); });
+    return node;
+  }
+  function text(str, x, y, extra) {
+    var node = el("text", Object.assign({ x: x, y: y }, extra || {}));
+    node.textContent = str;
+    return node;
+  }
+
+  yTicks.forEach(function (tick) {
+    var y = yAt(tick);
+    svg.appendChild(el("line", {
+      x1: pad.l, y1: y, x2: W - pad.r, y2: y,
+      stroke: tick === 0 ? "#c5ced8" : "#e6ebf0",
+      "stroke-width": "1"
+    }));
+    svg.appendChild(text(String(tick), pad.l - 10, y + 4, {
+      "text-anchor": "end", fill: "#5c6775", "font-size": "12"
+    }));
+  });
+
+  svg.appendChild(text("件", 16, pad.t + 4, {
+    fill: "#5c6775", "font-size": "12"
+  }));
+
+    days.forEach(function (d, i) {
+    var x = xAt(i);
+    if (d.value != null) {
+      svg.appendChild(el("line", {
+        x1: x, y1: pad.t, x2: x, y2: pad.t + plotH,
+        stroke: "#eef2f5", "stroke-width": "1"
+      }));
+    }
+    svg.appendChild(text(d.short, x, H - (d.value == null ? 30 : 22), {
+      "text-anchor": "middle",
+      fill: d.value == null ? "#b45309" : "#1c2430",
+      "font-size": "13", "font-weight": "650"
+    }));
+    if (d.value == null) {
+      svg.appendChild(text("未采集", x, H - 12, {
+        "text-anchor": "middle", fill: "#b45309", "font-size": "12", "font-weight": "700"
+      }));
+    }
+  });
+
+  // 只连接相邻且两端都有值的点，缺失日两侧断开
+  var segments = [];
+  var current = [];
+  days.forEach(function (d, i) {
+    if (d.value == null) {
+      if (current.length) segments.push(current);
+      current = [];
+    } else {
+      current.push(i);
+    }
+  });
+  if (current.length) segments.push(current);
+
+  segments.forEach(function (seg) {
+    if (seg.length < 2) return;
+    var dAttr = seg.map(function (i, k) {
+      var d = days[i];
+      return (k === 0 ? "M" : "L") + xAt(i).toFixed(1) + " " + yAt(d.value).toFixed(1);
+    }).join(" ");
+    svg.appendChild(el("path", {
+      d: dAttr, fill: "none", stroke: "#1f6f8b",
+      "stroke-width": "2.5", "stroke-linejoin": "round", "stroke-linecap": "round"
+    }));
+  });
+
+  days.forEach(function (d, i) {
+    var x = xAt(i);
+    if (d.value == null) {
+      // 缺失只标在坐标轴上，不在数值区放点，避免被读成某个件数
+      svg.appendChild(el("line", {
+        x1: x, y1: pad.t, x2: x, y2: pad.t + plotH,
+        stroke: "#f3d3a4", "stroke-width": "1"
+      }));
+      return;
+    }
+    var y = yAt(d.value);
+    svg.appendChild(el("circle", {
+      cx: x, cy: y, r: "5.5", fill: "#1f6f8b", stroke: "#fff", "stroke-width": "2"
+    }));
+    var above = d.value > 125 ? 18 : -12;
+    var val = el("text", {
+      x: x, y: y + above, "text-anchor": "middle",
+      fill: "#1c2430", "font-size": "13", "font-weight": "700"
+    });
+    val.textContent = String(d.value);
+    svg.appendChild(val);
+  });
+
+  var tbody = document.getElementById("rows");
+  days.forEach(function (d, i) {
+    var tr = document.createElement("tr");
+    if (d.value == null) tr.className = "missing";
+    var delta = "—";
+    if (d.value != null) {
+      var prev = null;
+      for (var j = i - 1; j >= 0; j--) {
+        if (days[j].value != null) { prev = days[j]; break; }
+      }
+      if (prev) {
+        var diff = d.value - prev.value;
+        delta = (diff > 0 ? "+" : "") + diff + "（相对" + prev.label + "）";
+      } else {
+        delta = "—";
+      }
+    } else {
+      delta = "无法比较";
+    }
+    var valueCell = d.value == null
+      ? '<span class="tag">未采集</span>'
+      : d.value + " 件";
+    tr.innerHTML = "<td>" + d.label + "</td><td class=\"num\">" + valueCell + "</td><td>" + delta + "</td>";
+    tbody.appendChild(tr);
+  });
+})();
+</script>
+</body>
+</html>

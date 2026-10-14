@@ -1,0 +1,21 @@
+{
+  "paths": {
+    "/home/liyujiang": false,
+    "/input/skill/SKILL.md": true,
+    "/input/skill/references/evaluation.md": false,
+    "/input/specialists/mermaid-diagrams/SKILL.md": true,
+    "/input/specialists/diagram-design/SKILL.md": true,
+    "/input/specialists/answer-me-with-html/scripts/am.mjs": true,
+    "/home/eval/.codex/skills": false,
+    "/home/eval/.agents/skills": false,
+    "/home/eval/.config/opencode/skills": false
+  },
+  "am_in_path": null,
+  "interfaces": [
+    [
+      1,
+      "lo"
+    ]
+  ],
+  "external_network": false
+}

@@ -1,0 +1,76 @@
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"role":"assistant","content":"主"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"链"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"图"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"边"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"线"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"交叉"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"太"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"密"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"，"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"我"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"改"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"成"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"按"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"原文"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"顺序"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"的"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"分"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"步"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"序列"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"，"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"并"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"修正"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"失败"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"图"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"里"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"容易"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"看成"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"实"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"写"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"的"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"虚"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"线"}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-e368e00a","created":1791969531,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-300069d9-8b90-49d4-8f60-e67e9a410605-27","function":{"arguments":"","name":"read"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-e368e00a","created":1791969531,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/home/eval/.answer-me-with-html/pages/数字化平台图解-20261014-091723.html\",\"offset\":980.0,\"limit\":160.0}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-e368e00a","object":"chat.completion.chunk","created":1791969531,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-e368e00a","created":1791969531,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":77,"prompt_tokens":33555,"total_tokens":33632,"prompt_tokens_details":{"cached_tokens":33024},"cost":0.018036}}
+
+data: [DONE]
+

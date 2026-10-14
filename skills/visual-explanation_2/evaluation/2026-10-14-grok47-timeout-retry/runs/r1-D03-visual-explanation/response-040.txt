@@ -1,0 +1,18 @@
+data: {"id":"chatcmpl-ce7e7ac5","created":1791969835,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"role":"assistant","tool_calls":[{"id":"call-9e7d2508-8392-4190-8b15-2f504e8854ed-53","function":{"arguments":"","name":"read"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-ce7e7ac5","created":1791969835,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/tmp/chain-0.png\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-ce7e7ac5","created":1791969835,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-9e7d2508-8392-4190-8b15-2f504e8854ed-54","function":{"arguments":"","name":"read"},"type":"function","index":1}]}}]}
+
+data: {"id":"chatcmpl-ce7e7ac5","created":1791969835,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/tmp/chain-1.png\"}"},"type":"function","index":1}]}}]}
+
+data: {"id":"chatcmpl-ce7e7ac5","created":1791969835,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-9e7d2508-8392-4190-8b15-2f504e8854ed-55","function":{"arguments":"","name":"read"},"type":"function","index":2}]}}]}
+
+data: {"id":"chatcmpl-ce7e7ac5","created":1791969835,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/tmp/chain-2.png\"}"},"type":"function","index":2}]}}]}
+
+data: {"id":"chatcmpl-ce7e7ac5","object":"chat.completion.chunk","created":1791969835,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-ce7e7ac5","created":1791969835,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":46,"prompt_tokens":57340,"total_tokens":57386,"prompt_tokens_details":{"cached_tokens":56960},"cost":0.029515999999999997}}
+
+data: [DONE]
+

@@ -1,0 +1,50 @@
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"role":"assistant","content":"截"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"图"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"只"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"抓"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"到"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"标题"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"我"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"按"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"文档"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"结构"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"把"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"每一"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"节"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"整"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"段"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"截"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"出来"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"\n"}}]}
+
+data: {"id":"chatcmpl-58369988","created":1791969583,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-4a25ba81-707d-4001-8dec-94c92d262a4d-31","function":{"arguments":"","name":"write"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-58369988","created":1791969583,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/tmp/shot3.js\",\"content\":\"async (page) => {\\n  await page.setViewportSize({ width: 1400, height: 900 });\\n  const data = await page.evaluate(() => {\\n    const hs = [...document.querySelectorAll('h2')];\\n    return hs.map((h, i) => {\\n      const next = hs[i + 1];\\n      const top = h.getBoundingClientRect().top + window.scrollY;\\n      const bottom = next ? next.getBoundingClientRect().top + window.scrollY : document.documentElement.scrollHeight;\\n      return { title: h.innerText.trim(), top, bottom, h: bottom - top };\\n    });\\n  });\\n  const shots = [];\\n  for (let i = 0; i < data.length; i++) {\\n    const s = data[i];\\n    const safe = s.title.replace(/[^\\\\w\\\\u4e00-\\\\u9fff]+/g, '_').slice(0, 24);\\n    // clip from document\\n    await page.screenshot({\\n      path: `/tmp/sec-${i}-${safe}.png`,\\n      clip: { x: 280, y: s.top - 8, width: 980, height: Math.min(s.h + 16, 2400) },\\n      fullPage: true,\\n    });\\n    shots.push({ i, title: s.title, h: s.h });\\n  }\\n  return shots;\\n}\\n\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-58369988","object":"chat.completion.chunk","created":1791969583,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-58369988","created":1791969583,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":348,"prompt_tokens":39464,"total_tokens":39812,"prompt_tokens_details":{"cached_tokens":39040},"cost":0.022456}}
+
+data: [DONE]
+

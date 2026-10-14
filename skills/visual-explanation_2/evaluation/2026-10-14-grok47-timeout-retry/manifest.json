@@ -1,0 +1,106 @@
+{
+  "conditions": [
+    "visual-explanation"
+  ],
+  "case_count": 5,
+  "planned_repeats": 1,
+  "planned_outputs": 5,
+  "generation_skill_allowlist": {
+    "visual-explanation": [
+      "SKILL.md"
+    ],
+    "none": []
+  },
+  "generation_specialist_allowlist": {
+    "visual-explanation": [
+      "mermaid-diagrams",
+      "diagram-design",
+      "answer-me-with-html"
+    ]
+  },
+  "suite_id": "2026-10-14-grok47-timeout-retry",
+  "status": "complete_with_two_task_timeouts_one_service_error_and_cli_log_anomaly",
+  "created_at_utc": "2026-10-14T09:01:02.980686+00:00",
+  "source_suite": "/home/liyujiang/.codex/skill-evaluations/visual-explanation/2026-10-14-grok47-simplified-once",
+  "case_source": "/home/liyujiang/.codex/skill-evaluations/visual-explanation/2026-10-10-show-me-content-cases",
+  "snapshot_hashes": {
+    "visual-explanation": {
+      "LICENSE.show-me": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+      "SKILL.md": "67cdc94475566310f9e48d846328e6a07560838bcd7bb79300f839a8c6da2112",
+      "agents/openai.yaml": "1fa624cb37f6816b07915c87de36c560fb0af78d5bf1a440daf5de03e1758aa6"
+    }
+  },
+  "files": {
+    "inputs/cases.json": "1b0ec6138100ff2d05b5431c3120e96f2699d7a2e5fbd6c3d2f1124655f4725b",
+    "inputs/fixtures/editor-style.json": "b78051374cc7e7c82d8966949a5436342105e9ef5bf5c37b7e8b63a144670ee2",
+    "inputs/fixtures/LibraryPage.tsx": "6dbbd6e89eaa90988da8e5f3af9bcb048eac13198e4434b89e683300570dbe2b",
+    "inputs/fixtures/notification-flow.svg": "1191120767a78b84cb08f17fba2620070bac4d035958009fe6e5d3de308b3511",
+    "inputs/fixtures/digitization.md": "7025ee1e9072168d68c0ed36b70f3cd4596151166f7080859c8295df471b1c29",
+    "judge/expectations.json": "b39cf7b4a5e8936731da11d404ff0a619d1179424bc6341bff137fcae58fe2d0",
+    "judge/rubric.md": "547f1f063c727d62e1cb03878be4a4d5a1ccb7a24998f11d768c8811f5ee47ea",
+    "scripts/browser.mjs": "a8f1e4e84e7440aa910e991b1ea69e7b50a15dc06676b2e54565b4586ead2c74",
+    "scripts/audit.py": "92d37fd343f9262349155c447a6bc5096fb2755e08916b3e28f50bd18bc0915a",
+    "scripts/run.py": "26b9d9e07b555dc7dc35699eaa3d2dcca2360885428cd3808d117cdd93407175",
+    "scripts/prepare_review.py": "09cb3abc29faf6b3b2820677b18840a314fc5d50ffcaccda5a3396b90e239b9a",
+    "scripts/blind_review.py": "84f3dc29e2f5685e933070a35ec097ecdb16bd91852e55978587954a23f50b70",
+    "scripts/check_portability.mjs": "0ef10467aba20bec25f68852d3389051606e24b9822dc581a815c61d59761990",
+    "scripts/sandbox_bridge.py": "eff820c662185e3accb4bb892c6b73d8f179393f4147b8210a609cef21952a2b",
+    "scripts/verify_environment.py": "50c5e1457fb34a25e40749179c1a811f1f58057dd99f61c986bbf8d6691bc318",
+    "scripts/interaction_checks.py": "ff4805c8ebaa2f938b517d0b11941c44f01ab41f46ff0a5987d59d6982df4ca1",
+    "scripts/check_interaction.mjs": "9815c00ae7452d59818871f58680126a917946c5c8a34a4e6b92d90a3ef1fc16",
+    "scripts/check_chart.mjs": "174d66c4a8e67f645bd3cbc5f6ceac60b501392bbfeb2ed80af96d29260941af",
+    "scripts/check_ui.mjs": "6b33c242a71ebbf4ff81057b488e7cde3cd363622e0c1b13a3ca7025ee0fea55",
+    "scripts/report.py": "21091a6518cbb57ea37cfe4c42062d5da11839eaee72ec9fa879614015ffb56d"
+  },
+  "retry_of": [
+    "B03",
+    "B04",
+    "C01",
+    "C04",
+    "D03"
+  ],
+  "attempt_per_case": 2,
+  "completed_at_utc": "2026-10-14T09:31:34.532153+00:00",
+  "generation": {
+    "attempted": 5,
+    "additional_attempts_per_selected_case": 1,
+    "normal_cli_final_replies": [
+      "B04"
+    ],
+    "provider_completed_cli_final_missing": [
+      "D03"
+    ],
+    "task_timeouts": [
+      "C01",
+      "C04"
+    ],
+    "upstream_stream_error": [
+      "B03"
+    ],
+    "further_automatic_resampling": false,
+    "requests": 82,
+    "requests_missing_usage": 3
+  },
+  "review": {
+    "cases_reviewed": 5,
+    "rendered_artifacts": 3,
+    "screenshots": 6,
+    "independent_score_requests": 0,
+    "method": "primary-agent non-blind inspection plus browser and coordinate checks"
+  },
+  "installed_skill_unchanged": true,
+  "dependencies_unchanged": true,
+  "review_script_changes": {
+    "prepare_review.py": "Recover latest completed provider reply when CLI omits final events; retain incomplete am pages for review. Generation output unchanged.",
+    "report.py": "Distinguish recovered provider response from CLI final reply."
+  },
+  "final_artifact_hashes": {
+    "report.md": "915b921e319f63c16acb3076f058f7dd03347d389c0b2189c60ad28beffd5679",
+    "gallery.html": "af6c1ffb8ac1a5be1d1231b1fc7f09ff9fedb26be462898f4feeac425e0c1543",
+    "review/manual-case-notes.json": "d1ac8deccd411447bb3dba1f9ad4580bf6fc267a93da9a845aaf9703a4e02574",
+    "review/summary.json": "8e453674f81080e9512193f720c54576e4cbba6ab726dac4b7c5c79f5f59b889",
+    "review/execution-audit.json": "9993c95563f56367e103a75c178d157adf67cef7d4e9d74b10f74f05e518d59b",
+    "review/c01-axis-verification.json": "fc5af664932b20961c4d7cfb637b361a496e60c8b08fd23c3e7a8f97223a0a35",
+    "review/cli-log-anomaly.json": "8c52438126801d863ca792d894a40769d7f3529c0e3594d84e0444272229970d"
+  }
+}

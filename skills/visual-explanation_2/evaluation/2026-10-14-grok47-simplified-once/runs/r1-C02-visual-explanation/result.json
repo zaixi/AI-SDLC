@@ -1,0 +1,25 @@
+{
+  "id": "r1-C02-visual-explanation",
+  "group": "C",
+  "title": "产品风格下的 UI 状态对比",
+  "prompt": "我们在讨论编辑器的保存体验，请做一个聚焦问题的单文件 HTML，在同一页比较三种静态状态，桌面和手机都能看：未保存时，按钮写“保存”且可点击，提示“有未保存修改”；保存中，按钮写“保存中…”且禁用，提示“正在写入”；已保存，按钮写“已保存”且禁用，提示“修改已保存”。每种状态都显示同一个文档名“季度计划”。沿用 /input/fixtures/editor-style.json 的产品样式。无需实现真实保存或联网。",
+  "fixtures": [
+    "editor-style.json"
+  ],
+  "delivery": "html",
+  "case": "C02",
+  "condition": "visual-explanation",
+  "repeat": 1,
+  "exit": 0,
+  "seconds": 681.48,
+  "requests": 10,
+  "model_requests": 9,
+  "output_tokens": 4778,
+  "budget_exhausted": false,
+  "has_text": true,
+  "artifacts": [
+    "answer.html",
+    "check-states.js"
+  ],
+  "errors": []
+}

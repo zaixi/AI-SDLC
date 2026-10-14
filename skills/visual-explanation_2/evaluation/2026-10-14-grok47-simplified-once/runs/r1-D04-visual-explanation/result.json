@@ -1,0 +1,24 @@
+{
+  "id": "r1-D04-visual-explanation",
+  "group": "D",
+  "title": "对已有图做局部语义修改",
+  "prompt": "上一版图在 /input/fixtures/notification-flow.svg。规则更新：通知失败时只重试通知，不再重新执行任务。请直接基于这份图修改对应失败路径和标签，正常路径、其他文字及整体风格保持不变，交付修改后的 SVG。",
+  "fixtures": [
+    "notification-flow.svg"
+  ],
+  "delivery": "svg",
+  "case": "D04",
+  "condition": "visual-explanation",
+  "repeat": 1,
+  "exit": 0,
+  "seconds": 101.72,
+  "requests": 12,
+  "model_requests": 11,
+  "output_tokens": 3858,
+  "budget_exhausted": false,
+  "has_text": true,
+  "artifacts": [
+    "answer.svg"
+  ],
+  "errors": []
+}

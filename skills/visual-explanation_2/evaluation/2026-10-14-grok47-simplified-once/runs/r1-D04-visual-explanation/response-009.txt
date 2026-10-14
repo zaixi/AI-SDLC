@@ -1,0 +1,10 @@
+data: {"id":"chatcmpl-0b67a376","created":1791966308,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"role":"assistant","tool_calls":[{"id":"call-1ea92056-c082-47e7-a648-a5e8d17a0268-9","function":{"arguments":"","name":"bash"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-0b67a376","created":1791966308,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"command\":\"node /tools/browser.mjs screenshot /work/answer.svg /tmp/answer-preview.png 1100 420\",\"description\":\"Re-render corrected failure loop SVG\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-0b67a376","object":"chat.completion.chunk","created":1791966308,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-0b67a376","created":1791966308,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":43,"prompt_tokens":12660,"total_tokens":12703,"prompt_tokens_details":{"cached_tokens":12416},"cost":0.006954}}
+
+data: [DONE]
+

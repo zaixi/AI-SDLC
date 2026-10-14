@@ -1,0 +1,126 @@
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"role":"assistant","content":"数据"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"是"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" "}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"6"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" "}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"月"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" "}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"1"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"–"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"6"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" "}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"日"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"每日"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"包裹"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"数"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"，"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"6"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" "}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"月"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" "}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"3"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" "}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"日"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"未"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"采集"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"我会"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"做成"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"一张"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"离"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"线"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"单"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"文件"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"中"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"文"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"趋势"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"图"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"："}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"有"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"数据"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"的"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"日子"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"连"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"线"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"，"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"缺失"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"日"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"单独"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"标"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"出"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"、"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"不"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"补"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"值"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"也不"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"记"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"零"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","created":1791965898,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-017d2a5a-57ac-46c3-954b-36e3607d8416-5","function":{"arguments":"","name":"write"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","created":1791965898,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/work/answer.html\",\"content\":\"<!DOCTYPE html>\\n<html lang=\\\"zh-CN\\\">\\n<head>\\n<meta charset=\\\"utf-8\\\">\\n<meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1\\\">\\n<title>每日处理包裹数 · 6月1日至6月6日</title>\\n<style>\\n  :root {\\n    --ink: #1c2430;\\n    --muted: #5c6775;\\n    --line: #c5ced8;\\n    --grid: #e6ebf0;\\n    --paper: #f4f6f8;\\n    --card: #ffffff;\\n    --accent: #1f6f8b;\\n    --accent-soft: #e5f2f6;\\n    --gap: #b45309;\\n    --gap-soft: #fef3e2;\\n    --gap-line: #d97706;\\n  }\\n  * { box-sizing: border-box; }\\n  html, body { margin: 0; padding: 0; }\\n  body {\\n    font-family: \\\"Source Han Sans SC\\\", \\\"Noto Sans SC\\\", \\\"PingFang SC\\\", \\\"Microsoft YaHei\\\", sans-serif;\\n    background: var(--paper);\\n    color: var(--ink);\\n    line-height: 1.5;\\n  }\\n  main {\\n    max-width: 880px;\\n    margin: 0 auto;\\n    padding: 28px 20px 40px;\\n  }\\n  header h1 {\\n    margin: 0 0 6px;\\n    font-size: 1.45rem;\\n    font-weight: 700;\\n    letter-spacing: 0.01em;\\n  }\\n  header p {\\n    margin: 0;\\n    color: var(--muted);\\n    font-size: 0.95rem;\\n  }\\n  .card {\\n    margin-top: 18px;\\n    background: var(--card);\\n    border: 1px solid #e2e7ed;\\n    border-radius: 14px;\\n    padding: 16px 12px 8px;\\n    box-shadow: 0 1px 2px rgba(28, 36, 48, 0.04);\\n  }\\n  .chart-wrap { width: 100%; overflow: hidden; }\\n  svg { display: block; width: 100%; height: auto; }\\n  .legend {\\n    display: flex;\\n    flex-wrap: wrap;\\n    gap: 10px 18px;\\n    margin: 4px 8px 12px;\\n    font-size: 0.86rem;\\n    color: var(--muted);\\n  }\\n  .legend span { display: inline-flex; align-items: center; gap: 7px; }\\n  .swatch-line {\\n    width: 22px; height: 0;\\n    border-top: 3px solid var(--accent);\\n    border-radius: 2px;\\n  }\\n  .swatch-dot {\\n    width: 10px; height: 10px; border-radius: 50%;\\n    background: var(--accent);\\n  }\\n  .swatch-gap {\\n    width: 10px; height: 10px; border-radius: 50%;\\n    background: #fff;\\n    border: 2px dashed var(--gap-line);\\n    box-sizing: border-box;\\n  }\\n  table {\\n    width: 100%;\\n    border-collapse: collapse;\\n    margin-top: 16px;\\n    font-size: 0.95rem;\\n    background: var(--card);\\n    border: 1px solid #e2e7ed;\\n    border-radius: 14px;\\n    overflow: hidden;\\n  }\\n  caption {\\n    text-align: left;\\n    font-weight: 650;\\n    padding: 12px 14px 8px;\\n    caption-side: top;\\n  }\\n  th, td {\\n    padding: 10px 14px;\\n    text-align: left;\\n    border-top: 1px solid var(--grid);\\n  }\\n  th {\\n    background: #f8fafb;\\n    color: var(--muted);\\n    font-weight: 600;\\n    font-size: 0.82rem;\\n  }\\n  td.num { font-variant-numeric: tabular-nums; font-weight: 650; }\\n  tr.missing td { background: var(--gap-soft); }\\n  .tag {\\n    display: inline-block;\\n    padding: 1px 8px;\\n    border-radius: 999px;\\n    background: #fff;\\n    color: var(--gap);\\n    border: 1px solid #f3d3a4;\\n    font-size: 0.82rem;\\n    font-weight: 650;\\n  }\\n  .note {\\n    margin: 14px 2px 0;\\n    color: var(--muted);\\n    font-size: 0.84rem;\\n  }\\n  .note strong { color: var(--ink); font-weight: 650; }\\n  @media (max-width: 640px) {\\n    main { padding: 18px 12px 28px; }\\n    header h1 { font-size: 1.22rem; }\\n    th, td { padding: 9px 10px; }\\n  }\\n</style>\\n</head>\\n<body>\\n<main>\\n  <header>\\n    <h1>每日处理包裹数</h1>\\n    <p>6月1日至6月6日 · 单位：件 · 仅展示已采集的六天</p>\\n  </header>\\n\\n  <section class=\\\"card\\\" aria-labelledby=\\\"chart-title\\\">\\n    <div class=\\\"legend\\\" id=\\\"chart-title\\\">\\n      <span><i class=\\\"swatch-line\\\"></i>已采集，相邻两日连线</span>\\n      <span><i class=\\\"swatch-dot\\\"></i>当日件数</span>\\n      <span><i class=\\\"swatch-gap\\\"></i>未采集，不连线、不补值</span>\\n    </div>\\n    <div class=\\\"chart-wrap\\\">\\n      <svg id=\\\"chart\\\" viewBox=\\\"0 0 760 420\\\" role=\\\"img\\\" aria-labelledby=\\\"chart-title chart-desc\\\">\\n        <desc id=\\\"chart-desc\\\">折线表示6月1日80件、2日92件，3日未采集故折线中断，随后4日88件、5日115件、6日112件。纵轴单位为件，缺失日不记为零。</desc>\\n      </svg>\\n    </div>\\n  </section>\\n\\n  <table>\\n    <caption>逐日明细</caption>\\n    <thead>\\n      <tr><th>日期</th><th>处理包裹数</th><th>相对前一日</th></tr>\\n    </thead>\\n    <tbody id=\\\"rows\\\"></tbody>\\n  </table>\\n\\n  <p class=\\\"note\\\">6月3日<strong>没有采集数据</strong>。图中这一天单独标出，左右折线断开；没有用前后日期推算，也没有把缺失记成 0 件。没有 6 月 1 日之前或 6 月 6 日之后的数据。</p>\\n</main>\\n<script>\\n(function () {\\n  var days = [\\n    { label: \\\"6月1日\\\", short: \\\"6/1\\\", value: 80 },\\n    { label: \\\"6月2日\\\", short: \\\"6/2\\\", value: 92 },\\n    { label: \\\"6月3日\\\", short: \\\"6/3\\\", value: null },\\n    { label: \\\"6月4日\\\", short: \\\"6/4\\\", value: 88 },\\n    { label: \\\"6月5日\\\", short: \\\"6/5\\\", value: 115 },\\n    { label: \\\"6月6日\\\", short: \\\"6/6\\\", value: 112 }\\n  ];\\n\\n  var W = 760, H = 420;\\n  var pad = { l: 58, r: 28, t: 28, b: 56 };\\n  var plotW = W - pad.l - pad.r;\\n  var plotH = H - pad.t - pad.b;\\n  var yMax = 140;\\n  var yTicks = [0, 20, 40, 60, 80, 100, 120, 140];\\n\\n  function xAt(i) { return pad.l + (i / (days.length - 1)) * plotW; }\\n  function yAt(v) { return pad.t + (1 - v / yMax) * plotH; }\\n\\n  var ns = \\\"http://www.w3.org/2000/svg\\\";\\n  var svg = document.getElementById(\\\"chart\\\");\\n  function el(name, attrs) {\\n    var node = document.createElementNS(ns, name);\\n    Object.keys(attrs).forEach(function (k) { node.setAttribute(k, attrs[k]); });\\n    return node;\\n  }\\n  function text(str, x, y, extra) {\\n    var node = el(\\\"text\\\", Object.assign({ x: x, y: y }, extra || {}));\\n    node.textContent = str;\\n    return node;\\n  }\\n\\n  yTicks.forEach(function (tick) {\\n    var y = yAt(tick);\\n    svg.appendChild(el(\\\"line\\\", {\\n      x1: pad.l, y1: y, x2: W - pad.r, y2: y,\\n      stroke: tick === 0 ? \\\"#c5ced8\\\" : \\\"#e6ebf0\\\",\\n      \\\"stroke-width\\\": \\\"1\\\"\\n    }));\\n    svg.appendChild(text(String(tick), pad.l - 10, y + 4, {\\n      \\\"text-anchor\\\": \\\"end\\\", fill: \\\"#5c6775\\\", \\\"font-size\\\": \\\"12\\\"\\n    }));\\n  });\\n\\n  svg.appendChild(text(\\\"件\\\", 16, pad.t + 4, {\\n    fill: \\\"#5c6775\\\", \\\"font-size\\\": \\\"12\\\"\\n  }));\\n\\n  days.forEach(function (d, i) {\\n    var x = xAt(i);\\n    svg.appendChild(el(\\\"line\\\", {\\n      x1: x, y1: pad.t, x2: x, y2: pad.t + plotH,\\n      stroke: d.value == null ? \\\"#f3d3a4\\\" : \\\"#eef2f5\\\",\\n      \\\"stroke-width\\\": \\\"1\\\"\\n    }));\\n    svg.appendChild(text(d.short, x, H - 28, {\\n      \\\"text-anchor\\\": \\\"middle\\\", fill: \\\"#1c2430\\\", \\\"font-size\\\": \\\"13\\\", \\\"font-weight\\\": \\\"600\\\"\\n    }));\\n    if (d.value == null) {\\n      svg.appendChild(text(\\\"未采集\\\", x, H - 12, {\\n        \\\"text-anchor\\\": \\\"middle\\\", fill: \\\"#b45309\\\", \\\"font-size\\\": \\\"11\\\", \\\"font-weight\\\": \\\"650\\\"\\n      }));\\n    }\\n  });\\n\\n  // 只连接相邻且两端都有值的点，缺失日两侧断开\\n  var segments = [];\\n  var current = [];\\n  days.forEach(function (d, i) {\\n    if (d.value == null) {\\n      if (current.length) segments.push(current);\\n      current = [];\\n    } else {\\n      current.push(i);\\n    }\\n  });\\n  if (current.length) segments.push(current);\\n\\n  segments.forEach(function (seg) {\\n    if (seg.length < 2) return;\\n    var dAttr = seg.map(function (i, k) {\\n      var d = days[i];\\n      return (k === 0 ? \\\"M\\\" : \\\"L\\\") + xAt(i).toFixed(1) + \\\" \\\" + yAt(d.value).toFixed(1);\\n    }).join(\\\" \\\");\\n    svg.appendChild(el(\\\"path\\\", {\\n      d: dAttr, fill: \\\"none\\\", stroke: \\\"#1f6f8b\\\",\\n      \\\"stroke-width\\\": \\\"2.5\\\", \\\"stroke-linejoin\\\": \\\"round\\\", \\\"stroke-linecap\\\": \\\"round\\\"\\n    }));\\n  });\\n\\n  days.forEach(function (d, i) {\\n    var x = xAt(i);\\n    if (d.value == null) {\\n      var yGap = pad.t + plotH * 0.42;\\n      svg.appendChild(el(\\\"line\\\", {\\n        x1: x, y1: pad.t + 8, x2: x, y2: pad.t + plotH,\\n        stroke: \\\"#d97706\\\", \\\"stroke-width\\\": \\\"1.5\\\", \\\"stroke-dasharray\\\": \\\"4 4\\\"\\n      }));\\n      svg.appendChild(el(\\\"circle\\\", {\\n        cx: x, cy: yGap, r: \\\"7\\\", fill: \\\"#fff\\\", stroke: \\\"#d97706\\\", \\\"stroke-width\\\": \\\"2\\\"\\n      }));\\n      var label = el(\\\"text\\\", {\\n        x: x, y: yGap - 16, \\\"text-anchor\\\": \\\"middle\\\",\\n        fill: \\\"#b45309\\\", \\\"font-size\\\": \\\"13\\\", \\\"font-weight\\\": \\\"700\\\"\\n      });\\n      label.textContent = \\\"未采集\\\";\\n      svg.appendChild(label);\\n      return;\\n    }\\n    var y = yAt(d.value);\\n    svg.appendChild(el(\\\"circle\\\", {\\n      cx: x, cy: y, r: \\\"5.5\\\", fill: \\\"#1f6f8b\\\", stroke: \\\"#fff\\\", \\\"stroke-width\\\": \\\"2\\\"\\n    }));\\n    var above = d.value > 125 ? 18 : -12;\\n    var val = el(\\\"text\\\", {\\n      x: x, y: y + above, \\\"text-anchor\\\": \\\"middle\\\",\\n      fill: \\\"#1c2430\\\", \\\"font-size\\\": \\\"13\\\", \\\"font-weight\\\": \\\"700\\\"\\n    });\\n    val.textContent = String(d.value);\\n    svg.appendChild(val);\\n  });\\n\\n  var tbody = document.getElementById(\\\"rows\\\");\\n  days.forEach(function (d, i) {\\n    var tr = document.createElement(\\\"tr\\\");\\n    if (d.value == null) tr.className = \\\"missing\\\";\\n    var delta = \\\"—\\\";\\n    if (d.value != null) {\\n      var prev = null;\\n      for (var j = i - 1; j >= 0; j--) {\\n        if (days[j].value != null) { prev = days[j]; break; }\\n      }\\n      if (prev) {\\n        var diff = d.value - prev.value;\\n        delta = (diff > 0 ? \\\"+\\\" : \\\"\\\") + diff + \\\"（相对\\\" + prev.label + \\\"）\\\";\\n      } else {\\n        delta = \\\"—\\\";\\n      }\\n    } else {\\n      delta = \\\"无法比较\\\";\\n    }\\n    var valueCell = d.value == null\\n      ? '<span class=\\\"tag\\\">未采集</span>'\\n      : d.value + \\\" 件\\\";\\n    tr.innerHTML = \\\"<td>\\\" + d.label + \\\"</td><td class=\\\\\\\"num\\\\\\\">\\\" + valueCell + \\\"</td><td>\\\" + delta + \\\"</td>\\\";\\n    tbody.appendChild(tr);\\n  });\\n})();\\n</script>\\n</body>\\n</html>\\n\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-9da1c1fb","object":"chat.completion.chunk","created":1791965898,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-9da1c1fb","created":1791965898,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":3458,"prompt_tokens":9355,"total_tokens":12813,"prompt_tokens_details":{"cached_tokens":9216},"cost":0.025633999999999997}}
+
+data: [DONE]
+

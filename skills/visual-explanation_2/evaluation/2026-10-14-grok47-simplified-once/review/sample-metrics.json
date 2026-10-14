@@ -1,0 +1,706 @@
+[
+  {
+    "sample": "S79edc8b1ae",
+    "run": "r1-A01-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "A01",
+    "group": "A",
+    "repeat": 1,
+    "seconds": 26.76,
+    "model_requests": 2,
+    "exit": 0,
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 14652,
+    "output_tokens_including_reasoning": 1526,
+    "reported_reasoning_tokens": 1371,
+    "reasoning_usage_records": 2,
+    "reported_cache_read_tokens": 6272,
+    "cache_usage_records": 1,
+    "usage_records": 2,
+    "tool_calls": 1,
+    "reference_path_tool_calls": 0,
+    "write_edit_calls": 0,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      }
+    },
+    "requests_without_usage": 0,
+    "upstream_http_error_records": 0
+  },
+  {
+    "sample": "Sdd74e53d68",
+    "run": "r1-A02-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "A02",
+    "group": "A",
+    "repeat": 1,
+    "seconds": 60.96,
+    "model_requests": 2,
+    "exit": 0,
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 14949,
+    "output_tokens_including_reasoning": 4467,
+    "reported_reasoning_tokens": 3881,
+    "reasoning_usage_records": 2,
+    "reported_cache_read_tokens": 1152,
+    "cache_usage_records": 1,
+    "usage_records": 2,
+    "tool_calls": 2,
+    "reference_path_tool_calls": 0,
+    "write_edit_calls": 0,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      }
+    },
+    "requests_without_usage": 0,
+    "upstream_http_error_records": 0
+  },
+  {
+    "sample": "S2eb7b5a887",
+    "run": "r1-A03-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "A03",
+    "group": "A",
+    "repeat": 1,
+    "seconds": 462.7,
+    "model_requests": 3,
+    "exit": 0,
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 23068,
+    "output_tokens_including_reasoning": 1533,
+    "reported_reasoning_tokens": 1243,
+    "reasoning_usage_records": 3,
+    "reported_cache_read_tokens": 14464,
+    "cache_usage_records": 2,
+    "usage_records": 3,
+    "tool_calls": 3,
+    "reference_path_tool_calls": 0,
+    "write_edit_calls": 0,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      }
+    },
+    "requests_without_usage": 0,
+    "upstream_http_error_records": 0
+  },
+  {
+    "sample": "S39f649e95e",
+    "run": "r1-A04-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "A04",
+    "group": "A",
+    "repeat": 1,
+    "seconds": 37.67,
+    "model_requests": 3,
+    "exit": 0,
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 23363,
+    "output_tokens_including_reasoning": 1994,
+    "reported_reasoning_tokens": 1214,
+    "reasoning_usage_records": 3,
+    "reported_cache_read_tokens": 15616,
+    "cache_usage_records": 3,
+    "usage_records": 3,
+    "tool_calls": 2,
+    "reference_path_tool_calls": 0,
+    "write_edit_calls": 0,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      }
+    },
+    "requests_without_usage": 0,
+    "upstream_http_error_records": 0
+  },
+  {
+    "sample": "S18bd320eff",
+    "run": "r1-B01-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "B01",
+    "group": "B",
+    "repeat": 1,
+    "seconds": 76.68,
+    "model_requests": 5,
+    "exit": 0,
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 62045,
+    "output_tokens_including_reasoning": 3986,
+    "reported_reasoning_tokens": 2871,
+    "reasoning_usage_records": 4,
+    "reported_cache_read_tokens": 27392,
+    "cache_usage_records": 5,
+    "usage_records": 5,
+    "tool_calls": 5,
+    "reference_path_tool_calls": 0,
+    "write_edit_calls": 0,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 1,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 1,
+        "backend_command_calls": 2,
+        "backend_render_calls": 1
+      }
+    },
+    "requests_without_usage": 0,
+    "upstream_http_error_records": 0
+  },
+  {
+    "sample": "Sd4855da0fc",
+    "run": "r1-B02-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "B02",
+    "group": "B",
+    "repeat": 1,
+    "seconds": 81.28,
+    "model_requests": 4,
+    "exit": 0,
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 42128,
+    "output_tokens_including_reasoning": 2625,
+    "reported_reasoning_tokens": 1641,
+    "reasoning_usage_records": 3,
+    "reported_cache_read_tokens": 27904,
+    "cache_usage_records": 3,
+    "usage_records": 4,
+    "tool_calls": 3,
+    "reference_path_tool_calls": 0,
+    "write_edit_calls": 0,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 1,
+        "backend_command_calls": 1,
+        "backend_render_calls": 1
+      }
+    },
+    "requests_without_usage": 0,
+    "upstream_http_error_records": 0
+  },
+  {
+    "sample": "Sec0bdaca77",
+    "run": "r1-B03-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "B03",
+    "group": "B",
+    "repeat": 1,
+    "seconds": 900.01,
+    "model_requests": 9,
+    "exit": "timeout",
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 262324,
+    "output_tokens_including_reasoning": 10841,
+    "reported_reasoning_tokens": 2889,
+    "reasoning_usage_records": 3,
+    "reported_cache_read_tokens": 195584,
+    "cache_usage_records": 9,
+    "usage_records": 9,
+    "tool_calls": 16,
+    "reference_path_tool_calls": 6,
+    "write_edit_calls": 1,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 1,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      }
+    },
+    "requests_without_usage": 0,
+    "upstream_http_error_records": 0
+  },
+  {
+    "sample": "S75e375fb28",
+    "run": "r1-B04-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "B04",
+    "group": "B",
+    "repeat": 1,
+    "seconds": 900.19,
+    "model_requests": 5,
+    "exit": "timeout",
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 58706,
+    "output_tokens_including_reasoning": 6020,
+    "reported_reasoning_tokens": 4065,
+    "reasoning_usage_records": 3,
+    "reported_cache_read_tokens": 43776,
+    "cache_usage_records": 5,
+    "usage_records": 5,
+    "tool_calls": 4,
+    "reference_path_tool_calls": 0,
+    "write_edit_calls": 0,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 1,
+        "backend_command_calls": 2,
+        "backend_render_calls": 1
+      }
+    },
+    "requests_without_usage": 0,
+    "upstream_http_error_records": 0
+  },
+  {
+    "sample": "S56b8bd2922",
+    "run": "r1-C01-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "C01",
+    "group": "C",
+    "repeat": 1,
+    "seconds": 900.7,
+    "model_requests": 10,
+    "exit": "timeout",
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 295304,
+    "output_tokens_including_reasoning": 11365,
+    "reported_reasoning_tokens": 2049,
+    "reasoning_usage_records": 3,
+    "reported_cache_read_tokens": 250752,
+    "cache_usage_records": 10,
+    "usage_records": 10,
+    "tool_calls": 18,
+    "reference_path_tool_calls": 5,
+    "write_edit_calls": 2,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 2,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 2,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      }
+    },
+    "requests_without_usage": 0,
+    "upstream_http_error_records": 0
+  },
+  {
+    "sample": "Sf9fd2b43c7",
+    "run": "r1-C02-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "C02",
+    "group": "C",
+    "repeat": 1,
+    "seconds": 681.48,
+    "model_requests": 9,
+    "exit": 0,
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 98072,
+    "output_tokens_including_reasoning": 4778,
+    "reported_reasoning_tokens": 2340,
+    "reasoning_usage_records": 3,
+    "reported_cache_read_tokens": 84608,
+    "cache_usage_records": 9,
+    "usage_records": 9,
+    "tool_calls": 10,
+    "reference_path_tool_calls": 0,
+    "write_edit_calls": 2,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      }
+    },
+    "requests_without_usage": 0,
+    "upstream_http_error_records": 0
+  },
+  {
+    "sample": "S62c3aceaac",
+    "run": "r1-C03-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "C03",
+    "group": "C",
+    "repeat": 1,
+    "seconds": 710.4,
+    "model_requests": 12,
+    "exit": 0,
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 153566,
+    "output_tokens_including_reasoning": 10753,
+    "reported_reasoning_tokens": 5740,
+    "reasoning_usage_records": 5,
+    "reported_cache_read_tokens": 133504,
+    "cache_usage_records": 11,
+    "usage_records": 12,
+    "tool_calls": 16,
+    "reference_path_tool_calls": 0,
+    "write_edit_calls": 5,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      }
+    },
+    "requests_without_usage": 0,
+    "upstream_http_error_records": 0
+  },
+  {
+    "sample": "Sc31d7837e7",
+    "run": "r1-C04-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "C04",
+    "group": "C",
+    "repeat": 1,
+    "seconds": 900.05,
+    "model_requests": 4,
+    "exit": "timeout",
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 24058,
+    "output_tokens_including_reasoning": 11112,
+    "reported_reasoning_tokens": 11018,
+    "reasoning_usage_records": 3,
+    "reported_cache_read_tokens": 7552,
+    "cache_usage_records": 2,
+    "usage_records": 3,
+    "tool_calls": 3,
+    "reference_path_tool_calls": 0,
+    "write_edit_calls": 0,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      }
+    },
+    "requests_without_usage": 1,
+    "upstream_http_error_records": 0
+  },
+  {
+    "sample": "S0c362948d9",
+    "run": "r1-D01-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "D01",
+    "group": "D",
+    "repeat": 1,
+    "seconds": 10.75,
+    "model_requests": 2,
+    "exit": 0,
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 14489,
+    "output_tokens_including_reasoning": 232,
+    "reported_reasoning_tokens": 202,
+    "reasoning_usage_records": 2,
+    "reported_cache_read_tokens": 7424,
+    "cache_usage_records": 2,
+    "usage_records": 2,
+    "tool_calls": 1,
+    "reference_path_tool_calls": 0,
+    "write_edit_calls": 0,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      }
+    },
+    "requests_without_usage": 0,
+    "upstream_http_error_records": 0
+  },
+  {
+    "sample": "S2b39d351f8",
+    "run": "r1-D02-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "D02",
+    "group": "D",
+    "repeat": 1,
+    "seconds": 38.4,
+    "model_requests": 2,
+    "exit": 0,
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 14669,
+    "output_tokens_including_reasoning": 1540,
+    "reported_reasoning_tokens": 1274,
+    "reasoning_usage_records": 2,
+    "reported_cache_read_tokens": 2304,
+    "cache_usage_records": 2,
+    "usage_records": 2,
+    "tool_calls": 1,
+    "reference_path_tool_calls": 0,
+    "write_edit_calls": 0,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      }
+    },
+    "requests_without_usage": 0,
+    "upstream_http_error_records": 0
+  },
+  {
+    "sample": "S901090020f",
+    "run": "r1-D03-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "D03",
+    "group": "D",
+    "repeat": 1,
+    "seconds": 488.95,
+    "model_requests": 9,
+    "exit": 0,
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 243659,
+    "output_tokens_including_reasoning": 13629,
+    "reported_reasoning_tokens": 8809,
+    "reasoning_usage_records": 5,
+    "reported_cache_read_tokens": 196096,
+    "cache_usage_records": 8,
+    "usage_records": 8,
+    "tool_calls": 22,
+    "reference_path_tool_calls": 11,
+    "write_edit_calls": 1,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 1,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 1,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      }
+    },
+    "requests_without_usage": 1,
+    "upstream_http_error_records": 1
+  },
+  {
+    "sample": "S9e3586af94",
+    "run": "r1-D04-visual-explanation",
+    "condition": "visual-explanation",
+    "case": "D04",
+    "group": "D",
+    "repeat": 1,
+    "seconds": 101.72,
+    "model_requests": 11,
+    "exit": 0,
+    "generation_errors": false,
+    "budget_exhausted": false,
+    "total": null,
+    "score": null,
+    "input_tokens": 124255,
+    "output_tokens_including_reasoning": 3858,
+    "reported_reasoning_tokens": 2465,
+    "reasoning_usage_records": 4,
+    "reported_cache_read_tokens": 98176,
+    "cache_usage_records": 9,
+    "usage_records": 11,
+    "tool_calls": 11,
+    "reference_path_tool_calls": 0,
+    "write_edit_calls": 2,
+    "specialists": {
+      "mermaid-diagrams": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "diagram-design": {
+        "skill_read_calls": 1,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      },
+      "answer-me-with-html": {
+        "skill_read_calls": 0,
+        "backend_command_calls": 0,
+        "backend_render_calls": 0
+      }
+    },
+    "requests_without_usage": 0,
+    "upstream_http_error_records": 0
+  }
+]

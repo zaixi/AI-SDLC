@@ -1,0 +1,52 @@
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"role":"assistant","content":"我"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"先"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"读取"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"本题"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"要求"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"的"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" skill"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"，"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"再"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"按"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"规则"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"把"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"借"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"展"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"申请"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"流转"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"和"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"权限"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"画"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"清楚"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-e26e80e8","created":1791964519,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-1a3a37e9-aa17-4568-8b60-35b43369d763-0","function":{"arguments":"","name":"read"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-e26e80e8","created":1791964519,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/input/skill/SKILL.md\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-e26e80e8","object":"chat.completion.chunk","created":1791964519,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-e26e80e8","created":1791964519,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":79,"prompt_tokens":6419,"total_tokens":6498,"completion_tokens_details":{"reasoning_tokens":41,"text_tokens":38},"prompt_tokens_details":{"cached_tokens":1152},"cost":0.011584}}
+
+data: [DONE]
+

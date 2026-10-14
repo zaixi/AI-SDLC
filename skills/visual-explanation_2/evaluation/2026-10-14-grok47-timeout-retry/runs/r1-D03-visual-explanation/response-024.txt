@@ -1,0 +1,22 @@
+data: {"id":"chatcmpl-605ae68e","created":1791969606,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"role":"assistant","tool_calls":[{"id":"call-190c2ebe-f9cc-4c51-8caa-9e9d315c5e2f-33","function":{"arguments":"","name":"read"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-605ae68e","created":1791969606,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/tmp/sec-1-成功主链.png\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-605ae68e","created":1791969606,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-190c2ebe-f9cc-4c51-8caa-9e9d315c5e2f-34","function":{"arguments":"","name":"read"},"type":"function","index":1}]}}]}
+
+data: {"id":"chatcmpl-605ae68e","created":1791969606,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/tmp/sec-0-区域与内部单元.png\"}"},"type":"function","index":1}]}}]}
+
+data: {"id":"chatcmpl-605ae68e","created":1791969606,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-190c2ebe-f9cc-4c51-8caa-9e9d315c5e2f-35","function":{"arguments":"","name":"read"},"type":"function","index":2}]}}]}
+
+data: {"id":"chatcmpl-605ae68e","created":1791969606,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/tmp/sec-4-OCR_失败影响哪里.png\"}"},"type":"function","index":2}]}}]}
+
+data: {"id":"chatcmpl-605ae68e","created":1791969606,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-190c2ebe-f9cc-4c51-8caa-9e9d315c5e2f-36","function":{"arguments":"","name":"read"},"type":"function","index":3}]}}]}
+
+data: {"id":"chatcmpl-605ae68e","created":1791969606,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/tmp/sec-7-值班速查.png\"}"},"type":"function","index":3}]}}]}
+
+data: {"id":"chatcmpl-605ae68e","object":"chat.completion.chunk","created":1791969606,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-605ae68e","created":1791969606,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":80,"prompt_tokens":40377,"total_tokens":40457,"prompt_tokens_details":{"cached_tokens":39808},"cost":0.021522}}
+
+data: [DONE]
+

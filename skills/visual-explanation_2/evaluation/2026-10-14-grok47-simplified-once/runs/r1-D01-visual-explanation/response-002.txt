@@ -1,0 +1,34 @@
+data: {"id":"chatcmpl-621b167c","created":1791966179,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"reasoning_content":"用户要求用一句话回答：2 小时 45 分钟等于多少分钟。","reasoning":"用户要求用一句话回答：2 小时 45 分钟等于多少分钟。","role":"assistant"}}]}
+
+data: {"id":"chatcmpl-621b167c","object":"chat.completion.chunk","created":1791966179,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"2"}}]}
+
+data: {"id":"chatcmpl-621b167c","object":"chat.completion.chunk","created":1791966179,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" "}}]}
+
+data: {"id":"chatcmpl-621b167c","object":"chat.completion.chunk","created":1791966179,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"小时"}}]}
+
+data: {"id":"chatcmpl-621b167c","object":"chat.completion.chunk","created":1791966179,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" "}}]}
+
+data: {"id":"chatcmpl-621b167c","object":"chat.completion.chunk","created":1791966179,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"45"}}]}
+
+data: {"id":"chatcmpl-621b167c","object":"chat.completion.chunk","created":1791966179,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" "}}]}
+
+data: {"id":"chatcmpl-621b167c","object":"chat.completion.chunk","created":1791966179,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"分钟"}}]}
+
+data: {"id":"chatcmpl-621b167c","object":"chat.completion.chunk","created":1791966179,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"等于"}}]}
+
+data: {"id":"chatcmpl-621b167c","object":"chat.completion.chunk","created":1791966179,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" "}}]}
+
+data: {"id":"chatcmpl-621b167c","object":"chat.completion.chunk","created":1791966179,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"165"}}]}
+
+data: {"id":"chatcmpl-621b167c","object":"chat.completion.chunk","created":1791966179,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" "}}]}
+
+data: {"id":"chatcmpl-621b167c","object":"chat.completion.chunk","created":1791966179,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"分钟"}}]}
+
+data: {"id":"chatcmpl-621b167c","object":"chat.completion.chunk","created":1791966179,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"。"}}]}
+
+data: {"id":"chatcmpl-621b167c","object":"chat.completion.chunk","created":1791966179,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"stop"}]}
+
+data: {"id":"chatcmpl-621b167c","created":1791966179,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":150,"prompt_tokens":8179,"total_tokens":8329,"completion_tokens_details":{"reasoning_tokens":137,"text_tokens":13},"prompt_tokens_details":{"cached_tokens":6272},"cost":0.00785}}
+
+data: [DONE]
+

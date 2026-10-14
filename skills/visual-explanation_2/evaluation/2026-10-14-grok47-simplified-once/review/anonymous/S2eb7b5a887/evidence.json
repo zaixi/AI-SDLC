@@ -1,0 +1,18 @@
+{
+  "evidence_version": 6,
+  "sample": "S2eb7b5a887",
+  "case": "A03",
+  "prompt": "当前目录有 cli/main.py（解析命令行）、core/importer.py（读取 CSV、清洗字段、写入数据库）、web/handler.py（调用 importer 接收网页上传）。计划把 importer 中的 CSV 读取移到 formats/csv_reader.py，把清洗移到 core/cleaner.py；数据库写入仍留在 importer，两处入口继续调用 importer。用紧凑的结构示意让同事看清哪些职责移动了、哪些不动。不实现重构。",
+  "fixtures": [],
+  "delivery": "reply_or_artifact",
+  "reply_scope": "final_stop_message",
+  "expected_file_present": null,
+  "generation_ended": "finished",
+  "budget_exhausted": false,
+  "infrastructure_failure": false,
+  "artifacts": [],
+  "code_checks": null,
+  "ui_checks": null,
+  "chart_checks": null,
+  "portability_checks": null
+}

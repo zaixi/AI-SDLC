@@ -1,0 +1,9 @@
+{"time": "2026-10-14T10:02:57.908230+00:00", "load_average": [43.64, 38.16, 37.07], "MemTotal_kB": 263704116, "MemAvailable_kB": 95029752, "SwapTotal_kB": 999420, "SwapFree_kB": 0}
+{"time": "2026-10-14T10:03:17.909249+00:00", "load_average": [48.47, 39.6, 37.56], "MemTotal_kB": 263704116, "MemAvailable_kB": 96360788, "SwapTotal_kB": 999420, "SwapFree_kB": 0}
+{"time": "2026-10-14T10:03:37.909876+00:00", "load_average": [48.98, 40.32, 37.84], "MemTotal_kB": 263704116, "MemAvailable_kB": 95596344, "SwapTotal_kB": 999420, "SwapFree_kB": 0}
+{"time": "2026-10-14T10:03:57.910653+00:00", "load_average": [48.61, 40.8, 38.05], "MemTotal_kB": 263704116, "MemAvailable_kB": 96418148, "SwapTotal_kB": 999420, "SwapFree_kB": 0}
+{"time": "2026-10-14T10:04:17.911332+00:00", "load_average": [47.99, 41.17, 38.24], "MemTotal_kB": 263704116, "MemAvailable_kB": 95976348, "SwapTotal_kB": 999420, "SwapFree_kB": 0}
+{"time": "2026-10-14T10:04:37.911981+00:00", "load_average": [44.07, 40.74, 38.16], "MemTotal_kB": 263704116, "MemAvailable_kB": 94991792, "SwapTotal_kB": 999420, "SwapFree_kB": 0}
+{"time": "2026-10-14T10:04:57.912612+00:00", "load_average": [42.62, 40.64, 38.18], "MemTotal_kB": 263704116, "MemAvailable_kB": 94620648, "SwapTotal_kB": 999420, "SwapFree_kB": 0}
+{"time": "2026-10-14T10:05:17.913118+00:00", "load_average": [39.19, 39.98, 38.02], "MemTotal_kB": 263704116, "MemAvailable_kB": 94151168, "SwapTotal_kB": 999420, "SwapFree_kB": 0}
+{"time": "2026-10-14T10:05:37.913723+00:00", "load_average": [36.52, 39.33, 37.85], "MemTotal_kB": 263704116, "MemAvailable_kB": 95949732, "SwapTotal_kB": 999420, "SwapFree_kB": 0}

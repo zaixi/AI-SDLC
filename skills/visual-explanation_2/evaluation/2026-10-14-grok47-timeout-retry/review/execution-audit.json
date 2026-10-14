@@ -1,0 +1,88 @@
+{
+  "sessions": [
+    {
+      "case": "B03",
+      "exit": 0,
+      "reply_scope": "partial_visible_messages_no_final_stop",
+      "errors": [
+        {
+          "type": "error",
+          "timestamp": 1791968598002,
+          "sessionID": "ses_ec65aafa7ffecRkWTYYXs8Ica1",
+          "error": {
+            "name": "UnknownError",
+            "data": {
+              "message": "\"litellm.APIConnectionError: APIConnectionError: OpenAIException - Upstream stream ended prematurely; safe to retry\""
+            }
+          }
+        }
+      ],
+      "frozen_skill_matches": true,
+      "models": [
+        "grok-4.7"
+      ],
+      "reasoning_effort": [
+        "high"
+      ],
+      "isolated": true
+    },
+    {
+      "case": "B04",
+      "exit": 0,
+      "reply_scope": "final_stop_message",
+      "errors": [],
+      "frozen_skill_matches": true,
+      "models": [
+        "grok-4.7"
+      ],
+      "reasoning_effort": [
+        "high"
+      ],
+      "isolated": true
+    },
+    {
+      "case": "C01",
+      "exit": "timeout",
+      "reply_scope": "partial_visible_messages_no_final_stop",
+      "errors": [],
+      "frozen_skill_matches": true,
+      "models": [
+        "grok-4.7"
+      ],
+      "reasoning_effort": [
+        "high"
+      ],
+      "isolated": true
+    },
+    {
+      "case": "C04",
+      "exit": "timeout",
+      "reply_scope": "partial_visible_messages_no_final_stop",
+      "errors": [],
+      "frozen_skill_matches": true,
+      "models": [
+        "grok-4.7"
+      ],
+      "reasoning_effort": [
+        "high"
+      ],
+      "isolated": true
+    },
+    {
+      "case": "D03",
+      "exit": 0,
+      "reply_scope": "provider_stream_recovered_cli_text_missing",
+      "errors": [],
+      "frozen_skill_matches": true,
+      "models": [
+        "grok-4.7"
+      ],
+      "reasoning_effort": [
+        "high"
+      ],
+      "isolated": true
+    }
+  ],
+  "installed_skill_unchanged": true,
+  "generation_runner_unchanged": true
+}

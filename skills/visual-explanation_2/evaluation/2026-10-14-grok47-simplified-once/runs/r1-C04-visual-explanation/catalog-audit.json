@@ -1,0 +1,17 @@
+[
+  {
+    "name": "mermaid-diagrams",
+    "description": "Comprehensive guide for creating software diagrams using Mermaid syntax. Use when users need to create, visualize, or document software through diagrams including class diagrams (domain modeling, object-oriented design), sequence diagrams (application flows, API interactions, code execution), flowcharts (processes, algorithms, user journeys), entity relationship diagrams (database schemas), C4 architecture diagrams (system context, containers, components), state diagrams, git graphs, pie charts, gantt charts, or any other diagram type. Triggers include requests to \"diagram\", \"visualize\", \"model\", \"map out\", \"show the flow\", or when explaining system architecture, database design, code structure, or user/application flows.",
+    "path": "/input/specialists/mermaid-diagrams/SKILL.md"
+  },
+  {
+    "name": "diagram-design",
+    "description": "Create branded architecture, architecture delta, IT current-state, flowchart, sequence, state machine, ER/data model, timeline, swimlane, quadrant, radar/spider, polar chart (polar/radial lollipop), loop/flywheel, nested, tree, org chart, layer stack, exploded axonometric, axonometric plan, Venn, pyramid/funnel, treemap and marimekko, heatmap, bar and dumbbell, waterfall, line (slopegraph, ridgeline, streamgraph, bump), Gantt and scatter charts (bubble, beeswarm), high-level, process, medallion, data flow, DP integration, DP security matrix, Sankey, fishbone, Wardley map, kanban, user journey, deployment, dependency graph, UML class, story map, or database schema diagrams as HTML/SVG/PNG, with .drawio, Mermaid, and .excalidraw import, plus lifecycle phase maps, block decomposition trees, and onboarding guidance.",
+    "path": "/input/specialists/diagram-design/SKILL.md"
+  },
+  {
+    "name": "answer-me-with-html",
+    "description": "Turns an answer into a one-page visual HTML explainer: the model writes a short Markdown draft and the bundled CLI builds one page. Use it proactively and liberally, without being asked, whenever a page would help the reader more than plain text, even if plain text would also work: any explanation of how something works or how parts relate (flow, request path, architecture, code or folder structure, state machine, lifecycle, history); any comparison, trade-off or decision with pros and cons; any diagnosis, review or investigation, especially with several causes or findings to rank; any answer with a table, a numbered or ranked list, steps, branches or several sections; or when the user says \"I don't get it / draw it / explain visually / 讲讲原理 / 没看懂 / 画个图\". When in doubt, use it: a page is quick and cheap to make. Also for explainer videos (\"make a video\", \"做个视频\") and for changing its settings. Skip only for small talk, a trivial one-line answer, or when the user asks for plain text.",
+    "path": "/input/specialists/answer-me-with-html/SKILL.md"
+  }
+]

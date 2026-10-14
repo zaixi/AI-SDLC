@@ -1,0 +1,12 @@
+data: {"id":"chatcmpl-2983403f","object":"chat.completion.chunk","created":1791969767,"model":"grok-4.7","choices":[{"index":0,"delta":{"role":"assistant","content":"\n"}}]}
+
+data: {"id":"chatcmpl-2983403f","created":1791969767,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-2058affc-91d2-494b-a1ad-fa0c488b9e0b-46","function":{"arguments":"","name":"write"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-2983403f","created":1791969767,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/tmp/shot6.js\",\"content\":\"async (page) => {\\n  await page.setViewportSize({ width: 1280, height: 900 });\\n  const meta = await page.evaluate(() => {\\n    const h = [...document.querySelectorAll('h2')].find(x => x.innerText.includes('成功主链'));\\n    const next = h.parentElement.querySelector('h2') ? null : null;\\n    const hs = [...document.querySelectorAll('h2')];\\n    const i = hs.indexOf(h);\\n    const top = h.getBoundingClientRect().top + window.scrollY;\\n    const bottom = hs[i+1].getBoundingClientRect().top + window.scrollY;\\n    const flows = [...document.querySelectorAll('svg[aria-label]')].map(svg => svg.getAttribute('aria-label'));\\n    return { top, h: bottom - top, flows };\\n  });\\n  // two clips if tall\\n  const h = meta.h;\\n  await page.screenshot({\\n    path: '/tmp/main-a.png',\\n    clip: { x: 160, y: meta.top, width: 1040, height: Math.min(1400, h) },\\n    fullPage: true,\\n  });\\n  if (h > 1400) {\\n    await page.screenshot({\\n      path: '/tmp/main-b.png',\\n      clip: { x: 160, y: meta.top + 1400, width: 1040, height: h - 1400 + 20 },\\n      fullPage: true,\\n    });\\n  }\\n  return meta;\\n}\\n\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-2983403f","object":"chat.completion.chunk","created":1791969767,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-2983403f","created":1791969767,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":369,"prompt_tokens":52573,"total_tokens":52942,"prompt_tokens_details":{"cached_tokens":51712},"cost":0.029792000000000003}}
+
+data: [DONE]
+

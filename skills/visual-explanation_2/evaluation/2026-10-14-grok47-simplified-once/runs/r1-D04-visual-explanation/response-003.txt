@@ -1,0 +1,64 @@
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"role":"assistant","content":"The"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" previous"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" diagram"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" is"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" the"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" source"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" of"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" truth"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":","}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" so"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" I’ll"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" only"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" ret"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"arget"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" the"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" failure"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" loop"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" onto"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" “"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"发送"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"通知"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"”"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" and"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" change"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" its"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":" label"}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{"content":"."}}]}
+
+data: {"id":"chatcmpl-09b4db00","created":1791966232,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"id":"call-97f4555f-d529-4135-9eea-c40b95858c18-3","function":{"arguments":"","name":"write"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-09b4db00","created":1791966232,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"tool_calls":[{"function":{"arguments":"{\"filePath\":\"/work/answer.svg\",\"content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"1000\\\" height=\\\"340\\\" viewBox=\\\"0 0 1000 340\\\" role=\\\"img\\\" aria-labelledby=\\\"title description\\\">\\n  <title id=\\\"title\\\">任务与完成通知</title>\\n  <desc id=\\\"description\\\">展示接收请求、执行任务、发送通知、结束四个步骤与失败返回路径。</desc>\\n  <defs>\\n    <marker id=\\\"arrow\\\" viewBox=\\\"0 0 10 10\\\" refX=\\\"9\\\" refY=\\\"5\\\" markerWidth=\\\"8\\\" markerHeight=\\\"8\\\" orient=\\\"auto-start-reverse\\\">\\n      <path d=\\\"M 0 0 L 10 5 L 0 10 Z\\\" fill=\\\"#344054\\\"/>\\n    </marker>\\n    <style>\\n      text { font-family: sans-serif; fill: #172b4d; }\\n      .node { fill: #fff; stroke: #667085; stroke-width: 2; }\\n      .edge { fill: none; stroke: #344054; stroke-width: 2; marker-end: url(#arrow); }\\n      .label { font-size: 20px; text-anchor: middle; }\\n      .edge-label { font-size: 16px; text-anchor: middle; }\\n    </style>\\n  </defs>\\n  <rect width=\\\"1000\\\" height=\\\"340\\\" fill=\\\"#f7f8fa\\\"/>\\n  <text x=\\\"40\\\" y=\\\"40\\\" font-size=\\\"26\\\">任务与完成通知</text>\\n  <g id=\\\"receive\\\"><rect class=\\\"node\\\" x=\\\"40\\\" y=\\\"80\\\" width=\\\"180\\\" height=\\\"70\\\" rx=\\\"6\\\"/><text class=\\\"label\\\" x=\\\"130\\\" y=\\\"122\\\">接收请求</text></g>\\n  <g id=\\\"execute\\\"><rect class=\\\"node\\\" x=\\\"300\\\" y=\\\"80\\\" width=\\\"180\\\" height=\\\"70\\\" rx=\\\"6\\\"/><text class=\\\"label\\\" x=\\\"390\\\" y=\\\"122\\\">执行任务</text></g>\\n  <g id=\\\"notify\\\"><rect class=\\\"node\\\" x=\\\"560\\\" y=\\\"80\\\" width=\\\"180\\\" height=\\\"70\\\" rx=\\\"6\\\"/><text class=\\\"label\\\" x=\\\"650\\\" y=\\\"122\\\">发送通知</text></g>\\n  <g id=\\\"done\\\"><rect class=\\\"node\\\" x=\\\"820\\\" y=\\\"80\\\" width=\\\"140\\\" height=\\\"70\\\" rx=\\\"6\\\"/><text class=\\\"label\\\" x=\\\"890\\\" y=\\\"122\\\">结束</text></g>\\n  <path id=\\\"receive-execute\\\" class=\\\"edge\\\" d=\\\"M220 115 H300\\\"/>\\n  <path id=\\\"execute-notify\\\" class=\\\"edge\\\" d=\\\"M480 115 H560\\\"/>\\n  <text class=\\\"edge-label\\\" x=\\\"520\\\" y=\\\"99\\\">成功</text>\\n  <path id=\\\"notify-done\\\" class=\\\"edge\\\" d=\\\"M740 115 H820\\\"/>\\n  <text class=\\\"edge-label\\\" x=\\\"780\\\" y=\\\"99\\\">成功</text>\\n  <path id=\\\"failure\\\" class=\\\"edge\\\" d=\\\"M650 150 V225 Q650 245 670 245 H790 Q810 245 810 225 V150\\\"/>\\n  <text id=\\\"failure-label\\\" class=\\\"edge-label\\\" x=\\\"730\\\" y=\\\"278\\\">通知失败：重试通知</text>\\n</svg>\\n\"}"},"type":"function","index":0}]}}]}
+
+data: {"id":"chatcmpl-09b4db00","object":"chat.completion.chunk","created":1791966232,"model":"grok-4.7","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}]}
+
+data: {"id":"chatcmpl-09b4db00","created":1791966232,"model":"grok-4.7","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":786,"prompt_tokens":10609,"total_tokens":11395,"prompt_tokens_details":{"cached_tokens":8960},"cost":0.012493999999999998}}
+
+data: [DONE]
+

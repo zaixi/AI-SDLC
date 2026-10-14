@@ -1,0 +1,83 @@
+{
+  "frozen_at_utc": "2026-10-14T09:01:02.980686+00:00",
+  "client": "OpenCode 1.14.28",
+  "provider_alias": "llmproxy/grok-4.7",
+  "actual_request_model": "grok-4.7",
+  "agent": "eval",
+  "conditions": [
+    "visual-explanation"
+  ],
+  "cases": 5,
+  "repeats": 1,
+  "planned_outputs": 5,
+  "concurrency": 3,
+  "context_limit_configured": 450000,
+  "per_request_output_limit_verified": 65536,
+  "per_task_completion_token_budget": 131072,
+  "per_task_model_request_limit": 64,
+  "per_task_wall_seconds": 900,
+  "agent_step_limit": null,
+  "temperature": "not_sent_provider_default",
+  "model_seed": null,
+  "reasoning": "high; wire request verified in preflight",
+  "job_order_seed": "visual-content-{repeat}-{case_id}",
+  "tools": [
+    "bash",
+    "read",
+    "glob",
+    "grep",
+    "edit",
+    "write"
+  ],
+  "network": "unshared_network_namespace; API only via fixed-path Unix socket relay",
+  "title_requests": "local_mock_not_sent_to_model",
+  "retry_policy": "One user-authorized retry per selected case; no further automatic resampling; original failures retained.",
+  "specialists_visible_only_to": "visual-explanation",
+  "runtime": {
+    "node": "v20.20.2",
+    "python": "Python 3.11.5",
+    "chromium": "Chromium 133.0.6943.16",
+    "playwright": "1.50.1",
+    "mermaid_bundle_sha256": "6484afc32872a3aa16cac9a76ba1816a1ed4cc870a6593cc2e17757750f518b2",
+    "fonts_sha256": "eb648865540e9404c5c09c5fcdb9e4ebda2edfee9936368dc9ea9ded8e484965"
+  },
+  "scripts_sha256": {
+    "browser.mjs": "a8f1e4e84e7440aa910e991b1ea69e7b50a15dc06676b2e54565b4586ead2c74",
+    "audit.py": "92d37fd343f9262349155c447a6bc5096fb2755e08916b3e28f50bd18bc0915a",
+    "run.py": "26b9d9e07b555dc7dc35699eaa3d2dcca2360885428cd3808d117cdd93407175",
+    "prepare_review.py": "09cb3abc29faf6b3b2820677b18840a314fc5d50ffcaccda5a3396b90e239b9a",
+    "blind_review.py": "84f3dc29e2f5685e933070a35ec097ecdb16bd91852e55978587954a23f50b70",
+    "check_portability.mjs": "0ef10467aba20bec25f68852d3389051606e24b9822dc581a815c61d59761990",
+    "sandbox_bridge.py": "eff820c662185e3accb4bb892c6b73d8f179393f4147b8210a609cef21952a2b",
+    "verify_environment.py": "50c5e1457fb34a25e40749179c1a811f1f58057dd99f61c986bbf8d6691bc318",
+    "interaction_checks.py": "ff4805c8ebaa2f938b517d0b11941c44f01ab41f46ff0a5987d59d6982df4ca1",
+    "check_interaction.mjs": "9815c00ae7452d59818871f58680126a917946c5c8a34a4e6b92d90a3ef1fc16",
+    "check_chart.mjs": "174d66c4a8e67f645bd3cbc5f6ceac60b501392bbfeb2ed80af96d29260941af",
+    "check_ui.mjs": "6b33c242a71ebbf4ff81057b488e7cde3cd363622e0c1b13a3ca7025ee0fea55",
+    "report.py": "21091a6518cbb57ea37cfe4c42062d5da11839eaee72ec9fa879614015ffb56d",
+    "run_monitored.py": "93929b0c96f9688c2e02a00270a2f8af3d3ca57b5a588f71b9c43b7cea75baad"
+  },
+  "sources_manifest": "dependencies/manifest.json",
+  "connectivity_probe_requests": 0,
+  "protocol_revision": 1,
+  "purpose": "User-requested one fresh attempt for each task/upstream timeout: B03 B04 C01 C04 D03; same frozen skill, model, dependencies and budgets; preserve original failures.",
+  "parent_protocol": "/home/liyujiang/.codex/skill-evaluations/visual-explanation/2026-10-14-grok47-simplified-once/protocol.json",
+  "changes_from_parent": [
+    "Only five timeout cases selected; one additional attempt each in fresh isolated sessions."
+  ],
+  "review_policy": "All five cases inspected against original prompts and actual artifacts; non-blind qualitative review, no model scores.",
+  "review_concurrency": 1,
+  "review_overlapped_generation": false,
+  "review_model": null,
+  "review_reasoning_effort": null,
+  "review_model_requests": 0,
+  "review_script_amendment": {
+    "prepare_review.py": "Recover latest completed provider reply when CLI omits final events; retain incomplete am pages for review. Generation output unchanged.",
+    "report.py": "Distinguish recovered provider response from CLI final reply."
+  },
+  "resource_monitor": "preflight/resource-history.jsonl",
+  "actual_generation_requests": 82,
+  "requests_without_complete_usage": 3,
+  "verified_wire_reasoning_effort": "high",
+  "review_browser_checks": "Three original HTML artifacts at desktop/mobile; C01 axis and offline checks. C04 absent; no interaction tests possible."
+}

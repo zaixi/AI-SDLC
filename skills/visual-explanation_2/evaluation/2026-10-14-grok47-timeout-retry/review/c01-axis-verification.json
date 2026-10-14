@@ -1,0 +1,24 @@
+[
+  {
+    "unit": "s",
+    "baseline_x": 70,
+    "reference_tick_x": 166,
+    "reference_tick_value": 10,
+    "end_label": "40 秒",
+    "end_label_x": 400.0,
+    "value_at_end_position": 34.375,
+    "expected_x_for_label": 454.0,
+    "pass": false
+  },
+  {
+    "unit": "MB",
+    "baseline_x": 494,
+    "reference_tick_x": 603.7,
+    "reference_tick_value": 400,
+    "end_label": "1400 MB",
+    "end_label_x": 824.0,
+    "value_at_end_position": 1203.282,
+    "expected_x_for_label": 877.95,
+    "pass": false
+  }
+]

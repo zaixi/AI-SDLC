@@ -1,0 +1,37 @@
+{
+  "release": "visual-explanation_2",
+  "frozen_at_utc": "2026-10-14T11:40:12.937676+00:00",
+  "installed_path": "/home/liyujiang/.codex/skills/visual-explanation_2",
+  "previous_path": "/home/liyujiang/.codex/skills/visual-explanation",
+  "source_git_head": "c8cde732642858755a2e659623c86ece4aac882f",
+  "git_worktree_preserved": true,
+  "new_git_commit_created": false,
+  "changes": [
+    "SKILL.md frontmatter name",
+    "agents/openai.yaml display_name and default_prompt"
+  ],
+  "instruction_body_unchanged": true,
+  "snapshot_files": {
+    "LICENSE.show-me": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+    "SKILL.md": "eee6dd47a4b5504b38d9d4d35046b3d178d8df63e17e6c3034cf1f529a2787c7",
+    "agents/openai.yaml": "65d98584992cba5083eaae46198d48caadabaec3ac327b4329b8305063cebfbc"
+  },
+  "before_rename_files": {
+    "LICENSE.show-me": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+    "SKILL.md": "67cdc94475566310f9e48d846328e6a07560838bcd7bb79300f839a8c6da2112",
+    "agents/openai.yaml": "1fa624cb37f6816b07915c87de36c560fb0af78d5bf1a440daf5de03e1758aa6"
+  },
+  "behavioral_evaluation": "Not rerun for rename; evidence from 2026-10-14 same instruction body",
+  "name_validation_exception": "User explicitly requested underscore; stock quick_validate.py accepts only hyphens. Record this exception; do not claim host discovery verified.",
+  "maintenance_files_sha256": {
+    "HANDOFF.md": "288fdd5c8298a4a77aefff9bf21cc0e85caa95a0644dc017c9a9f6796b7466c3",
+    "TESTING.md": "72ef6bacc8fad70b8a19789a0fc6f433ab8cde9bc18b2dcdd12ebf70558b400e",
+    "RUBRIC.md": "027057306cff12acbed2a0c91b92a720d81c1db10d7510622e06692352cbd01d",
+    "prepare_iteration.py": "44d65dce879c3789eabfbffbf5e00bd1d1aec9dcc3f9794edc8e3c1cd3ca677c",
+    "validation.json": "72bf73249964d6538366269442704340a49b2895fec677d723bd31e49f9ef87a"
+  },
+  "validation": "validation.json",
+  "resume_entry": "../../README.md",
+  "repository_path": "/home/liyujiang/github/AI-SDLC/skills/visual-explanation_2",
+  "origin_manifest": "origin-freeze-manifest.json"
+}

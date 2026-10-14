@@ -1,0 +1,20 @@
+{
+  "id": "r1-B02-visual-explanation",
+  "group": "B",
+  "title": "去重范围与乱序回执",
+  "prompt": "给接入设备的同事解释这个接收规则。每条采样消息包含 device_id、boot_id、seq；三者合起来才是去重键。第一次收到该键时先保存采样，再返回 ACK；重复收到只重发 ACK，不重复保存。保存失败则不记录该键，也不发送 ACK，下次收到仍按首次处理。seq 允许乱序，不要求连续；设备每次重启会生成不同的 boot_id，因此新启动周期可以再次出现 seq=1。设备 D1 在启动周期 b7 收到 seq=2、seq=1、seq=2（都保存成功），随后在 b8 收到 seq=1（保存成功）。请画清处理分支，并用这段小例子帮助同事判断保存和 ACK 的次数。",
+  "fixtures": [],
+  "delivery": "reply_or_artifact",
+  "case": "B02",
+  "condition": "visual-explanation",
+  "repeat": 1,
+  "exit": 0,
+  "seconds": 81.28,
+  "requests": 5,
+  "model_requests": 4,
+  "output_tokens": 2625,
+  "budget_exhausted": false,
+  "has_text": true,
+  "artifacts": [],
+  "errors": []
+}

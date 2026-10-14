@@ -1,0 +1,14 @@
+{
+  "command": [
+    "node",
+    "/tools/browser.mjs",
+    "screenshot",
+    "/work/smoke.html",
+    "/work/html.png",
+    "390",
+    "844"
+  ],
+  "exit": 0,
+  "stdout": "{\"output\":\"/work/html.png\",\"errors\":[],\"viewport\":390,\"scrollWidth\":390,\"text\":\"渲染检查 · 42\"}\n",
+  "stderr": ""
+}

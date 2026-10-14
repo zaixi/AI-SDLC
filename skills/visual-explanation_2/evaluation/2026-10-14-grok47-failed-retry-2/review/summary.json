@@ -1,0 +1,49 @@
+{
+  "conditions": {
+    "visual-explanation": {
+      "samples": 3,
+      "scored": 0,
+      "coverage": 0.0,
+      "quality": null,
+      "groups": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "D": null
+      },
+      "case_means": {
+        "B03": null,
+        "C01": null,
+        "C04": null
+      },
+      "semantic_pass": 0,
+      "delivery_pass": 0,
+      "qualified": 0,
+      "mean_seconds": 169.33,
+      "median_seconds": 169.33,
+      "input_tokens": 0,
+      "output_tokens_including_reasoning": 0,
+      "model_requests": 13,
+      "tool_calls": 0,
+      "requests_without_usage": 13,
+      "specialist_samples": {
+        "mermaid-diagrams": 0,
+        "diagram-design": 0,
+        "answer-me-with-html": 0
+      },
+      "backend_samples": 0,
+      "backend_render_samples": 0,
+      "dimensions": {
+        "semantic": null,
+        "fit": null,
+        "readability": null,
+        "delivery": null
+      },
+      "timeouts": 0,
+      "budget_exhaustions": 0,
+      "upstream_http_error_records": 12
+    }
+  },
+  "pairs": {},
+  "validation_issues": []
+}

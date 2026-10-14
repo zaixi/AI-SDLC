@@ -1,0 +1,12 @@
+{
+  "command": [
+    "node",
+    "/tools/browser.mjs",
+    "screenshot",
+    "/work/smoke.mmd",
+    "/work/mermaid.png"
+  ],
+  "exit": 0,
+  "stdout": "{\"output\":\"/work/mermaid.png\",\"errors\":[],\"viewport\":1280,\"scrollWidth\":1280,\"text\":\"开始\\n\\n完成\"}\n",
+  "stderr": ""
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "condition": "visual-explanation",
+    "model": "grok-4.7",
+    "max_tokens": 65536,
+    "tools": [
+      "bash",
+      "read",
+      "glob",
+      "grep",
+      "edit",
+      "write"
+    ],
+    "specialist_metadata_correct": true,
+    "requests": 2
+  }
+]
