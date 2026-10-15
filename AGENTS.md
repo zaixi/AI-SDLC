@@ -1,8 +1,5 @@
 # Global working preferences
 
-## Project context
-- Before selecting skills or changing the core workflow, architecture, or requirements, read [project intent](docs/project-intent.md) and the relevant linked evidence. Preserve confirmed goals and constraints; update the record with reasons when the user changes a decision. Keep proposals distinct from confirmed requirements.
-
 ## Language
 - Reply in Chinese by default.
 - Do not translate commands, paths, config keys, API names, logs, or code identifiers.
