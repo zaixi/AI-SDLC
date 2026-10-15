@@ -68,6 +68,8 @@
 
 ## 需求来源与研究入口
 
+- [按痛点重做的机制比较](../materials/reviews/AI-SDLC-workflow-deep-comparison-20261015.md)：2026-10-15 用户指出初筛判断空泛后，深入核对同一固定版本的流程与规则；修正 pstack、Addy、gstack、Spec Kit 的定位，尚未采用新框架或完成实测排名。
+
 - [新增主流程候选核对](../materials/reviews/AI-SDLC-workflow-candidates-20261015.md)：2026-10-15 用户补充 OpenSpec、Superpowers、Spec Kit、gstack、Addy Osmani、Lauren Tan 的 pstack 和 Ponytail。均为候选，尚未作采用决定；不将此前优先考虑 Matt 当作已完成的选型。
 
 - [最初分享会话痛点摘录](../materials/reviews/Shared-conversation-pain-points.md)：含用户原话与归纳的区分。

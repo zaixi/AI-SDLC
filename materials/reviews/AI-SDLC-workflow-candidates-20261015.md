@@ -1,5 +1,7 @@
 # AI 原生研发候选：Matt 之外的七条线索
 
+> 后续修正：本轮初筛对 pstack、Addy、gstack 与 Spec Kit 的判断不够深入。请优先读 [按真实痛点重做的机制比较](AI-SDLC-workflow-deep-comparison-20261015.md)；本页保留初筛过程，不作为当前排序结论。
+
 核对日期：2026-10-15。依据是 [项目痛点与需求](../../docs/project-intent.md)。本轮读取官方 README、选定的 Skill/模板和接入文档，未安装、执行或做模型对照；下列适配判断是建议，不是采用决定。
 
 ## 当前判断

@@ -1,0 +1,246 @@
+{
+  "date": "2026-10-15",
+  "method": "Static inspection of pinned instructions, templates and selected references; no candidate execution",
+  "sources": [
+    {
+      "id": "M1",
+      "repository": "mattpocock/skills",
+      "commit": "49dd158d1076134a641b33efb035946536778336",
+      "path": "skills/engineering/ask-matt/SKILL.md",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/ask-matt/SKILL.md",
+      "sha256": "1371f5ce005de0992a44b137748bfb960a56948aa9871b405fe9d90b24332e3c"
+    },
+    {
+      "id": "M2",
+      "repository": "mattpocock/skills",
+      "commit": "49dd158d1076134a641b33efb035946536778336",
+      "path": "skills/engineering/domain-modeling/ADR-FORMAT.md",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/ADR-FORMAT.md",
+      "sha256": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0"
+    },
+    {
+      "id": "M3",
+      "repository": "mattpocock/skills",
+      "commit": "49dd158d1076134a641b33efb035946536778336",
+      "path": "skills/engineering/code-review/SKILL.md",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/code-review/SKILL.md",
+      "sha256": "09eb147f793e4647949edd32dbad278f0554dfb56e0d46b699cd4c2c55bf0357"
+    },
+    {
+      "id": "M4",
+      "repository": "mattpocock/skills",
+      "commit": "49dd158d1076134a641b33efb035946536778336",
+      "path": "skills/productivity/handoff/SKILL.md",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/handoff/SKILL.md",
+      "sha256": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3"
+    },
+    {
+      "id": "P1",
+      "repository": "cursor/plugins",
+      "commit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "path": "pstack/skills/how/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/skills/how/SKILL.md",
+      "sha256": "08a00079bb15b4258874ac3ff62d4ca7e94350ffedb521d0fd296dc9dd21904e"
+    },
+    {
+      "id": "P2",
+      "repository": "cursor/plugins",
+      "commit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "path": "pstack/skills/why/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/skills/why/SKILL.md",
+      "sha256": "144d42e7712723d763e607bc0a969e5f1cdf83ec7228519d87677cc534571bed"
+    },
+    {
+      "id": "P3",
+      "repository": "cursor/plugins",
+      "commit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "path": "pstack/skills/why/references/epistemics.md",
+      "url": "https://github.com/cursor/plugins/blob/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/skills/why/references/epistemics.md",
+      "sha256": "d54a2361b2d5973bc3fe2edf62f446d87935974d4b40d47f23b9529f956ca758"
+    },
+    {
+      "id": "P4",
+      "repository": "cursor/plugins",
+      "commit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "path": "pstack/skills/blast-radius/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/skills/blast-radius/SKILL.md",
+      "sha256": "2e10745b97f5862323dcda3b29ca60d56b5c3c98e37020085d26b48efbe0a436"
+    },
+    {
+      "id": "P5",
+      "repository": "cursor/plugins",
+      "commit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "path": "pstack/skills/interrogate/SKILL.md",
+      "url": "https://github.com/cursor/plugins/blob/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/skills/interrogate/SKILL.md",
+      "sha256": "a16dfe179005abc22a4651b82f25b0c8ab953284276efe4e6dc341958fb63647"
+    },
+    {
+      "id": "P6",
+      "repository": "cursor/plugins",
+      "commit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "path": "pstack/skills/poteto-mode/playbooks/session-pickup.md",
+      "url": "https://github.com/cursor/plugins/blob/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/skills/poteto-mode/playbooks/session-pickup.md",
+      "sha256": "d194f2a7ef392c1598ef3f0e3b561370ca25c2c7a78308007af4aa46ada8ee12"
+    },
+    {
+      "id": "P7",
+      "repository": "cursor/plugins",
+      "commit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "path": "pstack/skills/how/references/explainer-prompt.md",
+      "url": "https://github.com/cursor/plugins/blob/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/skills/how/references/explainer-prompt.md",
+      "sha256": "ddb89cebefc24e2b54517a331aedfe045b6971e101f45c71b8cef4cccff45bff"
+    },
+    {
+      "id": "A1",
+      "repository": "addyosmani/agent-skills",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "path": "skills/constraint-driven-development/SKILL.md",
+      "url": "https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/skills/constraint-driven-development/SKILL.md",
+      "sha256": "06479d4305f286d23cfb99f5dc85695896785269664e1f6a8d800e3b71e70c10"
+    },
+    {
+      "id": "A2",
+      "repository": "addyosmani/agent-skills",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "path": "skills/code-review-and-quality/SKILL.md",
+      "url": "https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/skills/code-review-and-quality/SKILL.md",
+      "sha256": "2db1e850379f255fd3091ef278cde24cd6c7d2ba23e360cc52ea522c40d4396e"
+    },
+    {
+      "id": "A3",
+      "repository": "addyosmani/agent-skills",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "path": "skills/documentation-and-adrs/SKILL.md",
+      "url": "https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/skills/documentation-and-adrs/SKILL.md",
+      "sha256": "b60d503925bbaacee7fd63935db70b9ced5b2514ff5a56a672130e01b9690bc5"
+    },
+    {
+      "id": "O1",
+      "repository": "Fission-AI/OpenSpec",
+      "commit": "f80d860fc510ba4f51180c8ddde35b91b32de657",
+      "path": "schemas/spec-driven/schema.yaml",
+      "url": "https://github.com/Fission-AI/OpenSpec/blob/f80d860fc510ba4f51180c8ddde35b91b32de657/schemas/spec-driven/schema.yaml",
+      "sha256": "b6f28f305ab7f33b061949251bba82c79de66c82424cfed60582327db3f888f2"
+    },
+    {
+      "id": "O2",
+      "repository": "Fission-AI/OpenSpec",
+      "commit": "f80d860fc510ba4f51180c8ddde35b91b32de657",
+      "path": "skills/openspec-verify-change/SKILL.md",
+      "url": "https://github.com/Fission-AI/OpenSpec/blob/f80d860fc510ba4f51180c8ddde35b91b32de657/skills/openspec-verify-change/SKILL.md",
+      "sha256": "29164b5053d78cbdb1440beda4193fba293f5c65699a40d689de11ced7a61124"
+    },
+    {
+      "id": "O3",
+      "repository": "Fission-AI/OpenSpec",
+      "commit": "f80d860fc510ba4f51180c8ddde35b91b32de657",
+      "path": "docs/supported-tools.md",
+      "url": "https://github.com/Fission-AI/OpenSpec/blob/f80d860fc510ba4f51180c8ddde35b91b32de657/docs/supported-tools.md",
+      "sha256": "f8c7a2d30976ba1e925ebe6546d7df50081eaea7455c93a0e7829371c4350faf"
+    },
+    {
+      "id": "S1",
+      "repository": "obra/superpowers",
+      "commit": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+      "path": "skills/using-superpowers/SKILL.md",
+      "url": "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/using-superpowers/SKILL.md",
+      "sha256": "82c5c8866ad7f5dd4440ce66bd7806ba48a2f13771beae5cf112e53f08fe36ba"
+    },
+    {
+      "id": "S2",
+      "repository": "obra/superpowers",
+      "commit": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "url": "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/subagent-driven-development/SKILL.md",
+      "sha256": "8dde5589ee083fb4999106d116f01c8fdaf3116a8a9813fdedeb80329de49046"
+    },
+    {
+      "id": "S3",
+      "repository": "obra/superpowers",
+      "commit": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+      "path": "skills/requesting-code-review/code-reviewer.md",
+      "url": "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/requesting-code-review/code-reviewer.md",
+      "sha256": "82e370be6b3447523816286195571e4216ba56ba1ad6ad0e87862294c4c78dcb"
+    },
+    {
+      "id": "K1",
+      "repository": "github/spec-kit",
+      "commit": "3238fa9285694dc539aeb9829b337bfd6aed7317",
+      "path": "docs/guides/existing-projects.md",
+      "url": "https://github.com/github/spec-kit/blob/3238fa9285694dc539aeb9829b337bfd6aed7317/docs/guides/existing-projects.md",
+      "sha256": "464fdb4167c768960cb5e34ce66e7305af91f660c2b7db58852f2530adad6808"
+    },
+    {
+      "id": "K2",
+      "repository": "github/spec-kit",
+      "commit": "3238fa9285694dc539aeb9829b337bfd6aed7317",
+      "path": "templates/commands/analyze.md",
+      "url": "https://github.com/github/spec-kit/blob/3238fa9285694dc539aeb9829b337bfd6aed7317/templates/commands/analyze.md",
+      "sha256": "ffe0640ebe778795737937f2d4ec6f0149d7d55b72692e25369a668f985d1dfe"
+    },
+    {
+      "id": "K3",
+      "repository": "github/spec-kit",
+      "commit": "3238fa9285694dc539aeb9829b337bfd6aed7317",
+      "path": "templates/commands/converge.md",
+      "url": "https://github.com/github/spec-kit/blob/3238fa9285694dc539aeb9829b337bfd6aed7317/templates/commands/converge.md",
+      "sha256": "4fb017b2869ad02d58aafe272a90077187ce4231f08effee6f340b0f3a07fc16"
+    },
+    {
+      "id": "K4",
+      "repository": "github/spec-kit",
+      "commit": "3238fa9285694dc539aeb9829b337bfd6aed7317",
+      "path": "docs/reference/integrations.md",
+      "url": "https://github.com/github/spec-kit/blob/3238fa9285694dc539aeb9829b337bfd6aed7317/docs/reference/integrations.md",
+      "sha256": "1cc5b9de7b16fb6fcf342bb41f5ae84b1840d2a30b09097d152e177ee0e30e6c"
+    },
+    {
+      "id": "G1",
+      "repository": "garrytan/gstack",
+      "commit": "47d639abffa882b8cbb641d7d1dedf08ecada9ec",
+      "path": "README.md",
+      "url": "https://github.com/garrytan/gstack/blob/47d639abffa882b8cbb641d7d1dedf08ecada9ec/README.md",
+      "sha256": "2f1343ce81e47106a0f67d12acad3c09881219a4d1148cd27d28697432a79c51"
+    },
+    {
+      "id": "G2",
+      "repository": "garrytan/gstack",
+      "commit": "47d639abffa882b8cbb641d7d1dedf08ecada9ec",
+      "path": "review/gate-integrity.md",
+      "url": "https://github.com/garrytan/gstack/blob/47d639abffa882b8cbb641d7d1dedf08ecada9ec/review/gate-integrity.md",
+      "sha256": "f570db344c9a01df633bcaa281d6017f4f12420fd3e0aa3078c1ce06e0df8332"
+    },
+    {
+      "id": "G3",
+      "repository": "garrytan/gstack",
+      "commit": "47d639abffa882b8cbb641d7d1dedf08ecada9ec",
+      "path": "review/specialists/api-contract.md",
+      "url": "https://github.com/garrytan/gstack/blob/47d639abffa882b8cbb641d7d1dedf08ecada9ec/review/specialists/api-contract.md",
+      "sha256": "263d23ac119dd601d315c191dbdbd503d47c00264c9c0ca81959559ca11d4e95"
+    },
+    {
+      "id": "G4",
+      "repository": "garrytan/gstack",
+      "commit": "47d639abffa882b8cbb641d7d1dedf08ecada9ec",
+      "path": "review/specialists/data-migration.md",
+      "url": "https://github.com/garrytan/gstack/blob/47d639abffa882b8cbb641d7d1dedf08ecada9ec/review/specialists/data-migration.md",
+      "sha256": "b6fd9eb229002ea598f8fe9ff53b1cd8821e3bd37a7aa7b07b5526556c71ebca"
+    },
+    {
+      "id": "G5",
+      "repository": "garrytan/gstack",
+      "commit": "47d639abffa882b8cbb641d7d1dedf08ecada9ec",
+      "path": "context-save/SKILL.md",
+      "url": "https://github.com/garrytan/gstack/blob/47d639abffa882b8cbb641d7d1dedf08ecada9ec/context-save/SKILL.md",
+      "sha256": "39764c8b515d7564192b3ab36fa2ce7a9c72224a16d4e0c05bed0962cd490961"
+    },
+    {
+      "id": "T1",
+      "repository": "DietrichGebert/ponytail",
+      "commit": "84740e3d344b69b4a133201fa519eb37a62a2b2a",
+      "path": "skills/ponytail/SKILL.md",
+      "url": "https://github.com/DietrichGebert/ponytail/blob/84740e3d344b69b4a133201fa519eb37a62a2b2a/skills/ponytail/SKILL.md",
+      "sha256": "ba68ff26239c3c3b05b2a9a47ee0d9a6b93a69639a2555ec87a5d44bffaf2f0c"
+    }
+  ]
+}
