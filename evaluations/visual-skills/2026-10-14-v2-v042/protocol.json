@@ -1,0 +1,36 @@
+{
+  "commit": "9013349ed306b1cdda7bf5cf737c02d462195be9",
+  "candidate_source": "skills/visual-explanation_2/ (2026-10-14 frozen current single entry)",
+  "conditions": [
+    "v042",
+    "candidate"
+  ],
+  "cases": [
+    "01-dedup",
+    "02-overview"
+  ],
+  "order": [
+    [
+      "v042",
+      "01-dedup"
+    ],
+    [
+      "candidate",
+      "01-dedup"
+    ],
+    [
+      "candidate",
+      "02-overview"
+    ],
+    [
+      "v042",
+      "02-overview"
+    ]
+  ],
+  "samples": "One new independent trajectory per case/condition; four trajectories, three model calls each, two equally worded actual image feedback opportunities. Not three independent samples per trajectory.",
+  "isolation": "New container/thread/tmpfs home per trajectory, own inputs/images, login volume readonly. No repository/parent/peer outputs. Read-only CLI sandbox, no model tool calls.",
+  "references": "Only real runtime files, primary SKILL.md injected. No old semantic reference, maintenance instructions, evaluations, expected answers or old results.",
+  "extensions": "All optional extension skills absent, so tests fallback quality. Does not test am CLI, extension selection/installation, or native client integration. Controller supplies rendering equally.",
+  "rendering": "Same browser/node/Mermaid versions and isolated external renderer as 2026-10-10; static offline HTML JS disabled, screenshots desktop/mobile; mobile evaluator only. Geometry checker limitations retained, zero recognized connectors not proof.",
+  "review": "Unblinded root source and actual image review, qualitative understanding/fidelity/delivery/cost. B02 and D03 original prompts from other agent suite, same facts for both groups. No numerical grade or learning-speed study. Original Grok results not pooled."
+}

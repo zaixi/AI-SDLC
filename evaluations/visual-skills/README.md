@@ -1,6 +1,6 @@
 # 视觉 Skill 评测入口
 
-原始材料已移出当前工作区，完整内容保留在固定提交；保存方式与下载说明见 [评测存储说明](../README.md)。
+测试方法、案例与脚本已恢复，见 [继续测试说明](../TESTING.md)。大型原始材料已移出当前工作区，完整内容保留在固定提交；保存方式与下载说明见 [评测存储说明](../README.md)。
 
 当前只维护 [visual-explanation 0.5.0](../../skills/visual-explanation/README.md)。2026-10-15 统一采用原 `_2` 正文，调用名为 `$visual-explanation`。
 

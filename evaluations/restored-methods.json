@@ -1,0 +1,1450 @@
+{
+  "source_commit": "b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475",
+  "files": [
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/inputs/mermaid-diagrams/LICENSE",
+      "bytes": 1072,
+      "sha256": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/inputs/mermaid-diagrams/SKILL.md",
+      "bytes": 7366,
+      "sha256": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/inputs/mermaid-diagrams/references/advanced-features.md",
+      "bytes": 10365,
+      "sha256": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/inputs/mermaid-diagrams/references/c4-diagrams.md",
+      "bytes": 15266,
+      "sha256": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/inputs/mermaid-diagrams/references/class-diagrams.md",
+      "bytes": 6915,
+      "sha256": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/inputs/mermaid-diagrams/references/erd-diagrams.md",
+      "bytes": 12348,
+      "sha256": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/inputs/mermaid-diagrams/references/flowcharts.md",
+      "bytes": 9844,
+      "sha256": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/inputs/mermaid-diagrams/references/sequence-diagrams.md",
+      "bytes": 9213,
+      "sha256": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/inputs/prompts.json",
+      "bytes": 3358,
+      "sha256": "769bebb21c4af12e99ae850d1d275f4a5221e6714c023be05fecb9665d3bd6b1"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/inputs/show-me/LICENSE",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/inputs/show-me/SKILL.md",
+      "bytes": 3328,
+      "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/protocol.json",
+      "bytes": 2130,
+      "sha256": "819df4838ff33b977cdd2fc2f543ba4bf52509dd164c3f833131c1024916e6b7"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/scripts/parse.mjs",
+      "bytes": 1842,
+      "sha256": "be30e0b87dd84f7625f23945bb00a080ed27e96f73e393d24c89e48806ea93e2"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/scripts/render-package-lock.json",
+      "bytes": 89209,
+      "sha256": "02d93f37ee6bfa121a9cd90d8b1c9ea6e5c7cca49506ca04b1ceda713ded9f4b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/scripts/render-package.json",
+      "bytes": 69,
+      "sha256": "1e0d6f7f407bd4899394d95c15cdf66970496e6ef2d3011a2ec9df8de30438ae"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/scripts/render.Dockerfile",
+      "bytes": 306,
+      "sha256": "17d8d35e9f74519180dbb446015d091bc49bf9ba4c8892dcb35ec7e87df2914b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-challenge/scripts/run.py",
+      "bytes": 7127,
+      "sha256": "5050976e0d52a3e350d9447ccdb34e31b381c38453db2da744694779ed04f6db"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/LICENSE",
+      "bytes": 1072,
+      "sha256": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/SKILL.md",
+      "bytes": 7366,
+      "sha256": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/references/advanced-features.md",
+      "bytes": 10365,
+      "sha256": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/references/c4-diagrams.md",
+      "bytes": 15266,
+      "sha256": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/references/class-diagrams.md",
+      "bytes": 6915,
+      "sha256": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/references/erd-diagrams.md",
+      "bytes": 12348,
+      "sha256": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/references/flowcharts.md",
+      "bytes": 9844,
+      "sha256": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-complex/inputs/mermaid-diagrams/references/sequence-diagrams.md",
+      "bytes": 9213,
+      "sha256": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-complex/inputs/prompts.json",
+      "bytes": 2417,
+      "sha256": "6a4d39bba0c184bb52ecc6087a1b3f3d9d3f8300c4d711e3b2d5da62d582366d"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-complex/inputs/show-me/LICENSE",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-complex/inputs/show-me/SKILL.md",
+      "bytes": 3328,
+      "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-complex/protocol.json",
+      "bytes": 1896,
+      "sha256": "45ce7155a7217c996036a58efd9b77d130e00c4e5fbc765be4e7c7dc91211420"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-complex/scripts/parse.mjs",
+      "bytes": 1842,
+      "sha256": "be30e0b87dd84f7625f23945bb00a080ed27e96f73e393d24c89e48806ea93e2"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-container-isolation/scripts/check-isolation.py",
+      "bytes": 7408,
+      "sha256": "1f873d0133da65307aa02bd47160edd4496d34468f910f757dddf7a1125f715c"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-container-retest/inputs/mermaid-diagrams/LICENSE",
+      "bytes": 1072,
+      "sha256": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-container-retest/inputs/mermaid-diagrams/SKILL.md",
+      "bytes": 7366,
+      "sha256": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-container-retest/inputs/mermaid-diagrams/references/advanced-features.md",
+      "bytes": 10365,
+      "sha256": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-container-retest/inputs/mermaid-diagrams/references/c4-diagrams.md",
+      "bytes": 15266,
+      "sha256": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-container-retest/inputs/mermaid-diagrams/references/class-diagrams.md",
+      "bytes": 6915,
+      "sha256": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-container-retest/inputs/mermaid-diagrams/references/erd-diagrams.md",
+      "bytes": 12348,
+      "sha256": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-container-retest/inputs/mermaid-diagrams/references/flowcharts.md",
+      "bytes": 9844,
+      "sha256": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-container-retest/inputs/mermaid-diagrams/references/sequence-diagrams.md",
+      "bytes": 9213,
+      "sha256": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-container-retest/inputs/prompts.json",
+      "bytes": 2417,
+      "sha256": "6a4d39bba0c184bb52ecc6087a1b3f3d9d3f8300c4d711e3b2d5da62d582366d"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-container-retest/inputs/show-me/LICENSE",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-container-retest/inputs/show-me/SKILL.md",
+      "bytes": 3328,
+      "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-container-retest/protocol.json",
+      "bytes": 1931,
+      "sha256": "645bbd4af797b7171a8245ed117ab9fdc6b426f36e8859b40e1151e112b6a2f4"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-container-retest/scripts/parse.mjs",
+      "bytes": 1842,
+      "sha256": "be30e0b87dd84f7625f23945bb00a080ed27e96f73e393d24c89e48806ea93e2"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-container-retest/scripts/run.py",
+      "bytes": 7074,
+      "sha256": "29b0d6a9dc52f279be948e7b65a666d337115edf254fb83c938dfdb2524f0c0a"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-expanded/inputs/mermaid-diagrams/LICENSE",
+      "bytes": 1072,
+      "sha256": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-expanded/inputs/mermaid-diagrams/SKILL.md",
+      "bytes": 7366,
+      "sha256": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-expanded/inputs/mermaid-diagrams/references/advanced-features.md",
+      "bytes": 10365,
+      "sha256": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-expanded/inputs/mermaid-diagrams/references/c4-diagrams.md",
+      "bytes": 15266,
+      "sha256": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-expanded/inputs/mermaid-diagrams/references/class-diagrams.md",
+      "bytes": 6915,
+      "sha256": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-expanded/inputs/mermaid-diagrams/references/erd-diagrams.md",
+      "bytes": 12348,
+      "sha256": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-expanded/inputs/mermaid-diagrams/references/flowcharts.md",
+      "bytes": 9844,
+      "sha256": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-expanded/inputs/mermaid-diagrams/references/sequence-diagrams.md",
+      "bytes": 9213,
+      "sha256": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-expanded/inputs/prompts.json",
+      "bytes": 4211,
+      "sha256": "c36a99a1982691d84e78a4641682930d63dffa7b2650cdc7a3b755abf1a7b45e"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-expanded/inputs/show-me/LICENSE",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-expanded/inputs/show-me/SKILL.md",
+      "bytes": 3328,
+      "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-expanded/protocol.json",
+      "bytes": 2985,
+      "sha256": "3a73fe1cfbd8b39bd478dacf473721f2ee5d69c142bc5e2949943b2ae9e6aadd"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-expanded/scripts/collate.py",
+      "bytes": 3486,
+      "sha256": "365147ef2380fb5a5bccac5ee8bf878dfeef2875088acf7113082c029e20b3e3"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-expanded/scripts/parse.mjs",
+      "bytes": 1842,
+      "sha256": "be30e0b87dd84f7625f23945bb00a080ed27e96f73e393d24c89e48806ea93e2"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-isolated/inputs/mermaid-diagrams/SKILL.md",
+      "bytes": 7366,
+      "sha256": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-isolated/inputs/mermaid-diagrams/references/advanced-features.md",
+      "bytes": 10365,
+      "sha256": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-isolated/inputs/mermaid-diagrams/references/c4-diagrams.md",
+      "bytes": 15266,
+      "sha256": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-isolated/inputs/mermaid-diagrams/references/class-diagrams.md",
+      "bytes": 6915,
+      "sha256": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-isolated/inputs/mermaid-diagrams/references/erd-diagrams.md",
+      "bytes": 12348,
+      "sha256": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-isolated/inputs/mermaid-diagrams/references/flowcharts.md",
+      "bytes": 9844,
+      "sha256": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-isolated/inputs/mermaid-diagrams/references/sequence-diagrams.md",
+      "bytes": 9213,
+      "sha256": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-isolated/inputs/prompts.json",
+      "bytes": 1710,
+      "sha256": "10d7c4101824266b4587e3919cb310595713318d9d5d466f6a095142c0c1568f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-isolated/inputs/visual-explanation/LICENSE",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-isolated/inputs/visual-explanation/SKILL.md",
+      "bytes": 6689,
+      "sha256": "9d6cafcbe4a76c42082a73d3b59af1ac81de2529d9d310acc3465c302d2d0102"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-isolated/inputs/visual-explanation/references/design-views.md",
+      "bytes": 4545,
+      "sha256": "da865206bf28f4a82949b308fbf2ed56966fa21ad9409347b7a05ce7ddf1eca5"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-isolated/inputs/visual-explanation/references/diagram-patterns.md",
+      "bytes": 1751,
+      "sha256": "571d7474aa4e205f6cca89339d36cf560bd26d60f3b6416b4121ffb66f0abda1"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-isolated/inputs/visual-explanation/references/show-me.upstream.md",
+      "bytes": 3328,
+      "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-isolated/protocol.json",
+      "bytes": 1524,
+      "sha256": "0b38b7d190bbacd6108577d02d88f3e9c339518b31e1551b1adc8a392a76fd82"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-isolated/scripts/parse.mjs",
+      "bytes": 1794,
+      "sha256": "0933e1480209b138e228f915f445b76ac8e716b52e5bebdc5e1f9115df2f59b0"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v030/inputs/prompts.json",
+      "bytes": 1160,
+      "sha256": "0dec22e772e6f038011f4f1d3f6ee125480d2baae5ca8d09bc55b631df310b3b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v030/scripts/parse.mjs",
+      "bytes": 1842,
+      "sha256": "be30e0b87dd84f7625f23945bb00a080ed27e96f73e393d24c89e48806ea93e2"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v031/inputs/prompts.json",
+      "bytes": 940,
+      "sha256": "16e141afdd1bf7ef2b0b0ffd3ceed8c7dfb53983e2c362547d7e1886f55ae62b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v031/protocol.json",
+      "bytes": 1026,
+      "sha256": "95688a24f78ed9d1817ddb12fbe8a8359786b01fa573233a905c390ab77036e9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v031/scripts/parse.mjs",
+      "bytes": 1842,
+      "sha256": "be30e0b87dd84f7625f23945bb00a080ed27e96f73e393d24c89e48806ea93e2"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v033/inputs/prompts.json",
+      "bytes": 974,
+      "sha256": "04046306deef7a115700fe1cf4977e39c580945f4c773fc1be70fbeee7b1c955"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v033/protocol.json",
+      "bytes": 1267,
+      "sha256": "051cf064a5a93a1c53133a64e956a73d6366c1375927bca73d644f3d2ff7a60a"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v033/scripts/parse.mjs",
+      "bytes": 1842,
+      "sha256": "be30e0b87dd84f7625f23945bb00a080ed27e96f73e393d24c89e48806ea93e2"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v041/inputs/mermaid-diagrams/LICENSE",
+      "bytes": 1072,
+      "sha256": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v041/inputs/mermaid-diagrams/SKILL.md",
+      "bytes": 7366,
+      "sha256": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v041/inputs/mermaid-diagrams/references/advanced-features.md",
+      "bytes": 10365,
+      "sha256": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v041/inputs/mermaid-diagrams/references/c4-diagrams.md",
+      "bytes": 15266,
+      "sha256": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v041/inputs/mermaid-diagrams/references/class-diagrams.md",
+      "bytes": 6915,
+      "sha256": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v041/inputs/mermaid-diagrams/references/erd-diagrams.md",
+      "bytes": 12348,
+      "sha256": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v041/inputs/mermaid-diagrams/references/flowcharts.md",
+      "bytes": 9844,
+      "sha256": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v041/inputs/mermaid-diagrams/references/sequence-diagrams.md",
+      "bytes": 9213,
+      "sha256": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v041/inputs/prompts.json",
+      "bytes": 1241,
+      "sha256": "3a380bd1fde9704946dbbe378508fafd9300e4a5a8d7a86d3e70b45cdc1ecd31"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v041/inputs/show-me/LICENSE",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v041/inputs/show-me/SKILL.md",
+      "bytes": 3328,
+      "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v041/protocol.json",
+      "bytes": 1759,
+      "sha256": "c2456a4bba003ee6fd9ef296aa891c1f7e117fa9e3792ab357244e67bf9b72d2"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v041/scripts/parse.mjs",
+      "bytes": 1842,
+      "sha256": "be30e0b87dd84f7625f23945bb00a080ed27e96f73e393d24c89e48806ea93e2"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/inputs/mermaid-diagrams/LICENSE",
+      "bytes": 1072,
+      "sha256": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/inputs/mermaid-diagrams/SKILL.md",
+      "bytes": 7366,
+      "sha256": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/inputs/mermaid-diagrams/references/advanced-features.md",
+      "bytes": 10365,
+      "sha256": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/inputs/mermaid-diagrams/references/c4-diagrams.md",
+      "bytes": 15266,
+      "sha256": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/inputs/mermaid-diagrams/references/class-diagrams.md",
+      "bytes": 6915,
+      "sha256": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/inputs/mermaid-diagrams/references/erd-diagrams.md",
+      "bytes": 12348,
+      "sha256": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/inputs/mermaid-diagrams/references/flowcharts.md",
+      "bytes": 9844,
+      "sha256": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/inputs/mermaid-diagrams/references/sequence-diagrams.md",
+      "bytes": 9213,
+      "sha256": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/inputs/prompts.json",
+      "bytes": 3358,
+      "sha256": "769bebb21c4af12e99ae850d1d275f4a5221e6714c023be05fecb9665d3bd6b1"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/inputs/v042/LICENSE",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/inputs/v042/SKILL.md",
+      "bytes": 5300,
+      "sha256": "5992229f8c87b72bf245c7c7578861b31992e3702b3d9debeb92a7cf8d86548e"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/inputs/v042/references/show-me.upstream.md",
+      "bytes": 3328,
+      "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/protocol.json",
+      "bytes": 1616,
+      "sha256": "cf468fcf35c745300b7b0d655f90775345ab261b9908a4518ef913ce6899d731"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/scripts/compare.py",
+      "bytes": 12585,
+      "sha256": "4947f1937ec03a7c7651c9b1cfdd1609c529e8334ced5459583d1b16074bd004"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/scripts/parse.mjs",
+      "bytes": 1842,
+      "sha256": "be30e0b87dd84f7625f23945bb00a080ed27e96f73e393d24c89e48806ea93e2"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/scripts/render-package-lock.json",
+      "bytes": 89209,
+      "sha256": "02d93f37ee6bfa121a9cd90d8b1c9ea6e5c7cca49506ca04b1ceda713ded9f4b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-feedback/scripts/render.Dockerfile",
+      "bytes": 306,
+      "sha256": "17d8d35e9f74519180dbb446015d091bc49bf9ba4c8892dcb35ec7e87df2914b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/inputs/mermaid-diagrams/LICENSE",
+      "bytes": 1072,
+      "sha256": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/inputs/mermaid-diagrams/SKILL.md",
+      "bytes": 7366,
+      "sha256": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/inputs/mermaid-diagrams/references/advanced-features.md",
+      "bytes": 10365,
+      "sha256": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/inputs/mermaid-diagrams/references/c4-diagrams.md",
+      "bytes": 15266,
+      "sha256": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/inputs/mermaid-diagrams/references/class-diagrams.md",
+      "bytes": 6915,
+      "sha256": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/inputs/mermaid-diagrams/references/erd-diagrams.md",
+      "bytes": 12348,
+      "sha256": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/inputs/mermaid-diagrams/references/flowcharts.md",
+      "bytes": 9844,
+      "sha256": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/inputs/mermaid-diagrams/references/sequence-diagrams.md",
+      "bytes": 9213,
+      "sha256": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/inputs/prompts.json",
+      "bytes": 3358,
+      "sha256": "769bebb21c4af12e99ae850d1d275f4a5221e6714c023be05fecb9665d3bd6b1"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/inputs/show-me/LICENSE",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/inputs/show-me/SKILL.md",
+      "bytes": 3328,
+      "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/inputs/v042/LICENSE",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/inputs/v042/SKILL.md",
+      "bytes": 5300,
+      "sha256": "5992229f8c87b72bf245c7c7578861b31992e3702b3d9debeb92a7cf8d86548e"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/inputs/v042/references/show-me.upstream.md",
+      "bytes": 3328,
+      "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/protocol.json",
+      "bytes": 1745,
+      "sha256": "382a3883c0b805175550d1f12e111ade7369ebaeba6d9cce1bb97b4498f3e18e"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/scripts/compare.py",
+      "bytes": 12902,
+      "sha256": "0fcaf69412b3767c72540c1aacdc5ef560b170b71dac19d4c825b66e9241acfc"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/scripts/parse.mjs",
+      "bytes": 1842,
+      "sha256": "be30e0b87dd84f7625f23945bb00a080ed27e96f73e393d24c89e48806ea93e2"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/scripts/render-package-lock.json",
+      "bytes": 89209,
+      "sha256": "02d93f37ee6bfa121a9cd90d8b1c9ea6e5c7cca49506ca04b1ceda713ded9f4b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09-v042-show-me/scripts/render.Dockerfile",
+      "bytes": 306,
+      "sha256": "17d8d35e9f74519180dbb446015d091bc49bf9ba4c8892dcb35ec7e87df2914b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09/build_cases.py",
+      "bytes": 4797,
+      "sha256": "b7720a4f01835948523aafd88cd38b22d968923b8c2e735bb17d228f67e340a1"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09/cases/prompts.json",
+      "bytes": 865,
+      "sha256": "926167b0497e17f9c82aecb70c1bae216854e81003e1408456619a40c8067e93"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09/confirmed-marketplace/parse_market.mjs",
+      "bytes": 885,
+      "sha256": "920b036520498495c664c3dbfc490c9d67c87247d4024fff9ddcfe01fc8fe239"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09/package-lock.json",
+      "bytes": 106615,
+      "sha256": "46d19616c75aee07b8e21a963bc61b5b8b810481a5e85235a18df49c224867d2"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09/package.json",
+      "bytes": 93,
+      "sha256": "6b8a151700c63105d5bf6abb5f8e3cd12260dacec8e008b5d9839f4fb24ace5f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09/parse_samples.mjs",
+      "bytes": 845,
+      "sha256": "e96aed48dfdd1a819fa9152025c67344d1f5a65a9b0ad1153062da81e4f72ccb"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-09/render_samples.py",
+      "bytes": 1670,
+      "sha256": "e9445982630c6ce81a97c5d567239f8f9d12a9079cf15906dc6f22fa9be377fa"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/inputs/diagram-design/scripts/self_check.py",
+      "bytes": 19721,
+      "sha256": "68625ad793f69565300da22b983da310549bebd6cd7e820f0ff22ddc99e54ed0"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/inputs/mermaid-diagrams/LICENSE",
+      "bytes": 1072,
+      "sha256": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/inputs/mermaid-diagrams/SKILL.md",
+      "bytes": 7366,
+      "sha256": "0b646f79b836b883dfc35a82d98d91118e8bf519ce08f3cae6e0ff10d9b758d9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/inputs/mermaid-diagrams/references/advanced-features.md",
+      "bytes": 10365,
+      "sha256": "5b816a153915de49ccae229a70103e724f68c3fc8b7a5b38f67a59f973af37bc"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/inputs/mermaid-diagrams/references/c4-diagrams.md",
+      "bytes": 15266,
+      "sha256": "28e73813c730721995aab4084b913459687a8065f28e2a5e8ef7a94cd8116fd9"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/inputs/mermaid-diagrams/references/class-diagrams.md",
+      "bytes": 6915,
+      "sha256": "5eba3606f37be8409843826901f0c846a1bd4796e2e9145c787d4e5ba1646ce3"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/inputs/mermaid-diagrams/references/erd-diagrams.md",
+      "bytes": 12348,
+      "sha256": "639ee58f4925e0721fc3a2c70fd083ec256fe861baa62a56d039c01315fc58ff"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/inputs/mermaid-diagrams/references/flowcharts.md",
+      "bytes": 9844,
+      "sha256": "73b599797659ced9211ab947e3d4aee4f3ef2bfb4c1aefcfd6537276d2a21f96"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/inputs/mermaid-diagrams/references/sequence-diagrams.md",
+      "bytes": 9213,
+      "sha256": "11900f082d21c7e3fc0addcd2bf50689a1c36a5af806207942a2f772cb5e2b3b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/inputs/prompts.json",
+      "bytes": 3358,
+      "sha256": "769bebb21c4af12e99ae850d1d275f4a5221e6714c023be05fecb9665d3bd6b1"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/inputs/show-me/LICENSE",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/inputs/show-me/SKILL.md",
+      "bytes": 3328,
+      "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/inputs/v042/LICENSE",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/inputs/v042/SKILL.md",
+      "bytes": 5300,
+      "sha256": "5992229f8c87b72bf245c7c7578861b31992e3702b3d9debeb92a7cf8d86548e"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/inputs/v042/references/show-me.upstream.md",
+      "bytes": 3328,
+      "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/inputs/verify-geometry.py",
+      "bytes": 27315,
+      "sha256": "ae8d271cfe04ccba7616ab64b060578be235835f416acfc3067f9339eefca1d0"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/protocol.json",
+      "bytes": 1995,
+      "sha256": "b6deb10d177d41ee3a15d63365f30e2eed53ae665dbd021706f22907ee024181"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/scripts/audit-geometry-coverage.py",
+      "bytes": 1240,
+      "sha256": "117f37c582591db3ca01c8e6da585b2eec48317419a905a0bc53a64966e50ace"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/scripts/build-comparison.py",
+      "bytes": 4581,
+      "sha256": "11c3f27566dd286bb6489b1176466de6f6f4ac7c62fc00caf4b2a2088a43d9c7"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/scripts/compare-native-diagram-resume.py",
+      "bytes": 14499,
+      "sha256": "8c9362b7c16c22450d6ba51fb5bc509c55c9ac78fda28985291625286c537259"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/scripts/compare-native-diagram.py",
+      "bytes": 17570,
+      "sha256": "abd7172ef81ce7e0be6b46db053283a5c2e2607ce2db29663fc0d850207054c4"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/scripts/parse.mjs",
+      "bytes": 1842,
+      "sha256": "be30e0b87dd84f7625f23945bb00a080ed27e96f73e393d24c89e48806ea93e2"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/scripts/render-native-html.cjs",
+      "bytes": 2574,
+      "sha256": "1ab32d405386971fde175c8867ab3b13c56258db3b69c2544a6e0b166bab53bd"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/scripts/render-package-lock.json",
+      "bytes": 89209,
+      "sha256": "02d93f37ee6bfa121a9cd90d8b1c9ea6e5c7cca49506ca04b1ceda713ded9f4b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/scripts/render.Dockerfile",
+      "bytes": 306,
+      "sha256": "17d8d35e9f74519180dbb446015d091bc49bf9ba4c8892dcb35ec7e87df2914b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/scripts/summarize-metrics.py",
+      "bytes": 2988,
+      "sha256": "8a55753c395eec72b245353a8e6c0cb0ec76e8513ddfabda4f030e23e5c51234"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/scripts/syntax-package-lock.json",
+      "bytes": 62888,
+      "sha256": "141b94f3bc18ed7eccee88b656c3971afae5b9fdc5586f878bcb37ca8280cc71"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-10-native-diagram-design/scripts/syntax-package.json",
+      "bytes": 77,
+      "sha256": "fa6f3c802ea2d66904192b6582af2b702eef4505fead53becd57d90604ed3215"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/inputs/candidate/LICENSE.show-me",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/inputs/candidate/SKILL.md",
+      "bytes": 6443,
+      "sha256": "9ebcf2da638863b66988d4e3802c2f8d15ab012e8f5e60732bff2b88cb01fece"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/inputs/candidate/agents/openai.yaml",
+      "bytes": 302,
+      "sha256": "1fa624cb37f6816b07915c87de36c560fb0af78d5bf1a440daf5de03e1758aa6"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/inputs/candidate/references/semantics.md",
+      "bytes": 2037,
+      "sha256": "17edb3001ca09e041dd2d00a8320debf506d88aebbe713098abae1acfb3f6dea"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/inputs/diagram-design/scripts/self_check.py",
+      "bytes": 19721,
+      "sha256": "68625ad793f69565300da22b983da310549bebd6cd7e820f0ff22ddc99e54ed0"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/inputs/prompts.json",
+      "bytes": 2218,
+      "sha256": "50e7c7814d8675a6d3d84258591cfa37dd42529e061ac7e38562db797b968999"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/inputs/v042/LICENSE",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/inputs/v042/SKILL.md",
+      "bytes": 5300,
+      "sha256": "5992229f8c87b72bf245c7c7578861b31992e3702b3d9debeb92a7cf8d86548e"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/inputs/v042/references/show-me.upstream.md",
+      "bytes": 3328,
+      "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/inputs/verify-geometry.py",
+      "bytes": 27315,
+      "sha256": "ae8d271cfe04ccba7616ab64b060578be235835f416acfc3067f9339eefca1d0"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/protocol.json",
+      "bytes": 1749,
+      "sha256": "108347be8d73f87a5b3437842980963f9eb550507e359ef4da8a047c1bd32f41"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/scripts/build-comparison.py",
+      "bytes": 4580,
+      "sha256": "bfe646e86ecef1d270cbd9f09b70f945267cd5028ea8a76947ebf6a10fc83520"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/scripts/parse.mjs",
+      "bytes": 1842,
+      "sha256": "be30e0b87dd84f7625f23945bb00a080ed27e96f73e393d24c89e48806ea93e2"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/scripts/render-native-html.cjs",
+      "bytes": 2574,
+      "sha256": "1ab32d405386971fde175c8867ab3b13c56258db3b69c2544a6e0b166bab53bd"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/scripts/render-package-lock.json",
+      "bytes": 89209,
+      "sha256": "02d93f37ee6bfa121a9cd90d8b1c9ea6e5c7cca49506ca04b1ceda713ded9f4b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/scripts/render.Dockerfile",
+      "bytes": 306,
+      "sha256": "17d8d35e9f74519180dbb446015d091bc49bf9ba4c8892dcb35ec7e87df2914b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/scripts/run.py",
+      "bytes": 13629,
+      "sha256": "e2b983115bedf362ce8a1df5cd82779f214bd84c391f9bbc51d1a614c0bcbe9b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/scripts/summarize-metrics.py",
+      "bytes": 2556,
+      "sha256": "6428bd3672c0484d2c981c31562782c9fbf74c916f8d30e7fe4001705ff99339"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/scripts/syntax-package-lock.json",
+      "bytes": 62888,
+      "sha256": "141b94f3bc18ed7eccee88b656c3971afae5b9fdc5586f878bcb37ca8280cc71"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-12-v2-new-cases/scripts/syntax-package.json",
+      "bytes": 77,
+      "sha256": "fa6f3c802ea2d66904192b6582af2b702eef4505fead53becd57d90604ed3215"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/inputs/candidate/LICENSE.show-me",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/inputs/candidate/SKILL.md",
+      "bytes": 6895,
+      "sha256": "eee6dd47a4b5504b38d9d4d35046b3d178d8df63e17e6c3034cf1f529a2787c7"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/inputs/candidate/agents/openai.yaml",
+      "bytes": 306,
+      "sha256": "65d98584992cba5083eaae46198d48caadabaec3ac327b4329b8305063cebfbc"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/inputs/diagram-design/scripts/self_check.py",
+      "bytes": 19721,
+      "sha256": "68625ad793f69565300da22b983da310549bebd6cd7e820f0ff22ddc99e54ed0"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/inputs/prompts.json",
+      "bytes": 3790,
+      "sha256": "c853261fc9960aeefcd9f889bdb4ed4349c89b55c3704bd828bf8ba87a310211"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/inputs/v042/LICENSE",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/inputs/v042/SKILL.md",
+      "bytes": 5300,
+      "sha256": "5992229f8c87b72bf245c7c7578861b31992e3702b3d9debeb92a7cf8d86548e"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/inputs/v042/references/show-me.upstream.md",
+      "bytes": 3328,
+      "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/inputs/verify-geometry.py",
+      "bytes": 27315,
+      "sha256": "ae8d271cfe04ccba7616ab64b060578be235835f416acfc3067f9339eefca1d0"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/protocol.json",
+      "bytes": 1775,
+      "sha256": "22ff48b6f7162319be48ac845b172f93841e9f051fa2cc80f2b374d09305e406"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/scripts/build-comparison.py",
+      "bytes": 4534,
+      "sha256": "e1f38ee92c9035ca831a68be9861502700bff16d15fe191ca8459512c70f221c"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/scripts/parse.mjs",
+      "bytes": 1842,
+      "sha256": "be30e0b87dd84f7625f23945bb00a080ed27e96f73e393d24c89e48806ea93e2"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/scripts/render-native-html.cjs",
+      "bytes": 2574,
+      "sha256": "1ab32d405386971fde175c8867ab3b13c56258db3b69c2544a6e0b166bab53bd"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/scripts/render-package-lock.json",
+      "bytes": 89209,
+      "sha256": "02d93f37ee6bfa121a9cd90d8b1c9ea6e5c7cca49506ca04b1ceda713ded9f4b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/scripts/render.Dockerfile",
+      "bytes": 306,
+      "sha256": "17d8d35e9f74519180dbb446015d091bc49bf9ba4c8892dcb35ec7e87df2914b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/scripts/run.py",
+      "bytes": 13458,
+      "sha256": "a461777b857f3f4f05d31356bae10286c3c1e8df126b066d313b72ce7f7a23d4"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/scripts/summarize-metrics.py",
+      "bytes": 2551,
+      "sha256": "b55eca350cc52c6e981044da20773e6b48c7d98b286008a1fa9b0f9798e91064"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/scripts/syntax-package-lock.json",
+      "bytes": 62888,
+      "sha256": "141b94f3bc18ed7eccee88b656c3971afae5b9fdc5586f878bcb37ca8280cc71"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-14-v2-v042/scripts/syntax-package.json",
+      "bytes": 77,
+      "sha256": "fa6f3c802ea2d66904192b6582af2b702eef4505fead53becd57d90604ed3215"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/inputs/candidate/LICENSE.show-me",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/inputs/candidate/SKILL.md",
+      "bytes": 6895,
+      "sha256": "eee6dd47a4b5504b38d9d4d35046b3d178d8df63e17e6c3034cf1f529a2787c7"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/inputs/candidate/agents/openai.yaml",
+      "bytes": 306,
+      "sha256": "65d98584992cba5083eaae46198d48caadabaec3ac327b4329b8305063cebfbc"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/inputs/diagram-design/scripts/self_check.py",
+      "bytes": 19721,
+      "sha256": "68625ad793f69565300da22b983da310549bebd6cd7e820f0ff22ddc99e54ed0"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/inputs/fixtures/notification-flow.svg",
+      "bytes": 2051,
+      "sha256": "1191120767a78b84cb08f17fba2620070bac4d035958009fe6e5d3de308b3511"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/inputs/prompts.json",
+      "bytes": 3623,
+      "sha256": "edc12c567c759fb7b07590ecd47eedf62bedec6c31ba19ea9a7aa3de50549450"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/inputs/v042/LICENSE",
+      "bytes": 1067,
+      "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/inputs/v042/SKILL.md",
+      "bytes": 5300,
+      "sha256": "5992229f8c87b72bf245c7c7578861b31992e3702b3d9debeb92a7cf8d86548e"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/inputs/v042/references/show-me.upstream.md",
+      "bytes": 3328,
+      "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/inputs/verify-geometry.py",
+      "bytes": 27315,
+      "sha256": "ae8d271cfe04ccba7616ab64b060578be235835f416acfc3067f9339eefca1d0"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/protocol.json",
+      "bytes": 2089,
+      "sha256": "4040415b1d36d1ca488df6eec50ceb8b5e83cf14855bc1bc037dae0b670d64a5"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/scripts/build-comparison.py",
+      "bytes": 5196,
+      "sha256": "75708f4d153ff32b637e5d0fa755b08b00a2288e16366c0087a53700967fb852"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/scripts/parse.mjs",
+      "bytes": 1842,
+      "sha256": "be30e0b87dd84f7625f23945bb00a080ed27e96f73e393d24c89e48806ea93e2"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/scripts/render-native-html.cjs",
+      "bytes": 2574,
+      "sha256": "1ab32d405386971fde175c8867ab3b13c56258db3b69c2544a6e0b166bab53bd"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/scripts/render-package-lock.json",
+      "bytes": 89209,
+      "sha256": "02d93f37ee6bfa121a9cd90d8b1c9ea6e5c7cca49506ca04b1ceda713ded9f4b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/scripts/render.Dockerfile",
+      "bytes": 306,
+      "sha256": "17d8d35e9f74519180dbb446015d091bc49bf9ba4c8892dcb35ec7e87df2914b"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/scripts/review-svg-edits.py",
+      "bytes": 2072,
+      "sha256": "19f5517a4407f8c3a78a944f064c3fc770aa67fd6d4d2c3dd741c1da3cdeee0f"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/scripts/run.py",
+      "bytes": 14813,
+      "sha256": "f135092aa4cc16eebfc6428c2d35daffe6c4606c8bb458a8d319fa46aa6bafbb"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/scripts/summarize-metrics.py",
+      "bytes": 3047,
+      "sha256": "8860178e7b5a2422ded2924332d55814dfb9b8e73d02cdec4a583767417fb6c3"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/scripts/syntax-package-lock.json",
+      "bytes": 62888,
+      "sha256": "141b94f3bc18ed7eccee88b656c3971afae5b9fdc5586f878bcb37ca8280cc71"
+    },
+    {
+      "path": "evaluations/visual-skills/2026-10-15-v2-expanded/scripts/syntax-package.json",
+      "bytes": 77,
+      "sha256": "fa6f3c802ea2d66904192b6582af2b702eef4505fead53becd57d90604ed3215"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/inputs/cases.json",
+      "bytes": 2161,
+      "sha256": "ba851b223c74504b66c2a61f10cd7d9cc540a9c1360a7dfa18ab88f04760d1b4"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/inputs/fixtures/LibraryPage.tsx",
+      "bytes": 855,
+      "sha256": "6dbbd6e89eaa90988da8e5f3af9bcb048eac13198e4434b89e683300570dbe2b"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/inputs/fixtures/digitization.md",
+      "bytes": 2528,
+      "sha256": "7025ee1e9072168d68c0ed36b70f3cd4596151166f7080859c8295df471b1c29"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/inputs/fixtures/editor-style.json",
+      "bytes": 565,
+      "sha256": "b78051374cc7e7c82d8966949a5436342105e9ef5bf5c37b7e8b63a144670ee2"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/inputs/fixtures/notification-flow.svg",
+      "bytes": 2051,
+      "sha256": "1191120767a78b84cb08f17fba2620070bac4d035958009fe6e5d3de308b3511"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/protocol.json",
+      "bytes": 4192,
+      "sha256": "7b7f978bf641c87665f63c54ea651ee44e3df3cdd1081669187e35d4a269e28e"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/scripts/audit.py",
+      "bytes": 4385,
+      "sha256": "92d37fd343f9262349155c447a6bc5096fb2755e08916b3e28f50bd18bc0915a"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/scripts/blind_review.py",
+      "bytes": 11019,
+      "sha256": "84f3dc29e2f5685e933070a35ec097ecdb16bd91852e55978587954a23f50b70"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/scripts/browser.mjs",
+      "bytes": 3024,
+      "sha256": "a8f1e4e84e7440aa910e991b1ea69e7b50a15dc06676b2e54565b4586ead2c74"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/scripts/check_chart.mjs",
+      "bytes": 666,
+      "sha256": "174d66c4a8e67f645bd3cbc5f6ceac60b501392bbfeb2ed80af96d29260941af"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/scripts/check_interaction.mjs",
+      "bytes": 3044,
+      "sha256": "9815c00ae7452d59818871f58680126a917946c5c8a34a4e6b92d90a3ef1fc16"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/scripts/check_portability.mjs",
+      "bytes": 834,
+      "sha256": "0ef10467aba20bec25f68852d3389051606e24b9822dc581a815c61d59761990"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/scripts/check_ui.mjs",
+      "bytes": 1122,
+      "sha256": "6b33c242a71ebbf4ff81057b488e7cde3cd363622e0c1b13a3ca7025ee0fea55"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/scripts/interaction_checks.py",
+      "bytes": 2680,
+      "sha256": "ff4805c8ebaa2f938b517d0b11941c44f01ab41f46ff0a5987d59d6982df4ca1"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/scripts/prepare_review.py",
+      "bytes": 14670,
+      "sha256": "dc652ecbe85fb58a7f748059f0b95d34190f02e7e32b9d2b0182c8a15b3e3910"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/scripts/report.py",
+      "bytes": 13924,
+      "sha256": "baec93620213c672b281ba8137a14647c08c388061080fbd4e652c35eb894682"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/scripts/run.py",
+      "bytes": 18925,
+      "sha256": "26b9d9e07b555dc7dc35699eaa3d2dcca2360885428cd3808d117cdd93407175"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/scripts/run_monitored.py",
+      "bytes": 1090,
+      "sha256": "93929b0c96f9688c2e02a00270a2f8af3d3ca57b5a588f71b9c43b7cea75baad"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/scripts/sandbox_bridge.py",
+      "bytes": 1566,
+      "sha256": "eff820c662185e3accb4bb892c6b73d8f179393f4147b8210a609cef21952a2b"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-failed-retry-2/scripts/verify_environment.py",
+      "bytes": 3492,
+      "sha256": "50c5e1457fb34a25e40749179c1a811f1f58057dd99f61c986bbf8d6691bc318"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/inputs/cases.json",
+      "bytes": 9893,
+      "sha256": "07b62b02a90811dd3349af7c424dd9113a72c1cb33297354e76c14f7c5c1b685"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/inputs/fixtures/LibraryPage.tsx",
+      "bytes": 855,
+      "sha256": "6dbbd6e89eaa90988da8e5f3af9bcb048eac13198e4434b89e683300570dbe2b"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/inputs/fixtures/digitization.md",
+      "bytes": 2528,
+      "sha256": "7025ee1e9072168d68c0ed36b70f3cd4596151166f7080859c8295df471b1c29"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/inputs/fixtures/editor-style.json",
+      "bytes": 565,
+      "sha256": "b78051374cc7e7c82d8966949a5436342105e9ef5bf5c37b7e8b63a144670ee2"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/inputs/fixtures/notification-flow.svg",
+      "bytes": 2051,
+      "sha256": "1191120767a78b84cb08f17fba2620070bac4d035958009fe6e5d3de308b3511"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/protocol.json",
+      "bytes": 4333,
+      "sha256": "537490ba5041b09b415e2e970c4b1cb2965791ab0c60fd9feddc4ec5f01071aa"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/scripts/audit.py",
+      "bytes": 4385,
+      "sha256": "92d37fd343f9262349155c447a6bc5096fb2755e08916b3e28f50bd18bc0915a"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/scripts/blind_review.py",
+      "bytes": 11019,
+      "sha256": "84f3dc29e2f5685e933070a35ec097ecdb16bd91852e55978587954a23f50b70"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/scripts/browser.mjs",
+      "bytes": 3024,
+      "sha256": "a8f1e4e84e7440aa910e991b1ea69e7b50a15dc06676b2e54565b4586ead2c74"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/scripts/check_chart.mjs",
+      "bytes": 666,
+      "sha256": "174d66c4a8e67f645bd3cbc5f6ceac60b501392bbfeb2ed80af96d29260941af"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/scripts/check_interaction.mjs",
+      "bytes": 3044,
+      "sha256": "9815c00ae7452d59818871f58680126a917946c5c8a34a4e6b92d90a3ef1fc16"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/scripts/check_portability.mjs",
+      "bytes": 834,
+      "sha256": "0ef10467aba20bec25f68852d3389051606e24b9822dc581a815c61d59761990"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/scripts/check_ui.mjs",
+      "bytes": 1122,
+      "sha256": "6b33c242a71ebbf4ff81057b488e7cde3cd363622e0c1b13a3ca7025ee0fea55"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/scripts/interaction_checks.py",
+      "bytes": 2680,
+      "sha256": "ff4805c8ebaa2f938b517d0b11941c44f01ab41f46ff0a5987d59d6982df4ca1"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/scripts/prepare_review.py",
+      "bytes": 14625,
+      "sha256": "09cb3abc29faf6b3b2820677b18840a314fc5d50ffcaccda5a3396b90e239b9a"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/scripts/report.py",
+      "bytes": 13675,
+      "sha256": "21091a6518cbb57ea37cfe4c42062d5da11839eaee72ec9fa879614015ffb56d"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/scripts/run.py",
+      "bytes": 18925,
+      "sha256": "26b9d9e07b555dc7dc35699eaa3d2dcca2360885428cd3808d117cdd93407175"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/scripts/sandbox_bridge.py",
+      "bytes": 1566,
+      "sha256": "eff820c662185e3accb4bb892c6b73d8f179393f4147b8210a609cef21952a2b"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-simplified-once/scripts/verify_environment.py",
+      "bytes": 3492,
+      "sha256": "50c5e1457fb34a25e40749179c1a811f1f58057dd99f61c986bbf8d6691bc318"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/inputs/cases.json",
+      "bytes": 3603,
+      "sha256": "1b0ec6138100ff2d05b5431c3120e96f2699d7a2e5fbd6c3d2f1124655f4725b"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/inputs/fixtures/LibraryPage.tsx",
+      "bytes": 855,
+      "sha256": "6dbbd6e89eaa90988da8e5f3af9bcb048eac13198e4434b89e683300570dbe2b"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/inputs/fixtures/digitization.md",
+      "bytes": 2528,
+      "sha256": "7025ee1e9072168d68c0ed36b70f3cd4596151166f7080859c8295df471b1c29"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/inputs/fixtures/editor-style.json",
+      "bytes": 565,
+      "sha256": "b78051374cc7e7c82d8966949a5436342105e9ef5bf5c37b7e8b63a144670ee2"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/inputs/fixtures/notification-flow.svg",
+      "bytes": 2051,
+      "sha256": "1191120767a78b84cb08f17fba2620070bac4d035958009fe6e5d3de308b3511"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/protocol.json",
+      "bytes": 4226,
+      "sha256": "a34dbfc9e1449b5eb0ea16ec064ec437116ceb761ed09598fa34cce59bcadee2"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/scripts/audit.py",
+      "bytes": 4385,
+      "sha256": "92d37fd343f9262349155c447a6bc5096fb2755e08916b3e28f50bd18bc0915a"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/scripts/blind_review.py",
+      "bytes": 11019,
+      "sha256": "84f3dc29e2f5685e933070a35ec097ecdb16bd91852e55978587954a23f50b70"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/scripts/browser.mjs",
+      "bytes": 3024,
+      "sha256": "a8f1e4e84e7440aa910e991b1ea69e7b50a15dc06676b2e54565b4586ead2c74"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/scripts/check_chart.mjs",
+      "bytes": 666,
+      "sha256": "174d66c4a8e67f645bd3cbc5f6ceac60b501392bbfeb2ed80af96d29260941af"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/scripts/check_interaction.mjs",
+      "bytes": 3044,
+      "sha256": "9815c00ae7452d59818871f58680126a917946c5c8a34a4e6b92d90a3ef1fc16"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/scripts/check_portability.mjs",
+      "bytes": 834,
+      "sha256": "0ef10467aba20bec25f68852d3389051606e24b9822dc581a815c61d59761990"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/scripts/check_ui.mjs",
+      "bytes": 1122,
+      "sha256": "6b33c242a71ebbf4ff81057b488e7cde3cd363622e0c1b13a3ca7025ee0fea55"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/scripts/interaction_checks.py",
+      "bytes": 2680,
+      "sha256": "ff4805c8ebaa2f938b517d0b11941c44f01ab41f46ff0a5987d59d6982df4ca1"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/scripts/prepare_review.py",
+      "bytes": 14670,
+      "sha256": "dc652ecbe85fb58a7f748059f0b95d34190f02e7e32b9d2b0182c8a15b3e3910"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/scripts/report.py",
+      "bytes": 13924,
+      "sha256": "baec93620213c672b281ba8137a14647c08c388061080fbd4e652c35eb894682"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/scripts/run.py",
+      "bytes": 18925,
+      "sha256": "26b9d9e07b555dc7dc35699eaa3d2dcca2360885428cd3808d117cdd93407175"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/scripts/run_monitored.py",
+      "bytes": 1090,
+      "sha256": "93929b0c96f9688c2e02a00270a2f8af3d3ca57b5a588f71b9c43b7cea75baad"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/scripts/sandbox_bridge.py",
+      "bytes": 1566,
+      "sha256": "eff820c662185e3accb4bb892c6b73d8f179393f4147b8210a609cef21952a2b"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/2026-10-14-grok47-timeout-retry/scripts/verify_environment.py",
+      "bytes": 3492,
+      "sha256": "50c5e1457fb34a25e40749179c1a811f1f58057dd99f61c986bbf8d6691bc318"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/maintenance/2026-10-14-v2-freeze/HANDOFF.md",
+      "bytes": 5948,
+      "sha256": "288fdd5c8298a4a77aefff9bf21cc0e85caa95a0644dc017c9a9f6796b7466c3"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/maintenance/2026-10-14-v2-freeze/RUBRIC.md",
+      "bytes": 3034,
+      "sha256": "027057306cff12acbed2a0c91b92a720d81c1db10d7510622e06692352cbd01d"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/maintenance/2026-10-14-v2-freeze/TESTING.md",
+      "bytes": 6475,
+      "sha256": "72ef6bacc8fad70b8a19789a0fc6f433ab8cde9bc18b2dcdd12ebf70558b400e"
+    },
+    {
+      "path": "evaluations/visual-skills/history/visual-explanation_2/evaluation/maintenance/2026-10-14-v2-freeze/prepare_iteration.py",
+      "bytes": 6273,
+      "sha256": "44d65dce879c3789eabfbffbf5e00bd1d1aec9dcc3f9794edc8e3c1cd3ca677c"
+    }
+  ]
+}

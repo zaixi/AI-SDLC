@@ -1,0 +1,53 @@
+{
+  "conditions": [
+    "show-me",
+    "v042",
+    "diagram-design"
+  ],
+  "tasks": [
+    "01-mixed",
+    "02-c4"
+  ],
+  "trajectories_per_condition": 2,
+  "total_trajectories": 6,
+  "model_calls_per_trajectory": 3,
+  "order": [
+    [
+      "show-me",
+      "01-mixed"
+    ],
+    [
+      "v042",
+      "01-mixed"
+    ],
+    [
+      "diagram-design",
+      "01-mixed"
+    ],
+    [
+      "diagram-design",
+      "02-c4"
+    ],
+    [
+      "v042",
+      "02-c4"
+    ],
+    [
+      "show-me",
+      "02-c4"
+    ]
+  ],
+  "input": "Same tasks and feedback. Pinned show-me alone; v042 plus Mermaid guide; diagram-design plus its references and templates. Native Mermaid or static offline HTML/SVG allowed for all groups. Full text injection, not native discovery. Effective diagram-design style differs only by Font source: system; original preserved.",
+  "feedback": "Actual PNG images plus renderer status, no reviewer correction hints. Two equally worded feedback opportunities per trajectory. Final changed sources rendered independently without more model feedback.",
+  "generation": "One isolated container per trajectory, --no-daemon, own tmpfs home and local-only resume history. No parent/repo/peer mount. Own images readonly; shared login-only auth volume readonly.",
+  "renderer": "Independent network-none container, readonly root/input/tools, writable own output/tmpfs, no auth or Docker socket mount. Chromium Puppeteer external-container configuration as previously validated.",
+  "model": "CLI 0.162.0 default, no override; serving model from local turn_context if available.",
+  "limits": [
+    "One sample per case/condition",
+    "Externally orchestrated rendering; does not test agent choosing a native render tool",
+    "Static offline HTML only; no animation or remote fonts",
+    "Two feedback opportunities, not unlimited polish",
+    "Root unblinded review; not a user study"
+  ],
+  "sampling": "No random seed or sampling controls; counterbalanced condition order by task."
+}

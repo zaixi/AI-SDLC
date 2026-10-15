@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-09",
+  "conditions": [
+    "show-me",
+    "mermaid-diagrams",
+    "visual-v041"
+  ],
+  "answers_per_condition": 2,
+  "total_answers": 6,
+  "generation": "one fresh fork_turns=none agent per condition-case, one answer per session",
+  "model": "same inherited default model/reasoning; no override, seed or sampling control",
+  "reading_scope": {
+    "show-me": "assigned show-me and prompts only; no Mermaid guide",
+    "mermaid-diagrams": "assigned Mermaid guide, its references, prompts",
+    "visual-v041": "assigned visual guide, optional available Mermaid guide/references, prompts"
+  },
+  "design": "compare model knowledge plus show-me against Mermaid guidance and current combined entry; resource access intentionally differs to answer whether show-me alone is enough",
+  "filesystem": "shared filesystem with instruction-limited access, not OS isolation",
+  "tools": "read/save only; no network/install/render/subagents",
+  "review": "source-hidden independent review then root checks",
+  "limits": [
+    "two complex synthetic cases, no repetition",
+    "not real client invocation/discovery",
+    "rendered layout not tested",
+    "no cross-model generalization"
+  ],
+  "source_pins": {
+    "visual-v041": "ca67827; Skill unchanged since 014d81c",
+    "show-me": "ca7c8088db69e315a8b2deea43820270457f8f3c",
+    "mermaid-diagrams": "aiskillstore/marketplace @ 26421118b848d9f1efc0aa169d8a7a9e7e0a877e"
+  },
+  "agents": {
+    "show-me/01-concurrent": "/root/complex_show_sequence",
+    "show-me/02-cardinality": "/root/complex_show_domain",
+    "mermaid-diagrams/01-concurrent": "/root/complex_mermaid_sequence",
+    "mermaid-diagrams/02-cardinality": "/root/complex_mermaid_domain",
+    "visual-v041/01-concurrent": "/root/complex_visual_sequence",
+    "visual-v041/02-cardinality": "/root/complex_visual_domain"
+  },
+  "review_agent": "/root/complex_blind_review"
+}

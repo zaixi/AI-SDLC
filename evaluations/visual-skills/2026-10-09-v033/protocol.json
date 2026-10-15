@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-09",
+  "conditions": [
+    "v032",
+    "v033"
+  ],
+  "cases": [
+    "07-incident",
+    "08-tradeoff"
+  ],
+  "answers_per_condition": 2,
+  "total_answers": 4,
+  "generation": "one fresh fork_turns=none agent per condition-case; no question-to-question context",
+  "reading_scope": "own SKILL/referenced guidance and common prompts; shared filesystem, instruction-limited scope",
+  "model": "same inherited default model/reasoning; no override or fixed seed",
+  "tools": "read and save only; no network/install/render/subagents",
+  "review": "source-hidden independent review followed by root evidence checks",
+  "limits": "targeted regression on known issues, not generalization or stability proof; no automatic invocation, layout or client test",
+  "agents": {
+    "v032/07-incident": "/root/v033_old_incident",
+    "v032/08-tradeoff": "/root/v033_old_tradeoff",
+    "v033/07-incident": "/root/v033_new_incident",
+    "v033/08-tradeoff": "/root/v033_new_tradeoff",
+    "review": "/root/v033_blind_review"
+  },
+  "active_skill_decision": "retain v032; v033 experiment archived, not promoted",
+  "paused_session_note": "v033 incident session requested scope clarification before reading or generation; continued without additional Skill content"
+}

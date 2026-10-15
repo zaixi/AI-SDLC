@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-09",
+  "conditions": [
+    "show-me",
+    "mermaid-diagrams",
+    "visual-v030",
+    "visual-v031",
+    "visual-v032-candidate"
+  ],
+  "sessions_per_condition": 2,
+  "questions_per_session": 10,
+  "expected_answers": 100,
+  "context_isolation": "fork_turns=none; no parent history; sequential ten prompts per session",
+  "filesystem_isolation": "shared filesystem, instruction-limited reading, not OS isolation",
+  "model": "inherit same default model/reasoning; no override, seed or explicit sampling control",
+  "tools": "read own SKILL and referenced guidance, common prompts; save own raw outputs; no network/install/render/subagents",
+  "answers": "unmodified original files; root collates verbatim",
+  "assessment": "source-hidden independent reviewers followed by root evidence checks; not double-blind or user readability study",
+  "not_tested": [
+    "automatic invocation",
+    "nested skill delegation",
+    "client compatibility",
+    "rendered layout",
+    "cross-model generalization"
+  ],
+  "sources": {
+    "show-me": "ca7c8088db69e315a8b2deea43820270457f8f3c",
+    "mermaid-diagrams": "aiskillstore/marketplace @ 26421118b848d9f1efc0aa169d8a7a9e7e0a877e",
+    "visual-v030": "published 0.3.0 snapshot",
+    "visual-v031": "published final 0.3.1 including post-review changes",
+    "visual-v032-candidate": "current 5389396 snapshot"
+  },
+  "excluded_runs": [
+    {
+      "agent": "/root/expanded_v032_r2",
+      "directory": "deviations/visual-v032-extra-setup",
+      "answers": 10,
+      "reason": "Read unrelated cloud onboarding setup Skill in addition to allowed condition input; raw files preserved; replacement fresh session requested"
+    }
+  ],
+  "generation_agents": {
+    "outputs/show-me": "/root/expanded_show_r1",
+    "outputs/mermaid-diagrams": "/root/expanded_mermaid_r1",
+    "outputs/visual-v030": "/root/expanded_v030_r1",
+    "outputs/visual-v031": "/root/expanded_v031_r1",
+    "outputs/visual-v032-candidate": "/root/expanded_v032_r1",
+    "repeat-outputs/show-me": "/root/expanded_show_r2",
+    "repeat-outputs/mermaid-diagrams": "/root/expanded_mermaid_r2",
+    "repeat-outputs/visual-v030": "/root/expanded_v030_r2",
+    "repeat-outputs/visual-v031": "/root/expanded_v031_r2",
+    "repeat-outputs/visual-v032-candidate": "/root/expanded_v032_r2_replacement"
+  },
+  "review_agents": [
+    "/root/expanded_blind_review_r1",
+    "/root/expanded_blind_review_r2"
+  ],
+  "second_review_staging": "40 answers first, then ten replacement-session answers; same reviewer and rubric; separate unchanged review submissions",
+  "replacement_session_note": "Before reading/generation, task scope was clarified as text generation rather than cloud onboarding; no extra Skill content read",
+  "syntax": {
+    "version": "12.1.0",
+    "total": 84,
+    "passed": 82,
+    "failed": 2,
+    "render": "not_run",
+    "corrected_copies": "syntax-fixes/ contains two separately edited copies, both parse; excluded from raw-output metrics"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-09",
+  "agents": {
+    "v030": "/root/view_regression_v030",
+    "v031": "/root/view_regression_v031"
+  },
+  "context": "fork_turns=none; each session answered both prompts in order",
+  "reading_scope": "own skill snapshot and references, prompts.json; instruction-based restriction; shared filesystem",
+  "generation": "no network, install, render or child agents",
+  "assessment": "root reviewer, not blind",
+  "tested_snapshots": [
+    "inputs/v030",
+    "inputs/v031"
+  ],
+  "post_review_changes": {
+    "files": "inputs/v031-final contains changed files only, relative to inputs/v031",
+    "changes": [
+      "Check subjects, actions and ownership in graph and prose",
+      "Clarify reuse when evidence is sufficient, verify when evidence is missing"
+    ],
+    "independent_generation_retest": "not_run"
+  },
+  "limitations": [
+    "two prompts per condition, one generation each",
+    "no rendered layout or user readability test",
+    "no automatic invocation or client compatibility test"
+  ]
+}
