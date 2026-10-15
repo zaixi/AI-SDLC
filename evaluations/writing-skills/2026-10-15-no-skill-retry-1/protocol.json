@@ -1,0 +1,80 @@
+{
+  "created_at": "2026-10-15T04:09:48.302397+00:00",
+  "conditions": [
+    "none"
+  ],
+  "case_ids": [
+    "C01",
+    "C02",
+    "E01"
+  ],
+  "repeats": 1,
+  "formal_sessions_planned": 3,
+  "model": "deepseek-flash",
+  "client": "OpenCode 1.14.28",
+  "reasoning_effort_requested": "high; actual wire and provider acceptance checked separately",
+  "temperature": "not sent; provider default",
+  "wall_timeout_seconds": 300,
+  "max_requests_per_session": 16,
+  "completion_token_budget_per_session": 32768,
+  "output_limit_per_request": 16384,
+  "concurrency": 2,
+  "activation": "No skill installed, exposed, read, or requested",
+  "isolation": "bwrap fresh home/work/input and network namespace per case; empty input, no skills, repo, user instructions, peer outputs, evaluator rubric or credentials; host-only API relay",
+  "tools": [
+    "bash",
+    "read",
+    "glob",
+    "grep",
+    "edit",
+    "write"
+  ],
+  "delegation": "not available in this harness",
+  "references": "No skill or reference package exposed",
+  "cases": "2 Chinese direct answers and 1 English editing task; C02 embeds prior discussion but is not a resumed session",
+  "baseline": "This round runs only the missing no-skill baseline",
+  "review": "Current author qualitative comparison, nonblind; same pre-existing rubric",
+  "retry": "one attempt per case-condition; client transport retries count in same attempt; no silent reruns",
+  "service_probe": "Fresh health probe succeeded before formal tasks; one model request, excluded from formal metrics",
+  "hashes": {
+    "inputs/cases.json": "cc63dad207427e508b291a0e9f2c3d0397349f4b1eb6dab11984caa9f6d3ace6",
+    "review/rubric.md": "886e4db9574e18e4a764c15560c1cac95bf3a1cdc9cf0fd74d9284548e163420",
+    "review/expectations.json": "e73a61db618385bcfcccbd1f8f96eda774ff48565b49c0db0045eb41fdcf2760"
+  },
+  "wire_verified": {
+    "model": "deepseek-flash",
+    "reasoning_effort": "high",
+    "max_tokens": 16384,
+    "temperature": null,
+    "note": "Provider accepted requests; this does not prove how provider implements reasoning_effort."
+  },
+  "parent": "/home/liyujiang/.codex/skill-evaluations/writing/2026-10-15-four-skills",
+  "comparison": "New baseline versus existing twelve outputs; historical skill runs not repeated",
+  "system_prompt_delta": "Removed the sentence advertising /input/skill; all other system/tool/prompt behavior kept",
+  "status": "complete",
+  "script_hashes": {
+    "combine.py": "7e538eec68bf1fcec3e3d14bd16d2b35acee58084a75236c9fee294bad6ae6c8",
+    "run.py": "e89c1021cb8469f9c1b3745605d6e96b1cdbbcdbbf082e450d4d229fa348fbbe",
+    "gallery.py": "a80a70badfb42a174789352d34ad2720eb47037b77b0d035383da8467ac1d8e9",
+    "prepare_review.py": "d61dbbe9af4b73e0bbdf4eba5f65f6ecef67b83f8092c59f2c5c2ea6589a5375",
+    "sandbox_bridge.py": "eff820c662185e3accb4bb892c6b73d8f179393f4147b8210a609cef21952a2b",
+    "relay_base.py": "c3f822377141d79e234cb24f8cabfe9e2853387b81a318e682aee9b97ebdbe26"
+  },
+  "retry_of": "/home/liyujiang/.codex/skill-evaluations/writing/2026-10-15-no-skill-baseline",
+  "retry_authorized": true,
+  "actual_results": {
+    "normal_cli_outputs": 3,
+    "formal_sessions": 3,
+    "model_requests": 6,
+    "summed_seconds": 53.07,
+    "prompt_tokens": 30795,
+    "completion_tokens": 9235,
+    "historical_failures": "Previous C01/C02 HTTP 429 attempts retained in retry_of; E01 first formal attempt in this round"
+  },
+  "raw_root": "/home/liyujiang/.codex/skill-evaluations/writing/2026-10-15-no-skill-retry-1",
+  "output_hashes": {
+    "review/anonymous/S01.md": "a8d40b30b859ee8a289865714f203b2cb49baea231bded15fc01bcde9c9ff473",
+    "review/anonymous/S03.md": "438356619c6956fe42f1a81ff9032c5239cbb99641329e4860b9b43f1731af22",
+    "review/anonymous/S02.md": "68ce291b73eeb708530ae2540ca48954378f963cee5f45d594bef2c19340f462"
+  }
+}

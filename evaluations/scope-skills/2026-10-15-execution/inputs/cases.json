@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "id": "E01",
+      "title": "修复已有账单导入器",
+      "prompt": "请完成 /work 的账单导入修复并验证，不只写方案。Python 3.11 标准库，单台 Linux 主机由 cron 调用 python import_billing.py URL DB。现有 fetch_csv(url)、import_csv(db_path, text) 被内部调用，请保持可用；schema.sql 是现有数据库结构，已有库不能假定为空。\n目前下载偶发 HTTP 503；逐条提交会留下半批数据，人工重跑会重复记账。要求一次 CSV 导入全部成功或全部不生效，正常重跑不重复，503 有限重试；同 billing_id 的金额或日期不一致应明确失败。amount 是十进制数值文本，上游账单不可变，billing_id 全局唯一。历史重复记录中字段一致的可以安全合并，有冲突的必须报告并保留数据。重叠运行也必须正确处理。允许采用必要的数据库迁移，但要给出现有库的安全使用步骤。失败沿用非零退出与 cron 邮件，业务接受当天失败后人工处理。完成后简述改动和验证。",
+      "files": {
+        "import_billing.py": "import csv\nimport io\nimport sqlite3\nimport sys\nimport urllib.request\n\n\ndef fetch_csv(url):\n    with urllib.request.urlopen(url, timeout=20) as response:\n        return response.read().decode(\"utf-8\")\n\n\ndef import_csv(db_path, text):\n    with sqlite3.connect(db_path) as conn:\n        for row in csv.DictReader(io.StringIO(text)):\n            conn.execute(\"INSERT INTO billing(billing_id, amount, billing_date) VALUES (?, ?, ?)\",\n                         (row[\"billing_id\"], row[\"amount\"], row[\"billing_date\"]))\n            conn.commit()\n\n\ndef main(argv):\n    if len(argv) != 3:\n        raise SystemExit(\"usage: import_billing.py URL DB\")\n    import_csv(argv[2], fetch_csv(argv[1]))\n\n\nif __name__ == \"__main__\":\n    main(sys.argv)\n",
+        "schema.sql": "CREATE TABLE billing(id INTEGER PRIMARY KEY, billing_id TEXT NOT NULL, amount TEXT NOT NULL, billing_date TEXT NOT NULL);\n",
+        "tests/test_import.py": "import sqlite3\nimport tempfile\nimport unittest\nfrom pathlib import Path\nfrom import_billing import import_csv\n\n\nclass ImportTest(unittest.TestCase):\n    def test_one_row(self):\n        with tempfile.TemporaryDirectory() as tmp:\n            db = Path(tmp)/\"billing.db\"\n            with sqlite3.connect(db) as conn:\n                conn.executescript(Path(\"schema.sql\").read_text())\n            import_csv(db, \"billing_id,amount,billing_date\\na,10.001,2026-10-01\\n\")\n            with sqlite3.connect(db) as conn:\n                self.assertEqual(conn.execute(\"SELECT billing_id,amount,billing_date FROM billing\").fetchall(),\n                                 [(\"a\", \"10.001\", \"2026-10-01\")])\n",
+        "README.md": "# Billing importer\n\nPython 3.11 standard library. Run: python import_billing.py URL DB\nTests: python -m unittest discover -s tests -v\nThe existing amount column stores decimal strings without fixed scale. Back up production databases before migrations.\n"
+      }
+    },
+    {
+      "id": "E02",
+      "title": "实现一次性日志汇总",
+      "prompt": "请在 /work 实现 summarize.py 并验证。团队已导出一个 UTF-8 JSONL 文件，约 30 MB，每行含 service、status、duration_ms。用 Python 3.11 标准库在 Linux 本机执行 python summarize.py INPUT OUTPUT，按 service 汇总请求总数、status>=500 的数量及平均 duration_ms，按 service 排序输出 CSV，表头为 service,total,errors,avg_duration_ms。\n空行跳过；无效 JSON、缺字段或非数值 duration_ms 应报告输入行号并非零退出。service 为非空字符串，status 为整数，duration_ms 为有限且非负的数值。输入错误时不得用半成品覆盖已有输出；全部校验通过后允许覆盖。输入与输出可以是同一路径，读完并校验后再替换。这是一次性分析；同事提过将来可能做成通用分析工具，但目前只有此需求。现有 README 和 tests 是运行入口，完成后简述改动与验证。",
+      "files": {
+        "README.md": "# One-off service summary\n\nPython 3.11 standard library, Linux.\nRun: python summarize.py INPUT OUTPUT\nTests: python -m unittest discover -s tests -v\n",
+        "tests/test_summary.py": "import csv\nimport subprocess\nimport sys\nimport tempfile\nimport unittest\nfrom pathlib import Path\n\n\nclass SummaryTest(unittest.TestCase):\n    def test_example(self):\n        with tempfile.TemporaryDirectory() as tmp:\n            source, dest = Path(tmp)/\"input.jsonl\", Path(tmp)/\"out.csv\"\n            source.write_text('{\"service\":\"web\",\"status\":200,\"duration_ms\":12}\\n')\n            result = subprocess.run([sys.executable,\"summarize.py\",str(source),str(dest)],capture_output=True,text=True)\n            self.assertEqual(result.returncode,0,result.stderr)\n            with dest.open() as f:\n                rows=list(csv.DictReader(f))\n            self.assertEqual(rows[0][\"service\"],\"web\")\n            self.assertEqual(int(rows[0][\"total\"]),1)\n"
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "id": "N01",
+      "title": "现有 HTTP 客户端增加限流恢复",
+      "prompt": "请在 /work 完成 ticket_client.py 的修复并验证。Python 3.11 标准库；现有 get_ticket(base_url, ticket_id) 被调用方依赖，返回 JSON 对象，404 返回 None，其他 HTTP 错误抛出。现在线上偶发 429，上游回复 Retry-After 为非负整数秒。要求对 429 总共最多尝试 3 次；Retry-After 合法时等待该时长但单次最多等 2 秒，缺失或非法时等 1 秒。第三次仍 429 则抛出最后一个 HTTPError。保留当前调用方式、10 秒请求超时及原有其他行为。请完成实现、必要测试并简述改动。",
+      "files": {
+        "ticket_client.py": "import json\nimport urllib.error\nimport urllib.request\n\n\ndef get_ticket(base_url, ticket_id):\n    url = base_url.rstrip(\"/\") + \"/tickets/\" + str(ticket_id)\n    try:\n        with urllib.request.urlopen(url, timeout=10) as response:\n            return json.load(response)\n    except urllib.error.HTTPError as error:\n        if error.code == 404:\n            return None\n        raise\n",
+        "tests/test_client.py": "import io\nimport unittest\nfrom unittest.mock import patch\nfrom ticket_client import get_ticket\n\n\nclass ClientTest(unittest.TestCase):\n    def test_success(self):\n        with patch(\"urllib.request.urlopen\", return_value=io.BytesIO(b'{\"id\":7}')) as request:\n            self.assertEqual(get_ticket(\"https://service.example\", 7), {\"id\":7})\n            request.assert_called_once_with(\"https://service.example/tickets/7\",timeout=10)\n",
+        "README.md": "# Ticket client\nPython 3.11 standard library.\nTests: python -m unittest discover -s tests -v\n"
+      }
+    },
+    {
+      "id": "N02",
+      "title": "给现有配置增加环境变量覆盖",
+      "prompt": "请在 /work 实现本次配置需求并验证。单进程 Python 3.11 服务，settings.py 的 load_settings(path) 目前读取 JSON 文件，调用方依赖返回 dict；现有行为要保留。部署需要用 APP_LOG_LEVEL 覆盖文件中的 log_level：环境变量未设置或值为空字符串时保留文件值；否则仅接受 DEBUG/INFO/WARNING/ERROR（区分大小写），非法值应抛 ValueError 且消息提到 APP_LOG_LEVEL。文件中的其他键、嵌套对象保持不变，不能改写磁盘文件。请实现这次改动和必要测试，简要说明。",
+      "files": {
+        "settings.py": "import json\n\n\ndef load_settings(path):\n    with open(path, encoding=\"utf-8\") as source:\n        return json.load(source)\n",
+        "app.py": "import logging\nfrom settings import load_settings\n\n\ndef startup(path):\n    settings = load_settings(path)\n    logging.basicConfig(level=settings[\"log_level\"])\n    return settings[\"database\"]\n",
+        "tests/test_settings.py": "import json\nimport tempfile\nimport unittest\nfrom pathlib import Path\nfrom settings import load_settings\n\n\nclass SettingsTest(unittest.TestCase):\n    def test_load(self):\n        with tempfile.TemporaryDirectory() as tmp:\n            path=Path(tmp)/\"settings.json\"\n            path.write_text(json.dumps({\"log_level\":\"INFO\",\"database\":{\"path\":\"data.db\"}}))\n            self.assertEqual(load_settings(path)[\"database\"],{\"path\":\"data.db\"})\n",
+        "README.md": "# Service settings\nPython 3.11 standard library. load_settings returns the JSON object unchanged.\nTests: python -m unittest discover -s tests -v\n"
+      }
+    },
+    {
+      "id": "N03",
+      "title": "归档包支持客户自定义写入后端",
+      "prompt": "请在 /work 完成 archivekit 的扩展并验证。Python 3.11 标准库；已有公开入口 archivekit.archive(data: bytes, key: str) 写入相对当前工作目录的 archives/，旧调用必须继续可用。\n合同要求新增 create_archive(backend)，返回一个仍以 (data, key) 调用的归档函数。客户要能在独立包实现后端，只依赖 archivekit 顶层公开导出的 Backend 类型；后端只需 write(data: bytes, key: str) -> None。一个进程可以同时创建多个归档函数，互不影响。包内提供 LocalBackend(root) 写本地目录，以及 MemoryBackend() 用于嵌入式临时存储；MemoryBackend 必须公开 records 字典以供其使用者读取已写入内容，同 key 再写覆盖。后端异常原样传给调用方。\n现有相对 key 的含义与本地写入行为沿用 src 实现；调用方负责提供可信的相对 key。请完成包实现，验证旧入口、两个内置后端、以及从独立消费者模块仅通过顶层公开类型接入第三方后端。写出必要的使用说明。",
+      "files": {
+        "archivekit/__init__.py": "from .archive import archive\n\n__all__ = [\"archive\"]\n",
+        "archivekit/archive.py": "from pathlib import Path\n\n\ndef archive(data: bytes, key: str) -> None:\n    target = Path(\"archives\") / key\n    target.parent.mkdir(parents=True, exist_ok=True)\n    target.write_bytes(data)\n",
+        "tests/test_archive.py": "import os\nimport tempfile\nimport unittest\nfrom pathlib import Path\nfrom archivekit import archive\n\n\nclass ArchiveTest(unittest.TestCase):\n    def test_legacy(self):\n        old=os.getcwd()\n        with tempfile.TemporaryDirectory() as tmp:\n            try:\n                os.chdir(tmp);archive(b\"hello\",\"nested/a.bin\")\n                self.assertEqual(Path(\"archives/nested/a.bin\").read_bytes(),b\"hello\")\n            finally:os.chdir(old)\n",
+        "README.md": "# archivekit\nPython 3.11, no third-party dependencies. Import from archivekit.\nTests: python -m unittest discover -s tests -v\n"
+      }
+    }
+  ]
+}

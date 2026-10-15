@@ -1,0 +1,34 @@
+{
+  "cases": [
+    {
+      "id": "C03",
+      "language": "zh",
+      "type": "simple_answer",
+      "prompt": "这个项目的配置说明写着：TASK_TIMEOUT 的单位是秒，默认值为 90，设为 0 表示不限制。现在配置是 TASK_TIMEOUT=120。这是多少分钟？任务运行到 100 秒时会因为这个超时设置被终止吗？"
+    },
+    {
+      "id": "C04",
+      "language": "zh",
+      "type": "status_summary",
+      "prompt": "请根据下面的记录，写一段给项目负责人的进展更新。\n- 导入模块开发已经完成，单元测试通过。\n- 预发布环境测了 CSV 导入，成功；XLSX 还没测，因为测试账号缺权限。\n- 小林今天申请了权限，管理员还没承诺开通时间。\n- 原计划周五上线；只有 XLSX 验证通过后才允许上线。\n- 客服公告已写好但尚未发送，需确认上线时间后再发。\n- 没有发现新的缺陷，但也没有证据说明 XLSX 已经可用。\n负责人关心：现在完成到哪、卡在哪里、周五是否确定能上线。"
+    },
+    {
+      "id": "C05",
+      "language": "zh",
+      "type": "diagnostic_plan",
+      "prompt": "我们在做一款离线笔记应用。现在知道的情况是：用户打开一份 5000 条笔记的本地库，搜索框首个字符输入后界面会卡约 2 秒；后续输入顺畅。重启应用后又会出现。数据全部在本地，没有网络请求。还没做性能采样，也不知道时间花在索引初始化、读取数据还是渲染。\n请给负责排查的工程师一份能直接执行的排查方案，说明每一步要拿到什么证据，以及不同结果怎样决定下一步。不要直接把某个猜测当成根因。"
+    },
+    {
+      "id": "C06",
+      "language": "zh",
+      "type": "nontechnical_explanation",
+      "prompt": "我在学批判性思考，老师说“两个现象一起出现，并不等于一个导致另一个”。我能记住这句话，但遇到例子还是不会判断。比如一家书店发现，参加读书会的顾客每月买书更多，于是认为读书会让顾客多买书，准备扩大读书会。请用这个例子解释我该怎么判断，并说说如果我是店长，可以怎样更有把握地验证。"
+    },
+    {
+      "id": "E02",
+      "language": "en",
+      "type": "email_rewrite",
+      "prompt": "Rewrite this email so I can send it to a customer. Keep it in English and preserve the facts and commitments.\n\nHi Maya,\nI hope this email finds you well. I wanted to take a moment to reach out and provide you with an update regarding the report you asked about. We had originally planned to send the completed report on Tuesday. We have finished our analysis, but we are still waiting for the source data owner to confirm the March totals. That confirmation has not arrived, so we cannot send the final report today.\nWe can send you a draft today if that would be useful. The March totals in that draft would be marked as unverified and might change. We expect to receive confirmation on Thursday, but we cannot guarantee that timing. We will send another update by 3 p.m. Thursday, even if we are still waiting. Please let us know whether you would like the draft.\nWe sincerely apologize for any inconvenience this may cause and truly appreciate your patience and understanding during this time. Thank you again for your understanding.\nBest,\nAlex"
+    }
+  ]
+}

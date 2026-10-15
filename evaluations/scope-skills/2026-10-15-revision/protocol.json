@@ -1,0 +1,176 @@
+{
+  "model": "deepseek-flash",
+  "reasoning_effort": "high",
+  "max_tokens": 32768,
+  "concurrency": 2,
+  "request_timeout_seconds": 240,
+  "stream_wall_limit_seconds": 600,
+  "temperature": "provider default; not set",
+  "seed": "not set",
+  "created_utc": "2026-10-15T11:20:36.260547+00:00",
+  "raw_root": "/home/liyujiang/.codex/skill-evaluations/scope/2026-10-15-revision",
+  "sources": {
+    "original": {
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "c7b15c9b8a6f76e04ad8ce9b8a85c0df15c3ac33b0af6de2947e3680606ad9e6"
+        }
+      ]
+    },
+    "revised": {
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "9ca24d99c3aeee28275ea02effedf6e02cf25a2617ec29d6f8431b2aaad057e3"
+        }
+      ]
+    },
+    "original-plus-boring": {
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "c7b15c9b8a6f76e04ad8ce9b8a85c0df15c3ac33b0af6de2947e3680606ad9e6"
+        },
+        {
+          "path": "boring-engineering/SKILL.md",
+          "sha256": "92ccb48d18c6e29a7b4df659870cb9e92ea33d5478ad1644bd80f1b48143c1e6"
+        },
+        {
+          "path": "boring-engineering/assets/decision-tree.md",
+          "sha256": "0ee27d53df774ce2c1f1d1bab47618c7705ee21ad183b68d6e2003e9f92c0e55"
+        },
+        {
+          "path": "boring-engineering/examples/bad-abstractions.md",
+          "sha256": "f226e2d1ac1b10f5af1e5b1993eee03762b788043af5b364dc0c76070d391955"
+        },
+        {
+          "path": "boring-engineering/examples/before-after.md",
+          "sha256": "27eaea87c519e64244d36e9869837e834c46ecd8fbed4048bb3b6eb970003a99"
+        },
+        {
+          "path": "boring-engineering/references/decision-framework.md",
+          "sha256": "fe1272832fde2936f3e97f5d0a63aec4272f6a3fa5d738332aa215d09c2db777"
+        }
+      ]
+    }
+  },
+  "jobs": [
+    {
+      "id": "D01-original-plus-boring",
+      "case": "D01",
+      "condition": "original-plus-boring"
+    },
+    {
+      "id": "D01-revised",
+      "case": "D01",
+      "condition": "revised"
+    },
+    {
+      "id": "D01-original",
+      "case": "D01",
+      "condition": "original"
+    },
+    {
+      "id": "D02-original-plus-boring",
+      "case": "D02",
+      "condition": "original-plus-boring"
+    },
+    {
+      "id": "D02-revised",
+      "case": "D02",
+      "condition": "revised"
+    },
+    {
+      "id": "D02-original",
+      "case": "D02",
+      "condition": "original"
+    },
+    {
+      "id": "D03-original",
+      "case": "D03",
+      "condition": "original"
+    },
+    {
+      "id": "D03-original-plus-boring",
+      "case": "D03",
+      "condition": "original-plus-boring"
+    },
+    {
+      "id": "D03-revised",
+      "case": "D03",
+      "condition": "revised"
+    },
+    {
+      "id": "D04-original-plus-boring",
+      "case": "D04",
+      "condition": "original-plus-boring"
+    },
+    {
+      "id": "D04-revised",
+      "case": "D04",
+      "condition": "revised"
+    },
+    {
+      "id": "D04-original",
+      "case": "D04",
+      "condition": "original"
+    },
+    {
+      "id": "D05-revised",
+      "case": "D05",
+      "condition": "revised"
+    },
+    {
+      "id": "D05-original",
+      "case": "D05",
+      "condition": "original"
+    },
+    {
+      "id": "D05-original-plus-boring",
+      "case": "D05",
+      "condition": "original-plus-boring"
+    }
+  ],
+  "repeats": 1,
+  "activation": "Same user-message skill-file wrapper for all groups; full AGENTS text; no native Codex loading",
+  "comparison": "All 15 cells freshly generated, old D01-D03 plus two new synthetic held-out cases D04-D05; original-plus-boring uses original AGENTS, not revised",
+  "review": "Fixed rubric, manual nonblind, no feedback or retries; all reference files supplied upfront; no tools or other host instructions",
+  "boring_source": {
+    "repo": "alvindemesadev/boring-engineering",
+    "commit": "34dae8cd569039f544c34f9553ff33a45a6ce70f",
+    "files": [
+      {
+        "path": "SKILL.md",
+        "url": "https://raw.githubusercontent.com/alvindemesadev/boring-engineering/34dae8cd569039f544c34f9553ff33a45a6ce70f/SKILL.md",
+        "sha256": "92ccb48d18c6e29a7b4df659870cb9e92ea33d5478ad1644bd80f1b48143c1e6"
+      },
+      {
+        "path": "references/decision-framework.md",
+        "url": "https://raw.githubusercontent.com/alvindemesadev/boring-engineering/34dae8cd569039f544c34f9553ff33a45a6ce70f/references/decision-framework.md",
+        "sha256": "fe1272832fde2936f3e97f5d0a63aec4272f6a3fa5d738332aa215d09c2db777"
+      },
+      {
+        "path": "assets/decision-tree.md",
+        "url": "https://raw.githubusercontent.com/alvindemesadev/boring-engineering/34dae8cd569039f544c34f9553ff33a45a6ce70f/assets/decision-tree.md",
+        "sha256": "0ee27d53df774ce2c1f1d1bab47618c7705ee21ad183b68d6e2003e9f92c0e55"
+      },
+      {
+        "path": "examples/bad-abstractions.md",
+        "url": "https://raw.githubusercontent.com/alvindemesadev/boring-engineering/34dae8cd569039f544c34f9553ff33a45a6ce70f/examples/bad-abstractions.md",
+        "sha256": "f226e2d1ac1b10f5af1e5b1993eee03762b788043af5b364dc0c76070d391955"
+      },
+      {
+        "path": "examples/before-after.md",
+        "url": "https://raw.githubusercontent.com/alvindemesadev/boring-engineering/34dae8cd569039f544c34f9553ff33a45a6ce70f/examples/before-after.md",
+        "sha256": "27eaea87c519e64244d36e9869837e834c46ecd8fbed4048bb3b6eb970003a99"
+      }
+    ]
+  },
+  "frozen_hashes": {
+    "inputs/cases.json": "740f47a1daedafc3f53f5c0e78f4f53d7c8f8d34b8e63aa6d86997ab25feaed6",
+    "RUBRIC.md": "2204fdc23c6960404826c8d606c1f3ab859caa6d156ee992bc30ff0374b37ba1",
+    "scripts/run.py": "bb581c18346d02b0ba08fde43c2759156640e6759662ef42635dc21143a1f97d",
+    "../2026-10-15-design/scripts/run.py": "4f01146f9eede4db77edb1186273c3ec0182d196f136562640fb211e6754999e"
+  }
+}

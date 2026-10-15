@@ -1,0 +1,168 @@
+{
+  "created_at": "2026-10-15T06:27:21.109768+00:00",
+  "conditions": [
+    "none",
+    "clear",
+    "humanizer",
+    "adhd"
+  ],
+  "case_ids": [
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "E02"
+  ],
+  "repeats": 1,
+  "formal_sessions_planned": 20,
+  "model": "deepseek-flash",
+  "client": "OpenCode 1.14.28",
+  "reasoning_effort_requested": "high; actual wire and provider acceptance checked separately",
+  "temperature": "not sent; provider default",
+  "wall_timeout_seconds": 300,
+  "max_requests_per_session": 16,
+  "completion_token_budget_per_session": 32768,
+  "output_limit_per_request": 16384,
+  "concurrency": 2,
+  "activation": "explicitly request reading /input/skill/SKILL.md; not native auto-discovery",
+  "isolation": "bwrap fresh home/work/input and network namespace per case-condition; only assigned complete skill/reference package; host-only API relay; no repo, user instructions, peer outputs, evaluator rubric or credentials in model filesystem",
+  "tools": [
+    "bash",
+    "read",
+    "glob",
+    "grep",
+    "edit",
+    "write"
+  ],
+  "delegation": "not available in this harness",
+  "references": "available on filesystem; model decides which to read; no forced preloading or suppressed original output workflow",
+  "cases": "Five additional tasks: simple answer, status summary, diagnostic plan, nontechnical explanation, English email rewrite",
+  "baseline": "Concurrent isolated no-skill baseline; no asd-ste100 condition",
+  "review": "Author nonblind qualitative review; expectations fixed before execution",
+  "retry": "one attempt per case-condition; client transport retries count in same attempt; no silent reruns",
+  "service_probe": "Fresh audit and health probe required",
+  "sources": {
+    "clear": {
+      "repository": "softaworks/agent-toolkit",
+      "commit": "3027f20f3181758385a1bb8c022d4041dfb4de84",
+      "path": "skills/writing-clearly-and-concisely",
+      "files": {
+        "SKILL.md": "c5f4ecc8bfa7984d0df70d30cea3bfeb824f7b24d31db111d5a1a9a959880575",
+        "README.md": "cd8241146abf3e7514fdb07a6db2e06c8535a4f78dd1ab471901b2e7fe4db089",
+        "signs-of-ai-writing.md": "06d135c200e1bbfdbe90f433dfbdffeb9c4ea07f028a9a880f4026622e5c10fd",
+        "elements-of-style/01-introductory.md": "248b18596fa18cf63605182688565d25d115c859f602068185f6014c26addbfe",
+        "elements-of-style/02-elementary-rules-of-usage.md": "8cead3fc56b54ab5fc22e52c14423182fdce2d9535d4c1dda1f8319cac542027",
+        "elements-of-style/03-elementary-principles-of-composition.md": "3867f33512ff2f0e965386dbb558579aab43ca10f070bd48d732584b9b5119e0",
+        "elements-of-style/04-a-few-matters-of-form.md": "150feae0c201def056a96dd25fa5d23e015f53632b21f3bcd7b7266f8197c563",
+        "elements-of-style/05-words-and-expressions-commonly-misused.md": "60db286f5166b1b6f4d85a0cc39471b375fbd62d6057d3844533551fb09f2c2d"
+      }
+    },
+    "humanizer": {
+      "repository": "blader/humanizer",
+      "commit": "225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8",
+      "path": "",
+      "files": {
+        "README.md": "a07a054f230dca1e3d25e32ba6c808905b743cc6fa56bf8b6868cee0b12a0432",
+        "LICENSE": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96",
+        "SKILL.md": "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad",
+        "CHANGELOG.md": "b3591fe203429f1a6bd2f713c79272e9a8e58a487843d0908d2bbe0700722afa",
+        ".cursor-plugin/plugin.json": "d1e0b50594cf4bbe57fd164b771b401713a91b76b5a213ebe8f4558bb2036546",
+        ".claude-plugin/marketplace.json": "e539740285b660d2288a38b6d9b237396c6769828c671c46b9f91e760db6cc29",
+        ".claude-plugin/plugin.json": "054c0afeeb03c12f01a7f156da949edfdec3a2b756588f5ff4ee7357b0c07f6a",
+        "scripts/validate-package.py": "941bd99e52b2ba21449719bb7969607ac8117e3dc173d0c9dfe64fd274c65938",
+        "agents/openai.yaml": "9d87ff83149a04f86a372948b8ee35fa249de20923867bbc2a49304290aad736"
+      }
+    },
+    "adhd": {
+      "repository": "ayghri/i-have-adhd",
+      "commit": "1ecea1993b7fce257ffbd686c070948b5e07eda6",
+      "path": "skills/i-have-adhd",
+      "files": {
+        "SKILL.md": "88955c019bbb1419ff4b49dbb1f80a867467de6233d7865af2e06a7d7b76c7d3",
+        "agents/openai.yaml": "2c51291283dcefdca43ca6b0c08172f225c7c26a9783ec444d6bdfa51ca96f8f"
+      }
+    }
+  },
+  "model_final_sha256": {
+    "C01-humanizer": "9d38e97d581adc6589b58e4e0005b0f9c008a9962b3af9d81f901c46a4d408ad",
+    "C01-ste": "341e0ecee64dd8efc65eee2344b5ee64746dc288a7af3c422a9819a9a98e1685",
+    "E01-clear": "c4e950759d9eda393203d0a1bb34016e01d7971eee902002176a8ee0b00a3eae",
+    "C02-clear": "4b6f37f5d1723531762b424d2195e621b968fd6661e35d9b2d677c4aba8fcfa4",
+    "C01-adhd": "3e07461124252f23251ee7094ba994e2740df3e2521ffa40e3e2e3afb26934eb",
+    "E01-ste": "c49e92070b272b9d24354d924b82574097504e35f357e66c1634f351ce302df4",
+    "C02-ste": "46fc8bacd9a5beac45e49c0c360f8188ea023c349e79e25f18c10922e998f75c",
+    "E01-adhd": "76170ece0e218e7f7b21498fd2e03f4ebfb4574afa0b0f237ecc95412e796bc2",
+    "C02-humanizer": "35bffc380c598e5a662d9284e18398d824fe206caeb5cac07244e62bc9026aed",
+    "E01-humanizer": "714c9ebd4684132f4a25bc1576d5a3a0638dbf2bc737b1a212e277b7c2f3b638",
+    "C02-adhd": "c8aa19c6c8d9e2ca42f9efc0b30768966967804991c15e262bfc666bf49584b4",
+    "C01-clear": "4c2b108d995fdecfed7223c73e5c600402d20f0556e938ec608c32c42fc58859"
+  },
+  "status": "complete",
+  "raw_root": "/home/liyujiang/.codex/skill-evaluations/writing/2026-10-15-expanded-cases",
+  "parent": "/home/liyujiang/.codex/skill-evaluations/writing/2026-10-15-four-skills",
+  "hashes": {
+    "inputs/cases.json": "e84c95fe113cf94361cf5773601ed8c803f027bf92037a9ddf9960ff3941c3d5",
+    "review/rubric.md": "5fe7ddcf45d4255e8955ba7664b77cb99ccc88c9ad986ec2e3ffc1aa63580094",
+    "review/expectations.json": "57e1d0d1224ab3f590227484f74f79248136258c7832a2ede339aebcacc01318"
+  },
+  "script_hashes": {
+    "combine.py": "7e538eec68bf1fcec3e3d14bd16d2b35acee58084a75236c9fee294bad6ae6c8",
+    "run.py": "e2767cb1d11e41d5abbc86724dc007d85d82f90ca383e35a3c5a3d61100c5304",
+    "gallery.py": "435368f2aa82df363cc0eedffdc6ebb0dd8b2a30e690d7ff1dadc904a64380af",
+    "prepare_review.py": "2e5d01a32a05f89e02927d95497249dd693b9172a4fc1dac18aef60c489d79f0",
+    "sandbox_bridge.py": "eff820c662185e3accb4bb892c6b73d8f179393f4147b8210a609cef21952a2b",
+    "relay_base.py": "c3f822377141d79e234cb24f8cabfe9e2853387b81a318e682aee9b97ebdbe26"
+  },
+  "actual_results": {
+    "normal_cli_outputs": 20,
+    "formal_sessions": 20,
+    "model_requests": 64,
+    "summed_seconds": 474.49,
+    "skill_sessions_read_skill": 15,
+    "no_skill_sessions": 5,
+    "failures": 0,
+    "case_reruns": 0
+  },
+  "wire_verified": {
+    "model": "deepseek-flash",
+    "reasoning_effort": "high",
+    "max_tokens": 16384,
+    "temperature": null
+  },
+  "output_hashes": {
+    "runs/C06-humanizer/answer.md": "6b2ea48fcd70230305da6510682a08b140c311f98a390e3de4362e4dbb89cb5d",
+    "runs/C04-humanizer/answer.md": "e50416bc729e8c2c1f0ace4a6c39c4831cb05d4377fb317790ad140778e09020",
+    "runs/C06-none/answer.md": "52456b60af3f2d3b0836f8e7442a6da7d9f92bdd2580a7befac050ff85c909b9",
+    "runs/C06-clear/answer.md": "73dacee776c2837f14f39dffdfaf84a08115a894977f5dee66b4b6ff3c3c4517",
+    "runs/C04-clear/answer.md": "de1dd5fe7014f618b4eb5071bb9546f4519f1dff06eec2967ba3dd5f171bede5",
+    "runs/C05-none/answer.md": "bf08dff6be37e1ecf9e00dc9dea46ebd7e6e732b8588e5c0fc12a180a5b6111c",
+    "runs/C03-adhd/answer.md": "b4d80b4db9345faf5035dba045e2504cc3415b829f69a62dd89e3c7b3cf37c82",
+    "runs/C05-clear/answer.md": "c7c262889ba5bca513014306a8a9d35a3eb815ee065dac1b564572752132a5bf",
+    "runs/E02-adhd/answer.md": "d1b65f7240485fdd7e9c902ae207a6ac6ecd09f701f35afefebc5a5d7ff19aa7",
+    "runs/C05-humanizer/answer.md": "b9a26b138f09cfea59fec347e91f447c903e32e6eeb8dd9419ce434d7144d75d",
+    "runs/C03-humanizer/answer.md": "637700b322fe7fffb92c550f5cb08229ba3a533119c27e4ef9a7596d9d30fe34",
+    "runs/C04-none/answer.md": "3c1cc213feac2ae070f8193dbf14b8e4cfb059e51f20cfc4c496e8d0ba0b54a0",
+    "runs/C03-clear/answer.md": "79e79e520c86d06298dbd9163aee708dd7001658deb0e51090aa62ec9ad5ab6d",
+    "runs/E02-humanizer/answer.md": "e09cfb5e4d7b89e68694217dc6246b901195a16396b993fcb4886092dff102de",
+    "runs/C03-none/answer.md": "c26fd6e75e637cc8916573175a1dfbac818a4f3cb9b8251e5d2aa07e5a91bc43",
+    "runs/E02-clear/answer.md": "1e3b11c316fa09784052683eccd7e2178e12a84c0447b0c4237d6254e403eca2",
+    "runs/C04-adhd/answer.md": "344457c9c7e07c9a62eab17282ee3adf84d4dabfe83f302050d81f20c32541bf",
+    "runs/C06-adhd/answer.md": "3e3edad0d192cdd9729530ff45eeccf706af951c00fc2c6a080daba3a2478e18",
+    "runs/E02-none/answer.md": "a3abeb3b231d812f4c080acb4213a25b4d1ed9077aa141f8d6959c6dad2b3b79",
+    "runs/C05-adhd/answer.md": "46c5a6522fa97da9452273417a6fa44751e1a4ed4aad5c3ec33205cde2fbfece"
+  },
+  "artifact_hashes": {
+    "runs/C04-humanizer/work/progress-update.md": "b05e5ea1c30196a0ada71de83e80be67594c6c8f93b3c785ff2835eeca2baaa2",
+    "runs/C06-clear/work/相关不等于因果.md": "1b4e9fdcb5b881fef58190b26da1cbbb938a7a257778d98159329ac48f8f76a0",
+    "runs/C04-clear/work/progress-update.md": "62d11c32138b7154b878f6e6e0c314d33e10fb0b1176d6341f281438fc4a1b4a",
+    "runs/C05-none/work/first-keystroke-latency-diagnosis.md": "ba2657b251999a2b6b8bc012525557050024a4606e5939f5de3988e02f32fee3",
+    "runs/C05-clear/work/search-first-keystroke-freeze-investigation.md": "32787e21968d8477866ff3385390b7c241008ef540e36967c01712ae8ca19cd8",
+    "runs/E02-adhd/work/report-update-email.md": "62f19d25dad7ecde96373b9c369d0481179ba407dc7cbd4b76fed1f6ba1290b4",
+    "runs/C05-humanizer/work/search-first-key-freeze-plan.md": "66001df94b65f6f8c5778b420bdab44b1858510600ac4fcae3d85e0267eb6848",
+    "runs/E02-humanizer/work/email_rewrite.txt": "4ee17c61a079c58c115b2045c6ae742fee1ecf3206790a3fbd003f3e2cdc0a31",
+    "runs/E02-clear/work/rewritten-email.md": "907acb34d6fe0570803c6b4073ac0bc59df232461c09b1b04d9bfb9a1c9dfd19",
+    "runs/C04-adhd/work/progress_update.md": "473d453c0e8b6863679f20fce5fa78928e813689b8d057818472b78636ba4d5b",
+    "runs/E02-none/work/rewritten_email.txt": "6eb638eeffeb840b748a75dc2784ec324d53e4d7f94688c31dd88acdc246c486",
+    "runs/C05-adhd/work/search-freeze-triage.md": "f1a2e1d23b4716e97ae6113528c96e7b41c45e6186987a48a9a7e17f4be93288"
+  }
+}

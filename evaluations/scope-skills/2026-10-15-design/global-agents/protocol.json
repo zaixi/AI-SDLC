@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-10-15T10:22:15.761378+00:00",
+  "model": "deepseek-flash",
+  "reasoning_effort": "high",
+  "max_tokens": 32768,
+  "repeats": 1,
+  "concurrency": 2,
+  "request_timeout_seconds": 240,
+  "temperature": "provider default; not set",
+  "seed": "not set",
+  "execution": "Direct streaming chat/completions through existing OpenCode provider",
+  "activation": "AGENTS.md text injected with the same user-message skill-file wrapper as prior conditions; no native Codex loading",
+  "isolation": "Fresh two-message request, neutral system, no tools, no host instructions, no other answers/rubric",
+  "references": "Only the current global AGENTS.md; referenced workflow skills are not loaded",
+  "review": "Manual nonblind, fixed rubric; no feedback or automatic retries",
+  "raw_root": "/home/liyujiang/.codex/skill-evaluations/scope/2026-10-15-global-agents",
+  "sources": {
+    "global-agents": {
+      "source_path": "/home/liyujiang/.codex/AGENTS.md",
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "c7b15c9b8a6f76e04ad8ce9b8a85c0df15c3ac33b0af6de2947e3680606ad9e6"
+        }
+      ]
+    }
+  },
+  "jobs": [
+    {
+      "id": "D01-global-agents",
+      "condition": "global-agents",
+      "case": "D01"
+    },
+    {
+      "id": "D02-global-agents",
+      "condition": "global-agents",
+      "case": "D02"
+    },
+    {
+      "id": "D03-global-agents",
+      "condition": "global-agents",
+      "case": "D03"
+    }
+  ],
+  "frozen_hashes": {
+    "../inputs/cases.json": "240de4cfb5e373e50ac064b5d5b13c0955d1b7785a079c8462b59a5cdd4ec0e7",
+    "../RUBRIC.md": "c5882612578d8ee2375536921d5193d4d761ada8c96021a02847c6991051fcf4",
+    "../scripts/run.py": "4f01146f9eede4db77edb1186273c3ec0182d196f136562640fb211e6754999e",
+    "../scripts/run_agents.py": "b47c8403451447854cb90b99ae24f880fcdc12491bfd07b681c4f2d41de49442"
+  },
+  "stream_wall_limit_seconds": 600,
+  "parent_protocol": "../protocol.json",
+  "comparison": "Later supplementary batch; earlier 12 cells retained unchanged, no combined skill plus AGENTS condition"
+}

@@ -1,0 +1,155 @@
+{
+  "created_utc": "2026-10-15T10:00:13.744145+00:00",
+  "model": "deepseek-flash",
+  "reasoning_effort": "high",
+  "max_tokens": 32768,
+  "repeats": 1,
+  "concurrency": 2,
+  "request_timeout_seconds": 240,
+  "temperature": "provider default; not set",
+  "seed": "not set",
+  "execution": "Direct streaming chat/completions through existing OpenCode provider",
+  "activation": "Full SKILL.md and listed local text references explicitly supplied in user message",
+  "isolation": "Fresh two-message request, neutral system, no tools, no host instructions, no other answers/rubric",
+  "references": "Supplied upfront, not on-demand; external design links included for yagni; diagram rules omitted because no diagram is required",
+  "review": "Manual nonblind, fixed rubric; no feedback or automatic retries",
+  "raw_root": "/home/liyujiang/.codex/skill-evaluations/scope/2026-10-15-design-formal",
+  "sources": {
+    "boring-engineering": {
+      "repo": "alvindemesadev/boring-engineering",
+      "commit": "34dae8cd569039f544c34f9553ff33a45a6ce70f",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/alvindemesadev/boring-engineering/34dae8cd569039f544c34f9553ff33a45a6ce70f/SKILL.md",
+          "sha256": "92ccb48d18c6e29a7b4df659870cb9e92ea33d5478ad1644bd80f1b48143c1e6"
+        },
+        {
+          "path": "references/decision-framework.md",
+          "url": "https://raw.githubusercontent.com/alvindemesadev/boring-engineering/34dae8cd569039f544c34f9553ff33a45a6ce70f/references/decision-framework.md",
+          "sha256": "fe1272832fde2936f3e97f5d0a63aec4272f6a3fa5d738332aa215d09c2db777"
+        },
+        {
+          "path": "assets/decision-tree.md",
+          "url": "https://raw.githubusercontent.com/alvindemesadev/boring-engineering/34dae8cd569039f544c34f9553ff33a45a6ce70f/assets/decision-tree.md",
+          "sha256": "0ee27d53df774ce2c1f1d1bab47618c7705ee21ad183b68d6e2003e9f92c0e55"
+        },
+        {
+          "path": "examples/bad-abstractions.md",
+          "url": "https://raw.githubusercontent.com/alvindemesadev/boring-engineering/34dae8cd569039f544c34f9553ff33a45a6ce70f/examples/bad-abstractions.md",
+          "sha256": "f226e2d1ac1b10f5af1e5b1993eee03762b788043af5b364dc0c76070d391955"
+        },
+        {
+          "path": "examples/before-after.md",
+          "url": "https://raw.githubusercontent.com/alvindemesadev/boring-engineering/34dae8cd569039f544c34f9553ff33a45a6ce70f/examples/before-after.md",
+          "sha256": "27eaea87c519e64244d36e9869837e834c46ecd8fbed4048bb3b6eb970003a99"
+        }
+      ]
+    },
+    "yagni": {
+      "repo": "microsoft/agentic-loops",
+      "commit": "52cbe7a51a9965423517a963e226d6a933332b1c",
+      "files": [
+        {
+          "path": "skills/yagni/SKILL.md",
+          "url": "https://raw.githubusercontent.com/microsoft/agentic-loops/52cbe7a51a9965423517a963e226d6a933332b1c/skills/yagni/SKILL.md",
+          "sha256": "71f14f5d385468298d00a369ca1d705332f854c59db5784fdcf07dbce2034629"
+        },
+        {
+          "path": "docs/meta-design.md",
+          "url": "https://raw.githubusercontent.com/microsoft/agentic-loops/52cbe7a51a9965423517a963e226d6a933332b1c/docs/meta-design.md",
+          "sha256": "ef20b1d991360b28de878910309db496e40a0ff2ea47a383826b3ad673c34d2c"
+        }
+      ]
+    },
+    "karpathy-guidelines": {
+      "repo": "forrestchang/andrej-karpathy-skills",
+      "commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+      "files": [
+        {
+          "path": "skills/karpathy-guidelines/SKILL.md",
+          "url": "https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/2c606141936f1eeef17fa3043a72095b4765b9c2/skills/karpathy-guidelines/SKILL.md",
+          "sha256": "6e22cc54cb02a5e98ae42d06d9d7292db0c1b43894831b32879beb0166b2aea7"
+        }
+      ]
+    }
+  },
+  "jobs": [
+    {
+      "id": "D01-boring-engineering",
+      "condition": "boring-engineering",
+      "case": "D01"
+    },
+    {
+      "id": "D01-karpathy-guidelines",
+      "condition": "karpathy-guidelines",
+      "case": "D01"
+    },
+    {
+      "id": "D01-none",
+      "condition": "none",
+      "case": "D01"
+    },
+    {
+      "id": "D01-yagni",
+      "condition": "yagni",
+      "case": "D01"
+    },
+    {
+      "id": "D02-yagni",
+      "condition": "yagni",
+      "case": "D02"
+    },
+    {
+      "id": "D02-none",
+      "condition": "none",
+      "case": "D02"
+    },
+    {
+      "id": "D02-karpathy-guidelines",
+      "condition": "karpathy-guidelines",
+      "case": "D02"
+    },
+    {
+      "id": "D02-boring-engineering",
+      "condition": "boring-engineering",
+      "case": "D02"
+    },
+    {
+      "id": "D03-none",
+      "condition": "none",
+      "case": "D03"
+    },
+    {
+      "id": "D03-boring-engineering",
+      "condition": "boring-engineering",
+      "case": "D03"
+    },
+    {
+      "id": "D03-karpathy-guidelines",
+      "condition": "karpathy-guidelines",
+      "case": "D03"
+    },
+    {
+      "id": "D03-yagni",
+      "condition": "yagni",
+      "case": "D03"
+    }
+  ],
+  "frozen_hashes": {
+    "inputs/cases.json": "240de4cfb5e373e50ac064b5d5b13c0955d1b7785a079c8462b59a5cdd4ec0e7",
+    "RUBRIC.md": "c5882612578d8ee2375536921d5193d4d761ada8c96021a02847c6991051fcf4",
+    "scripts/run.py": "4f01146f9eede4db77edb1186273c3ec0182d196f136562640fb211e6754999e"
+  },
+  "stream_wall_limit_seconds": 600,
+  "initial_attempt": {
+    "raw_root": "/home/liyujiang/.codex/skill-evaluations/scope/2026-10-15-design",
+    "outcome": "Two non-streaming requests timed out after 240s; two queued requests were interrupted. No completed design answers. Short health check passed; D01-none streaming diagnostic completed. All 12 formal cells restarted with streaming; diagnostic excluded."
+  },
+  "budget_calibration": {
+    "raw_root": "/home/liyujiang/.codex/skill-evaluations/scope/2026-10-15-design-streaming",
+    "outcome": "Streaming diagnostic reached 8192 total completion tokens entirely in reasoning, no answer. Two early streaming cells interrupted; excluded. All formal cells receive 32768 token allowance."
+  },
+  "generation_script_sha256": "7a1d4608f1caf0f169fe75644d98528067e64a4270b424188250fe662eeaaf67",
+  "post_run_script_change": "prepare defaults aligned to calibrated formal budget: 32768 tokens and recorded 600s wall limit; model request construction unchanged. Actual generation script retained in raw_root/generation-run.py."
+}

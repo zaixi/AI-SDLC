@@ -1,0 +1,60 @@
+{
+  "conditions": [
+    "search-first",
+    "reuse-before-build",
+    "evaluate-existing-solutions"
+  ],
+  "cases": [
+    "A01",
+    "A02"
+  ],
+  "repeats": 1,
+  "formal_sessions": 6,
+  "model": "deepseek-flash",
+  "client": "OpenCode 1.14.28",
+  "reasoning_effort": "high",
+  "context_limit": 131072,
+  "max_output_per_request": 16384,
+  "wall_seconds": 600,
+  "request_limit": 48,
+  "completion_budget": 49152,
+  "concurrency": 2,
+  "activation": "explicit reading /input/skill/SKILL.md",
+  "isolation": "bwrap independent HOME/work/input; public network shared; no host repo/instructions/other skills/peer outputs/rubric; per-run bridge port",
+  "tools": [
+    "bash",
+    "read",
+    "glob",
+    "grep",
+    "edit",
+    "write",
+    "task",
+    "webfetch"
+  ],
+  "references": "complete local references/assets required by each skill; other named workflow skills not preinstalled; no implementation stages requested",
+  "comparison": "two real repo decisions, no preselected winning product, no no-skill control, nonblind qualitative review",
+  "case_provenance": "inputs/provenance.json; source code anonymized only by host username/treatment label replacement; storage index removed",
+  "raw_root": "/home/liyujiang/.codex/skill-evaluations/reuse/2026-10-15-real-architecture-173335",
+  "status": "completed",
+  "sources": "sources.json: first two reuse frozen prior content, citypaul fixed commit cd4028d57d6e4e95814f7b8ee55ca13c23a9c2f0",
+  "script_changes": "unique per-run relay ports enable concurrency=2; increased equal per-session budgets for architecture tasks; no existing harness overwritten",
+  "frozen_hashes": {
+    "inputs/cases.json": "bff16750dc2e1f1c99bb303395ef983ffcbddca21a02397d2310a463d498abc0",
+    "review/rubric.md": "d2d1f2b4030eedc8d08c09c873f95037e56672233ea3197a0df10126c4c5acad",
+    "sources.json": "6f879b2251c389a07e01e8cf9d0083b799f8eaa29850451bf6a6b75d3133ebba",
+    "scripts/run.py": "66bae3de649510b385f22f307ee0dd4f277a193750f9175a2de51dc02ae6cee5",
+    "scripts/gallery.py": "7d7faf10276c43bb7695dc97de2fdc3c918de2d5c9b73198763c0609064ff549",
+    "scripts/sandbox_bridge.py": "e7878a79b2ad8f0467c7fd006c471def16561855095c9fd13ba37521a13165ea",
+    "scripts/summarize.py": "fd227b2415a8205f20c3995c97bd82d421be3fe2f79caf07030328bcc394cc6a",
+    "scripts/relay_base.py": "9c826189c6afdb0e16ff55c3ba836cfefedbc41167bd0f08c2625030ef24c41b"
+  },
+  "outcome": "6 attempts; 5 design.md delivered; A01-search-first request budget exhausted; no reruns",
+  "final_script_hashes": {
+    "scripts/run.py": "66bae3de649510b385f22f307ee0dd4f277a193750f9175a2de51dc02ae6cee5",
+    "scripts/gallery.py": "de69b9ae4a1abe8017504671daabdc59469e8c2e529037e6f4f4e901f0e0fb48",
+    "scripts/sandbox_bridge.py": "e7878a79b2ad8f0467c7fd006c471def16561855095c9fd13ba37521a13165ea",
+    "scripts/summarize.py": "1ff2bea40f3b15b3293abe0dbaf43443c86a7ed7f7a9be4340339bc7ae753e90",
+    "scripts/relay_base.py": "9c826189c6afdb0e16ff55c3ba836cfefedbc41167bd0f08c2625030ef24c41b"
+  },
+  "postprocessing_changes": "summarize.py adds design/source/usage audit; gallery.py shows completion and budget status; generation scripts and frozen cases/rubric unchanged"
+}

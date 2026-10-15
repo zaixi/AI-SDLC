@@ -1,0 +1,206 @@
+[
+  {
+    "id": "A01-evaluate-existing-solutions",
+    "exit": 0,
+    "seconds": 185.13,
+    "model_requests": 18,
+    "output_tokens": 24470,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 652259,
+    "parent_tools": {
+      "read": 14,
+      "bash": 5,
+      "webfetch": 14,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "read": 14,
+      "webfetch": 14,
+      "bash": 5,
+      "write": 1
+    },
+    "final_chars": 1066,
+    "all_text_chars": 6650,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 19,
+    "source_files_unchanged": true,
+    "design_exists": true,
+    "design_chars": 17786,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "A01-reuse-before-build",
+    "exit": 0,
+    "seconds": 485.37,
+    "model_requests": 26,
+    "output_tokens": 27776,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 1566674,
+    "parent_tools": {
+      "read": 8,
+      "bash": 19,
+      "webfetch": 8,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "read": 8,
+      "bash": 19,
+      "webfetch": 8,
+      "write": 1
+    },
+    "final_chars": 1517,
+    "all_text_chars": 2226,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 27,
+    "source_files_unchanged": true,
+    "design_exists": true,
+    "design_chars": 19069,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "A01-search-first",
+    "exit": 0,
+    "seconds": 265.26,
+    "model_requests": 48,
+    "output_tokens": 47740,
+    "budget_exhausted": true,
+    "reported_prompt_tokens": 2466557,
+    "parent_tools": {
+      "read": 5,
+      "bash": 4,
+      "task": 3,
+      "webfetch": 8
+    },
+    "all_returned_tools_including_errors": {
+      "bash": 40,
+      "webfetch": 86,
+      "task": 3,
+      "read": 5
+    },
+    "final_chars": 172,
+    "all_text_chars": 756,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 50,
+    "source_files_unchanged": true,
+    "design_exists": false,
+    "design_chars": 0,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "A02-evaluate-existing-solutions",
+    "exit": 0,
+    "seconds": 339.78,
+    "model_requests": 18,
+    "output_tokens": 22400,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 835215,
+    "parent_tools": {
+      "read": 6,
+      "bash": 13,
+      "webfetch": 17,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "webfetch": 17,
+      "bash": 13,
+      "read": 6,
+      "write": 1
+    },
+    "final_chars": 1131,
+    "all_text_chars": 1494,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 19,
+    "source_files_unchanged": true,
+    "design_exists": true,
+    "design_chars": 16060,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "A02-reuse-before-build",
+    "exit": 0,
+    "seconds": 166.09,
+    "model_requests": 19,
+    "output_tokens": 23736,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 965706,
+    "parent_tools": {
+      "read": 5,
+      "bash": 6,
+      "webfetch": 30,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "webfetch": 30,
+      "bash": 6,
+      "read": 5,
+      "write": 1
+    },
+    "final_chars": 1554,
+    "all_text_chars": 2405,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 20,
+    "source_files_unchanged": true,
+    "design_exists": true,
+    "design_chars": 17973,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "A02-search-first",
+    "exit": 0,
+    "seconds": 136.43,
+    "model_requests": 11,
+    "output_tokens": 18084,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 461523,
+    "parent_tools": {
+      "read": 3,
+      "bash": 4,
+      "webfetch": 21,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "webfetch": 21,
+      "bash": 4,
+      "read": 3,
+      "write": 1
+    },
+    "final_chars": 1101,
+    "all_text_chars": 1593,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 12,
+    "source_files_unchanged": true,
+    "design_exists": true,
+    "design_chars": 13866,
+    "infrastructure_errors": 0
+  }
+]

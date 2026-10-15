@@ -1,0 +1,155 @@
+{
+  "created_at": "2026-10-15T04:09:48.302397+00:00",
+  "conditions": [
+    "clear",
+    "humanizer",
+    "ste",
+    "adhd"
+  ],
+  "case_ids": [
+    "C01",
+    "C02",
+    "E01"
+  ],
+  "repeats": 1,
+  "formal_sessions_planned": 12,
+  "model": "deepseek-flash",
+  "client": "OpenCode 1.14.28",
+  "reasoning_effort_requested": "high; actual wire and provider acceptance checked separately",
+  "temperature": "not sent; provider default",
+  "wall_timeout_seconds": 300,
+  "max_requests_per_session": 16,
+  "completion_token_budget_per_session": 32768,
+  "output_limit_per_request": 16384,
+  "concurrency": 2,
+  "activation": "explicitly request reading /input/skill/SKILL.md; not native auto-discovery",
+  "isolation": "bwrap fresh home/work/input and network namespace per case-condition; only assigned complete skill/reference package; host-only API relay; no repo, user instructions, peer outputs, evaluator rubric or credentials in model filesystem",
+  "tools": [
+    "bash",
+    "read",
+    "glob",
+    "grep",
+    "edit",
+    "write"
+  ],
+  "delegation": "not available in this harness",
+  "references": "available on filesystem; model decides which to read; no forced preloading or suppressed original output workflow",
+  "cases": "2 Chinese direct answers and 1 English editing task; C02 embeds prior discussion but is not a resumed session",
+  "baseline": "no no-skill baseline requested; only compares four skills",
+  "review": "Current author qualitative review, not blind: model outputs disclose skill identity and one artifact was inadvertently read while inspecting tool inputs. Sample-level assessment saved before reading mapping; no independent judge.",
+  "retry": "one attempt per case-condition; client transport retries count in same attempt; no silent reruns",
+  "service_probe": "Grok failed before formal tasks; DeepSeek Flash used consistently if healthy",
+  "sources": {
+    "clear": {
+      "repository": "softaworks/agent-toolkit",
+      "commit": "3027f20f3181758385a1bb8c022d4041dfb4de84",
+      "path": "skills/writing-clearly-and-concisely",
+      "files": {
+        "SKILL.md": "c5f4ecc8bfa7984d0df70d30cea3bfeb824f7b24d31db111d5a1a9a959880575",
+        "README.md": "cd8241146abf3e7514fdb07a6db2e06c8535a4f78dd1ab471901b2e7fe4db089",
+        "signs-of-ai-writing.md": "06d135c200e1bbfdbe90f433dfbdffeb9c4ea07f028a9a880f4026622e5c10fd",
+        "elements-of-style/01-introductory.md": "248b18596fa18cf63605182688565d25d115c859f602068185f6014c26addbfe",
+        "elements-of-style/02-elementary-rules-of-usage.md": "8cead3fc56b54ab5fc22e52c14423182fdce2d9535d4c1dda1f8319cac542027",
+        "elements-of-style/03-elementary-principles-of-composition.md": "3867f33512ff2f0e965386dbb558579aab43ca10f070bd48d732584b9b5119e0",
+        "elements-of-style/04-a-few-matters-of-form.md": "150feae0c201def056a96dd25fa5d23e015f53632b21f3bcd7b7266f8197c563",
+        "elements-of-style/05-words-and-expressions-commonly-misused.md": "60db286f5166b1b6f4d85a0cc39471b375fbd62d6057d3844533551fb09f2c2d"
+      }
+    },
+    "humanizer": {
+      "repository": "blader/humanizer",
+      "commit": "225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8",
+      "path": "",
+      "files": {
+        "README.md": "a07a054f230dca1e3d25e32ba6c808905b743cc6fa56bf8b6868cee0b12a0432",
+        "LICENSE": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96",
+        "SKILL.md": "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad",
+        "CHANGELOG.md": "b3591fe203429f1a6bd2f713c79272e9a8e58a487843d0908d2bbe0700722afa",
+        ".cursor-plugin/plugin.json": "d1e0b50594cf4bbe57fd164b771b401713a91b76b5a213ebe8f4558bb2036546",
+        ".claude-plugin/marketplace.json": "e539740285b660d2288a38b6d9b237396c6769828c671c46b9f91e760db6cc29",
+        ".claude-plugin/plugin.json": "054c0afeeb03c12f01a7f156da949edfdec3a2b756588f5ff4ee7357b0c07f6a",
+        "scripts/validate-package.py": "941bd99e52b2ba21449719bb7969607ac8117e3dc173d0c9dfe64fd274c65938",
+        "agents/openai.yaml": "9d87ff83149a04f86a372948b8ee35fa249de20923867bbc2a49304290aad736"
+      }
+    },
+    "ste": {
+      "repository": "danyuchn/asd-ste100-skill",
+      "commit": "3944283c183eea13fe5bd902b572da3b4de8bf44",
+      "path": "",
+      "files": {
+        "README.md": "66b9f79ff7ff33ff6c2042b279ef7fdeabe35c0a816182413a8169474501da17",
+        "LICENSE": "d3c674e8592076c9021a59b55177adbcba6fd7e1710082becb922522b22ec672",
+        "SKILL.md": "39940a0db3d185416edfd757eff4c971006d8f59ad39715295b150b552344342",
+        "examples/linter-edge-cases.md": "b6cc08af876014453b0c72d26ee4bfaeed1e9a154b5046947392752911ce1774",
+        "examples/before-after.md": "d7bf2b4a390f1997a18790b243dd4c0670018d0d4d5183ec8ed44cbbf282bc52",
+        "references/writing-rules.md": "4b92c86bf803f9f54e069767d34dc7356fbb95fb52a3f28476093917c608c102",
+        "scripts/ste-lint.py": "32263de1b6b74cc3f83846ae8545ba6c57994db0ba1ec1c8d842c310427886d1"
+      }
+    },
+    "adhd": {
+      "repository": "ayghri/i-have-adhd",
+      "commit": "1ecea1993b7fce257ffbd686c070948b5e07eda6",
+      "path": "skills/i-have-adhd",
+      "files": {
+        "SKILL.md": "88955c019bbb1419ff4b49dbb1f80a867467de6233d7865af2e06a7d7b76c7d3",
+        "agents/openai.yaml": "2c51291283dcefdca43ca6b0c08172f225c7c26a9783ec444d6bdfa51ca96f8f"
+      }
+    }
+  },
+  "hashes": {
+    "inputs/cases.json": "cc63dad207427e508b291a0e9f2c3d0397349f4b1eb6dab11984caa9f6d3ace6",
+    "review/rubric.md": "886e4db9574e18e4a764c15560c1cac95bf3a1cdc9cf0fd74d9284548e163420",
+    "review/expectations.json": "e73a61db618385bcfcccbd1f8f96eda774ff48565b49c0db0045eb41fdcf2760"
+  },
+  "actual_results": {
+    "formal_sessions": 12,
+    "cli_final_text": 11,
+    "provider_final_recovered": 1,
+    "formal_retries": 0,
+    "service_probe_grok": {
+      "id": "health-grok-4.7",
+      "condition": "none",
+      "prompt": "Reply only OK. Do not use tools.",
+      "fixtures": [],
+      "exit": "timeout",
+      "seconds": 90.0,
+      "requests": 3,
+      "model_requests": 2,
+      "output_tokens": 0,
+      "budget_exhausted": false,
+      "has_text": false,
+      "artifacts": [],
+      "errors": []
+    },
+    "raw_evidence_root": "/home/liyujiang/.codex/skill-evaluations/writing/2026-10-15-four-skills",
+    "public_archive": null
+  },
+  "wire_verified": {
+    "model": "deepseek-flash",
+    "reasoning_effort": "high",
+    "max_tokens": 16384,
+    "temperature": null,
+    "note": "Provider accepted requests; this does not prove how provider implements reasoning_effort."
+  },
+  "model_final_sha256": {
+    "C01-humanizer": "9d38e97d581adc6589b58e4e0005b0f9c008a9962b3af9d81f901c46a4d408ad",
+    "C01-ste": "341e0ecee64dd8efc65eee2344b5ee64746dc288a7af3c422a9819a9a98e1685",
+    "E01-clear": "c4e950759d9eda393203d0a1bb34016e01d7971eee902002176a8ee0b00a3eae",
+    "C02-clear": "4b6f37f5d1723531762b424d2195e621b968fd6661e35d9b2d677c4aba8fcfa4",
+    "C01-adhd": "3e07461124252f23251ee7094ba994e2740df3e2521ffa40e3e2e3afb26934eb",
+    "E01-ste": "c49e92070b272b9d24354d924b82574097504e35f357e66c1634f351ce302df4",
+    "C02-ste": "46fc8bacd9a5beac45e49c0c360f8188ea023c349e79e25f18c10922e998f75c",
+    "E01-adhd": "76170ece0e218e7f7b21498fd2e03f4ebfb4574afa0b0f237ecc95412e796bc2",
+    "C02-humanizer": "35bffc380c598e5a662d9284e18398d824fe206caeb5cac07244e62bc9026aed",
+    "E01-humanizer": "714c9ebd4684132f4a25bc1576d5a3a0638dbf2bc737b1a212e277b7c2f3b638",
+    "C02-adhd": "c8aa19c6c8d9e2ca42f9efc0b30768966967804991c15e262bfc666bf49584b4",
+    "C01-clear": "4c2b108d995fdecfed7223c73e5c600402d20f0556e938ec608c32c42fc58859"
+  },
+  "script_hashes": {
+    "fetch_skills.py": "b8660d976209b2f8d00c0e76a634cec655a7b44bdec9acc6bf39bb667d902752",
+    "run.py": "fd91244b1410559a86bc10926b24183366080a787adba99785a852bc0b564c07",
+    "gallery.py": "c938959a271061255135e0944edbc2dfa5dad982290860ad2367dab89f0793dc",
+    "prepare_review.py": "d61dbbe9af4b73e0bbdf4eba5f65f6ecef67b83f8092c59f2c5c2ea6589a5375",
+    "sandbox_bridge.py": "eff820c662185e3accb4bb892c6b73d8f179393f4147b8210a609cef21952a2b",
+    "relay_base.py": "c3f822377141d79e234cb24f8cabfe9e2853387b81a318e682aee9b97ebdbe26"
+  }
+}

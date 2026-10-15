@@ -1,0 +1,79 @@
+{
+  "model": "deepseek-flash",
+  "client": "OpenCode 1.14.28",
+  "conditions": [
+    "search-first",
+    "reuse-before-build"
+  ],
+  "repeats": 1,
+  "cases": [
+    "R01",
+    "R02",
+    "R03"
+  ],
+  "sessions": 6,
+  "concurrency": 1,
+  "wall_timeout_seconds": 420,
+  "max_requests": 32,
+  "completion_budget": 32768,
+  "activation": "explicit /input/skill/SKILL.md",
+  "network": "public network enabled equally; clean filesystem and home per run",
+  "review": "nonblind, rubric frozen before generation",
+  "source_pin": "main downloaded once, frozen exact content hashes in sources.json; no claimed commit pin",
+  "raw_root": "/home/liyujiang/.codex/skill-evaluations/reuse/2026-10-15-two-skills-170821",
+  "status": "complete",
+  "tools": [
+    "bash",
+    "read",
+    "glob",
+    "grep",
+    "edit",
+    "write",
+    "task",
+    "webfetch"
+  ],
+  "limitations": [
+    "Native websearch is not exposed by this client; public search pages and primary sources can be fetched via webfetch or HTTPS commands."
+  ],
+  "formal_sessions_completed": 6,
+  "reruns": 0,
+  "behavior_checks": "R01/R02: all four outputs passed independent checks; R03: static primary-source review only, no CI execution",
+  "subagents": "Same-model task tool exposed to both; search-first R03 used one subagent. All observed request models deepseek-flash, reasoning_effort high; aggregate usage includes child and compaction.",
+  "metrics_note": "Provider-reported prompt/completion tokens summed over requests; prompt tokens include repeated context, not unique or billed tokens. Tool totals include subagent calls; public web latency is uncontrolled.",
+  "hashes": {
+    "scripts/verify.py": "4618619e28a194217ceadc5f5804c2a8cf59caef9d7f2840cc1f8c67ac2a68af",
+    "scripts/run.py": "2a5f147cb67dc51ba919c352cdfd8b04bd45bde84b901429e2c014f2894ca6dd",
+    "scripts/gallery.py": "7d7faf10276c43bb7695dc97de2fdc3c918de2d5c9b73198763c0609064ff549",
+    "scripts/sandbox_bridge.py": "eff820c662185e3accb4bb892c6b73d8f179393f4147b8210a609cef21952a2b",
+    "scripts/summarize.py": "fd227b2415a8205f20c3995c97bd82d421be3fe2f79caf07030328bcc394cc6a",
+    "scripts/relay_base.py": "9c826189c6afdb0e16ff55c3ba836cfefedbc41167bd0f08c2625030ef24c41b",
+    "inputs/cases.json": "eccf4482aa437ff56270c9caf4567a20844832d227607f747cd33150fe135718",
+    "review/rubric.md": "6c0cf603cc4a5973b25f44ebe9c260fb14f4c26f99d36fbf7fa560eed2eccea7"
+  },
+  "outputs": {
+    "runs/R02-reuse-before-build/final.md": "5fadacf3ac4a7b83686e43b481036cfbe3d83739397c3051c0be0292caf2750a",
+    "runs/R02-reuse-before-build/answer.md": "a8f73993e8a8569f8ec49a431c97037109a9224563441b3b4721c942fd22e308",
+    "runs/R02-reuse-before-build/result.json": "f24343d939bb41f480fb1a07066dbb03a11b43cbb201a4dbb9e03484382df752",
+    "runs/R02-reuse-before-build/work/pack.py": "0ccd1fcba99d43b155605dde23e6faeba80956520c1e2b75a14c682ee20f941c",
+    "runs/R01-search-first/final.md": "75935b645343d5e2c909e492e04837e9c1bce536961d709bc860043e7719147d",
+    "runs/R01-search-first/answer.md": "41a7f1ebc6266d9af8cff43c29e95f6114c2eb82effd3e629e8b5750c53cdde3",
+    "runs/R01-search-first/result.json": "5c2483d85e3941d37b871927d2d1674921b0fd44b07dc81cb5c88bd69729b0f7",
+    "runs/R01-search-first/work/inventory/export.py": "c5865945fc13eb7b7bfeacacabf6bc78e45611012f7c57fee0b033078938bf98",
+    "runs/R02-search-first/final.md": "b27e313a304ed475bca3e0ada268116380c44238e46d056d56c59cc3f32e9337",
+    "runs/R02-search-first/answer.md": "b8e14b3c9d3b1fb8e8e52663382e06fc0f92e63399989f385a9d5db60fc056d8",
+    "runs/R02-search-first/result.json": "6ae2704cefeb38a54960b6f41ed28845131e740fb3e1fa342f1d7c5ab1fdef29",
+    "runs/R02-search-first/work/pack.py": "4991dcd016bca5fb11ada95b9ffbae5d4a5ddee63d96fcb66df0bdaad52238fb",
+    "runs/R03-search-first/final.md": "78b7fce3755f814ccd0d82d7a0e1b03ce41db4ebff839c9aeda776575fffe4c2",
+    "runs/R03-search-first/answer.md": "77e3a764f333f49a099d3a5566838a52b772c17506e48d03b1c28efa0b9beedf",
+    "runs/R03-search-first/result.json": "dc8a1f435ef653c7f55a9ae28092f5f30f19cc752a2156fb5a92092170606eda",
+    "runs/R03-search-first/work/recommendation.md": "b8c89b8282774dd3ef73e61a4237e96c59dc6f61c4d37d5c9b4a55b5c1d1ecd7",
+    "runs/R03-reuse-before-build/final.md": "889b4b209dd663c2fdc4d11aa6c69bf81312d448b6a25e820acb3de3de642b22",
+    "runs/R03-reuse-before-build/answer.md": "29dffd6d1d00846456f26c85bebacee69f920a520414bd37f5792534d1a9955a",
+    "runs/R03-reuse-before-build/result.json": "8c0ff208c7eeb332c206c83912c3cb31d38f9c6a2214d3859cd9e87ad8de723f",
+    "runs/R03-reuse-before-build/work/recommendation.md": "1a2d12fd5e599ae54fc1c3e4656117079fbb54cfaa476c82f8f8ef6402c07928",
+    "runs/R01-reuse-before-build/final.md": "076ca71f8cc714dc9c3a63f69b24397fe057da084202ab4d83c4db5d56544891",
+    "runs/R01-reuse-before-build/answer.md": "be4982559bb2c31bff299a9fecf5d6af2a6f41212a91cc86429bf8dd13f8dcd8",
+    "runs/R01-reuse-before-build/result.json": "a5a7dd0bbfcce11620aad00ef84bc555c5203eb310569246861ad6bee97e9cb1",
+    "runs/R01-reuse-before-build/work/inventory/export.py": "53e8d904316ea887eaa2668d43e8fa5bb8125eff6113dad64909ebe691b2855c"
+  }
+}

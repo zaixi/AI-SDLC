@@ -1,0 +1,181 @@
+[
+  {
+    "id": "R01-reuse-before-build",
+    "exit": 0,
+    "seconds": 26.82,
+    "model_requests": 7,
+    "output_tokens": 3119,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 70459,
+    "parent_tools": {
+      "read": 6,
+      "bash": 3,
+      "glob": 1,
+      "write": 1,
+      "edit": 1
+    },
+    "all_completed_tools": {
+      "bash": 3,
+      "write": 1,
+      "read": 6,
+      "glob": 1,
+      "edit": 1
+    },
+    "final_chars": 1839,
+    "all_text_chars": 1972,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 8
+  },
+  {
+    "id": "R01-search-first",
+    "exit": 0,
+    "seconds": 25.3,
+    "model_requests": 6,
+    "output_tokens": 2973,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 57299,
+    "parent_tools": {
+      "read": 6,
+      "bash": 3,
+      "write": 1
+    },
+    "all_completed_tools": {
+      "read": 6,
+      "bash": 3,
+      "write": 1
+    },
+    "final_chars": 995,
+    "all_text_chars": 2105,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 7
+  },
+  {
+    "id": "R02-reuse-before-build",
+    "exit": 0,
+    "seconds": 40.94,
+    "model_requests": 10,
+    "output_tokens": 5556,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 114794,
+    "parent_tools": {
+      "read": 1,
+      "bash": 7,
+      "write": 1
+    },
+    "all_completed_tools": {
+      "bash": 7,
+      "read": 1,
+      "write": 1
+    },
+    "final_chars": 1929,
+    "all_text_chars": 2402,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 11
+  },
+  {
+    "id": "R02-search-first",
+    "exit": 0,
+    "seconds": 47.92,
+    "model_requests": 8,
+    "output_tokens": 7336,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 116878,
+    "parent_tools": {
+      "read": 2,
+      "bash": 6,
+      "webfetch": 2,
+      "write": 2
+    },
+    "all_completed_tools": {
+      "bash": 6,
+      "read": 2,
+      "webfetch": 2,
+      "write": 2
+    },
+    "final_chars": 2538,
+    "all_text_chars": 3743,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 9
+  },
+  {
+    "id": "R03-reuse-before-build",
+    "exit": 0,
+    "seconds": 200.48,
+    "model_requests": 18,
+    "output_tokens": 20954,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 575122,
+    "parent_tools": {
+      "read": 5,
+      "bash": 31,
+      "write": 1
+    },
+    "all_completed_tools": {
+      "bash": 31,
+      "read": 5,
+      "write": 1
+    },
+    "final_chars": 2331,
+    "all_text_chars": 4300,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 19
+  },
+  {
+    "id": "R03-search-first",
+    "exit": 0,
+    "seconds": 329.47,
+    "model_requests": 26,
+    "output_tokens": 32166,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 1225511,
+    "parent_tools": {
+      "read": 1,
+      "bash": 10,
+      "webfetch": 11,
+      "task": 1,
+      "write": 1
+    },
+    "all_completed_tools": {
+      "bash": 15,
+      "read": 2,
+      "write": 1,
+      "webfetch": 41,
+      "grep": 1,
+      "task": 1
+    },
+    "final_chars": 1654,
+    "all_text_chars": 2704,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 27
+  }
+]

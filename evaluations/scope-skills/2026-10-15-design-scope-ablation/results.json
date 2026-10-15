@@ -1,0 +1,320 @@
+[
+  {
+    "id": "N01-with",
+    "case": "N01",
+    "condition": "with",
+    "exit": 0,
+    "seconds": 90.63,
+    "model_requests": 6,
+    "output_tokens": 4454,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_404_and_other_errors_unchanged (__main__.Client.test_404_and_other_errors_unchanged) ... ok\ntest_429_then_success (__main__.Client.test_429_then_success) ... ok\ntest_header_fallback_and_cap (__main__.Client.test_header_fallback_and_cap) ... ok\ntest_network_error_unchanged (__main__.Client.test_network_error_unchanged) ... ok\ntest_three_attempts_last_error (__main__.Client.test_three_attempts_last_error) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.017s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_404_returns_none (test_client.ClientTest.test_404_returns_none) ... ok\ntest_429_invalid_retry_after_waits_one_second (test_client.ClientTest.test_429_invalid_retry_after_waits_one_second) ... ok\ntest_429_missing_retry_after_waits_one_second (test_client.ClientTest.test_429_missing_retry_after_waits_one_second) ... ok\ntest_429_retries_with_retry_after (test_client.ClientTest.test_429_retries_with_retry_after) ... ok\ntest_429_retry_after_capped_at_two_seconds (test_client.ClientTest.test_429_retry_after_capped_at_two_seconds) ... ok\ntest_429_retry_after_zero_waits_zero (test_client.ClientTest.test_429_retry_after_zero_waits_zero) ... ok\ntest_other_http_error_raises (test_client.ClientTest.test_other_http_error_raises) ... ok\ntest_success (test_client.ClientTest.test_success) ... ok\ntest_three_429_raises_last_error (test_client.ClientTest.test_three_429_raises_last_error) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.005s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "tests/test_client.py",
+        "status": "modified",
+        "lines": 77,
+        "chars": 3718
+      },
+      {
+        "path": "ticket_client.py",
+        "status": "modified",
+        "lines": 24,
+        "chars": 816
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 56926,
+    "upstream_errors": 0
+  },
+  {
+    "id": "N01-without",
+    "case": "N01",
+    "condition": "without",
+    "exit": 0,
+    "seconds": 50.42,
+    "model_requests": 7,
+    "output_tokens": 3104,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_404_and_other_errors_unchanged (__main__.Client.test_404_and_other_errors_unchanged) ... ok\ntest_429_then_success (__main__.Client.test_429_then_success) ... ok\ntest_header_fallback_and_cap (__main__.Client.test_header_fallback_and_cap) ... ok\ntest_network_error_unchanged (__main__.Client.test_network_error_unchanged) ... ok\ntest_three_attempts_last_error (__main__.Client.test_three_attempts_last_error) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.016s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_404_returns_none (test_client.ClientTest.test_404_returns_none) ... ok\ntest_429_then_success (test_client.ClientTest.test_429_then_success) ... ok\ntest_invalid_retry_after_waits_one_second (test_client.ClientTest.test_invalid_retry_after_waits_one_second) ... ok\ntest_missing_retry_after_waits_one_second (test_client.ClientTest.test_missing_retry_after_waits_one_second) ... ok\ntest_negative_retry_after_waits_one_second (test_client.ClientTest.test_negative_retry_after_waits_one_second) ... ok\ntest_other_error_raised (test_client.ClientTest.test_other_error_raised) ... ok\ntest_retry_after_capped_at_two_seconds (test_client.ClientTest.test_retry_after_capped_at_two_seconds) ... ok\ntest_success (test_client.ClientTest.test_success) ... ok\ntest_three_429_raises_last_error (test_client.ClientTest.test_three_429_raises_last_error) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.005s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "tests/test_client.py",
+        "status": "modified",
+        "lines": 96,
+        "chars": 4098
+      },
+      {
+        "path": "ticket_client.py",
+        "status": "modified",
+        "lines": 34,
+        "chars": 943
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 59325,
+    "upstream_errors": 0
+  },
+  {
+    "id": "N02-with",
+    "case": "N02",
+    "condition": "with",
+    "exit": 0,
+    "seconds": 41.83,
+    "model_requests": 7,
+    "output_tokens": 2710,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_invalid (__main__.Settings.test_invalid) ... ok\ntest_missing_file_unchanged (__main__.Settings.test_missing_file_unchanged) ... ok\ntest_unset_empty_preserve (__main__.Settings.test_unset_empty_preserve) ... ok\ntest_valid_preserves_other_keys (__main__.Settings.test_valid_preserves_other_keys) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.009s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_env_empty_keeps_file_value (test_settings.SettingsTest.test_env_empty_keeps_file_value) ... ok\ntest_env_overrides_log_level (test_settings.SettingsTest.test_env_overrides_log_level) ... ok\ntest_env_unset_keeps_file_value (test_settings.SettingsTest.test_env_unset_keeps_file_value) ... ok\ntest_invalid_env_raises_value_error (test_settings.SettingsTest.test_invalid_env_raises_value_error) ... ok\ntest_load (test_settings.SettingsTest.test_load) ... ok\ntest_other_keys_preserved_and_file_untouched (test_settings.SettingsTest.test_other_keys_preserved_and_file_untouched) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.007s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "settings.py",
+        "status": "modified",
+        "lines": 19,
+        "chars": 513
+      },
+      {
+        "path": "tests/test_settings.py",
+        "status": "modified",
+        "lines": 48,
+        "chars": 1734
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 57770,
+    "upstream_errors": 0
+  },
+  {
+    "id": "N02-without",
+    "case": "N02",
+    "condition": "without",
+    "exit": 0,
+    "seconds": 100.85,
+    "model_requests": 10,
+    "output_tokens": 3803,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_invalid (__main__.Settings.test_invalid) ... ok\ntest_missing_file_unchanged (__main__.Settings.test_missing_file_unchanged) ... ok\ntest_unset_empty_preserve (__main__.Settings.test_unset_empty_preserve) ... ok\ntest_valid_preserves_other_keys (__main__.Settings.test_valid_preserves_other_keys) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.009s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_empty_env_keeps_file_value (test_settings.SettingsTest.test_empty_env_keeps_file_value) ... ok\ntest_env_is_case_sensitive (test_settings.SettingsTest.test_env_is_case_sensitive) ... ok\ntest_env_overrides_log_level (test_settings.SettingsTest.test_env_overrides_log_level) ... ok\ntest_invalid_env_raises (test_settings.SettingsTest.test_invalid_env_raises) ... ok\ntest_load (test_settings.SettingsTest.test_load) ... ok\ntest_other_keys_unchanged_and_file_not_rewritten (test_settings.SettingsTest.test_other_keys_unchanged_and_file_not_rewritten) ... ok\ntest_unset_env_keeps_file_value (test_settings.SettingsTest.test_unset_env_keeps_file_value) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.006s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "lines": 3,
+        "chars": 218
+      },
+      {
+        "path": "settings.py",
+        "status": "modified",
+        "lines": 21,
+        "chars": 507
+      },
+      {
+        "path": "tests/test_settings.py",
+        "status": "modified",
+        "lines": 65,
+        "chars": 3039
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 92762,
+    "upstream_errors": 0
+  },
+  {
+    "id": "N03-with",
+    "case": "N03",
+    "condition": "with",
+    "exit": 0,
+    "seconds": 145.94,
+    "model_requests": 13,
+    "output_tokens": 7956,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_exception_identity (__main__.Archive.test_exception_identity) ... ok\ntest_external_consumer (__main__.Archive.test_external_consumer) ... ok\ntest_legacy_current_cwd (__main__.Archive.test_legacy_current_cwd) ... ok\ntest_local_backend (__main__.Archive.test_local_backend) ... ok\ntest_multiple_memory_instances (__main__.Archive.test_multiple_memory_instances) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_legacy (test_archive.ArchiveTest.test_legacy) ... ok\ntest_backend_exception_passed_through (test_backends.ErrorPropagationTest.test_backend_exception_passed_through) ... ok\ntest_relative_root_follows_cwd (test_backends.LocalBackendTest.test_relative_root_follows_cwd) ... ok\ntest_writes_under_root (test_backends.LocalBackendTest.test_writes_under_root) ... ok\ntest_archives_are_independent (test_backends.MemoryBackendTest.test_archives_are_independent) ... ok\ntest_records_written_content (test_backends.MemoryBackendTest.test_records_written_content) ... ok\ntest_same_key_overwrites (test_backends.MemoryBackendTest.test_same_key_overwrites) ... ok\ntest_consumer_module_backend (test_backends.ThirdPartyBackendTest.test_consumer_module_backend) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "lines": 47,
+        "chars": 1142
+      },
+      {
+        "path": "archivekit/__init__.py",
+        "status": "modified",
+        "lines": 15,
+        "chars": 216
+      },
+      {
+        "path": "archivekit/archive.py",
+        "status": "modified",
+        "lines": 43,
+        "chars": 1048
+      },
+      {
+        "path": "tests/test_backends.py",
+        "status": "new",
+        "lines": 78,
+        "chars": 2530
+      },
+      {
+        "path": "tests/thirdparty_backend.py",
+        "status": "new",
+        "lines": 23,
+        "chars": 531
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 155910,
+    "upstream_errors": 0
+  },
+  {
+    "id": "N03-without",
+    "case": "N03",
+    "condition": "without",
+    "exit": 0,
+    "seconds": 104.37,
+    "model_requests": 9,
+    "output_tokens": 5463,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_exception_identity (__main__.Archive.test_exception_identity) ... ok\ntest_external_consumer (__main__.Archive.test_external_consumer) ... ok\ntest_legacy_current_cwd (__main__.Archive.test_legacy_current_cwd) ... ok\ntest_local_backend (__main__.Archive.test_local_backend) ... ok\ntest_multiple_memory_instances (__main__.Archive.test_multiple_memory_instances) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_backend_exception_propagates (test_archive.ArchiveTest.test_backend_exception_propagates) ... ok\ntest_legacy (test_archive.ArchiveTest.test_legacy) ... ok\ntest_local_backend (test_archive.ArchiveTest.test_local_backend) ... ok\ntest_memory_backend (test_archive.ArchiveTest.test_memory_backend) ... ok\ntest_multiple_archives_are_independent (test_archive.ArchiveTest.test_multiple_archives_are_independent) ... ok\ntest_third_party_backend (test_archive.ArchiveTest.test_third_party_backend) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "lines": 55,
+        "chars": 1274
+      },
+      {
+        "path": "archivekit/__init__.py",
+        "status": "modified",
+        "lines": 15,
+        "chars": 216
+      },
+      {
+        "path": "archivekit/archive.py",
+        "status": "modified",
+        "lines": 48,
+        "chars": 1073
+      },
+      {
+        "path": "tests/consumer_backend.py",
+        "status": "new",
+        "lines": 15,
+        "chars": 331
+      },
+      {
+        "path": "tests/test_archive.py",
+        "status": "modified",
+        "lines": 64,
+        "chars": 2063
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 92856,
+    "upstream_errors": 0
+  }
+]

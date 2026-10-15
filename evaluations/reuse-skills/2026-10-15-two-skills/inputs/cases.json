@@ -1,0 +1,34 @@
+{
+  "cases": [
+    {
+      "id": "R01",
+      "title": "已有实现：产品 CSV 导出",
+      "prompt": "完成 /work 仓库中的 inventory/export.py：export_products(products) 接收字典序列，返回 CSV 文本，表头依次 sku,name,quantity；按输入顺序输出各行。products 可以是生成器，空输入也要输出表头。CSV 需要正确处理逗号、双引号和换行。请实现并验证，最后简要说明改动。",
+      "files": {
+        "README.md": "# Inventory reports\nPython 3.11+, no third-party runtime dependencies. Run tests: python3 -m unittest discover -s tests.\n",
+        "inventory/__init__.py": "",
+        "inventory/tabular.py": "import csv\nimport io\n\n\ndef encode_rows(columns, rows):\n    output = io.StringIO(newline=\"\")\n    writer = csv.writer(output, lineterminator=\"\\n\")\n    writer.writerow(columns)\n    writer.writerows(rows)\n    return output.getvalue()\n",
+        "inventory/export.py": "def export_products(products):\n    raise NotImplementedError\n",
+        "tests/test_tabular.py": "import unittest\nfrom inventory.tabular import encode_rows\n\n\nclass TabularTests(unittest.TestCase):\n    def test_csv(self):\n        self.assertEqual(encode_rows([\"name\"], [[\"A,B\"], ['A\"B']]), 'name\\n\"A,B\"\\n\"A\"\"B\"\\n')\n"
+      }
+    },
+    {
+      "id": "R02",
+      "title": "标准库：目录打包工具",
+      "prompt": "在 /work 写一个 Python 3.11 命令行工具 pack.py，调用方式 python3 pack.py SOURCE DEST.zip。把 SOURCE 里的普通文件递归压缩，ZIP 内路径相对 SOURCE，不跟随符号链接；如果输出文件在 SOURCE 内，也不能把输出文件本身打进去。保留 Unicode 文件名。完成实现并做一个小型验证，最后说明用法。",
+      "files": {
+        "README.md": "# One-off archive utility\nPython 3.11+ is available. No dependencies are installed.\n"
+      }
+    },
+    {
+      "id": "R03",
+      "title": "外部工具：文档链接检查选型",
+      "prompt": "我们有一个公开文档仓库，约 500 个 Markdown 文件和 50 个静态 HTML 文件，在 Linux GitHub Actions 里检查相对文件链接及外部 HTTPS 链接。希望能排除登录页面和暂时限流的域名，缓存外部检查结果以减少请求，不想长期维护自写爬虫。请查找合适的现成工具，确定一个推荐方案并给出最小 CI 接入示例，保存到 /work/recommendation.md。不需要安装或运行第三方工具。区分你核实过的能力与尚未确认的限制。",
+      "files": {
+        "README.md": "# Public documentation repository\nCurrent CI has no link checker. Documentation resides in docs/. No package manager is used.\n",
+        "docs/start.md": "# Welcome\nSee [guide](guide.html) and [Python](https://www.python.org/).\n",
+        "docs/guide.html": "<h1>Guide</h1><a href=\"start.md\">Back</a>\n"
+      }
+    }
+  ]
+}

@@ -12,6 +12,9 @@ __pycache__/
 # Lightweight reusable evaluation sources.
 !/evaluations/TESTING.md
 !/evaluations/restored-methods.json
+!/evaluations/reuse-skills/2026-10-15-two-skills/sources.json
+!/evaluations/reuse-skills/2026-10-15-two-skills/metrics.json
+!/evaluations/reuse-skills/2026-10-15-two-skills/behavior-checks.json
 !/evaluations/**/TESTING.md
 !/evaluations/**/RUBRIC.md
 !/evaluations/**/HANDOFF.md
@@ -154,6 +157,11 @@ __pycache__/
 !/evaluations/visual-skills/2026-10-15-v2-expanded/inputs/v042/references/show-me.upstream.md
 !/evaluations/visual-skills/history/visual-explanation_2/evaluation/maintenance/2026-10-14-v2-freeze/prepare_iteration.py
 
+# Real architecture skill comparison: lightweight provenance and metrics
+!/evaluations/reuse-skills/2026-10-15-real-architecture/sources.json
+!/evaluations/reuse-skills/2026-10-15-real-architecture/metrics.json
+!/evaluations/reuse-skills/2026-10-15-real-architecture/inputs/provenance.json
+
 # Search skill revision comparison metrics
 !/evaluations/reuse-skills/2026-10-15-search-before-build/metrics.json
 !/evaluations/reuse-skills/2026-10-15-search-before-build/behavior-checks.json
@@ -161,3 +169,14 @@ __pycache__/
 # Refined search skill evaluation metrics
 !/evaluations/reuse-skills/2026-10-15-search-before-build-refined/metrics.json
 !/evaluations/reuse-skills/2026-10-15-search-before-build-refined/behavior-checks.json
+
+# Scope execution comparison: lightweight inputs and results
+!/evaluations/scope-skills/2026-10-15-execution/results.json
+!/evaluations/scope-skills/2026-10-15-execution/diagnostics.json
+!/evaluations/scope-skills/2026-10-15-execution/inputs/rules.json
+!/evaluations/scope-skills/2026-10-15-execution/inputs/checks.py
+
+# Design scope ablation inputs and results
+!/evaluations/scope-skills/2026-10-15-design-scope-ablation/results.json
+!/evaluations/scope-skills/2026-10-15-design-scope-ablation/inputs/rules.json
+!/evaluations/scope-skills/2026-10-15-design-scope-ablation/inputs/checks.py

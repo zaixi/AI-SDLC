@@ -1,0 +1,43 @@
+{
+  "model": "deepseek-flash",
+  "reasoning_effort": "high",
+  "conditions": [
+    "without",
+    "with"
+  ],
+  "repeats": 1,
+  "limits": {
+    "seconds": 600,
+    "requests": 48,
+    "output_tokens": 49152,
+    "concurrency": 2
+  },
+  "activation": "Explicit read of /input/AGENTS.md; not native Codex loading",
+  "network": "offline, host model relay only",
+  "cases": "Three newly constructed runnable fixtures, no prior outputs, not production repositories",
+  "review": "Nonblind, frozen criteria and independent tests withheld",
+  "raw_directory": "/home/liyujiang/.codex/skill-evaluations/scope/2026-10-15-ablation-195732",
+  "sha256": {
+    "scripts/verify.py": "1793c667163f4edd9b770ae1d53c15ccd9e7ff3be6a0cf74ab5b5809936052a3",
+    "scripts/prepare.py": "031c0dacc01df534d6139af8870e3eaa66c72beb77c7170c23b314ff66644745",
+    "scripts/run.py": "8ef7131f99d14bb1f8d807cad313fe3be88771f87117cc12fcdd84e385c71146",
+    "scripts/sandbox_bridge.py": "e7878a79b2ad8f0467c7fd006c471def16561855095c9fd13ba37521a13165ea",
+    "scripts/relay_base.py": "56f77168ce24569f71542bd32583a77f276186704e45abe759ca3c5b006c29bc",
+    "inputs/cases.json": "764c612bf9f5bd6a85a87024734a4548de79f06d1d9e34ef8fbd834145a122d1",
+    "inputs/rules.json": "549a7f23210625a7e04cb23fe8c31fc9c161af4fc7e8ed2bdfa874dc4befe206",
+    "inputs/checks.py": "17eed4d427e603c2179499b97308b232401b49307630a19e07c8bb49272582a1",
+    "snapshots/with/AGENTS.md": "9ca24d99c3aeee28275ea02effedf6e02cf25a2617ec29d6f8431b2aaad057e3",
+    "snapshots/without/AGENTS.md": "c7b15c9b8a6f76e04ad8ce9b8a85c0df15c3ac33b0af6de2947e3680606ad9e6",
+    "review/RUBRIC.md": "ab9dc749bb15b7c7c61b2a628a4db81b6505dfb71d254073bb9f29ff71e66f9c",
+    "review/checks.py": "17eed4d427e603c2179499b97308b232401b49307630a19e07c8bb49272582a1"
+  },
+  "status": "complete",
+  "rule_read_observed": {
+    "N03-without": true,
+    "N02-with": true,
+    "N02-without": true,
+    "N01-with": true,
+    "N03-with": true,
+    "N01-without": true
+  }
+}

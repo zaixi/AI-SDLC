@@ -3,8 +3,17 @@
 本目录保存轻量报告、索引，以及可复用的测试方法、案例、协议和脚本。2026-10-15 清理前约 143 MB（恢复可复用测试资产后约 4 MB），主要是重复请求 JSON、截图、依赖副本与运行日志；这些内容已移出当前版本，原始证据仍完整保存在固定提交中。
 
 - [如何继续测试：方法、案例与运行边界](TESTING.md)
+- [范围控制研究索引与最终决定](scope-skills/README.md)
+- [Design scope 单段删除对照：三题实际实现](scope-skills/2026-10-15-design-scope-ablation/report.md)
+- [范围控制：原版与修订版 AGENTS.md，两题实际实现](scope-skills/2026-10-15-execution/report.md)
 - [search-before-build 再次修订：五题单次实测](reuse-skills/2026-10-15-search-before-build-refined/report.md)
 - [search-first 与修改版 search-before-build：五题重新对照](reuse-skills/2026-10-15-search-before-build/report.md)
+- [复用与选型 Skill：三个 Skill × 两个真实架构问题](reuse-skills/2026-10-15-real-architecture/report.md)
+- [复用 Skill：search-first 与 reuse-before-build，三题实测](reuse-skills/2026-10-15-two-skills/report.md)
+- [写作 Skill 扩展题：五题 × 四组，全部完成](writing-skills/2026-10-15-expanded-cases/report.md)
+- [写作五组比较：无 skill 基线重试成功](writing-skills/2026-10-15-no-skill-retry-1/report.md)
+- [写作无 skill 基线尝试：HTTP 429，无质量结果](writing-skills/2026-10-15-no-skill-baseline/README.md)
+- [四个写作 Skill 实测：信息密度与重复](writing-skills/2026-10-15-four-skills/report.md)
 - [视觉 Skill 评测索引](visual-skills/README.md)
 - [全部原始评测目录（固定版本）](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations)
 - [下载原始版本 ZIP](https://github.com/zaixi/AI-SDLC/archive/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475.zip)：包含当时整个仓库，解压后取 evaluations/；不是仅评测目录的下载。

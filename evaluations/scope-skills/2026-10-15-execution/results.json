@@ -1,0 +1,186 @@
+[
+  {
+    "id": "E01-original",
+    "case": "E01",
+    "condition": "original",
+    "exit": 0,
+    "seconds": 177.22,
+    "model_requests": 10,
+    "output_tokens": 18876,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_503_recovery_and_bound (__main__.Billing.test_503_recovery_and_bound) ... ok\ntest_batch_conflict (__main__.Billing.test_batch_conflict) ... ok\ntest_date_conflict_is_atomic (__main__.Billing.test_date_conflict_is_atomic) ... ok\ntest_equivalent_decimal (__main__.Billing.test_equivalent_decimal) ... ok\ntest_legacy_conflict_preserved (__main__.Billing.test_legacy_conflict_preserved) ... ok\ntest_legacy_equal_duplicates (__main__.Billing.test_legacy_equal_duplicates) ... ok\ntest_overlapping_runs (__main__.Billing.test_overlapping_runs) ... ok\ntest_precision_conflict_is_atomic (__main__.Billing.test_precision_conflict_is_atomic) ... ok\ntest_rerun (__main__.Billing.test_rerun) ... ok\ntest_unique_constraint (__main__.Billing.test_unique_constraint) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.024s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_does_not_retry_other_errors (test_behaviour.FetchRetryTest.test_does_not_retry_other_errors) ... ok\ntest_gives_up_after_limited_retries (test_behaviour.FetchRetryTest.test_gives_up_after_limited_retries) ... ok\ntest_retries_503_then_succeeds (test_behaviour.FetchRetryTest.test_retries_503_then_succeeds) ... ok\ntest_all_or_nothing_on_midfile_conflict (test_behaviour.ImportTest.test_all_or_nothing_on_midfile_conflict) ... ok\ntest_conflicting_historical_duplicates_are_reported_and_preserved (test_behaviour.ImportTest.test_conflicting_historical_duplicates_are_reported_and_preserved) ... ok\ntest_consistent_historical_duplicates_are_merged (test_behaviour.ImportTest.test_consistent_historical_duplicates_are_merged) ... ok\ntest_duplicate_inside_one_csv_with_same_values_is_skipped (test_behaviour.ImportTest.test_duplicate_inside_one_csv_with_same_values_is_skipped) ... ok\ntest_new_database_without_schema (test_behaviour.ImportTest.test_new_database_without_schema) ... ok\ntest_overlapping_runs_do_not_duplicate (test_behaviour.ImportTest.test_overlapping_runs_do_not_duplicate) ... ok\ntest_rerun_is_idempotent (test_behaviour.ImportTest.test_rerun_is_idempotent) ... ok\ntest_same_id_different_date_fails (test_behaviour.ImportTest.test_same_id_different_date_fails) ... ok\ntest_one_row (test_import.ImportTest.test_one_row) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.013s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "lines": 37,
+        "chars": 1712
+      },
+      {
+        "path": "import_billing.py",
+        "status": "modified",
+        "lines": 194,
+        "chars": 6119
+      },
+      {
+        "path": "tests/test_behaviour.py",
+        "status": "new",
+        "lines": 148,
+        "chars": 6298
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 188300,
+    "upstream_errors": 0
+  },
+  {
+    "id": "E01-revised",
+    "case": "E01",
+    "condition": "revised",
+    "exit": 0,
+    "seconds": 149.65,
+    "model_requests": 9,
+    "output_tokens": 17656,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_503_recovery_and_bound (__main__.Billing.test_503_recovery_and_bound) ... ok\ntest_batch_conflict (__main__.Billing.test_batch_conflict) ... ok\ntest_date_conflict_is_atomic (__main__.Billing.test_date_conflict_is_atomic) ... ok\ntest_equivalent_decimal (__main__.Billing.test_equivalent_decimal) ... ok\ntest_legacy_conflict_preserved (__main__.Billing.test_legacy_conflict_preserved) ... ok\ntest_legacy_equal_duplicates (__main__.Billing.test_legacy_equal_duplicates) ... ok\ntest_overlapping_runs (__main__.Billing.test_overlapping_runs) ... ok\ntest_precision_conflict_is_atomic (__main__.Billing.test_precision_conflict_is_atomic) ... ok\ntest_rerun (__main__.Billing.test_rerun) ... ok\ntest_unique_constraint (__main__.Billing.test_unique_constraint) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.021s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_does_not_retry_other_errors (test_import.FetchTest.test_does_not_retry_other_errors) ... ok\ntest_gives_up_after_limited_503 (test_import.FetchTest.test_gives_up_after_limited_503) ... ok\ntest_retries_on_503 (test_import.FetchTest.test_retries_on_503) ... ok\ntest_conflict_fails_and_rolls_back (test_import.ImportTest.test_conflict_fails_and_rolls_back) ... ok\ntest_historical_conflict_reported_and_preserved (test_import.ImportTest.test_historical_conflict_reported_and_preserved) ... ok\ntest_historical_consistent_duplicates_merged (test_import.ImportTest.test_historical_consistent_duplicates_merged) ... ok\ntest_one_row (test_import.ImportTest.test_one_row) ... ok\ntest_overlapping_runs (test_import.ImportTest.test_overlapping_runs) ... ok\ntest_rerun_is_idempotent (test_import.ImportTest.test_rerun_is_idempotent) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.010s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "lines": 28,
+        "chars": 1780
+      },
+      {
+        "path": "import_billing.py",
+        "status": "modified",
+        "lines": 117,
+        "chars": 3529
+      },
+      {
+        "path": "tests/test_import.py",
+        "status": "modified",
+        "lines": 140,
+        "chars": 5873
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 151730,
+    "upstream_errors": 0
+  },
+  {
+    "id": "E02-revised",
+    "case": "E02",
+    "condition": "revised",
+    "exit": 0,
+    "seconds": 86.46,
+    "model_requests": 10,
+    "output_tokens": 8881,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_aggregate_sort_escape (__main__.Summary.test_aggregate_sort_escape) ... ok\ntest_empty (__main__.Summary.test_empty) ... ok\ntest_invalid_preserves_output_line_number (__main__.Summary.test_invalid_preserves_output_line_number) ... ok\ntest_invalid_same_path (__main__.Summary.test_invalid_same_path) ... ok\ntest_same_path (__main__.Summary.test_same_path) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.349s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_example (test_summary.SummaryTest.test_example) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.038s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "summarize.py",
+        "status": "new",
+        "lines": 114,
+        "chars": 3699
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 119228,
+    "upstream_errors": 0
+  },
+  {
+    "id": "E02-original",
+    "case": "E02",
+    "condition": "original",
+    "exit": 0,
+    "seconds": 101.23,
+    "model_requests": 8,
+    "output_tokens": 9551,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_aggregate_sort_escape (__main__.Summary.test_aggregate_sort_escape) ... ok\ntest_empty (__main__.Summary.test_empty) ... ok\ntest_invalid_preserves_output_line_number (__main__.Summary.test_invalid_preserves_output_line_number) ... ok\ntest_invalid_same_path (__main__.Summary.test_invalid_same_path) ... ok\ntest_same_path (__main__.Summary.test_same_path) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.327s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_example (test_summary.SummaryTest.test_example) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.037s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "summarize.py",
+        "status": "new",
+        "lines": 120,
+        "chars": 4220
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 94677,
+    "upstream_errors": 0
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "model": "deepseek-flash",
+  "reasoning_effort": "high",
+  "conditions": [
+    "original",
+    "revised"
+  ],
+  "repeats": 1,
+  "limits": {
+    "seconds": 600,
+    "requests": 48,
+    "output_tokens": 49152,
+    "concurrency": 2
+  },
+  "activation": "Explicitly read /input/AGENTS.md, no native Codex instruction loading",
+  "network": "offline namespace, host model relay only",
+  "cases": "Two synthetic runnable fixtures adapted from prior D02/D05, not unseen production tasks",
+  "review": "Manual nonblind, independent tests withheld",
+  "sha256": {
+    "scripts/run.py": "fc155aa67ee42ef93ff874bcb7863113df777ae71cdad3f6e72242ac8f0b697f",
+    "scripts/sandbox_bridge.py": "e7878a79b2ad8f0467c7fd006c471def16561855095c9fd13ba37521a13165ea",
+    "scripts/relay_base.py": "56f77168ce24569f71542bd32583a77f276186704e45abe759ca3c5b006c29bc",
+    "snapshots/revised/AGENTS.md": "9ca24d99c3aeee28275ea02effedf6e02cf25a2617ec29d6f8431b2aaad057e3",
+    "snapshots/original/AGENTS.md": "c7b15c9b8a6f76e04ad8ce9b8a85c0df15c3ac33b0af6de2947e3680606ad9e6",
+    "review/RUBRIC.md": "20aafa49c235d05213b64832e648ef9a44cc8171287321b753ceade54387229e",
+    "review/checks.py": "7f363abb0bde04e0860fcb3e45b13301d67d6f0a40bd5401e02cd4c0e2948bd7",
+    "inputs/cases.json": "4fcedb8c46611fbe212c966b0b58f3db1fbd522b3d72cfd781c3c8a1645558fb"
+  },
+  "raw_directory": "/home/liyujiang/.codex/skill-evaluations/scope/2026-10-15-execution-194317",
+  "status": "complete",
+  "postprocessing_sha256": {
+    "scripts/verify.py": "1793c667163f4edd9b770ae1d53c15ccd9e7ff3be6a0cf74ab5b5809936052a3",
+    "scripts/diagnose.py": "a17c02d5dce79628039ac5ebdb885d6b42dcad4355a44f604f4aeac2086d8663",
+    "scripts/prepare.py": "031c0dacc01df534d6139af8870e3eaa66c72beb77c7170c23b314ff66644745"
+  }
+}

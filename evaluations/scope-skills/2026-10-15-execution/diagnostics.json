@@ -1,0 +1,26 @@
+[
+  {
+    "id": "E01-original",
+    "exit": 0,
+    "stdout": "{\"equal_legacy_scale\": {\"status\": \"BillingConflictError: conflicting historical billing_id values (data preserved): a -> (id=1 amount='12.30' date='2026-10-01'), (id=2 amount='12.3' date='2026-10-01')\", \"rows\": [[\"a\", \"12.30\", \"2026-10-01\"], [\"a\", \"12.3\", \"2026-10-01\"]]}, \"nonfinite_amount\": {\"status\": \"BillingImportError: invalid amount 'NaN'\", \"rows\": []}}\n",
+    "stderr": ""
+  },
+  {
+    "id": "E01-revised",
+    "exit": 0,
+    "stdout": "{\"equal_legacy_scale\": {\"status\": \"accepted\", \"rows\": [[\"a\", \"12.30\", \"2026-10-01\"], [\"b\", \"1\", \"2026-10-01\"]]}, \"nonfinite_amount\": {\"status\": \"accepted\", \"rows\": [[\"a\", \"NaN\", \"2026-10-01\"]]}}\n",
+    "stderr": ""
+  },
+  {
+    "id": "E02-original",
+    "exit": 0,
+    "stdout": "{\"exit\": 0, \"csv\": \"service,total,errors,avg_duration_ms\\na,3,0,1.67\\n\", \"expected_mean\": 1.6666666666666667}\n",
+    "stderr": ""
+  },
+  {
+    "id": "E02-revised",
+    "exit": 0,
+    "stdout": "{\"exit\": 0, \"csv\": \"service,total,errors,avg_duration_ms\\na,3,0,1.6666666666666667\\n\", \"expected_mean\": 1.6666666666666667}\n",
+    "stderr": ""
+  }
+]

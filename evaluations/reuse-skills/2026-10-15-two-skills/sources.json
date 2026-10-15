@@ -1,0 +1,30 @@
+[
+  {
+    "condition": "search-first",
+    "url": "https://raw.githubusercontent.com/affaan-m/ECC/main/skills/search-first/SKILL.md",
+    "path": "SKILL.md",
+    "sha256": "76835db48dd910061d2e4271b1151793d2fddbabeb2d2866eed068b3580c55d5",
+    "bytes": 8210
+  },
+  {
+    "condition": "reuse-before-build",
+    "url": "https://raw.githubusercontent.com/Ai-Eastern/reuse-before-build/main/skills/reuse-before-build/SKILL.md",
+    "path": "SKILL.md",
+    "sha256": "e5f195face06b01dcaa1e2dbc81e4c205b84c9b187c49f211b434c1ad5adfc58",
+    "bytes": 10338
+  },
+  {
+    "condition": "reuse-before-build",
+    "url": "https://raw.githubusercontent.com/Ai-Eastern/reuse-before-build/main/skills/reuse-before-build/references/external-candidates.md",
+    "path": "references/external-candidates.md",
+    "sha256": "88e06e564a899dd1dc79161b336ecc7127f221bc2b6cb90f1bc1356267dffeff",
+    "bytes": 4876
+  },
+  {
+    "condition": "reuse-before-build",
+    "url": "https://raw.githubusercontent.com/Ai-Eastern/reuse-before-build/main/skills/reuse-before-build/references/checkpoints.md",
+    "path": "references/checkpoints.md",
+    "sha256": "54e72cb5939bf2bc080e1947851dc7637dc30b89e10f4a6f10ecabc458f0c34d",
+    "bytes": 3874
+  }
+]
