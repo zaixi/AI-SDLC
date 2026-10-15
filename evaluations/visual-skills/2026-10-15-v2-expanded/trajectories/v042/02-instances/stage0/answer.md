@@ -1,0 +1,119 @@
+采用站点分区架构图，画布 1100 × 620。实线表示读数与数据库读写，虚线表示反向补传请求；各实例分别绘制。协议、认证、消息队列均标为未定。
+
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>两站采集架构</title>
+<style>
+  body { margin: 0; background: #fff; color: #222;
+    font-family: system-ui, "Microsoft YaHei", sans-serif; }
+  main { max-width: 1100px; margin: auto; }
+  svg { display: block; width: 100%; height: auto; }
+  text { fill: #222; font-family: system-ui, "Microsoft YaHei", sans-serif; }
+  .zone { fill: #f7f7f7; stroke: #bbb; }
+  .node { fill: #fff; stroke: #555; stroke-width: 1.5; }
+  .flow { fill: none; stroke: #444; stroke-width: 1.8; }
+  .request { stroke-dasharray: 7 5; }
+  .title { font-size: 23px; font-weight: 650; }
+  .heading { font-size: 19px; font-weight: 650; }
+  .label { font-size: 17px; }
+  .small { font-size: 14px; fill: #555; }
+  .edge { font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620"
+     role="img" aria-labelledby="title desc">
+  <title id="title">东站、西站与中心的采集架构</title>
+  <desc id="desc">
+    东站和西站各有独立的采集器、网关和缓冲库。
+    站内采集器发送读数给本网关，网关读写本站缓冲库。
+    两站网关发送读数给中心汇总服务，汇总服务写入归档库，
+    并分别向两站网关发送补传请求。传输协议、认证、消息队列均未决定。
+  </desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#444"/>
+    </marker>
+  </defs>
+
+  <text x="40" y="43" class="title">两站采集架构</text>
+  <text x="40" y="72" class="small">站点分区 · 站内实例独立 · 读数上送与补传请求分向绘制</text>
+
+  <!-- 站点边界 -->
+  <rect x="40" y="100" width="260" height="410" rx="12" class="zone"/>
+  <rect x="440" y="100" width="220" height="410" rx="12" class="zone"/>
+  <rect x="800" y="100" width="260" height="410" rx="12" class="zone"/>
+
+  <text x="170" y="136" text-anchor="middle" class="heading">东站</text>
+  <text x="550" y="136" text-anchor="middle" class="heading">中心</text>
+  <text x="930" y="136" text-anchor="middle" class="heading">西站</text>
+
+  <!-- 东站实例 -->
+  <rect x="80" y="160" width="180" height="55" rx="7" class="node"/>
+  <text x="170" y="194" text-anchor="middle" class="label">东站采集器</text>
+  <rect x="80" y="285" width="180" height="90" rx="7" class="node"/>
+  <text x="170" y="337" text-anchor="middle" class="label">东站网关</text>
+  <rect x="80" y="440" width="180" height="50" rx="7" class="node"/>
+  <text x="170" y="471" text-anchor="middle" class="label">东站缓冲库</text>
+
+  <!-- 西站实例 -->
+  <rect x="840" y="160" width="180" height="55" rx="7" class="node"/>
+  <text x="930" y="194" text-anchor="middle" class="label">西站采集器</text>
+  <rect x="840" y="285" width="180" height="90" rx="7" class="node"/>
+  <text x="930" y="337" text-anchor="middle" class="label">西站网关</text>
+  <rect x="840" y="440" width="180" height="50" rx="7" class="node"/>
+  <text x="930" y="471" text-anchor="middle" class="label">西站缓冲库</text>
+
+  <!-- 中心实例 -->
+  <rect x="465" y="285" width="170" height="90" rx="7" class="node"/>
+  <text x="550" y="337" text-anchor="middle" class="label">汇总服务</text>
+  <rect x="465" y="440" width="170" height="50" rx="7" class="node"/>
+  <text x="550" y="471" text-anchor="middle" class="label">归档库</text>
+
+  <!-- 站内读数 -->
+  <path d="M170 215 V285" class="flow" marker-end="url(#arrow)"/>
+  <text x="184" y="255" class="edge">读数</text>
+  <path d="M930 215 V285" class="flow" marker-end="url(#arrow)"/>
+  <text x="944" y="255" class="edge">读数</text>
+
+  <!-- 本站缓冲库读写 -->
+  <path d="M170 375 V440" class="flow"
+        marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="184" y="412" class="edge">读 / 写</text>
+  <path d="M930 375 V440" class="flow"
+        marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="944" y="412" class="edge">读 / 写</text>
+
+  <!-- 读数上送：朝向中心 -->
+  <path d="M260 305 H465" class="flow" marker-end="url(#arrow)"/>
+  <text x="362" y="294" text-anchor="middle" class="edge">读数 →</text>
+  <path d="M840 305 H635" class="flow" marker-end="url(#arrow)"/>
+  <text x="738" y="294" text-anchor="middle" class="edge">← 读数</text>
+
+  <!-- 补传请求：从中心发往各站 -->
+  <path d="M465 355 H260" class="flow request" marker-end="url(#arrow)"/>
+  <text x="362" y="382" text-anchor="middle" class="edge">← 补传请求</text>
+  <path d="M635 355 H840" class="flow request" marker-end="url(#arrow)"/>
+  <text x="738" y="382" text-anchor="middle" class="edge">补传请求 →</text>
+
+  <!-- 归档 -->
+  <path d="M550 375 V440" class="flow" marker-end="url(#arrow)"/>
+  <text x="564" y="412" class="edge">写入</text>
+
+  <!-- 图例与未决事项 -->
+  <path d="M40 548 H90" class="flow" marker-end="url(#arrow)"/>
+  <text x="102" y="553" class="small">读数 / 数据库读写（双箭头表示读与写）</text>
+  <path d="M540 548 H590" class="flow request" marker-end="url(#arrow)"/>
+  <text x="602" y="553" class="small">补传请求：中心 → 站点网关</text>
+  <text x="40" y="593" class="small">未定：传输协议、认证、是否使用消息队列。本图不作假设。</text>
+</svg>
+</main>
+</body>
+</html>
+```

@@ -1,0 +1,58 @@
+{
+  "method": "Canonical XML compares all elements except failure path and its label; ignores indentation-only tails, retains all other text/style/attributes. Endpoints traced from exact path to target node bounds. Actual PNG also inspected.",
+  "results": [
+    {
+      "condition": "v042",
+      "xml": "passed",
+      "outside_failure_and_label_equal": true,
+      "changed_id_elements": [
+        "failure",
+        "failure-label"
+      ],
+      "failure_start": [
+        690,
+        150
+      ],
+      "failure_end": [
+        610,
+        150
+      ],
+      "notify_bounds": [
+        560,
+        80,
+        740,
+        150
+      ],
+      "endpoints_touch_notify_not_execute": true,
+      "label": "通知失败：仅重试通知",
+      "original_to_final_diff": "--- original\n\n+++ v042\n\n@@ -24,6 +24,6 @@\n\n   <text class=\"edge-label\" x=\"520\" y=\"99\">成功</text>\n   <path id=\"notify-done\" class=\"edge\" d=\"M740 115 H820\"/>\n   <text class=\"edge-label\" x=\"780\" y=\"99\">成功</text>\n-  <path id=\"failure\" class=\"edge\" d=\"M650 150 V225 Q650 245 630 245 H410 Q390 245 390 225 V150\"/>\n-  <text id=\"failure-label\" class=\"edge-label\" x=\"520\" y=\"278\">通知失败：重新执行任务</text>\n+  <path id=\"failure\" class=\"edge\" d=\"M690 150 V225 Q690 245 670 245 H630 Q610 245 610 225 V150\"/>\n+  <text id=\"failure-label\" class=\"edge-label\" x=\"650\" y=\"278\">通知失败：仅重试通知</text>\n </svg>"
+    },
+    {
+      "condition": "candidate",
+      "xml": "passed",
+      "outside_failure_and_label_equal": true,
+      "changed_id_elements": [
+        "failure",
+        "failure-label"
+      ],
+      "failure_start": [
+        690,
+        150
+      ],
+      "failure_end": [
+        610,
+        150
+      ],
+      "notify_bounds": [
+        560,
+        80,
+        740,
+        150
+      ],
+      "endpoints_touch_notify_not_execute": true,
+      "label": "通知失败：仅重试通知",
+      "original_to_final_diff": "--- original\n\n+++ candidate\n\n@@ -24,6 +24,6 @@\n\n   <text class=\"edge-label\" x=\"520\" y=\"99\">成功</text>\n   <path id=\"notify-done\" class=\"edge\" d=\"M740 115 H820\"/>\n   <text class=\"edge-label\" x=\"780\" y=\"99\">成功</text>\n-  <path id=\"failure\" class=\"edge\" d=\"M650 150 V225 Q650 245 630 245 H410 Q390 245 390 225 V150\"/>\n-  <text id=\"failure-label\" class=\"edge-label\" x=\"520\" y=\"278\">通知失败：重新执行任务</text>\n+  <path id=\"failure\" class=\"edge\" d=\"M690 150 V225 Q690 245 670 245 H630 Q610 245 610 225 V150\"/>\n+  <text id=\"failure-label\" class=\"edge-label\" x=\"650\" y=\"278\">通知失败：仅重试通知</text>\n </svg>"
+    }
+  ],
+  "final_svg_identical_between_conditions": true
+}

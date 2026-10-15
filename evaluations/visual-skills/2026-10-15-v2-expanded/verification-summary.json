@@ -1,0 +1,13 @@
+{
+  "trajectories": 6,
+  "model_calls": 18,
+  "model": "gpt-6.1-sol",
+  "model_tool_calls": 0,
+  "final_rendered_diagrams": 6,
+  "html_offline_selfcheck_passed": 4,
+  "standalone_svg_xml_passed": 2,
+  "final_mermaid_sources": 0,
+  "links": "passed",
+  "original_vs_final_svg_scope": "passed, only failure and failure-label changed",
+  "final_svg_same_across_groups": true
+}

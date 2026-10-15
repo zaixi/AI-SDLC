@@ -1,0 +1,33 @@
+{
+  "viewport": [
+    1600,
+    1000
+  ],
+  "javascript": "disabled",
+  "blockedRequests": [],
+  "diagrams": [
+    {
+      "index": 1,
+      "file": "stage1-1-svg1.png",
+      "bounds": {
+        "x": 449,
+        "y": 144.09375,
+        "height": 421.1875,
+        "width": 702
+      },
+      "geometry": {
+        "viewBox": "0 0 600 360",
+        "title": "6 月 1 日至 6 月 6 日每日处理包裹数",
+        "fonts": [
+          "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", sans-serif"
+        ],
+        "textCount": 16
+      }
+    }
+  ],
+  "mobile": {
+    "viewport": 390,
+    "pageWidth": 390,
+    "localScrollers": []
+  }
+}

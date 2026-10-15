@@ -1,0 +1,63 @@
+[
+  {
+    "block": 1,
+    "format": "html",
+    "type": "HTML with inline SVG",
+    "source_sha256": "ff575c766ef41d3384f1c6c86d5638d89e8d39525420998a5f4639cb69ea6fd5",
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "{\"status\":\"passed\",\"diagrams\":1,\"desktop\":\"stage0-1-desktop.png\",\"mobile\":\"stage0-1-mobile.png\"}\n",
+      "file": "stage0-1-desktop.png"
+    },
+    "browser": {
+      "viewport": [
+        1600,
+        1000
+      ],
+      "javascript": "disabled",
+      "blockedRequests": [],
+      "diagrams": [
+        {
+          "index": 1,
+          "file": "stage0-1-svg1.png",
+          "bounds": {
+            "x": 449,
+            "y": 144.09375,
+            "height": 421.1875,
+            "width": 702
+          },
+          "geometry": {
+            "viewBox": "0 0 600 360",
+            "title": "每日处理包裹数趋势图",
+            "fonts": [
+              "system-ui, -apple-system, \"Segoe UI\", \"Microsoft YaHei\", sans-serif"
+            ],
+            "textCount": 16
+          }
+        }
+      ],
+      "mobile": {
+        "viewport": 390,
+        "pageWidth": 390,
+        "localScrollers": []
+      }
+    },
+    "svg_images": [
+      "stage0-1-svg1.png"
+    ],
+    "mobile_file": "stage0-1-mobile.png",
+    "checks": {
+      "self_check": {
+        "status": "passed",
+        "exit_code": 0,
+        "diagnostic": "OK /work/stage0-1.html\n"
+      },
+      "geometry": {
+        "status": "passed",
+        "exit_code": 0,
+        "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+      }
+    }
+  }
+]

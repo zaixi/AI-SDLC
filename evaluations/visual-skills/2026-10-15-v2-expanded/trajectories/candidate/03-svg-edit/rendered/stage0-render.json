@@ -1,0 +1,56 @@
+[
+  {
+    "block": 1,
+    "format": "svg",
+    "type": "Standalone SVG",
+    "source_sha256": "1cb9a0c988787b47da3b87e193472a2693e388a7c0b62f560ef7b964499790fb",
+    "checks": {
+      "xml": {
+        "status": "passed"
+      }
+    },
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "{\"status\":\"passed\",\"diagrams\":1,\"desktop\":\"stage0-1-desktop.png\",\"mobile\":\"stage0-1-mobile.png\"}\n",
+      "file": "stage0-1-desktop.png"
+    },
+    "browser": {
+      "viewport": [
+        1600,
+        1000
+      ],
+      "javascript": "disabled",
+      "blockedRequests": [],
+      "diagrams": [
+        {
+          "index": 1,
+          "file": "stage0-1-svg1.png",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "height": 340,
+            "width": 1000
+          },
+          "geometry": {
+            "viewBox": "0 0 1000 340",
+            "title": "任务与完成通知",
+            "fonts": [
+              "sans-serif"
+            ],
+            "textCount": 8
+          }
+        }
+      ],
+      "mobile": {
+        "viewport": 390,
+        "pageWidth": 1000,
+        "localScrollers": []
+      }
+    },
+    "svg_images": [
+      "stage0-1-svg1.png"
+    ],
+    "mobile_file": "stage0-1-mobile.png"
+  }
+]

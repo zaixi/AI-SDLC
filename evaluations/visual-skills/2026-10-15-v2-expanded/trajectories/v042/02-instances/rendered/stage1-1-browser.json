@@ -1,0 +1,33 @@
+{
+  "viewport": [
+    1600,
+    1000
+  ],
+  "javascript": "disabled",
+  "blockedRequests": [],
+  "diagrams": [
+    {
+      "index": 1,
+      "file": "stage1-1-svg1.png",
+      "bounds": {
+        "x": 250,
+        "y": 0,
+        "height": 620,
+        "width": 1100
+      },
+      "geometry": {
+        "viewBox": "0 0 1100 620",
+        "title": "东站、西站与中心的采集架构",
+        "fonts": [
+          "system-ui, \"Microsoft YaHei\", sans-serif"
+        ],
+        "textCount": 25
+      }
+    }
+  ],
+  "mobile": {
+    "viewport": 390,
+    "pageWidth": 390,
+    "localScrollers": []
+  }
+}

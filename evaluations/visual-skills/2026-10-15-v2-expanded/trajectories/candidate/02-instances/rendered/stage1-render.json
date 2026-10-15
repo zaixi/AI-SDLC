@@ -1,0 +1,63 @@
+[
+  {
+    "block": 1,
+    "format": "html",
+    "type": "HTML with inline SVG",
+    "source_sha256": "16386e3d3d27d2a73682b72f4f4b0738e114b05c48a77237c379e50e32b9ae5e",
+    "png": {
+      "status": "passed",
+      "exit_code": 0,
+      "diagnostic": "{\"status\":\"passed\",\"diagrams\":1,\"desktop\":\"stage1-1-desktop.png\",\"mobile\":\"stage1-1-mobile.png\"}\n",
+      "file": "stage1-1-desktop.png"
+    },
+    "browser": {
+      "viewport": [
+        1600,
+        1000
+      ],
+      "javascript": "disabled",
+      "blockedRequests": [],
+      "diagrams": [
+        {
+          "index": 1,
+          "file": "stage1-1-svg1.png",
+          "bounds": {
+            "x": 250,
+            "y": 16,
+            "height": 640,
+            "width": 1100
+          },
+          "geometry": {
+            "viewBox": "0 0 1100 640",
+            "title": "东站、西站与中心的采集架构",
+            "fonts": [
+              "system-ui, \"Microsoft YaHei\", sans-serif"
+            ],
+            "textCount": 26
+          }
+        }
+      ],
+      "mobile": {
+        "viewport": 390,
+        "pageWidth": 390,
+        "localScrollers": []
+      }
+    },
+    "svg_images": [
+      "stage1-1-svg1.png"
+    ],
+    "mobile_file": "stage1-1-mobile.png",
+    "checks": {
+      "self_check": {
+        "status": "failed",
+        "exit_code": 1,
+        "diagnostic": "FAIL /work/stage1-1.html\n  - svg 1 title/desc IDs must be diagram-prefixed, never bare\n"
+      },
+      "geometry": {
+        "status": "passed",
+        "exit_code": 0,
+        "diagnostic": "Summary: 1 file(s) checked, 0 finding(s).\n"
+      }
+    }
+  }
+]
