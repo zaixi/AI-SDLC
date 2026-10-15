@@ -6,8 +6,8 @@
 - Keep code, comments, logs, and commit messages aligned with the repository's existing style.
 
 ## Output expression
-- When writing or editing user-facing prose, read and apply [humanizer](/home/liyujiang/.codex/skills/humanizer/SKILL.md) in embedded mode; return only the final content by default.
-- When visual explanation is useful, read and apply [visual-explanation](/home/liyujiang/.codex/skills/visual-explanation/SKILL.md).
+- When writing or editing user-facing prose, read and apply [humanizer](skills/humanizer/SKILL.md) in embedded mode; return only the final content by default.
+- When visual explanation is useful, read and apply [visual-explanation](skills/visual-explanation/SKILL.md).
 - Humanizer handles prose; visual-explanation handles presentation and visual structure. Preserve code, commands, identifiers, diagram syntax, and meaningful visual structure when editing prose.
 
 ## Task mode
