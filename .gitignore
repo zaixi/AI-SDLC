@@ -153,3 +153,11 @@ __pycache__/
 !/evaluations/visual-skills/2026-10-15-v2-expanded/inputs/v042/SKILL.md
 !/evaluations/visual-skills/2026-10-15-v2-expanded/inputs/v042/references/show-me.upstream.md
 !/evaluations/visual-skills/history/visual-explanation_2/evaluation/maintenance/2026-10-14-v2-freeze/prepare_iteration.py
+
+# Search skill revision comparison metrics
+!/evaluations/reuse-skills/2026-10-15-search-before-build/metrics.json
+!/evaluations/reuse-skills/2026-10-15-search-before-build/behavior-checks.json
+
+# Refined search skill evaluation metrics
+!/evaluations/reuse-skills/2026-10-15-search-before-build-refined/metrics.json
+!/evaluations/reuse-skills/2026-10-15-search-before-build-refined/behavior-checks.json

@@ -3,6 +3,8 @@
 本目录保存轻量报告、索引，以及可复用的测试方法、案例、协议和脚本。2026-10-15 清理前约 143 MB（恢复可复用测试资产后约 4 MB），主要是重复请求 JSON、截图、依赖副本与运行日志；这些内容已移出当前版本，原始证据仍完整保存在固定提交中。
 
 - [如何继续测试：方法、案例与运行边界](TESTING.md)
+- [search-before-build 再次修订：五题单次实测](reuse-skills/2026-10-15-search-before-build-refined/report.md)
+- [search-first 与修改版 search-before-build：五题重新对照](reuse-skills/2026-10-15-search-before-build/report.md)
 - [视觉 Skill 评测索引](visual-skills/README.md)
 - [全部原始评测目录（固定版本）](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations)
 - [下载原始版本 ZIP](https://github.com/zaixi/AI-SDLC/archive/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475.zip)：包含当时整个仓库，解压后取 evaluations/；不是仅评测目录的下载。

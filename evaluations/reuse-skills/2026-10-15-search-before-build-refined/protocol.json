@@ -1,0 +1,33 @@
+{
+  "model": "deepseek-flash",
+  "reasoning_effort": "high",
+  "repeats": 1,
+  "conditions": [
+    "search-before-build"
+  ],
+  "previous_raw": "/home/liyujiang/.codex/skill-evaluations/reuse/2026-10-15-search-before-build-182253",
+  "limits": {
+    "seconds": 600,
+    "requests": 48,
+    "output_tokens": 49152,
+    "concurrency": 2
+  },
+  "sha256": {
+    "scripts/verify.py": "4618619e28a194217ceadc5f5804c2a8cf59caef9d7f2840cc1f8c67ac2a68af",
+    "scripts/run.py": "7ff55bbe500a6d5bfcf382d0d7631a93ceaaa58471c3cd7aeefd9a9320153775",
+    "scripts/gallery.py": "5a1df52b597a74b254c47e318a9e118d17951fe1abef7ff1da3f5c00be8d241b",
+    "scripts/sandbox_bridge.py": "e7878a79b2ad8f0467c7fd006c471def16561855095c9fd13ba37521a13165ea",
+    "scripts/summarize.py": "274dec2bbe96c82e8a4b9952ef0428ac196c0d36af8c108f39021053f7b2337b",
+    "scripts/relay_base.py": "9c826189c6afdb0e16ff55c3ba836cfefedbc41167bd0f08c2625030ef24c41b",
+    "snapshots/search-before-build/SOURCES.md": "168ff4e879436058074ef8d2aa8a34f235db142fb1c8c1cf8074e824b6756ef7",
+    "snapshots/search-before-build/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    "snapshots/search-before-build/SKILL.md": "9457e217e27d7cb37c2b7978ba834fecddc5a4c2e21dca31aadd60b56d5f7ad1",
+    "inputs/cases.json": "7e363ad0e0ecd546d5e4232cde76ae81b5aee198010cc3944a6906033e48cfc4"
+  },
+  "postprocessing_sha256": {
+    "scripts/gallery.py": "7d12cbfc55da7c15a792651caa2ca2cd17738e9318e78fff8132c106a59752fe"
+  },
+  "raw_directory": "/home/liyujiang/.codex/skill-evaluations/reuse/2026-10-15-search-before-build-refined-191910",
+  "status": "complete",
+  "review": "non-blind; historical comparison; no reruns"
+}

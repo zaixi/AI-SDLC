@@ -1,0 +1,14 @@
+[
+  {
+    "id": "R01-search-before-build",
+    "exit": 0,
+    "stdout": "PASS CSV escaping, generator, empty input, Unicode; existing tests\n",
+    "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nOK\n"
+  },
+  {
+    "id": "R02-search-before-build",
+    "exit": 0,
+    "stdout": "PASS nested files, relative paths, Unicode, file/directory symlinks, output-inside-source including existing destination\n",
+    "stderr": ""
+  }
+]

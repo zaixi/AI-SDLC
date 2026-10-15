@@ -1,0 +1,49 @@
+{
+  "conditions": [
+    "search-first",
+    "search-before-build"
+  ],
+  "cases": [
+    "R01",
+    "R02",
+    "R03",
+    "A01",
+    "A02"
+  ],
+  "repeats": 1,
+  "sessions": 10,
+  "client": "OpenCode 1.14.28",
+  "model": "deepseek-flash",
+  "reasoning_effort": "high",
+  "wall_seconds": 600,
+  "request_limit": 48,
+  "output_budget": 49152,
+  "concurrency": 2,
+  "raw_root": "/home/liyujiang/.codex/skill-evaluations/reuse/2026-10-15-search-before-build-182253",
+  "status": "completed",
+  "isolation": "Fresh bwrap HOME/work/input; own skill only; public network; no host skills, prior answers or rubric. Optional companion agents/skills not installed.",
+  "frozen_hashes": {
+    "snapshots/search-first/SKILL.md": "76835db48dd910061d2e4271b1151793d2fddbabeb2d2866eed068b3580c55d5",
+    "snapshots/search-before-build/SOURCES.md": "248147da27471157649aa21202dacc6608945bb9e4e067cf3c9f14fba9588c67",
+    "snapshots/search-before-build/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    "snapshots/search-before-build/SKILL.md": "a369c94f925354c8fdf2f0b858d87f1c9fdc000f5117081236a84d7d81603e86",
+    "scripts/run.py": "d11d687c42fa4874d9b57b80aaf98f90012f3c1c10dbc79fb9916866ae1508cc",
+    "scripts/gallery.py": "de69b9ae4a1abe8017504671daabdc59469e8c2e529037e6f4f4e901f0e0fb48",
+    "scripts/sandbox_bridge.py": "e7878a79b2ad8f0467c7fd006c471def16561855095c9fd13ba37521a13165ea",
+    "scripts/summarize.py": "1ff2bea40f3b15b3293abe0dbaf43443c86a7ed7f7a9be4340339bc7ae753e90",
+    "scripts/relay_base.py": "9c826189c6afdb0e16ff55c3ba836cfefedbc41167bd0f08c2625030ef24c41b",
+    "inputs/cases.json": "7e363ad0e0ecd546d5e4232cde76ae81b5aee198010cc3944a6906033e48cfc4",
+    "review/rubric.md": "2274023231e7d8d4d6a1b13045feb7606405cd422c034bcb465b75acea77e1a9"
+  },
+  "postprocessing_scripts": "summarize/gallery adapted for five artifact types; verify copied unchanged from prior R01/R02 checks before formal results",
+  "verification_script_sha256": "4618619e28a194217ceadc5f5804c2a8cf59caef9d7f2840cc1f8c67ac2a68af",
+  "outcome": "10 attempts; revised 5/5 delivered, upstream 4/5 delivered; A02-search-first timeout at 600 seconds, no reruns",
+  "final_script_hashes": {
+    "scripts/verify.py": "4618619e28a194217ceadc5f5804c2a8cf59caef9d7f2840cc1f8c67ac2a68af",
+    "scripts/run.py": "d11d687c42fa4874d9b57b80aaf98f90012f3c1c10dbc79fb9916866ae1508cc",
+    "scripts/gallery.py": "5a1df52b597a74b254c47e318a9e118d17951fe1abef7ff1da3f5c00be8d241b",
+    "scripts/sandbox_bridge.py": "e7878a79b2ad8f0467c7fd006c471def16561855095c9fd13ba37521a13165ea",
+    "scripts/summarize.py": "274dec2bbe96c82e8a4b9952ef0428ac196c0d36af8c108f39021053f7b2337b",
+    "scripts/relay_base.py": "9c826189c6afdb0e16ff55c3ba836cfefedbc41167bd0f08c2625030ef24c41b"
+  }
+}

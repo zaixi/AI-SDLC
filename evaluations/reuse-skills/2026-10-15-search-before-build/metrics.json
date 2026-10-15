@@ -1,0 +1,388 @@
+[
+  {
+    "id": "A01-search-before-build",
+    "exit": 0,
+    "seconds": 139.19,
+    "model_requests": 13,
+    "output_tokens": 25177,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 470943,
+    "parent_tools": {
+      "read": 7,
+      "bash": 4,
+      "webfetch": 20,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "read": 7,
+      "bash": 4,
+      "webfetch": 20,
+      "write": 1
+    },
+    "final_chars": 2032,
+    "all_text_chars": 8633,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 14,
+    "source_files_unchanged": true,
+    "expected_artifact": "design.md",
+    "artifact_exists": true,
+    "artifact_chars": 17515,
+    "changed_inputs": [],
+    "design_exists": true,
+    "design_chars": 17515,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "A01-search-first",
+    "exit": 0,
+    "seconds": 99.23,
+    "model_requests": 11,
+    "output_tokens": 14235,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 653611,
+    "parent_tools": {
+      "read": 5,
+      "bash": 4,
+      "webfetch": 14,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "webfetch": 14,
+      "read": 5,
+      "bash": 4,
+      "write": 1
+    },
+    "final_chars": 1092,
+    "all_text_chars": 1785,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 12,
+    "source_files_unchanged": true,
+    "expected_artifact": "design.md",
+    "artifact_exists": true,
+    "artifact_chars": 13238,
+    "changed_inputs": [],
+    "design_exists": true,
+    "design_chars": 13238,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "A02-search-before-build",
+    "exit": 0,
+    "seconds": 505.95,
+    "model_requests": 23,
+    "output_tokens": 26737,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 1178472,
+    "parent_tools": {
+      "read": 3,
+      "bash": 14,
+      "webfetch": 20,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "webfetch": 20,
+      "bash": 14,
+      "read": 3,
+      "write": 1
+    },
+    "final_chars": 2328,
+    "all_text_chars": 9244,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 24,
+    "source_files_unchanged": true,
+    "expected_artifact": "design.md",
+    "artifact_exists": true,
+    "artifact_chars": 19182,
+    "changed_inputs": [],
+    "design_exists": true,
+    "design_chars": 19182,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "A02-search-first",
+    "exit": "timeout",
+    "seconds": 600.01,
+    "model_requests": 40,
+    "output_tokens": 34080,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 1621483,
+    "parent_tools": {
+      "read": 3,
+      "bash": 2,
+      "task": 2
+    },
+    "all_returned_tools_including_errors": {
+      "webfetch": 107,
+      "read": 3,
+      "bash": 25
+    },
+    "final_chars": 289,
+    "all_text_chars": 437,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 41,
+    "source_files_unchanged": true,
+    "expected_artifact": "design.md",
+    "artifact_exists": false,
+    "artifact_chars": 0,
+    "changed_inputs": [],
+    "design_exists": false,
+    "design_chars": 0,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "R01-search-before-build",
+    "exit": 0,
+    "seconds": 24.99,
+    "model_requests": 7,
+    "output_tokens": 2339,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 68296,
+    "parent_tools": {
+      "read": 6,
+      "bash": 3,
+      "grep": 1,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "read": 6,
+      "bash": 3,
+      "write": 1,
+      "grep": 1
+    },
+    "final_chars": 680,
+    "all_text_chars": 1446,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 8,
+    "source_files_unchanged": false,
+    "expected_artifact": "inventory/export.py",
+    "artifact_exists": true,
+    "artifact_chars": 606,
+    "changed_inputs": [
+      "inventory/export.py"
+    ],
+    "design_exists": false,
+    "design_chars": 0,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "R01-search-first",
+    "exit": 0,
+    "seconds": 59.89,
+    "model_requests": 11,
+    "output_tokens": 9585,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 148687,
+    "parent_tools": {
+      "read": 7,
+      "bash": 6,
+      "grep": 1,
+      "write": 2,
+      "edit": 2
+    },
+    "all_returned_tools_including_errors": {
+      "write": 2,
+      "bash": 6,
+      "edit": 2,
+      "read": 7,
+      "grep": 1
+    },
+    "final_chars": 1110,
+    "all_text_chars": 3161,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 12,
+    "source_files_unchanged": false,
+    "expected_artifact": "inventory/export.py",
+    "artifact_exists": true,
+    "artifact_chars": 868,
+    "changed_inputs": [
+      "inventory/export.py"
+    ],
+    "design_exists": false,
+    "design_chars": 0,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "R02-search-before-build",
+    "exit": 0,
+    "seconds": 56.4,
+    "model_requests": 9,
+    "output_tokens": 7586,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 117505,
+    "parent_tools": {
+      "read": 3,
+      "bash": 8,
+      "webfetch": 1,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "bash": 8,
+      "write": 1,
+      "read": 3,
+      "webfetch": 1
+    },
+    "final_chars": 2001,
+    "all_text_chars": 2849,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 10,
+    "source_files_unchanged": true,
+    "expected_artifact": "pack.py",
+    "artifact_exists": true,
+    "artifact_chars": 3238,
+    "changed_inputs": [],
+    "design_exists": false,
+    "design_chars": 0,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "R02-search-first",
+    "exit": 0,
+    "seconds": 53.28,
+    "model_requests": 10,
+    "output_tokens": 6859,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 117634,
+    "parent_tools": {
+      "read": 2,
+      "bash": 9,
+      "webfetch": 1,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "bash": 9,
+      "read": 2,
+      "write": 1,
+      "webfetch": 1
+    },
+    "final_chars": 2013,
+    "all_text_chars": 3846,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 11,
+    "source_files_unchanged": true,
+    "expected_artifact": "pack.py",
+    "artifact_exists": true,
+    "artifact_chars": 3560,
+    "changed_inputs": [],
+    "design_exists": false,
+    "design_chars": 0,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "R03-search-before-build",
+    "exit": 0,
+    "seconds": 90.29,
+    "model_requests": 10,
+    "output_tokens": 11773,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 391052,
+    "parent_tools": {
+      "read": 3,
+      "bash": 8,
+      "webfetch": 11,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "bash": 8,
+      "webfetch": 11,
+      "read": 3,
+      "write": 1
+    },
+    "final_chars": 1765,
+    "all_text_chars": 1824,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 11,
+    "source_files_unchanged": true,
+    "expected_artifact": "recommendation.md",
+    "artifact_exists": true,
+    "artifact_chars": 13033,
+    "changed_inputs": [],
+    "design_exists": false,
+    "design_chars": 0,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "R03-search-first",
+    "exit": 0,
+    "seconds": 146.57,
+    "model_requests": 22,
+    "output_tokens": 29312,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 822348,
+    "parent_tools": {
+      "read": 4,
+      "bash": 5,
+      "webfetch": 5,
+      "task": 2,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "bash": 5,
+      "webfetch": 57,
+      "read": 4,
+      "task": 2,
+      "write": 1
+    },
+    "final_chars": 1412,
+    "all_text_chars": 2268,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 23,
+    "source_files_unchanged": true,
+    "expected_artifact": "recommendation.md",
+    "artifact_exists": true,
+    "artifact_chars": 12245,
+    "changed_inputs": [],
+    "design_exists": false,
+    "design_chars": 0,
+    "infrastructure_errors": 0
+  }
+]

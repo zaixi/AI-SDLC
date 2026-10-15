@@ -1,0 +1,194 @@
+[
+  {
+    "id": "A01-search-before-build",
+    "exit": 0,
+    "seconds": 229.82,
+    "model_requests": 16,
+    "output_tokens": 31382,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 814662,
+    "parent_tools": {
+      "read": 10,
+      "bash": 10,
+      "webfetch": 16,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "bash": 10,
+      "read": 10,
+      "webfetch": 16,
+      "write": 1
+    },
+    "final_chars": 1328,
+    "all_text_chars": 6346,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 17,
+    "source_files_unchanged": true,
+    "expected_artifact": "design.md",
+    "artifact_exists": true,
+    "artifact_chars": 15888,
+    "changed_inputs": [],
+    "design_exists": true,
+    "design_chars": 15888,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "A02-search-before-build",
+    "exit": 0,
+    "seconds": 104.08,
+    "model_requests": 11,
+    "output_tokens": 14231,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 426105,
+    "parent_tools": {
+      "read": 3,
+      "bash": 3,
+      "webfetch": 19,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "webfetch": 19,
+      "bash": 3,
+      "read": 3,
+      "write": 1
+    },
+    "final_chars": 1189,
+    "all_text_chars": 2195,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 12,
+    "source_files_unchanged": true,
+    "expected_artifact": "design.md",
+    "artifact_exists": true,
+    "artifact_chars": 12738,
+    "changed_inputs": [],
+    "design_exists": true,
+    "design_chars": 12738,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "R01-search-before-build",
+    "exit": 0,
+    "seconds": 23.6,
+    "model_requests": 5,
+    "output_tokens": 1637,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 47305,
+    "parent_tools": {
+      "read": 6,
+      "bash": 2,
+      "write": 2
+    },
+    "all_returned_tools_including_errors": {
+      "read": 6,
+      "write": 2,
+      "bash": 2
+    },
+    "final_chars": 552,
+    "all_text_chars": 833,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 6,
+    "source_files_unchanged": false,
+    "expected_artifact": "inventory/export.py",
+    "artifact_exists": true,
+    "artifact_chars": 676,
+    "changed_inputs": [
+      "inventory/export.py"
+    ],
+    "design_exists": false,
+    "design_chars": 0,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "R02-search-before-build",
+    "exit": 0,
+    "seconds": 65.53,
+    "model_requests": 12,
+    "output_tokens": 8222,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 181153,
+    "parent_tools": {
+      "read": 3,
+      "bash": 11,
+      "webfetch": 2,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "bash": 11,
+      "read": 3,
+      "webfetch": 2,
+      "write": 1
+    },
+    "final_chars": 1378,
+    "all_text_chars": 2366,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 13,
+    "source_files_unchanged": true,
+    "expected_artifact": "pack.py",
+    "artifact_exists": true,
+    "artifact_chars": 4408,
+    "changed_inputs": [],
+    "design_exists": false,
+    "design_chars": 0,
+    "infrastructure_errors": 0
+  },
+  {
+    "id": "R03-search-before-build",
+    "exit": 0,
+    "seconds": 91.13,
+    "model_requests": 10,
+    "output_tokens": 13214,
+    "budget_exhausted": false,
+    "reported_prompt_tokens": 458538,
+    "parent_tools": {
+      "read": 1,
+      "glob": 1,
+      "bash": 4,
+      "webfetch": 16,
+      "write": 1
+    },
+    "all_returned_tools_including_errors": {
+      "bash": 4,
+      "write": 1,
+      "webfetch": 16,
+      "glob": 1,
+      "read": 1
+    },
+    "final_chars": 1279,
+    "all_text_chars": 1795,
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "request_count": 11,
+    "source_files_unchanged": true,
+    "expected_artifact": "recommendation.md",
+    "artifact_exists": true,
+    "artifact_chars": 8676,
+    "changed_inputs": [],
+    "design_exists": false,
+    "design_chars": 0,
+    "infrastructure_errors": 0
+  }
+]
