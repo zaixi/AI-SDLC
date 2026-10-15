@@ -28,7 +28,7 @@
 
 ### visual-explanation 0.4.2
 
-[最终原始回答](outputs/v042/01-export.md) · [初稿](trajectories/v042/01-export/stage0/answer.md) · [第一次修订](trajectories/v042/01-export/stage1/answer.md) · [最终阶段](trajectories/v042/01-export/stage2/answer.md)
+[最终原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/outputs/v042/01-export.md) · [初稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/01-export/stage0/answer.md) · [第一次修订](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/01-export/stage1/answer.md) · [最终阶段](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/01-export/stage2/answer.md)
 
 **内容：** 六种明确任务状态、批准资格、拒绝回草稿、仅可执行可撤销、启动先改状态、逐页推进、按页去重、失败停止且不删除已导出页，以及六条组件交互均保留。
 
@@ -38,32 +38,32 @@
 
 **检查闭环：** 最后一轮修改分页图两个节点文案，明确说明新文案尚未渲染检查。评审已独立查看最终图；其他两图保持已反馈源。
 
-![visual-explanation 0.4.2 01-export 图 1](trajectories/v042/01-export/rendered/stage2-1.png)
+![visual-explanation 0.4.2 01-export 图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/01-export/rendered/stage2-1.png)
 
-[可编辑 Mermaid](trajectories/v042/01-export/render-inputs/stage2-1.mmd) · [SVG](trajectories/v042/01-export/rendered/stage2-1.svg)
+[可编辑 Mermaid](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/01-export/render-inputs/stage2-1.mmd) · [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/01-export/rendered/stage2-1.svg)
 
-![visual-explanation 0.4.2 01-export 图 2](trajectories/v042/01-export/rendered/stage2-2.png)
+![visual-explanation 0.4.2 01-export 图 2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/01-export/rendered/stage2-2.png)
 
-[可编辑 Mermaid](trajectories/v042/01-export/render-inputs/stage2-2.mmd) · [SVG](trajectories/v042/01-export/rendered/stage2-2.svg)
+[可编辑 Mermaid](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/01-export/render-inputs/stage2-2.mmd) · [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/01-export/rendered/stage2-2.svg)
 
-![visual-explanation 0.4.2 01-export 图 3](trajectories/v042/01-export/rendered/stage2-3.png)
+![visual-explanation 0.4.2 01-export 图 3](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/01-export/rendered/stage2-3.png)
 
-[可编辑 Mermaid](trajectories/v042/01-export/render-inputs/stage2-3.mmd) · [SVG](trajectories/v042/01-export/rendered/stage2-3.svg)
+[可编辑 Mermaid](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/01-export/render-inputs/stage2-3.mmd) · [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/01-export/rendered/stage2-3.svg)
 
 <details>
 <summary>查看初稿实际画面</summary>
 
-![初稿 visual-explanation 0.4.2](trajectories/v042/01-export/rendered/stage0-1.png)
+![初稿 visual-explanation 0.4.2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/01-export/rendered/stage0-1.png)
 
-![初稿 visual-explanation 0.4.2](trajectories/v042/01-export/rendered/stage0-2.png)
+![初稿 visual-explanation 0.4.2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/01-export/rendered/stage0-2.png)
 
-![初稿 visual-explanation 0.4.2](trajectories/v042/01-export/rendered/stage0-3.png)
+![初稿 visual-explanation 0.4.2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/01-export/rendered/stage0-3.png)
 
 </details>
 
 ### 内层新版
 
-[最终原始回答](outputs/candidate/01-export.md) · [初稿](trajectories/candidate/01-export/stage0/answer.md) · [第一次修订](trajectories/candidate/01-export/stage1/answer.md) · [最终阶段](trajectories/candidate/01-export/stage2/answer.md)
+[最终原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/outputs/candidate/01-export.md) · [初稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/01-export/stage0/answer.md) · [第一次修订](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/01-export/stage1/answer.md) · [最终阶段](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/01-export/stage2/answer.md)
 
 **内容：** 同样关键规则和交互保留，用两张 Mermaid 图加组件表；撤销操作明确连到未提供状态的说明框，正文区分它与新增状态。
 
@@ -73,20 +73,20 @@
 
 **检查闭环：** 最后一轮再次改状态图方向，模型说明新布局尚未检查；分页图保持已反馈版本。评审已查看最终布局。
 
-![内层新版 01-export 图 1](trajectories/candidate/01-export/rendered/stage2-1.png)
+![内层新版 01-export 图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/01-export/rendered/stage2-1.png)
 
-[可编辑 Mermaid](trajectories/candidate/01-export/render-inputs/stage2-1.mmd) · [SVG](trajectories/candidate/01-export/rendered/stage2-1.svg)
+[可编辑 Mermaid](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/01-export/render-inputs/stage2-1.mmd) · [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/01-export/rendered/stage2-1.svg)
 
-![内层新版 01-export 图 2](trajectories/candidate/01-export/rendered/stage2-2.png)
+![内层新版 01-export 图 2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/01-export/rendered/stage2-2.png)
 
-[可编辑 Mermaid](trajectories/candidate/01-export/render-inputs/stage2-2.mmd) · [SVG](trajectories/candidate/01-export/rendered/stage2-2.svg)
+[可编辑 Mermaid](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/01-export/render-inputs/stage2-2.mmd) · [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/01-export/rendered/stage2-2.svg)
 
 <details>
 <summary>查看初稿实际画面</summary>
 
-![初稿 内层新版](trajectories/candidate/01-export/rendered/stage0-1.png)
+![初稿 内层新版](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/01-export/rendered/stage0-1.png)
 
-![初稿 内层新版](trajectories/candidate/01-export/rendered/stage0-2.png)
+![初稿 内层新版](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/01-export/rendered/stage0-2.png)
 
 </details>
 
@@ -96,7 +96,7 @@
 
 ### visual-explanation 0.4.2
 
-[最终原始回答](outputs/v042/02-latency.md) · [初稿](trajectories/v042/02-latency/stage0/answer.md) · [第一次修订](trajectories/v042/02-latency/stage1/answer.md) · [最终阶段](trajectories/v042/02-latency/stage2/answer.md)
+[最终原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/outputs/v042/02-latency.md) · [初稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/02-latency/stage0/answer.md) · [第一次修订](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/02-latency/stage1/answer.md) · [最终阶段](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/02-latency/stage2/answer.md)
 
 **内容：** 相同四个原值、单位与三个上限完整，无旧版上限、误差线或额外趋势。
 
@@ -106,22 +106,22 @@
 
 **检查闭环：** 最终图源与已回传stage1相同；模型明确未收到窄屏验证。评审已查看移动截图。自检通过；几何脚本不作为刻度验证。
 
-![visual-explanation 0.4.2 02-latency 图 1](trajectories/v042/02-latency/rendered/stage1-1-svg1.png)
+![visual-explanation 0.4.2 02-latency 图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/02-latency/rendered/stage1-1-svg1.png)
 
-[可编辑 HTML](trajectories/v042/02-latency/render-inputs/stage1-1.html) · [完整桌面页](trajectories/v042/02-latency/rendered/stage1-1-desktop.png) · [移动截图](trajectories/v042/02-latency/rendered/stage1-1-mobile.png)
+[可编辑 HTML](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/02-latency/render-inputs/stage1-1.html) · [完整桌面页](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/02-latency/rendered/stage1-1-desktop.png) · [移动截图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/02-latency/rendered/stage1-1-mobile.png)
 
 GitHub 不直接执行 HTML；下载 HTML 后用浏览器打开即可查看原生页面。
 
 <details>
 <summary>查看初稿实际画面</summary>
 
-![初稿 visual-explanation 0.4.2](trajectories/v042/02-latency/rendered/stage0-1-svg1.png)
+![初稿 visual-explanation 0.4.2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/v042/02-latency/rendered/stage0-1-svg1.png)
 
 </details>
 
 ### 内层新版
 
-[最终原始回答](outputs/candidate/02-latency.md) · [初稿](trajectories/candidate/02-latency/stage0/answer.md) · [第一次修订](trajectories/candidate/02-latency/stage1/answer.md) · [最终阶段](trajectories/candidate/02-latency/stage2/answer.md)
+[最终原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/outputs/candidate/02-latency.md) · [初稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/02-latency/stage0/answer.md) · [第一次修订](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/02-latency/stage1/answer.md) · [最终阶段](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/02-latency/stage2/answer.md)
 
 **内容：** 甲18、乙25、丙12、旧版30 ms 四个值与三个独立上限20/40/15 ms完整。没有虚构旧版上限、样本、误差线或趋势。
 
@@ -131,23 +131,23 @@ GitHub 不直接执行 HTML；下载 HTML 后用浏览器打开即可查看原�
 
 **检查闭环：** 最终源码与已回传stage1相同；模型明确说没有看过窄屏，评审已查看移动截图。自检通过；没有箭头的图不以几何脚本证明数值比例。
 
-![内层新版 02-latency 图 1](trajectories/candidate/02-latency/rendered/stage1-1-svg1.png)
+![内层新版 02-latency 图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/02-latency/rendered/stage1-1-svg1.png)
 
-[可编辑 HTML](trajectories/candidate/02-latency/render-inputs/stage1-1.html) · [完整桌面页](trajectories/candidate/02-latency/rendered/stage1-1-desktop.png) · [移动截图](trajectories/candidate/02-latency/rendered/stage1-1-mobile.png)
+[可编辑 HTML](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/02-latency/render-inputs/stage1-1.html) · [完整桌面页](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/02-latency/rendered/stage1-1-desktop.png) · [移动截图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/02-latency/rendered/stage1-1-mobile.png)
 
 GitHub 不直接执行 HTML；下载 HTML 后用浏览器打开即可查看原生页面。
 
 <details>
 <summary>查看初稿实际画面</summary>
 
-![初稿 内层新版](trajectories/candidate/02-latency/rendered/stage0-1-svg1.png)
+![初稿 内层新版](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/trajectories/candidate/02-latency/rendered/stage0-1-svg1.png)
 
 </details>
 
 ## 证据与限制
 
-四条轨迹独立容器、独立会话、无其他组输出挂载；各阶段实际模型与源码哈希见 [runs.json](runs.json)。生成不调用工具，渲染由控制器完成，不测客户端自动加载。每题每组一个样本，主 Agent 知道组别后评审；不能据此宣布普遍排名。
+四条轨迹独立容器、独立会话、无其他组输出挂载；各阶段实际模型与源码哈希见 [runs.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/runs.json)。生成不调用工具，渲染由控制器完成，不测客户端自动加载。每题每组一个样本，主 Agent 知道组别后评审；不能据此宣布普遍排名。
 
-[内容评审](content-review.json) · [用量与修订规模](metrics.json) · [Mermaid 语法检查](syntax-results.json) · [输入及输出完整性](integrity-results.json)
+[内容评审](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/content-review.json) · [用量与修订规模](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/metrics.json) · [Mermaid 语法检查](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/syntax-results.json) · [输入及输出完整性](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/integrity-results.json)
 
 本轮没有测试 am、diagram-design 或 mermaid-diagrams 的原生接入；不用未加载的工具为输出背书。数值图的几何脚本没有连线可查，不用于证明刻度正确；刻度和比例由评审对照数据及 SVG 源核对。

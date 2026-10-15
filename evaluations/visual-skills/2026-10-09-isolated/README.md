@@ -5,8 +5,8 @@
 ## 先看真实输出
 
 - [第一轮逐题三组对照](comparison.md)：逐字汇集原始回答，支持 Mermaid 的阅读器可直接查看图。
-- 第一轮原文件：[show-me](outputs/show-me/)、[visual-explanation](outputs/visual-explanation/)、[mermaid-diagrams](outputs/mermaid-diagrams/)。
-- 第二轮原文件：[show-me](repeat-outputs/show-me/)、[visual-explanation](repeat-outputs/visual-explanation/)、[mermaid-diagrams](repeat-outputs/mermaid-diagrams/)。
+- 第一轮原文件：[show-me](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/show-me)、[visual-explanation](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/visual-explanation)、[mermaid-diagrams](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/mermaid-diagrams)。
+- 第二轮原文件：[show-me](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/show-me)、[visual-explanation](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/visual-explanation)、[mermaid-diagrams](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/repeat-outputs/mermaid-diagrams)。
 
 租约和队列题的图仍然相似，是因为输入本身明确要求时序和职责关系；本轮答案独立生成，没有复用图或答案模板。更容易观察差异的是 03-diff 与 05-scope。
 
@@ -20,7 +20,7 @@
 
 生成阶段三组都禁止渲染；之后统一做 Mermaid 语法解析，不据此评价图形布局。这里只测试“显式加载指引后的生成效果”，没有测试客户端安装、自动触发或其他 Skill 的委托调用。
 
-详细记录：[protocol.json](protocol.json)、[rubric.json](rubric.json)、[raw-output-manifest.json](raw-output-manifest.json)、各组 provenance.json。
+详细记录：[protocol.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/protocol.json)、[rubric.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/rubric.json)、[raw-output-manifest.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/raw-output-manifest.json)、各组 provenance.json。
 
 ## 样本和版本
 
@@ -44,7 +44,7 @@
 
 字符数只用于观察输出负担，不是 token 数、可读性或质量评分。本地版本在这一组题目中平均比 show-me 多约41%字符，其中来源、确认状态及风险分析贡献了额外内容。
 
-解析记录：[syntax-results.json](syntax-results.json)。可复用解析脚本：[scripts/parse.mjs](scripts/parse.mjs)。用 Node 在单独工具目录安装 mermaid@12.1.0 与 jsdom，然后运行 `node scripts/parse.mjs <本评估目录> <工具目录>`。本次工具依赖装在 /tmp，没有安装到业务仓库或给客户端注册插件。
+解析记录：[syntax-results.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/syntax-results.json)。可复用解析脚本：[scripts/parse.mjs](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/scripts/parse.mjs)。用 Node 在单独工具目录安装 mermaid@12.1.0 与 jsdom，然后运行 `node scripts/parse.mjs <本评估目录> <工具目录>`。本次工具依赖装在 /tmp，没有安装到业务仓库或给客户端注册插件。
 
 ## 输出差异的具体证据
 
@@ -57,7 +57,7 @@
 
 ## 来源标签隐藏的独立评审
 
-[逐份评审记录](anonymous-review.json)、[评审说明](anonymous-review.md)保留了评审Agent的原始结果，[标签映射与覆盖计数](review-summary.json)用于解释来源。
+[逐份评审记录](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/anonymous-review.json)、[评审说明](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/anonymous-review.md)保留了评审Agent的原始结果，[标签映射与覆盖计数](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/review-summary.json)用于解释来源。
 
 29份回答关键覆盖被评为 adequate；第二轮 show-me 的支付影响题为 partial，原因是将未给定关系声明为已知。此分类不是总分或成功率。状态图中的常规推断缺少限定被列为较轻问题，未与架构事实错误等同。主Agent已核对上述关键引文与原文件。
 

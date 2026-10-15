@@ -1,8 +1,0 @@
-%%{init: {"theme":"neutral","fontFamily":"system-ui, sans-serif","sequence":{"mirrorActors":false}}}%%
-sequenceDiagram
-    participant N as 通知器
-    participant J as 作业表
-    participant M as 外部邮件服务（平台之外）
-
-    N->>J: 读取已完成作业
-    N->>M: 调用服务，发送完成通知

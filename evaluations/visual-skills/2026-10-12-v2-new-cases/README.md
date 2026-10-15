@@ -2,7 +2,7 @@
 
 固定仓库提交 `c39ff86918bf896c7d156a2ee5cf204fa779bc34`。候选使用内层 `skills/visual-explanation_2/visual-explanation/`，不是内容与 0.4.2 相同的外层目录。原始输入完整保留，未改任一 Skill。
 
-[画面对照与结论](comparison.md) · [协议](protocol.json) · [原始运行记录](runs.json)
+[画面对照与结论](comparison.md) · [协议](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/protocol.json) · [原始运行记录](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-12-v2-new-cases/runs.json)
 
 每版两个案例、每题一条新容器/新会话轨迹，共四条轨迹。每条轨迹初稿后给予两次同样措辞的真实图片反馈，三个阶段不算三个独立样本。病例为分页导出状态/授权/去重与 P95 延迟绝对值比较；前者迁移此前状态任务，后者增加不同验收上限的数值尺度问题。顺序按题反转，不固定随机种子。
 

@@ -1,5 +1,0 @@
-用户显式要求使用本题提供的 skill。先读取 /input/skill/SKILL.md。
-
-完成下面的用户请求。输入文件只读；需要文件产物时写入 /work，并在最终回复给出文件路径。只完成当前请求。
-
-Reply only OK. Do not use tools.

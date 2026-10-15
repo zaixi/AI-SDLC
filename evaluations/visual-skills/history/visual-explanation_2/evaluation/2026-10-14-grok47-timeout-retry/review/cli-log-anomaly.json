@@ -1,8 +1,0 @@
-{
-  "case": "D03",
-  "source_response": "runs/r1-D03-visual-explanation/response-042.txt",
-  "provider_finish_reason": "stop",
-  "provider_final_text_present": true,
-  "cli_final_text_and_stop_absent": true,
-  "handling": "Recovered exact provider final text for review; CLI delivery remains marked incomplete. No generation rerun or output edits."
-}

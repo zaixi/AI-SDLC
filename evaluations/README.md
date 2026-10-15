@@ -1,0 +1,38 @@
+# 评测报告与原始材料
+
+本目录只保存轻量报告和索引。2026-10-15 清理前约 143 MB，主要是重复请求 JSON、截图、依赖副本与运行日志；这些内容已移出当前版本，原始证据仍完整保存在固定提交中。
+
+- [视觉 Skill 评测索引](visual-skills/README.md)
+- [全部原始评测目录（固定版本）](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations)
+- [下载原始版本 ZIP](https://github.com/zaixi/AI-SDLC/archive/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475.zip)：包含当时整个仓库，解压后取 evaluations/；不是仅评测目录的下载。
+- [归档索引](archive-index.json)：来源提交、本地完整压缩备份的 SHA-256，以及保留报告在清理前的哈希。
+
+保留报告的正文不改写，指向已移出文件的 Markdown 链接改为固定提交链接。历史报告描述的是当时状态，历史脚本、本机路径、归档结构和验证结果不代表当前文件布局。报告中的原始相对链接版本仍在上述固定提交中。
+
+## 后续评测如何保存
+
+仓库只提交每轮 README.md、comparison.md、report.md 或 all-cases.md。原始输入输出、可运行交付、图片、日志与依赖放在仓库外，例如 /tmp/ai-sdlc-evaluations/；需要长期共享时上传到可用的附件存储，在报告中记录地址、来源版本与 SHA-256。确认附件可下载后再声明已归档。不要提交逐请求完整上下文、依赖目录或打包副本。
+
+根目录 .gitignore 对评测区实行报告白名单。新增报告提交前检查暂存区体积；其他小型必要材料经判断后再有意识地调整规则。
+
+## 减少 Git 下载量
+
+删除当前文件不会删除旧 Git 对象。已经拥有旧版本的正常更新会删除这些文件，但不会自动收回 .git 的历史空间；首次完整克隆或跨越旧提交的完整拉取仍可能下载历史大文件。
+
+只需要当前版本时，另建浅克隆即可避开旧历史：
+
+```bash
+git clone --depth 1 --single-branch --no-tags https://github.com/zaixi/AI-SDLC.git AI-SDLC-light
+```
+
+如果只使用 Skill，不需要资料库，可在服务端支持部分克隆时进一步只检出所需目录：
+
+```bash
+git clone --depth 1 --single-branch --no-tags --filter=blob:none --sparse https://github.com/zaixi/AI-SDLC.git AI-SDLC-skills
+cd AI-SDLC-skills
+git sparse-checkout set skills scripts
+```
+
+materials/ 仍含约 107 MB 的参考资料，不在这次清理范围内。浅克隆整个工作区仍会下载这些当前文件；稀疏部分克隆可以避开它们。不支持过滤的服务端可能仍下载全部当前文件。
+
+本次没有重写公共 Git 历史或强推。彻底清除历史对象需要另行规划历史迁移，并同步处理协作者克隆和固定版本归档；不能把本次文件清理说成已缩减完整历史。

@@ -2,7 +2,7 @@
 
 固定仓库提交 `9013349ed306b1cdda7bf5cf737c02d462195be9`。新版使用单一入口 `skills/visual-explanation_2/SKILL.md`，对照为同提交下的 `skills/visual-explanation/SKILL.md`（0.4.2）。不修改 Skill、上游或既有评测。
 
-[实际画面对照](comparison.md) · [协议](protocol.json) · [运行记录](runs.json) · [原始输入哈希](input-manifest.json)
+[实际画面对照](comparison.md) · [协议](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-14-v2-v042/protocol.json) · [运行记录](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-14-v2-v042/runs.json) · [原始输入哈希](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-14-v2-v042/input-manifest.json)
 
 每版两题，每题一条新容器/新会话轨迹，共四条轨迹。每条生成初稿，再给予两次同措辞真实桌面图片反馈，三阶段不是三个独立样本。两题执行顺序反转，无固定随机种子。模型实际身份从本轨迹 turn_context 核对，不混入另一 Agent 的 Grok 结果。
 

@@ -4,7 +4,7 @@
 
 每组两题、每题一条独立生成轨迹，共四条。两次反馈使用实际图片，不提供人工修图提示。初稿、修订稿、最终稿保留为同一轨迹的三个阶段，不计成三个独立样本。此次两组全部重新生成，不复用上一轮 0.4.2 的回答。
 
-[图片及原文对照](comparison.md) · [协议](protocol.json) · [输入哈希](input-manifest.json) · [运行记录](runs.json) · [评审](content-review.json)
+[图片及原文对照](comparison.md) · [协议](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-show-me/protocol.json) · [输入哈希](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-show-me/input-manifest.json) · [运行记录](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-show-me/runs.json) · [评审](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-show-me/content-review.json)
 
 ## 输入与比较范围
 

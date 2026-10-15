@@ -8,7 +8,7 @@
 
 ### v032
 
-[原文件](outputs/v032/07-incident.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v033/outputs/v032/07-incident.md)
 
 ```mermaid
 flowchart TB
@@ -33,7 +33,7 @@ flowchart TB
 
 ### v033
 
-[原文件](outputs/v033/07-incident.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v033/outputs/v033/07-incident.md)
 
 ```mermaid
 flowchart TB
@@ -72,7 +72,7 @@ TTL为10分钟，但10:00是命中时间，不能据此推算10:10到期。优�
 
 ### v032
 
-[原文件](outputs/v032/08-tradeoff.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v033/outputs/v032/08-tradeoff.md)
 
 ```mermaid
 flowchart LR
@@ -96,7 +96,7 @@ flowchart LR
 
 ### v033
 
-[原文件](outputs/v033/08-tradeoff.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v033/outputs/v033/08-tradeoff.md)
 
 ```mermaid
 flowchart LR

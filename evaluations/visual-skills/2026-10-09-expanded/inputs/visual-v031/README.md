@@ -2,9 +2,9 @@
 
 图优先的工程解释 Skill。可由支持标准 Skills 的代理按任务匹配加载，也可供其他流程使用；未设置仅允许用户手动触发的标志。
 
-核心文件是 [SKILL.md](SKILL.md)。它保持工具无关，保留 show-me 的完整表达主体，按问题选择 Mermaid、调用树、伪代码、diff、SVG 或 HTML。生成代码事实视图与保存设计意图分别处理。
+核心文件是 [SKILL.md](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/inputs/visual-v031/SKILL.md)。它保持工具无关，保留 show-me 的完整表达主体，按问题选择 Mermaid、调用树、伪代码、diff、SVG 或 HTML。生成代码事实视图与保存设计意图分别处理。
 
-整个工程过程中按需读取 [工程视图指引](references/design-views.md)，覆盖需求、理解、设计、实现、调试、验证、评审、交接及运行讨论。按当前问题展开必要细节；概要/详细设计只是示例，不是能力边界。
+整个工程过程中按需读取 [工程视图指引](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/inputs/visual-v031/references/design-views.md)，覆盖需求、理解、设计、实现、调试、验证、评审、交接及运行讨论。按当前问题展开必要细节；概要/详细设计只是示例，不是能力边界。
 
 ## 接入原则
 
@@ -17,7 +17,7 @@
 
 当前版本为 0.3.1，没有在 Codex、Claude、OpenCode、Zed 或 Qoder 中完成安装及调用测试。Mermaid 示例未执行渲染验证。
 
-复用 [Humanlayer Show Me 固定提交](https://github.com/humanlayer/skills/blob/ca7c8088db69e315a8b2deea43820270457f8f3c/plugins/show-me/skills/show-me/SKILL.md)的完整正文。保存 [上游原文件](references/show-me.upstream.md)与 [MIT 许可证](LICENSE)。原文件含仅用户触发的标志；本 Skill 的入口元数据不含该标志，以允许模型匹配。
+复用 [Humanlayer Show Me 固定提交](https://github.com/humanlayer/skills/blob/ca7c8088db69e315a8b2deea43820270457f8f3c/plugins/show-me/skills/show-me/SKILL.md)的完整正文。保存 [上游原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/inputs/visual-v031/references/show-me.upstream.md)与 [MIT 许可证](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/inputs/visual-v031/LICENSE)。原文件含仅用户触发的标志；本 Skill 的入口元数据不含该标志，以允许模型匹配。
 
 未复制未确认来源的 `mermaid-diagrams` 或 `architecture-report` 包；这些名称对应的具体仓库、许可证和兼容性尚待核对。现有内容可直接生成设计图，不依赖安装这些包。
 
@@ -27,7 +27,7 @@
 
 ## 0.3.0：关系与未知项
 
-模块职责不自动生成调用链；先核对已有机制，再将未知项分为待核实、待验证、待决策和建议。优先复用现有决定，合并关键缺口，避免图变成大量问号。详见 [规则](references/uncertainty.md)。diff 和文本视图不附渲染提示，默认保存策略不反复说明。
+模块职责不自动生成调用链；先核对已有机制，再将未知项分为待核实、待验证、待决策和建议。优先复用现有决定，合并关键缺口，避免图变成大量问号。详见 [规则](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/inputs/visual-v031/references/uncertainty.md)。diff 和文本视图不附渲染提示，默认保存策略不反复说明。
 
 ## 0.3.1：图承载关键判断
 

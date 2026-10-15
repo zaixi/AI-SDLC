@@ -1,8 +1,0 @@
-%%{init: {"theme":"base","themeVariables":{"fontFamily":"system-ui, sans-serif","fontSize":"16px","primaryColor":"#f4f4f4","primaryTextColor":"#222","primaryBorderColor":"#666","lineColor":"#555","edgeLabelBackground":"#fff"}}}%%
-flowchart TD
-    D["草稿"] -->|提交| A["待授权"]
-    A -->|数据所有者拒绝| D
-    A -->|"数据所有者批准<br/>且不是该任务的提交人"| R["可执行"]
-    R -->|"执行器启动<br/>先改为执行中"| X["执行中"]
-    X -->|所有页成功| C["完成"]
-    X -->|任一页失败| F["失败"]

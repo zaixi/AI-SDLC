@@ -32,7 +32,7 @@ python scripts/validate_visual_skill.py
 
 维护校验需要 Python 3 与 PyYAML，检查唯一视觉入口、名称与目录、版本元数据、调用提示和运行文件引用。它不验证客户端安装、自动发现、扩展调用或实际图解质量。
 
-后续生成评测只读取本目录的运行文件，在 [评测目录](../../evaluations/visual-skills/README.md) 新建轮次。原始输入、回答、图片、日志和历史快照保持原样；维护文档和旧结论不提供给生成模型。
+后续生成评测只读取本目录的运行文件，在 [评测目录](../../evaluations/visual-skills/README.md) 新建轮次。原始输入、回答、图片、日志和历史快照在仓库外保持原样并记录归档地址，遵循评测目录的存储说明；维护文档和旧结论不提供给生成模型。
 
 只有实际使用中反复影响理解、且能追溯到指令缺失或冲突的问题，才作为窄修改候选；不把每次小错误追加成通用规则。
 
@@ -41,8 +41,8 @@ python scripts/validate_visual_skill.py
 - [两例比较：去重计数与复杂平台总览](../../evaluations/visual-skills/2026-10-14-v2-v042/comparison.md)
 - [增补三例：缺失趋势、多实例与局部 SVG 修改](../../evaluations/visual-skills/2026-10-15-v2-expanded/comparison.md)
 - [合并记录与完整性验证](../../evaluations/visual-skills/2026-10-15-consolidation/README.md)
-- [0.4.2 完整归档](../../evaluations/visual-skills/history/visual-explanation-0.4.2/)
-- [原 `_2` 及其三轮原始评测](../../evaluations/visual-skills/history/visual-explanation_2/)
+- [0.4.2 完整归档](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/history/visual-explanation-0.4.2)
+- [原 `_2` 及其三轮原始评测](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/history/visual-explanation_2)
 
 五类任务中，两版关键内容基本相当；原 `_2` 的复杂平台分段图更便于追关系，0.4.2 的单页速查更集中。小样本、外部渲染反馈和未安装可选扩展等限制仍适用。本次没有重新生成答案，正文相同不等于新名称的客户端发现已经验证。
 

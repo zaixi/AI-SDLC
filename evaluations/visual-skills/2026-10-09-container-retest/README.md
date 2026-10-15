@@ -8,7 +8,7 @@
 
 独立设备登录完成后，模型调用恢复。每份回答在新的 Docker 容器内运行官方 npm 发布的 Codex CLI 0.162.0，使用 `--no-daemon --ephemeral --ignore-user-config`，不恢复会话、不接入宿主 Agent 执行服务。每个容器仅挂载自己的输入、CLI 程序和只读的登录凭据卷；主目录为新的 tmpfs，没有挂载仓库、其他组资料、旧答案或 Docker socket。根文件系统和输入只读，使用普通用户、移除 capabilities、启用 `no-new-privileges`。
 
-容器共享宿主内核与模型服务；使用 Docker bridge 和现有网络代理，不是网络出口隔离。六份 CLI JSON 记录的完成项均为回答文本，没有命令执行或工具调用完成项。输入和输出各自的哈希保存在 [指标](metrics.json) 与 [运行记录](runs.json)。
+容器共享宿主内核与模型服务；使用 Docker bridge 和现有网络代理，不是网络出口隔离。六份 CLI JSON 记录的完成项均为回答文本，没有命令执行或工具调用完成项。输入和输出各自的哈希保存在 [指标](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-container-retest/metrics.json) 与 [运行记录](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-container-retest/runs.json)。
 
 ### 输入方式的改变
 
@@ -16,7 +16,7 @@
 
 因此这轮采用**完整文本输入**：测试器将该组的 Skill 原文与允许提供的相关参考放入新会话输入，模型直接依据这些内容生成，不使用工具。show-me 只得到自身原文；mermaid-diagrams 得到其主文和对应的时序图/类图参考；0.4.1 得到自身原文、Mermaid 主文及对应参考。不同组的资料供给是有意设置的实验条件。
 
-这验证的是不同指引给出的**表达效果**，没有验证 Agent 原生 Skill 发现、自动加载、参考选择或文件工具。不能把“参考文本已供给”描述成“模型主动加载成功”。[完整实际输入](model-inputs/)、[源文件快照](inputs/)、[生成前固定的协议](protocol.json)、[六份 CLI 记录](traces/)均保留。
+这验证的是不同指引给出的**表达效果**，没有验证 Agent 原生 Skill 发现、自动加载、参考选择或文件工具。不能把“参考文本已供给”描述成“模型主动加载成功”。[完整实际输入](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-container-retest/model-inputs)、[源文件快照](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-container-retest/inputs)、[生成前固定的协议](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-container-retest/protocol.json)、[六份 CLI 记录](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-container-retest/traces)均保留。
 
 使用同一 CLI 默认配置，没有覆盖模型或采样设置；JSON 事件未报告实际模型标识，不能声称与上一轮 Agent 使用了相同模型，也不据此作跨轮因果判断。
 
@@ -28,7 +28,7 @@
 | mermaid-diagrams | 1829 | 518 | 2/2 通过 | 关键要求覆盖；也增加及时登记，以及未规定的重试返回消息 |
 | visual-v041 | 1606 | 659 | 2/2 通过 | 关键要求覆盖；本次未发现上述额外步骤 |
 
-字符数包括全部图源码和短文，不是质量分。内容评审由主 Agent 完成，来源标签可见，**不是独立盲评**；[核对记录](content-review.json)说明具体依据与限制。
+字符数包括全部图源码和短文，不是质量分。内容评审由主 Agent 完成，来源标签可见，**不是独立盲评**；[核对记录](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-container-retest/content-review.json)说明具体依据与限制。
 
 支付题三组都表达了并发重试与回调、至多两次只查询、共享原子登记与一次通知、未知不回退，以及迟到成功回调。Mermaid 组使用编号和异步箭头，消息也更多；0.4.1 在及时成功路径保留了题目已给出的步骤，未知查询保留当前状态。另两组给及时成功路径增加原子登记，不是已证实的支付逻辑错误，但属于输入未确认的细节。
 
@@ -44,7 +44,7 @@
 
 ## 复核与复现
 
-[原始生成脚本](scripts/run-original.py.txt)保留了本次实际驱动方式；[参数化脚本](scripts/run.py)用于在新的输出目录复跑，参数化版本已作 Python 语法检查，未另外生成第二轮样本。需要 Docker、通过正常登录得到的凭据卷，以及官方 Codex 原生程序和配套 code-mode-host。凭据文件不进入仓库。
+[原始生成脚本](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-container-retest/scripts/run-original.py.txt)保留了本次实际驱动方式；[参数化脚本](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-container-retest/scripts/run.py)用于在新的输出目录复跑，参数化版本已作 Python 语法检查，未另外生成第二轮样本。需要 Docker、通过正常登录得到的凭据卷，以及官方 Codex 原生程序和配套 code-mode-host。凭据文件不进入仓库。
 
 ```sh
 python scripts/run.py --source ../2026-10-09-complex \
@@ -60,4 +60,4 @@ python scripts/run.py --source ../2026-10-09-complex \
 node scripts/parse.mjs . /path/to/parser-tools
 ```
 
-该检查只做解析，实际结果见 [syntax-results.json](syntax-results.json)。六份原文与运行记录中的 SHA-256 一致，没有手工修图后冒充原始输出。
+该检查只做解析，实际结果见 [syntax-results.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-container-retest/syntax-results.json)。六份原文与运行记录中的 SHA-256 一致，没有手工修图后冒充原始输出。

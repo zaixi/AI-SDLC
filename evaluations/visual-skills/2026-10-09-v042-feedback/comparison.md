@@ -2,7 +2,7 @@
 
 **新版质量可用，但本轮没有显示相对 0.4.1 的明确整体优势。** 两版拿到实际图片后都识别并修正了布局问题，关键关系未因拆图而删除。0.4.2 把检查与修图要求写得更明确，建议保留这条小改动；本轮不支持继续增加规则。
 
-每版两题，各一条独立容器/会话轨迹，同一 `gpt-6.1-sol`；两次同等图片反馈，无人工修图提示。完整[方法与限制](README.md)、[运行证据](runs.json)、[评审记录](content-review.json)。这轮不重新测试 show-me/Mermaid 单独组，直接比较本次改动前后的两版。
+每版两题，各一条独立容器/会话轨迹，同一 `gpt-6.1-sol`；两次同等图片反馈，无人工修图提示。完整[方法与限制](README.md)、[运行证据](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/runs.json)、[评审记录](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/content-review.json)。这轮不重新测试 show-me/Mermaid 单独组，直接比较本次改动前后的两版。
 
 | 比较项 | 0.4.1 | 0.4.2 | 判断 |
 |---|---|---|---|
@@ -28,29 +28,29 @@
 
 ### v041 最终画面
 
-[最终原始回答](outputs/v041/01-mixed.md) · [初稿](trajectories/v041/01-mixed/stage0/answer.md) · [修订稿](trajectories/v041/01-mixed/stage1/answer.md)
+[最终原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/outputs/v041/01-mixed.md) · [初稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/01-mixed/stage0/answer.md) · [修订稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/01-mixed/stage1/answer.md)
 
-图 1 · `flowchart LR` · [SVG 放大](trajectories/v041/01-mixed/rendered/stage1-1.svg)
+图 1 · `flowchart LR` · [SVG 放大](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/01-mixed/rendered/stage1-1.svg)
 
-![v041 01-mixed 最终图 1](trajectories/v041/01-mixed/rendered/stage1-1.png)
+![v041 01-mixed 最终图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/01-mixed/rendered/stage1-1.png)
 
-图 2 · `stateDiagram-v2` · [SVG 放大](trajectories/v041/01-mixed/rendered/stage1-2.svg)
+图 2 · `stateDiagram-v2` · [SVG 放大](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/01-mixed/rendered/stage1-2.svg)
 
-![v041 01-mixed 最终图 2](trajectories/v041/01-mixed/rendered/stage1-2.png)
+![v041 01-mixed 最终图 2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/01-mixed/rendered/stage1-2.png)
 
-图 3 · `sequenceDiagram` · [SVG 放大](trajectories/v041/01-mixed/rendered/stage1-3.svg)
+图 3 · `sequenceDiagram` · [SVG 放大](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/01-mixed/rendered/stage1-3.svg)
 
-![v041 01-mixed 最终图 3](trajectories/v041/01-mixed/rendered/stage1-3.png)
+![v041 01-mixed 最终图 3](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/01-mixed/rendered/stage1-3.png)
 
 <details>
 <summary>v041 初稿实际图片（3 张）</summary>
 
 
-![v041 01-mixed 初稿图 1](trajectories/v041/01-mixed/rendered/stage0-1.png)
+![v041 01-mixed 初稿图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/01-mixed/rendered/stage0-1.png)
 
-![v041 01-mixed 初稿图 2](trajectories/v041/01-mixed/rendered/stage0-2.png)
+![v041 01-mixed 初稿图 2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/01-mixed/rendered/stage0-2.png)
 
-![v041 01-mixed 初稿图 3](trajectories/v041/01-mixed/rendered/stage0-3.png)
+![v041 01-mixed 初稿图 3](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/01-mixed/rendered/stage0-3.png)
 
 </details>
 
@@ -147,29 +147,29 @@ sequenceDiagram
 
 ### v042 最终画面
 
-[最终原始回答](outputs/v042/01-mixed.md) · [初稿](trajectories/v042/01-mixed/stage0/answer.md) · [修订稿](trajectories/v042/01-mixed/stage1/answer.md)
+[最终原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/outputs/v042/01-mixed.md) · [初稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/01-mixed/stage0/answer.md) · [修订稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/01-mixed/stage1/answer.md)
 
-图 1 · `flowchart LR` · [SVG 放大](trajectories/v042/01-mixed/rendered/stage1-1.svg)
+图 1 · `flowchart LR` · [SVG 放大](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/01-mixed/rendered/stage1-1.svg)
 
-![v042 01-mixed 最终图 1](trajectories/v042/01-mixed/rendered/stage1-1.png)
+![v042 01-mixed 最终图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/01-mixed/rendered/stage1-1.png)
 
-图 2 · `stateDiagram-v2` · [SVG 放大](trajectories/v042/01-mixed/rendered/stage1-2.svg)
+图 2 · `stateDiagram-v2` · [SVG 放大](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/01-mixed/rendered/stage1-2.svg)
 
-![v042 01-mixed 最终图 2](trajectories/v042/01-mixed/rendered/stage1-2.png)
+![v042 01-mixed 最终图 2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/01-mixed/rendered/stage1-2.png)
 
-图 3 · `flowchart TD` · [SVG 放大](trajectories/v042/01-mixed/rendered/stage1-3.svg)
+图 3 · `flowchart TD` · [SVG 放大](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/01-mixed/rendered/stage1-3.svg)
 
-![v042 01-mixed 最终图 3](trajectories/v042/01-mixed/rendered/stage1-3.png)
+![v042 01-mixed 最终图 3](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/01-mixed/rendered/stage1-3.png)
 
 <details>
 <summary>v042 初稿实际图片（3 张）</summary>
 
 
-![v042 01-mixed 初稿图 1](trajectories/v042/01-mixed/rendered/stage0-1.png)
+![v042 01-mixed 初稿图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/01-mixed/rendered/stage0-1.png)
 
-![v042 01-mixed 初稿图 2](trajectories/v042/01-mixed/rendered/stage0-2.png)
+![v042 01-mixed 初稿图 2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/01-mixed/rendered/stage0-2.png)
 
-![v042 01-mixed 初稿图 3](trajectories/v042/01-mixed/rendered/stage0-3.png)
+![v042 01-mixed 初稿图 3](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/01-mixed/rendered/stage0-3.png)
 
 </details>
 
@@ -253,31 +253,31 @@ flowchart TD
 
 ### v041 最终画面
 
-[最终原始回答](outputs/v041/02-c4.md) · [初稿](trajectories/v041/02-c4/stage0/answer.md) · [修订稿](trajectories/v041/02-c4/stage1/answer.md)
+[最终原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/outputs/v041/02-c4.md) · [初稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/02-c4/stage0/answer.md) · [修订稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/02-c4/stage1/answer.md)
 
-图 1 · `flowchart TB` · [SVG 放大](trajectories/v041/02-c4/rendered/stage1-1.svg)
+图 1 · `flowchart TB` · [SVG 放大](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/02-c4/rendered/stage1-1.svg)
 
-![v041 02-c4 最终图 1](trajectories/v041/02-c4/rendered/stage1-1.png)
+![v041 02-c4 最终图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/02-c4/rendered/stage1-1.png)
 
-图 2 · `flowchart LR` · [SVG 放大](trajectories/v041/02-c4/rendered/stage1-2.svg)
+图 2 · `flowchart LR` · [SVG 放大](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/02-c4/rendered/stage1-2.svg)
 
-![v041 02-c4 最终图 2](trajectories/v041/02-c4/rendered/stage1-2.png)
+![v041 02-c4 最终图 2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/02-c4/rendered/stage1-2.png)
 
-图 3 · `flowchart LR` · [SVG 放大](trajectories/v041/02-c4/rendered/stage1-3.svg)
+图 3 · `flowchart LR` · [SVG 放大](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/02-c4/rendered/stage1-3.svg)
 
-![v041 02-c4 最终图 3](trajectories/v041/02-c4/rendered/stage1-3.png)
+![v041 02-c4 最终图 3](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/02-c4/rendered/stage1-3.png)
 
-图 4 · `flowchart LR` · [SVG 放大](trajectories/v041/02-c4/rendered/stage1-4.svg)
+图 4 · `flowchart LR` · [SVG 放大](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/02-c4/rendered/stage1-4.svg)
 
-![v041 02-c4 最终图 4](trajectories/v041/02-c4/rendered/stage1-4.png)
+![v041 02-c4 最终图 4](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/02-c4/rendered/stage1-4.png)
 
 <details>
 <summary>v041 初稿实际图片（2 张）</summary>
 
 
-![v041 02-c4 初稿图 1](trajectories/v041/02-c4/rendered/stage0-1.png)
+![v041 02-c4 初稿图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/02-c4/rendered/stage0-1.png)
 
-![v041 02-c4 初稿图 2](trajectories/v041/02-c4/rendered/stage0-2.png)
+![v041 02-c4 初稿图 2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v041/02-c4/rendered/stage0-2.png)
 
 </details>
 
@@ -415,39 +415,39 @@ flowchart LR
 
 ### v042 最终画面
 
-[最终原始回答](outputs/v042/02-c4.md) · [初稿](trajectories/v042/02-c4/stage0/answer.md) · [修订稿](trajectories/v042/02-c4/stage1/answer.md)
+[最终原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/outputs/v042/02-c4.md) · [初稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/02-c4/stage0/answer.md) · [修订稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/02-c4/stage1/answer.md)
 
-图 1 · `flowchart TB` · [SVG 放大](trajectories/v042/02-c4/rendered/stage1-1.svg)
+图 1 · `flowchart TB` · [SVG 放大](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/02-c4/rendered/stage1-1.svg)
 
-![v042 02-c4 最终图 1](trajectories/v042/02-c4/rendered/stage1-1.png)
+![v042 02-c4 最终图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/02-c4/rendered/stage1-1.png)
 
-图 2 · `flowchart LR` · [SVG 放大](trajectories/v042/02-c4/rendered/stage1-2.svg)
+图 2 · `flowchart LR` · [SVG 放大](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/02-c4/rendered/stage1-2.svg)
 
-![v042 02-c4 最终图 2](trajectories/v042/02-c4/rendered/stage1-2.png)
+![v042 02-c4 最终图 2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/02-c4/rendered/stage1-2.png)
 
-图 3 · `flowchart LR` · [SVG 放大](trajectories/v042/02-c4/rendered/stage1-3.svg)
+图 3 · `flowchart LR` · [SVG 放大](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/02-c4/rendered/stage1-3.svg)
 
-![v042 02-c4 最终图 3](trajectories/v042/02-c4/rendered/stage1-3.png)
+![v042 02-c4 最终图 3](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/02-c4/rendered/stage1-3.png)
 
-图 4 · `flowchart TB` · [SVG 放大](trajectories/v042/02-c4/rendered/stage1-4.svg)
+图 4 · `flowchart TB` · [SVG 放大](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/02-c4/rendered/stage1-4.svg)
 
-![v042 02-c4 最终图 4](trajectories/v042/02-c4/rendered/stage1-4.png)
+![v042 02-c4 最终图 4](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/02-c4/rendered/stage1-4.png)
 
-图 5 · `flowchart LR` · [SVG 放大](trajectories/v042/02-c4/rendered/stage1-5.svg)
+图 5 · `flowchart LR` · [SVG 放大](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/02-c4/rendered/stage1-5.svg)
 
-![v042 02-c4 最终图 5](trajectories/v042/02-c4/rendered/stage1-5.png)
+![v042 02-c4 最终图 5](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/02-c4/rendered/stage1-5.png)
 
 <details>
 <summary>v042 初稿实际图片（4 张）</summary>
 
 
-![v042 02-c4 初稿图 1](trajectories/v042/02-c4/rendered/stage0-1.png)
+![v042 02-c4 初稿图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/02-c4/rendered/stage0-1.png)
 
-![v042 02-c4 初稿图 2](trajectories/v042/02-c4/rendered/stage0-2.png)
+![v042 02-c4 初稿图 2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/02-c4/rendered/stage0-2.png)
 
-![v042 02-c4 初稿图 3](trajectories/v042/02-c4/rendered/stage0-3.png)
+![v042 02-c4 初稿图 3](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/02-c4/rendered/stage0-3.png)
 
-![v042 02-c4 初稿图 4](trajectories/v042/02-c4/rendered/stage0-4.png)
+![v042 02-c4 初稿图 4](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/trajectories/v042/02-c4/rendered/stage0-4.png)
 
 </details>
 

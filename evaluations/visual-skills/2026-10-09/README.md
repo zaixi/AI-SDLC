@@ -23,7 +23,7 @@ Chromium 拒绝访问 Mermaid CLI 自带的本地渲染页面：`ERR_BLOCKED_BY_
 
 对市场包重新抽取五个有效根文档示例及六份参考文档的首个 Mermaid 示例：**11/11 通过 Mermaid 12.1.0 语法解析**。通用 diagramType 占位示例不作为有效图测试。由于已确认浏览器管理策略阻塞，本次没有重复尝试视觉渲染。没有新增独立代理调用或盲测。
 
-快照、版本、逐文件对比和解析结果保存在 [confirmed-marketplace/](confirmed-marketplace/)。市场 README 和 skill-report.json 作为外部资料保存，其评分未用作本次独立测试证据。
+快照、版本、逐文件对比和解析结果保存在 [confirmed-marketplace/](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09/confirmed-marketplace)。市场 README 和 skill-report.json 作为外部资料保存，其评分未用作本次独立测试证据。
 
 ## 比较对象
 
@@ -35,7 +35,7 @@ Chromium 拒绝访问 Mermaid CLI 自带的本地渲染页面：`ERR_BLOCKED_BY_
 
 ## 题目和人工审阅
 
-完整题目：[cases/prompts.json](cases/prompts.json)。九份回答分别在 cases/ 下的三个目录。
+完整题目：[cases/prompts.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09/cases/prompts.json)。九份回答分别在 cases/ 下的三个目录。
 
 | 场景 | 要检查的关键问题 | 本次样例观察 |
 |---|---|---|
@@ -43,7 +43,7 @@ Chromium 拒绝访问 Mermaid CLI 自带的本地渲染页面：`ERR_BLOCKED_BY_
 | 队列架构与未知原因 | 能否将代码路径、ADR 约束和推断的理由分开 | 三份样例均没有把吞吐/隔离原因写成事实；visual-explanation 的来源与保存说明更显式，也更长 |
 | 缓存改动 | 是否选取足够简洁的表达，是否保留分支与失效步骤 | show-me/local 使用 diff，候选使用前后 flowchart；都覆盖逻辑。diff 更紧凑，但不能由一份人工样例推断运行时必然选择 |
 
-样例字数与视图类型：[cases/metrics.json](cases/metrics.json)。字数不是可读性得分，也不是 token 数。两题复杂样例中本地版本分别比 show-me 多 54、58 字符；这提示应避免重复交代默认保存策略和流程状态，但不证明本地版本总体冗长。
+样例字数与视图类型：[cases/metrics.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09/cases/metrics.json)。字数不是可读性得分，也不是 token 数。两题复杂样例中本地版本分别比 show-me 多 54、58 字符；这提示应避免重复交代默认保存策略和流程状态，但不证明本地版本总体冗长。
 
 ## 指引内容的差异（静态核对）
 

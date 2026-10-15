@@ -46,6 +46,6 @@ show-me时序题已经使用par、loop、alt、opt与嵌套分支，说明模型
 
 因此将mermaid-diagrams视为可查阅的图种/语法参考更符合当前证据；是否必须加载、何时收益明显仍未证明。本轮不改0.4.1的执行规则或继续追加样本，后续规则调整应单独说明，而不是把这次测试结果写成普遍保证。
 
-[评审原文](anonymous-review.json)、[来源映射](anonymous-map.json)、[指标与实际读取](metrics.json)、[协议](protocol.json)、[输入哈希](input-manifest.json)、[解析结果](syntax-results.json)保留在本目录。
+[评审原文](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-complex/anonymous-review.json)、[来源映射](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-complex/anonymous-map.json)、[指标与实际读取](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-complex/metrics.json)、[协议](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-complex/protocol.json)、[输入哈希](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-complex/input-manifest.json)、[解析结果](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-complex/syntax-results.json)保留在本目录。
 
 本轮只做两题，不继续追加样本或修改Skill；结论限于这六份输出，不以长度或图种数量判定普遍优劣。

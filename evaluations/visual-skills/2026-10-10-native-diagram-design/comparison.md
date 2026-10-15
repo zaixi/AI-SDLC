@@ -28,7 +28,7 @@
 
 ### show-me
 
-[最终原始回答](outputs/show-me/01-mixed.md) · [初稿](trajectories/show-me/01-mixed/stage0/answer.md) · [第一次修订](trajectories/show-me/01-mixed/stage1/answer.md) · [最终阶段](trajectories/show-me/01-mixed/stage2/answer.md)
+[最终原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/outputs/show-me/01-mixed.md) · [初稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/01-mixed/stage0/answer.md) · [第一次修订](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/01-mixed/stage1/answer.md) · [最终阶段](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/01-mixed/stage2/answer.md)
 
 **内容：** 一个产物的绑定约束、七种状态、取消守卫、逐批推进、失败停止且不回滚、结果去重、角色及禁自审均保留，组件图有六条已知关系。
 
@@ -38,26 +38,26 @@
 
 **检查闭环：** 最终图源码与模型已收到的 stage1 图片一致。
 
-![show-me 01-mixed 图 1](trajectories/show-me/01-mixed/rendered/stage1-1.png)
+![show-me 01-mixed 图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/01-mixed/rendered/stage1-1.png)
 
-[可编辑 Mermaid](trajectories/show-me/01-mixed/render-inputs/stage1-1.mmd) · [SVG](trajectories/show-me/01-mixed/rendered/stage1-1.svg)
+[可编辑 Mermaid](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/01-mixed/render-inputs/stage1-1.mmd) · [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/01-mixed/rendered/stage1-1.svg)
 
-![show-me 01-mixed 图 2](trajectories/show-me/01-mixed/rendered/stage1-2.png)
+![show-me 01-mixed 图 2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/01-mixed/rendered/stage1-2.png)
 
-[可编辑 Mermaid](trajectories/show-me/01-mixed/render-inputs/stage1-2.mmd) · [SVG](trajectories/show-me/01-mixed/rendered/stage1-2.svg)
+[可编辑 Mermaid](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/01-mixed/render-inputs/stage1-2.mmd) · [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/01-mixed/rendered/stage1-2.svg)
 
 <details>
 <summary>查看初稿实际画面</summary>
 
-![初稿 show-me](trajectories/show-me/01-mixed/rendered/stage0-1.png)
+![初稿 show-me](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/01-mixed/rendered/stage0-1.png)
 
-![初稿 show-me](trajectories/show-me/01-mixed/rendered/stage0-2.png)
+![初稿 show-me](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/01-mixed/rendered/stage0-2.png)
 
 </details>
 
 ### visual-explanation 0.4.2
 
-[最终原始回答](outputs/v042/01-mixed.md) · [初稿](trajectories/v042/01-mixed/stage0/answer.md) · [第一次修订](trajectories/v042/01-mixed/stage1/answer.md) · [最终阶段](trajectories/v042/01-mixed/stage2/answer.md)
+[最终原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/outputs/v042/01-mixed.md) · [初稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/01-mixed/stage0/answer.md) · [第一次修订](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/01-mixed/stage1/answer.md) · [最终阶段](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/01-mixed/stage2/answer.md)
 
 **内容：** 三张图与权限表、正文保留相同关键事实和六条组件关系，明确校验实现位置未知。
 
@@ -67,32 +67,32 @@
 
 **检查闭环：** 最后反馈后仍改了状态图、结果图；模型明确标为未看过的新稿，评审随后独立渲染并查看。
 
-![visual-explanation 0.4.2 01-mixed 图 1](trajectories/v042/01-mixed/rendered/stage2-1.png)
+![visual-explanation 0.4.2 01-mixed 图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/01-mixed/rendered/stage2-1.png)
 
-[可编辑 Mermaid](trajectories/v042/01-mixed/render-inputs/stage2-1.mmd) · [SVG](trajectories/v042/01-mixed/rendered/stage2-1.svg)
+[可编辑 Mermaid](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/01-mixed/render-inputs/stage2-1.mmd) · [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/01-mixed/rendered/stage2-1.svg)
 
-![visual-explanation 0.4.2 01-mixed 图 2](trajectories/v042/01-mixed/rendered/stage2-2.png)
+![visual-explanation 0.4.2 01-mixed 图 2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/01-mixed/rendered/stage2-2.png)
 
-[可编辑 Mermaid](trajectories/v042/01-mixed/render-inputs/stage2-2.mmd) · [SVG](trajectories/v042/01-mixed/rendered/stage2-2.svg)
+[可编辑 Mermaid](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/01-mixed/render-inputs/stage2-2.mmd) · [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/01-mixed/rendered/stage2-2.svg)
 
-![visual-explanation 0.4.2 01-mixed 图 3](trajectories/v042/01-mixed/rendered/stage2-3.png)
+![visual-explanation 0.4.2 01-mixed 图 3](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/01-mixed/rendered/stage2-3.png)
 
-[可编辑 Mermaid](trajectories/v042/01-mixed/render-inputs/stage2-3.mmd) · [SVG](trajectories/v042/01-mixed/rendered/stage2-3.svg)
+[可编辑 Mermaid](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/01-mixed/render-inputs/stage2-3.mmd) · [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/01-mixed/rendered/stage2-3.svg)
 
 <details>
 <summary>查看初稿实际画面</summary>
 
-![初稿 visual-explanation 0.4.2](trajectories/v042/01-mixed/rendered/stage0-1.png)
+![初稿 visual-explanation 0.4.2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/01-mixed/rendered/stage0-1.png)
 
-![初稿 visual-explanation 0.4.2](trajectories/v042/01-mixed/rendered/stage0-2.png)
+![初稿 visual-explanation 0.4.2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/01-mixed/rendered/stage0-2.png)
 
-![初稿 visual-explanation 0.4.2](trajectories/v042/01-mixed/rendered/stage0-3.png)
+![初稿 visual-explanation 0.4.2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/01-mixed/rendered/stage0-3.png)
 
 </details>
 
 ### diagram-design
 
-[最终原始回答](outputs/diagram-design/01-mixed.md) · [初稿](trajectories/diagram-design/01-mixed/stage0/answer.md) · [第一次修订](trajectories/diagram-design/01-mixed/stage1/answer.md) · [最终阶段](trajectories/diagram-design/01-mixed/stage2/answer.md)
+[最终原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/outputs/diagram-design/01-mixed.md) · [初稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/01-mixed/stage0/answer.md) · [第一次修订](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/01-mixed/stage1/answer.md) · [最终阶段](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/01-mixed/stage2/answer.md)
 
 **内容：** 三个 SVG、正文及权限表保留同样的关键事实、六条组件关系和七种状态，逐批推进、失败与去重均说明。
 
@@ -104,24 +104,24 @@
 
 **检查器限制：** 检查脚本没有分隔独立 SVG 的坐标空间，详见 geometry-scope-review.json。
 
-![diagram-design 01-mixed 图 1](trajectories/diagram-design/01-mixed/rendered/stage1-1-svg1.png)
+![diagram-design 01-mixed 图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/01-mixed/rendered/stage1-1-svg1.png)
 
-![diagram-design 01-mixed 图 2](trajectories/diagram-design/01-mixed/rendered/stage1-1-svg2.png)
+![diagram-design 01-mixed 图 2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/01-mixed/rendered/stage1-1-svg2.png)
 
-![diagram-design 01-mixed 图 3](trajectories/diagram-design/01-mixed/rendered/stage1-1-svg3.png)
+![diagram-design 01-mixed 图 3](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/01-mixed/rendered/stage1-1-svg3.png)
 
-[可编辑 HTML](trajectories/diagram-design/01-mixed/render-inputs/stage1-1.html) · [完整桌面页](trajectories/diagram-design/01-mixed/rendered/stage1-1-desktop.png) · [移动截图](trajectories/diagram-design/01-mixed/rendered/stage1-1-mobile.png)
+[可编辑 HTML](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/01-mixed/render-inputs/stage1-1.html) · [完整桌面页](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/01-mixed/rendered/stage1-1-desktop.png) · [移动截图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/01-mixed/rendered/stage1-1-mobile.png)
 
 GitHub 不直接执行 HTML；下载 HTML 后用浏览器打开即可查看原生页面。
 
 <details>
 <summary>查看初稿实际画面</summary>
 
-![初稿 diagram-design](trajectories/diagram-design/01-mixed/rendered/stage0-1-svg1.png)
+![初稿 diagram-design](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/01-mixed/rendered/stage0-1-svg1.png)
 
-![初稿 diagram-design](trajectories/diagram-design/01-mixed/rendered/stage0-1-svg2.png)
+![初稿 diagram-design](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/01-mixed/rendered/stage0-1-svg2.png)
 
-![初稿 diagram-design](trajectories/diagram-design/01-mixed/rendered/stage0-1-svg3.png)
+![初稿 diagram-design](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/01-mixed/rendered/stage0-1-svg3.png)
 
 </details>
 
@@ -131,7 +131,7 @@ GitHub 不直接执行 HTML；下载 HTML 后用浏览器打开即可查看原�
 
 ### show-me
 
-[最终原始回答](outputs/show-me/02-c4.md) · [初稿](trajectories/show-me/02-c4/stage0/answer.md) · [第一次修订](trajectories/show-me/02-c4/stage1/answer.md) · [最终阶段](trajectories/show-me/02-c4/stage2/answer.md)
+[最终原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/outputs/show-me/02-c4.md) · [初稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/stage0/answer.md) · [第一次修订](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/stage1/answer.md) · [最终阶段](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/stage2/answer.md)
 
 **内容：** 12 个内部运行单元、17 对容器/外部系统通信端点、支持工程师→管理门户，以及 6 条上下文关系保留。付款申请与结果消费采用两条标签不同的同端点连线。三个独立 DB、独立 API、查询只读均保留。
 
@@ -141,34 +141,34 @@ GitHub 不直接执行 HTML；下载 HTML 后用浏览器打开即可查看原�
 
 **检查闭环：** 最终图源码与反馈 stage1 相同；生成器已看过，但仍未修掉边界标题与入线重合。Mermaid 语法和实际渲染通过不等于布局无瑕疵。
 
-![show-me 02-c4 图 1](trajectories/show-me/02-c4/rendered/stage1-1.png)
+![show-me 02-c4 图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/rendered/stage1-1.png)
 
-[可编辑 Mermaid](trajectories/show-me/02-c4/render-inputs/stage1-1.mmd) · [SVG](trajectories/show-me/02-c4/rendered/stage1-1.svg)
+[可编辑 Mermaid](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/render-inputs/stage1-1.mmd) · [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/rendered/stage1-1.svg)
 
-![show-me 02-c4 图 2](trajectories/show-me/02-c4/rendered/stage1-2.png)
+![show-me 02-c4 图 2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/rendered/stage1-2.png)
 
-[可编辑 Mermaid](trajectories/show-me/02-c4/render-inputs/stage1-2.mmd) · [SVG](trajectories/show-me/02-c4/rendered/stage1-2.svg)
+[可编辑 Mermaid](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/render-inputs/stage1-2.mmd) · [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/rendered/stage1-2.svg)
 
-![show-me 02-c4 图 3](trajectories/show-me/02-c4/rendered/stage1-3.png)
+![show-me 02-c4 图 3](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/rendered/stage1-3.png)
 
-[可编辑 Mermaid](trajectories/show-me/02-c4/render-inputs/stage1-3.mmd) · [SVG](trajectories/show-me/02-c4/rendered/stage1-3.svg)
+[可编辑 Mermaid](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/render-inputs/stage1-3.mmd) · [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/rendered/stage1-3.svg)
 
-![show-me 02-c4 图 4](trajectories/show-me/02-c4/rendered/stage1-4.png)
+![show-me 02-c4 图 4](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/rendered/stage1-4.png)
 
-[可编辑 Mermaid](trajectories/show-me/02-c4/render-inputs/stage1-4.mmd) · [SVG](trajectories/show-me/02-c4/rendered/stage1-4.svg)
+[可编辑 Mermaid](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/render-inputs/stage1-4.mmd) · [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/rendered/stage1-4.svg)
 
 <details>
 <summary>查看初稿实际画面</summary>
 
-![初稿 show-me](trajectories/show-me/02-c4/rendered/stage0-1.png)
+![初稿 show-me](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/rendered/stage0-1.png)
 
-![初稿 show-me](trajectories/show-me/02-c4/rendered/stage0-2.png)
+![初稿 show-me](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/show-me/02-c4/rendered/stage0-2.png)
 
 </details>
 
 ### visual-explanation 0.4.2
 
-[最终原始回答](outputs/v042/02-c4.md) · [初稿](trajectories/v042/02-c4/stage0/answer.md) · [第一次修订](trajectories/v042/02-c4/stage1/answer.md) · [最终阶段](trajectories/v042/02-c4/stage2/answer.md)
+[最终原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/outputs/v042/02-c4.md) · [初稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/02-c4/stage0/answer.md) · [第一次修订](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/02-c4/stage1/answer.md) · [最终阶段](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/02-c4/stage2/answer.md)
 
 **内容：** 12 个内部运行单元、17 对容器/外部系统通信端点、支持工程师→管理门户，以及 6 条上下文关系均保留。三个数据库实例独立，两种 API 独立部署，查询只读。
 
@@ -178,30 +178,30 @@ GitHub 不直接执行 HTML；下载 HTML 后用浏览器打开即可查看原�
 
 **检查闭环：** 最终仅修改 HTML 验证说明，SVG 和 CSS 与已反馈 stage1 一致；驱动因 HTML 文档变动再次渲染。模型的“图源码不变”说法成立。自检通过；几何脚本未识别 CSS 箭头，不能视为连线检查通过。
 
-![visual-explanation 0.4.2 02-c4 图 1](trajectories/v042/02-c4/rendered/stage2-1-svg1.png)
+![visual-explanation 0.4.2 02-c4 图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/02-c4/rendered/stage2-1-svg1.png)
 
-![visual-explanation 0.4.2 02-c4 图 2](trajectories/v042/02-c4/rendered/stage2-1-svg2.png)
+![visual-explanation 0.4.2 02-c4 图 2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/02-c4/rendered/stage2-1-svg2.png)
 
-![visual-explanation 0.4.2 02-c4 图 3](trajectories/v042/02-c4/rendered/stage2-1-svg3.png)
+![visual-explanation 0.4.2 02-c4 图 3](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/02-c4/rendered/stage2-1-svg3.png)
 
-[可编辑 HTML](trajectories/v042/02-c4/render-inputs/stage2-1.html) · [完整桌面页](trajectories/v042/02-c4/rendered/stage2-1-desktop.png) · [移动截图](trajectories/v042/02-c4/rendered/stage2-1-mobile.png)
+[可编辑 HTML](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/02-c4/render-inputs/stage2-1.html) · [完整桌面页](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/02-c4/rendered/stage2-1-desktop.png) · [移动截图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/02-c4/rendered/stage2-1-mobile.png)
 
 GitHub 不直接执行 HTML；下载 HTML 后用浏览器打开即可查看原生页面。
 
 <details>
 <summary>查看初稿实际画面</summary>
 
-![初稿 visual-explanation 0.4.2](trajectories/v042/02-c4/rendered/stage0-1-svg1.png)
+![初稿 visual-explanation 0.4.2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/02-c4/rendered/stage0-1-svg1.png)
 
-![初稿 visual-explanation 0.4.2](trajectories/v042/02-c4/rendered/stage0-1-svg2.png)
+![初稿 visual-explanation 0.4.2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/02-c4/rendered/stage0-1-svg2.png)
 
-![初稿 visual-explanation 0.4.2](trajectories/v042/02-c4/rendered/stage0-1-svg3.png)
+![初稿 visual-explanation 0.4.2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/v042/02-c4/rendered/stage0-1-svg3.png)
 
 </details>
 
 ### diagram-design
 
-[最终原始回答](outputs/diagram-design/02-c4.md) · [初稿](trajectories/diagram-design/02-c4/stage0/answer.md) · [第一次修订](trajectories/diagram-design/02-c4/stage1/answer.md) · [最终阶段](trajectories/diagram-design/02-c4/stage2/answer.md)
+[最终原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/outputs/diagram-design/02-c4.md) · [初稿](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/02-c4/stage0/answer.md) · [第一次修订](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/02-c4/stage1/answer.md) · [最终阶段](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/02-c4/stage2/answer.md)
 
 **内容：** 12 个内部运行单元、17 对容器/外部系统通信端点及支持工程师→管理门户的访问均保留；上下文有 6 条人员/系统关系。Kafka→付款处理器在申请/结果两个分视图重复，是同一端点关系。采购员在上下文出现，Web 节点注明采购员使用；题目没有单独明确采购员直达 Web 的访问关系，因此不把这条补充标注列作必需通信。三个独立数据库实例、两个独立 API 进程、查询只读均保留。
 
@@ -211,35 +211,35 @@ GitHub 不直接执行 HTML；下载 HTML 后用浏览器打开即可查看原�
 
 **检查闭环：** 最终 SVG 与 stage1 已反馈图片一致，浏览器、自检及几何脚本返回通过；修订后脚本识别到 19 条含图例的箭头。初稿用 CSS 箭头时识别数为零，穿节点问题未检出，因此初稿的脚本通过不算连线验证。
 
-![diagram-design 02-c4 图 1](trajectories/diagram-design/02-c4/rendered/stage1-1-svg1.png)
+![diagram-design 02-c4 图 1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/02-c4/rendered/stage1-1-svg1.png)
 
-![diagram-design 02-c4 图 2](trajectories/diagram-design/02-c4/rendered/stage1-1-svg2.png)
+![diagram-design 02-c4 图 2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/02-c4/rendered/stage1-1-svg2.png)
 
-![diagram-design 02-c4 图 3](trajectories/diagram-design/02-c4/rendered/stage1-1-svg3.png)
+![diagram-design 02-c4 图 3](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/02-c4/rendered/stage1-1-svg3.png)
 
-![diagram-design 02-c4 图 4](trajectories/diagram-design/02-c4/rendered/stage1-1-svg4.png)
+![diagram-design 02-c4 图 4](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/02-c4/rendered/stage1-1-svg4.png)
 
-[可编辑 HTML](trajectories/diagram-design/02-c4/render-inputs/stage1-1.html) · [完整桌面页](trajectories/diagram-design/02-c4/rendered/stage1-1-desktop.png) · [移动截图](trajectories/diagram-design/02-c4/rendered/stage1-1-mobile.png)
+[可编辑 HTML](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/02-c4/render-inputs/stage1-1.html) · [完整桌面页](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/02-c4/rendered/stage1-1-desktop.png) · [移动截图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/02-c4/rendered/stage1-1-mobile.png)
 
 GitHub 不直接执行 HTML；下载 HTML 后用浏览器打开即可查看原生页面。
 
 <details>
 <summary>查看初稿实际画面</summary>
 
-![初稿 diagram-design](trajectories/diagram-design/02-c4/rendered/stage0-1-svg1.png)
+![初稿 diagram-design](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/02-c4/rendered/stage0-1-svg1.png)
 
-![初稿 diagram-design](trajectories/diagram-design/02-c4/rendered/stage0-1-svg2.png)
+![初稿 diagram-design](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/02-c4/rendered/stage0-1-svg2.png)
 
-![初稿 diagram-design](trajectories/diagram-design/02-c4/rendered/stage0-1-svg3.png)
+![初稿 diagram-design](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/02-c4/rendered/stage0-1-svg3.png)
 
-![初稿 diagram-design](trajectories/diagram-design/02-c4/rendered/stage0-1-svg4.png)
+![初稿 diagram-design](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/trajectories/diagram-design/02-c4/rendered/stage0-1-svg4.png)
 
 </details>
 
 ## 证据与限制
 
-六条轨迹独立容器、独立会话、无其他组输出挂载；各阶段实际模型与源码哈希见 [runs.json](runs.json)。生成不调用工具，渲染由控制器完成，不测客户端自动加载。每题每组一个样本，主 Agent 知道组别后评审；不能据此宣布普遍排名。
+六条轨迹独立容器、独立会话、无其他组输出挂载；各阶段实际模型与源码哈希见 [runs.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/runs.json)。生成不调用工具，渲染由控制器完成，不测客户端自动加载。每题每组一个样本，主 Agent 知道组别后评审；不能据此宣布普遍排名。
 
-[内容评审](content-review.json) · [用量与修订规模](metrics.json) · [Mermaid 语法检查](syntax-results.json) · [输入及输出完整性](integrity-results.json) · [跨 SVG 几何误报复核](geometry-scope-review.json)
+[内容评审](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/content-review.json) · [用量与修订规模](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/metrics.json) · [Mermaid 语法检查](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/syntax-results.json) · [输入及输出完整性](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/integrity-results.json) · [跨 SVG 几何误报复核](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/geometry-scope-review.json)
 
 首次启动因命令行单参数长度失败，发生在模型调用前；恢复使用标准输入，已完成的样本没有重跑。原始驱动、恢复驱动和失败记录保留。

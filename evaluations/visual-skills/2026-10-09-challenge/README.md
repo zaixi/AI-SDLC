@@ -8,7 +8,7 @@
 
 第二题要求 C4 体系的业务与工程两个层级，但不强制使用 Mermaid 的 C4 专用语法。包含三个组织、十二个内部运行单元、三套独立数据库、十九条容器级关系，以及外部订单、交付、付款和回调路径。需要同时保留边界与通信方向，不展开外部系统内部结构。
 
-题目和核对要求在生成前写入源目录；原文见 [prompts.json](inputs/prompts.json) 和 [rubric.json](rubric.json)。这些仍是合成案例，不代表真实项目设计已被验证。
+题目和核对要求在生成前写入源目录；原文见 [prompts.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/inputs/prompts.json) 和 [rubric.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rubric.json)。这些仍是合成案例，不代表真实项目设计已被验证。
 
 ## 输出区别
 
@@ -32,7 +32,7 @@ show-me 的 C4 容器图在本次渲染中更紧凑，关系较容易追踪，�
 
 PNG 最长边统一限制为 1600 像素，长图在预览中会缩小；SVG 可以放大。字号大小会受预览比例影响，节点穿线和标签重叠在 SVG 中仍可观察。结论针对本次源码与 Mermaid 12.1.0 渲染，不推断所有 C4 渲染器都如此。
 
-内容及布局核对由主 Agent 完成，来源标签可见，**不是独立盲评或读者研究**。见 [content-review.json](content-review.json)。六份回答、14 张 PNG 和 14 张 SVG 全部保留；没有手工改图后替换原结果。
+内容及布局核对由主 Agent 完成，来源标签可见，**不是独立盲评或读者研究**。见 [content-review.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/content-review.json)。六份回答、14 张 PNG 和 14 张 SVG 全部保留；没有手工改图后替换原结果。
 
 ## 对几个 Skill 的判断
 
@@ -50,14 +50,14 @@ PNG 最长边统一限制为 1600 像素，长图在预览中会缩小；SVG 可
 
 本轮统一采用文本交付，没有测试 show-me 的 HTML 文件与打开分支，也没有把渲染结果回传给生成器改稿。它是六份首次回答的比较，不是完整工具能力或迭代交付能力的比较。
 
-完整 [模型输入](model-inputs/)、[输入哈希](input-manifest.json)、[运行记录](runs.json)、[指标](metrics.json)、[协议](protocol.json)与 [CLI 记录](traces/)保留。模型调用使用网络代理，文件隔离不等于网络出口隔离。
+完整 [模型输入](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/model-inputs)、[输入哈希](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/input-manifest.json)、[运行记录](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/runs.json)、[指标](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/metrics.json)、[协议](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/protocol.json)与 [CLI 记录](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/traces)保留。模型调用使用网络代理，文件隔离不等于网络出口隔离。
 
 ## 渲染环境与失败记录
 
 渲染在单独 Docker 容器内进行，不挂载生成器的认证卷。网络关闭、普通用户、capabilities 全部移除、`no-new-privileges`、只读根文件系统与输入，仅输出目录和临时目录可写。Chromium 使用与上游 CLI 容器相同的 Puppeteer 无内部沙箱配置，由外层 Docker 限制文件和网络访问；没有放宽生成器的 CLI 沙箱。
 
-最初上游多层镜像在 Docker VFS 驱动下耗尽根磁盘；通过标准 Docker 接口清理本任务未使用镜像后恢复。暂时清空派生输入的方案被自动审批拒绝，未执行，仓库输入和原始回答未改。该失败见 [render-attempt-01.json](render-attempt-01.json)。第二次使用过时的 `-w` 参数，CLI 12.0.0 返回 unknown option；见 [render-attempt-02.json](render-attempt-02.json)。这些是环境/驱动问题，不计作 Skill 语法错误。
+最初上游多层镜像在 Docker VFS 驱动下耗尽根磁盘；通过标准 Docker 接口清理本任务未使用镜像后恢复。暂时清空派生输入的方案被自动审批拒绝，未执行，仓库输入和原始回答未改。该失败见 [render-attempt-01.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/render-attempt-01.json)。第二次使用过时的 `-w` 参数，CLI 12.0.0 返回 unknown option；见 [render-attempt-02.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/render-attempt-02.json)。这些是环境/驱动问题，不计作 Skill 语法错误。
 
-修正后使用单个依赖安装层的 Chromium 镜像、Noto CJK 字体和 npm Mermaid CLI 12.0.0，Mermaid 实际版本为 12.1.0。图片均从原回答提取的源码生成，最终 [render-results.json](render-results.json) 记录 14/14 SVG、14/14 PNG 成功；[syntax-results.json](syntax-results.json) 单独记录解析。
+修正后使用单个依赖安装层的 Chromium 镜像、Noto CJK 字体和 npm Mermaid CLI 12.0.0，Mermaid 实际版本为 12.1.0。图片均从原回答提取的源码生成，最终 [render-results.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/render-results.json) 记录 14/14 SVG、14/14 PNG 成功；[syntax-results.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/syntax-results.json) 单独记录解析。
 
-可复核脚本和依赖锁文件位于 [scripts](scripts/)。渲染驱动保留本次实际路径，工具目录可按锁文件使用 `npm ci --ignore-scripts` 重建，镜像由 render.Dockerfile 构建；图片失败记录与原始生成记录均未静默替换。不要再次拉取本轮已导致满盘的多层镜像作为默认方案。
+可复核脚本和依赖锁文件位于 [scripts](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/scripts)。渲染驱动保留本次实际路径，工具目录可按锁文件使用 `npm ci --ignore-scripts` 重建，镜像由 render.Dockerfile 构建；图片失败记录与原始生成记录均未静默替换。不要再次拉取本轮已导致满盘的多层镜像作为默认方案。

@@ -1,6 +1,6 @@
 # 增补三例：visual-explanation_2 与 0.4.2
 
-[实际画面对照](comparison.md) · [协议](protocol.json) · [原始运行记录](runs.json) · [前两例比较](../2026-10-14-v2-v042/comparison.md)
+[实际画面对照](comparison.md) · [协议](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-15-v2-expanded/protocol.json) · [原始运行记录](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-15-v2-expanded/runs.json) · [前两例比较](../2026-10-14-v2-v042/comparison.md)
 
 固定仓库提交 `be90ca2390a34d8246318f77de6c0479bd746e18`。两组 Skill 与上一轮完全相同；本轮只增加案例，不更改规则、不复用旧回答。每版三题、每题一个独立容器/会话，共六条新轨迹；每条初稿后两次同等真实桌面图片反馈，三阶段不当作三个独立样本。
 

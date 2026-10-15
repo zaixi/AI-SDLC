@@ -189,13 +189,13 @@ C4Context
 
 For comprehensive syntax and advanced features, see:
 
-- **[SKILL.md](SKILL.md)** - Quick start guide and diagram selection
-- **[references/class-diagrams.md](references/class-diagrams.md)** - Relationships, multiplicity, methods
-- **[references/sequence-diagrams.md](references/sequence-diagrams.md)** - Messages, activations, loops, alt blocks
-- **[references/flowcharts.md](references/flowcharts.md)** - Node shapes, decision logic, subgraphs
-- **[references/erd-diagrams.md](references/erd-diagrams.md)** - Cardinality, keys, attributes
-- **[references/c4-diagrams.md](references/c4-diagrams.md)** - Context, container, component levels
-- **[references/advanced-features.md](references/advanced-features.md)** - Themes, styling, configuration
+- **[SKILL.md](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/inputs/mermaid-diagrams/SKILL.md)** - Quick start guide and diagram selection
+- **[references/class-diagrams.md](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/inputs/mermaid-diagrams/references/class-diagrams.md)** - Relationships, multiplicity, methods
+- **[references/sequence-diagrams.md](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/inputs/mermaid-diagrams/references/sequence-diagrams.md)** - Messages, activations, loops, alt blocks
+- **[references/flowcharts.md](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/inputs/mermaid-diagrams/references/flowcharts.md)** - Node shapes, decision logic, subgraphs
+- **[references/erd-diagrams.md](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/inputs/mermaid-diagrams/references/erd-diagrams.md)** - Cardinality, keys, attributes
+- **[references/c4-diagrams.md](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/inputs/mermaid-diagrams/references/c4-diagrams.md)** - Context, container, component levels
+- **[references/advanced-features.md](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/inputs/mermaid-diagrams/references/advanced-features.md)** - Themes, styling, configuration
 
 ## Best Practices
 

@@ -2,9 +2,9 @@
 
 图优先的工程解释 Skill。可由支持标准 Skills 的代理按任务匹配加载，也可供其他流程使用；未设置仅允许用户手动触发的标志。
 
-核心文件是 [SKILL.md](SKILL.md)。它保持工具无关，保留 show-me 的完整表达主体，按问题选择 Mermaid、调用树、伪代码、diff、SVG 或 HTML。生成代码事实视图与保存设计意图分别处理。
+核心文件是 [SKILL.md](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/inputs/visual-v032-candidate/SKILL.md)。它保持工具无关，保留 show-me 的完整表达主体，按问题选择 Mermaid、调用树、伪代码、diff、SVG 或 HTML。生成代码事实视图与保存设计意图分别处理。
 
-整个工程过程中按需读取 [工程视图指引](references/design-views.md)，覆盖需求、理解、设计、实现、调试、验证、评审、交接及运行讨论。按当前问题展开必要细节；概要/详细设计只是示例，不是能力边界。
+整个工程过程中按需读取 [工程视图指引](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/inputs/visual-v032-candidate/references/design-views.md)，覆盖需求、理解、设计、实现、调试、验证、评审、交接及运行讨论。按当前问题展开必要细节；概要/详细设计只是示例，不是能力边界。
 
 ## 接入原则
 
@@ -15,13 +15,13 @@
 
 ## 当前边界
 
-本目录是 **0.3.2-candidate 合并稿**，尚未做独立生成回归，不作为已验证的升级推荐。目前优先使用 [0.3.0 完整快照](../../evaluations/visual-skills/2026-10-09-v030/inputs/v030/)作为基线；安装时复制整个快照目录并保留 references。推荐仅基于已有小样本观察，不代表稳定性或客户端兼容性已证明。
+本目录是 **0.3.2-candidate 合并稿**，尚未做独立生成回归，不作为已验证的升级推荐。目前优先使用 [0.3.0 完整快照](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/evaluations/visual-skills/2026-10-09-v030/inputs/v030)作为基线；安装时复制整个快照目录并保留 references。推荐仅基于已有小样本观察，不代表稳定性或客户端兼容性已证明。
 
 各版本均没有在 Codex、Claude、OpenCode、Zed 或 Qoder 中完成安装及调用测试。Mermaid 示例未执行渲染验证。
 
-复用 [Humanlayer Show Me 固定提交](https://github.com/humanlayer/skills/blob/ca7c8088db69e315a8b2deea43820270457f8f3c/plugins/show-me/skills/show-me/SKILL.md)的完整正文。保存 [上游原文件](references/show-me.upstream.md)与 [MIT 许可证](LICENSE)。原文件含仅用户触发的标志；本 Skill 的入口元数据不含该标志，以允许模型匹配。
+复用 [Humanlayer Show Me 固定提交](https://github.com/humanlayer/skills/blob/ca7c8088db69e315a8b2deea43820270457f8f3c/plugins/show-me/skills/show-me/SKILL.md)的完整正文。保存 [上游原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/inputs/visual-v032-candidate/references/show-me.upstream.md)与 [MIT 许可证](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/inputs/visual-v032-candidate/LICENSE)。原文件含仅用户触发的标志；本 Skill 的入口元数据不含该标志，以允许模型匹配。
 
-未将 `mermaid-diagrams` 或 `architecture-report` 包复制为本 Skill 的依赖。已核对用户指定的 [mermaid-diagrams 来源与测试快照](../../evaluations/visual-skills/2026-10-09-isolated/README.md)；客户端兼容性及自动委托仍未验证，`architecture-report` 的具体来源仍待核对。现有内容可直接生成设计图，不依赖安装这些包。
+未将 `mermaid-diagrams` 或 `architecture-report` 包复制为本 Skill 的依赖。已核对用户指定的 [mermaid-diagrams 来源与测试快照](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/evaluations/visual-skills/2026-10-09-isolated/README.md)；客户端兼容性及自动委托仍未验证，`architecture-report` 的具体来源仍待核对。现有内容可直接生成设计图，不依赖安装这些包。
 
 ## 更新方式
 
@@ -29,7 +29,7 @@
 
 ## 0.3.0：关系与未知项
 
-模块职责不自动生成调用链；先核对已有机制，再将未知项分为待核实、待验证、待决策和建议。优先复用现有决定，合并关键缺口，避免图变成大量问号。详见 [规则](references/uncertainty.md)。diff 和文本视图不附渲染提示，默认保存策略不反复说明。
+模块职责不自动生成调用链；先核对已有机制，再将未知项分为待核实、待验证、待决策和建议。优先复用现有决定，合并关键缺口，避免图变成大量问号。详见 [规则](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/inputs/visual-v032-candidate/references/uncertainty.md)。diff 和文本视图不附渲染提示，默认保存策略不反复说明。
 
 ## 0.3.1：图承载关键判断
 
@@ -37,7 +37,7 @@
 
 按当前问题和证据选择视图。图不只罗列模块：把关键风险、验证缺口或下一步放进图中或紧邻批注；必要正文解释原因和依据，避免重复逐项读图。没有调用关系依据时，仍不补造运行时架构。
 
-[两题独立回归与原始输出](../../evaluations/visual-skills/2026-10-09-v031/README.md)显示图内信息更充分，也暴露了正文误写状态所有权的问题。因此增加图文主体、行为与所有权核对；这条回归后补充的规则尚未做独立生成复测。四张图通过语法解析，实际布局和阅读负担未验证。
+[两题独立回归与原始输出](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/evaluations/visual-skills/2026-10-09-v031/README.md)显示图内信息更充分，也暴露了正文误写状态所有权的问题。因此增加图文主体、行为与所有权核对；这条回归后补充的规则尚未做独立生成复测。四张图通过语法解析，实际布局和阅读负担未验证。
 
 ## 0.3.2 候选：以 0.3.0 为骨架合并
 
@@ -46,4 +46,4 @@
 - 不默认附加核实/验证流程图，用户关注下一步时才按需选择。
 - 图文主体、行为与所有权按依据核对；正文不逐项复述图。
 
-本次调整的是规则，未生成新的独立 A/B 输出。已核对上游正文保持不变、0.3.0 的第 2/4 条及调用绘图能力段保持不变。它是否更准确或更易读仍待独立生成与真实任务验证。[查看人工编写的表达示例与验证边界](refinement.md)。
+本次调整的是规则，未生成新的独立 A/B 输出。已核对上游正文保持不变、0.3.0 的第 2/4 条及调用绘图能力段保持不变。它是否更准确或更易读仍待独立生成与真实任务验证。[查看人工编写的表达示例与验证边界](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/inputs/visual-v032-candidate/refinement.md)。

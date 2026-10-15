@@ -33,4 +33,4 @@
 
 这是针对已知问题的两题回归，不是泛化、稳定性或用户阅读效果证明。未改写原始回答，也未把人工修正版纳入结果。
 
-来源隐藏评审见[anonymous-review.json](anonymous-review.json)，来源映射见[anonymous-map.json](anonymous-map.json)；协议、输入哈希、输出指标和语法结果分别见protocol.json、input-manifest.json、metrics.json、syntax-results.json。SHA256SUMS覆盖本轮资料。
+来源隐藏评审见[anonymous-review.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v033/anonymous-review.json)，来源映射见[anonymous-map.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v033/anonymous-map.json)；协议、输入哈希、输出指标和语法结果分别见protocol.json、input-manifest.json、metrics.json、syntax-results.json。SHA256SUMS覆盖本轮资料。

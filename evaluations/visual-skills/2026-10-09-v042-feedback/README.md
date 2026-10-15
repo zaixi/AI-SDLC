@@ -4,7 +4,7 @@
 
 本轮每版两题、每题一条独立轨迹，共四条。每条保留初稿、第一次反馈后的修订稿、第二次反馈后的最终稿；三阶段属于同一条轨迹，不计为三次独立样本。
 
-[实际画面与原文对照](comparison.md) · [协议](protocol.json) · [输入哈希](input-manifest.json) · [运行记录](runs.json) · [人工内容评审](content-review.json)
+[实际画面与原文对照](comparison.md) · [协议](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/protocol.json) · [输入哈希](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/input-manifest.json) · [运行记录](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/runs.json) · [人工内容评审](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v042-feedback/content-review.json)
 
 ## 如何比较
 

@@ -1,8 +1,0 @@
-%%{init: {"theme":"neutral","fontFamily":"system-ui, sans-serif","flowchart":{"curve":"linear"}}}%%
-flowchart TB
-    R["处理中"] -->|"OCR 成功：文本已保存"| I["待索引"]
-    R -->|"OCR 失败：OCR 工作者改状态"| F["失败"]
-    I -->|"索引成功：索引工作者改状态"| C["已完成"]
-    I -->|"索引失败：保持状态<br/>只重试索引，保留文本"| I
-    C -->|"邮件失败：保持状态<br/>通知器只重试邮件"| C
-    F -.->|"需要人工重新排队<br/>入口未确定"| P["待处理"]

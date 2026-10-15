@@ -8,7 +8,7 @@ Worker A 领取任务，租约为30秒。A在第35秒提交，期间Worker B在�
 
 ### show-me
 
-[原文件](outputs/show-me/01-lease.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/show-me/01-lease.md)
 
 ```mermaid
 sequenceDiagram
@@ -30,7 +30,7 @@ sequenceDiagram
 
 ### visual-explanation
 
-[原文件](outputs/visual-explanation/01-lease.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/visual-explanation/01-lease.md)
 
 ```mermaid
 sequenceDiagram
@@ -57,7 +57,7 @@ sequenceDiagram
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/01-lease.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/mermaid-diagrams/01-lease.md)
 
 “任务只执行一次”不能成立：租约只约束平台接受结果，不能保证执行和外部副作用只发生一次。
 
@@ -86,7 +86,7 @@ A 的提交被拒绝不等于其外部写入被撤销或阻止；没有幂等或
 
 ### show-me
 
-[原文件](outputs/show-me/02-intent.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/show-me/02-intent.md)
 
 ```mermaid
 flowchart LR
@@ -102,7 +102,7 @@ flowchart LR
 
 ### visual-explanation
 
-[原文件](outputs/visual-explanation/02-intent.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/visual-explanation/02-intent.md)
 
 ```mermaid
 flowchart LR
@@ -130,7 +130,7 @@ flowchart LR
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/02-intent.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/mermaid-diagrams/02-intent.md)
 
 已知职责边界如下：
 
@@ -161,7 +161,7 @@ flowchart LR
 
 ### show-me
 
-[原文件](outputs/show-me/03-diff.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/show-me/03-diff.md)
 
 ```diff
  on(save)
@@ -177,7 +177,7 @@ flowchart LR
 
 ### visual-explanation
 
-[原文件](outputs/visual-explanation/03-diff.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/visual-explanation/03-diff.md)
 
 ```diff
  on(save)
@@ -194,7 +194,7 @@ flowchart LR
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/03-diff.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/mermaid-diagrams/03-diff.md)
 
 改动是为 `save` 增加“内容是否变化”的判断：
 
@@ -220,7 +220,7 @@ flowchart TD
 
 ### show-me
 
-[原文件](outputs/show-me/04-state.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/show-me/04-state.md)
 
 ```mermaid
 stateDiagram-v2
@@ -240,7 +240,7 @@ succeeded能否重试未规定，因此不画重试边；running→failed是按�
 
 ### visual-explanation
 
-[原文件](outputs/visual-explanation/04-state.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/visual-explanation/04-state.md)
 
 ```mermaid
 stateDiagram-v2
@@ -263,7 +263,7 @@ stateDiagram-v2
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/04-state.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/mermaid-diagrams/04-state.md)
 
 ```mermaid
 stateDiagram-v2
@@ -289,7 +289,7 @@ stateDiagram-v2
 
 ### show-me
 
-[原文件](outputs/show-me/05-scope.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/show-me/05-scope.md)
 
 ```mermaid
 flowchart TB
@@ -320,7 +320,7 @@ flowchart TB
 
 ### visual-explanation
 
-[原文件](outputs/visual-explanation/05-scope.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/visual-explanation/05-scope.md)
 
 ```mermaid
 flowchart TB
@@ -348,7 +348,7 @@ flowchart TB
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/05-scope.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-isolated/outputs/mermaid-diagrams/05-scope.md)
 
 图中节点写明已知职责；虚线表示待评审的影响关联，不表示已确认的调用链。
 

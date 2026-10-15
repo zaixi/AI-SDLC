@@ -8,7 +8,7 @@ Worker A 领取任务，租约为30秒。A在第35秒提交，期间Worker B在�
 
 ### show-me
 
-[原文件](outputs/show-me/01-lease.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/01-lease.md)
 
 ```mermaid
 sequenceDiagram
@@ -29,7 +29,7 @@ sequenceDiagram
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/01-lease.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/mermaid-diagrams/01-lease.md)
 
 ```mermaid
 sequenceDiagram
@@ -52,7 +52,7 @@ sequenceDiagram
 
 ### visual-v030
 
-[原文件](outputs/visual-v030/01-lease.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v030/01-lease.md)
 
 ```mermaid
 sequenceDiagram
@@ -76,7 +76,7 @@ sequenceDiagram
 
 ### visual-v031
 
-[原文件](outputs/visual-v031/01-lease.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/01-lease.md)
 
 ```mermaid
 sequenceDiagram
@@ -99,7 +99,7 @@ sequenceDiagram
 
 ### visual-v032-candidate
 
-[原文件](outputs/visual-v032-candidate/01-lease.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v032-candidate/01-lease.md)
 
 ```mermaid
 sequenceDiagram
@@ -126,7 +126,7 @@ sequenceDiagram
 
 ### show-me
 
-[原文件](outputs/show-me/02-intent.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/02-intent.md)
 
 ```mermaid
 flowchart LR
@@ -142,7 +142,7 @@ flowchart LR
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/02-intent.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/mermaid-diagrams/02-intent.md)
 
 ```mermaid
 flowchart LR
@@ -164,7 +164,7 @@ flowchart LR
 
 ### visual-v030
 
-[原文件](outputs/visual-v030/02-intent.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v030/02-intent.md)
 
 ```mermaid
 flowchart LR
@@ -181,7 +181,7 @@ flowchart LR
 
 ### visual-v031
 
-[原文件](outputs/visual-v031/02-intent.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/02-intent.md)
 
 ```mermaid
 flowchart LR
@@ -207,7 +207,7 @@ flowchart LR
 
 ### visual-v032-candidate
 
-[原文件](outputs/visual-v032-candidate/02-intent.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v032-candidate/02-intent.md)
 
 ```mermaid
 flowchart LR
@@ -234,7 +234,7 @@ flowchart LR
 
 ### show-me
 
-[原文件](outputs/show-me/03-diff.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/03-diff.md)
 
 ```diff
  on(save)
@@ -249,7 +249,7 @@ flowchart LR
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/03-diff.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/mermaid-diagrams/03-diff.md)
 
 ```mermaid
 flowchart LR
@@ -268,7 +268,7 @@ flowchart LR
 
 ### visual-v030
 
-[原文件](outputs/visual-v030/03-diff.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v030/03-diff.md)
 
 ```diff
  on(save)
@@ -283,7 +283,7 @@ flowchart LR
 
 ### visual-v031
 
-[原文件](outputs/visual-v031/03-diff.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/03-diff.md)
 
 ```diff
  on(save)
@@ -298,7 +298,7 @@ flowchart LR
 
 ### visual-v032-candidate
 
-[原文件](outputs/visual-v032-candidate/03-diff.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v032-candidate/03-diff.md)
 
 ```diff
  on(save)
@@ -317,7 +317,7 @@ flowchart LR
 
 ### show-me
 
-[原文件](outputs/show-me/04-state.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/04-state.md)
 
 ```mermaid
 stateDiagram-v2
@@ -335,7 +335,7 @@ stateDiagram-v2
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/04-state.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/mermaid-diagrams/04-state.md)
 
 ```mermaid
 stateDiagram-v2
@@ -360,7 +360,7 @@ stateDiagram-v2
 
 ### visual-v030
 
-[原文件](outputs/visual-v030/04-state.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v030/04-state.md)
 
 ```mermaid
 stateDiagram-v2
@@ -383,7 +383,7 @@ stateDiagram-v2
 
 ### visual-v031
 
-[原文件](outputs/visual-v031/04-state.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/04-state.md)
 
 ```mermaid
 stateDiagram-v2
@@ -409,7 +409,7 @@ queued→running、running→failed按状态含义推断；其余转移由题目
 
 ### visual-v032-candidate
 
-[原文件](outputs/visual-v032-candidate/04-state.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v032-candidate/04-state.md)
 
 ```mermaid
 stateDiagram-v2
@@ -434,7 +434,7 @@ stateDiagram-v2
 
 ### show-me
 
-[原文件](outputs/show-me/05-scope.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/05-scope.md)
 
 ```mermaid
 flowchart TB
@@ -453,7 +453,7 @@ flowchart TB
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/05-scope.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/mermaid-diagrams/05-scope.md)
 
 ```mermaid
 flowchart TB
@@ -481,7 +481,7 @@ flowchart TB
 
 ### visual-v030
 
-[原文件](outputs/visual-v030/05-scope.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v030/05-scope.md)
 
 ```mermaid
 flowchart TB
@@ -505,7 +505,7 @@ flowchart TB
 
 ### visual-v031
 
-[原文件](outputs/visual-v031/05-scope.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/05-scope.md)
 
 ```mermaid
 flowchart TB
@@ -531,7 +531,7 @@ flowchart TB
 
 ### visual-v032-candidate
 
-[原文件](outputs/visual-v032-candidate/05-scope.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v032-candidate/05-scope.md)
 
 ```mermaid
 flowchart TB
@@ -557,7 +557,7 @@ flowchart TB
 
 ### show-me
 
-[原文件](outputs/show-me/06-existing.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/06-existing.md)
 
 ```mermaid
 flowchart LR
@@ -576,7 +576,7 @@ flowchart LR
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/06-existing.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/mermaid-diagrams/06-existing.md)
 
 ```mermaid
 flowchart LR
@@ -594,7 +594,7 @@ flowchart LR
 
 ### visual-v030
 
-[原文件](outputs/visual-v030/06-existing.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v030/06-existing.md)
 
 ```mermaid
 flowchart LR
@@ -613,7 +613,7 @@ flowchart LR
 
 ### visual-v031
 
-[原文件](outputs/visual-v031/06-existing.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/06-existing.md)
 
 ```mermaid
 flowchart LR
@@ -633,7 +633,7 @@ flowchart LR
 
 ### visual-v032-candidate
 
-[原文件](outputs/visual-v032-candidate/06-existing.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v032-candidate/06-existing.md)
 
 ```mermaid
 flowchart LR
@@ -654,7 +654,7 @@ flowchart LR
 
 ### show-me
 
-[原文件](outputs/show-me/07-incident.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/07-incident.md)
 
 ```mermaid
 sequenceDiagram
@@ -681,7 +681,7 @@ sequenceDiagram
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/07-incident.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/mermaid-diagrams/07-incident.md)
 
 ```mermaid
 sequenceDiagram
@@ -708,7 +708,7 @@ sequenceDiagram
 
 ### visual-v030
 
-[原文件](outputs/visual-v030/07-incident.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v030/07-incident.md)
 
 ```text
 已知时间线
@@ -730,7 +730,7 @@ sequenceDiagram
 
 ### visual-v031
 
-[原文件](outputs/visual-v031/07-incident.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/07-incident.md)
 
 ```mermaid
 sequenceDiagram
@@ -758,7 +758,7 @@ sequenceDiagram
 
 ### visual-v032-candidate
 
-[原文件](outputs/visual-v032-candidate/07-incident.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v032-candidate/07-incident.md)
 
 ```text
 时间     已知观测
@@ -783,7 +783,7 @@ sequenceDiagram
 
 ### show-me
 
-[原文件](outputs/show-me/08-tradeoff.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/08-tradeoff.md)
 
 ```mermaid
 flowchart LR
@@ -807,7 +807,7 @@ flowchart LR
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/08-tradeoff.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/mermaid-diagrams/08-tradeoff.md)
 
 ```mermaid
 flowchart TB
@@ -827,7 +827,7 @@ flowchart TB
 
 ### visual-v030
 
-[原文件](outputs/visual-v030/08-tradeoff.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v030/08-tradeoff.md)
 
 ```text
 候选A：实时查询主库             候选B：异步物化视图
@@ -844,7 +844,7 @@ flowchart TB
 
 ### visual-v031
 
-[原文件](outputs/visual-v031/08-tradeoff.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/08-tradeoff.md)
 
 ```mermaid
 flowchart TB
@@ -864,7 +864,7 @@ flowchart TB
 
 ### visual-v032-candidate
 
-[原文件](outputs/visual-v032-candidate/08-tradeoff.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v032-candidate/08-tradeoff.md)
 
 ```text
 候选A：报表 ──实时查询──→ 主库
@@ -893,7 +893,7 @@ flowchart TB
 
 ### show-me
 
-[原文件](outputs/show-me/09-domain.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/09-domain.md)
 
 ```mermaid
 classDiagram
@@ -914,7 +914,7 @@ classDiagram
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/09-domain.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/mermaid-diagrams/09-domain.md)
 
 ```mermaid
 classDiagram
@@ -935,7 +935,7 @@ classDiagram
 
 ### visual-v030
 
-[原文件](outputs/visual-v030/09-domain.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v030/09-domain.md)
 
 ```mermaid
 classDiagram
@@ -959,7 +959,7 @@ classDiagram
 
 ### visual-v031
 
-[原文件](outputs/visual-v031/09-domain.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/09-domain.md)
 
 ```mermaid
 classDiagram
@@ -982,7 +982,7 @@ classDiagram
 
 ### visual-v032-candidate
 
-[原文件](outputs/visual-v032-candidate/09-domain.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v032-candidate/09-domain.md)
 
 ```mermaid
 classDiagram
@@ -1007,7 +1007,7 @@ classDiagram
 
 ### show-me
 
-[原文件](outputs/show-me/10-rollout.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/show-me/10-rollout.md)
 
 ```mermaid
 flowchart LR
@@ -1030,7 +1030,7 @@ flowchart LR
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/10-rollout.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/mermaid-diagrams/10-rollout.md)
 
 ```mermaid
 flowchart TD
@@ -1052,7 +1052,7 @@ flowchart TD
 
 ### visual-v030
 
-[原文件](outputs/visual-v030/10-rollout.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v030/10-rollout.md)
 
 ```mermaid
 flowchart TB
@@ -1074,7 +1074,7 @@ flowchart TB
 
 ### visual-v031
 
-[原文件](outputs/visual-v031/10-rollout.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v031/10-rollout.md)
 
 ```mermaid
 flowchart TB
@@ -1096,7 +1096,7 @@ flowchart TB
 
 ### visual-v032-candidate
 
-[原文件](outputs/visual-v032-candidate/10-rollout.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/outputs/visual-v032-candidate/10-rollout.md)
 
 ```mermaid
 flowchart LR

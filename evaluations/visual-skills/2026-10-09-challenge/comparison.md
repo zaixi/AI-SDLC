@@ -6,15 +6,15 @@
 
 ### show-me
 
-[原始回答](outputs/show-me/01-mixed.md) · [完整模型输入](model-inputs/show-me/01-mixed.txt)
+[原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/outputs/show-me/01-mixed.md) · [完整模型输入](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/model-inputs/show-me/01-mixed.txt)
 
-图 1： [SVG](rendered/show-me--01-mixed--1.svg) · [PNG原图](rendered/show-me--01-mixed--1.png)
+图 1： [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/show-me--01-mixed--1.svg) · [PNG原图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/show-me--01-mixed--1.png)
 
-![show-me--01-mixed--1](rendered/show-me--01-mixed--1.png)
+![show-me--01-mixed--1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/show-me--01-mixed--1.png)
 
-图 2： [SVG](rendered/show-me--01-mixed--2.svg) · [PNG原图](rendered/show-me--01-mixed--2.png)
+图 2： [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/show-me--01-mixed--2.svg) · [PNG原图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/show-me--01-mixed--2.png)
 
-![show-me--01-mixed--2](rendered/show-me--01-mixed--2.png)
+![show-me--01-mixed--2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/show-me--01-mixed--2.png)
 
 <details>
 <summary>展开未改写的模型回答</summary>
@@ -84,19 +84,19 @@ stateDiagram-v2
 
 ### mermaid-diagrams
 
-[原始回答](outputs/mermaid-diagrams/01-mixed.md) · [完整模型输入](model-inputs/mermaid-diagrams/01-mixed.txt)
+[原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/outputs/mermaid-diagrams/01-mixed.md) · [完整模型输入](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/model-inputs/mermaid-diagrams/01-mixed.txt)
 
-图 1： [SVG](rendered/mermaid-diagrams--01-mixed--1.svg) · [PNG原图](rendered/mermaid-diagrams--01-mixed--1.png)
+图 1： [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/mermaid-diagrams--01-mixed--1.svg) · [PNG原图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/mermaid-diagrams--01-mixed--1.png)
 
-![mermaid-diagrams--01-mixed--1](rendered/mermaid-diagrams--01-mixed--1.png)
+![mermaid-diagrams--01-mixed--1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/mermaid-diagrams--01-mixed--1.png)
 
-图 2： [SVG](rendered/mermaid-diagrams--01-mixed--2.svg) · [PNG原图](rendered/mermaid-diagrams--01-mixed--2.png)
+图 2： [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/mermaid-diagrams--01-mixed--2.svg) · [PNG原图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/mermaid-diagrams--01-mixed--2.png)
 
-![mermaid-diagrams--01-mixed--2](rendered/mermaid-diagrams--01-mixed--2.png)
+![mermaid-diagrams--01-mixed--2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/mermaid-diagrams--01-mixed--2.png)
 
-图 3： [SVG](rendered/mermaid-diagrams--01-mixed--3.svg) · [PNG原图](rendered/mermaid-diagrams--01-mixed--3.png)
+图 3： [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/mermaid-diagrams--01-mixed--3.svg) · [PNG原图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/mermaid-diagrams--01-mixed--3.png)
 
-![mermaid-diagrams--01-mixed--3](rendered/mermaid-diagrams--01-mixed--3.png)
+![mermaid-diagrams--01-mixed--3](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/mermaid-diagrams--01-mixed--3.png)
 
 <details>
 <summary>展开未改写的模型回答</summary>
@@ -187,19 +187,19 @@ sequenceDiagram
 
 ### visual-v041
 
-[原始回答](outputs/visual-v041/01-mixed.md) · [完整模型输入](model-inputs/visual-v041/01-mixed.txt)
+[原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/outputs/visual-v041/01-mixed.md) · [完整模型输入](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/model-inputs/visual-v041/01-mixed.txt)
 
-图 1： [SVG](rendered/visual-v041--01-mixed--1.svg) · [PNG原图](rendered/visual-v041--01-mixed--1.png)
+图 1： [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/visual-v041--01-mixed--1.svg) · [PNG原图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/visual-v041--01-mixed--1.png)
 
-![visual-v041--01-mixed--1](rendered/visual-v041--01-mixed--1.png)
+![visual-v041--01-mixed--1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/visual-v041--01-mixed--1.png)
 
-图 2： [SVG](rendered/visual-v041--01-mixed--2.svg) · [PNG原图](rendered/visual-v041--01-mixed--2.png)
+图 2： [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/visual-v041--01-mixed--2.svg) · [PNG原图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/visual-v041--01-mixed--2.png)
 
-![visual-v041--01-mixed--2](rendered/visual-v041--01-mixed--2.png)
+![visual-v041--01-mixed--2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/visual-v041--01-mixed--2.png)
 
-图 3： [SVG](rendered/visual-v041--01-mixed--3.svg) · [PNG原图](rendered/visual-v041--01-mixed--3.png)
+图 3： [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/visual-v041--01-mixed--3.svg) · [PNG原图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/visual-v041--01-mixed--3.png)
 
-![visual-v041--01-mixed--3](rendered/visual-v041--01-mixed--3.png)
+![visual-v041--01-mixed--3](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/visual-v041--01-mixed--3.png)
 
 <details>
 <summary>展开未改写的模型回答</summary>
@@ -297,15 +297,15 @@ sequenceDiagram
 
 ### show-me
 
-[原始回答](outputs/show-me/02-c4.md) · [完整模型输入](model-inputs/show-me/02-c4.txt)
+[原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/outputs/show-me/02-c4.md) · [完整模型输入](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/model-inputs/show-me/02-c4.txt)
 
-图 1： [SVG](rendered/show-me--02-c4--1.svg) · [PNG原图](rendered/show-me--02-c4--1.png)
+图 1： [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/show-me--02-c4--1.svg) · [PNG原图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/show-me--02-c4--1.png)
 
-![show-me--02-c4--1](rendered/show-me--02-c4--1.png)
+![show-me--02-c4--1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/show-me--02-c4--1.png)
 
-图 2： [SVG](rendered/show-me--02-c4--2.svg) · [PNG原图](rendered/show-me--02-c4--2.png)
+图 2： [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/show-me--02-c4--2.svg) · [PNG原图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/show-me--02-c4--2.png)
 
-![show-me--02-c4--2](rendered/show-me--02-c4--2.png)
+![show-me--02-c4--2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/show-me--02-c4--2.png)
 
 <details>
 <summary>展开未改写的模型回答</summary>
@@ -402,15 +402,15 @@ flowchart TB
 
 ### mermaid-diagrams
 
-[原始回答](outputs/mermaid-diagrams/02-c4.md) · [完整模型输入](model-inputs/mermaid-diagrams/02-c4.txt)
+[原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/outputs/mermaid-diagrams/02-c4.md) · [完整模型输入](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/model-inputs/mermaid-diagrams/02-c4.txt)
 
-图 1： [SVG](rendered/mermaid-diagrams--02-c4--1.svg) · [PNG原图](rendered/mermaid-diagrams--02-c4--1.png)
+图 1： [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/mermaid-diagrams--02-c4--1.svg) · [PNG原图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/mermaid-diagrams--02-c4--1.png)
 
-![mermaid-diagrams--02-c4--1](rendered/mermaid-diagrams--02-c4--1.png)
+![mermaid-diagrams--02-c4--1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/mermaid-diagrams--02-c4--1.png)
 
-图 2： [SVG](rendered/mermaid-diagrams--02-c4--2.svg) · [PNG原图](rendered/mermaid-diagrams--02-c4--2.png)
+图 2： [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/mermaid-diagrams--02-c4--2.svg) · [PNG原图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/mermaid-diagrams--02-c4--2.png)
 
-![mermaid-diagrams--02-c4--2](rendered/mermaid-diagrams--02-c4--2.png)
+![mermaid-diagrams--02-c4--2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/mermaid-diagrams--02-c4--2.png)
 
 <details>
 <summary>展开未改写的模型回答</summary>
@@ -508,15 +508,15 @@ C4Container
 
 ### visual-v041
 
-[原始回答](outputs/visual-v041/02-c4.md) · [完整模型输入](model-inputs/visual-v041/02-c4.txt)
+[原始回答](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/outputs/visual-v041/02-c4.md) · [完整模型输入](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/model-inputs/visual-v041/02-c4.txt)
 
-图 1： [SVG](rendered/visual-v041--02-c4--1.svg) · [PNG原图](rendered/visual-v041--02-c4--1.png)
+图 1： [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/visual-v041--02-c4--1.svg) · [PNG原图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/visual-v041--02-c4--1.png)
 
-![visual-v041--02-c4--1](rendered/visual-v041--02-c4--1.png)
+![visual-v041--02-c4--1](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/visual-v041--02-c4--1.png)
 
-图 2： [SVG](rendered/visual-v041--02-c4--2.svg) · [PNG原图](rendered/visual-v041--02-c4--2.png)
+图 2： [SVG](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/visual-v041--02-c4--2.svg) · [PNG原图](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/visual-v041--02-c4--2.png)
 
-![visual-v041--02-c4--2](rendered/visual-v041--02-c4--2.png)
+![visual-v041--02-c4--2](https://raw.githubusercontent.com/zaixi/AI-SDLC/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-challenge/rendered/visual-v041--02-c4--2.png)
 
 <details>
 <summary>展开未改写的模型回答</summary>

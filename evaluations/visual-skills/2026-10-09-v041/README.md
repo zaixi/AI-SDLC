@@ -42,9 +42,9 @@
 
 评审认为六份回答均充分覆盖要求，没有实质遗漏、错误转换或补造政策。主Agent检查了六个ID覆盖、原文哈希及内容对应关系；这个结论只适用于本轮题目，不作为成功率或质量总分。
 
-- [独立评审原文](anonymous-review.json)
-- [匿名来源映射](anonymous-map.json)
-- [逐题指标及加载记录](metrics.json)
-- [生成协议](protocol.json)、[输入哈希](input-manifest.json)、[解析结果](syntax-results.json)
+- [独立评审原文](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v041/anonymous-review.json)
+- [匿名来源映射](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v041/anonymous-map.json)
+- [逐题指标及加载记录](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v041/metrics.json)
+- [生成协议](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v041/protocol.json)、[输入哈希](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v041/input-manifest.json)、[解析结果](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v041/syntax-results.json)
 
 本轮不继续修改Skill或追加样本；六份小任务不能证明普遍优劣。保留show-me主体与少量调用补充的方向，没有依据再增加一套表达规则。

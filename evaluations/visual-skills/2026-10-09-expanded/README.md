@@ -3,8 +3,8 @@
 ## 查看原始输出
 
 - [第一轮：十题逐组对照](comparison.md)
-- [新增四题：故障、取舍、领域关系与滚动发布](new-cases-comparison.md)
-- [第二轮：十题逐组对照](repeat-comparison.md)
+- [新增四题：故障、取舍、领域关系与滚动发布](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/new-cases-comparison.md)
+- [第二轮：十题逐组对照](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/repeat-comparison.md)
 
 每页逐字引用原始回答，保留错误与重复，不用维护者人工示例替换。支持 Mermaid 的阅读器可显示图，文本视图与 diff 保持原样。
 
@@ -31,7 +31,7 @@
 - **visual-v031**：本仓发布的最终 0.3.1，包含此前两题回归之后补充的主体/所有权核对句。因此与上次生成时的 0.3.1 快照有区别。
 - **visual-v032-candidate**：本仓 `5389396` 的 0.3.2 候选稿。
 
-快照及许可证保存在 inputs/，哈希见 [input-manifest.json](input-manifest.json)。仅显式应用 SKILL.md 和按需引用文件，不让 README、人工示例或其他组答案进入作答上下文。
+快照及许可证保存在 inputs/，哈希见 [input-manifest.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/input-manifest.json)。仅显式应用 SKILL.md 和按需引用文件，不让 README、人工示例或其他组答案进入作答上下文。
 
 ## 方法和限制
 
@@ -39,9 +39,9 @@
 
 文件系统共享，读取范围靠任务指令限定，不是操作系统级隔离。实际读取记录保存在各组 provenance.json。生成期间禁止联网、安装、渲染和调用子 Agent；没有测试客户端自动匹配、安装、嵌套委托或跨模型泛化。
 
-一个候选版第二轮会话额外读取云环境设置指引，违反本轮读取范围约定。其十份原文与读取记录保存在 [deviations/](deviations/)，不纳入主比较、评审或指标；另启独立会话替代。主比较的生成质量结论不能利用被排除回答挑选更好结果。
+一个候选版第二轮会话额外读取云环境设置指引，违反本轮读取范围约定。其十份原文与读取记录保存在 [deviations/](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/deviations)，不纳入主比较、评审或指标；另启独立会话替代。主比较的生成质量结论不能利用被排除回答挑选更好结果。
 
-评审使用来源标签隐藏的原文副本、相同题目与预先固定的 [rubric.json](rubric.json)。两位独立评审分别覆盖第一轮与第二轮，主 Agent 再核对引句与重要判断。隐藏来源不消除风格识别可能，不是双盲实验或用户可读性研究。
+评审使用来源标签隐藏的原文副本、相同题目与预先固定的 [rubric.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/rubric.json)。两位独立评审分别覆盖第一轮与第二轮，主 Agent 再核对引句与重要判断。隐藏来源不消除风格识别可能，不是双盲实验或用户可读性研究。
 
 统计仅描述本轮字符数、图种和具体问题，不把 adequate 分类、长度或语法通过当成质量总分，也不从每题两次生成推断稳定性。
 
@@ -55,11 +55,11 @@
 | visual-v031 | 20 | 396.6 | 15/15 | diff |
 | visual-v032-candidate | 20 | 372.8 | 16/16 | diff |
 
-**主比较共84张 Mermaid 图，82通过、2失败。**其余16份回答采用diff或文本视图，不计入解析分母。失败都是 mermaid-diagrams 的09-domain：`class Order[订单]` 等中文显示标签未加引号。两轮均发生，但不能据此估计该Skill的长期失败率。原文保留；[单独修正副本及变更记录](syntax-fixes/)仅给三个中文标签加引号，两份修正副本通过解析，不替换主比较或改变82/84结果。
+**主比较共84张 Mermaid 图，82通过、2失败。**其余16份回答采用diff或文本视图，不计入解析分母。失败都是 mermaid-diagrams 的09-domain：`class Order[订单]` 等中文显示标签未加引号。两轮均发生，但不能据此估计该Skill的长期失败率。原文保留；[单独修正副本及变更记录](https://github.com/zaixi/AI-SDLC/tree/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/syntax-fixes)仅给三个中文标签加引号，两份修正副本通过解析，不替换主比较或改变82/84结果。
 
 没有做实际渲染，解析版本是 Mermaid 12.1.0，不保证阅读平台使用同版本。语法结果与内容评审分开，内容覆盖 adequate 不代表图可渲染或输出没有任何问题。
 
-字符数只是表达负担的一项观察，不是token数、可读性或质量分。0.3.2本轮均值与0.3.0接近，比0.3.1低约6%；不能说已经证明简洁且准确的全面提升。详细数据见 [metrics.json](metrics.json) 和 [syntax-results.json](syntax-results.json)。
+字符数只是表达负担的一项观察，不是token数、可读性或质量分。0.3.2本轮均值与0.3.0接近，比0.3.1低约6%；不能说已经证明简洁且准确的全面提升。详细数据见 [metrics.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/metrics.json) 和 [syntax-results.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/syntax-results.json)。
 
 ## 具体差异与问题
 
@@ -72,9 +72,9 @@
 
 ## 独立评审和主Agent核对
 
-第一轮评审：[原始JSON](anonymous-review-r1.json)。第二轮评审：[前40份](anonymous-review-r2-part1.json)、[补充10份](anonymous-review-r2-part2.json)。第二位评审先评40份，再评替代会话的10份，使用同一准则，没有提供来源标签或第一位评审结论。
+第一轮评审：[原始JSON](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/anonymous-review-r1.json)。第二轮评审：[前40份](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/anonymous-review-r2-part1.json)、[补充10份](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/anonymous-review-r2-part2.json)。第二位评审先评40份，再评替代会话的10份，使用同一准则，没有提供来源标签或第一位评审结论。
 
-来源映射：[第一轮](anonymous-map-r1.json)、[第二轮](anonymous-map-r2.json)。主Agent检查100份评审覆盖、来源哈希及所有问题引句逐字匹配原文件，再核对主要语义问题；[核对记录](root-review.md)和[汇总JSON](review-summary.json)保留对照。评审的adequate/partial是关键内容覆盖描述，不是成功率或整体质量排名。
+来源映射：[第一轮](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/anonymous-map-r1.json)、[第二轮](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/anonymous-map-r2.json)。主Agent检查100份评审覆盖、来源哈希及所有问题引句逐字匹配原文件，再核对主要语义问题；[核对记录](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/root-review.md)和[汇总JSON](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/review-summary.json)保留对照。评审的adequate/partial是关键内容覆盖描述，不是成功率或整体质量排名。
 
 评审把若干“未渲染验证”提示列为制作过程说明。主Agent认为一次简短提示是必要的验证状态披露，不据此判质量失败；关注的是重复提示或不适用于diff的提示。本轮不为去掉这句话而误称图已验证。
 
@@ -84,4 +84,4 @@
 
 保持0.3.0为推荐基线，0.3.2为真实任务试用候选；本轮不修改生成规则或自动升级推荐。下一步的关键证据是实际代码/设计上下文与人阅读后的反馈，不是继续堆题、堆规则或用字符数定胜负。
 
-生成原文哈希：[raw-output-manifest.json](raw-output-manifest.json)。完整方法：[protocol.json](protocol.json)。复用汇集脚本：`python scripts/collate.py <本目录>`；语法脚本：`node scripts/parse.mjs <本目录> <独立Mermaid工具目录>`。`SHA256SUMS`覆盖归档资料，被排除回答保留独立哈希。
+生成原文哈希：[raw-output-manifest.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/raw-output-manifest.json)。完整方法：[protocol.json](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-expanded/protocol.json)。复用汇集脚本：`python scripts/collate.py <本目录>`；语法脚本：`node scripts/parse.mjs <本目录> <独立Mermaid工具目录>`。`SHA256SUMS`覆盖归档资料，被排除回答保留独立哈希。

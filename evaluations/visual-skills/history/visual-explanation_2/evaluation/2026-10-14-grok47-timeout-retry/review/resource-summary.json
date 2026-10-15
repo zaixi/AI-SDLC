@@ -1,9 +1,0 @@
-{
-  "samples": 69,
-  "cpu_count": 112,
-  "load_1min_range": [
-    22.88,
-    70.3
-  ],
-  "minimum_available_memory_GiB": 78.57879638671875
-}

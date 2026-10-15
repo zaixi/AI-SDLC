@@ -1,0 +1,10 @@
+# Keep evaluation reports in Git; raw artifacts belong outside the checkout.
+/evaluations/**
+!/evaluations/**/
+!/evaluations/**/README.md
+!/evaluations/**/comparison.md
+!/evaluations/**/report.md
+!/evaluations/**/all-cases.md
+!/evaluations/archive-index.json
+__pycache__/
+*.pyc

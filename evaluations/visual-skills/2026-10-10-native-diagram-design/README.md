@@ -2,7 +2,7 @@
 
 每组两题、每题一条独立生成轨迹，共六条新轨迹。每条保留初稿、第一次图片反馈后的修订稿、第二次反馈后的最终稿；三阶段不算三个独立样本。不复用之前两轮的回答。
 
-[实际画面对照](comparison.md) · [运行记录](runs.json) · [协议](protocol.json) · [输入哈希](input-manifest.json) · [内容评审](content-review.json)
+[实际画面对照](comparison.md) · [运行记录](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/runs.json) · [协议](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/protocol.json) · [输入哈希](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/input-manifest.json) · [内容评审](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-10-native-diagram-design/content-review.json)
 
 ## 输入与原生表达
 

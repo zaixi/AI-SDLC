@@ -8,7 +8,7 @@
 
 ### show-me
 
-[原文件](outputs/show-me/01-library.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v041/outputs/show-me/01-library.md)
 
 ```mermaid
 flowchart TD
@@ -29,7 +29,7 @@ flowchart TD
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/01-library.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v041/outputs/mermaid-diagrams/01-library.md)
 
 先查馆藏，两条路径都要经过柜台核验：
 
@@ -52,7 +52,7 @@ flowchart TD
 
 ### visual-v041
 
-[原文件](outputs/visual-v041/01-library.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v041/outputs/visual-v041/01-library.md)
 
 ```mermaid
 flowchart TD
@@ -78,7 +78,7 @@ flowchart TD
 
 ### show-me
 
-[原文件](outputs/show-me/02-enrollment.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v041/outputs/show-me/02-enrollment.md)
 
 ```mermaid
 stateDiagram-v2
@@ -98,7 +98,7 @@ stateDiagram-v2
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/02-enrollment.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v041/outputs/mermaid-diagrams/02-enrollment.md)
 
 ```mermaid
 stateDiagram-v2
@@ -124,7 +124,7 @@ stateDiagram-v2
 
 ### visual-v041
 
-[原文件](outputs/visual-v041/02-enrollment.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-v041/outputs/visual-v041/02-enrollment.md)
 
 ```mermaid
 stateDiagram-v2

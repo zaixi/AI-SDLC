@@ -8,7 +8,7 @@
 
 ### show-me
 
-[原文件](outputs/show-me/01-concurrent.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-complex/outputs/show-me/01-concurrent.md)
 
 ```mermaid
 sequenceDiagram
@@ -64,7 +64,7 @@ sequenceDiagram
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/01-concurrent.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-complex/outputs/mermaid-diagrams/01-concurrent.md)
 
 ```mermaid
 sequenceDiagram
@@ -139,7 +139,7 @@ sequenceDiagram
 
 ### visual-v041
 
-[原文件](outputs/visual-v041/01-concurrent.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-complex/outputs/visual-v041/01-concurrent.md)
 
 ```mermaid
 sequenceDiagram
@@ -209,7 +209,7 @@ sequenceDiagram
 
 ### show-me
 
-[原文件](outputs/show-me/02-cardinality.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-complex/outputs/show-me/02-cardinality.md)
 
 ```mermaid
 classDiagram
@@ -239,7 +239,7 @@ classDiagram
 
 ### mermaid-diagrams
 
-[原文件](outputs/mermaid-diagrams/02-cardinality.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-complex/outputs/mermaid-diagrams/02-cardinality.md)
 
 ```mermaid
 classDiagram
@@ -270,7 +270,7 @@ classDiagram
 
 ### visual-v041
 
-[原文件](outputs/visual-v041/02-cardinality.md)
+[原文件](https://github.com/zaixi/AI-SDLC/blob/b52aa156e6f6a6dca1d0aee0ebf3b227d62f2475/evaluations/visual-skills/2026-10-09-complex/outputs/visual-v041/02-cardinality.md)
 
 ```mermaid
 classDiagram
