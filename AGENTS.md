@@ -39,6 +39,7 @@
 - Report validation evidence and any unverified assumptions.
 
 ## Repository workflow
+- When starting a new feature, choosing an architecture or technology, adding a dependency or integration, or developing a tool that may already exist, read and apply [search-before-build](skills/search-before-build/SKILL.md). Skip routine fixes, mechanical edits, and ordinary use of an adopted tool.
 - For code/build/deploy tasks, identify target platform, toolchain, OS, and build system before changing behavior.
 - Use `rg` for text search; use POSIX `grep` only when appropriate.
 - Use `codegraph` when semantic navigation, call relationships, or architectural context is useful.
