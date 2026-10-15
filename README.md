@@ -2,7 +2,8 @@
 
 AI 原生软件研发生命周期的资料收集与研究。
 
-- [通用视觉表达 Skill](skills/visual-explanation/README.md)
+- [通用视觉表达 Skill（统一入口，0.5.0）](skills/visual-explanation/README.md)
+- [视觉 Skill 评测与历史索引](evaluations/visual-skills/README.md)
 
 - [资料库与来源索引](materials/README.md)
 - [国内 AI 原生研发资料调研](materials/reviews/AI-SDLC-domestic-research.md)

@@ -1,0 +1,23 @@
+{
+  "package": {
+    "status": "passed",
+    "name": "visual-explanation",
+    "version": "0.5.0",
+    "active_visual_entries": 1,
+    "scope": "package structure and invocation metadata; no native client or generation test"
+  },
+  "archive_directories_verified": 2,
+  "archive_files_or_symlinks_verified": 1497,
+  "archive_bytes_and_symlink_targets": "unchanged",
+  "body_equal_to_frozen_variant": true,
+  "body_sha256": "72648793747aef496222b90dcb84420e7a5b4fb0f5b6425db618bba862a52cb5",
+  "runtime_license_unchanged": true,
+  "active_links_verified": 34,
+  "negative_checks": [
+    "duplicate directory rejected",
+    "stale invocation rejected"
+  ],
+  "model_generation": "not rerun: body unchanged",
+  "client_native_discovery": "not tested",
+  "other_machine_installation": "not changed"
+}
