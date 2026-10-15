@@ -68,6 +68,8 @@
 
 ## 需求来源与研究入口
 
+- [新增主流程候选核对](../materials/reviews/AI-SDLC-workflow-candidates-20261015.md)：2026-10-15 用户补充 OpenSpec、Superpowers、Spec Kit、gstack、Addy Osmani、Lauren Tan 的 pstack 和 Ponytail。均为候选，尚未作采用决定；不将此前优先考虑 Matt 当作已完成的选型。
+
 - [最初分享会话痛点摘录](../materials/reviews/Shared-conversation-pain-points.md)：含用户原话与归纳的区分。
 - [跨 Agent 与工程意图选型](../materials/reviews/Agent-independent-intent-skills.md)：2026-10-09 的研究记录，不是当前安装清单。
 - [分享会话内容核对](../materials/reviews/AI-SDLC-content-review.md)：区分已核实事实、架构提案和未核验说法。

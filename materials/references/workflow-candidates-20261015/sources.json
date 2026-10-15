@@ -1,0 +1,275 @@
+{
+  "checked_on": "2026-10-15",
+  "scope": "Official documentation and selected sources only; no installation or workflow execution",
+  "projects": [
+    {
+      "repository": "DietrichGebert/ponytail",
+      "commit": "84740e3d344b69b4a133201fa519eb37a62a2b2a",
+      "branch": "main",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "updated_at": "2026-10-15T12:51:51Z",
+      "files_read": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "b98b15e1d683ee205e124b52b8d330128593f4a87b545cf8185e2712cd1bb25f",
+          "url": "https://github.com/DietrichGebert/ponytail/blob/84740e3d344b69b4a133201fa519eb37a62a2b2a/AGENTS.md"
+        },
+        {
+          "path": "README.md",
+          "sha256": "e505449797326eebda6a44ea439f499418de00d27d0b1919cc66b993b78c3576",
+          "url": "https://github.com/DietrichGebert/ponytail/blob/84740e3d344b69b4a133201fa519eb37a62a2b2a/README.md"
+        },
+        {
+          "path": "skills/ponytail/SKILL.md",
+          "sha256": "ba68ff26239c3c3b05b2a9a47ee0d9a6b93a69639a2555ec87a5d44bffaf2f0c",
+          "url": "https://github.com/DietrichGebert/ponytail/blob/84740e3d344b69b4a133201fa519eb37a62a2b2a/skills/ponytail/SKILL.md"
+        }
+      ]
+    },
+    {
+      "repository": "Fission-AI/OpenSpec",
+      "commit": "f80d860fc510ba4f51180c8ddde35b91b32de657",
+      "branch": "main",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "updated_at": "2026-10-15T12:52:29Z",
+      "files_read": [
+        {
+          "path": "README.md",
+          "sha256": "3473779bcf99e0a463eaf7a5bbc02aec57fd34f013ce8c84272f27dd6135bf1c",
+          "url": "https://github.com/Fission-AI/OpenSpec/blob/f80d860fc510ba4f51180c8ddde35b91b32de657/README.md"
+        },
+        {
+          "path": "docs/supported-tools.md",
+          "sha256": "f8c7a2d30976ba1e925ebe6546d7df50081eaea7455c93a0e7829371c4350faf",
+          "url": "https://github.com/Fission-AI/OpenSpec/blob/f80d860fc510ba4f51180c8ddde35b91b32de657/docs/supported-tools.md"
+        },
+        {
+          "path": "schemas/spec-driven/schema.yaml",
+          "sha256": "b6f28f305ab7f33b061949251bba82c79de66c82424cfed60582327db3f888f2",
+          "url": "https://github.com/Fission-AI/OpenSpec/blob/f80d860fc510ba4f51180c8ddde35b91b32de657/schemas/spec-driven/schema.yaml"
+        },
+        {
+          "path": "schemas/spec-driven/templates/design.md",
+          "sha256": "6ccc87f5017fb190e69e8759dd4e20d5ac3320cc4dabf152708bf8f2aa5205f8",
+          "url": "https://github.com/Fission-AI/OpenSpec/blob/f80d860fc510ba4f51180c8ddde35b91b32de657/schemas/spec-driven/templates/design.md"
+        },
+        {
+          "path": "skills/openspec-propose/SKILL.md",
+          "sha256": "7848351e7c513a25c32315b466b224ed228ceb43c75b914c145702aa9957ff0b",
+          "url": "https://github.com/Fission-AI/OpenSpec/blob/f80d860fc510ba4f51180c8ddde35b91b32de657/skills/openspec-propose/SKILL.md"
+        }
+      ]
+    },
+    {
+      "repository": "addyosmani/agent-skills",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "branch": "main",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "updated_at": "2026-10-15T12:47:06Z",
+      "files_read": [
+        {
+          "path": "README.md",
+          "sha256": "b74ab722eeee706ff1c5c3ee55f5f2328368ec28c6368900bc80b857b5bc6b72",
+          "url": "https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/README.md"
+        },
+        {
+          "path": "docs/codex-setup.md",
+          "sha256": "d6d491303d37020b51ddc0417fe3e7ea119518fa892deda07602d64f93d9fa8a",
+          "url": "https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/docs/codex-setup.md"
+        },
+        {
+          "path": "skills/constraint-driven-development/SKILL.md",
+          "sha256": "06479d4305f286d23cfb99f5dc85695896785269664e1f6a8d800e3b71e70c10",
+          "url": "https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/skills/constraint-driven-development/SKILL.md"
+        },
+        {
+          "path": "skills/documentation-and-adrs/SKILL.md",
+          "sha256": "b60d503925bbaacee7fd63935db70b9ced5b2514ff5a56a672130e01b9690bc5",
+          "url": "https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/skills/documentation-and-adrs/SKILL.md"
+        },
+        {
+          "path": "skills/using-agent-skills/SKILL.md",
+          "sha256": "30787ef2c77bf1a4729fffed0f6523ba6fcbe81bdc436b36371b78c21394d3c3",
+          "url": "https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/skills/using-agent-skills/SKILL.md"
+        }
+      ]
+    },
+    {
+      "repository": "cursor/plugins",
+      "commit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "branch": "main",
+      "license": null,
+      "updated_at": "2026-10-15T12:50:04Z",
+      "files_read": [
+        {
+          "path": "README.md",
+          "sha256": "0446e3e6c5c47ad38cd92c37e64c0335a5ea24c89152dcbba4c3ef2a4ef127f6",
+          "url": "https://github.com/cursor/plugins/blob/e5136d82418d2db3165ea1050d17577cd618cc05/README.md"
+        },
+        {
+          "path": "pstack/.cursor-plugin/plugin.json",
+          "sha256": "b75609951c8a558e74f1eb20e15493933754eb2695fd2059d7f435f913889bb3",
+          "url": "https://github.com/cursor/plugins/blob/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/.cursor-plugin/plugin.json"
+        },
+        {
+          "path": "pstack/LICENSE",
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "url": "https://github.com/cursor/plugins/blob/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/LICENSE"
+        },
+        {
+          "path": "pstack/README.md",
+          "sha256": "e5c8a28b8fb9dc3a8075030b45ed60681af9628628c59b17554f4f5cb775cd52",
+          "url": "https://github.com/cursor/plugins/blob/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/README.md"
+        },
+        {
+          "path": "pstack/skills/architect/SKILL.md",
+          "sha256": "31f8e97a52bfa5432edd61f68ade2a8632ef0bacbc2d2a6802d7a0e6821944ac",
+          "url": "https://github.com/cursor/plugins/blob/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/skills/architect/SKILL.md"
+        },
+        {
+          "path": "pstack/skills/blast-radius/SKILL.md",
+          "sha256": "2e10745b97f5862323dcda3b29ca60d56b5c3c98e37020085d26b48efbe0a436",
+          "url": "https://github.com/cursor/plugins/blob/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/skills/blast-radius/SKILL.md"
+        },
+        {
+          "path": "pstack/skills/in-your-own-words/SKILL.md",
+          "sha256": "fa8ba74e27d7be371dc270ec78bbf816411477d0dfab185356c861ac8dd413ad",
+          "url": "https://github.com/cursor/plugins/blob/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/skills/in-your-own-words/SKILL.md"
+        },
+        {
+          "path": "pstack/skills/poteto-mode/SKILL.md",
+          "sha256": "c5e6b605f46e5d9fbab31afa7a99d3d50680f2180d1fdfae3a924901bc52d99a",
+          "url": "https://github.com/cursor/plugins/blob/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/skills/poteto-mode/SKILL.md"
+        }
+      ]
+    },
+    {
+      "repository": "garrytan/gstack",
+      "commit": "47d639abffa882b8cbb641d7d1dedf08ecada9ec",
+      "branch": "main",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "updated_at": "2026-10-15T12:40:42Z",
+      "files_read": [
+        {
+          "path": "README.md",
+          "sha256": "2f1343ce81e47106a0f67d12acad3c09881219a4d1148cd27d28697432a79c51",
+          "url": "https://github.com/garrytan/gstack/blob/47d639abffa882b8cbb641d7d1dedf08ecada9ec/README.md"
+        }
+      ]
+    },
+    {
+      "repository": "github/spec-kit",
+      "commit": "3238fa9285694dc539aeb9829b337bfd6aed7317",
+      "branch": "main",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "updated_at": "2026-10-15T12:47:02Z",
+      "files_read": [
+        {
+          "path": "README.md",
+          "sha256": "00a0ac3623fe886cde19784a8002ec47feaa105dff48b18be8c5d9008f3a76f2",
+          "url": "https://github.com/github/spec-kit/blob/3238fa9285694dc539aeb9829b337bfd6aed7317/README.md"
+        },
+        {
+          "path": "templates/plan-template.md",
+          "sha256": "dfba43da2b2a207ff8c177a0fba03af074fd45e261696b4b64172041fad2e992",
+          "url": "https://github.com/github/spec-kit/blob/3238fa9285694dc539aeb9829b337bfd6aed7317/templates/plan-template.md"
+        },
+        {
+          "path": "templates/spec-template.md",
+          "sha256": "3945437fc35cd30a5b2bf7beea680337c3516826d3efa5a6b92c4a7eca1ba28e",
+          "url": "https://github.com/github/spec-kit/blob/3238fa9285694dc539aeb9829b337bfd6aed7317/templates/spec-template.md"
+        },
+        {
+          "path": "templates/tasks-template.md",
+          "sha256": "1e448e9153462e8c5b5a55231a54c756d870a82950d4dd9425a2bf5b7008a0d9",
+          "url": "https://github.com/github/spec-kit/blob/3238fa9285694dc539aeb9829b337bfd6aed7317/templates/tasks-template.md"
+        }
+      ]
+    },
+    {
+      "repository": "mattpocock/skills",
+      "commit": "49dd158d1076134a641b33efb035946536778336",
+      "branch": "main",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "updated_at": "2026-10-15T12:52:35Z",
+      "files_read": [
+        {
+          "path": "README.md",
+          "sha256": "345041d56cf1411b6b3ca1cc54014d26c563890f817f4cb9e2cb193dcd771a3e",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/README.md"
+        }
+      ]
+    },
+    {
+      "repository": "obra/superpowers",
+      "commit": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+      "branch": "main",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "updated_at": "2026-10-15T12:52:14Z",
+      "files_read": [
+        {
+          "path": "README.md",
+          "sha256": "9b7be460027bf53c29f628eee72dceeebb83e52dd5e94a1b6f9828a64c579198",
+          "url": "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/README.md"
+        },
+        {
+          "path": "skills/brainstorming/SKILL.md",
+          "sha256": "6ee10d1481b8a2580d5336ff66c5c08acc9d4b251b13bbc3bfd31be99c261d43",
+          "url": "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/brainstorming/SKILL.md"
+        },
+        {
+          "path": "skills/using-superpowers/SKILL.md",
+          "sha256": "82c5c8866ad7f5dd4440ce66bd7806ba48a2f13771beae5cf112e53f08fe36ba",
+          "url": "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/using-superpowers/SKILL.md"
+        },
+        {
+          "path": "skills/writing-plans/SKILL.md",
+          "sha256": "a6c67c1900064347c2a329990dd3c555657c51c3ec53b259a08aa01a2c26139a",
+          "url": "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/writing-plans/SKILL.md"
+        }
+      ]
+    }
+  ]
+}

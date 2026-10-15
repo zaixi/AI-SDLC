@@ -12,6 +12,7 @@ AI 原生软件研发生命周期的资料收集与研究。
 - [文字去套话与去重复：Humanizer（上游 3.1.0）](skills/humanizer/README.md)
 - [视觉 Skill 评测与历史索引](evaluations/visual-skills/README.md)
 
+- [主流程候选比较：OpenSpec、Superpowers、Spec Kit、gstack、Addy、pstack、Ponytail](materials/reviews/AI-SDLC-workflow-candidates-20261015.md)
 - [资料库与来源索引](materials/README.md)
 - [国内 AI 原生研发资料调研](materials/reviews/AI-SDLC-domestic-research.md)
 - [六篇上传文章审阅](materials/reviews/AI-SDLC-six-articles-review.md)
