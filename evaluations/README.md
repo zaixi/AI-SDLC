@@ -2,6 +2,8 @@
 
 本目录保存轻量报告、索引，以及可复用的测试方法、案例、协议和脚本。2026-10-15 清理前约 143 MB（恢复可复用测试资产后约 4 MB），主要是重复请求 JSON、截图、依赖副本与运行日志；这些内容已移出当前版本，原始证据仍完整保存在固定提交中。
 
+- [文档主动维护：三组 12 条完成，ADR 处理出现小样本差异](documentation-skills/2026-10-16-discovery/report.md)
+- [Addy 文档维护：三题两组各两轮，未观察到额外收益](documentation-skills/2026-10-16-addy/report.md)
 - [如何继续测试：方法、案例与运行边界](TESTING.md)
 - [范围控制研究索引与最终决定](scope-skills/README.md)
 - [Design scope 单段删除对照：三题实际实现](scope-skills/2026-10-15-design-scope-ablation/report.md)

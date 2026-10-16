@@ -1,0 +1,24 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "medium",
+  "groups": [
+    "baseline",
+    "discoverable",
+    "explicit"
+  ],
+  "repeats": 2,
+  "cases": 2,
+  "trajectories": 12,
+  "timeout_seconds": 300,
+  "concurrency": 3,
+  "skill_install": ".agents/skills/documentation-and-adrs/SKILL.md in discoverable and explicit only, unmodified pinned source",
+  "explicit_prompt": "Use $documentation-and-adrs",
+  "workspace": "separate initialized Git repositories under /tmp; not container-isolated; ignore user config; shared CLI built-in instructions/auth",
+  "task": "real code and file editing; no documentation reminder in baseline or discoverable request",
+  "review": "author non-blind manual review plus external behavior checks; rubric never mounted into test repo",
+  "raw_directory": "/tmp/doc-discovery-20261016",
+  "retry_directory": "/tmp/doc-discovery-retry-20261016",
+  "effective_sample": "original baseline-1 plus 11 fresh retries of quota-interrupted trajectories",
+  "attempts": 23,
+  "completed": 12
+}

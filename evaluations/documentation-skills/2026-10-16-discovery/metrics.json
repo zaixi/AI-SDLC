@@ -1,0 +1,348 @@
+[
+  {
+    "name": "01-retention-change-baseline-1",
+    "case": "01-retention-change",
+    "group": "baseline",
+    "repeat": 1,
+    "exit_code": 0,
+    "seconds": 27.6,
+    "completed": true,
+    "raw_directory": "/tmp/doc-discovery-20261016/01-retention-change-baseline-1",
+    "events_sha256": "409ff965e4e06b23a8c8bfcb8740b4c66c784b4ec3ee0be817d3ead57f1e69a9",
+    "skill_read_commands": [],
+    "commands_count": 5,
+    "test_suite_passed": true,
+    "independent_checks_passed": true,
+    "changed_tracked_files": [
+      "docs/architecture/lifecycle.md",
+      "docs/decisions/0001-retention.md",
+      "docs/reference/download.md",
+      "service.py",
+      "tests/test_service.py"
+    ],
+    "docs": {
+      "docs/architecture/lifecycle.md": "b6520e390edd96b177256674f80733aa7d36a99701e3249a2c9cd563c79188d2",
+      "docs/decisions/0001-retention.md": "4ecdfaa7046ebb61381758367119e9230b4fad5b1b936de32a83745356431a68",
+      "docs/index.md": "49e44a0198f4c6c1e92e9502317a13c6c39723bb3481006ec8cca11bd591eb7b",
+      "docs/operations/audit.md": "4bb3b4ffbd27632e14d5c71bd17c820447497d4cb0c04fdb41010b686e07ed47",
+      "docs/reference/download.md": "178286e8bff9902095115d73ae8f565a78f5cd8294d1c1809f6b2edff0c6ca75"
+    }
+  },
+  {
+    "name": "01-retention-change-baseline-2",
+    "case": "01-retention-change",
+    "group": "baseline",
+    "repeat": 2,
+    "exit_code": 0,
+    "seconds": 31.8,
+    "completed": true,
+    "raw_directory": "/tmp/doc-discovery-retry-20261016/01-retention-change-baseline-2",
+    "events_sha256": "3913c006b55778800d9c41882fe4414f2436a315ea14c1cecccfb8a305d1db61",
+    "skill_read_commands": [],
+    "commands_count": 4,
+    "test_suite_passed": true,
+    "independent_checks_passed": true,
+    "changed_tracked_files": [
+      "docs/architecture/lifecycle.md",
+      "docs/decisions/0001-retention.md",
+      "docs/index.md",
+      "docs/reference/download.md",
+      "service.py",
+      "tests/test_service.py"
+    ],
+    "docs": {
+      "docs/architecture/lifecycle.md": "b6520e390edd96b177256674f80733aa7d36a99701e3249a2c9cd563c79188d2",
+      "docs/decisions/0001-retention.md": "874728324900174c7633bd734e8e3516b90f340708f68d6a145af23f83494c3a",
+      "docs/decisions/0002-retention.md": "dab45aa8c9a8cbd84508ccbb759e49c9126c624116e30de5fe8ae1b9629c145e",
+      "docs/index.md": "1d38cbfa5334321faf45c31d2a0224380a3f74dfa46dfa94bbe37ee7254f6689",
+      "docs/operations/audit.md": "4bb3b4ffbd27632e14d5c71bd17c820447497d4cb0c04fdb41010b686e07ed47",
+      "docs/reference/download.md": "c35d4bb9a2f5852d35e38137771bf43d51f235e34f0cdee5e6f11fd1cf2eb180"
+    }
+  },
+  {
+    "name": "01-retention-change-discoverable-1",
+    "case": "01-retention-change",
+    "group": "discoverable",
+    "repeat": 1,
+    "exit_code": 0,
+    "seconds": 34.2,
+    "completed": true,
+    "raw_directory": "/tmp/doc-discovery-retry-20261016/01-retention-change-discoverable-1",
+    "events_sha256": "f456e9cdfd6561877e86e8ec40f017f5ff1cdd6ca6f1de9c486b78e4520e0252",
+    "skill_read_commands": [
+      "/bin/bash -lc \"ls -la; rg --files --hidden -g '\"'!.git/**'\"'; cat README.md; cat .agents/skills/documentation-and-adrs/SKILL.md\""
+    ],
+    "commands_count": 4,
+    "test_suite_passed": true,
+    "independent_checks_passed": true,
+    "changed_tracked_files": [
+      "docs/architecture/lifecycle.md",
+      "docs/decisions/0001-retention.md",
+      "docs/index.md",
+      "docs/reference/download.md",
+      "service.py",
+      "tests/test_service.py"
+    ],
+    "docs": {
+      "docs/architecture/lifecycle.md": "b6520e390edd96b177256674f80733aa7d36a99701e3249a2c9cd563c79188d2",
+      "docs/decisions/0001-retention.md": "874728324900174c7633bd734e8e3516b90f340708f68d6a145af23f83494c3a",
+      "docs/decisions/0002-retention.md": "d3fdb90be0c6aed884fb18f67ed05c64072ff1e541b7208579a3da8bb7f69622",
+      "docs/index.md": "1d38cbfa5334321faf45c31d2a0224380a3f74dfa46dfa94bbe37ee7254f6689",
+      "docs/operations/audit.md": "4bb3b4ffbd27632e14d5c71bd17c820447497d4cb0c04fdb41010b686e07ed47",
+      "docs/reference/download.md": "b5e663123f704e5f0c93a67267beb928eada241c7bc89316e6634619a2021084"
+    }
+  },
+  {
+    "name": "01-retention-change-discoverable-2",
+    "case": "01-retention-change",
+    "group": "discoverable",
+    "repeat": 2,
+    "exit_code": 0,
+    "seconds": 35.0,
+    "completed": true,
+    "raw_directory": "/tmp/doc-discovery-retry-20261016/01-retention-change-discoverable-2",
+    "events_sha256": "a91462369a3469290472d6cafc75d059e02a3f107841d16327228171b9b19c90",
+    "skill_read_commands": [
+      "/bin/bash -lc 'cat .agents/skills/documentation-and-adrs/SKILL.md service.py tests/test_service.py README.md docs/index.md docs/reference/download.md docs/architecture/lifecycle.md docs/decisions/0001-retention.md docs/operations/audit.md && git status --short'"
+    ],
+    "commands_count": 4,
+    "test_suite_passed": true,
+    "independent_checks_passed": true,
+    "changed_tracked_files": [
+      "docs/architecture/lifecycle.md",
+      "docs/decisions/0001-retention.md",
+      "docs/index.md",
+      "docs/reference/download.md",
+      "service.py",
+      "tests/test_service.py"
+    ],
+    "docs": {
+      "docs/architecture/lifecycle.md": "625a0336ed18e77e81064d160a0a86e795cfb8b160c4463cec0ec221a1a27b0b",
+      "docs/decisions/0001-retention.md": "874728324900174c7633bd734e8e3516b90f340708f68d6a145af23f83494c3a",
+      "docs/decisions/0002-retention.md": "1c0706c606ba64fcd341be76212430811195ac4bc7cf5e54cfe48201053833ee",
+      "docs/index.md": "1d38cbfa5334321faf45c31d2a0224380a3f74dfa46dfa94bbe37ee7254f6689",
+      "docs/operations/audit.md": "4bb3b4ffbd27632e14d5c71bd17c820447497d4cb0c04fdb41010b686e07ed47",
+      "docs/reference/download.md": "51c6a8b98916138819afcdcba89d4c590d18181afd77a1d3e9cffd54550dad07"
+    }
+  },
+  {
+    "name": "01-retention-change-explicit-1",
+    "case": "01-retention-change",
+    "group": "explicit",
+    "repeat": 1,
+    "exit_code": 0,
+    "seconds": 38.6,
+    "completed": true,
+    "raw_directory": "/tmp/doc-discovery-retry-20261016/01-retention-change-explicit-1",
+    "events_sha256": "5f0e4dc6be3d8ea42516d5ba870afa105714c1ceef095d4ad58a42f440bcc37a",
+    "skill_read_commands": [
+      "/bin/bash -lc \"git status --short; rg --files --hidden -g AGENTS.md -g .adr-dir -g '\"'!.git'\"'; cat .agents/skills/documentation-and-adrs/SKILL.md\""
+    ],
+    "commands_count": 4,
+    "test_suite_passed": true,
+    "independent_checks_passed": true,
+    "changed_tracked_files": [
+      "docs/architecture/lifecycle.md",
+      "docs/decisions/0001-retention.md",
+      "docs/index.md",
+      "docs/reference/download.md",
+      "service.py",
+      "tests/test_service.py"
+    ],
+    "docs": {
+      "docs/architecture/lifecycle.md": "71f933e58482af4fab9456a879717f17849949cd80354d5d5b9e626c24c30d9b",
+      "docs/decisions/0001-retention.md": "b97b4c8b3b6dec6c5c4f8d1716d3f3a9b9665141840d6bc50fff2723cbb8f207",
+      "docs/decisions/0002-retention.md": "ecd6d9cb18b1f48040d289fcace7fcfe3f536e07d3b69c55b51f115bf3fb191d",
+      "docs/index.md": "5f23bb43ba9641625869afbb2c09886e51f978530c7db5fea4aeb2231785d79c",
+      "docs/operations/audit.md": "4bb3b4ffbd27632e14d5c71bd17c820447497d4cb0c04fdb41010b686e07ed47",
+      "docs/reference/download.md": "a054b62be33b195632a09198641792bc2ff585a7b902d60ffcffabc3679ec973"
+    }
+  },
+  {
+    "name": "01-retention-change-explicit-2",
+    "case": "01-retention-change",
+    "group": "explicit",
+    "repeat": 2,
+    "exit_code": 0,
+    "seconds": 37.9,
+    "completed": true,
+    "raw_directory": "/tmp/doc-discovery-retry-20261016/01-retention-change-explicit-2",
+    "events_sha256": "ab9952f91411fa96adaff35a953f5b3770d289b339a79851ec75c655c3a8870a",
+    "skill_read_commands": [
+      "/bin/bash -lc 'git status --short && cat .agents/skills/documentation-and-adrs/SKILL.md'"
+    ],
+    "commands_count": 5,
+    "test_suite_passed": true,
+    "independent_checks_passed": true,
+    "changed_tracked_files": [
+      "docs/architecture/lifecycle.md",
+      "docs/decisions/0001-retention.md",
+      "docs/index.md",
+      "docs/reference/download.md",
+      "service.py",
+      "tests/test_service.py"
+    ],
+    "docs": {
+      "docs/architecture/lifecycle.md": "9730a5c65ce500f99e60584e73b4050001a4176fa187d8322b7ff047fbec4ee0",
+      "docs/decisions/0001-retention.md": "874728324900174c7633bd734e8e3516b90f340708f68d6a145af23f83494c3a",
+      "docs/decisions/0002-retention.md": "65a0faa667744e433547d290cec5d224afb15ce6c069578ed8894664e5c941e1",
+      "docs/index.md": "1d38cbfa5334321faf45c31d2a0224380a3f74dfa46dfa94bbe37ee7254f6689",
+      "docs/operations/audit.md": "4bb3b4ffbd27632e14d5c71bd17c820447497d4cb0c04fdb41010b686e07ed47",
+      "docs/reference/download.md": "aea61f872752efdb8277851f43b99e277702ba434c31ede4aee279878f4f255a"
+    }
+  },
+  {
+    "name": "02-private-refactor-baseline-1",
+    "case": "02-private-refactor",
+    "group": "baseline",
+    "repeat": 1,
+    "exit_code": 0,
+    "seconds": 19.4,
+    "completed": true,
+    "raw_directory": "/tmp/doc-discovery-retry-20261016/02-private-refactor-baseline-1",
+    "events_sha256": "9ec8c25402e18498a43b02d23dbd7587e63ce3f62ff91281712a5f3cdef9cfbe",
+    "skill_read_commands": [],
+    "commands_count": 5,
+    "test_suite_passed": true,
+    "independent_checks_passed": true,
+    "changed_tracked_files": [
+      "service.py"
+    ],
+    "docs": {
+      "docs/architecture/lifecycle.md": "0e619a22a5ece14e3752badca8215ce1dbdd4e4d7f34559ce519f639b6aa2462",
+      "docs/decisions/0001-retention.md": "aeacd13f26fcdeec246c35a56bfa4f74c43e4ea1408f9bf2a6d05356c8663f33",
+      "docs/index.md": "49e44a0198f4c6c1e92e9502317a13c6c39723bb3481006ec8cca11bd591eb7b",
+      "docs/operations/audit.md": "4bb3b4ffbd27632e14d5c71bd17c820447497d4cb0c04fdb41010b686e07ed47",
+      "docs/reference/download.md": "2d865909c4ea41d36014cfa35d93b4ca3ec9c2fc6ba4845cbb0521144a5510b2"
+    }
+  },
+  {
+    "name": "02-private-refactor-baseline-2",
+    "case": "02-private-refactor",
+    "group": "baseline",
+    "repeat": 2,
+    "exit_code": 0,
+    "seconds": 20.0,
+    "completed": true,
+    "raw_directory": "/tmp/doc-discovery-retry-20261016/02-private-refactor-baseline-2",
+    "events_sha256": "88353d35506903c872ce3ce7dd85d17dfc9bc2dc27a55b797dc527d06419de4e",
+    "skill_read_commands": [],
+    "commands_count": 4,
+    "test_suite_passed": true,
+    "independent_checks_passed": true,
+    "changed_tracked_files": [
+      "service.py"
+    ],
+    "docs": {
+      "docs/architecture/lifecycle.md": "0e619a22a5ece14e3752badca8215ce1dbdd4e4d7f34559ce519f639b6aa2462",
+      "docs/decisions/0001-retention.md": "aeacd13f26fcdeec246c35a56bfa4f74c43e4ea1408f9bf2a6d05356c8663f33",
+      "docs/index.md": "49e44a0198f4c6c1e92e9502317a13c6c39723bb3481006ec8cca11bd591eb7b",
+      "docs/operations/audit.md": "4bb3b4ffbd27632e14d5c71bd17c820447497d4cb0c04fdb41010b686e07ed47",
+      "docs/reference/download.md": "2d865909c4ea41d36014cfa35d93b4ca3ec9c2fc6ba4845cbb0521144a5510b2"
+    }
+  },
+  {
+    "name": "02-private-refactor-discoverable-1",
+    "case": "02-private-refactor",
+    "group": "discoverable",
+    "repeat": 1,
+    "exit_code": 0,
+    "seconds": 17.1,
+    "completed": true,
+    "raw_directory": "/tmp/doc-discovery-retry-20261016/02-private-refactor-discoverable-1",
+    "events_sha256": "544d48a22143d3a9bea83d567396d05dbd533752bbeddbe7b88edc0524ea4a89",
+    "skill_read_commands": [],
+    "commands_count": 4,
+    "test_suite_passed": true,
+    "independent_checks_passed": true,
+    "changed_tracked_files": [
+      "service.py"
+    ],
+    "docs": {
+      "docs/architecture/lifecycle.md": "0e619a22a5ece14e3752badca8215ce1dbdd4e4d7f34559ce519f639b6aa2462",
+      "docs/decisions/0001-retention.md": "aeacd13f26fcdeec246c35a56bfa4f74c43e4ea1408f9bf2a6d05356c8663f33",
+      "docs/index.md": "49e44a0198f4c6c1e92e9502317a13c6c39723bb3481006ec8cca11bd591eb7b",
+      "docs/operations/audit.md": "4bb3b4ffbd27632e14d5c71bd17c820447497d4cb0c04fdb41010b686e07ed47",
+      "docs/reference/download.md": "2d865909c4ea41d36014cfa35d93b4ca3ec9c2fc6ba4845cbb0521144a5510b2"
+    }
+  },
+  {
+    "name": "02-private-refactor-discoverable-2",
+    "case": "02-private-refactor",
+    "group": "discoverable",
+    "repeat": 2,
+    "exit_code": 0,
+    "seconds": 13.9,
+    "completed": true,
+    "raw_directory": "/tmp/doc-discovery-retry-20261016/02-private-refactor-discoverable-2",
+    "events_sha256": "67c4d85ddef25cb50409cb259641e5c6ae79421e40bc60481bad7745e8e6fb1a",
+    "skill_read_commands": [],
+    "commands_count": 3,
+    "test_suite_passed": true,
+    "independent_checks_passed": true,
+    "changed_tracked_files": [
+      "service.py"
+    ],
+    "docs": {
+      "docs/architecture/lifecycle.md": "0e619a22a5ece14e3752badca8215ce1dbdd4e4d7f34559ce519f639b6aa2462",
+      "docs/decisions/0001-retention.md": "aeacd13f26fcdeec246c35a56bfa4f74c43e4ea1408f9bf2a6d05356c8663f33",
+      "docs/index.md": "49e44a0198f4c6c1e92e9502317a13c6c39723bb3481006ec8cca11bd591eb7b",
+      "docs/operations/audit.md": "4bb3b4ffbd27632e14d5c71bd17c820447497d4cb0c04fdb41010b686e07ed47",
+      "docs/reference/download.md": "2d865909c4ea41d36014cfa35d93b4ca3ec9c2fc6ba4845cbb0521144a5510b2"
+    }
+  },
+  {
+    "name": "02-private-refactor-explicit-1",
+    "case": "02-private-refactor",
+    "group": "explicit",
+    "repeat": 1,
+    "exit_code": 0,
+    "seconds": 17.2,
+    "completed": true,
+    "raw_directory": "/tmp/doc-discovery-retry-20261016/02-private-refactor-explicit-1",
+    "events_sha256": "12f04ddced8b83d32a829ab421b569618cbe4ed0310070cb7b968959e3825d27",
+    "skill_read_commands": [
+      "/bin/bash -lc \"ls -la; cat .agents/skills/documentation-and-adrs/SKILL.md; cat service.py tests/test_service.py README.md; git status --short; rg --files --hidden -g '\"'!.git/**'\"'\""
+    ],
+    "commands_count": 4,
+    "test_suite_passed": true,
+    "independent_checks_passed": true,
+    "changed_tracked_files": [
+      "service.py"
+    ],
+    "docs": {
+      "docs/architecture/lifecycle.md": "0e619a22a5ece14e3752badca8215ce1dbdd4e4d7f34559ce519f639b6aa2462",
+      "docs/decisions/0001-retention.md": "aeacd13f26fcdeec246c35a56bfa4f74c43e4ea1408f9bf2a6d05356c8663f33",
+      "docs/index.md": "49e44a0198f4c6c1e92e9502317a13c6c39723bb3481006ec8cca11bd591eb7b",
+      "docs/operations/audit.md": "4bb3b4ffbd27632e14d5c71bd17c820447497d4cb0c04fdb41010b686e07ed47",
+      "docs/reference/download.md": "2d865909c4ea41d36014cfa35d93b4ca3ec9c2fc6ba4845cbb0521144a5510b2"
+    }
+  },
+  {
+    "name": "02-private-refactor-explicit-2",
+    "case": "02-private-refactor",
+    "group": "explicit",
+    "repeat": 2,
+    "exit_code": 0,
+    "seconds": 19.1,
+    "completed": true,
+    "raw_directory": "/tmp/doc-discovery-retry-20261016/02-private-refactor-explicit-2",
+    "events_sha256": "5616752dbfcef3240e403f74b3830891083afcdca9bbdba6b28e505637db3d11",
+    "skill_read_commands": [
+      "/bin/bash -lc 'cat .agents/skills/documentation-and-adrs/SKILL.md; git status --short'"
+    ],
+    "commands_count": 5,
+    "test_suite_passed": true,
+    "independent_checks_passed": true,
+    "changed_tracked_files": [
+      "service.py"
+    ],
+    "docs": {
+      "docs/architecture/lifecycle.md": "0e619a22a5ece14e3752badca8215ce1dbdd4e4d7f34559ce519f639b6aa2462",
+      "docs/decisions/0001-retention.md": "aeacd13f26fcdeec246c35a56bfa4f74c43e4ea1408f9bf2a6d05356c8663f33",
+      "docs/index.md": "49e44a0198f4c6c1e92e9502317a13c6c39723bb3481006ec8cca11bd591eb7b",
+      "docs/operations/audit.md": "4bb3b4ffbd27632e14d5c71bd17c820447497d4cb0c04fdb41010b686e07ed47",
+      "docs/reference/download.md": "2d865909c4ea41d36014cfa35d93b4ca3ec9c2fc6ba4845cbb0521144a5510b2"
+    }
+  }
+]

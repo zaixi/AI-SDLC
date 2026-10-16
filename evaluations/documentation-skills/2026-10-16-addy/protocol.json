@@ -1,0 +1,29 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "medium",
+  "cli": "0.159.0-alpha.3",
+  "groups": [
+    "baseline",
+    "addy"
+  ],
+  "cases": 3,
+  "repeats_per_group_per_case": 2,
+  "expected_trajectories": 12,
+  "expected_model_calls": 16,
+  "timeout_seconds_per_call": 240,
+  "concurrent_trajectories": 3,
+  "mode": "closed-input document proposals; no tools requested",
+  "isolation": "fresh ephemeral CLI session and separate working directory for every call; ignore user config; shared CLI built-in instructions and authentication; not container isolation",
+  "followup": "fresh call carrying original input and previous assistant answer plus followup; not a native resumed conversation",
+  "skill": "explicit full SKILL.md in user input; baseline omits it",
+  "raw_output": "/tmp/doc-sync-eval-20261016-valid",
+  "failed_attempt": "gpt-5.4 unsupported for account: 12 failed initial calls, zero answers, outside scored sample",
+  "limits": [
+    "not Matt versus Matt+Addy",
+    "all relevant documents provided; no retrieval coverage test",
+    "not native skill discovery",
+    "judge is task author, not blinded",
+    "Mermaid not rendered",
+    "system-instruction contamination not fully excluded"
+  ]
+}

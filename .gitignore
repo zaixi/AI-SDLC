@@ -180,3 +180,16 @@ __pycache__/
 !/evaluations/scope-skills/2026-10-15-design-scope-ablation/results.json
 !/evaluations/scope-skills/2026-10-15-design-scope-ablation/inputs/rules.json
 !/evaluations/scope-skills/2026-10-15-design-scope-ablation/inputs/checks.py
+
+# Documentation skill evaluation: lightweight cases, protocol and metrics
+!/evaluations/documentation-skills/2026-10-16-addy/cases.json
+!/evaluations/documentation-skills/2026-10-16-addy/source.json
+!/evaluations/documentation-skills/2026-10-16-addy/protocol.json
+!/evaluations/documentation-skills/2026-10-16-addy/metrics.json
+
+# Documentation discovery fixtures and metrics
+!/evaluations/documentation-skills/2026-10-16-discovery/cases.json
+!/evaluations/documentation-skills/2026-10-16-discovery/protocol.json
+!/evaluations/documentation-skills/2026-10-16-discovery/metrics.json
+!/evaluations/documentation-skills/2026-10-16-discovery/attempts.json
+!/evaluations/documentation-skills/2026-10-16-discovery/interrupted.md

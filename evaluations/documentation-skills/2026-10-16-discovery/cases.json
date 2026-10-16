@@ -1,0 +1,30 @@
+[
+  {
+    "id": "01-retention-change",
+    "request": "请修改导出下载功能：已批准把文件可下载期限从 7 天缩短为 24 小时，以减少敏感文件的暴露时间；到创建后恰好 24 小时就应返回 410 且不提供 URL，之前仍返回 200 和 URL。审计记录仍保留 30 天。完成实现与必要验证。",
+    "files": {
+      "README.md": "# Export service\n\nSmall standard-library Python service.\n\nRun checks: `python -m unittest discover -s tests -v`\n\nSee [project information](docs/index.md).\n",
+      "docs/index.md": "# Project information\n\n- [Download contract](reference/download.md)\n- [Lifecycle](architecture/lifecycle.md)\n- [Retention decision](decisions/0001-retention.md)\n- [Audit operations](operations/audit.md)\n",
+      "docs/reference/download.md": "# Download contract\n\nDownloads remain available for 7 days after creation. At exactly 7 days they are still available; after that, return HTTP 410 with no URL. Available downloads return HTTP 200 and the stored URL.\n",
+      "docs/architecture/lifecycle.md": "# Artifact lifecycle\n\nDownload artifacts expire after 7 days. Audit records remain available for 30 days.\n\n```mermaid\nstateDiagram-v2\n    [*] --> Available\n    Available --> Expired: age > 7 days\n    Expired --> [*]: download returns 410\n```\n",
+      "docs/decisions/0001-retention.md": "# ADR-0001 Seven-day artifact retention\n\nStatus: Accepted\n\nSupport users sometimes retrieve exports several days later. We chose seven days rather than one day to reduce regeneration requests. Audit records are retained separately for 30 days.\n",
+      "docs/operations/audit.md": "# Audit operations\n\nAudit records remain for 30 days for incident investigation. Artifact expiry does not delete audit records.\n",
+      "service.py": "ARTIFACT_TTL = 7 * 24 * 60 * 60\nAUDIT_TTL = 30 * 24 * 60 * 60\n\ndef download(created_at, now, url):\n    if now - created_at > ARTIFACT_TTL:\n        return 410, None\n    return 200, url\n\ndef total_amount(items):\n    result = 0\n    for amount in items:\n        result += amount\n    return result\n",
+      "tests/test_service.py": "import unittest\nfrom service import download, total_amount, ARTIFACT_TTL, AUDIT_TTL\n\nclass ServiceTests(unittest.TestCase):\n    def test_fresh(self):\n        self.assertEqual(download(100, 101, \"file\"), (200, \"file\"))\n    def test_expired(self):\n        self.assertEqual(download(0, ARTIFACT_TTL + 1, \"file\"), (410, None))\n    def test_audit(self):\n        self.assertEqual(AUDIT_TTL, 30 * 24 * 60 * 60)\n    def test_total(self):\n        self.assertEqual(total_amount([1, 2, 3]), 6)\n        self.assertEqual(total_amount([]), 0)\n"
+    }
+  },
+  {
+    "id": "02-private-refactor",
+    "request": "请将 total_amount 的私有求和实现简化为 Python 内置 sum；输入仍为整数金额列表，空列表返回 0，其他行为不变。完成修改与必要验证。",
+    "files": {
+      "README.md": "# Export service\n\nSmall standard-library Python service.\n\nRun checks: `python -m unittest discover -s tests -v`\n\nSee [project information](docs/index.md).\n",
+      "docs/index.md": "# Project information\n\n- [Download contract](reference/download.md)\n- [Lifecycle](architecture/lifecycle.md)\n- [Retention decision](decisions/0001-retention.md)\n- [Audit operations](operations/audit.md)\n",
+      "docs/reference/download.md": "# Download contract\n\nDownloads remain available for 7 days after creation. At exactly 7 days they are still available; after that, return HTTP 410 with no URL. Available downloads return HTTP 200 and the stored URL.\n",
+      "docs/architecture/lifecycle.md": "# Artifact lifecycle\n\nDownload artifacts expire after 7 days. Audit records remain available for 30 days.\n\n```mermaid\nstateDiagram-v2\n    [*] --> Available\n    Available --> Expired: age > 7 days\n    Expired --> [*]: download returns 410\n```\n",
+      "docs/decisions/0001-retention.md": "# ADR-0001 Seven-day artifact retention\n\nStatus: Accepted\n\nSupport users sometimes retrieve exports several days later. We chose seven days rather than one day to reduce regeneration requests. Audit records are retained separately for 30 days.\n",
+      "docs/operations/audit.md": "# Audit operations\n\nAudit records remain for 30 days for incident investigation. Artifact expiry does not delete audit records.\n",
+      "service.py": "ARTIFACT_TTL = 7 * 24 * 60 * 60\nAUDIT_TTL = 30 * 24 * 60 * 60\n\ndef download(created_at, now, url):\n    if now - created_at > ARTIFACT_TTL:\n        return 410, None\n    return 200, url\n\ndef total_amount(items):\n    result = 0\n    for amount in items:\n        result += amount\n    return result\n",
+      "tests/test_service.py": "import unittest\nfrom service import download, total_amount, ARTIFACT_TTL, AUDIT_TTL\n\nclass ServiceTests(unittest.TestCase):\n    def test_fresh(self):\n        self.assertEqual(download(100, 101, \"file\"), (200, \"file\"))\n    def test_expired(self):\n        self.assertEqual(download(0, ARTIFACT_TTL + 1, \"file\"), (410, None))\n    def test_audit(self):\n        self.assertEqual(AUDIT_TTL, 30 * 24 * 60 * 60)\n    def test_total(self):\n        self.assertEqual(total_amount([1, 2, 3]), 6)\n        self.assertEqual(total_amount([]), 0)\n"
+    }
+  }
+]

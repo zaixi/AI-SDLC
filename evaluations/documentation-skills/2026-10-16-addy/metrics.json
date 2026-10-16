@@ -1,0 +1,243 @@
+{
+  "trajectories": 12,
+  "calls": 16,
+  "assessment": "core criteria only; not a general correctness score",
+  "runs": [
+    {
+      "name": "01-api-and-diagram-baseline-1",
+      "group": "baseline",
+      "case": "01-api-and-diagram",
+      "repeat": 1,
+      "core_criteria": "pass (manual, non-blind)",
+      "phases": [
+        {
+          "phase": 0,
+          "exit_code": 0,
+          "characters": 906,
+          "seconds": 14.3,
+          "sha256": "cf6480afedc2e91f15045207e20344a0784a31e090b9afe97371976470ae2510",
+          "path": "/tmp/doc-sync-eval-20261016-valid/01-api-and-diagram-baseline-1/answer-0.md"
+        }
+      ]
+    },
+    {
+      "name": "01-api-and-diagram-baseline-2",
+      "group": "baseline",
+      "case": "01-api-and-diagram",
+      "repeat": 2,
+      "core_criteria": "pass (manual, non-blind)",
+      "phases": [
+        {
+          "phase": 0,
+          "exit_code": 0,
+          "characters": 832,
+          "seconds": 16.1,
+          "sha256": "69f3c9d215b3155f47e7964141393bbc54e1e745221ef9ff96212070c746dad6",
+          "path": "/tmp/doc-sync-eval-20261016-valid/01-api-and-diagram-baseline-2/answer-0.md"
+        }
+      ]
+    },
+    {
+      "name": "01-api-and-diagram-addy-1",
+      "group": "addy",
+      "case": "01-api-and-diagram",
+      "repeat": 1,
+      "core_criteria": "pass (manual, non-blind)",
+      "phases": [
+        {
+          "phase": 0,
+          "exit_code": 0,
+          "characters": 957,
+          "seconds": 17.2,
+          "sha256": "864f33c2f024bca6a962bc4633ebe28e5173fcfd1a18eea857224206e15b05a1",
+          "path": "/tmp/doc-sync-eval-20261016-valid/01-api-and-diagram-addy-1/answer-0.md"
+        }
+      ]
+    },
+    {
+      "name": "01-api-and-diagram-addy-2",
+      "group": "addy",
+      "case": "01-api-and-diagram",
+      "repeat": 2,
+      "core_criteria": "pass (manual, non-blind)",
+      "phases": [
+        {
+          "phase": 0,
+          "exit_code": 0,
+          "characters": 986,
+          "seconds": 17.8,
+          "sha256": "b5743a25daf182013bedc59cdc1d6b8c988f41bef62bfbdb18aae754de5a3a28",
+          "path": "/tmp/doc-sync-eval-20261016-valid/01-api-and-diagram-addy-2/answer-0.md"
+        }
+      ]
+    },
+    {
+      "name": "02-decision-conflict-baseline-1",
+      "group": "baseline",
+      "case": "02-decision-conflict",
+      "repeat": 1,
+      "core_criteria": "pass (manual, non-blind)",
+      "phases": [
+        {
+          "phase": 0,
+          "exit_code": 0,
+          "characters": 515,
+          "seconds": 12.9,
+          "sha256": "8a4c75341c21b53becdcfc800d3f9173d88ce82ce485138d012b3ec53d3d6716",
+          "path": "/tmp/doc-sync-eval-20261016-valid/02-decision-conflict-baseline-1/answer-0.md"
+        },
+        {
+          "phase": 1,
+          "exit_code": 0,
+          "characters": 912,
+          "seconds": 17.9,
+          "sha256": "98cec5101db96b085aacf9b82c196e2b291514bd27e1a748610a745d498cd966",
+          "path": "/tmp/doc-sync-eval-20261016-valid/02-decision-conflict-baseline-1/answer-1.md"
+        }
+      ]
+    },
+    {
+      "name": "02-decision-conflict-baseline-2",
+      "group": "baseline",
+      "case": "02-decision-conflict",
+      "repeat": 2,
+      "core_criteria": "pass (manual, non-blind)",
+      "phases": [
+        {
+          "phase": 0,
+          "exit_code": 0,
+          "characters": 442,
+          "seconds": 15.0,
+          "sha256": "90ef50192b457d26ad5823eede3f7feae7123f788e167c1476a5ec89c0f079e7",
+          "path": "/tmp/doc-sync-eval-20261016-valid/02-decision-conflict-baseline-2/answer-0.md"
+        },
+        {
+          "phase": 1,
+          "exit_code": 0,
+          "characters": 972,
+          "seconds": 17.9,
+          "sha256": "9414e09a9fe60287ba564bfc285b9d462337bfd8b099eba6c36610466debe193",
+          "path": "/tmp/doc-sync-eval-20261016-valid/02-decision-conflict-baseline-2/answer-1.md"
+        }
+      ]
+    },
+    {
+      "name": "02-decision-conflict-addy-1",
+      "group": "addy",
+      "case": "02-decision-conflict",
+      "repeat": 1,
+      "core_criteria": "pass (manual, non-blind)",
+      "phases": [
+        {
+          "phase": 0,
+          "exit_code": 0,
+          "characters": 623,
+          "seconds": 13.1,
+          "sha256": "834a3b30166f5a8fd287ae24d531fd7c90b88b2ca610e540dcd57f85b3f41a4f",
+          "path": "/tmp/doc-sync-eval-20261016-valid/02-decision-conflict-addy-1/answer-0.md"
+        },
+        {
+          "phase": 1,
+          "exit_code": 0,
+          "characters": 1324,
+          "seconds": 20.9,
+          "sha256": "0bbdfe17ebf870d7dd29cb2fd3536330a90f03e606fb68b1f359b04fab33a408",
+          "path": "/tmp/doc-sync-eval-20261016-valid/02-decision-conflict-addy-1/answer-1.md"
+        }
+      ]
+    },
+    {
+      "name": "02-decision-conflict-addy-2",
+      "group": "addy",
+      "case": "02-decision-conflict",
+      "repeat": 2,
+      "core_criteria": "pass (manual, non-blind)",
+      "phases": [
+        {
+          "phase": 0,
+          "exit_code": 0,
+          "characters": 591,
+          "seconds": 14.8,
+          "sha256": "6d2ce6c42a56c6f6add571aad8330c7e6598a493d0211b245c6badf0f0416b42",
+          "path": "/tmp/doc-sync-eval-20261016-valid/02-decision-conflict-addy-2/answer-0.md"
+        },
+        {
+          "phase": 1,
+          "exit_code": 0,
+          "characters": 1238,
+          "seconds": 20.1,
+          "sha256": "2d0f832cc84c940a13f7f77b514dd857cdec9c2b6fcc75f5585c9e24953781cd",
+          "path": "/tmp/doc-sync-eval-20261016-valid/02-decision-conflict-addy-2/answer-1.md"
+        }
+      ]
+    },
+    {
+      "name": "03-internal-refactor-baseline-1",
+      "group": "baseline",
+      "case": "03-internal-refactor",
+      "repeat": 1,
+      "core_criteria": "pass (manual, non-blind)",
+      "phases": [
+        {
+          "phase": 0,
+          "exit_code": 0,
+          "characters": 149,
+          "seconds": 5.3,
+          "sha256": "535ab58471f94f588d9f0a35a557996a062cbbcc119e0a7e0b65d0ea5f180477",
+          "path": "/tmp/doc-sync-eval-20261016-valid/03-internal-refactor-baseline-1/answer-0.md"
+        }
+      ]
+    },
+    {
+      "name": "03-internal-refactor-baseline-2",
+      "group": "baseline",
+      "case": "03-internal-refactor",
+      "repeat": 2,
+      "core_criteria": "pass (manual, non-blind)",
+      "phases": [
+        {
+          "phase": 0,
+          "exit_code": 0,
+          "characters": 155,
+          "seconds": 5.7,
+          "sha256": "1642ccd35b4d05f88c55ab61277c84a2b652f2a54437cffe9e11761a3bbc8e0c",
+          "path": "/tmp/doc-sync-eval-20261016-valid/03-internal-refactor-baseline-2/answer-0.md"
+        }
+      ]
+    },
+    {
+      "name": "03-internal-refactor-addy-1",
+      "group": "addy",
+      "case": "03-internal-refactor",
+      "repeat": 1,
+      "core_criteria": "pass (manual, non-blind)",
+      "phases": [
+        {
+          "phase": 0,
+          "exit_code": 0,
+          "characters": 224,
+          "seconds": 8.3,
+          "sha256": "42b97644e2b9980e2c4927166d94df49d7a1e03a150cbe956290bfacab3315bf",
+          "path": "/tmp/doc-sync-eval-20261016-valid/03-internal-refactor-addy-1/answer-0.md"
+        }
+      ]
+    },
+    {
+      "name": "03-internal-refactor-addy-2",
+      "group": "addy",
+      "case": "03-internal-refactor",
+      "repeat": 2,
+      "core_criteria": "pass (manual, non-blind)",
+      "phases": [
+        {
+          "phase": 0,
+          "exit_code": 0,
+          "characters": 230,
+          "seconds": 7.9,
+          "sha256": "7ce1aed178c0e6008abfecf23941c16519fac4fde5e290094dfc8a9a65123680",
+          "path": "/tmp/doc-sync-eval-20261016-valid/03-internal-refactor-addy-2/answer-0.md"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "01-api-and-diagram",
+    "request": "本次已批准把导出改为异步任务，代码已改完。请检查并处理受影响的文档，只输出需要替换的文件完整内容和必要说明。",
+    "files": {
+      "decision.md": "已批准：POST /exports 改为返回 202 和 job_id，GET /exports/{job_id} 查询任务状态；下载地址仅在 succeeded 时提供。",
+      "src/export.py": "def create_export(queue, data):\n    return 202, {\"job_id\": queue.submit(data)}\n",
+      "docs/api.md": "POST /exports 同步生成文件，返回 200 和下载地址。",
+      "docs/design.md": "导出当前在请求内同步完成。\n```mermaid\nsequenceDiagram\nClient->>API: POST /exports\nAPI->>Worker: 同步生成\nWorker-->>API: 下载地址\nAPI-->>Client: 200 下载地址\n```",
+      "README.md": "导出接口见 docs/api.md。"
+    }
+  },
+  {
+    "id": "02-decision-conflict",
+    "request": "开发者把扣款超时后自动重试加上了，并说这样更可靠。请检查本次变更是否需要更新文档，给出必要修改或指出阻塞，不要修改代码。",
+    "files": {
+      "src/payment.py": "def charge(gateway, order):\n    try:\n        return gateway.charge(order)\n    except TimeoutError:\n        return gateway.charge(order)\n",
+      "docs/adr/0001-payment.md": "# ADR-0001 扣款超时不自动重试\n状态：Accepted。\n支付网关不支持幂等键。超时不能证明未扣款，因此禁止自动重试，以避免重复扣款。超时转人工核对。",
+      "docs/payment.md": "扣款超时进入人工核对，不自动重试。",
+      "change.md": "没有已批准的新决定，也没有网关已支持幂等的证据。"
+    },
+    "followup": {
+      "request": "现补充批准决定：新网关契约已确认同一 idempotency_key 在 24 小时内至多扣款一次，重试必须沿用该键；已批准仅在该窗口内最多重试一次。请更新必要文档，保留历史理由。",
+      "files": {
+        "src/payment.py": "def charge(gateway, order, key):\n    try:\n        return gateway.charge(order, idempotency_key=key)\n    except TimeoutError:\n        return gateway.charge(order, idempotency_key=key)\n",
+        "note.md": "代码尚未证明 key 的稳定保存和 24 小时窗口约束，应明确未验证，不能靠修改文档使其通过。"
+      }
+    }
+  },
+  {
+    "id": "03-internal-refactor",
+    "request": "本次只将私有金额求和循环替换为 sum，公开行为未改变，现有测试通过。请检查并处理受影响的文档，输出必要修改；没有则说明。",
+    "files": {
+      "src/total.py": "def total(items):\n    return sum(item.amount for item in items)\n",
+      "before.py": "def total(items):\n    result = 0\n    for item in items:\n        result += item.amount\n    return result\n",
+      "docs/contract.md": "返回所有条目的金额总和，空列表返回 0。",
+      "docs/adr/0001-money.md": "金额采用整数分，避免浮点精度误差。",
+      "README.md": "金额契约见 docs/contract.md。"
+    }
+  }
+]
