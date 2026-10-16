@@ -2,12 +2,15 @@
 
 AI 原生软件研发生命周期的资料收集与研究。
 
+主研发流程已选定以 [Matt Pocock Skills](https://github.com/mattpocock/skills) 为基础，完整流程尚未接入；[选择理由与待验证事项](docs/project-intent.md#主流程选型决定)已记录。
+
 **从这里开始：[项目背景、痛点与需求](docs/project-intent.md)。** 记录要解决的问题、用户约束、当前决定与待明确事项；后续选型和迭代先核对此页。
 
 [AGENTS.md](AGENTS.md) 记录本仓库的 Agent 工作约定：中文回复、输出表达、最小改动和验证要求；其中关联 Humanizer、visual-explanation 与 search-before-build。文件是否自动加载取决于客户端，不代表已安装到机器的全局配置。它还引用了特定工作流工具，使用前需确认环境支持。
 
 [search-before-build](skills/search-before-build/SKILL.md) 用于新功能、架构或技术选型、依赖集成和工具开发：先查现成方案，再决定直接采用、扩展、借鉴或自建。日常修复与机械修改不必触发。基于 ECC search-first 适配，[来源与改动](skills/search-before-build/SOURCES.md) 单独记录；AGENTS.md 已配置按上述场景读取和使用，实际生效取决于客户端是否加载并遵循该文件。
 
+- [Matt Pocock Skills 使用速查：入口、交付与辅助能力](docs/matt-skills-guide.md)
 - [通用视觉表达 Skill（统一入口，0.5.0）](skills/visual-explanation/README.md)
 - [文字去套话与去重复：Humanizer（上游 3.1.0）](skills/humanizer/README.md)
 - [视觉 Skill 评测与历史索引](evaluations/visual-skills/README.md)

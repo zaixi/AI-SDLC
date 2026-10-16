@@ -56,14 +56,24 @@
 | 文字表达 | 已采用 [humanizer 3.1.0](../skills/humanizer/README.md)，上层调用使用 Embedded mode | 只交付最终文本；中文稳定效果未被本次接入证明，已有写作比较也不支持宣称通用最优 |
 | 找现成方案 | 已采用 [search-before-build](../skills/search-before-build/SKILL.md)，来源见 [SOURCES](../skills/search-before-build/SOURCES.md) | 适用于新功能、选型及可能已有实现的工具；不要求日常小修复都搜索 |
 | 工作约定 | [AGENTS.md](../AGENTS.md) 已提供三个辅助 Skill 的场景入口 | 依赖客户端读取和遵循，不等于已部署跨 Agent 统一调度系统 |
-| 主研发流程 | Matt Pocock 是已讨论的优先基础方向；国内团队等实践继续作为候选依据 | 未最终选定和接入完整主链，不能把“以 Matt 为基础”写成全套安装完成或已证明最佳 |
+| 主研发流程 | 用户已选定 [Matt Pocock Skills](https://github.com/mattpocock/skills) 为基础，选择理由见下文 | 尚未接入完整主链；单入口与跨 Agent 能力仍需验证，不代表全套安装完成或已证明最佳 |
 | 范围控制 | [已有研究的当前决定](../evaluations/scope-skills/README.md) 是保留原简化与最小改动规则，不叠加被测试的新段落 | 不因曾讨论某个 Skill 就恢复或安装它；历史报告中的全局文件修改只代表当时机器 |
 
 权限与运维曾被讨论为可独立处理的能力。它们不应阻塞当前理解、设计、评审和维护问题的研究；具体接入尚未决定。
 
+## 主流程选型决定
+
+**2026-10-15，用户确认：“那就选定 matt 吧”。** 采用 Matt Pocock Skills 作为主研发流程基础，保留已有 visual-explanation、humanizer 和 search-before-build 辅助能力。
+
+选择理由：Matt 已有澄清、领域建模、规格、任务、实现和评审能力；`codebase-design` 关注接口承载的契约、复杂性封装、修改局部性与可测试性，覆盖新功能从设计开始便于后续维护的需要。其可组合方式也符合优先复用、少量自建的要求。比较依据见[机制比较](../materials/reviews/AI-SDLC-workflow-deep-comparison-20261015.md)及本次补核的 [codebase-design 原文](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/codebase-design/SKILL.md)。该提交是研究版本，正式接入时仍需记录实际采用版本。
+
+本次确认基础方案，尚未确定安装范围、客户端接入方式或本地修改。pstack 的历史调查与设计方法继续作为缺口补充的参考；其他候选没有因此一并获准采用。后续先验证 Matt 原有能力，遇到实际缺口再决定补充，尽量保持上游可更新。
+
+重点验证单入口能否正确调度、评审能否找到相关设计理由，以及新会话能否完成第二次修改。跨 Agent 支持需逐客户端核对；静态源码比较不等于任务效果验证。
+
 ## 下一步需要明确的内容
 
-背景与需求已保存，当前继续研究选型，尚未进入主流程实施。接下来需明确以下缺口，具体顺序仍需结合用户选择：
+基础方案已选定，完整主流程尚未接入。接下来围绕 Matt 明确以下缺口：
 
 - 选择存量项目变更，以及新功能或新框架从设计到后续修改的代表场景；Kernel、BSP、Safety、Robot 是此前举例，不是已选定目标。
 - 用哪些现成能力衔接澄清、设计、实现、验证与评审；哪些痛点仍有实际缺口。上一轮助手提出的阶段划分只是建议，不是已批准架构。
@@ -89,7 +99,7 @@
 
 - [按痛点重做的机制比较](../materials/reviews/AI-SDLC-workflow-deep-comparison-20261015.md)：2026-10-15 用户指出初筛判断空泛后，深入核对同一固定版本的流程与规则；修正 pstack、Addy、gstack、Spec Kit 的定位，尚未采用新框架或完成实测排名。
 
-- [新增主流程候选核对](../materials/reviews/AI-SDLC-workflow-candidates-20261015.md)：2026-10-15 用户补充 OpenSpec、Superpowers、Spec Kit、gstack、Addy Osmani、Lauren Tan 的 pstack 和 Ponytail。均为候选，尚未作采用决定；不将此前优先考虑 Matt 当作已完成的选型。
+- [新增主流程候选核对](../materials/reviews/AI-SDLC-workflow-candidates-20261015.md)：2026-10-15 用户补充 OpenSpec、Superpowers、Spec Kit、gstack、Addy Osmani、Lauren Tan 的 pstack 和 Ponytail。该报告记录选型前的候选状态；当前已确认以 Matt 为基础，其他候选尚未采用。
 
 - [最初分享会话痛点摘录](../materials/reviews/Shared-conversation-pain-points.md)：含用户原话与归纳的区分。
 - [跨 Agent 与工程意图选型](../materials/reviews/Agent-independent-intent-skills.md)：2026-10-09 的研究记录，不是当前安装清单。
