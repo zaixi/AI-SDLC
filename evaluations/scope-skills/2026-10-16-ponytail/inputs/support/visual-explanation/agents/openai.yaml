@@ -1,0 +1,4 @@
+interface:
+  display_name: "视觉解释"
+  short_description: "就地解释当前话题，选合适的图、表或代码表达，复杂内容按需展开"
+  default_prompt: "使用 $visual-explanation，用合适的视图解释当前问题，保留关键关系与约束，复杂内容按需展开。"

@@ -50,3 +50,7 @@ git sparse-checkout set skills scripts
 materials/ 仍含约 107 MB 的参考资料，不在这次清理范围内。浅克隆整个工作区仍会下载这些当前文件；稀疏部分克隆可以避开它们。不支持过滤的服务端可能仍下载全部当前文件。
 
 本次没有重写公共 Git 历史或强推。彻底清除历史对象需要另行规划历史迁移，并同步处理协作者克隆和固定版本归档；不能把本次文件清理说成已缩减完整历史。
+
+- [2026-10-16：visual-explanation、Archify、Fireworks 实测](visual-skills/2026-10-16-specialist-tools/report.md)：两个用例，每组一次；保留预算截断、局部产物与完整交付的区别，未更改正式 Skill。
+
+- [2026-10-16 图解工具扩展评测](visual-skills/2026-10-16-specialist-tools-expanded/README.md)：4 题 × 3 组，预算加倍，剔除维护说明；逐题区分交付、含义、可读性与消耗。

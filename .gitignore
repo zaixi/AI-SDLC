@@ -193,3 +193,21 @@ __pycache__/
 !/evaluations/documentation-skills/2026-10-16-discovery/metrics.json
 !/evaluations/documentation-skills/2026-10-16-discovery/attempts.json
 !/evaluations/documentation-skills/2026-10-16-discovery/interrupted.md
+
+# Ponytail incremental evaluation: frozen instructions, fixtures and metrics
+!/evaluations/scope-skills/2026-10-16-ponytail/inputs/**
+!/evaluations/scope-skills/2026-10-16-ponytail/metrics.json
+!/evaluations/scope-skills/2026-10-16-ponytail/precision-probe.json
+
+# Diagram tool comparison: lightweight provenance and results
+!/evaluations/visual-skills/2026-10-16-specialist-tools/sources.json
+!/evaluations/visual-skills/2026-10-16-specialist-tools/metrics.json
+!/evaluations/visual-skills/2026-10-16-specialist-tools/assessments.json
+!/evaluations/visual-skills/2026-10-16-specialist-tools/renders.json
+
+# Expanded diagram comparison: frozen cases and lightweight results
+!/evaluations/visual-skills/2026-10-16-specialist-tools-expanded/inputs/**
+!/evaluations/visual-skills/2026-10-16-specialist-tools-expanded/sources.json
+!/evaluations/visual-skills/2026-10-16-specialist-tools-expanded/metrics.json
+!/evaluations/visual-skills/2026-10-16-specialist-tools-expanded/assessments.json
+!/evaluations/visual-skills/2026-10-16-specialist-tools-expanded/renders.json

@@ -1,0 +1,906 @@
+[
+  {
+    "id": "E01-without",
+    "case": "E01",
+    "condition": "without",
+    "exit": 0,
+    "seconds": 60.36,
+    "model_requests": 3,
+    "output_tokens": 16708,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 1,
+        "stdout": "",
+        "stderr": "test_503_recovery_and_bound (__main__.Billing.test_503_recovery_and_bound) ... ERROR\ntest_batch_conflict (__main__.Billing.test_batch_conflict) ... FAIL\ntest_date_conflict_is_atomic (__main__.Billing.test_date_conflict_is_atomic) ... FAIL\ntest_equivalent_decimal (__main__.Billing.test_equivalent_decimal) ... FAIL\ntest_legacy_conflict_preserved (__main__.Billing.test_legacy_conflict_preserved) ... FAIL\ntest_legacy_equal_duplicates (__main__.Billing.test_legacy_equal_duplicates) ... FAIL\ntest_overlapping_runs (__main__.Billing.test_overlapping_runs) ... FAIL\ntest_precision_conflict_is_atomic (__main__.Billing.test_precision_conflict_is_atomic) ... FAIL\ntest_rerun (__main__.Billing.test_rerun) ... FAIL\ntest_unique_constraint (__main__.Billing.test_unique_constraint) ... FAIL\n\n======================================================================\nERROR: test_503_recovery_and_bound (__main__.Billing.test_503_recovery_and_bound)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/review/execution_checks.py\", line 88, in test_503_recovery_and_bound\n    self.assertEqual(self.m.fetch_csv('http://test'),'hello');self.assertEqual(request.call_count,2)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/work/import_billing.py\", line 9, in fetch_csv\n    with urllib.request.urlopen(url, timeout=20) as response:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.11/unittest/mock.py\", line 1124, in __call__\n    return self._mock_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.11/unittest/mock.py\", line 1128, in _mock_call\n    return self._execute_mock_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.11/unittest/mock.py\", line 1187, in _execute_mock_call\n    raise result\nurllib.error.HTTPError: HTTP Error 503: Unavailable\n\n======================================================================\nFAIL: test_batch_conflict (__main__.Billing.test_batch_conflict)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/review/execution_checks.py\", line 56, in test_batch_conflict\n    with self.assertRaises(Exception):self.load([('a','1','2026-10-01'),('a','2','2026-10-01')])\nAssertionError: Exception not raised\n\n======================================================================\nFAIL: test_date_conflict_is_atomic (__main__.Billing.test_date_conflict_is_atomic)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/review/execution_checks.py\", line 52, in test_date_conflict_is_atomic\n    with self.assertRaises(Exception):self.load([('b','2','2026-10-01'),('a','10','2026-10-02')])\nAssertionError: Exception not raised\n\n======================================================================\nFAIL: test_equivalent_decimal (__main__.Billing.test_equivalent_decimal)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/review/execution_checks.py\", line 60, in test_equivalent_decimal\n    self.load([('a','12.30','2026-10-01')]);self.load([('a','12.3','2026-10-01')]);self.assertEqual(len(self.rows()),1)\n                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 2 != 1\n\n======================================================================\nFAIL: test_legacy_conflict_preserved (__main__.Billing.test_legacy_conflict_preserved)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/review/execution_checks.py\", line 81, in test_legacy_conflict_preserved\n    with self.assertRaises(Exception):self.load([('b','2','2026-10-01')])\nAssertionError: Exception not raised\n\n======================================================================\nFAIL: test_legacy_equal_duplicates (__main__.Billing.test_legacy_equal_duplicates)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/review/execution_checks.py\", line 76, in test_legacy_equal_duplicates\n    self.load([('b','2','2026-10-01')]);self.assertEqual(len(self.rows()),2)\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 3 != 2\n\n======================================================================\nFAIL: test_overlapping_runs (__main__.Billing.test_overlapping_runs)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/review/execution_checks.py\", line 72, in test_overlapping_runs\n    self.assertEqual(len(self.rows()),1)\nAssertionError: 2 != 1\n\n======================================================================\nFAIL: test_precision_conflict_is_atomic (__main__.Billing.test_precision_conflict_is_atomic)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/review/execution_checks.py\", line 46, in test_precision_conflict_is_atomic\n    with self.assertRaises(Exception):\nAssertionError: Exception not raised\n\n======================================================================\nFAIL: test_rerun (__main__.Billing.test_rerun)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/review/execution_checks.py\", line 42, in test_rerun\n    self.load(r);self.load(r);self.assertEqual(len(self.rows()),2)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 4 != 2\n\n======================================================================\nFAIL: test_unique_constraint (__main__.Billing.test_unique_constraint)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/review/execution_checks.py\", line 65, in test_unique_constraint\n    with self.assertRaises(sqlite3.IntegrityError):c.execute(\"INSERT INTO billing(billing_id,amount,billing_date) VALUES ('a','1','2026-10-01')\")\nAssertionError: IntegrityError not raised\n\n----------------------------------------------------------------------\nRan 10 tests in 0.022s\n\nFAILED (failures=9, errors=1)\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_one_row (test_import.ImportTest.test_one_row) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n"
+      }
+    ],
+    "changes": [],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 18572,
+    "upstream_errors": 0,
+    "finish_reasons": [
+      "tool_calls",
+      "tool_calls",
+      "length"
+    ],
+    "truncated": true,
+    "reasoning_tokens": 15939,
+    "instruction_reads": [
+      "/input/AGENTS.md"
+    ],
+    "sizes": {
+      "production": {
+        "files": 1,
+        "lines": 28,
+        "nonblank_lines": 20,
+        "bytes": 730
+      },
+      "tests": {
+        "files": 1,
+        "lines": 17,
+        "nonblank_lines": 15,
+        "bytes": 689
+      },
+      "docs": {
+        "files": 1,
+        "lines": 5,
+        "nonblank_lines": 4,
+        "bytes": 253
+      }
+    },
+    "passes_frozen_checks": false,
+    "delivered": false
+  },
+  {
+    "id": "E01-with",
+    "case": "E01",
+    "condition": "with",
+    "exit": 0,
+    "seconds": 117.24,
+    "model_requests": 17,
+    "output_tokens": 23863,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_503_recovery_and_bound (__main__.Billing.test_503_recovery_and_bound) ... ok\ntest_batch_conflict (__main__.Billing.test_batch_conflict) ... ok\ntest_date_conflict_is_atomic (__main__.Billing.test_date_conflict_is_atomic) ... ok\ntest_equivalent_decimal (__main__.Billing.test_equivalent_decimal) ... ok\ntest_legacy_conflict_preserved (__main__.Billing.test_legacy_conflict_preserved) ... ok\ntest_legacy_equal_duplicates (__main__.Billing.test_legacy_equal_duplicates) ... ok\ntest_overlapping_runs (__main__.Billing.test_overlapping_runs) ... ok\ntest_precision_conflict_is_atomic (__main__.Billing.test_precision_conflict_is_atomic) ... ok\ntest_rerun (__main__.Billing.test_rerun) ... ok\ntest_unique_constraint (__main__.Billing.test_unique_constraint) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.023s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_gives_up_after_limited_retries (test_import.FetchTest.test_gives_up_after_limited_retries) ... ok\ntest_other_errors_are_not_retried (test_import.FetchTest.test_other_errors_are_not_retried) ... ok\ntest_retries_503_then_succeeds (test_import.FetchTest.test_retries_503_then_succeeds) ... ok\ntest_amount_compared_numerically (test_import.ImportTest.test_amount_compared_numerically) ... ok\ntest_conflict_inside_batch_fails (test_import.ImportTest.test_conflict_inside_batch_fails) ... ok\ntest_conflict_with_existing_fails_and_preserves (test_import.ImportTest.test_conflict_with_existing_fails_and_preserves) ... ok\ntest_conflicting_historical_duplicates_reported_and_preserved (test_import.ImportTest.test_conflicting_historical_duplicates_reported_and_preserved) ... ok\ntest_consistent_historical_duplicates_are_merged (test_import.ImportTest.test_consistent_historical_duplicates_are_merged) ... ok\ntest_failure_rolls_back_whole_batch (test_import.ImportTest.test_failure_rolls_back_whole_batch) ... ok\ntest_invalid_amount_fails (test_import.ImportTest.test_invalid_amount_fails) ... ok\ntest_merge_is_rolled_back_when_another_id_conflicts (test_import.ImportTest.test_merge_is_rolled_back_when_another_id_conflicts) ... ok\ntest_one_row (test_import.ImportTest.test_one_row) ... ok\ntest_overlapping_runs_do_not_duplicate (test_import.ImportTest.test_overlapping_runs_do_not_duplicate) ... ok\ntest_rerun_is_idempotent (test_import.ImportTest.test_rerun_is_idempotent) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.024s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "lines": 32,
+        "chars": 1676
+      },
+      {
+        "path": "import_billing.py",
+        "status": "modified",
+        "lines": 112,
+        "chars": 4230
+      },
+      {
+        "path": "tests/test_import.py",
+        "status": "modified",
+        "lines": 159,
+        "chars": 6980
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 487073,
+    "upstream_errors": 0,
+    "finish_reasons": [
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "stop"
+    ],
+    "truncated": false,
+    "reasoning_tokens": 15920,
+    "instruction_reads": [
+      "/input/AGENTS.md",
+      "/input/ponytail/SKILL.md",
+      "/input/support/humanizer/SKILL.md"
+    ],
+    "sizes": {
+      "production": {
+        "files": 1,
+        "lines": 112,
+        "nonblank_lines": 94,
+        "bytes": 4230
+      },
+      "tests": {
+        "files": 1,
+        "lines": 159,
+        "nonblank_lines": 130,
+        "bytes": 6980
+      },
+      "docs": {
+        "files": 1,
+        "lines": 32,
+        "nonblank_lines": 25,
+        "bytes": 1676
+      }
+    },
+    "passes_frozen_checks": true,
+    "delivered": true
+  },
+  {
+    "id": "E02-without",
+    "case": "E02",
+    "condition": "without",
+    "exit": 0,
+    "seconds": 70.36,
+    "model_requests": 9,
+    "output_tokens": 15216,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_aggregate_sort_escape (__main__.Summary.test_aggregate_sort_escape) ... ok\ntest_empty (__main__.Summary.test_empty) ... ok\ntest_invalid_preserves_output_line_number (__main__.Summary.test_invalid_preserves_output_line_number) ... ok\ntest_invalid_same_path (__main__.Summary.test_invalid_same_path) ... ok\ntest_same_path (__main__.Summary.test_same_path) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.384s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_example (test_summary.SummaryTest.test_example) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.038s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "summarize.py",
+        "status": "new",
+        "lines": 178,
+        "chars": 5571
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 171427,
+    "upstream_errors": 0,
+    "finish_reasons": [
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "stop"
+    ],
+    "truncated": false,
+    "reasoning_tokens": 10187,
+    "instruction_reads": [
+      "/input/AGENTS.md",
+      "/input/support/humanizer/SKILL.md"
+    ],
+    "sizes": {
+      "production": {
+        "files": 1,
+        "lines": 178,
+        "nonblank_lines": 145,
+        "bytes": 5571
+      },
+      "tests": {
+        "files": 1,
+        "lines": 19,
+        "nonblank_lines": 17,
+        "bytes": 745
+      },
+      "docs": {
+        "files": 1,
+        "lines": 5,
+        "nonblank_lines": 4,
+        "bytes": 149
+      }
+    },
+    "passes_frozen_checks": true,
+    "delivered": true
+  },
+  {
+    "id": "E02-with",
+    "case": "E02",
+    "condition": "with",
+    "exit": 0,
+    "seconds": 53.59,
+    "model_requests": 12,
+    "output_tokens": 8912,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_aggregate_sort_escape (__main__.Summary.test_aggregate_sort_escape) ... ok\ntest_empty (__main__.Summary.test_empty) ... ok\ntest_invalid_preserves_output_line_number (__main__.Summary.test_invalid_preserves_output_line_number) ... ok\ntest_invalid_same_path (__main__.Summary.test_invalid_same_path) ... ok\ntest_same_path (__main__.Summary.test_same_path) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.308s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_bad_input_reports_line_and_keeps_output (test_summary.SummaryTest.test_bad_input_reports_line_and_keeps_output) ... ok\ntest_example (test_summary.SummaryTest.test_example) ... ok\ntest_groups_sorts_and_counts_errors (test_summary.SummaryTest.test_groups_sorts_and_counts_errors) ... ok\ntest_input_may_equal_output (test_summary.SummaryTest.test_input_may_equal_output) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.292s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "summarize.py",
+        "status": "new",
+        "lines": 69,
+        "chars": 2316
+      },
+      {
+        "path": "tests/test_summary.py",
+        "status": "modified",
+        "lines": 83,
+        "chars": 3486
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 216579,
+    "upstream_errors": 0,
+    "finish_reasons": [
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "stop"
+    ],
+    "truncated": false,
+    "reasoning_tokens": 5427,
+    "instruction_reads": [
+      "/input/AGENTS.md",
+      "/input/ponytail/SKILL.md",
+      "/input/support/humanizer/SKILL.md"
+    ],
+    "sizes": {
+      "production": {
+        "files": 1,
+        "lines": 69,
+        "nonblank_lines": 57,
+        "bytes": 2316
+      },
+      "tests": {
+        "files": 1,
+        "lines": 83,
+        "nonblank_lines": 73,
+        "bytes": 3486
+      },
+      "docs": {
+        "files": 1,
+        "lines": 5,
+        "nonblank_lines": 4,
+        "bytes": 149
+      }
+    },
+    "passes_frozen_checks": true,
+    "delivered": true
+  },
+  {
+    "id": "N01-with",
+    "case": "N01",
+    "condition": "with",
+    "exit": 0,
+    "seconds": 28.82,
+    "model_requests": 9,
+    "output_tokens": 4082,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_404_and_other_errors_unchanged (__main__.Client.test_404_and_other_errors_unchanged) ... ok\ntest_429_then_success (__main__.Client.test_429_then_success) ... ok\ntest_header_fallback_and_cap (__main__.Client.test_header_fallback_and_cap) ... ok\ntest_network_error_unchanged (__main__.Client.test_network_error_unchanged) ... ok\ntest_three_attempts_last_error (__main__.Client.test_three_attempts_last_error) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.016s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_404_returns_none (test_client.ClientTest.test_404_returns_none) ... ok\ntest_other_http_error_raises (test_client.ClientTest.test_other_http_error_raises) ... ok\ntest_retries_429_then_succeeds (test_client.ClientTest.test_retries_429_then_succeeds) ... ok\ntest_retry_after_missing_or_invalid_waits_one_second (test_client.ClientTest.test_retry_after_missing_or_invalid_waits_one_second) ... ok\ntest_success (test_client.ClientTest.test_success) ... ok\ntest_three_429_raises_last_error (test_client.ClientTest.test_three_429_raises_last_error) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.004s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "tests/test_client.py",
+        "status": "modified",
+        "lines": 69,
+        "chars": 2944
+      },
+      {
+        "path": "ticket_client.py",
+        "status": "modified",
+        "lines": 31,
+        "chars": 861
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 79748,
+    "upstream_errors": 0,
+    "finish_reasons": [
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "stop"
+    ],
+    "truncated": false,
+    "reasoning_tokens": 1883,
+    "instruction_reads": [
+      "/input/AGENTS.md",
+      "/input/ponytail/SKILL.md"
+    ],
+    "sizes": {
+      "production": {
+        "files": 1,
+        "lines": 31,
+        "nonblank_lines": 27,
+        "bytes": 861
+      },
+      "tests": {
+        "files": 1,
+        "lines": 69,
+        "nonblank_lines": 57,
+        "bytes": 2944
+      },
+      "docs": {
+        "files": 1,
+        "lines": 3,
+        "nonblank_lines": 3,
+        "bytes": 93
+      }
+    },
+    "passes_frozen_checks": true,
+    "delivered": true
+  },
+  {
+    "id": "N01-without",
+    "case": "N01",
+    "condition": "without",
+    "exit": 0,
+    "seconds": 25.27,
+    "model_requests": 7,
+    "output_tokens": 5632,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_404_and_other_errors_unchanged (__main__.Client.test_404_and_other_errors_unchanged) ... ok\ntest_429_then_success (__main__.Client.test_429_then_success) ... ok\ntest_header_fallback_and_cap (__main__.Client.test_header_fallback_and_cap) ... ok\ntest_network_error_unchanged (__main__.Client.test_network_error_unchanged) ... ok\ntest_three_attempts_last_error (__main__.Client.test_three_attempts_last_error) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.018s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_404_returns_none (test_client.ClientTest.test_404_returns_none) ... ok\ntest_429_with_invalid_retry_after_waits_one (test_client.ClientTest.test_429_with_invalid_retry_after_waits_one) ... ok\ntest_429_with_small_retry_after (test_client.ClientTest.test_429_with_small_retry_after) ... ok\ntest_429_with_valid_retry_after_capped_at_two (test_client.ClientTest.test_429_with_valid_retry_after_capped_at_two) ... ok\ntest_429_without_retry_after_waits_one (test_client.ClientTest.test_429_without_retry_after_waits_one) ... ok\ntest_other_error_raises (test_client.ClientTest.test_other_error_raises) ... ok\ntest_success (test_client.ClientTest.test_success) ... ok\ntest_three_429_raises_last_error (test_client.ClientTest.test_three_429_raises_last_error) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.006s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "tests/test_client.py",
+        "status": "modified",
+        "lines": 76,
+        "chars": 3497
+      },
+      {
+        "path": "ticket_client.py",
+        "status": "modified",
+        "lines": 33,
+        "chars": 912
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 68035,
+    "upstream_errors": 0,
+    "finish_reasons": [
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "stop"
+    ],
+    "truncated": false,
+    "reasoning_tokens": 3278,
+    "instruction_reads": [
+      "/input/AGENTS.md",
+      "/input/support/humanizer/SKILL.md"
+    ],
+    "sizes": {
+      "production": {
+        "files": 1,
+        "lines": 33,
+        "nonblank_lines": 29,
+        "bytes": 912
+      },
+      "tests": {
+        "files": 1,
+        "lines": 76,
+        "nonblank_lines": 65,
+        "bytes": 3497
+      },
+      "docs": {
+        "files": 1,
+        "lines": 3,
+        "nonblank_lines": 3,
+        "bytes": 93
+      }
+    },
+    "passes_frozen_checks": true,
+    "delivered": true
+  },
+  {
+    "id": "N02-with",
+    "case": "N02",
+    "condition": "with",
+    "exit": 0,
+    "seconds": 22.99,
+    "model_requests": 9,
+    "output_tokens": 3169,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_invalid (__main__.Settings.test_invalid) ... ok\ntest_missing_file_unchanged (__main__.Settings.test_missing_file_unchanged) ... ok\ntest_unset_empty_preserve (__main__.Settings.test_unset_empty_preserve) ... ok\ntest_valid_preserves_other_keys (__main__.Settings.test_valid_preserves_other_keys) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.010s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_empty_env_keeps_file_value (test_settings.SettingsTest.test_empty_env_keeps_file_value) ... ok\ntest_env_overrides_file_keeps_other_keys (test_settings.SettingsTest.test_env_overrides_file_keeps_other_keys) ... ok\ntest_file_not_rewritten (test_settings.SettingsTest.test_file_not_rewritten) ... ok\ntest_invalid_env_raises_value_error (test_settings.SettingsTest.test_invalid_env_raises_value_error) ... ok\ntest_load (test_settings.SettingsTest.test_load) ... ok\ntest_unset_env_keeps_file_value (test_settings.SettingsTest.test_unset_env_keeps_file_value) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.005s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "lines": 3,
+        "chars": 219
+      },
+      {
+        "path": "settings.py",
+        "status": "modified",
+        "lines": 17,
+        "chars": 465
+      },
+      {
+        "path": "tests/test_settings.py",
+        "status": "modified",
+        "lines": 58,
+        "chars": 2527
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 75770,
+    "upstream_errors": 0,
+    "finish_reasons": [
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "stop"
+    ],
+    "truncated": false,
+    "reasoning_tokens": 1296,
+    "instruction_reads": [
+      "/input/AGENTS.md",
+      "/input/ponytail/SKILL.md"
+    ],
+    "sizes": {
+      "production": {
+        "files": 2,
+        "lines": 25,
+        "nonblank_lines": 20,
+        "bytes": 656
+      },
+      "tests": {
+        "files": 1,
+        "lines": 58,
+        "nonblank_lines": 50,
+        "bytes": 2527
+      },
+      "docs": {
+        "files": 1,
+        "lines": 3,
+        "nonblank_lines": 3,
+        "bytes": 219
+      }
+    },
+    "passes_frozen_checks": true,
+    "delivered": true
+  },
+  {
+    "id": "N02-without",
+    "case": "N02",
+    "condition": "without",
+    "exit": 0,
+    "seconds": 26.31,
+    "model_requests": 9,
+    "output_tokens": 3608,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_invalid (__main__.Settings.test_invalid) ... ok\ntest_missing_file_unchanged (__main__.Settings.test_missing_file_unchanged) ... ok\ntest_unset_empty_preserve (__main__.Settings.test_unset_empty_preserve) ... ok\ntest_valid_preserves_other_keys (__main__.Settings.test_valid_preserves_other_keys) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.010s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_empty_env_keeps_file_log_level (test_settings.SettingsTest.test_empty_env_keeps_file_log_level) ... ok\ntest_env_is_case_sensitive (test_settings.SettingsTest.test_env_is_case_sensitive) ... ok\ntest_env_overrides_log_level (test_settings.SettingsTest.test_env_overrides_log_level) ... ok\ntest_env_unset_keeps_file_log_level (test_settings.SettingsTest.test_env_unset_keeps_file_log_level) ... ok\ntest_file_is_not_rewritten (test_settings.SettingsTest.test_file_is_not_rewritten) ... ok\ntest_invalid_env_raises_valueerror (test_settings.SettingsTest.test_invalid_env_raises_valueerror) ... ok\ntest_load (test_settings.SettingsTest.test_load) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.006s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "lines": 4,
+        "chars": 250
+      },
+      {
+        "path": "settings.py",
+        "status": "modified",
+        "lines": 20,
+        "chars": 524
+      },
+      {
+        "path": "tests/test_settings.py",
+        "status": "modified",
+        "lines": 73,
+        "chars": 3075
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 121000,
+    "upstream_errors": 0,
+    "finish_reasons": [
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "stop"
+    ],
+    "truncated": false,
+    "reasoning_tokens": 1304,
+    "instruction_reads": [
+      "/input/AGENTS.md",
+      "/input/support/humanizer/SKILL.md"
+    ],
+    "sizes": {
+      "production": {
+        "files": 2,
+        "lines": 28,
+        "nonblank_lines": 21,
+        "bytes": 715
+      },
+      "tests": {
+        "files": 1,
+        "lines": 73,
+        "nonblank_lines": 61,
+        "bytes": 3075
+      },
+      "docs": {
+        "files": 1,
+        "lines": 4,
+        "nonblank_lines": 4,
+        "bytes": 250
+      }
+    },
+    "passes_frozen_checks": true,
+    "delivered": true
+  },
+  {
+    "id": "N03-with",
+    "case": "N03",
+    "condition": "with",
+    "exit": 0,
+    "seconds": 52.78,
+    "model_requests": 12,
+    "output_tokens": 10825,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_exception_identity (__main__.Archive.test_exception_identity) ... ok\ntest_external_consumer (__main__.Archive.test_external_consumer) ... ok\ntest_legacy_current_cwd (__main__.Archive.test_legacy_current_cwd) ... ok\ntest_local_backend (__main__.Archive.test_local_backend) ... ok\ntest_multiple_memory_instances (__main__.Archive.test_multiple_memory_instances) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_legacy (test_archive.ArchiveTest.test_legacy) ... ok\ntest_external_module_uses_top_level_types (test_archive.ConsumerBackendTest.test_external_module_uses_top_level_types) ... ok\ntest_backend_exception_passes_through (test_archive.ErrorPropagationTest.test_backend_exception_passes_through) ... ok\ntest_create_archive_writes_under_root (test_archive.LocalBackendTest.test_create_archive_writes_under_root) ... ok\ntest_relative_root_follows_cwd (test_archive.LocalBackendTest.test_relative_root_follows_cwd) ... ok\ntest_archives_are_independent (test_archive.MemoryBackendTest.test_archives_are_independent) ... ok\ntest_records_and_overwrite (test_archive.MemoryBackendTest.test_records_and_overwrite) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "lines": 52,
+        "chars": 1904
+      },
+      {
+        "path": "archivekit/__init__.py",
+        "status": "modified",
+        "lines": 15,
+        "chars": 216
+      },
+      {
+        "path": "archivekit/archive.py",
+        "status": "modified",
+        "lines": 34,
+        "chars": 820
+      },
+      {
+        "path": "tests/consumer_backend.py",
+        "status": "new",
+        "lines": 17,
+        "chars": 484
+      },
+      {
+        "path": "tests/test_archive.py",
+        "status": "modified",
+        "lines": 82,
+        "chars": 2639
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 231036,
+    "upstream_errors": 0,
+    "finish_reasons": [
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "stop"
+    ],
+    "truncated": false,
+    "reasoning_tokens": 7011,
+    "instruction_reads": [
+      "/input/AGENTS.md",
+      "/input/ponytail/SKILL.md",
+      "/input/support/humanizer/SKILL.md"
+    ],
+    "sizes": {
+      "production": {
+        "files": 2,
+        "lines": 49,
+        "nonblank_lines": 35,
+        "bytes": 1036
+      },
+      "tests": {
+        "files": 2,
+        "lines": 99,
+        "nonblank_lines": 76,
+        "bytes": 3123
+      },
+      "docs": {
+        "files": 1,
+        "lines": 52,
+        "nonblank_lines": 33,
+        "bytes": 1904
+      }
+    },
+    "passes_frozen_checks": true,
+    "delivered": true
+  },
+  {
+    "id": "N03-without",
+    "case": "N03",
+    "condition": "without",
+    "exit": 0,
+    "seconds": 53.33,
+    "model_requests": 14,
+    "output_tokens": 11257,
+    "budget_exhausted": false,
+    "checks": [
+      {
+        "kind": "independent",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_exception_identity (__main__.Archive.test_exception_identity) ... ok\ntest_external_consumer (__main__.Archive.test_external_consumer) ... ok\ntest_legacy_current_cwd (__main__.Archive.test_legacy_current_cwd) ... ok\ntest_local_backend (__main__.Archive.test_local_backend) ... ok\ntest_multiple_memory_instances (__main__.Archive.test_multiple_memory_instances) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nOK\n"
+      },
+      {
+        "kind": "repository",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "test_legacy (test_archive.ArchiveTest.test_legacy) ... ok\ntest_archives_are_independent (test_create_archive.CreateArchiveTest.test_archives_are_independent) ... ok\ntest_backend_exception_propagates_unchanged (test_create_archive.CreateArchiveTest.test_backend_exception_propagates_unchanged) ... ok\ntest_legacy_entry_still_writes_archives (test_create_archive.CreateArchiveTest.test_legacy_entry_still_writes_archives) ... ok\ntest_local_backend (test_create_archive.CreateArchiveTest.test_local_backend) ... ok\ntest_memory_backend_records_and_overwrite (test_create_archive.CreateArchiveTest.test_memory_backend_records_and_overwrite) ... ok\ntest_public_exports (test_create_archive.CreateArchiveTest.test_public_exports) ... ok\ntest_third_party_backend_via_top_level_type (test_create_archive.CreateArchiveTest.test_third_party_backend_via_top_level_type) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nOK\n"
+      }
+    ],
+    "changes": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "lines": 49,
+        "chars": 1203
+      },
+      {
+        "path": "archivekit/__init__.py",
+        "status": "modified",
+        "lines": 4,
+        "chars": 189
+      },
+      {
+        "path": "archivekit/archive.py",
+        "status": "modified",
+        "lines": 13,
+        "chars": 296
+      },
+      {
+        "path": "archivekit/backends.py",
+        "status": "new",
+        "lines": 30,
+        "chars": 701
+      },
+      {
+        "path": "tests/test_create_archive.py",
+        "status": "new",
+        "lines": 80,
+        "chars": 2474
+      },
+      {
+        "path": "tests/thirdparty_backend.py",
+        "status": "new",
+        "lines": 16,
+        "chars": 320
+      }
+    ],
+    "models": [
+      "deepseek-flash"
+    ],
+    "reasoning_efforts": [
+      "high"
+    ],
+    "reported_input_tokens": 240629,
+    "upstream_errors": 0,
+    "finish_reasons": [
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "stop"
+    ],
+    "truncated": false,
+    "reasoning_tokens": 7668,
+    "instruction_reads": [
+      "/input/AGENTS.md",
+      "/input/support/humanizer/SKILL.md"
+    ],
+    "sizes": {
+      "production": {
+        "files": 3,
+        "lines": 47,
+        "nonblank_lines": 29,
+        "bytes": 1292
+      },
+      "tests": {
+        "files": 3,
+        "lines": 111,
+        "nonblank_lines": 87,
+        "bytes": 3318
+      },
+      "docs": {
+        "files": 1,
+        "lines": 49,
+        "nonblank_lines": 31,
+        "bytes": 1777
+      }
+    },
+    "passes_frozen_checks": true,
+    "delivered": true
+  }
+]

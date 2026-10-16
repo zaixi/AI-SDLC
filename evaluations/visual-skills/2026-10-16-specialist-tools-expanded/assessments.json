@@ -1,0 +1,282 @@
+[
+  {
+    "id": "V01-visual-explanation",
+    "case": "V01",
+    "condition": "visual-explanation",
+    "delivery": "complete",
+    "semantic": "unsupported failure claims",
+    "verdict": "快速完整交付，明细齐全；总览偏小、正文偏长，失败影响存在过度推断。",
+    "findings": [
+      "实际使用 answer-me-with-html，HTML 离线可读，2 图与 3 表涵盖 14 内部单元、19 条关系和失败规则。",
+      "全页 1600×3888，六面板包含关系表与单元清单，查资料方便但重复内容较多。",
+      "总览占较窄内容列，节点和边标签偏小、主链不突出；时序图更适合核对先后。",
+      "把 OCR 失败表述为“该作业没有识别文本”，索引失败表述为“该作业的搜索索引不更新”。原题未给失败发生阶段或写入原子性，这些确定结论无依据。",
+      "说明“只影响该作业”也超出给定隔离信息；完成交付不等于语义完全可靠。"
+    ],
+    "artifacts": [
+      "digitization-platform.html"
+    ],
+    "images": [
+      "review/V01-visual-explanation/00-digitization-platform.png",
+      "review/V01-visual-explanation/top.png",
+      "review/V01-visual-explanation/failure.png"
+    ]
+  },
+  {
+    "id": "V01-archify",
+    "case": "V01",
+    "condition": "archify",
+    "delivery": "complete",
+    "semantic": "substantially correct",
+    "verdict": "完整交付；架构与状态拆开后易读，但区域分组主要靠下方卡片，主链的先后仍需读标签。",
+    "findings": [
+      "14 个内部单元及外部邮件服务完整，18 条连线配合卡片保留读写及先后；调度器改作业表状态由派发边标签说明，未独立成边。",
+      "状态图保留 OCR 失败/人工重排、索引自循环；邮件失败以卡片说明且不改变作业完成状态。",
+      "未加入协议、队列或调度机制；人工重排回待处理是流程层面的合理归纳。",
+      "架构图较密但当前 1600px 画面可读；不是最终回复所称的明显四区域框线分区。",
+      "两个离线 HTML 均实际渲染；未逐项测试全部通用查看器功能。"
+    ],
+    "artifacts": [
+      ".archify/lifecycle-digitization-20261016-041550/digitization-jobs-lifecycle.html",
+      ".archify/architecture-digitization-20261016-041550/digitization-platform.html"
+    ],
+    "images": [
+      "review/V01-archify/00-digitization-platform.png",
+      "review/V01-archify/01-digitization-jobs-lifecycle.png"
+    ]
+  },
+  {
+    "id": "V01-fireworks-tech-graph",
+    "case": "V01",
+    "condition": "fireworks-tech-graph",
+    "delivery": "incomplete",
+    "semantic": "unsupported failure claims and missing relation",
+    "verdict": "五张 SVG 已生成，但未交付 HTML；失败视图有内容越界和文字重叠。",
+    "findings": [
+      "98304 输出 token 用尽，最后 finish_reason=length；尚在全量 SVG 检查，未生成题目要求 HTML。",
+      "总览和状态图基本可读，14 内部单元可辨；总览未明确画出调度器读取待处理作业的关系。",
+      "OCR 与索引失败视图声称未写文本/未更新索引/该件不可检索，未有给定事实支持。",
+      "多张失败视图中 type label、节点名、说明挤在较矮卡片中，文字碰到边框并互相挤压，影响阅读；这不是轻微几何偏差。",
+      "“不受影响”部分广泛重复节点，把可以用短表说明的范围扩成大图。"
+    ],
+    "artifacts": [
+      "digitization/svg/overview.svg",
+      "digitization/svg/status-flow.svg",
+      "digitization/svg/failure-ocr.svg",
+      "digitization/svg/failure-index.svg",
+      "digitization/svg/failure-email.svg"
+    ],
+    "images": [
+      "review/V01-fireworks-tech-graph/04-overview.png",
+      "review/V01-fireworks-tech-graph/05-status-flow.png",
+      "review/V01-fireworks-tech-graph/03-failure-ocr.png",
+      "review/V01-fireworks-tech-graph/02-failure-index.png",
+      "review/V01-fireworks-tech-graph/01-failure-email.png"
+    ]
+  },
+  {
+    "id": "V02-visual-explanation",
+    "case": "V02",
+    "condition": "visual-explanation",
+    "delivery": "complete",
+    "semantic": "correct",
+    "verdict": "完整 SVG+PNG，关系清楚、布局简洁，适合直接放进联调文档。",
+    "findings": [
+      "采用 diagram-design；东站、中心、西站空间分组清楚，8 实例无合并。",
+      "上送实线与补传虚线方向相反且标签清楚；站内缓冲读写双箭头，中心写归档正确。",
+      "SVG、PNG、HTML 源均存在且实际查看，未加协议、认证或队列。",
+      "最终回复带大量默认值和检查说明，超过交付所需；图本身简洁。"
+    ],
+    "artifacts": [
+      "collection-architecture.svg",
+      "collection-architecture.png",
+      "collection-architecture.html"
+    ],
+    "images": [
+      "review/V02-visual-explanation/01-collection-architecture.png"
+    ]
+  },
+  {
+    "id": "V02-archify",
+    "case": "V02",
+    "condition": "archify",
+    "delivery": "files present, handoff truncated",
+    "semantic": "missing read relation; added assumption",
+    "verdict": "SVG/PNG 已导出且画面清楚，但缺少缓冲读取，输出预算耗尽未完成最终交付回复。",
+    "findings": [
+      "8 实例、两站边界、上报和补传方向清楚；SVG 与实际生成 PNG 均已查看。",
+      "两个缓冲关系均仅有“写入缓冲”单向箭头，文档插图未表达要求的读写。",
+      "HTML 卡片补写“网关依据补传请求从本站缓冲库取数补报”，把合理猜测当成给定机制；原题只给读写与补传请求，未指定关联方式。",
+      "HTML 另称两站互不依赖、上报同时写缓冲，也超出给定事实。",
+      "输出 98304 token，最后 length；SVG/PNG 存在应计入格式产物，不计为正常完整收尾。"
+    ],
+    "artifacts": [
+      ".archify/architecture-field-collection-20261016-042805/field-collection.svg",
+      ".archify/architecture-field-collection-20261016-042805/field-collection.png",
+      ".archify/architecture-field-collection-20261016-042805/field-collection.html"
+    ],
+    "images": [
+      "review/V02-archify/01-field-collection.png",
+      "review/V02-archify/00-field-collection.png"
+    ]
+  },
+  {
+    "id": "V02-fireworks-tech-graph",
+    "case": "V02",
+    "condition": "fireworks-tech-graph",
+    "delivery": "incomplete",
+    "semantic": "debug artifact ambiguous",
+    "verdict": "预算用尽，只留下 JSON 与调试 SVG，没有正式 SVG/PNG 交付。",
+    "findings": [
+      "collection-architecture.json 已有8实例及主要关系，_dbg.svg 是调试产物；_probe.svg 为工具样例，不计题目产物。",
+      "调试图跨站两条线的文字标签与所在高度不对应：红色外向补传线上方写上报读数，橙色内向上报线下方写补传请求，容易看反。",
+      "缓冲库单向箭头写“读写”，数据库柱体线压过字；尚未完成的版本有明显可读性问题。",
+      "最后 length，98304 输出 token；没有 PNG，不把评审截图当交付。"
+    ],
+    "artifacts": [
+      "collection-architecture.json",
+      "_dbg.svg"
+    ],
+    "images": [
+      "review/V02-fireworks-tech-graph/00-_dbg.png"
+    ]
+  },
+  {
+    "id": "V03-visual-explanation",
+    "case": "V03",
+    "condition": "visual-explanation",
+    "delivery": "complete",
+    "semantic": "correct",
+    "verdict": "完整且易读，下一步表对申请人有用；比一张流程图略长，生成成本最高。",
+    "findings": [
+      "使用 diagram-design 参考，实际自写 HTML/SVG，并另附可编辑 Mermaid。",
+      "所有关键分支、金额边界、退回重检、拒绝终止均正确；图中收货与结束合并，附表保留收到货后确认。",
+      "图与下一步表清楚，配色克制；底部金额说明重复了图中条件，但并未妨碍理解。",
+      "62452 输出 token，多于同题两工具；不能把丰富附件视为必要收益。"
+    ],
+    "artifacts": [
+      "purchase-request-flow.html",
+      "purchase-request-flow.svg",
+      "purchase-request-flow.mmd"
+    ],
+    "images": [
+      "review/V03-visual-explanation/00-purchase-request-flow.png"
+    ]
+  },
+  {
+    "id": "V03-archify",
+    "case": "V03",
+    "condition": "archify",
+    "delivery": "complete",
+    "semantic": "correct",
+    "verdict": "角色分工清楚，关键条件保留；泳道与卡片让画面比普通流程图更高。",
+    "findings": [
+      "申请人、采购、主管、财务泳道清楚；材料退回再检查、金额门槛、两级拒绝路径及确认收货均完整。",
+      "主管的通过边仅用金额条件标注，通过条件由卡片与下单节点补足；不存在错误分支，但边文字可更明确。",
+      "HTML 离线正常，JSON 源交付，33493 输出 token 是本题三组最低。",
+      "未加入系统、时限或自动化规则；少量“填写需求与金额”等是申请语境说明，不改变流程。"
+    ],
+    "artifacts": [
+      ".archify/workflow-procurement-20261016-043457/procurement-approval.html",
+      ".archify/workflow-procurement-20261016-043457/candidate.json"
+    ],
+    "images": [
+      "review/V03-archify/00-procurement-approval.png"
+    ]
+  },
+  {
+    "id": "V03-fireworks-tech-graph",
+    "case": "V03",
+    "condition": "fireworks-tech-graph",
+    "delivery": "complete",
+    "semantic": "correct flow; boundary wording ambiguity",
+    "verdict": "直接 SVG 路径完整交付，审批流程清楚；财务节点的金额措辞略有歧义。",
+    "findings": [
+      "补材料回采购检查、所有申请先主管审批、大额通过后到财务、拒绝终止原申请、另起申请及收货结束均表达清楚。",
+      "边标签为“金额超过5000元”，但财务节点副标题“仅5000元以上”可能被理解为包含5000，应统一为“超过”；实际分支判断正确。",
+      "自写 SVG/Python 源，调用 Fireworks check/export，未依赖 JSON 自动路由；HTML 离线渲染成功。",
+      "一张完整流程图即可看清，额外交付PNG与SVG虽非必须但有用；最终回复过长。"
+    ],
+    "artifacts": [
+      "purchase-request-flow.html",
+      "purchase-request-flow.svg",
+      "purchase-request-flow.png",
+      "build-purchase-request-flow.py"
+    ],
+    "images": [
+      "review/V03-fireworks-tech-graph/00-purchase-request-flow.png"
+    ]
+  },
+  {
+    "id": "V04-visual-explanation",
+    "case": "V04",
+    "condition": "visual-explanation",
+    "delivery": "complete",
+    "semantic": "correct",
+    "verdict": "结论与数据准确，按指标分图便于比较；表、结论和图存在一定重复。",
+    "findings": [
+      "实际使用 answer-me-with-html，加 Python 坐标生成 SVG；费用、完成率、工时和单位成本分图，有门槛与明确数值。",
+      "只有 C 达标、各单位成本及单次限制全部正确；未混合单位打分。",
+      "HTML 离线显示完整；结论置顶，可直接横向比较三方案的同一指标。",
+      "四面板和四小图比三方案卡片更长，费用/工时等比较清楚，但同一结论重复出现。",
+      "为主题颜色、窄屏和标签做了多轮修复；这些验证占用了请求，但最终未触顶。"
+    ],
+    "artifacts": [
+      "pilot-decision.html",
+      "pilot-decision.source.md",
+      "tradeoff-chart.svg",
+      "build.py"
+    ],
+    "images": [
+      "review/V04-visual-explanation/00-pilot-decision.png"
+    ]
+  },
+  {
+    "id": "V04-archify",
+    "case": "V04",
+    "condition": "archify",
+    "delivery": "complete",
+    "semantic": "calculations correct; key data hidden",
+    "verdict": "计算与资格结论正确，但强套流程图，关键数值被细节层默认隐藏，比较效率差。",
+    "findings": [
+      "正确识别只有 C 合格，单位成本 8.16/3.33/4.64，保留单次试验限制，未合并异单位总分。",
+      "把完成率→费用→工时串成流程箭头，属于不必要的流程语义，不如比较表或分单位图直接。",
+      "完成率、费用、工时数值写入 tag，渲染为 data-detail=fine 的 SVG text；实测初始 opacity=0。卡片补足费用和完成率，但主图总工时只显示“含全部尝试”，80/20/35 不能直接读到。",
+      "所有资格结论都使用同一粉红样式，C 合格不如正反色区分直观。",
+      "这是超出其统计图定位的适用范围探针，不应据此否定其架构/流程能力。"
+    ],
+    "artifacts": [
+      ".archify/workflow-pilot-plan-gate-20261016-043659/pilot-plan-gate.html",
+      ".archify/workflow-pilot-plan-gate-20261016-043659/candidate.json"
+    ],
+    "images": [
+      "review/V04-archify/00-pilot-plan-gate.png"
+    ]
+  },
+  {
+    "id": "V04-fireworks-tech-graph",
+    "case": "V04",
+    "condition": "fireworks-tech-graph",
+    "delivery": "complete",
+    "semantic": "core correct; minor unsupported prose",
+    "verdict": "紧凑且正确的方案卡片图，直接 SVG 与导出流程成功；少量说明超出题意。",
+    "findings": [
+      "用 Python 手写 SVG 信息图并调用 Fireworks 的检查与 HTML/PNG 导出；不是统计图生成器本身提供的能力。",
+      "三方案分卡，数值、独立量程、门槛线、单位成本分母和合格结果正确；单次试验限制可见。",
+      "同一指标横向比较需要跨卡看，但整体约一屏完成，阅读效率好。",
+      "卡片把自动处理写成“无人介入”、最终回复称 A“省心”，题目未给出；不改变核心资格结论，但属于额外假设。",
+      "重复的门槛表与结论有些冗余，仍比大幅流程图适合此题。"
+    ],
+    "artifacts": [
+      "pilot-decision.html",
+      "pilot-decision.svg",
+      "pilot-decision.png",
+      "src/build_infographic.py",
+      "src/build_html.py",
+      "src/pilot-trial.json"
+    ],
+    "images": [
+      "review/V04-fireworks-tech-graph/00-pilot-decision.png"
+    ]
+  }
+]

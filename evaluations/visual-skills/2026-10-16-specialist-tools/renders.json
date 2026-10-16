@@ -1,0 +1,46 @@
+[
+  {
+    "run": "V01-archify",
+    "source": ".archify/digitization-platform-20261016-023908/overview.html",
+    "exit": 0,
+    "image": "review/V01-archify/00-overview.png",
+    "page_errors": []
+  },
+  {
+    "run": "V01-fireworks-tech-graph",
+    "source": "views/01-overview.svg",
+    "exit": 0,
+    "image": "review/V01-fireworks-tech-graph/00-01-overview.png",
+    "page_errors": []
+  },
+  {
+    "run": "V01-visual-explanation",
+    "source": "build/template.html",
+    "exit": 0,
+    "image": "review/V01-visual-explanation/00-template.png",
+    "page_errors": [
+      "SyntaxError: Invalid or unexpected token"
+    ]
+  },
+  {
+    "run": "V01-visual-explanation",
+    "source": "digitization-platform-map.html",
+    "exit": 0,
+    "image": "review/V01-visual-explanation/01-digitization-platform-map.png",
+    "page_errors": []
+  },
+  {
+    "run": "V02-archify",
+    "source": ".archify/architecture-collection-20261016-024706/collection-architecture.html",
+    "exit": 0,
+    "image": "review/V02-archify/00-collection-architecture.png",
+    "page_errors": []
+  },
+  {
+    "run": "V02-fireworks-tech-graph",
+    "source": "acquisition-architecture.svg",
+    "exit": 0,
+    "image": "review/V02-fireworks-tech-graph/00-acquisition-architecture.png",
+    "page_errors": []
+  }
+]

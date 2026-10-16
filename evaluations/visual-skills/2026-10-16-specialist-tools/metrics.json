@@ -1,0 +1,551 @@
+[
+  {
+    "id": "V01-archify",
+    "case": "V01",
+    "condition": "archify",
+    "exit": 0,
+    "seconds": 339.18,
+    "model_requests": 21,
+    "output_tokens": 49152,
+    "budget_exhausted": false,
+    "input_tokens": 1270424,
+    "finish_reasons": [
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "length"
+    ],
+    "reasoning_tokens": 43699,
+    "output_cap_reached": true,
+    "upstream_errors": 0,
+    "reads": [
+      "/input/skill/SKILL.md",
+      "/input/skill/examples/agent-tool-call.workflow.json",
+      "/input/skill/examples/async-job-roundtrip.sequence.json",
+      "/input/skill/examples/deployment-release.lifecycle.json",
+      "/input/skill/examples/incident-response.workflow.json",
+      "/input/skill/examples/production-deployment.architecture.json",
+      "/input/skill/examples/release-delivery.workflow.json",
+      "/input/skill/examples/web-app.architecture.json",
+      "/input/skill/references/authoring-defaults.md",
+      "/input/skill/renderers/lifecycle/README.md",
+      "/input/skill/renderers/sequence/README.md",
+      "/input/skill/renderers/workflow/README.md",
+      "/input/skill/schemas/README.md",
+      "/input/skill/schemas/architecture.schema.json",
+      "/input/skill/schemas/common.schema.json",
+      "/input/skill/schemas/lifecycle.schema.json",
+      "/input/skill/schemas/sequence.schema.json",
+      "/input/skill/schemas/workflow.schema.json",
+      "/work/.archify/digitization-platform-20261016-023908/overview.architecture.json"
+    ],
+    "tool_failures": [
+      {
+        "tool": "read",
+        "input": {
+          "filePath": "/input/skill/renderers/architecture/README.md"
+        },
+        "error": "File not found: /input/skill/renderers/architecture/README.md"
+      }
+    ],
+    "artifacts": [
+      {
+        "path": ".archify/digitization-platform-20261016-023908/overview.architecture.json",
+        "bytes": 6924
+      },
+      {
+        "path": ".archify/digitization-platform-20261016-023908/overview.browser-check.json",
+        "bytes": 21835
+      },
+      {
+        "path": ".archify/digitization-platform-20261016-023908/overview.delivery.json",
+        "bytes": 578
+      },
+      {
+        "path": ".archify/digitization-platform-20261016-023908/overview.finalize-summary.json",
+        "bytes": 4940
+      },
+      {
+        "path": ".archify/digitization-platform-20261016-023908/overview.finalize.json",
+        "bytes": 37598
+      },
+      {
+        "path": ".archify/digitization-platform-20261016-023908/overview.html",
+        "bytes": 843532
+      }
+    ]
+  },
+  {
+    "id": "V01-fireworks-tech-graph",
+    "case": "V01",
+    "condition": "fireworks-tech-graph",
+    "exit": 0,
+    "seconds": 241.77,
+    "model_requests": 32,
+    "output_tokens": 49152,
+    "budget_exhausted": false,
+    "input_tokens": 1765403,
+    "finish_reasons": [
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "length"
+    ],
+    "reasoning_tokens": 43416,
+    "output_cap_reached": true,
+    "upstream_errors": 0,
+    "reads": [
+      "/input/skill/SKILL.md",
+      "/input/skill/fixtures/api-flow-style7.json",
+      "/input/skill/references/composition-quality-contract.md",
+      "/input/skill/references/diagram-layout-reference.md",
+      "/input/skill/references/style-1-flat-icon.md",
+      "/input/skill/references/style-diagram-matrix.md",
+      "/input/skill/scripts/README.md",
+      "/input/skill/scripts/composition_quality.py",
+      "/input/skill/scripts/diagram_ir.py",
+      "/input/skill/scripts/fireworks.py",
+      "/input/skill/scripts/generate-from-template.py",
+      "/input/skill/scripts/interactive_html.py",
+      "/work/tmp/smoke-report.json"
+    ],
+    "tool_failures": [
+      {
+        "tool": "read",
+        "input": {
+          "filePath": "/input/fixtures/digitization.md"
+        },
+        "error": "File not found: /input/fixtures/digitization.md"
+      }
+    ],
+    "artifacts": [
+      {
+        "path": "tmp/smoke-report.json",
+        "bytes": 3014
+      },
+      {
+        "path": "tmp/smoke-std.json",
+        "bytes": 1277
+      },
+      {
+        "path": "tmp/smoke.json",
+        "bytes": 1277
+      },
+      {
+        "path": "tmp/smoke.svg",
+        "bytes": 9292
+      },
+      {
+        "path": "views/01-overview.json",
+        "bytes": 6724
+      },
+      {
+        "path": "views/01-overview.report.json",
+        "bytes": 13001
+      },
+      {
+        "path": "views/01-overview.svg",
+        "bytes": 39236
+      }
+    ]
+  },
+  {
+    "id": "V01-visual-explanation",
+    "case": "V01",
+    "condition": "visual-explanation",
+    "exit": 0,
+    "seconds": 215.55,
+    "model_requests": 23,
+    "output_tokens": 49152,
+    "budget_exhausted": false,
+    "input_tokens": 1214629,
+    "finish_reasons": [
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "length"
+    ],
+    "reasoning_tokens": 33885,
+    "output_cap_reached": true,
+    "upstream_errors": 0,
+    "reads": [
+      "/input/skill/AGENTS.md",
+      "/input/skill/SKILL.md",
+      "/input/specialists/answer-me-with-html/SKILL.md",
+      "/input/specialists/diagram-design/SKILL.md",
+      "/input/specialists/mermaid-diagrams/SKILL.md",
+      "/tools/browser.mjs"
+    ],
+    "tool_failures": [],
+    "artifacts": [
+      {
+        "path": "build/build.mjs",
+        "bytes": 1374
+      },
+      {
+        "path": "build/cand-region.mmd",
+        "bytes": 659
+      },
+      {
+        "path": "build/cand-units-lite.mmd",
+        "bytes": 922
+      },
+      {
+        "path": "build/cand-units-short.mmd",
+        "bytes": 868
+      },
+      {
+        "path": "build/cand-units-tb.mmd",
+        "bytes": 877
+      },
+      {
+        "path": "build/check.js",
+        "bytes": 1484
+      },
+      {
+        "path": "build/check2.js",
+        "bytes": 1082
+      },
+      {
+        "path": "build/measure.mjs",
+        "bytes": 1196
+      },
+      {
+        "path": "build/template.html",
+        "bytes": 25828
+      },
+      {
+        "path": "digitization-platform-map.html",
+        "bytes": 5525177
+      },
+      {
+        "path": "shots/01-overview.png",
+        "bytes": 101208
+      },
+      {
+        "path": "shots/02-chain-processing.png",
+        "bytes": 101246
+      },
+      {
+        "path": "shots/03-chain-query.png",
+        "bytes": 78890
+      },
+      {
+        "path": "shots/05-fail-ocr.png",
+        "bytes": 55314
+      },
+      {
+        "path": "shots/06-fail-index.png",
+        "bytes": 49114
+      },
+      {
+        "path": "shots/07-fail-email.png",
+        "bytes": 40737
+      },
+      {
+        "path": "src/01-overview.mmd",
+        "bytes": 1473
+      },
+      {
+        "path": "src/02-chain-processing.mmd",
+        "bytes": 965
+      },
+      {
+        "path": "src/03-chain-query.mmd",
+        "bytes": 763
+      },
+      {
+        "path": "src/05-fail-ocr.mmd",
+        "bytes": 1169
+      },
+      {
+        "path": "src/06-fail-index.mmd",
+        "bytes": 1050
+      },
+      {
+        "path": "src/07-fail-email.mmd",
+        "bytes": 899
+      }
+    ]
+  },
+  {
+    "id": "V02-archify",
+    "case": "V02",
+    "condition": "archify",
+    "exit": 0,
+    "seconds": 271.47,
+    "model_requests": 42,
+    "output_tokens": 49152,
+    "budget_exhausted": false,
+    "input_tokens": 2272903,
+    "finish_reasons": [
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "length"
+    ],
+    "reasoning_tokens": 41682,
+    "output_cap_reached": true,
+    "upstream_errors": 0,
+    "reads": [
+      "/input/skill/SKILL.md",
+      "/input/skill/examples/production-deployment.architecture.json",
+      "/input/skill/package.json",
+      "/input/skill/references/authoring-defaults.md",
+      "/input/skill/references/viewer-runtime.md",
+      "/input/skill/schemas/architecture.schema.json",
+      "/input/skill/schemas/common.schema.json"
+    ],
+    "tool_failures": [],
+    "artifacts": [
+      {
+        "path": ".archify/architecture-collection-20261016-024706/candidate.json",
+        "bytes": 3791
+      },
+      {
+        "path": ".archify/architecture-collection-20261016-024706/collection-architecture.browser-check.json",
+        "bytes": 21522
+      },
+      {
+        "path": ".archify/architecture-collection-20261016-024706/collection-architecture.delivery.json",
+        "bytes": 585
+      },
+      {
+        "path": ".archify/architecture-collection-20261016-024706/collection-architecture.finalize-summary.json",
+        "bytes": 3538
+      },
+      {
+        "path": ".archify/architecture-collection-20261016-024706/collection-architecture.finalize.json",
+        "bytes": 35927
+      },
+      {
+        "path": ".archify/architecture-collection-20261016-024706/collection-architecture.html",
+        "bytes": 821492
+      }
+    ]
+  },
+  {
+    "id": "V02-fireworks-tech-graph",
+    "case": "V02",
+    "condition": "fireworks-tech-graph",
+    "exit": 0,
+    "seconds": 250.02,
+    "model_requests": 37,
+    "output_tokens": 49152,
+    "budget_exhausted": false,
+    "input_tokens": 2003771,
+    "finish_reasons": [
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "stop",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "length"
+    ],
+    "reasoning_tokens": 40830,
+    "output_cap_reached": true,
+    "upstream_errors": 0,
+    "reads": [
+      "/input/skill/SKILL.md",
+      "/input/skill/fixtures/mem0-style1.json",
+      "/input/skill/fixtures/quality-baseline/agent-runtime-style1.json",
+      "/input/skill/references/composition-quality-contract.md",
+      "/input/skill/references/diagram-layout-reference.md",
+      "/input/skill/references/style-1-flat-icon.md",
+      "/input/skill/references/style-diagram-matrix.md",
+      "/input/skill/references/visual-quality.md",
+      "/input/skill/schemas/diagram-v1.schema.json",
+      "/input/skill/scripts/README.md",
+      "/input/skill/scripts/composition_quality.py",
+      "/input/skill/scripts/fireworks.py",
+      "/work/acquisition-architecture.json"
+    ],
+    "tool_failures": [],
+    "artifacts": [
+      {
+        "path": "acquisition-architecture.json",
+        "bytes": 4915
+      },
+      {
+        "path": "acquisition-architecture.layout.json",
+        "bytes": 7182
+      },
+      {
+        "path": "acquisition-architecture.svg",
+        "bytes": 23345
+      }
+    ]
+  },
+  {
+    "id": "V02-visual-explanation",
+    "case": "V02",
+    "condition": "visual-explanation",
+    "exit": 0,
+    "seconds": 107.25,
+    "model_requests": 8,
+    "output_tokens": 27640,
+    "budget_exhausted": false,
+    "input_tokens": 259289,
+    "finish_reasons": [
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "tool_calls",
+      "length"
+    ],
+    "reasoning_tokens": 27001,
+    "output_cap_reached": false,
+    "upstream_errors": 0,
+    "reads": [
+      "/input/skill/SKILL.md",
+      "/input/specialists/diagram-design/SKILL.md",
+      "/input/specialists/diagram-design/assets/example-architecture.html",
+      "/input/specialists/diagram-design/assets/template.html",
+      "/input/specialists/diagram-design/references/export.md",
+      "/input/specialists/diagram-design/references/output-spec.md",
+      "/input/specialists/diagram-design/references/primitives-core.md",
+      "/input/specialists/diagram-design/references/style-guide.md",
+      "/input/specialists/diagram-design/references/type-architecture.md",
+      "/input/specialists/diagram-design/scripts/export_svg.py",
+      "/input/specialists/diagram-design/scripts/self_check.py"
+    ],
+    "tool_failures": [],
+    "artifacts": []
+  }
+]

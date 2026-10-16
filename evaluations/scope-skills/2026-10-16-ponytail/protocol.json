@@ -1,0 +1,113 @@
+{
+  "status": "complete",
+  "model": "deepseek-flash",
+  "reasoning_effort": "high",
+  "conditions": [
+    "without",
+    "with"
+  ],
+  "repeats": 1,
+  "limits": {
+    "seconds": 600,
+    "requests": 48,
+    "output_tokens": 49152,
+    "concurrency": 2,
+    "per_request_output_tokens": 16384
+  },
+  "raw_directory": "/home/liyujiang/.codex/skill-evaluations/scope/2026-10-16-ponytail-100254",
+  "ponytail_commit": "84740e3d344b69b4a133201fa519eb37a62a2b2a",
+  "activation": "Both explicitly read identical global AGENTS; with explicitly reads unchanged upstream Ponytail full; no plugin hooks or automatic activation tested.",
+  "shared_skills": "Installed humanizer and visual-explanation snapshots available identically; only absolute paths normalized to /input/support. No repo-specific AGENTS or search-before-build.",
+  "network": "offline except model relay",
+  "cases": "Five unchanged historical synthetic runnable fixtures; new sessions, no historical answers",
+  "review": "Nonblind; independent checks withheld; judge correctness and unjustified complexity before size. Each case per condition once.",
+  "sha256": {
+    "inputs/cases.json": "d98757e0b938ee4e5d8f9f1b8a6fd5149a50aa306823aea0c4143d7fef18f610",
+    "inputs/rules.json": "ae91549dabae899d69aa98838219be501010f12514b725c4dea5c6d086909d1a",
+    "inputs/ablation_checks.py": "17eed4d427e603c2179499b97308b232401b49307630a19e07c8bb49272582a1",
+    "inputs/global-original.md": "e4fb9c8a343b27d9cc4a14a09396d4af45f74b1af6eccc4e7664c93b479e50c4",
+    "inputs/execution_checks.py": "7f363abb0bde04e0860fcb3e45b13301d67d6f0a40bd5401e02cd4c0e2948bd7",
+    "inputs/checks.py": "759f4542ed1207bacd503851140c0e1a680e7af281627bce01adb34bd808eda3",
+    "inputs/support/humanizer/README.md": "eee93db241f542d5dca4a91816cf32f5dd3f40ab542f28fe8747f2f9738511d9",
+    "inputs/support/humanizer/upstream.json": "e24129e16c613a04fb916df196d8c31f114cd584c2720292fa6ab7415c5addfc",
+    "inputs/support/humanizer/LICENSE": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96",
+    "inputs/support/humanizer/SKILL.md": "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad",
+    "inputs/support/humanizer/agents/openai.yaml": "9d87ff83149a04f86a372948b8ee35fa249de20923867bbc2a49304290aad736",
+    "inputs/support/visual-explanation/AGENTS.md": "53c2bb3e1b794b364f7ccfc1e098ab6e5132c4fc9ba9a46def56eef656ba9e3e",
+    "inputs/support/visual-explanation/README.md": "9ca82996ce453aee682c98279bd5c13fc81d5b81a6e5a7010035a3a8b4cf8910",
+    "inputs/support/visual-explanation/LICENSE.show-me": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+    "inputs/support/visual-explanation/SKILL.md": "c69459a6ce2957f04d3c2a6564f0bf5dc1c4da058365e0af6264f98207eb7e76",
+    "inputs/support/visual-explanation/agents/openai.yaml": "1fa624cb37f6816b07915c87de36c560fb0af78d5bf1a440daf5de03e1758aa6",
+    "inputs/ponytail/LICENSE": "fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab",
+    "inputs/ponytail/SKILL.md": "ba68ff26239c3c3b05b2a9a47ee0d9a6b93a69639a2555ec87a5d44bffaf2f0c",
+    "snapshots/with/AGENTS.md": "c71b0f0bc7fa71a273a35dfbcb934e943f7ced9b8fe1ecd43ffb1a46aef1386f",
+    "snapshots/without/AGENTS.md": "c71b0f0bc7fa71a273a35dfbcb934e943f7ced9b8fe1ecd43ffb1a46aef1386f",
+    "review/RUBRIC.md": "ab9dc749bb15b7c7c61b2a628a4db81b6505dfb71d254073bb9f29ff71e66f9c",
+    "review/ablation_checks.py": "17eed4d427e603c2179499b97308b232401b49307630a19e07c8bb49272582a1",
+    "review/execution_checks.py": "7f363abb0bde04e0860fcb3e45b13301d67d6f0a40bd5401e02cd4c0e2948bd7",
+    "review/checks.py": "759f4542ed1207bacd503851140c0e1a680e7af281627bce01adb34bd808eda3",
+    "scripts/verify.py": "1793c667163f4edd9b770ae1d53c15ccd9e7ff3be6a0cf74ab5b5809936052a3",
+    "scripts/prepare.py": "031c0dacc01df534d6139af8870e3eaa66c72beb77c7170c23b314ff66644745",
+    "scripts/run.py": "00df513c5a62ca7c88e68945f65bd0ea81a349427aac52de09edd01ead96dddd",
+    "scripts/sandbox_bridge.py": "e7878a79b2ad8f0467c7fd006c471def16561855095c9fd13ba37521a13165ea",
+    "scripts/relay_base.py": "0b1ac9151e1e0462f0eb48672882869da424fac24e977a63bc781dd511d14115",
+    "scripts/__pycache__/relay_base.cpython-311.pyc": "7dc16e2869abe144617174ab295cd861a41b2c2d47172f2d34e7d182b2787aac"
+  },
+  "rubric_note": "Generic necessity/completeness criteria and independent tests fixed before launch. Legacy copied rubric named prior experiment; corrected descriptive header and case coverage after launch, before reviewing generated code. Original retained in review/legacy-rubric.md.",
+  "postprocessing_sha256": {
+    "scripts/prepare.py": "f2b47315adc58ab3eb1b4acc606a5e9ce0f76dab532962f8f39ce34c7164dad1",
+    "RUBRIC.md": "9e0a2270a13eff3f1e2c83e876bea621ee8cd8afb9577cbd0ab7a015292db289",
+    "scripts/verify.py": "1793c667163f4edd9b770ae1d53c15ccd9e7ff3be6a0cf74ab5b5809936052a3",
+    "scripts/run.py": "00df513c5a62ca7c88e68945f65bd0ea81a349427aac52de09edd01ead96dddd",
+    "scripts/sandbox_bridge.py": "e7878a79b2ad8f0467c7fd006c471def16561855095c9fd13ba37521a13165ea",
+    "scripts/summarize_results.py": "21133647fa90b0106a3d176d974701ae0069b4f1fbfb84c1745c1e3d44c19ee2",
+    "scripts/relay_base.py": "0b1ac9151e1e0462f0eb48672882869da424fac24e977a63bc781dd511d14115",
+    "scripts/probe_precision.py": "e824370e4a0fb520f73ec4b64b32fb08dc185a6f84e0eb339982b6367368e0d7"
+  },
+  "opencode_version": "1.14.28",
+  "rule_read_observed": {
+    "E01-without": [
+      "/input/AGENTS.md"
+    ],
+    "E01-with": [
+      "/input/AGENTS.md",
+      "/input/ponytail/SKILL.md",
+      "/input/support/humanizer/SKILL.md"
+    ],
+    "E02-without": [
+      "/input/AGENTS.md",
+      "/input/support/humanizer/SKILL.md"
+    ],
+    "E02-with": [
+      "/input/AGENTS.md",
+      "/input/ponytail/SKILL.md",
+      "/input/support/humanizer/SKILL.md"
+    ],
+    "N01-with": [
+      "/input/AGENTS.md",
+      "/input/ponytail/SKILL.md"
+    ],
+    "N01-without": [
+      "/input/AGENTS.md",
+      "/input/support/humanizer/SKILL.md"
+    ],
+    "N02-with": [
+      "/input/AGENTS.md",
+      "/input/ponytail/SKILL.md"
+    ],
+    "N02-without": [
+      "/input/AGENTS.md",
+      "/input/support/humanizer/SKILL.md"
+    ],
+    "N03-with": [
+      "/input/AGENTS.md",
+      "/input/ponytail/SKILL.md",
+      "/input/support/humanizer/SKILL.md"
+    ],
+    "N03-without": [
+      "/input/AGENTS.md",
+      "/input/support/humanizer/SKILL.md"
+    ]
+  },
+  "outcome": "10 attempts; 9 delivered; E01 baseline ended with finish_reason=length before editing. No retries. All 9 delivered artifacts passed frozen checks; posthoc E02 rounding discrepancy in Ponytail."
+}

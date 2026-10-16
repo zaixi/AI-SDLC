@@ -1,0 +1,12 @@
+{
+  "without": {
+    "exit": 0,
+    "stderr": "",
+    "csv": "service,total,errors,avg_duration_ms\napi,3,0,1.6666666666666667\n"
+  },
+  "with": {
+    "exit": 0,
+    "stderr": "",
+    "csv": "service,total,errors,avg_duration_ms\napi,3,0,1.67\n"
+  }
+}

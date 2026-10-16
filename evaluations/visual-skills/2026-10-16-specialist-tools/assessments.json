@@ -1,0 +1,56 @@
+[
+  {
+    "id": "V01-archify",
+    "source": ".archify/digitization-platform-20261016-023908/overview.html",
+    "assessment": "HTML 已生成且通过工具检查；总览与规则卡片紧凑；未完成最终交付回复。",
+    "review_image": "review/V01-archify/00-overview.png",
+    "browser_open_passed": true,
+    "final_response_complete": false,
+    "requested_formats_complete": true
+  },
+  {
+    "id": "V01-fireworks-tech-graph",
+    "source": "views/01-overview.svg",
+    "assessment": "仅总览 SVG；缺 HTML 和失败影响说明。",
+    "review_image": "review/V01-fireworks-tech-graph/00-01-overview.png",
+    "browser_open_passed": true,
+    "final_response_complete": false,
+    "requested_formats_complete": false
+  },
+  {
+    "id": "V01-visual-explanation",
+    "source": "digitization-platform-map.html",
+    "assessment": "HTML 已生成；六张图，未完成最终交付回复；总览过小，部分失败后果过度推断。",
+    "review_image": "review/V01-visual-explanation/01-digitization-platform-map.png",
+    "browser_open_passed": true,
+    "final_response_complete": false,
+    "requested_formats_complete": true
+  },
+  {
+    "id": "V02-archify",
+    "source": ".archify/architecture-collection-20261016-024706/collection-architecture.html",
+    "assessment": "仅 HTML；未交付请求的 SVG/PNG。",
+    "review_image": "review/V02-archify/00-collection-architecture.png",
+    "browser_open_passed": true,
+    "final_response_complete": false,
+    "requested_formats_complete": false
+  },
+  {
+    "id": "V02-fireworks-tech-graph",
+    "source": "acquisition-architecture.svg",
+    "assessment": "已生成 SVG；未交付 PNG。",
+    "review_image": "review/V02-fireworks-tech-graph/00-acquisition-architecture.png",
+    "browser_open_passed": true,
+    "final_response_complete": false,
+    "requested_formats_complete": false
+  },
+  {
+    "id": "V02-visual-explanation",
+    "source": null,
+    "assessment": "未生成文件；单次响应截断。",
+    "review_image": null,
+    "browser_open_passed": false,
+    "final_response_complete": false,
+    "requested_formats_complete": false
+  }
+]
