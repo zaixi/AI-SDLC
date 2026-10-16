@@ -74,7 +74,9 @@
 
 ## 文档维护补充评估
 
-2026-10-16，用户同意先评估 Addy 的 `documentation-and-adrs` 作为 Matt 的局部补充，暂不为此引入 OpenSpec。尚未采用该 Skill。[三题两组各两轮实测](../evaluations/documentation-skills/2026-10-16-addy/report.md)已完成：两组均满足核心判据，未测出额外收益。案例已提供相关文档与冲突线索，尚未验证真实仓库中的主动识别和检索覆盖，暂不足以支持接入决定。 后续[真实文件编辑测试](../evaluations/documentation-skills/2026-10-16-discovery/report.md)在额度恢复后完成 12 条有效轨迹：三组都主动更新当前文档及图；基线一轮改写旧 ADR，Addy 两组均建立替代记录。仅安装组在期限变更题两轮都读取 Skill，内部重构没有无谓文档改动。样本小且导航明确，尚未证明防漏更新的增益，也未比较 Matt 与 Matt+Addy，继续保留为候选。
+2026-10-16，用户同意评估 Addy 的 `documentation-and-adrs` 作为 Matt 的局部补充，暂不为此引入 OpenSpec。当前仍为候选，尚未采用。
+
+[内容对照](../evaluations/documentation-skills/2026-10-16-addy/report.md)未观察到额外收益；[主动维护测试](../evaluations/documentation-skills/2026-10-16-discovery/report.md)观察到 ADR 历史处理的小样本差异，但尚未证明防漏更新的增益，也未比较 Matt 与 Matt+Addy。具体方法和结果保留在评测报告中。
 
 ## 下一步需要明确的内容
 
