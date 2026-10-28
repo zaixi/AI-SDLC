@@ -2,6 +2,7 @@
 
 本目录保存轻量报告、索引，以及可复用的测试方法、案例、协议和脚本。2026-10-15 清理前约 143 MB（恢复可复用测试资产后约 4 MB），主要是重复请求 JSON、截图、依赖副本与运行日志；这些内容已移出当前版本，原始证据仍完整保存在固定提交中。
 
+- [冷启动接手评估：一个新 agent 处理三个维护请求，n=1](handoff/2026-09-24-cold-start/report.md)
 - [文档主动维护：三组 12 条完成，ADR 处理出现小样本差异](documentation-skills/2026-10-16-discovery/report.md)
 - [Addy 文档维护：三题两组各两轮，未观察到额外收益](documentation-skills/2026-10-16-addy/report.md)
 - [如何继续测试：方法、案例与运行边界](TESTING.md)
