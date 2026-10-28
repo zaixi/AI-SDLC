@@ -41,6 +41,7 @@
 ## 背景与依据
 
 - [项目背景、痛点、约束与决定](docs/project-intent.md)
+- [人判断什么，证据怎么留](docs/method.md)：设计稿，未在真实任务中试运行
 - [研究资料与来源索引](materials/README.md)
 - [主流程候选的机制比较](materials/reviews/AI-SDLC-workflow-deep-comparison-20261015.md)
 - [评测报告、历史记录与存储约定](evaluations/README.md)
