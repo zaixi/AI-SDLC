@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680" role="img" aria-labelledby="title desc">
+  <title id="title">AI 原生方法中的 V 模型：设计与验证对应关系</title>
+  <desc id="desc">左侧从用户需要、系统要求、架构接口到模块设计逐层展开，底部实现当前增量，右侧从组件验证、集成验证、系统验证到使用确认。横向虚线对应设计依据与验证证据。这是增量应用的概念图，不表示固定审批阶段。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#516279"/></marker>
+    <style>
+      text { font-family: "Noto Sans CJK SC", "WenQuanYi Zen Hei", sans-serif; }
+      .heading { font-size: 27px; font-weight: 700; fill: #172c46; }
+      .label { font-size: 18px; font-weight: 700; fill: #172c46; }
+      .detail { font-size: 14px; fill: #42566d; }
+      .note { font-size: 14px; fill: #516279; }
+      .left { fill: #eef4ff; stroke: #7798c7; stroke-width: 1.5; }
+      .right { fill: #edf8f4; stroke: #6ba78f; stroke-width: 1.5; }
+      .flow { fill: none; stroke: #516279; stroke-width: 2; marker-end: url(#arrow); }
+      .pair { fill: none; stroke: #94a3b8; stroke-width: 1.5; stroke-dasharray: 5 5; }
+    </style>
+  </defs>
+  <rect width="1100" height="680" rx="16" fill="#fff"/>
+  <text x="550" y="42" text-anchor="middle" class="heading">V 模型：让每层设计都有对应的验证依据</text>
+  <text x="550" y="72" text-anchor="middle" class="note">本方法的增量适配示意；层级与证据按软件性质和风险裁剪</text>
+
+  <path class="pair" d="M298 132 H802 M358 240 H742 M418 348 H682 M478 456 H622"/>
+  <text x="550" y="123" text-anchor="middle" class="note">使用场景与验收依据</text>
+  <text x="550" y="231" text-anchor="middle" class="note">系统要求与质量指标</text>
+  <text x="550" y="339" text-anchor="middle" class="note">接口与协作契约</text>
+  <text x="550" y="447" text-anchor="middle" class="note">模块行为</text>
+
+  <path class="flow" d="M163 166 L223 206 M223 274 L283 314 M283 382 L343 422 M343 490 L520 538"/>
+  <path class="flow" d="M580 538 L757 490 M757 422 L817 382 M817 314 L877 274 M877 206 L937 166"/>
+
+  <rect x="28" y="98" width="270" height="68" rx="10" class="left"/>
+  <text x="163" y="127" text-anchor="middle" class="label">用户需要与使用场景</text>
+  <text x="163" y="150" text-anchor="middle" class="detail">要解决什么问题，怎样才算有用</text>
+  <rect x="88" y="206" width="270" height="68" rx="10" class="left"/>
+  <text x="223" y="235" text-anchor="middle" class="label">系统要求与质量目标</text>
+  <text x="223" y="258" text-anchor="middle" class="detail">功能、性能、可靠性等约束</text>
+  <rect x="148" y="314" width="270" height="68" rx="10" class="left"/>
+  <text x="283" y="343" text-anchor="middle" class="label">架构与接口设计</text>
+  <text x="283" y="366" text-anchor="middle" class="detail">职责、交互与关键不变量</text>
+  <rect x="208" y="422" width="270" height="68" rx="10" class="left"/>
+  <text x="343" y="451" text-anchor="middle" class="label">模块行为与详细设计</text>
+  <text x="343" y="474" text-anchor="middle" class="detail">当前增量需要确定的细节</text>
+
+  <rect x="802" y="98" width="270" height="68" rx="10" class="right"/>
+  <text x="937" y="127" text-anchor="middle" class="label">使用确认与验收</text>
+  <text x="937" y="150" text-anchor="middle" class="detail">实际结果是否满足用户需要</text>
+  <rect x="742" y="206" width="270" height="68" rx="10" class="right"/>
+  <text x="877" y="235" text-anchor="middle" class="label">系统验证</text>
+  <text x="877" y="258" text-anchor="middle" class="detail">覆盖系统行为与质量要求</text>
+  <rect x="682" y="314" width="270" height="68" rx="10" class="right"/>
+  <text x="817" y="343" text-anchor="middle" class="label">组件与系统集成验证</text>
+  <text x="817" y="366" text-anchor="middle" class="detail">检查接口与组合行为</text>
+  <rect x="622" y="422" width="270" height="68" rx="10" class="right"/>
+  <text x="757" y="451" text-anchor="middle" class="label">单元／组件验证</text>
+  <text x="757" y="474" text-anchor="middle" class="detail">检查局部行为与边界情况</text>
+
+  <rect x="415" y="538" width="270" height="66" rx="10" fill="#172c46"/>
+  <text x="550" y="567" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">实现当前增量</text>
+  <text x="550" y="590" text-anchor="middle" font-size="14" fill="#d8e5f3">编码、构建与即时反馈</text>
+  <text x="550" y="638" text-anchor="middle" class="note">设计展开时规划对应检查；可用原型提前确认；变更后重验受影响的关系</text>
+  <text x="550" y="661" text-anchor="middle" class="note">箭头不代表逐层人工审批；验证还可采用分析、评审、模拟和演示</text>
+</svg>

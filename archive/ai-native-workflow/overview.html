@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>先看懂，再一起做 · AI 原生开发图解</title>
+<style>
+:root{--ink:#152a43;--muted:#52667c;--paper:#f3f7fc;--white:#fff;--blue:#2159cc;--blue-soft:#e7efff;--green:#137063;--green-soft:#e5f3ee;--line:#cbd7e6;--gold:#80550b;--gold-soft:#fff4d9}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif;line-height:1.7}main{max-width:1140px;margin:auto;padding:32px 32px 72px}a{color:var(--blue);text-underline-offset:4px}header{display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding-bottom:18px}header span,.eyebrow{font:600 12px/1.5 ui-monospace,monospace;letter-spacing:.08em}header nav{display:flex;gap:24px;font-size:14px}h1{font-family:"Noto Serif CJK SC","Songti SC",serif;font-size:clamp(34px,5vw,60px);line-height:1.25;font-weight:700;letter-spacing:-.03em;margin:36px 0 18px}h1 span{color:var(--blue)}.intro{max-width:720px;font-size:18px;margin:0 0 28px}.legend{display:flex;flex-wrap:wrap;gap:20px;font-size:13px;color:var(--muted);margin-bottom:14px}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;background:var(--blue)}.dot.agent{background:var(--green)}.process{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 8px 24px #152a4308}.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.step{position:relative;text-align:left;font:inherit;color:var(--ink);background:var(--paper);border:2px solid transparent;border-radius:10px;padding:15px 12px;cursor:pointer;min-height:126px}.step:hover{background:var(--blue-soft)}.step[aria-pressed=true]{border-color:var(--blue);background:var(--blue-soft)}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:4px}.step:not(:last-child):after{content:'→';position:absolute;right:-14px;top:45%;color:var(--muted);font-size:16px;z-index:1}.num{display:block;font:500 11px ui-monospace,monospace;color:var(--muted);margin-bottom:9px}.step strong{font-size:17px;display:block}.role{font-size:12px;color:var(--blue)}.role.agent{color:var(--green)}.return{margin:16px 0 0;padding:10px 13px;background:var(--gold-soft);color:var(--gold);font-size:13px;border-radius:7px}.detail{margin-top:22px;border-top:1px solid var(--line);padding-top:22px;display:grid;grid-template-columns:.9fr 1.1fr;gap:30px}.detail h2{font-size:24px;margin:4px 0 8px;line-height:1.4}.detail p{margin:8px 0;font-size:15px}.scenario{background:var(--paper);border-left:3px solid var(--blue);padding:16px 20px;border-radius:0 8px 8px 0}.scenario strong{display:block;font-size:13px;color:var(--muted);margin-bottom:8px}.when{margin:14px 0 0!important;font-size:13px!important;color:var(--muted)}h2{font-size:24px;line-height:1.4}.section{margin-top:40px}.section>p{color:var(--muted);max-width:760px}.choices{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.choice{font:inherit;font-size:14px;border:1px solid var(--line);border-radius:30px;background:var(--white);padding:8px 16px;color:var(--ink);cursor:pointer}.choice[aria-pressed=true]{color:var(--white);background:var(--ink);border-color:var(--ink)}.decision{background:var(--white);padding:20px 24px;border-radius:12px;border:1px solid var(--line);min-height:130px}.decision h3{margin:0 0 6px;font-size:18px}.decision p{margin:0;font-size:15px}.assets{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}.asset{padding:20px;background:var(--white);border-top:3px solid var(--green);border-radius:0 0 8px 8px}.asset h3{font-size:17px;margin:0 0 8px}.asset p{font-size:14px;color:var(--muted);margin:0}.asset small{display:block;color:var(--green);margin-top:12px;font-size:12px}.knowledge{margin-top:16px;font-size:14px;color:var(--muted)}details{border-top:1px solid var(--line);margin-top:36px;padding-top:16px}summary{cursor:pointer;font-size:16px;font-weight:600}details p{font-size:14px;max-width:800px}footer{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;font-size:12px;color:var(--muted)}.status{display:inline-block;background:var(--gold-soft);color:var(--gold);padding:2px 9px;border-radius:4px;margin-right:6px}@media(max-width:740px){main{padding:20px 18px 40px}header{align-items:flex-start}header nav{gap:12px;flex-wrap:wrap;justify-content:flex-end}header span{max-width:125px}.process{padding:16px}.steps{grid-template-columns:1fr;gap:8px}.step{min-height:0;padding:12px 14px;display:grid;grid-template-columns:30px 1fr auto;align-items:center;gap:10px}.num{margin:0}.step strong{font-size:16px}.step:not(:last-child):after{display:none}.detail{grid-template-columns:1fr;gap:12px}.assets{grid-template-columns:1fr;gap:12px}h1{margin-top:28px}.intro{font-size:16px}.section{margin-top:30px}}@media print{body{background:#fff}main{max-width:none}header nav,.choices{display:none}.process,.asset,.decision{box-shadow:none;break-inside:avoid}details{display:block}footer{margin-top:20px}}
+</style>
+</head>
+<body><main>
+<header><span>AI 原生开发 / 阅读图解</span><nav aria-label="文档导航"><a href="README.md">项目入口</a><a href="METHOD.md">完整规则</a><a href="research/mattpocock-skills-assessment-20260924.md">Skills 研究</a></nav></header>
+<h1>先看懂准备做什么。<br><span>再让 agent 连续做完。</span></h1>
+<p class="intro">你判断方向和结果。Agent 调查、画方案、编码、测试，并留下别人能接手的依据。讨论只展开会改变重要判断的部分。</p>
+<div class="legend"><span><i class="dot"></i>人的判断</span><span><i class="dot agent"></i>Agent 的工作</span><span>点击下面的步骤，看你会收到什么</span></div>
+<section class="process" aria-label="开发流程">
+<div class="steps" role="group" aria-label="选择流程步骤">
+<button class="step" data-step="0" aria-pressed="true"><span class="num">01</span><strong>说清想要什么</strong><span class="role">人 → agent</span></button>
+<button class="step" data-step="1" aria-pressed="false"><span class="num">02</span><strong>先看方案</strong><span class="role">一起判断</span></button>
+<button class="step" data-step="2" aria-pressed="false"><span class="num">03</span><strong>连续开发</strong><span class="role agent">Agent 执行</span></button>
+<button class="step" data-step="3" aria-pressed="false"><span class="num">04</span><strong>看实际结果</strong><span class="role">人审阅</span></button>
+<button class="step" data-step="4" aria-pressed="false"><span class="num">05</span><strong>留下接手依据</strong><span class="role agent">随开发持续维护</span></button>
+</div>
+<p class="return">↶ 方向不对，回到需求；关键细节不清，展开那一部分。实现中若必须改变已接受的承诺，回来讨论。</p>
+<div class="detail" id="step-detail" aria-live="polite" aria-atomic="true">
+<div><span class="eyebrow" id="step-label">01 / 需求</span><h2 id="step-title">先说结果，不用填问卷。</h2><p id="step-body">你说明谁要做什么、最在意什么。Agent 先调查能查到的事实，只问会改变方向的问题。</p><p class="when" id="step-next">继续条件：已有足够信息画出一个可以讨论的整体方案。</p></div>
+<div class="scenario"><strong>同一个例子：批量导入记录</strong><p id="step-example">“我要一次导入很多记录。重复上传不能重复写入，出错时要知道哪条失败。”</p></div>
+</div>
+</section>
+<section class="section" aria-labelledby="decisions"><h2 id="decisions">这个问题，还要问你吗？</h2><p>由影响决定。点击一种情况，看看工作怎样继续。</p>
+<div class="choices" role="group" aria-label="选择待决定的问题"><button class="choice" data-case="0" aria-pressed="true">重复记录怎么算？</button><button class="choice" data-case="1" aria-pressed="false">内部函数叫什么？</button><button class="choice" data-case="2" aria-pressed="false">测试失败了？</button><button class="choice" data-case="3" aria-pressed="false">人暂时离线？</button></div>
+<div class="decision" aria-live="polite" aria-atomic="true"><h3 id="case-title">业务含义不清：用例子一起决定。</h3><p id="case-body">“姓名相同”还是“记录编号相同”才算重复？Agent 先查既有规则；如果没有依据，就展示两种结果，说明什么工作会被阻塞。已经明确的业务规则不重复询问。</p></div>
+</section>
+<section class="section" aria-labelledby="handoff"><h2 id="handoff">换一个 agent，也知道为什么这样做。</h2><p>文档与代码一起维护。接手者先看整体，再读本次修改相关的约束和证据。</p>
+<div class="assets"><article class="asset"><h3>整体图与关键行为</h3><p>系统做什么、各部分如何协作，以及本次改哪里。</p><small>帮助定位</small></article><article class="asset"><h3>约束与设计理由</h3><p>例如：写入持久保存后才能报告成功，否则崩溃可能让成功提示失真。</p><small>帮助判断什么不能随便改</small></article><article class="asset"><h3>真实验证与未完成项</h3><p>测了什么版本、得到什么结果，哪些还没验证，工作停在哪里。</p><small>帮助核实和继续</small></article></div>
+<p class="knowledge">这些信息从设计到实现持续更新；第 05 步强调接手时要能找到它们，不表示等到最后才补文档。</p>
+</section>
+<details><summary>show-me、eli5 和其他 skills 放在哪里？</summary><p><a href="https://github.com/humanlayer/skills/blob/main/plugins/show-me/skills/show-me/SKILL.md">show-me</a> 帮助选择最能讲清关系与变化的视图；<a href="https://github.com/anthropics/claude-plugins-community/blob/main/eli5/skills/eli5/SKILL.md">eli5</a> 用大图少字解释陌生概念；<a href="https://github.com/mattpocock/skills">mattpocock/skills</a> 提供许多工程活动的做法。我们的流程负责决定何时使用、怎样交接以及什么结果才足够。</p><p>相同或相近能力优先采用 mattpocock/skills，并适配冲突的默认规则。其他项目仅作参考和补缺，不要求全部采用；尚未安装或串成工作流。<a href="research/mattpocock-skills-assessment-20260924.md">查看来源与具体映射 →</a></p></details>
+<footer><span class="status">设计待审阅 · 尚未试运行</span> 本页是方法 v0.8 的阅读视图，2026-09-24。示例是推演，不是真实测试结果。完整规则以 <a href="METHOD.md">METHOD.md</a> 为准。图解内容调整时同步对应规则；需要理解边界再展开，不必首次通读全部条款。</footer>
+<noscript><p>交互需要 JavaScript。你仍可阅读上方主流程和接手说明，或查看 <a href="README.md">包含完整示例的项目入口</a>。</p></noscript>
+</main>
+<script>
+const steps=[
+['01 / 需求','先说结果，不用填问卷。','你说明谁要做什么、最在意什么。Agent 先调查能查到的事实，只问会改变方向的问题。','继续条件：已有足够信息画出一个可以讨论的整体方案。','“我要一次导入很多记录。重复上传不能重复写入，出错时要知道哪条失败。”'],
+['02 / 方案','先看全貌，再展开关键细节。','你看图、举例和纠正。Agent 每轮说明改了什么、还有什么重要分歧，以及是否已能开始实现。','继续条件：关键行为与约束有依据，剩余细节可在授权内解决。','先展示“上传 → 检查 → 写入 → 查看结果”。如果你希望部分成功，就展开成功与失败记录怎样呈现，而不是先讨论数据库字段。'],
+['03 / 实现','局部选择、测试和修复，连续完成。','Agent 按有效方案实现，用实际结果验证，及时更新设计。若必须改变关键承诺，提出有证据的选项；其他授权工作继续。','继续条件：约定行为与必要验证满足，文档反映实际版本。','实现时发现源数据没有稳定编号。Agent 先调查；如果仍无法可靠去重，就回来讨论重复的业务含义，不私自改成“尽量去重”。'],
+['04 / 审阅','看软件做到了什么。','先看结果或演示，再看与方案的差异、测试证据和限制。缺陷修复与新增需求分开处理。','继续条件：你接受具体交付范围。接受交付不自动授予发布权限。','界面能显示失败记录，但大数据量下的性能还没验证。交付说明必须保留这个缺口，不能用漂亮演示掩盖。'],
+['05 / 接手','把理解留在项目里。','新的维护者从入口找整体图，读取涉及的理由、约束与证据，核对实际代码后再修改。无需找回原作者或原始聊天。','继续条件：可以找到并核查本次修改所需依据，未知仍明确标记。','后续 agent 想先返回成功再写入。它应能找到“成功意味着已持久保存”的约束及原因，并检查崩溃与重试行为。']
+];
+const cases=[
+['业务含义不清：用例子一起决定。','“姓名相同”还是“记录编号相同”才算重复？Agent 先查既有规则；如果没有依据，就展示两种结果，说明什么工作会被阻塞。已经明确的业务规则不重复询问。'],
+['局部实现选择：agent 自行处理。','函数名、文件组织等选择遵循项目约定，通常无需人批准。只有会影响后续维护的重要理由才需要保存，不为每个变量写一份文档。'],
+['先定位失败，再决定是否需要人。','实现错误由 agent 修复并重新验证；环境缺失如实记录。若问题要求改变已接受行为或降低标准，带着证据回来讨论，不能只为了通过测试而改要求。'],
+['继续不受影响的授权工作。','只有真正依赖人决定的工作暂缓。Agent 保存问题、影响范围和恢复位置，继续其他可验证的工作；沉默不增加授权，长期卡住时明确报告。']
+];
+document.querySelectorAll('[data-step]').forEach(button=>button.addEventListener('click',()=>{
+ document.querySelectorAll('[data-step]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+ const row=steps[Number(button.dataset.step)];['step-label','step-title','step-body','step-next','step-example'].forEach((id,i)=>document.getElementById(id).textContent=row[i]);
+}));
+document.querySelectorAll('[data-case]').forEach(button=>button.addEventListener('click',()=>{
+ document.querySelectorAll('[data-case]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+ const row=cases[Number(button.dataset.case)];document.getElementById('case-title').textContent=row[0];document.getElementById('case-body').textContent=row[1];
+}));
+</script>
+</body></html>
